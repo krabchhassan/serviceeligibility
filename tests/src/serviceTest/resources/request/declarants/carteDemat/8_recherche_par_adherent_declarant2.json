@@ -1,0 +1,49 @@
+{
+"_id" : "0000401182",
+"_class" : "com.cegedimactiv.basededroit.entity.Declarant",
+"nom" : "AON",
+"libelle" : "AON",
+"numeroPrefectoral" : "0000401182",
+"codePartenaire" : "AON",
+"type" : "amc",
+"codeCircuit" : "01",
+"emetteurDroits" : "AMC",
+"operateurPrincipal" : "SP",
+"userCreation" : "bddOffice",
+  "pilotages" : [
+    {
+      "codeService" : "CARTE-DEMATERIALISEE",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2021-11-15T00:00:00.000Z",
+      "couloirClient" : "AAA",
+      "caracteristique" : {
+        "validitesDomainesDroits" : [
+          {
+            "codeDomaine" : "PHAR",
+            "duree" : 15,
+            "unite" : "Jours",
+            "positionnerFinDeMois" : false
+          },
+          {
+            "codeDomaine" : "MED",
+            "duree" : 1,
+            "unite" : "Mois",
+            "positionnerFinDeMois" : true
+          },
+          {
+            "codeDomaine" : "SVIL",
+            "duree" : 2,
+            "unite" : "Mois",
+            "positionnerFinDeMois" : false
+          },
+          {
+            "codeDomaine" : "CSTE",
+            "duree" : 3,
+            "unite" : "Mois",
+            "positionnerFinDeMois" : false
+          }
+        ]
+      }
+    }
+  ]
+}

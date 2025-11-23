@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Changement de destinataire pour un bénéficiaire",
+  "description": "Changement de destinataire pour un bénéficiaire",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC : numéro préfectoral"
+    },
+    "oldPaymentRecipientId": {
+      "type": "string",
+      "description": "Identifiant de l'ancien destinataire de paiement"
+    },
+    "oldBeyondPaymentRecipientId": {
+      "type": "string",
+      "description": "Identifiant Beyond de l'ancien destinataire de paiement"
+    },
+    "newPaymentRecipientId": {
+      "type": "string",
+      "description": "Identifiant du nouveau destinataire de paiement"
+    },
+    "newBeyondPaymentRecipientId": {
+      "type": "string",
+      "description": "Identifiant Beyond du nouveau destinataire de paiement"
+    },
+    "receptionDate": {
+      "type": "string",
+      "description": "Date de réception du changement de destinataire"
+    },
+    "personNumber": {
+      "type": "string",
+      "description": "Identifiant de la personne (clé de la base bénéficiaire BDDS)"
+    }
+  },
+  "required": [
+    "declarantId",
+    "oldPaymentRecipientId",
+    "oldBeyondPaymentRecipientId",
+    "newPaymentRecipientId",
+    "newBeyondPaymentRecipientId",
+    "receptionDate",
+    "personNumber"
+  ],
+  "$id": "Insurance.serviceeligibility.insured.payment.recipient.modification.event/0.0.1"
+}

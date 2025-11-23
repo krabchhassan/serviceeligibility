@@ -1,0 +1,330 @@
+{
+  "data": [
+    {
+      "id": "c4f032e6-bbaa-4327-8139-b895387513d2",
+      "code": "BLUE_TP",
+      "label": "BLUE_TP",
+      "issuerCompany": {
+        "code": "BALOO",
+        "label": "Baloo (BALOO)"
+      },
+      "riskFamily": {
+        "code": "1",
+        "label": "Santé"
+      },
+      "offerCharacteristics": "GROUP",
+      "assembly": {
+        "modular": false,
+        "inclusion": true
+      },
+      "offerVersion": {
+        "id": "443e1cc9-0a89-4722-902f-8ce1b2ef14af",
+        "status": "ACTIVE",
+        "code": 10,
+        "description": "Offre pour les tests de l'équipe BLUE - Merci de ne pas supprimer ou modifier sans l'accord de l'équipe ",
+        "externalReference": "EXT_BLUE",
+        "engineVersion": "31.1",
+        "effectDate": "2023-01-04T13:00:46.125",
+        "validityDate": "2023-01-04",
+        "products": [
+          {
+            "id": "6320ae8a-7370-41ec-ba01-628ea2353d08",
+            "label": "SANTE_100",
+            "code": "SANTE_100",
+            "contextReimbursementMerge": true
+          }
+        ],
+        "benefitNatures": [
+          {
+            "id": "e3526846-51ae-4ceb-970d-ad9f90730dcc",
+            "label": "OPTIQUE",
+            "code": "OPTIQUE",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "93f2b030-ee48-4a53-a3c4-aac5968a7265",
+                "label": "Optique remboursée par le RO",
+                "code": "tGP_OPTIQUE-100pctSanteAdaptationClasseA",
+                "contextualizationFormulaCode": "fCo_siRembourseRO",
+                "type": "BENEFIT_GROUP",
+                "offline": false
+              },
+              {
+                "id": "d97f9229-694e-4f4c-aa83-be31705f7b59",
+                "label": "OPTIQUE - Montures classe B Adulte/Enfant remboursé RO",
+                "domainTp": {
+                  "label": "Opticien",
+                  "code": "OPTI"
+                },
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_OPTIQUE-MonturesClasseBAdulteEnfantRembourseRO",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "Opticien",
+                "code": "OPTI"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          },
+          {
+            "id": "e31a0903-df1c-4648-8b0c-8d1a129cc723",
+            "label": "AUDIOLOGIE",
+            "code": "AUDIOLOGIE",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "807acb27-3fca-421c-99a8-1b7afb6021a1",
+                "label": "AA1 - Remboursée par le RO",
+                "code": "tGP_AUDIO-AidesAuditivesClasseI",
+                "contextualizationFormulaCode": "fCo_siRembourseRO",
+                "type": "BENEFIT_GROUP",
+                "offline": false
+              },
+              {
+                "id": "37a75fca-4823-4eb1-811e-9970b02a7ae8",
+                "label": "APPA-Appareillage remboursé par le RO",
+                "domainTp": {
+                  "label": "Audioprothèse",
+                  "code": "AUDI"
+                },
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_APPA-AppareillageRembourseParLeRO",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "Audioprothèse",
+                "code": "AUDI"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          },
+          {
+            "id": "412a1a28-cad1-45ee-9dcc-bd7409a580fe",
+            "label": "MEDECINE",
+            "code": "MEDECINE",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "f50ff76e-8ff2-4f51-a12f-accbe4785337",
+                "label": "Consultations Et Visites",
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_ConsultationsEtVisites",
+                "offline": false
+              },
+              {
+                "id": "c43dced4-430a-4140-b850-6e8a2c9fa352",
+                "label": "SOINS_COURANTS-Auxiliaires médicaux remboursés par le RO",
+                "domainTp": {
+                  "label": "Médecin généraliste",
+                  "code": "MEDG"
+                },
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_SOINS_COURANTS-AuxiliairesMedicauxRemboursesParLeRO",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "Médecin généraliste",
+                "code": "MEDG"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          },
+          {
+            "id": "24de76a9-86e7-4cd1-ab18-5d04f9e1de65",
+            "label": "PHARMACIE",
+            "code": "PHARMACIE",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "2a816b3b-375b-4760-b5c5-0409dda0228a",
+                "label": "PHARMA-Pharmacie remboursée par le RO",
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_PHARMA-PharmacieRembourseeParLeRO",
+                "offline": false
+              },
+              {
+                "id": "3e885efb-adb9-4c49-9347-b8f3b53ede5d",
+                "label": "PHARMA-Pharmacie remboursée par le RO",
+                "domainTp": {
+                  "label": "Pharmacie remboursable",
+                  "code": "PHAR"
+                },
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_PHARMA-PharmacieRembourseeParLeRO",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "Pharmacie remboursable",
+                "code": "PHAR"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          },
+          {
+            "id": "5ae72291-7161-4fa3-aa89-7d3290e9c522",
+            "label": "DENTAIRE",
+            "code": "DENTAIRE",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "1ea07700-661c-4766-8f24-3dd23d87edba",
+                "label": "DENTAIRE - Tous Soins remboursés par le ROO",
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_DENTAIRE-TousSoinsRemboursesParLeRO",
+                "offline": false
+              },
+              {
+                "id": "62f69ab4-6a79-441f-b931-04da2d5d2197",
+                "label": "DENTAIRE - Tous Soins remboursés par le ROO",
+                "domainTp": {
+                  "label": "DESO + DEPR + DEOR (en plus)",
+                  "code": "DENT"
+                },
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_DENTAIRE-TousSoinsRemboursesParLeRO",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "DESO + DEPR + DEOR (en plus)",
+                "code": "DENT"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          },
+          {
+            "id": "162f2bb3-3f30-4dd5-a23d-6a9263c49642",
+            "label": "RADIOLOGIE",
+            "code": "RADIOLOGIE",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "8148f51e-2228-4eb2-9902-fa41eb9ebc8c",
+                "label": "Radiologie",
+                "code": "tGP_CETIP-Radiologue-RADI",
+                "contextualizationFormulaCode": "fCo_SiBnficiaireEstAssurOuDiffrentDeAutre",
+                "type": "BENEFIT_GROUP",
+                "offline": false
+              },
+              {
+                "id": "dffcb096-28dd-4c7f-b8f8-8b5e1ee8f7fa",
+                "label": "Radiologie",
+                "code": "tGP_CETIP-Radiologue-RADI",
+                "contextualizationFormulaCode": "fCo_SiBnficiaireEstAssurOuDiffrentDeAutre",
+                "domainTp": {
+                  "label": "Radiologue",
+                  "code": "RADL"
+                },
+                "type": "BENEFIT_GROUP",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "Radiologue",
+                "code": "RADL"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          },
+          {
+            "id": "c11901be-2b91-4202-b251-25290351c6a2",
+            "label": "HOSPITALISATION",
+            "code": "HOSPITALISATION",
+            "tags": [
+              "BASE"
+            ],
+            "benefitGroups": [
+              {
+                "id": "4eacd28c-98dd-4f56-94b6-b579aa0d9a76",
+                "label": "Hospitalisation",
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_Hospitalisation",
+                "offline": false
+              },
+              {
+                "id": "fe8da78b-aa39-411f-92ef-b9afc2735753",
+                "label": "Hospitalisation",
+                "domainTp": {
+                  "label": "Séjour hospitalier",
+                  "code": "HOSP"
+                },
+                "type": "BENEFIT_GROUP_SET",
+                "gpcCode": "cGP_Hospitalisation",
+                "offline": true
+              }
+            ],
+            "domainTps": [
+              {
+                "label": "Séjour hospitalier",
+                "code": "HOSP"
+              }
+            ],
+            "riskBearer": {
+              "code": "BALOO",
+              "label": "Baloo (BALOO)"
+            }
+          }
+        ],
+        "progressCheckOfferList": [],
+        "managedContexts": [
+          "HTP",
+          "TP_ONLINE",
+          "TP_OFFLINE"
+        ],
+        "creationAuthor": "reynald.hermez@cegedim-activ.com",
+        "creationDate": "2023-01-04T13:00:17.613+00:00",
+        "lastModificationAuthor": "reynald.hermez@cegedim-activ.com",
+        "lastModificationDate": "2023-01-04T13:00:35.725+00:00",
+        "publishingAuthor": "reynald.hermez@cegedim-activ.com",
+        "publishingDate": "2023-01-04T13:00:46.125+00:00"
+      }
+    }
+  ],
+  "paging": {
+    "page": 0,
+    "totalPages": 1,
+    "totalElements": 1,
+    "perPage": 10
+  }
+}

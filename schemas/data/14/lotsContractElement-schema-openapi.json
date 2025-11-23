@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "lotsContractElement",
+      "description": "Collection qui contient l'ensemble des lots de correspondances BOBB"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Lot": {
+        "$ref": "/commons-schema-openapi.json#/components/schemas/Lot"
+      }
+    }
+  }
+}

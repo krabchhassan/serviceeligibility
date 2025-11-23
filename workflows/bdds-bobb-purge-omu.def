@@ -1,0 +1,27 @@
+workflowDefinition:
+  - name: BOBB - Purge des correspondances BOBB
+    code: is-bdds-bobb-purge
+    description: l'OMU “BOBBPurge” consiste à purger des correspondances produit BO/Beyond.
+    documentation-path: docs/workflows/0.0.1
+    nature: [ "dev", "qa", "preprod", "prod" ]
+    parameters: [ ]
+    steps:
+      - name: bobb-purge
+        job: bobb-purge-job
+        type: python
+        produceOutputs: true
+        parameters:
+          arguments: []
+    crex:
+      - name: purged_contract_elements
+        description: Nombre des correspondances BOBB purgées
+        ref: steps/bobb-purge/parameters/outputs/purged_contract_elements
+      - name: updated_versions
+        description: Nombre des versions mis à jour
+        ref: steps/bobb-purge/parameters/outputs/updated_versions
+      - name: pre_purge_statistics
+        description: Statistiques pré-purge
+        ref: steps/bobb-purge/parameters/outputs/pre_purge_statistics
+      - name: post_purge_statistics
+        description: Statistiques post-purge
+        ref: steps/bobb-purge/parameters/outputs/post_purge_statistics

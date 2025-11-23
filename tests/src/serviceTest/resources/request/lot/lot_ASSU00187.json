@@ -1,0 +1,22 @@
+{
+  "_id" : "652fd51345f0f8569003b6f7",
+  "code" : "LOT_ASSU00187",
+  "libelle" : "Lot de base 200",
+  "garantieTechniques" : [
+    {
+      "codeAssureur" : "ASSU00187",
+      "codeGarantie" : "FSSC46380A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur" : "ASSU00187",
+      "codeGarantie" : "FSBC50954A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur" : "ASSU00187",
+      "codeGarantie" : "FSOC49568A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    }
+  ]
+}

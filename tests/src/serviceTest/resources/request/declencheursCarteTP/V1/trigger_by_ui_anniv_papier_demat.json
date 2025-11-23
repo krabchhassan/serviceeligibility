@@ -1,0 +1,9 @@
+{
+  "date": "%%CURRENT_YEAR%%-06-01",
+  "emitter": "Request",
+  "idDeclarant": "0000401166",
+  "individualContractNumber": "5894-01",
+  "numeroAdherent": "5894-01",
+  "forcePapier": true,
+  "forceDemat": true
+}

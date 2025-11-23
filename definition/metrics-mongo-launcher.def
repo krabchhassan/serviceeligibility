@@ -1,0 +1,52 @@
+metrics_mongo_launcher:
+- name: "metrics.serviceeligibility.tp.personnes.launcher"
+  domain: serviceeligibility.tp
+  spec:
+    collections:
+    - "contrats"
+    aggregations:
+    - $sortByCount: "$gestionnaire"
+    executor: is-bdds-executortpp
+    parameters:
+        generationDate: "$$__GENERATION_DATE"
+        societeEmettrice: "$_id"
+    description: "Service Eligibility TP Personnes Launcher"
+
+- name: "metrics.serviceeligibility.tp.adherents.launcher"
+  domain: serviceeligibility.tp
+  spec:
+    collections:
+    - "contrats"
+    aggregations:
+    - $sortByCount: "$gestionnaire"
+    executor: is-bdds-executortpa
+    parameters:
+        generationDate: "$$__GENERATION_DATE"
+        societeEmettrice: "$_id"
+    description: "Service Eligibility TP Adhérents Launcher"
+
+- name: "metrics.serviceeligibility.htp.personnes.launcher"
+  domain: serviceeligibility.htp
+  spec:
+    collections:
+    - "servicePrestation"
+    aggregations:
+    - $sortByCount: "$societeEmettrice"
+    executor: is-bdds-executorhtpp
+    parameters:
+        generationDate: "$$__GENERATION_DATE"
+        societeEmettrice: "$_id"
+    description: "Service Eligibility HTP Personnes Launcher"
+
+- name: "metrics.serviceeligibility.htp.adherents.launcher"
+  domain: serviceeligibility.htp
+  spec:
+    collections:
+    - "servicePrestation"
+    aggregations:
+    - $sortByCount: "$societeEmettrice"
+    executor: is-bdds-executorhtpa
+    parameters:
+        generationDate: "$$__GENERATION_DATE"
+        societeEmettrice: "$_id"
+    description: "Service Eligibility HTP Adhérents Launcher"

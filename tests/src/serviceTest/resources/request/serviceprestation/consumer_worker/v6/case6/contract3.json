@@ -1,0 +1,536 @@
+{
+  "idDeclarant": "0008400004",
+  "societeEmettrice": "Test TEAM BLUE",
+  "numero": "Test1",
+  "numeroExterne": "SLOK4983989",
+  "numeroAdherent": "Test1",
+  "numeroAdherentComplet": "A1",
+  "dateSouscription": "2020-01-22",
+  "dateResiliation": "",
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "code": "CMU",
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930",
+    "identifiantCollectivite": "coll1",
+    "siret": "552 178 639 00132",
+    "groupePopulation": "cadre"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "periodesDroitsComptables": [
+    {
+      "periode": {
+        "debut": "2019-01-01",
+        "fin": "2019-12-31"
+      }
+    },
+    {
+      "periode": {
+        "debut": "2020-01-01",
+        "fin": "2020-12-31"
+      }
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Emplyés",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodesDroitsCarte": {
+      "debut": "2020-01-01",
+      "fin": "2023-12-31"
+    },
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "0",
+      "identite": {
+        "nir": {
+          "code": "2900612355554",
+          "cle": "63"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2900612355554",
+              "cle": "63"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19900612",
+        "rangNaissance": "1",
+        "numeroPersonne": "288939012",
+        "refExternePersonne": "7909732ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMASTE",
+          "nomUsage": null,
+          "prenom": "NATACHA",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "MME DELMAS Natacha",
+          "ligne2": "RESIDENCE DES PETUNIAS",
+          "ligne3": "",
+          "ligne4": "21 RUE DE LA COMMUNE",
+          "ligne5": "",
+          "ligne6": "31120 PINSAGUEL",
+          "ligne7": "FRANCE",
+          "codePostal": "31120"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "mDELMAS@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP0201",
+            "nom": {
+              "nomFamille": "DELMAS123",
+              "nomUsage": "DELMAS1",
+              "prenom": "MARIANNE2",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne213",
+              "ligne2": "RESIDENCE DES PETUNIAS6",
+              "ligne3": "ligne37",
+              "ligne4": "21 RUE DE LA COMMUNE7",
+              "ligne5": "7",
+              "ligne6": "31120 PINSAGUEL7",
+              "ligne7": "FRANCE7",
+              "codePostal": "311207"
+            },
+            "rib": {
+              "bic": "MCCFFRP7",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement7",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-07"
+            }
+          },
+          {
+            "idDestinatairePaiements": "DP0202",
+            "nom": {
+              "nomFamille": "DELMAS124",
+              "nomUsage": "DELMAS1",
+              "prenom": "MARIANNE2",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne213",
+              "ligne2": "RESIDENCE DES PETUNIAS6",
+              "ligne3": "ligne37",
+              "ligne4": "21 RUE DE LA COMMUNE7",
+              "ligne5": "7",
+              "ligne6": "31120 PINSAGUEL7",
+              "ligne7": "FRANCE7",
+              "codePostal": "311207"
+            },
+            "rib": {
+              "bic": "MCCFFRP7",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement7",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-07"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP0203",
+            "nom": {
+              "nomFamille": "DELMAS8",
+              "nomUsage": "8",
+              "prenom": "MARIANNE8",
+              "civilite": "MME8"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne8",
+              "ligne2": "RESIDENCE DES PETUNIAS8",
+              "ligne3": "8",
+              "ligne4": "21 RUE DE LA COMMUNE8",
+              "ligne5": "8",
+              "ligne6": "31120 PINSAGUEL8",
+              "ligne7": "FRANCE8",
+              "codePostal": "311208"
+            },
+            "periode": {
+              "debut": "2020-01-08"
+            },
+            "dematerialisation": {
+              "isDematerialise": "false",
+              "email": "test8@test.com",
+              "mobile": "0600000008"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "DRP214",
+            "nom": {
+              "nomFamille": "DELMAS8",
+              "nomUsage": "8",
+              "prenom": "MARIANNE8",
+              "civilite": "MME8"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne8",
+              "ligne2": "RESIDENCE DES PETUNIAS8",
+              "ligne3": "8",
+              "ligne4": "21 RUE DE LA COMMUNE8",
+              "ligne5": "8",
+              "ligne6": "31120 PINSAGUEL8",
+              "ligne7": "FRANCE8",
+              "codePostal": "311208"
+            },
+            "periode": {
+              "debut": "2020-01-08"
+            },
+            "dematerialisation": {
+              "isDematerialise": "true",
+              "email": "test8@test.com",
+              "mobile": "0600000008"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dateRadiation": null,
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": "true",
+          "email": "jp-DELMAS@gagamil.coum",
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "droits": [
+        {
+          "code": "KC_PlatineBase",
+          "codeAssureur": "KLESIA_CARCEPT",
+          "libelle": "KC_PlatineBase",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "dateAncienneteGarantie": "2020-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "2810631555490",
+          "cle": "69"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2810631555490",
+              "cle": "69"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19810619",
+        "rangNaissance": "1",
+        "numeroPersonne": "288939019",
+        "refExternePersonne": "7909738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMASTE",
+          "nomUsage": null,
+          "prenom": "MARIANNE",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "MME DELMAS Marianne",
+          "ligne2": "RESIDENCE DES PETUNIAS",
+          "ligne3": "",
+          "ligne4": "21 RUE DE LA COMMUNE",
+          "ligne5": "",
+          "ligne6": "31120 PINSAGUEL",
+          "ligne7": "FRANCE",
+          "codePostal": "31120"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "mDELMAS@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP0101",
+            "nom": {
+              "nomFamille": "DELMAS123",
+              "nomUsage": "DELMAS1",
+              "prenom": "MARIANNE2",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne213",
+              "ligne2": "RESIDENCE DES PETUNIAS6",
+              "ligne3": "ligne37",
+              "ligne4": "21 RUE DE LA COMMUNE7",
+              "ligne5": "7",
+              "ligne6": "31120 PINSAGUEL7",
+              "ligne7": "FRANCE7",
+              "codePostal": "311207"
+            },
+            "rib": {
+              "bic": "MCCFFRP7",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement7",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-07"
+            }
+          },
+          {
+            "idDestinatairePaiements": "DP0102",
+            "nom": {
+              "nomFamille": "DELMAS124",
+              "nomUsage": "DELMAS1",
+              "prenom": "MARIANNE2",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne213",
+              "ligne2": "RESIDENCE DES PETUNIAS6",
+              "ligne3": "ligne37",
+              "ligne4": "21 RUE DE LA COMMUNE7",
+              "ligne5": "7",
+              "ligne6": "31120 PINSAGUEL7",
+              "ligne7": "FRANCE7",
+              "codePostal": "311207"
+            },
+            "rib": {
+              "bic": "MCCFFRP7",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement7",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-07"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP0103",
+            "nom": {
+              "nomFamille": "DELMAS8",
+              "nomUsage": "8",
+              "prenom": "MARIANNE8",
+              "civilite": "MME8"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne8",
+              "ligne2": "RESIDENCE DES PETUNIAS8",
+              "ligne3": "8",
+              "ligne4": "21 RUE DE LA COMMUNE8",
+              "ligne5": "8",
+              "ligne6": "31120 PINSAGUEL8",
+              "ligne7": "FRANCE8",
+              "codePostal": "311208"
+            },
+            "periode": {
+              "debut": "2020-01-08"
+            },
+            "dematerialisation": {
+              "isDematerialise": "false",
+              "email": "test8@test.com",
+              "mobile": "0600000008"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "DRP014",
+            "nom": {
+              "nomFamille": "DELMAS8",
+              "nomUsage": "8",
+              "prenom": "MARIANNE8",
+              "civilite": "MME8"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne8",
+              "ligne2": "RESIDENCE DES PETUNIAS8",
+              "ligne3": "8",
+              "ligne4": "21 RUE DE LA COMMUNE8",
+              "ligne5": "8",
+              "ligne6": "31120 PINSAGUEL8",
+              "ligne7": "FRANCE8",
+              "codePostal": "311208"
+            },
+            "periode": {
+              "debut": "2020-01-08"
+            },
+            "dematerialisation": {
+              "isDematerialise": "false",
+              "email": "test1@test.com",
+              "mobile": "0600000001"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dateRadiation": null,
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": "true",
+          "email": "jp-DELMAS@gagamil.coum",
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "X",
+        "libelle": "X"
+      },
+      "droits": [
+        {
+          "code": "KC_PlatineBase",
+          "codeAssureur": "KLESIA_CARCEPT",
+          "libelle": "KC_PlatineBase",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "dateAncienneteGarantie": "2020-01-01"
+        }
+      ]
+    }
+  ]
+}

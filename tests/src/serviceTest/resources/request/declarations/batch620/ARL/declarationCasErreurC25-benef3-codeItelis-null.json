@@ -1,0 +1,298 @@
+{
+  "codeEtat" : "V",
+  "effetDebut" : "2024-04-10T07:53:43.242+0000",
+  "idDeclarant" : "0000401166",
+  "isCarteTPaEditer" : true,
+  "carteTPaEditerOuDigitale" : "3",
+  "idTrigger" : "661645873291d23ae5a82cd6",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2024-04-10T07:53:43.242+0000",
+  "userCreation" : "WORKER",
+  "dateModification" : "2024-04-10T07:53:43.242+0000",
+  "userModification" : "WORKER",
+  "beneficiaire" : {
+    "dateNaissance" : "19791006",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1701062498046",
+    "cleNirBeneficiaire" : "02",
+    "nirOd1" : "1701062498046",
+    "cleNirOd1" : "02",
+    "numeroPersonne" : "MBA-004",
+    "refExternePersonne" : "7209738ADF",
+    "dateAdhesionMutuelle" : "2021/01/01",
+    "dateDebutAdhesionIndividuelle" : "2021/01/01",
+    "numeroAdhesionIndividuelle" : "120320020",
+    "affiliation" : {
+      "nom" : "POPI",
+      "nomPatronymique" : "POPI",
+      "nomMarital" : "POPI",
+      "prenom" : "JEAN PIERRE",
+      "civilite" : "Mr",
+      "periodeDebut" : "2021/01/01",
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "624",
+      "centreOD1" : "0156",
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "AM",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "BENEFICIAIRE"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "18 RUE DES LAGARDES",
+        "ligne2" : "RESIDENCE DES COTEAUX",
+        "ligne3" : "59250",
+        "ligne4" : "HALLUIN",
+        "ligne5" : "F",
+        "ligne6" : "FRANCE",
+        "ligne7" : "CEDEX41",
+        "codePostal" : "5920",
+        "email" : "5920",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "CONSOW0",
+    "dateSouscription" : "2018/05/27",
+    "type" : "B",
+    "nomPorteur" : "POPI",
+    "prenomPorteur" : "JEAN PIERRE",
+    "civilitePorteur" : "Mr",
+    "numeroAdherent" : "54582311001",
+    "numeroAdherentComplet" : "54582311001COMP",
+    "qualification" : "B",
+    "numeroContratCollectif" : "00219071",
+    "rangAdministratif" : "1",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "2",
+    "lienFamilial" : "A",
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "CAD",
+    "critereSecondaire" : "001",
+    "numeroExterneContratIndividuel" : "54582311001",
+    "numeroExterneContratCollectif" : "12",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "0000401166",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1",
+    "identifiantCollectivite" : "N/A",
+    "raisonSociale" : "N/A",
+    "groupePopulation" : "N/A",
+    "codeRenvoi" : "Entete_code_r",
+    "codeItelis" : null
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHAR",
+      "codeProduit" : "AXASC_CGDIM",
+      "modeAssemblage" : "INCLUSION",
+      "codeGarantie" : "AXASCCGDIM",
+      "libelleGarantie" : "CG SANTE CONFORT",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "PHAR-020",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "formulaMask" : "100% TR",
+      "naturePrestation" : "PHARMACIE",
+      "naturePrestationOnline" : "PHARMACIE",
+      "codeAssureurGarantie" : "AXA",
+      "codeOffre" : "CONTRATGROUPEAXA",
+      "versionOffre" : "2023_janv_01.1",
+      "codeOc" : "CONTRAT_GROUPE_AXA",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "020",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2024/01/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSante"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "2020-01-01"
+      }
+    },
+    {
+      "code" : "DENT",
+      "codeProduit" : "AXASC_CGDIM",
+      "modeAssemblage" : "INCLUSION",
+      "codeGarantie" : "AXASCCGDIM",
+      "libelleGarantie" : "CG SANTE CONFORT",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "DENT-020",
+      "noOrdreDroit" : 2,
+      "categorie" : "DENT",
+      "formulaMask" : "100% TR",
+      "naturePrestation" : "DENTAIRE",
+      "naturePrestationOnline" : "DENTAIRE",
+      "codeAssureurGarantie" : "AXA",
+      "codeOffre" : "CONTRATGROUPEAXA",
+      "versionOffre" : "2023_janv_01.1",
+      "codeOc" : "CONTRAT_GROUPE_AXA",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "020",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2024/01/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "Itelis"
+          }
+        },
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSante"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "2020-01-01"
+      }
+    },
+    {
+      "code" : "OPTI",
+      "codeProduit" : "AXASC_CGDIM",
+      "modeAssemblage" : "INCLUSION",
+      "codeGarantie" : "AXASCCGDIM",
+      "libelleGarantie" : "CG SANTE CONFORT",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "OPTI-010",
+      "noOrdreDroit" : 3,
+      "categorie" : "OPTI",
+      "formulaMask" : "100% FR",
+      "naturePrestation" : "OPTIQUE",
+      "naturePrestationOnline" : "OPTIQUE",
+      "codeAssureurGarantie" : "AXA",
+      "codeOffre" : "CONTRATGROUPEAXA",
+      "versionOffre" : "2023_janv_01.1",
+      "codeOc" : "CONTRAT_GROUPE_AXA",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2024/01/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "Itelis"
+          }
+        },
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSante"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "2020-01-01"
+      }
+    }
+  ],
+  "etatSuspension" : "-1",
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.entity.Declaration"
+}

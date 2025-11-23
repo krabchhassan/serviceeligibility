@@ -1,0 +1,94 @@
+{
+  "_id" : "0000401182",
+  "nom" : "AON",
+  "libelle" : "AON",
+  "numeroPrefectoral" : "0000401182",
+  "codePartenaire" : "41457224800055",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "SP",
+  "dateCreation" : "2017-12-01T10:34:58.073+0000",
+  "userCreation" : "sandrine.coudert@cegedim.fr",
+  "dateModification" : "2020-03-30T13:11:43.060+0000",
+  "userModification" : "alexandre.laygnez@cegedim-activ.com",
+  "pilotages" : [
+    {
+      "codeService" : "VISIODROIT",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2017-12-31T00:00:00.000+0000",
+      "caracteristique" : {
+        "codeComptable" : "0004",
+        "generateFichier" : true
+      }
+    },
+    {
+      "codeService" : "SEL-TP",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2017-12-31T00:00:00.000+0000",
+      "caracteristique" : {
+
+      }
+    },
+    {
+      "codeService" : "DCLBEN",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000+0000",
+      "couloirClient" : "IS",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0000401182",
+        "versionNorme" : "003",
+        "codeClient" : "IS"
+      }
+    },
+    {
+      "codeService" : "TPG-IS",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000+0000",
+      "couloirClient" : "IS",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0000401182",
+        "versionNorme" : "V02",
+        "codeClient" : "IS",
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "TPG-SP",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2015-12-31T00:00:00.000+0000",
+      "couloirClient" : "SP",
+      "typeConventionnement" : "SP",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0000401182",
+        "versionNorme" : "V02",
+        "codeClient" : "SP",
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "CARTE-DEMATERIALISEE",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000+0000",
+      "couloirClient" : "AON",
+      "caracteristique" : {
+        "validitesDomainesDroits" : [
+          {
+            "codeDomaine" : "PHAR",
+            "duree" : 10,
+            "unite" : "Jours",
+            "positionnerFinDeMois" : true
+          }
+        ]
+      }
+    }
+  ],
+  "numerosAMCEchanges" : [
+    "0000401182"
+  ]
+}

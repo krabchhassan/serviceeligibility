@@ -1,0 +1,30 @@
+plugins {
+    id 'beyond.gradle.plugins.java-library'
+    id 'java-library'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation('org.springframework.data:spring-data-commons')
+    implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    compileOnly("com.cegedim.beyond.framework:lib-beyond-spring-data-opensearch-starter")
+
+    compileOnly("io.swagger.core.v3:swagger-annotations:2.2.23")
+
+    // ------
+    // Lombok
+    // ------
+    annotationProcessor "org.projectlombok:lombok"
+    implementation "org.projectlombok:lombok"
+
+    implementation("com.fasterxml.jackson.core:jackson-annotations")
+    implementation("org.jetbrains:annotations")
+
+    // tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+    implementation("org.apache.commons:commons-collections4")
+
+    api(project(":schemas"))
+}

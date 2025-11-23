@@ -1,0 +1,36 @@
+workflowDefinition:
+  - code: is-bdds-recalculblb
+    name: Recalcul de la base de localisation des bénéficiaires
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU sert à réinitialiser la base de localisation des bénéficiaires
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-recalculblb-job
+        job: serviceeligibility-recalculblb-job
+        type: java
+        produceOutputs: true
+
+    crex:
+      - name: deletionBeforeReinit
+        description: Réponse de la BLB à la demande de suppression avant réinitialisation
+        ref: steps/step-recalculblb-job/parameters/outputs/deletionBeforeReinit
+      - name: nbBeneficiaries
+        description: Nombre de bénéficiaires traités
+        ref: steps/step-recalculblb-job/parameters/outputs/nbBeneficiaries
+      - name: nbTrackedBeneficiariesOK
+        description: Nombre de messages de la base de localisation reçus avec succés
+        ref: steps/step-recalculblb-job/parameters/outputs/nbTrackedBeneficiariesOK
+      - name: nbTrackedBeneficiariesKO
+        description: Nombre de messages de la base de localisation reçus en échec
+        ref: steps/step-recalculblb-job/parameters/outputs/nbTrackedBeneficiariesKO
+      - name: nbTrackedBeneficiariesNoResponse
+        description: Nombre de messages de la base de localisation non reçus
+        ref: steps/step-recalculblb-job/parameters/outputs/nbTrackedBeneficiariesNoResponse
+      - name: nbTrackedBeneficiariesNoSend
+        description: Nombre de bénéficiaires non envoyés à la base de localisation
+        ref: steps/step-recalculblb-job/parameters/outputs/nbTrackedBeneficiariesNoSend
+
+
+

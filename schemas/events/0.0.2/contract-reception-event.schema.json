@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Réception contrat",
+  "description": "Réception d'un contrat du backoffice",
+  "additionalProperties": false,
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "Identifiant de la trace liée au contrat"
+    },
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant du déclarant du contrat"
+    },
+    "number": {
+      "type": "string",
+      "description": "Numéro de contrat"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro d'adhérent au contrat"
+    }
+  },
+  "required": [
+    "traceId",
+    "declarantId",
+    "number",
+    "subscriberNumber"
+  ],
+  "$id": "Insurance.serviceeligibility.contract.reception.event/0.0.2"
+}

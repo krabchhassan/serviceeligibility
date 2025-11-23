@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" 
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:complexType name="type_historique_affiliation">
+		<xs:sequence>
+			<xs:element name="nom" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nom_patronymique" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nom_marital" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prenom" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="civilite" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="45"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="periode_debut" minOccurs="1" maxOccurs="1" type="xs:date"/>
+			<xs:element name="periode_fin" minOccurs="0" maxOccurs="1" type="xs:date"/>
+			<xs:element name="qualite" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="regime_OD1" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="caisse_OD1" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="centre_OD1" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="regime_OD2" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="caisse_OD2" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="centre_OD2" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="medecin_traitant" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="regime_particulier" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="is_beneficiaire_ACS" minOccurs="1" maxOccurs="1" type="xs:boolean">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

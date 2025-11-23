@@ -1,0 +1,258 @@
+global:
+  nature: dev
+  instanceEnv:
+    beyond.caching.enabled: "false"
+    CLIENT_TYPE: "INSURER"
+    beyond.observability.tracing.enabled: "true"
+    beyond.observability.log.enabled: "false"
+    BEYOND_MANAGEMENTSCOPE_ENABLED: "false"
+    PW_CACHE_ENABLED: "false"
+    COMMON_INDEX_BASENAME: ${COULOIR}
+    COULOIR_VERSION: ${COULOIR}-es16
+    # lié à la classe Producer.java et MessageService.java
+    KAFKA_TOPIC_BDD-CONTRATTP: ${COULOIR}-bdd-contrattp
+    KAFKA_TOPIC_BDD-DEMANDE-ABANDON-TRIGGER: ${COULOIR}-bdd-demandeAbandonTrigger
+    KAFKA_TOPIC_BDD-DEMANDE-DECLARATION: ${COULOIR}-bdd-demandeDeclaration
+    KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION: ${COULOIR}-bdd-demandeRenouvellementDeclaration
+    KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE: ${COULOIR}-bdd-demandeRenouvellementDeclarationUnitaire
+    KAFKA_TOPIC_BDD-UPDATE-RENOUVELLEMENT-DECLARATION: ${COULOIR}-bdd-updateRenouvellementDeclaration
+    KAFKA_TOPIC_BDD-RECIPIENTS-REQUEST: bdd-recipients-request-${COULOIR_VERSION}
+    KAFKA_TOPIC_BDD-UNDUE-RETENTION: ${COULOIR}-bdd-undue-retention
+    SEND_EVENTS: "false"
+    logging.level.com.cegedim.next: "INFO"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "testservicebleu"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_export_trigger_benef_path: "testbleuexporttriggerbenef"
+    SEND_RECIPIENT_MESSAGE: "false"
+dependencies:
+  # Define all dependencies to microservices (name, type=(mock/referenceEnvironment/gatewayAPI))
+  microservices:
+    next-engine-core-api:
+      type: mock
+      path: /engine/core/api
+    next-multioc-core-api:
+      type: mock
+      path: /multioc/core/api
+    next-beyond-configuration:
+      type: mock
+      path: /settingsui
+    next-referential-core-api:
+      type: mock
+      path: /referential/core/api
+
+  datas:
+    PostgreSQL: { }
+    MongoDB:
+      serviceeligibility-core-api:
+        dbname: bdd-next-serviceeligibility-core-api-${COULOIR}
+
+    Kafka:
+      ${COULOIR}.serviceeligibility-core-api-${COULOIR}.declarations:
+        alias: bdd-declaration
+        extraConfig:
+          partitions: 1
+          replication: 2
+      ${COULOIR}-bdd-demandeRenouvellementDeclarationUnitaire:
+        alias: bdd-demandeRenouvellementDeclarationUnitaire
+        extraConfig:
+          partitions: 4
+          replication: 2
+    # beyond-events:
+    #   fromReferenceEnvironment: true
+
+    KafkaConnect:
+      itcare_${COULOIR}-elasticBddBenefConnector:
+        consumes:
+          - ${COULOIR}.serviceeligibility-core-api-${COULOIR}.beneficiaires
+      itcare_${COULOIR}-mongoBddBenefConnector:
+        produces:
+          - ${COULOIR}.serviceeligibility-core-api-${COULOIR}.beneficiaires
+          - ${COULOIR}-refresh-tokens
+      itcare_${COULOIR}-mongoBddDeclarationsConnector:
+        produces:
+          - ${COULOIR}.serviceeligibility-core-api-${COULOIR}.declarations
+          - ${COULOIR}-refresh-tokens
+      itcare_${COULOIR}-mongoBddPrestIJConnector:
+        consumes:
+          - ${COULOIR}-bdd-prestij
+
+serviceeligibility-core-api:
+  service:
+    enabled: "true"
+  instanceEnv:
+    ARL_FOLDER: "/tmp/ARL_RDO_SP/"
+    CONTROLE_CORRESPONDANCE_BOBB: "false"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED"
+    wsdl_api_path: https://${COULOIR}.dev.beyond.cegedim.cloud/serviceeligibility/core/api
+    MAXIMUM_REJECT_LIST_SIZE: "5000"
+
+serviceeligibility-kconnect-api:
+  replicas: "0"
+  service:
+    enabled: "false"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    TOPIC_PREFIX: ${COULOIR}
+    schema.path: "Insurance/serviceeligibility/"
+  resources:
+    requests:
+      memory: "768Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "768Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-beneficiary-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+
+serviceeligibility-consumer-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    BEYOND_MANAGEMENTSCOPE_ENABLED: "false"
+    SEND_RECIPIENT_MESSAGE: "true"
+
+serviceeligibility-consumer-api:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    SEND_RECIPIENT_MESSAGE: "true"
+
+serviceeligibility-prestij-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    schema.path: "Insurance/serviceeligibility/"
+
+serviceeligibility-trigger-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    beyond.messaging.concurrency: "1"
+
+serviceeligibility-triggerrenouvellement-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+
+serviceeligibility-triggerrenouvellement-unitaire-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    BATCH_SIZE: "10000"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    beyond.messaging.concurrency: "1"
+
+rdoserviceprestationpurge-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    SERVICE_CODE: "serviceeligibility"
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    SOCLE_CODE: "Insurance"
+    ELASTICSEARCH_TIMEOUT: "300000"
+
+common-excel-api:
+  service:
+    enabled: "true"
+  instanceEnv: { }
+  resources:
+    requests:
+      memory: "512Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "512Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-core-ui:
+  service:
+    enabled: "true"
+  instanceEnv:
+    authorization_enabled: "true"
+    USE_BEYOND_API: "false"
+    BEYOND_API_URL: "/beyond/internal/api/bdds/v1/ui"
+    SHOW_ITELIS_CODE: "true"
+    FEATURE: "TP_ALMERYS"
+  resources:
+    requests:
+      memory: "256Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "256Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-consolidationcontract-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+
+consolidationcontract-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    SERVICE_CODE: "serviceeligibility"
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    SOCLE_CODE: "Insurance"
+
+serviceeligibility-batch635-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    SERVICE_ELIGIBILITY_PEFB_INPUT: "/pefb/serviceeligibility/job-635/input/"
+    SERVICE_ELIGIBILITY_PEFB_OUTPUT: "/pefb/serviceeligibility/job-635/output/"
+    CONTROL_META: "false"
+
+serviceeligibility-rdoserviceprestation-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    INPUT_FOLDER: "/pefb/serviceeligibility/RdoServicePrestation/in"
+    ARL_FOLDER: "/pefb/serviceeligibility/RdoServicePrestation/out"
+    CONTROL_META: "false"
+    CONTROLE_CORRESPONDANCE_BOBB: "false"
+
+serviceeligibility-batch620-job:
+  service:
+    enabled: "true"
+    instanceEnv:
+      ARL_FOLDER: "/pefb/serviceeligibility/batch620/out"
+
+reprise-beneficiaires-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    schema.path: "Insurance/serviceeligibility/"
+
+serviceeligibility-almerysacl-job:
+  instanceEnv:
+    WORKDIR_INPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/in/"
+    WORKDIR_OUTPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/step2/"
+    ARCHIVE_PATH: "/workdir/serviceeligibility/almerysACL/archive/"
+
+mergealmerys-job:
+  instanceEnv:
+    WORKDIR_INPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/step2/"
+    WORKDIR_OUTPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/out/"
+    ACTIVATED: "true"

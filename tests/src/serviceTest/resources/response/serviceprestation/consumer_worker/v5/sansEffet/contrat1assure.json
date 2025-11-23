@@ -1,0 +1,186 @@
+{
+  "assures": [
+    {
+      "data": {
+        "destinatairesRelevePrestations": [
+          {
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne6": "11130 SIGEAN",
+              "codePostal": "11130"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "idDestinataireRelevePrestations": "60227f927f82500001e8a78a00",
+            "idBeyondDestinataireRelevePrestations": "60227f927f82500001e8a78a00-0000452874"
+          }
+        ],
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "nomUsage": "DELMOTTE",
+          "prenom": "JEAN PIERRE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+          "ligne4": "2 RUE DE LA FONTAINE",
+          "ligne6": "11130 SIGEAN",
+          "codePostal": "11130"
+        },
+        "destinatairesPaiements": [
+          {
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR0250911237509586383316632"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "idDestinatairePaiements": "60227f927f82500001e8a78a00",
+            "idBeyondDestinatairePaiements": "60227f927f82500001e8a78a00-0000452874"
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "email": "jp-delmotte@gagamil.coum",
+          "mobile": "0612345678"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_BASE",
+          "codeAssureur": "BALOO",
+          "libelle": "GT_BASE",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "dateAncienneteGarantie": "2023-01-01"
+        }
+      ],
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1880210121151",
+          "cle": "58"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1880210121151",
+              "cle": "58"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "601"
+            },
+            "periode": {
+              "debut": "2023-01-01",
+              "fin": "2050-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19880210",
+        "rangNaissance": "1",
+        "numeroPersonne": "20280120-01"
+      },
+      "dateAdhesionMutuelle": "2023-01-01",
+      "dateDebutAdhesionIndividuelle": "2023-01-01",
+      "numeroAdhesionIndividuelle": "GGR0125",
+      "dateCreation": "2021-02-09T12:26:58.103Z",
+      "periodes": [
+        {
+          "debut": "2023-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2023-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2023-01-01"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2023-01-01",
+            "fin": "2050-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assure principal"
+      }
+    }
+  ],
+  "version": "3",
+  "traceId": "60227f907f82500001e8a789",
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "0058355012",
+  "numeroAdherent": "0058355012",
+  "dateSouscription": "2023-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2023-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+  ],
+  "critereSecondaireDetaille": " ",
+  "critereSecondaire": " ",
+  "isContratIndividuel": false,
+  "gestionnaire": "First Mutuelle",
+  "contratCollectif": {
+    "numero": "0000194NR1"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "periodesDroitsComptablesOuverts": [
+    {
+      "debut": "2023-01-01"
+    }
+  ]
+}

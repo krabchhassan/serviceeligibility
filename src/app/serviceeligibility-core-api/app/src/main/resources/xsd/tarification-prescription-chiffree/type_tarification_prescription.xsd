@@ -1,0 +1,10 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tarification-prescription-chiffree="http://norme.cegedimassurances.com/tarification-prescription-chiffree"
+	xmlns:commun="http://norme.cegedimassurances.com/commun" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription-chiffree"
+	elementFormDefault="qualified">
+	<xs:complexType name="type_tarification_prescription">
+		<xs:sequence>
+			<xs:element name="prestations_chiffrees" minOccurs="1" maxOccurs="1" type="xs:base64Binary"/>
+			<xs:element name="cle" minOccurs="1" maxOccurs="1" type="xs:base64Binary" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

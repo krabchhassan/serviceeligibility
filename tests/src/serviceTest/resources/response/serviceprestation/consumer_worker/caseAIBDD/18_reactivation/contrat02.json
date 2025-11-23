@@ -1,0 +1,413 @@
+{
+  "idDeclarant": "0032165199",
+  "societeEmettrice": "CODMUT",
+  "numero": "AIBYD1111111111",
+  "numeroExterne": "AIBYD1111111111",
+  "numeroAdherent": "IBYD1111",
+  "numeroAdherentComplet": "AIBYD1111111111",
+  "dateSouscription": "2020-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-06-02"
+    },
+    {
+      "debut": "2020-06-04"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-06-02"
+    },
+    {
+      "debut": "2020-06-04"
+    }
+  ],
+  "critereSecondaireDetaille": " ",
+  "critereSecondaire": " ",
+  "gestionnaire": "CEGEDIM",
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesDroitsComptablesOuverts": [
+    {
+      "debut": "2020-06-04"
+    }
+  ],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19710101",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1710131556987",
+          "cle": "02"
+        },
+        "numeroPersonne": 20288138,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "111",
+              "codeRegime": "01",
+              "codeCentre": "1111"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "nir": {
+              "code": "1710131556987",
+              "cle": "02"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "LOISEAU",
+          "nomUsage": "LOISEAU",
+          "prenom": "Jerome",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "M LOISEAU Jerome",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "105C CHEMIN DES CAUSSADES",
+          "ligne5": "",
+          "ligne6": "82290 ALBEFEUILLE LAGARDE",
+          "ligne7": "",
+          "codePostal": "82290"
+        },
+        "destinatairesPrestations": [
+          {
+            "nom": {
+              "nomFamille": "LOISEAU",
+              "nomUsage": "LOISEAU",
+              "prenom": "mathilde",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme LOISEAU mathilde",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 AVENUE DU GENERAL LEMONNIER",
+              "ligne5": "BP906 PARIS 01",
+              "ligne6": "75026 PARIS CEDEX 01",
+              "ligne7": "",
+              "codePostal": "75026"
+            },
+            "rib": {
+              "iban": "FR7612206008005600551640075",
+              "bic": "AGRIFRPP822"
+            },
+            "modePaiementPrestations": {
+              "code": "V ",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR  "
+            },
+            "periode": {
+              "debut": "2020-06-04"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "LOISEAU",
+              "nomUsage": "LOISEAU",
+              "prenom": "mathilde",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme LOISEAU mathilde",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "6 ALLEE DES FAUVETTES",
+              "ligne5": "",
+              "ligne6": "81000 ALBI",
+              "ligne7": "",
+              "codePostal": "81000"
+            },
+            "rib": {
+              "iban": "FR7612206008005600551640075",
+              "bic": "AGRIFRPP822"
+            },
+            "modePaiementPrestations": {
+              "code": "V ",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR  "
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-06-02"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "nom": {
+              "nomFamille": "LOISEAU",
+              "nomUsage": "LOISEAU",
+              "prenom": "mathilde",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme LOISEAU mathilde",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 AVENUE DU GENERAL LEMONNIER",
+              "ligne5": "BP906 PARIS 01",
+              "ligne6": "75026 PARIS CEDEX 01",
+              "ligne7": "",
+              "codePostal": "75026"
+            },
+            "periode": {
+              "debut": "2020-06-04"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "LOISEAU",
+              "nomUsage": "LOISEAU",
+              "prenom": "mathilde",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme LOISEAU mathilde",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "6 ALLEE DES FAUVETTES",
+              "ligne5": "",
+              "ligne6": "81000 ALBI",
+              "ligne7": "",
+              "codePostal": "81000"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-06-02"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 61,
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "AIBYD1111111111",
+      "digitRelation": {
+        "isTeletransmission": true
+      },
+      "periodes": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-06-02"
+        },
+        {
+          "debut": "2020-06-04"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "ASSPRI",
+        "libelle": "Assure principal"
+      },
+      "droits": [
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1TRIM",
+            "periode": {
+              "fin": "2020-03-31"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1SEME",
+            "periode": {
+              "fin": "2020-06-30"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1MOIS",
+            "periode": {
+              "fin": "2020-01-31"
+            }
+          }
+        },
+        {
+          "code": "PLOMB",
+          "libelle": "Garantie PLOMB",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 10,
+          "type": "O",
+          "dateAncienneteGarantie": "2020-01-01"
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-03",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1TRIM",
+            "periode": {
+              "fin": "2020-06-03"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-03",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1MOIS",
+            "periode": {
+              "fin": "2020-06-03"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-03",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1SEME",
+            "periode": {
+              "fin": "2020-06-30"
+            }
+          }
+        },
+        {
+          "code": "PLOMB",
+          "libelle": "Garantie PLOMB",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-03",
+            "fin": "2020-06-02"
+          },
+          "ordrePriorisation": 10,
+          "type": "O",
+          "dateAncienneteGarantie": "2020-01-01"
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-04"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1TRIM",
+            "periode": {
+              "fin": "2020-06-04"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-04"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1SEME",
+            "periode": {
+              "fin": "2020-06-30"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-04"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1MOIS",
+            "periode": {
+              "fin": "2020-06-04"
+            }
+          }
+        },
+        {
+          "code": "PLOMB",
+          "libelle": "Garantie PLOMB",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-06-04"
+          },
+          "ordrePriorisation": 10,
+          "type": "O",
+          "dateAncienneteGarantie": "2020-01-01"
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "isContratIndividuel": true
+}

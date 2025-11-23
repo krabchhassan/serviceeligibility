@@ -1,0 +1,30 @@
+debug: true
+
+spring:
+  application:
+    name: orga-wrapper
+
+logging:
+  level:
+    com.cegedim.beyond: DEBUG
+
+ORGA_LIB_ENABLED: true
+
+beyond:
+  security:
+    server:
+      enabled: false
+    client:
+      enabled: false
+  management-scope:
+    enabled: false
+  messaging:
+    enabled: false
+  event:
+    consumer:
+      enabled: false
+    publisher:
+      enabled: false
+  audit:
+    publisher:
+      enabled: false

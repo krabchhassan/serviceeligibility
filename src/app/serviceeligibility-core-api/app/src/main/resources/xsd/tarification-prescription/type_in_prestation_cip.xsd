@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:complexType name="type_in_prestation_cip">
+		<xs:sequence>
+			<xs:element name="id_cip" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>ID CIP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type_code_cip">
+				<xs:annotation>
+					<xs:documentation>Type code CIP
+
+A - code CIP du médicament allopathique sur 7 caractères
+B - code CIP du médicament sur 13 caractères
+6 - code CIP du médicament homopathique sur 7 caractères "Petit labo."
+7 - code CIP du médicament homopathique sur 7 caractères "Grand labo."</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="B"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_cip">
+				<xs:annotation>
+					<xs:documentation>Code CIP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="7"/>
+						<xs:maxLength value="13"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prix_unitaire">
+				<xs:annotation>
+					<xs:documentation>Prix unitaire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="quantite_delivree">
+				<xs:annotation>
+					<xs:documentation>Quantité délivrée</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="indic_medicament"  minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicateur médicament délivré
+
+0 - médicament n'appartenant pas  un groupe générique
+1 - médicament générique non soumis  TFR
+4 - référent du groupe générique non soumis  TFR
+5 - référent du groupe générique soumis  TFR
+7 : générique soumis  TFR</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="4"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="indic_substitution" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Indicateur substitution
+
+Indique éventuellement le motif ou le refus de substitution du
+médicament prescrit :
+U - substitution pour Urgence ou Accord du médecin
+N - refus de substitution
+blanc - sinon
+</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="U"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="top_deconditionnement" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Top déconditionnement
+
+Indique si le médicament est déconditionné :
+D - le médicament est déconditionné</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="D"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="quantite_unite" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Quantité unités déconditionnées</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prix_unitaire_unite" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Prix unitaire unité déconditionnée</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nombre_conditionnement" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nombre de conditionnement</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="mode_prescription" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Mode de prescription
+
+Indique éventuellement le mode de prescription du médecin :
+M - mention du Médecin sur la prescription "non substituable"
+blanc - sinon</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="M"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

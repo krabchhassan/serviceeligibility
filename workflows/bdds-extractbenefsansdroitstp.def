@@ -1,0 +1,25 @@
+workflowDefinition:
+  - name: Extraction des personnes n'ayant pas de droits TP générés
+    code: is-bdds-benefsanstp
+    description: l'OMU permet d'extraire des informations sur les bénéficiaires n'ayant pas de droits TP générés dans un fichier déposé sur l'espace personnel.
+    documentation-path: docs/workflows/0.0.1
+    nature: ["dev", "qa", "preprod", "prod"]
+    authorization: SE_P_OMU_DROITS_TP
+    parameters:
+      - name: year
+        description: L'année à partir de laquelle on souhaite connaître les personnes n'ayant pas de droits TP
+        optional: false
+    steps:
+      - name: extractbenefsansdroitstp-job
+        job: extractbenefsansdroitstp-job
+        type: python
+        usePersonalWorkdir: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: year
+              ref: parameters/year
+    crex:
+      - name: file_name
+        description: Le nom du fichier généré
+        ref: steps/extractbenefsansdroitstp-job/parameters/outputs/file_name

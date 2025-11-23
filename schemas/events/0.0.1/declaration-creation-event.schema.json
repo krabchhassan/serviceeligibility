@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Création déclaration",
+  "description": "Création d'une déclaration",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC : numéro préfectoral"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adherent du contrat"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "personNumber": {
+      "type": "string",
+      "description": "Numéro personne du bénéficiaire"
+    },
+    "nir": {
+      "type": "string",
+      "description": "Nir du bénéficiaire"
+    },
+    "birthDate": {
+      "type": "string",
+      "description": "Date de naissance du bénéficiaire"
+    },
+    "birthRank": {
+      "type": "string",
+      "description": "Rang de naissance du bénéficiaire"
+    },
+    "codeEtat": {
+      "type": "string",
+      "description": "Code etat déclaration"
+    },
+    "fileName": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Nom fichier origine de la déclaration"
+    }
+  },
+  "required": [
+    "declarantId",
+    "subscriberNumber",
+    "contractNumber",
+    "personNumber",
+    "nir",
+    "birthDate",
+    "birthRank",
+    "codeEtat"
+  ]
+}

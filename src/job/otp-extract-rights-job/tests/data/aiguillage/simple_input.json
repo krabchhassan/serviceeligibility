@@ -1,0 +1,17 @@
+[
+  {
+    "nir_demande": "123456789",
+    "date_naissance_demande": "20200101",
+    "date_soins_demande": "20210101",
+    "amc_demande": "1",
+    "code_erreur": null,
+    "libelle_erreur": null
+  },
+    {
+    "nir_demande": "987654321",
+    "date_naissance_demande": "20200101",
+    "date_soins_demande": "20210101",
+    "code_erreur": null,
+    "libelle_erreur": null
+  }
+]

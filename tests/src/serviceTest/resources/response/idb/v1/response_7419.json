@@ -1,0 +1,66 @@
+{
+  "codeReponse":
+  {
+    "code": "0000",
+    "detailErreur":
+    [],
+    "libelle": "Autorisation transmise"
+  },
+  "droits":
+  [
+    {
+      "beneficiaire":
+      {
+        "adresses":
+        [],
+        "cleNirOd1": "95",
+        "dateNaissance": "19960419",
+        "historiqueAffiliations":
+        [
+          {
+            "caisseOD1": "111",
+            "centreOD1": "1111",
+            "isBeneficiaireACS": false,
+            "medecinTraitant": "false",
+            "nom": "FEBRE",
+            "nomMarital": "FEBRE",
+            "nomPatronymique": "FEBRE",
+            "periodeDebut": "2023-01-10",
+            "prenom": "MATHILDE",
+            "qualite": "E",
+            "regimeOD1": "01"
+          }
+        ],
+        "nirOd1": "2610469227041",
+        "numeroPersonne": "000423GAMQF9580",
+        "rangNaissance": "1"
+      },
+      "contrat":
+      {
+        "dateSouscription": "2023-01-10",
+        "isContratCMU": false,
+        "isContratResponsable": false,
+        "lienFamilial": "E",
+        "nomPorteur": "FEBRE ERIC",
+        "numero": "00000014649050130000",
+        "numeroAdherent": "00146490",
+        "qualification": "B"
+      },
+      "declarantAmc":
+      {
+        "libelle": "MUTUELLE D'ASSURANCE DE LA BOULANGERIE",
+        "nom": "MAB",
+        "numeroPrefectoral": "0002420016",
+        "numeroRNM": "0002420016"
+      },
+      "periodesDroits":
+      [
+        {
+          "dateRenouvellement": "2025-01-14",
+          "debut": "2025-01-11",
+          "fin": "2025-01-14"
+        }
+      ]
+    }
+  ]
+}

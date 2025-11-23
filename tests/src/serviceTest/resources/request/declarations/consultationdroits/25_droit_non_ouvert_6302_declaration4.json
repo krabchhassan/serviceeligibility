@@ -1,0 +1,501 @@
+{
+  "_id" : "65b1a9bd9dcb727f1042245a",
+  "referenceExterne" : null,
+  "codeEtat" : "R",
+  "effetDebut" : "2024-01-25T00:22:20.618+0000",
+  "idDeclarant" : "0004400008",
+  "isCarteTPaEditer" : false,
+  "carteTPaEditerOuDigitale" : "0",
+  "nomFichierOrigine" : "TFDAPOIP_20240125005042084574.OK",
+  "dateCreation" : "2024-01-25T00:22:20.618+0000",
+  "userCreation" : "job606",
+  "dateModification" : "2024-01-25T00:22:20.618+0000",
+  "userModification" : "job606",
+  "versionDeclaration" : "V03",
+  "beneficiaire" : {
+    "dateNaissance" : "20120214",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "",
+    "cleNirBeneficiaire" : "",
+    "nirOd1" : "1861199216086",
+    "cleNirOd1" : "59",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "171809",
+    "refExternePersonne" : "171809",
+    "affiliation" : {
+      "nom" : "CHEN",
+      "nomPatronymique" : "CHEN",
+      "nomMarital" : "CHEN",
+      "prenom" : "LAURINE",
+      "civilite" : null,
+      "periodeDebut" : "2023/08/01",
+      "periodeFin" : null,
+      "qualite" : "E",
+      "regimeOD1" : "00",
+      "caisseOD1" : "000",
+      "centreOD1" : null,
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : false,
+      "typeAssure" : ""
+    },
+    "adresses" : [
+
+    ]
+  },
+  "contrat" : {
+    "numero" : "00917734",
+    "dateSouscription" : "2023/08/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "",
+    "prenomPorteur" : "",
+    "civilitePorteur" : "",
+    "numeroAdherent" : "00917734",
+    "numeroAdherentComplet" : "",
+    "qualification" : "B",
+    "numeroContratCollectif" : "",
+    "rangAdministratif" : "",
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "destinataire" : null,
+    "individuelOuCollectif" : "",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "E",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "",
+    "gestionnaire" : "",
+    "groupeAssures" : "",
+    "numeroCarte" : "00917734",
+    "editeurCarte" : null,
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : "0004400008",
+    "numOperateur" : ""
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHAR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "DR1",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "PHAR-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/08/01",
+        "periodeFin" : "2024/01/01",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture droits",
+        "modeObtention" : "F",
+        "periodeFermetureDebut" : "2024/01/02",
+        "periodeFermetureFin" : "2035/12/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "SVIL",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "DR1",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "SVIL-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 2,
+      "categorie" : "SVIL",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/08/01",
+        "periodeFin" : "2024/01/01",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture droits",
+        "modeObtention" : "F",
+        "periodeFermetureDebut" : "2024/01/02",
+        "periodeFermetureFin" : "2035/12/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "MED",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "DR1",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "MED-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 3,
+      "categorie" : "MED",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/08/01",
+        "periodeFin" : "2024/01/01",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture droits",
+        "modeObtention" : "F",
+        "periodeFermetureDebut" : "2024/01/02",
+        "periodeFermetureFin" : "2035/12/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "CSTE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "DR1",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "CSTE-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 4,
+      "categorie" : "CSTE",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/08/01",
+        "periodeFin" : "2024/01/01",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture droits",
+        "modeObtention" : "F",
+        "periodeFermetureDebut" : "2024/01/02",
+        "periodeFermetureFin" : "2035/12/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "EXTE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "DR1",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "EXTE-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 5,
+      "categorie" : "EXTE",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/08/01",
+        "periodeFin" : "2024/01/01",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture droits",
+        "modeObtention" : "F",
+        "periodeFermetureDebut" : "2024/01/02",
+        "periodeFermetureFin" : "2035/12/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "DR1",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "HOSP-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 6,
+      "categorie" : "HOSP",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/08/01",
+        "periodeFin" : "2024/01/01",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture droits",
+        "modeObtention" : "F",
+        "periodeFermetureDebut" : "2024/01/02",
+        "periodeFermetureFin" : "2035/12/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "idOrigine" : "64e7eb4c7b1e03f834749b99",
+  "updateElastic" : 1
+}

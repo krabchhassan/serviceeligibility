@@ -1,0 +1,43 @@
+{
+	"services": [
+		"Service_TP"
+	],
+	"key": "0000401166-002",
+	"contrats": [
+		{
+			"numeroContrat": "OOA0004",
+			"codeEtat": "V",
+      "numeroAdherent": "OOA0001",
+			"data": {
+				"nom": {
+					"nomFamille": "PEHAHUT",
+					"nomUsage": "VAITROUAT",
+					"prenom": "AYMERIC"
+				},
+				"adresse": {},
+				"contact": {}
+			},
+			"numeroAMCEchange": "0000401167"
+		}
+	],
+	"amc": {
+		"idDeclarant": "0000401166"
+	},
+
+	"identite": {
+		"nir": {
+			"code": "1041062498045",
+			"cle": "36"
+		},
+		"historiqueDateRangNaissance": [
+			{
+				"dateNaissance": "19801026",
+				"rangNaissance": "1"
+			}
+		],
+		"affiliationsRO": [],
+		"dateNaissance": "19801026",
+		"rangNaissance": "1",
+		"numeroPersonne": "002"
+	}
+}

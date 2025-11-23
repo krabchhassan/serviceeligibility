@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Création bénéficiaire",
+  "description": "Création d'un bénéficiaire",
+  "additionalProperties": false,
+  "properties": {
+    "service": {
+      "type": "string",
+      "description": "Service ouvert pour le bénéficiaire : servicePrestation, servicePrestij, serviceTP"
+    },
+    "key": {
+      "type": "string",
+      "description": "Clé fonctionnelle permettant d'identifier un bénéficiaire de manière unique"
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Nom de famille du bénéficiaire"
+    },
+    "firstName": {
+      "type": "string",
+      "description": "Prénom de famille du bénéficiaire"
+    },
+    "birthDate": {
+      "type": "string",
+      "description": "Date de naissance du bénéficiaire"
+    },
+    "birthRank": {
+      "type": "string",
+      "description": "Rang de naissance du bénéficiaire"
+    },
+    "nir": {
+      "type": "string",
+      "description": "NIR du bénéficiaire"
+    },
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC : numéro préfectoral"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adhérent issu du backoffice"
+    }
+  },
+  "required": [
+    "service",
+    "key",
+    "lastName",
+    "firstName",
+    "birthDate",
+    "birthRank",
+    "nir",
+    "declarantId",
+    "subscriberNumber"
+  ],
+  "$id": "Insurance.serviceeligibility.beneficiary.creation.event/0.0.1"
+}

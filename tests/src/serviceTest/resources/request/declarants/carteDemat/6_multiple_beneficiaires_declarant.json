@@ -1,0 +1,13 @@
+{
+"_id" : "0000000002",
+"_class" : "com.cegedimactiv.basededroit.entity.Declarant",
+"nom" : "MAPA",
+"libelle" : "MAPA LONG",
+"numeroPrefectoral" : "0000000002",
+"codePartenaire" : "MPR",
+"type" : "amc",
+"codeCircuit" : "03",
+"emetteurDroits" : "AMC",
+"operateurPrincipal" : "SP",
+"userCreation" : "bddOffice"
+}

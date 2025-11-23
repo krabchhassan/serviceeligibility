@@ -1,0 +1,125 @@
+{
+  "codeReponse": {
+    "code": "0000",
+    "libelle": "Autorisation transmise",
+    "detailErreur": []
+  },
+  "droits": [
+    {
+      "declarantAmc": {
+        "nom": "BALOO",
+        "libelle": "BALOO",
+        "siret": "",
+        "numeroPrefectoral": "0000401166",
+        "numeroRNM": "0000401166"
+      },
+      "beneficiaire": {
+        "dateNaissance": "20100125",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "2000931314008",
+        "cleNirBeneficiaire": "66",
+        "nirOd1": "2000931314008",
+        "cleNirOd1": "62",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "numeroPersonne": "380322028",
+        "historiqueAffiliations": [
+          {
+            "nom": "DUPOND",
+            "nomPatronymique": "DUPOND",
+            "nomMarital": "DUPOND",
+            "prenom": "PHILIPPA",
+            "periodeDebut": "2012-01-01",
+            "qualite": "E",
+            "regimeOD1": "01",
+            "caisseOD1": "311",
+            "medecinTraitant": "false",
+            "regimeParticulier": "",
+            "isBeneficiaireACS": false
+          }
+        ],
+        "adresses": []
+      },
+      "periodesDroits": [
+        {
+          "debut": "2022-10-01",
+          "fin": "2023-10-25"
+        }
+      ],
+      "contrat": {
+        "numero": "TEST02",
+        "dateSouscription": "2021-01-01",
+        "nomPorteur": "DUPOND",
+        "prenomPorteur": "PHILIPPE",
+        "civilitePorteur": "M",
+        "numeroAdherent": "TEST02",
+        "qualification": "B",
+        "numeroContratCollectif": "010101",
+        "rangAdministratif": "03",
+        "isContratResponsable": true,
+        "isContratCMU": false,
+        "destinataire": "AD",
+        "individuelOuCollectif": "2",
+        "lienFamilial": "E"
+      }
+    },
+    {
+      "declarantAmc": {
+        "nom": "BALOO",
+        "libelle": "BALOO",
+        "siret": "",
+        "numeroPrefectoral": "0000401166",
+        "numeroRNM": "0000401166"
+      },
+      "beneficiaire": {
+        "dateNaissance": "20000920",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "2000931314007",
+        "cleNirBeneficiaire": "62",
+        "nirOd1": "2000931314007",
+        "cleNirOd1": "62",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "numeroPersonne": "380322027",
+        "historiqueAffiliations": [
+          {
+            "nom": "DUPOND",
+            "nomPatronymique": "DUPOND",
+            "nomMarital": "DUPOND",
+            "prenom": "PHILIPPE",
+            "periodeDebut": "2012-01-01",
+            "qualite": "A",
+            "regimeOD1": "01",
+            "caisseOD1": "311",
+            "medecinTraitant": "false",
+            "regimeParticulier": "",
+            "isBeneficiaireACS": false
+          }
+        ],
+        "adresses": []
+      },
+      "periodesDroits": [
+        {
+          "debut": "2022-10-01",
+          "fin": "2023-10-25"
+        }
+      ],
+      "contrat": {
+        "numero": "TEST02",
+        "dateSouscription": "2021-01-01",
+        "nomPorteur": "DUPOND",
+        "prenomPorteur": "PHILIPPE",
+        "civilitePorteur": "M",
+        "numeroAdherent": "TEST02",
+        "qualification": "B",
+        "numeroContratCollectif": "010101",
+        "rangAdministratif": "01",
+        "isContratResponsable": true,
+        "isContratCMU": false,
+        "destinataire": "AD",
+        "individuelOuCollectif": "2",
+        "lienFamilial": "A"
+      }
+    }
+  ]
+}

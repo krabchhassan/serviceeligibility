@@ -1,0 +1,786 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "11111111",
+  "numero": "0001",
+  "numeroExterne": "0001",
+  "numeroAdherent": "0001",
+  "numeroAdherentComplet": "0001",
+  "dateSouscription": "2018-01-01",
+  "dateResiliation": "2023-10-31",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "001",
+  "gestionnaire": "AXA",
+  "contratCollectif": {
+    "numero": "33333333"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "20100819",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1820597407155",
+          "cle": "40"
+        },
+        "numeroPersonne": 5555555,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "311",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1820597407155",
+              "cle": "40"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PLACEHOLDER",
+          "nomUsage": "PLACEHOLDER",
+          "prenom": "ENFANT1",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur PLACEHOLDER ENFANT1",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "1 RUE UNENDROIT",
+          "ligne5": "",
+          "ligne6": "00000 BAB EL OUED",
+          "ligne7": "",
+          "codePostal": "00000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "6666666",
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "CCBPFRPPBEL"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "6666666",
+            "dematerialisation": {
+              "email": "meh.meh@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 2,
+      "dateAdhesionMutuelle": "2016-11-02",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "dateRadiation": "2023-08-31",
+      "identite": {
+        "dateNaissance": "19810619",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2810631555393",
+          "cle": "69"
+        },
+        "numeroPersonne": 6666666,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "311",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "2810631555393",
+              "cle": "69"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PLACEHOLDER2",
+          "nomUsage": "PLACEHOLDER2",
+          "prenom": "MERE",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame PLACEHOLDER2 MERE",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "1 RUE UNENDROIT",
+          "ligne5": "",
+          "ligne6": "00000 BAB EL OUED",
+          "ligne7": "",
+          "codePostal": "00000"
+        },
+        "contact": {
+          "email": "meh.meh@gmail.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "6666666",
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "CCBPFRPPBEL"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "6666666",
+            "dematerialisation": {
+              "email": "meh.meh@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2016-11-02",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ],
+        "dematerialisation": {
+          "email": "meh.meh@gmail.com",
+          "isDematerialise": true
+        }
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01",
+            "fin": "2023-08-31"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    },
+    {
+      "dateRadiation": "2023-11-30",
+      "identite": {
+        "dateNaissance": "20130519",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1820597407155",
+          "cle": "40"
+        },
+        "numeroPersonne": 7777777,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "311",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1820597407155",
+              "cle": "40"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PLACEHOLDER",
+          "nomUsage": "PLACEHOLDER",
+          "prenom": "ENFANT2",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur PLACEHOLDER ENFANT2",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "1 RUE UNENDROIT",
+          "ligne5": "",
+          "ligne6": "00000 BAB EL OUED",
+          "ligne7": "",
+          "codePostal": "00000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "6666666",
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "CCBPFRPPBEL"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "6666666",
+            "dematerialisation": {
+              "email": "meh.meh@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 3,
+      "dateAdhesionMutuelle": "2016-11-02",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01",
+            "fin": "2023-11-30"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "dateRadiation": "2023-08-31",
+      "identite": {
+        "dateNaissance": "20130519",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1820597407156",
+          "cle": "39"
+        },
+        "numeroPersonne": 88888888,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "311",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1820597407156",
+              "cle": "39"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PLACEHOLDER",
+          "nomUsage": "PLACEHOLDER",
+          "prenom": "ENFANT3",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur PLACEHOLDER ENFANT3",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "1 RUE UNENDROIT",
+          "ligne5": "",
+          "ligne6": "00000 BAB EL OUED",
+          "ligne7": "",
+          "codePostal": "00000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "6666666",
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "CCBPFRPPBEL"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "6666666",
+            "dematerialisation": {
+              "email": "meh.meh@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 3,
+      "dateAdhesionMutuelle": "2016-11-02",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01",
+            "fin": "2023-08-31"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "dateRadiation": "2023-08-31",
+      "identite": {
+        "dateNaissance": "20130519",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1820597407154",
+          "cle": "41"
+        },
+        "numeroPersonne": 99999999,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "311",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1820597407154",
+              "cle": "41"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PLACEHOLDER",
+          "nomUsage": "PLACEHOLDER",
+          "prenom": "ENFANT4",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur PLACEHOLDER ENFANT4",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "1 RUE UNENDROIT",
+          "ligne5": "",
+          "ligne6": "00000 BAB EL OUED",
+          "ligne7": "",
+          "codePostal": "00000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "6666666",
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "CCBPFRPPBEL"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "6666666",
+            "dematerialisation": {
+              "email": "meh.meh@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "PLACEHOLDER2",
+              "nomUsage": "PLACEHOLDER2",
+              "prenom": "MERE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame PLACEHOLDER2 MERE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "1 RUE UNENDROIT",
+              "ligne5": "",
+              "ligne6": "00000 BAB EL OUED",
+              "ligne7": "",
+              "codePostal": "00000"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 3,
+      "dateAdhesionMutuelle": "2016-11-02",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01",
+            "fin": "2023-08-31"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        },
+        {
+          "code": "GT_BL_002",
+          "libelle": "CG SANTE RANDOM",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2023-01-01",
+            "fin": "2023-06-30"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "isContratIndividuel": false
+}

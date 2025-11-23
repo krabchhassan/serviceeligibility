@@ -1,0 +1,73 @@
+{
+  "nom": {
+    "nomFamille": "DUREND",
+    "nomUsage": "DUREND",
+    "prenom": "paul",
+    "civilite": "M"
+  },
+  "adresse": {
+    "ligne1": "M DUREND paul",
+    "ligne2": "",
+    "ligne3": "",
+    "ligne4": "AVENUE DE LA GARONNETTE",
+    "ligne5": "",
+    "ligne6": "31000 TOULOUSE",
+    "ligne7": "",
+    "codePostal": "31000"
+  },
+  "destinatairesPrestations": [
+    {
+      "nom": {
+        "nomFamille": "DUREND",
+        "nomUsage": "DUREND",
+        "prenom": "paul",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M DUREND paul",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "AVENUE DE LA GARONNETTE",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "rib": {
+        "iban": "FR7613106001004578945612336",
+        "bic": "AGRIFRPP831"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "nom": {
+        "nomFamille": "DUREND",
+        "nomUsage": "DUREND",
+        "prenom": "paul",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M DUREND paul",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "AVENUE DE LA GARONNETTE",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ps="http://norme.cegedimassurances.com/ps" targetNamespace="http://norme.cegedimassurances.com/ps" elementFormDefault="qualified">
+	<xs:complexType name="type_ps_identifiant">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="1">
+			<xs:element name="num_FINESS_geo">
+				<xs:annotation>
+					<xs:documentation>Numéro de référence identifiant un établissement sanitaire ou social pour le lieu géographique de dispensation des soins.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+                        <xs:totalDigits value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="num_FINESS_juridique">
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+                        <xs:totalDigits value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>				
+			<xs:element name="numero_PS_emetteur">
+					<xs:annotation>
+						<xs:documentation>Numéro de référence des professionnels de santé délivré par la DDASS. Ce numéro est présent sur les cartes CPS.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="9"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="identifiant_RPPS" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Nouvel identifiant des professionnels de santé amené à remplacer le numero ADELI. </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="conventionne" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Permet de savoir si le PS est conventionne ou pas. </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="indicateur_cas" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Permet de savoir si le PS est signataire CAS </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

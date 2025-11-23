@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:commun="http://norme.cegedimassurances.com/commun"
+	xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit"
+	targetNamespace="http://norme.cegedimassurances.com/base_de_droit" 
+	elementFormDefault="qualified">
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_header_out.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_codeReponse.xsd"/>
+	<xs:include schemaLocation="type_declaration.xsd"/>
+	<xs:complexType name="get_info_bdd_response">
+		<xs:sequence>
+			<xs:element name="header_out" minOccurs="1" maxOccurs="1" type="commun:type_header_out"/>
+			<xs:element name="code_reponse" minOccurs="1" maxOccurs="1" type="commun:type_codeReponse"/>
+			<xs:element name="declarations" minOccurs="0" maxOccurs="unbounded" type="base_de_droit:type_declaration"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,154 @@
+{
+  "id": null,
+  "idClientBO": "service-account-test-es16",
+  "amc": {
+    "idDeclarant": "0000401166",
+    "libelle": null
+  },
+  "numeroAdherent": "93000808",
+  "identite": {
+    "nir": {
+      "code": "1860598145145",
+      "cle": "24"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1860598145145",
+          "cle": "24"
+        },
+        "rattachementRO": {
+          "codeRegime": "09",
+          "codeCaisse": "881",
+          "codeCentre": null
+        },
+        "periode": {
+          "debut": "2018-01-01",
+          "fin": null
+        }
+      }
+    ],
+    "dateNaissance": "18690428",
+    "rangNaissance": "1",
+    "numeroPersonne": "2121639",
+    "refExternePersonne": null,
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "18690428",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-12-08T07:09:25.077Z"
+  },
+  "traceId": "6572c1254ad41b62690b017b",
+  "contrats": [
+    {
+      "numeroContrat": "93000808",
+      "codeEtat": null,
+      "data": {
+        "nom": {
+          "nomFamille": "PIPO",
+          "nomUsage": "PIPO",
+          "prenom": "JEANNO",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MADALE JEAN",
+          "ligne2": null,
+          "ligne3": null,
+          "ligne4": "50 ROI",
+          "ligne5": null,
+          "ligne6": "78510 VILLE",
+          "ligne7": null,
+          "codePostal": "78510"
+        },
+        "contact": {
+          "fixe": null,
+          "mobile": null,
+          "email": "jean.MADALE@zoo.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2121639",
+            "idBeyondDestinatairePaiements": "2121639-0000401166",
+            "nom": {
+              "nomFamille": "MADALE",
+              "nomUsage": "MADALE",
+              "prenom": "JEAN",
+              "civilite": "M",
+              "raisonSociale": null
+            },
+            "adresse": {
+              "ligne1": "Monsieur MADALE JEAN",
+              "ligne2": null,
+              "ligne3": null,
+              "ligne4": "50 QUAI AUGUSTE ROY",
+              "ligne5": null,
+              "ligne6": "78510 VILLE",
+              "ligne7": null,
+              "codePostal": "78510",
+              "pays": null,
+              "telephone": null,
+              "email": null,
+              "typeAdresse": null
+            },
+            "rib": {
+              "bic": "AGRIFRPP848",
+              "iban": "FR7630006000011234567890189"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01",
+              "fin": null
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2121639",
+            "idBeyondDestinataireRelevePrestations": "2121639-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false,
+              "email": null,
+              "mobile": null
+            },
+            "nom": {
+              "nomFamille": "MADALE",
+              "nomUsage": "MADALE",
+              "prenom": "JEAN",
+              "civilite": "M",
+              "raisonSociale": null
+            },
+            "adresse": {
+              "ligne1": "Monsieur MADALE JEAN",
+              "ligne2": null,
+              "ligne3": null,
+              "ligne4": "50 QUAI AUGUSTE ROY",
+              "ligne5": null,
+              "ligne6": "78510 VILLE",
+              "ligne7": null,
+              "codePostal": "78510"
+            },
+            "periode": {
+              "debut": "2023-01-01",
+              "fin": null
+            }
+          }
+        ]
+      },
+      "numeroAdherent": "93000808",
+      "societeEmettrice": "000ER00693",
+      "numeroAMCEchange": null
+    }
+  ],
+  "services": [
+    "ServicePrestation"
+  ],
+  "key": null
+}

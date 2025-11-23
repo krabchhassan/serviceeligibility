@@ -1,0 +1,18 @@
+workflowDefinition:
+  - code: is-bdds-exptriginfos
+    name: Génération des fichiers de détail des déclencheurs de génération des droits TP
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à exporter un fichier sur s3, par trigger de renouvellement (non exporté), contenant les informations des triggers benefs associés
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-exptriginfos-job
+        job: exporttriggerinfos-job
+        type: java
+        produceOutputs: true
+
+    crex:
+      - name: cheminsFichiersTriggers
+        description: Chemin vers le fichier s3
+        ref: steps/step-exptriginfos-job/parameters/outputs/cheminsFichiersTriggers

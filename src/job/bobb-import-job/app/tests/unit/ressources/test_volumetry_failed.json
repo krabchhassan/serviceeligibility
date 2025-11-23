@@ -1,0 +1,59 @@
+[
+  {
+    "codeAMC": null,
+    "codeInsurer": "ASSU00076",
+    "codeContractElement": "FSOA18936A",
+    "label": "FSOA18936A",
+    "productElements": [
+      {
+        "codeOffer": "JQA18935",
+        "codeProduct": "RSOA18936A",
+        "codeBenefitNature": "ajout",
+        "codeAmc": "ASSU11076",
+        "from": "2021-05-17",
+        "effectiveDate": "2017-03-12"
+      }
+    ],
+    "ignored": false,
+    "origine": "IMPORT",
+    "user": "jgorton0@blogs.com"
+  },
+  {
+    "codeAMC": null,
+    "codeInsurer": "ASSU00187",
+    "codeContractElement": "FSSC46380A",
+    "label": "FSSC46380A",
+    "productElements": [
+      {
+        "codeOffer": "FSA18935",
+        "codeProduct": "FSBA12956A",
+        "codeBenefitNature": "ajout",
+        "codeAmc": "ASSU00076",
+        "from": "2021-03-12",
+        "effectiveDate": "2019-12-26"
+      }
+    ],
+    "ignored": true,
+    "origine": "IMPORT",
+    "user": "jlawling1@hud.gov"
+  },
+  {
+    "codeAMC": null,
+    "codeInsurer": "ASSU00098",
+    "codeContractElement": "FSBA56956A",
+    "label": "FSBA56956A",
+    "productElements": [
+      {
+        "codeOffer": "KSA18935",
+        "codeProduct": "FRES18936A",
+        "codeBenefitNature": "ajout",
+        "codeAmc": "ASSU00098",
+        "from": "2021-12-28",
+        "effectiveDate": "2019-02-24"
+      }
+    ],
+    "ignored": true,
+    "origine": "IMPORT",
+    "user": "atomkinson2@techcrunch.com"
+  }
+]

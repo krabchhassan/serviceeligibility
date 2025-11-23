@@ -1,0 +1,171 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "02967043",
+  "numeroExterne": "02967043",
+  "numeroAdherent": "02967043",
+  "numeroAdherentComplet": "GRE0314_00",
+  "dateSouscription": "%%CURRENT_YEAR%%-01-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2023-01-01",
+      "fin" : "2023-08-30"
+    }
+  ],
+  "apporteurAffaire": "Courtier & Co",
+  "critereSecondaireDetaille": "CADSUP",
+  "critereSecondaire": "CAD",
+  "isContratIndividuel": false,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "00219210",
+    "identifiantCollectivite": "N/A",
+    "raisonSociale": "N/A",
+    "groupePopulation": "N/A"
+  },
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": false,
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-01-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1592026010103",
+          "cle": "57"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1592026010103",
+              "cle": "57"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "numeroPersonne": "59202601010301",
+        "refExternePersonne": "16633210"
+      },
+      "dateAdhesionMutuelle": "%%CURRENT_YEAR%%-01-01",
+      "dateDebutAdhesionIndividuelle": "%%CURRENT_YEAR%%-01-01",
+      "numeroAdhesionIndividuelle": "166314001",
+      "periodes": [
+        {
+          "debut": "%%CURRENT_YEAR%%-01-01"
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BLUE",
+          "prenom": "VIOLET",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "M BLUE VIOLET",
+          "ligne4": "7, boulevard Bryas",
+          "ligne6": "97610 DZAOUDZI",
+          "ligne7": "France",
+          "codePostal": "97610"
+        },
+        "contact": {
+          "fixe": "01.02.22.33.38",
+          "mobile": "06.63.48.78.21",
+          "email": "vincentGREEN@yahaa.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "GR100314",
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "VIOLET",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M BLUE VIOLET",
+              "ligne4": "7, boulevard Bryas",
+              "ligne6": "97610 DZAOUDZI",
+              "ligne7": "France",
+              "codePostal": "97610"
+            },
+            "rib": {
+              "bic": "AGRIFRPP882",
+              "iban": "FR7618206000062578974521458"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "GRP100314",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "VIOLET",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M BLUE VIOLET",
+              "ligne4": "7, boulevard Bryas",
+              "ligne6": "97610 DZAOUDZI",
+              "ligne7": "France",
+              "codePostal": "97610"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_BASE",
+          "codeAssureur": "BALOO",
+          "libelle": "GT_BASE",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "%%CURRENT_YEAR%%-09-05"
+          },
+          "dateAncienneteGarantie": "%%CURRENT_YEAR%%-01-01"
+        }
+      ]
+    }
+  ],
+  "version": "5"
+}

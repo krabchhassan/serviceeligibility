@@ -1,0 +1,1 @@
+FROM registry-forge.dev.beyond.cegedim.cloud/cegedim/common-base-docker-selenium_docker:1.0.8

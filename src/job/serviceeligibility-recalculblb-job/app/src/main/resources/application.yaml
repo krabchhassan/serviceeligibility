@@ -1,0 +1,52 @@
+beyond:
+  messaging:
+    transactional: false
+    types:
+      BeneficiaireId: com.cegedim.next.serviceeligibility.core.model.kafka.benef.BeneficiaireId
+      Insurance.beneficiarylocation.beneficiary.feeding.response: com.cegedim.beyond.blb.recalcul.kafka.model.BeneficiaryFeedingDto
+      Insurance.serviceeligibility.job.beneficiary.location.deletion: com.cegedim.beyond.blb.recalcul.kafka.model.BlbLogicalDeletionDto
+      Insurance.beneficiarylocation.logical.deletion.response: com.cegedim.beyond.blb.recalcul.kafka.model.BlbLogicalDeletionResponseDto
+    event:
+      group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-recalcul-job
+  management-scope:
+    enabled: false
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+logging:
+  level:
+    com.cegedim.next: INFO
+    com.cegedim.next.core.scaffolding: DEBUG
+    org.springframework.messaging: INFO
+    org.springframework.web: INFO
+spring:
+  main:
+    web-application-type: servlet
+  application:
+    admin:
+      enabled: true
+    name: serviceeligibilityrecalcul-blb-job
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URL}
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS}
+    consumer:
+      auto-offset-reset: latest
+      group-id: ${CLOUD_PROVIDER}-${BEYOND_INSTANCE}-blb
+    producer:
+      acks: all
+      batch-size: 16384
+      buffer-memory: 33554432
+      compression-type: snappy
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        "linger.ms": 1
+        "request.timeout.ms": 50000
+      retries: 0
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

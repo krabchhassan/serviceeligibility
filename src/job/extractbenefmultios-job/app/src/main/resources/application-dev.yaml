@@ -1,0 +1,44 @@
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+
+schema:
+  path: Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+kafka:
+  topic:
+    beyond-events: events
+beyond:
+  customer: editeur
+  couloir: htp
+  instance: htp-es15
+  observability:
+    log:
+      enabled: false
+OUTPUT_PATH: "/workdir/extractbenefmultios/"
+SEND_EVENTS: 'false'
+server:
+  port: '8090'
+insurer_settings_file_path: insurance/serviceeligibility/insurer_settings.json
+TARGET_ENV: local
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+EXTRACT_FLUX: 'true'
+logging:
+  level:
+    com:
+      cegedim: info
+socle:
+  code: Insurance
+TARGET_DOMAIN: dev
+ARL_FOLDER: C:/tmp/arlfiles
+service:
+  code: serviceeligibility
+KAFKA_SERVERS: localhost:9092
+CLOUD_PROVIDER: itcare

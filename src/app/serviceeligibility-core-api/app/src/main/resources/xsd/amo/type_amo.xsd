@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:amo="http://norme.cegedimassurances.com/amo" xmlns:ps="http://norme.cegedimassurances.com/ps" targetNamespace="http://norme.cegedimassurances.com/amo" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_organisme_amo.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/ps" schemaLocation="../ps/type_medecin_traitant.xsd"/>	
+	<xs:complexType name="type_amo">
+		<xs:sequence>
+			<xs:element name="organisme" type="amo:type_organisme_amo" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Informations concernant l'organisme obligatoire</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="medecin_traitant" type="ps:type_medecin_traitant" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Informations concernant le prescripteur</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

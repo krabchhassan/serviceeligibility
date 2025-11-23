@@ -1,0 +1,16 @@
+{
+  "_id" : "0000000002",
+  "nom" : "CCMO",
+  "libelle" : "Declarant AMC CCMO",
+  "numeroPrefectoral" : "0060005615",
+  "type" : "amc",
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.entity.Declarant",
+  "pilotages" : [
+    {
+      "codeService" : "VISIODROIT",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2017-06-19T00:00:00.000Z",
+      "caracteristique" : {}
+    }
+  ]
+}

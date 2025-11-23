@@ -1,0 +1,101 @@
+{
+  "properties": {
+    "codeContractElement": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "codeInsurer": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "indexingDate": {
+      "type": "date"
+    },
+    "ignored": {
+      "type": "boolean"
+    },
+    "label": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "origine": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "productElements": {
+      "properties": {
+        "codeAmc": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "codeBenefitNature": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "codeOffer": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "codeProduct": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "effectiveDate": {
+          "type": "date"
+        },
+        "from": {
+          "type": "date"
+        }
+      }
+    },
+    "user": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    }
+  }
+}

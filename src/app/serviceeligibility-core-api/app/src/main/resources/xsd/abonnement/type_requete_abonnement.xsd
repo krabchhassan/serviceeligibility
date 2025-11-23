@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by Philippe (ca) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/abonnement" xmlns:patient="http://norme.cegedimassurances.com/patient" xmlns:ps="http://norme.cegedimassurances.com/ps" targetNamespace="http://norme.cegedimassurances.com/abonnement" elementFormDefault="qualified">
+	<xs:import namespace="http://norme.cegedimassurances.com/ps" schemaLocation="../ps/type_ps_demandeur.xsd"/>	
+	<xs:import namespace="http://norme.cegedimassurances.com/patient" schemaLocation="../patient/type_info_patient.xsd"/>	
+	<xs:include schemaLocation="type_info_abonnement.xsd"></xs:include>
+	<xs:complexType name="type_requete_abonnement">
+		<xs:sequence>
+			<xs:element name="idPS" type="ps:type_ps_demandeur" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Identification du professionnel de santé demandeur</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="infoPatient" type="patient:type_info_patient" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="infoAbonnement" type="type_info_abonnement" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

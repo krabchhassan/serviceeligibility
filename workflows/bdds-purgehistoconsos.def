@@ -1,0 +1,28 @@
+workflowDefinition:
+  - code: is-bdds-purgehisto
+    name: purge des histo consos contrat
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à purger les histo contrat vieux de + 1 an et de les extraire dans un fichier sur le bucket s3
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: days
+        description: Le nombre de jours à partir duquel la purge s'opère
+        optional: true
+
+    steps:
+      - name: step-purgehistoconsos-job
+        job: purgehistoconsos-job
+        type: java
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: DAYS
+              ref: parameters/days
+
+    crex:
+      - name: cheminFichierPurgeS3
+        description: Chemin vers le fichier d'extraction de purge dans le bucket s3
+        ref: steps/step-purgehistoconsos-job/parameters/outputs/cheminFichierPurgeS3
+      - name: nombreHistoContratPurge
+        description: Nombre d'historique consos contrat purge
+        ref: steps/step-purgehistoconsos-job/parameters/outputs/nombreHistoContratPurge

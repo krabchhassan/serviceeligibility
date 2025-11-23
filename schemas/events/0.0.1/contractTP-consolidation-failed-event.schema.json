@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Echec consolidation déclarations",
+  "description": "Echec de la consolidation des déclarations dans le but de générer un contrat TP.",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adhérent du contrat"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "errorDate": {
+      "type": "string",
+      "description": "Date de l'erreur"
+    },
+    "error": {
+      "type": "string",
+      "description": "Anomalie remontée lors de la tentative de génération du contrat TP"
+    }
+  },
+  "required": [
+    "declarantId",
+    "subscriberNumber",
+    "contractNumber",
+    "errorDate",
+    "error"
+  ],
+  "$id": "Insurance.serviceeligibility.contractTP.consolidation.failed.event/0.0.1"
+}

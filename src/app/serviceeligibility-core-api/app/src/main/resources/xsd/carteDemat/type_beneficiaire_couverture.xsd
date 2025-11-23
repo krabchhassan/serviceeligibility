@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+	
+	<xs:include schemaLocation="type_prestation.xsd" />
+
+	<xs:complexType name="type_beneficiaire_couverture">
+		<xs:annotation>
+			<xs:documentation>Resultat de la consolidation des garanties et des
+				taux de couverture</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="codeDomaine">
+				<xs:annotation>
+					<xs:documentation>Code du domaine de droits
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="5" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="tauxRemboursement">
+				<xs:annotation>
+					<xs:documentation>Taux de couverture pour le domaine
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="uniteTauxRemboursement">
+				<xs:annotation>
+					<xs:documentation>Unite du taux de couverture pour le domaine
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="periodeDebut" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de debut des droits
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="periodeFin" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de fin des droits
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="codeExterneProduit" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference externe du produit
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="30" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="codeOptionMutualiste" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Option mutualiste
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelleOptionMutualiste" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Libelle option
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="codeProduit" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifiant technique du produit commercialise
+						attribué dans le referentiel de parametrage de l'AMC
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelleProduit" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom du produit commercialise
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="codeGarantie">
+				<xs:annotation>
+					<xs:documentation>Identifiant technique de la garantie qui couvre
+						les prestations pour le produit commercialise
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelleGarantie" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom de la garantie
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prioriteDroits">
+				<xs:annotation>
+					<xs:documentation>Ordre de priorite de la garantie
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="origineDroits" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Back-office origine des droits lorsque l'AMC a
+						plusieurs BO
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dateAdhesionCouverture" type="xs:date"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date d'adhesion à la couverture
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="libelleCodeRenvoi" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Libelle du code renvoi
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="categorieDomaine">
+				<xs:annotation>
+					<xs:documentation>Qualification du domaine
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prestations" type="prestations" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="prestations">
+		<xs:sequence>
+			<xs:element name="prestation" type="type_prestation"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

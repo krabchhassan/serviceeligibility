@@ -1,0 +1,68 @@
+ {
+    "codeReponse": {
+      "code": "0000",
+      "libelle": "Autorisation transmise",
+      "detailErreur": []
+    },
+    "droits": [
+      {
+        "declarantAmc": {
+          "nom": "BALOO",
+          "libelle": "BALOO",
+          "siret": "",
+          "numeroPrefectoral": "0000401166",
+          "numeroRNM": "0000401166"
+        },
+        "beneficiaire": {
+          "dateNaissance": "19791006",
+          "rangNaissance": "1",
+          "nirBeneficiaire": "1791062498049",
+          "cleNirBeneficiaire": "43",
+          "nirOd1": "1791062498049",
+          "cleNirOd1": "43",
+          "nirOd2": "",
+          "cleNirOd2": "",
+          "numeroPersonne": "52698265",
+          "historiqueAffiliations": [
+            {
+              "nom": "LOISARD",
+              "nomPatronymique": "LOISARD",
+              "nomMarital": "LOISARD",
+              "prenom": "JOSEPH",
+              "periodeDebut": "2012-01-01",
+              "qualite": "A",
+              "regimeOD1": "01",
+              "caisseOD1": "597",
+              "medecinTraitant": "false",
+              "regimeParticulier": "",
+              "isBeneficiaireACS": false
+            }
+          ],
+          "adresses": []
+        },
+        "periodesDroits": [
+          {
+            "debut": "2023-01-15",
+            "fin": "2023-12-15",
+            "dateRenouvellement": "%%TODAY%%"
+          }
+        ],
+        "contrat": {
+          "numero": "93624158",
+          "dateSouscription": "2012-01-01",
+          "nomPorteur": "LOISARD",
+          "prenomPorteur": "JOSEPH",
+          "civilitePorteur": "M",
+          "numeroAdherent": "93624158",
+          "qualification": "B",
+          "numeroContratCollectif": "00219071",
+          "rangAdministratif": "01",
+          "isContratResponsable": true,
+          "isContratCMU": false,
+          "destinataire": "AD",
+          "individuelOuCollectif": "2",
+          "lienFamilial": "A"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,53 @@
+{
+    "contrat" : {
+        "numero" : "123456789",
+        "numeroExterne" : "984837773",
+        "numeroAdherent" : "123456789",
+        "numeroAdherentComplet" : "ADH984837773",
+        "dateResiliation" : "2020-12-31",
+        "dateEffet": "2020-01-01",
+        "isContratIndividuel" : true,
+        "contratCollectif" : {
+            "numero" : "433994884",
+            "numeroExterne" : "EXT433994884"
+        }
+    },
+    "oc" : {
+        "identifiantPrestIj" : "M0004",
+        "identifiant" : "0008400004",
+        "denomination" : "First Mutuelle"
+    },
+    "entreprise" : {
+        "identifiantSiret" : "12345678900000",
+        "identifiantSiren" : "123456789",
+        "identifiantNic" : "00000",
+        "raisonSociale" : "ENTREPRISE1"
+    },
+    "assures": [
+        {
+            "nir" : {
+                "code": "1791062498046",
+                "cle": "46"
+            },
+            "numeroPersonne" : "123456783",
+            "referenceExternePersonne" : "123456783",
+            "dateNaissance" : "19791006",
+            "rangNaissance" : "1",
+            "data" : {
+                "nom" : {
+                    "nomFamille" :"HERMEZ",
+                    "nomUsage" : "LETEST",
+                    "prenom" : "REYNALD",
+                    "civilite" : "MR"
+                }
+            },
+            "droits" : [
+                {
+                    "type" : "IJ",
+                    "dateDebut" : "2020-03-04",
+                    "dateFin" : "2020-12-31"
+                }
+            ]
+        }
+    ]
+}

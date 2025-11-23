@@ -1,0 +1,26 @@
+{
+  "offerCode": "CONTRATGROUPEAXA",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2024_janv_01.1",
+      "effectDate": "2023-04-12T13:14:56.672Z",
+      "validityDate": "2023-01-01",
+      "engineVersion": "33.0",
+      "domains": [
+        {
+          "domainCode": "LABO",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "LABORATOIRE"
+          },
+          "tpOnline": {
+            "nature": "LABORATOIRE"
+          }
+        }
+      ]
+    }
+  ]
+}

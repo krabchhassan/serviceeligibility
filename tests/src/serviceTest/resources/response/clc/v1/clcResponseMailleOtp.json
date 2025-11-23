@@ -1,0 +1,219 @@
+{
+  "codeReponse": {
+    "code": "0000",
+    "libelle": "Autorisation transmise",
+    "detailErreur": []
+  },
+  "droits": [
+    {
+      "declarantAmc": {
+        "nom": "BALOO",
+        "libelle": "BALOO",
+        "siret": "",
+        "numeroPrefectoral": "0000401166",
+        "numeroRNM": "0000401166"
+      },
+      "beneficiaire": {
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "1791062498049",
+        "cleNirBeneficiaire": "43",
+        "nirOd1": "1791062498049",
+        "cleNirOd1": "43",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "numeroPersonne": "52698265",
+        "historiqueAffiliations": [
+          {
+            "nom": "LOISARD",
+            "nomPatronymique": "LOISARD",
+            "nomMarital": "LOISARD",
+            "prenom": "JOSEPH",
+            "periodeDebut": "2012-01-01",
+            "qualite": "A",
+            "regimeOD1": "01",
+            "caisseOD1": "597",
+            "medecinTraitant": "false",
+            "regimeParticulier": "",
+            "isBeneficiaireACS": false
+          }
+        ],
+        "adresses": []
+      },
+      "domainesDroits": [
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "GARANTIE_01",
+              "produits": [
+                {
+                  "codeProduit": "PRODUIT_01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "REFERENCE_01",
+                      "periodesDroit": [
+                        {
+                          "typePeriode": "OFFLINE",
+                          "periodeDebut": "2023-01-15",
+                          "periodeFin": "2023-02-28",
+                          "periodeFinFermeture": "2023-12-31",
+                          "libelleEvenement": "Fermeture droits",
+                          "modeObtention": "F",
+                          "motifEvenement": "FE"
+                        }
+                      ],
+                      "prioritesDroit": [
+                        {
+                          "code": "01",
+                          "libelle": "01",
+                          "typeDroit": "01",
+                          "prioriteBO": "01",
+                          "periodes": [
+                            {
+                              "debut": "2023-01-01",
+                              "fin": "2023-02-28"
+                            }
+                          ]
+                        }
+                      ],
+                      "conventionnements": [
+                        {
+                          "priorite": 0,
+                          "typeConventionnement": {
+                            "code": "IS",
+                            "libelle": "IS"
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2023-01-01",
+                              "fin": "2023-02-28"
+                            }
+                          ]
+                        }
+                      ],
+                      "prestations": [
+                        {
+                          "code": "DEF",
+                          "isEditionRisqueCarte": false,
+                          "formule": {
+                            "numero": "099",
+                            "parametres": []
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2023-01-01",
+                              "fin": "2023-02-28"
+                            }
+                          ]
+                        }
+                      ],
+                      "remboursements": [
+                        {
+                          "tauxRemboursement": "PEC",
+                          "uniteTauxRemboursement": "XX",
+                          "periodes": [
+                            {
+                              "debut": "2023-01-01",
+                              "fin": "2023-02-28"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "referenceCouverture": "REFERENCE_02",
+                      "periodesDroit": [
+                        {
+                          "typePeriode": "OFFLINE",
+                          "periodeDebut": "2023-03-01",
+                          "periodeFin": "2023-12-15",
+                          "libelleEvenement": "Initialisation des droits",
+                          "modeObtention": "O",
+                          "motifEvenement": "IN"
+                        }
+                      ],
+                      "prioritesDroit": [
+                        {
+                          "code": "01",
+                          "libelle": "01",
+                          "typeDroit": "01",
+                          "prioriteBO": "01",
+                          "periodes": [
+                            {
+                              "debut": "2023-03-01",
+                              "fin": "2023-12-31"
+                            }
+                          ]
+                        }
+                      ],
+                      "conventionnements": [
+                        {
+                          "priorite": 0,
+                          "typeConventionnement": {
+                            "code": "IS",
+                            "libelle": "IS"
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2023-03-01",
+                              "fin": "2023-12-31"
+                            }
+                          ]
+                        }
+                      ],
+                      "prestations": [
+                        {
+                          "code": "DEF",
+                          "isEditionRisqueCarte": false,
+                          "formule": {
+                            "numero": "099",
+                            "parametres": []
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2023-03-01",
+                              "fin": "2023-12-31"
+                            }
+                          ]
+                        }
+                      ],
+                      "remboursements": [
+                        {
+                          "tauxRemboursement": "PEC",
+                          "uniteTauxRemboursement": "XX",
+                          "periodes": [
+                            {
+                              "debut": "2023-03-01",
+                              "fin": "2023-12-31"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "contrat": {
+        "numero": "93624158",
+        "dateSouscription": "2012-01-01",
+        "nomPorteur": "LOISARD",
+        "prenomPorteur": "JOSEPH",
+        "civilitePorteur": "M",
+        "numeroAdherent": "93624158",
+        "qualification": "B",
+        "numeroContratCollectif": "00219071",
+        "rangAdministratif": "01",
+        "isContratResponsable": true,
+        "isContratCMU": false,
+        "destinataire": "AD",
+        "individuelOuCollectif": "2",
+        "lienFamilial": "A"
+      }
+    }
+  ]
+}

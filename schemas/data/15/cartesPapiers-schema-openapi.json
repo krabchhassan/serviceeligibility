@@ -1,0 +1,673 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "cartesPapiers",
+      "description": "Cartes TP papier"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "CartesPapier": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/CartePapier"
+        }
+      },
+      "CartePapier": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numeroAMC": {
+            "type": "string",
+            "description": "Numéro de l'AMC"
+          },
+          "nomAMC": {
+            "type": "string",
+            "description": "Nom de l'AMC"
+          },
+          "libelleAMC": {
+            "type": "string",
+            "description": "Libellé de l'AMC"
+          },
+          "periodeDebut": {
+            "type": "string",
+            "description": "Période de début de la carte TP",
+            "format": "AAAA/MM/JJ"
+          },
+          "periodeFin": {
+            "type": "string",
+            "description": "Période de fin de la carte TP",
+            "format": "AAAA/MM/JJ"
+          },
+          "societeEmettrice": {
+            "type": "string",
+            "description": "Société émettrice du contrat"
+          },
+          "codeRenvoi": {
+            "type": "string",
+            "description": "Code de renvoi TP de niveau carte"
+          },
+          "libelleRenvoi": {
+            "type": "string",
+            "description": "Libellé de renvoi TP de niveau carte"
+          },
+          "codeConvention": {
+            "type": "string",
+            "description": "Code de la convention de niveau en-tête"
+          },
+          "libelleConvention": {
+            "type": "string",
+            "description": "Libellé de la convention de niveau en-tête"
+          },
+          "fondCarte": {
+            "type": "string",
+            "description": "Fond de la carte TP"
+          },
+          "annexe1Carte": {
+            "type": "string",
+            "description": "Première annexe de la carte TP"
+          },
+          "annexe2Carte": {
+            "type": "string",
+            "description": "Seconde annexe de la carte TP"
+          },
+          "numAMCEchange": {
+            "type": "string",
+            "description": "Numero d'AMC échange"
+          },
+          "numOperateur": {
+            "type": "string",
+            "description": "Numéro opérateur"
+          },
+          "dateTraitement": {
+            "type": "string",
+            "format": "AAAA-MM-JJ",
+            "description": "Date de traitement"
+          },
+          "contexte": {
+            "type": "string",
+            "description": "Le contexte d'édition A (Annuel) ou Q (Quotidien)"
+          },
+          "contrat": {
+            "$ref": "#/components/schemas/Contrat"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/Adresse"
+          },
+          "beneficiaires": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BenefCartePapier"
+            }
+          },
+          "domainesConventions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DomaineConvention"
+            }
+          }
+        },
+        "required": [],
+        "title": "Carte TP Papier"
+      },
+      "Contrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string",
+            "description": "Numéro du contrat"
+          },
+          "numeroAdherent": {
+            "type": "string",
+            "description": "Numéro de l'adhérent"
+          },
+          "numeroAdherentComplet": {
+            "type": "string",
+            "description": "Numéro complet de l'adhérent"
+          },
+          "nomPorteur": {
+            "type": "string",
+            "description": "Nom du porteur du contrat"
+          },
+          "prenomPorteur": {
+            "type": "string",
+            "description": "Prénom du porteur du contrat"
+          },
+          "civilitePorteur": {
+            "type": "string",
+            "description": "Civilité du porteur du contrat"
+          },
+          "numeroContratCollectif": {
+            "type": "string",
+            "description": "Numéro du contrat collectif"
+          },
+          "numeroExterneContratIndividuel": {
+            "type": "string",
+            "description": "Numéro externe du contrat individuel"
+          },
+          "numeroExterneContratCollectif": {
+            "type": "string",
+            "description": "Numéro du contrat collectif"
+          },
+          "isContratResponsable": {
+            "type": "boolean",
+            "description": "Flag indiquant si le contrat est un contrat responsable"
+          },
+          "isContratCMU": {
+            "type": "boolean",
+            "description": "Flag indiquant si le contrat est un contrat CMU"
+          },
+          "contratCMUC2S": {
+            "type": "string",
+            "description": "Contrat CMU C2S (0 : Pas de CMU et pas de C2S, 1 : CMU ou C2S sans participation, 2 : C2S avec participation)"
+          },
+          "individuelOuCollectif": {
+            "type": "string",
+            "description": "1 : Contrat individuel, 2 : Adhésion individuelle à un contrat collectif"
+          },
+          "categorieSociale": {
+            "type": "string",
+            "description": "Catégorie sociale"
+          },
+          "critereSecondaireDetaille": {
+            "type": "string",
+            "description": "Information permettant de découper la population (notion de portefeuille dans Organisation)"
+          },
+          "critereSecondaire": {
+            "type": "string",
+            "description": "Valeur inscrite au niveau de l’entête de l’attestation papier délivrée aux assurés issue du SI du backoffice"
+          },
+          "gestionnaire": {
+            "type": "string",
+            "description": "Gestionnaire"
+          },
+          "groupeAssures": {
+            "type": "string",
+            "description": "Le groupe d'assurés"
+          },
+          "numeroCarte": {
+            "type": "string",
+            "description": "Numéro de carte"
+          },
+          "editeurCarte": {
+            "type": "string",
+            "description": "Editeur de carte"
+          },
+          "ordrePriorisation": {
+            "type": "string",
+            "description": "Ordre de priorisation du contrat. Utilisable en cas de multi contrats sinon valorisé à '1'"
+          },
+          "identifiantCollectivite": {
+            "type": "string",
+            "description": "Identifiant de la collectivité dans le cas d'une adhésion individuelle à un contrat collectif"
+          },
+          "raisonSociale": {
+            "type": "string",
+            "description": "Raison sociale de la collectivité"
+          },
+          "siret": {
+            "type": "string",
+            "description": "SIRET de la collectivité"
+          },
+          "groupePopulation": {
+            "type": "string",
+            "description": "Groupe de population du salarié dans le contrat collectif"
+          },
+          "codeItelis": {
+            "type": "string",
+            "description": "Code offre Optique ITELIS de la carte TP"
+          }
+        },
+        "required": [],
+        "title": "Contrat"
+      },
+      "Adresse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ligne1": {
+            "type": "string",
+            "description": "Identité du destinataire"
+          },
+          "ligne2": {
+            "type": "string",
+            "description": "Identification du point de remise (numéro appartement, numéro boite aux lettres, étage, ..."
+          },
+          "ligne3": {
+            "type": "string",
+            "description": "Complément de localisation (entrée, bâtiment, ...)"
+          },
+          "ligne4": {
+            "type": "string",
+            "description": "Numéro et libellé de la voie"
+          },
+          "ligne5": {
+            "type": "string",
+            "description": "Service de distribution - complément de localisation de la voie (poste restante, boite postale, ...)"
+          },
+          "ligne6": {
+            "type": "string",
+            "description": "Code postal et localité"
+          },
+          "ligne7": {
+            "type": "string",
+            "description": "Pays (pour l'international)"
+          },
+          "codePostal": {
+            "type": "string",
+            "description": "Code postal"
+          },
+          "pays": {
+            "type": "string",
+            "description": "Pays"
+          },
+          "telephone": {
+            "type": "string",
+            "description": "Numéro de téléphone"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email"
+          },
+          "typeAdresse": {
+            "$ref": "#/components/schemas/TypeAdresse"
+          }
+        },
+        "required": [],
+        "title": "Adresse"
+      },
+      "TypeAdresse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "libelle": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "description": "Valeurs possibles :'AD' adresse ADhérent,'EN' adresse de l’ENtreprise,'GE' adresse du GEstionnaire du contrat"
+          }
+        },
+        "required": [],
+        "title": "Type d'adresse"
+      },
+      "BenefCartePapier": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "lienContrat": {
+            "$ref": "#/components/schemas/LienContrat"
+          },
+          "beneficiaire": {
+            "$ref": "#/components/schemas/Beneficiaire"
+          },
+          "domainesCouverture": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DomaineDroit"
+            }
+          }
+        },
+        "required": [],
+        "title": "Bénéficiaire de la Carte TP"
+      },
+      "LienContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "lienFamilial": {
+            "type": "string",
+            "description": "Lien Familial"
+          },
+          "rangAdministratif": {
+            "type": "string",
+            "description": "Rang administratif"
+          }
+        },
+        "required": [],
+        "title": "Lien du bénéficiaire dans le contrat"
+      },
+      "Beneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateNaissance": {
+            "type": "string",
+            "format": "AAAAMMDD",
+            "description": "Date de naissance du bénéficiaire"
+          },
+          "rangNaissance": {
+            "type": "string",
+            "description": "Rang de naissance du bénéficiaire"
+          },
+          "nirBeneficiaire": {
+            "type": "string",
+            "description": "NIR du bénéficiaire"
+          },
+          "cleNirBeneficiaire": {
+            "type": "string",
+            "description": "Clé du NIR du bénéficiaire"
+          },
+          "nirOd1": {
+            "type": "string",
+            "description": "Premier NIR rattaché"
+          },
+          "cleNirOd1": {
+            "type": "string",
+            "description": "Clé du premier NIR rattaché"
+          },
+          "nirOd2": {
+            "type": "string",
+            "description": "Second NIR rattaché"
+          },
+          "cleNirOd2": {
+            "type": "string",
+            "description": "Clé du second NIR rattaché"
+          },
+          "numeroPersonne": {
+            "type": "string",
+            "description": "Numéro de personne"
+          },
+          "refExternePersonne": {
+            "type": "string",
+            "description": "Référence externe de la personne"
+          },
+          "dateAdhesionMutuelle": {
+            "type": "string",
+            "format": "AAAA-MM-JJ",
+            "description": "Date d'adhésion à la mutuelle"
+          },
+          "dateDebutAdhesionIndividuelle": {
+            "type": "string",
+            "format": "AAAA-MM-JJ",
+            "description": "Date de début d'adhésion individuelle"
+          },
+          "numeroAdhesionIndividuelle": {
+            "type": "string",
+            "description": "Numéro d'adhésion individuelle"
+          },
+          "dateRadiation": {
+            "type": "string",
+            "format": "AAAA-MM-JJ",
+            "description": "Date de radiation"
+          },
+          "affiliation": {
+            "$ref": "#/components/schemas/Affiliation"
+          }
+        },
+        "required": [],
+        "title": "Bénéficiaire"
+      },
+      "Affiliation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nom": {
+            "type": "string",
+            "description": "Nom"
+          },
+          "nomPatronymique": {
+            "type": "string",
+            "description": "Nom patronymique"
+          },
+          "nomMarital": {
+            "type": "string",
+            "description": "Nom marital"
+          },
+          "prenom": {
+            "type": "string",
+            "description": "Prénom"
+          },
+          "civilite": {
+            "type": "string",
+            "description": "Civilité"
+          },
+          "periodeDebut": {
+            "type": "string",
+            "format": "AAAA-MM-JJ",
+            "description": "Période début"
+          },
+          "periodeFin": {
+            "type": "string",
+            "format": "AAAA-MM-JJ",
+            "description": "Période fin"
+          },
+          "qualite": {
+            "type": "string",
+            "description": "Qualité (A : Assuré principal, C : Conjoint, E : Enfant, X : Autre)"
+          },
+          "regimeParticulier": {
+            "type": "string",
+            "description": "Régime particulier"
+          },
+          "isBeneficiaireACS": {
+            "type": "boolean",
+            "description": "Flag indiquant si le bénéficiaire bénéficie de l'Aide a la Complémentaire Santé"
+          },
+          "isTeleTransmission": {
+            "type": "boolean",
+            "description": "Flag indiquant si il s'agit d'une télétransmission"
+          },
+          "typeAssure": {
+            "type": "string",
+            "description": "Type d'assuré"
+          }
+        },
+        "required": [],
+        "title": "Affiliation"
+      },
+      "DomaineConvention": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du domaine"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé du domaine"
+          },
+          "rang": {
+            "type": "integer",
+            "description": "Rang du domaine"
+          },
+          "conventions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Convention"
+            }
+          }
+        },
+        "required": [],
+        "title": "Domaine TP"
+      },
+      "Convention": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "priorite": {
+            "type": "integer",
+            "description": "Priorité de la convention"
+          },
+          "code": {
+            "type": "string",
+            "description": "Code de la convention"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé de la convention"
+          }
+        },
+        "required": [],
+        "title": "Convention"
+      },
+      "DomaineDroit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code"
+          },
+          "codeExterne": {
+            "type": "string",
+            "description": "Code externe"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé"
+          },
+          "codeExterneProduit": {
+            "type": "string",
+            "description": "Code externe du produit"
+          },
+          "libelleExterne": {
+            "type": "string",
+            "description": "Libellé externe"
+          },
+          "codeOptionMutualiste": {
+            "type": "string",
+            "description": "Code de l'option mutualiste"
+          },
+          "libelleOptionMutualiste": {
+            "type": "string",
+            "description": "Libellé de l'option mutualiste"
+          },
+          "codeProduit": {
+            "type": "string",
+            "description": "Code du produit d'où est issu le domaine"
+          },
+          "libelleProduit": {
+            "type": "string",
+            "description": "Libellé du produit d'où est issu le domaine"
+          },
+          "codeGarantie": {
+            "type": "string",
+            "description": "Code de la garantie"
+          },
+          "libelleGarantie": {
+            "type": "string",
+            "description": "Libellé de la garantie"
+          },
+          "codeRenvoi": {
+            "type": "string",
+            "description": "1er Code renvoi"
+          },
+          "libelleCodeRenvoi": {
+            "type": "string",
+            "description": "Libellé du 1er renvoi"
+          },
+          "tauxRemboursement": {
+            "type": "string",
+            "description": "Taux de remboursement"
+          },
+          "uniteTauxRemboursement": {
+            "type": "string",
+            "description": "Unité du taux de remboursement"
+          },
+          "referenceCouverture": {
+            "type": "string",
+            "description": "Référence de la couverture"
+          },
+          "noOrdreDroit": {
+            "type": "integer",
+            "description": "Numero d'ordre droit"
+          },
+          "categorie": {
+            "type": "string",
+            "description": "Catégorie du domaine"
+          },
+          "formulaMask": {
+            "type": "string",
+            "description": "Masque de formule"
+          },
+          "isEditable": {
+            "type": "boolean",
+            "description": "Flag permettant d'indiquer si la carte TP sera édité ou non"
+          },
+          "prioriteDroit": {
+            "$ref": "#/components/schemas/PrioriteDroit"
+          },
+          "conventionnements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Conventionnement"
+            }
+          },
+          "codeRenvoiAdditionnel": {
+            "type": "string",
+            "description": "2nd Code renvoi"
+          },
+          "libelleCodeRenvoiAdditionnel": {
+            "type": "string",
+            "description": "Libellé du 2nd renvoi"
+          }
+        },
+        "required": [],
+        "title": "Domaine de Droit TP"
+      },
+      "PrioriteDroit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code de la priorité"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé de la priorité"
+          },
+          "typeDroit": {
+            "type": "string",
+            "description": "Type de droit"
+          },
+          "prioriteBO": {
+            "type": "string",
+            "description": "Priorité Back Office"
+          }
+        },
+        "required": [],
+        "title": "Priorité du Domaine TP"
+      },
+      "Conventionnement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "priorite": {
+            "type": "integer"
+          },
+          "typeConventionnement": {
+            "$ref": "#/components/schemas/TypeConventionnement"
+          }
+        },
+        "required": [],
+        "title": "Conventionnement"
+      },
+      "TypeConventionnement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code conventionnement"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé conventionnement"
+          }
+        },
+        "required": [],
+        "title": "Type de conventionnement"
+      }
+    }
+  }
+}

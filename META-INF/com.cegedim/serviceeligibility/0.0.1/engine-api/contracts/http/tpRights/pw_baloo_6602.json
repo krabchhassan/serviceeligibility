@@ -1,0 +1,48 @@
+{
+  "offerCode": "BAL_6602_001",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2000_janv_01.2",
+      "effectDate": "2023-11-03T13:46:12.741Z",
+      "validityDate": "2000-01-01",
+      "endValidityDate": "2025-07-01",
+      "engineVersion": "37.1",
+      "domains": [
+        {
+          "domainCode": "LABO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "BIOLOGIE"
+          },
+          "tpOnline": {
+            "nature": "BIOLOGIE"
+          }
+        }
+      ]
+    },
+    {
+      "offerVersionCode": "2000_juil_01.2",
+      "effectDate": "2023-11-03T13:46:12.741Z",
+      "validityDate": "2025-07-02",
+      "engineVersion": "37.1",
+      "domains": [
+        {
+          "domainCode": "LABO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS053_90PctTicketModerateur",
+            "formulaLabel": "STS053_90% Ticket Modérateur",
+            "formulaMask": "90%TM",
+            "stsFormulaCode": "053",
+            "nature": "BIOLOGIE"
+          },
+          "tpOnline": {
+            "nature": "BIOLOGIE"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2024-10-11",
+  "dateCreation": "2024-10-11T13:55:29.563Z",
+  "userCreation": "marianne.barrailh@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "dateExecutionBatch": "2025-01-08",
+    "dateDebutDroitTP": "2025-01-01",
+    "modeDeclenchement": "Manuel"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": true,
+    "refFondCarte": "CARTE_CB",
+    "detailsDroit": [
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "PHNO",
+        "libelleDomaineTP": "Pharmacie remboursable à 65% et accessoires (60%)",
+        "convention": "IS",
+        "codeRenvoi": "4",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 2,
+        "codeDomaineTP": "PHCO",
+        "libelleDomaineTP": "Pharmacie remboursable à 30%",
+        "convention": "IS",
+        "codeRenvoi": "4",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 3,
+        "codeDomaineTP": "PHOR",
+        "libelleDomaineTP": "Pharmacie remboursable à 15%",
+        "convention": "IS",
+        "codeRenvoi": "4",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 4,
+        "codeDomaineTP": "MEDE",
+        "libelleDomaineTP": "MEDG + MEDS",
+        "convention": "IS",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 5,
+        "codeDomaineTP": "SVIL",
+        "libelleDomaineTP": "Sage-femme, laboratoires, radiologues, auxiliaires médicaux et fournisseurs (SAGE + LABO + RADL + AUXM + LPPS)",
+        "convention": "IS",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 6,
+        "codeDomaineTP": "CSTE",
+        "libelleDomaineTP": "Centre de Santé sauf dentaire, équipement optique",
+        "convention": "IS",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 7,
+        "codeDomaineTP": "TRAN",
+        "libelleDomaineTP": "Transporteur",
+        "convention": "IS",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 8,
+        "codeDomaineTP": "DESO",
+        "libelleDomaineTP": "Soins Dentaires",
+        "convention": "CB/IS",
+        "codeRenvoi": "1",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 9,
+        "codeDomaineTP": "DEPR",
+        "libelleDomaineTP": "Prothèse Dentaire",
+        "convention": "CB/IS",
+        "codeRenvoi": "1",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 10,
+        "codeDomaineTP": "OPTI",
+        "libelleDomaineTP": "Opticien",
+        "convention": "CB/IS",
+        "codeRenvoi": "1",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 11,
+        "codeDomaineTP": "AUDI",
+        "libelleDomaineTP": "Audioprothèse",
+        "convention": "CB/IS",
+        "codeRenvoi": "1",
+        "codeRenvoiAction": "REMPLACER"
+      },
+      {
+        "ordreAffichage": 12,
+        "codeDomaineTP": "EXTE",
+        "libelleDomaineTP": "Soins externes",
+        "convention": "IS",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 13,
+        "codeDomaineTP": "HOSP",
+        "libelleDomaineTP": "Séjour hospitalier",
+        "convention": "IS",
+        "codeRenvoiAction": "GARDER"
+      }
+    ],
+    "isCarteEditablePapier": true
+  },
+  "priorite": 0,
+  "garantieTechniques": [
+  ],
+  "idLots": [
+    "7a0208e3-5d55-4f28-bc35-0b3898c9b102"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "contracts": [
+    {
+      "context": "TP_OFFLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "00052492000000144052",
+      "externalNumber": "",
+      "subscriberId": "00052492",
+      "subscriberFullId": "",
+      "subscriptionDate": "2019-01-01",
+      "secondaryCriterion": "",
+      "detailedSecondaryCriterion": "",
+      "isIndividualContract": false,
+      "operator": "",
+      "collectiveContract": {
+        "number": "",
+        "externalNumber": ""
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "",
+        "identity": {
+          "nir": {
+            "code": "",
+            "key": ""
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1591275115460",
+                "key": "46"
+              },
+              "attachementRO": {
+                "regimeCode": "03",
+                "healthInsuranceCompanyCode": "054",
+                "centerCode": "6200"
+              },
+              "period": {
+                "start": "2019-01-01",
+                "end": "2021-01-03"
+              }
+            }
+          ],
+          "birthDate": "19621023",
+          "birthRank": "1",
+          "personNumber": "0000401166-08043266",
+          "personExternalRef": "08043266"
+        },
+        "data": {
+          "name": {
+            "lastName": "LE GRIEL",
+            "commonName": "LE GRIEL",
+            "firstName": "SOPHIE"
+          },
+          "address": {
+            "line1": "AON",
+            "line4": "28 ALLEE DE BELLEVUECS 7000",
+            "line6": "16918 ANGOULEME CEDEX 9",
+            "line7": "FRANCE",
+            "postcode": "16918"
+          },
+          "contact": {
+            "landline": "01 73 10 30 55",
+            "mobile": "01 73 10 30 55"
+          }
+        },
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2018-01-02",
+                "end": "2021-01-03"
+              },
+              "isRemotelyTransmitted": false
+            }
+          ]
+        },
+        "quality": {
+          "code": "C",
+          "label": "Conjoint"
+        },
+        "rights": [
+          {
+            "code": "SANTE_100",
+            "prioritizationOrder": "01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "BLUE_TP",
+                "productCode": "SANTE_100",
+                "benefitsType": [
+                  {
+                    "benefitType": "OPTIQUE",
+                    "period": {
+                      "start": "2019-01-01",
+                      "end": "2021-01-03"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2019-01-01",
+                  "end": "2021-01-03"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+@import '../../common/_variables';
+
+:global {
+    // utilities
+    .pointer {
+        cursor: pointer;
+    }
+
+    // modal specific
+    .modal-lg {
+        max-width: 700px;
+    }
+
+    // modal specific
+    .modal-xl {
+        max-width: 1000px;
+    }
+
+    // modal specific
+    .modal-x2 {
+        max-width: 1300px;
+    }
+
+    .bottom-border {
+        border-bottom: 1px solid currentColor;
+    }
+
+    .top-border {
+        border-top: 1px solid currentColor;
+    }
+
+    .white-space-pre-line {
+        white-space: pre-line;
+    }
+
+    // flex utils
+    .flex-auto {
+        flex: auto;
+    }
+
+    .flex-initial {
+        flex: initial;
+    }
+
+    .flex-none {
+        flex: none;
+    }
+
+    // overflow utils
+    .overflow-auto {
+        overflow: auto;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    // legend
+    legend {
+        font-size: inherit;
+    }
+
+    // Workaround: spinner in loader-container mode should have 0 z-index to not conflict with app layout
+    .loader-over-container {
+        z-index: 0;
+    }
+    .number-alignment {
+        text-align: right;
+    }
+    .middle-alignment {
+        text-align: center;
+    }
+
+    // Workaround for invalid feedback that doesn't follow bootstrap V4 rules - specific for <Common fields> components.
+    // This needs to be specified in each project that uses common fields components.
+    .invalid-feedback {
+        display: block;
+    }
+
+    .dividerV {
+        right: 0;
+        top: 0;
+        border: 1px solid #ddd;
+        margin: 20px;
+    }
+    .dividerV-nomargin {
+        border: 1px solid #ddd;
+    }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+	<xs:complexType name="carteDematerialiseeType">
+		<xs:annotation>
+			<xs:documentation>Contenu de la requete Carte Dematerialisee
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="numeroAMC">
+				<xs:annotation>
+					<xs:documentation>Code unique inscrit sur les attestations de
+							droits delivrées aux assures
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nomAMC" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom AMC</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="45" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dateReference" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date pour laquelle la carte dématérialiée est
+							demandée
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numeroContrat">
+				<xs:annotation>
+					<xs:documentation>Identifiant du contrat individuel ou de
+							l'adhesion individuelle au contrat collectif
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="20" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

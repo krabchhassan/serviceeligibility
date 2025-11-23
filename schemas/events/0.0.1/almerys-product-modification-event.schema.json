@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Modification produit Almerys",
+  "description": "Modification d'un produit Almerys",
+  "additionalProperties": false,
+  "properties": {
+    "modificationDate": {
+      "type": "string",
+      "description": "Date de modification (avec timezone)"
+    },
+    "userModification": {
+      "type": "string",
+      "description": "Utilisateur modifiant le paramétrage"
+    },
+    "code": {
+      "type": "string",
+      "description": "Code du référentiel"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description"
+    },
+    "combinationList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/CombiModif"
+      },
+      "description": "La liste des combinaisons"
+    }
+  },
+  "required": [
+    "code",
+    "modificationDate",
+    "description"
+  ],
+  "components":{
+    "CombiModif": {
+      "type": "object",
+      "properties": {
+        "numero": {
+          "type": "string",
+          "description": "Le numéro de la combinaison"
+        },
+        "debut": {
+          "type": "string",
+          "description": "La date de debut de la combinaison"
+        },
+        "fin": {
+          "type": "string",
+          "description": "La date de fin de la combinaison"
+        },
+        "finPrecedente": {
+          "type": "string",
+          "description": "La date de fin precedente de la combinaison"
+        },
+        "gtAjoutees": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Les GTs ajoutées"
+        },
+        "gtSupprimees": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Les GTs supprimees"
+        },
+        "lotAjoutes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Les lots ajoutés"
+        },
+        "lotSupprimes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Les lots supprimees"
+        }
+      }
+    }
+  },
+  "$id": "Insurance.serviceeligibility.almerys.product.modification.event/0.0.1"
+}

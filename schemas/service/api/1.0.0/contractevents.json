@@ -1,0 +1,174 @@
+{
+  "name" : "contractevents-api",
+  "crossId" : "7a32818a-d543-4fd8-b281-8ad543ffd8ee",
+  "version" : "1.0.0",
+  "execution_mode" : "v3",
+  "description" : "API Contract Events",
+  "visibility" : "PRIVATE",
+  "flows" : [ {
+    "id" : "4a96941c-eab9-48ea-9694-1ceab9d8ea45",
+    "name" : "",
+    "path-operator" : {
+      "path" : "/v5/declarants/:idDeclarant/contracts/:numeroContrat/insureds/:numeroPersonne/data",
+      "operator" : "EQUALS"
+    },
+    "condition" : "",
+    "consumers" : [ ],
+    "methods" : [ ],
+    "pre" : [ {
+      "name" : "Dynamic Routing",
+      "description" : "",
+      "enabled" : true,
+      "policy" : "dynamic-routing",
+      "configuration" : {"rules":[{"pattern":"/v5/declarants/(?<idDeclarant>.*)/contracts/(?<numeroContrat>.*)/insureds/(?<numeroPersonne>.*)/data","url":"https://ei04.editeur.beyond-by-cegedim.com/serviceeligibility/consumer/api/v5/declarants/{#groupName[\"idDeclarant\"]}/contracts/{#groupName[\"numeroContrat\"]}/insureds/{#groupName[\"numeroPersonne\"]}/data"}]}
+    } ],
+    "post" : [ ],
+    "enabled" : true
+  }, {
+    "id" : "0bcd73d8-223e-4068-8d73-d8223ec0680d",
+    "name" : "",
+    "path-operator" : {
+      "path" : "/v5/declarants/:idDeclarant/contracts",
+      "operator" : "EQUALS"
+    },
+    "condition" : "",
+    "consumers" : [ ],
+    "methods" : [ ],
+    "pre" : [ {
+      "name" : "Dynamic Routing",
+      "description" : "",
+      "enabled" : true,
+      "policy" : "dynamic-routing",
+      "configuration" : {"rules":[{"pattern":"/v5/declarants/(?<idDeclarant>.*)/contracts","url":"https://ei04.editeur.beyond-by-cegedim.com/serviceeligibility/consumer/api/v5/declarants/{#groupName[\"idDeclarant\"]}/contracts"}]}
+    } ],
+    "post" : [ ],
+    "enabled" : true
+  }, {
+    "id" : "0450db71-c7ae-4511-90db-71c7ae151143",
+    "name" : "",
+    "path-operator" : {
+      "path" : "/v3/declarants/:idDeclarant/contracts/:numeroContrat",
+      "operator" : "EQUALS"
+    },
+    "condition" : "",
+    "consumers" : [ ],
+    "methods" : [ ],
+    "pre" : [ {
+      "name" : "Dynamic Routing",
+      "description" : "",
+      "enabled" : true,
+      "policy" : "dynamic-routing",
+      "configuration" : {"rules":[{"pattern":"/v3/declarants/(?<idDeclarant>.*)/contracts/(?<numeroContrat>.*)","url":"https://ei04.editeur.beyond-by-cegedim.com/serviceeligibility/consumer/api/v3/declarants/{#groupName[\"idDeclarant\"]}/contracts/{#groupName[\"numeroContrat\"]}"}]}
+    } ],
+    "post" : [ ],
+    "enabled" : true
+  } ],
+  "gravitee" : "2.0.0",
+  "flow_mode" : "BEST_MATCH",
+  "resources" : [ ],
+  "properties" : [ ],
+  "categories" : [ "contract-events" ],
+  "labels" : [ "ajo" ],
+  "groups" : [ "qa", "Santiane-ei04" ],
+  "members" : [ {
+    "source" : "memory",
+    "sourceId" : "admin",
+    "roles" : [ "4e17578c-76d1-46fc-9757-8c76d136fc01" ]
+  } ],
+  "pages" : [ {
+    "id" : "ff57679e-d540-42a7-9767-9ed54092a7c6",
+    "crossId" : "55cb67e6-369e-40e5-8b67-e6369e60e58f",
+    "name" : "Aside",
+    "type" : "SYSTEM_FOLDER",
+    "order" : 0,
+    "published" : true,
+    "visibility" : "PUBLIC",
+    "lastModificationDate" : 1678710615696,
+    "contentType" : "application/json",
+    "configuration" : { },
+    "homepage" : false,
+    "parentPath" : "",
+    "excludedAccessControls" : false,
+    "accessControls" : [ ],
+    "metadata" : { },
+    "api" : "d4ef66c3-1b8e-43ae-af66-c31b8ef3ae92",
+    "attached_media" : [ ]
+  }, {
+    "id" : "88695818-b013-4a15-a958-18b0132a15f0",
+    "crossId" : "0b11921b-c736-4fc1-9192-1bc7363fc1c8",
+    "name" : "Spec OpenAPI",
+    "type" : "SWAGGER",
+    "content" : "{\n  \"openapi\": \"3.0.1\",\n  \"info\": {\n    \"title\": \"API de gestion des contrats HTP\",\n    \"version\": \"1.0.0\",\n    \"description\": \"API de gestion des contrats HTP\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"/beyond/api/contractevents/\"\n    }\n  ],\n  \"security\": [\n    {\n      \"bearer\": [\n        \"read\",\n        \"write\"\n      ]\n    }\n  ],\n  \"paths\": {\n    \"/v5/declarants/{idDeclarant}/contracts/{numeroContrat}/insureds/{numeroPersonne}/data\": {\n      \"put\": {\n        \"description\": \"Mise à jour des données d'un assuré identifié par son numéro de personne sur le contrat\",\n        \"tags\": [\n          \"Mise à jour d'un assuré sur un contrat\"\n        ],\n        \"operationId\": \"updateDataInsured\",\n        \"parameters\": [\n          {\n            \"name\": \"idDeclarant\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"description\": \"Organisation principale\",\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"name\": \"numeroContrat\",\n            \"description\": \"Identifiant contrat dans le backoffice contrat\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"name\": \"numeroPersonne\",\n            \"description\": \"Identifiant unique de l'assuré dans le backoffice Contrat\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          }\n        ],\n        \"requestBody\": {\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"$ref\": \"#/components/schemas/DataAssure\"\n              }\n            }\n          },\n          \"required\": true\n        },\n        \"responses\": {\n          \"200\": {\n            \"description\": \"OK\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                }\n              }\n            }\n          },\n          \"404\": {\n            \"description\": \"Erreur. Assuré non trouvé\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"6427273c4a592414c6b1d81b\",\n                  \"status\": \"InsuredNotFound\",\n                  \"errorMessages\": [\n                    \"Le contrat TEST01 de l'AMC xxxxxxxxxx possédant le bénéficiaire ayant pour numéro de personne TEST123 n'a pas été trouvé\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          },\n          \"400 - Erreur validations des données\": {\n            \"description\": \"Erreur de validation des données en entrée\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"642727c24a592414c6b1d81d\",\n                  \"status\": \"ValidationFailed\",\n                  \"errorMessages\": [\n                    \"L'information dateNaissance(200805179) n'est pas une date au format yyyyMMdd\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          },\n          \"400 - Compte invalide\": {\n            \"description\": \"Identifiant du compte utilisé par le backoffice invalide\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"642727e94a592414c6b1d81e\",\n                  \"status\": \"IdClientBOInvalid\",\n                  \"errorMessages\": [\n                    \"L'identifiant Back Office service-account-test ne permet pas d'accéder aux données du déclarant xxxxxxxxxx\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          }\n        }\n      }\n    },\n    \"/v5/declarants/{idDeclarant}/contracts\": {\n      \"post\": {\n        \"description\": \"Création/mise à jour d'un contrat HTP\",\n        \"tags\": [\n          \"Création/mise à jour d'un contrat HTP\"\n        ],\n        \"operationId\": \"createContract\",\n        \"parameters\": [\n          {\n            \"name\": \"idDeclarant\",\n            \"description\": \"Organisation principale\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          }\n        ],\n        \"requestBody\": {\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"$ref\": \"#/components/schemas/Contrat\"\n              }\n            }\n          },\n          \"required\": true\n        },\n        \"responses\": {\n          \"200\": {\n            \"description\": \"OK\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                }\n              }\n            }\n          },\n          \"400 - Erreur validation contrat\": {\n            \"description\": \"Erreur de validation du contrat\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"642725e74a592414c6b1d814\",\n                  \"status\": \"ValidationFailed\",\n                  \"errorMessages\": [\n                    \"L'information numero est obligatoire\",\n                    \"L'information periodesContratResponsableOuvert.periode.debut(2018-01-019) n'est pas une date au format yyyy-MM-dd\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          },\n          \"400 - incohérence dans l'organisation principale\": {\n            \"description\": \"Incohérence entre les numéros identifiants les organisations principales\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"6427260e4a592414c6b1d815\",\n                  \"status\": \"IdClientBOInvalid\",\n                  \"errorMessages\": [\n                    \"Incohérence entre les déclarants (Contrat/URL)\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          },\n          \"400 - compte invalide\": {\n            \"description\": \"Identifiant du compte utilisé par le backoffice invalide\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"642726894a592414c6b1d81a\",\n                  \"status\": \"IdClientBOInvalid\",\n                  \"errorMessages\": [\n                    \"L'identifiant Back Office service-account-test ne permet pas d'accéder aux données du déclarant xxxxxxxxxx\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          }\n        }\n      }\n    },\n    \"/v4/declarants/{idDeclarant}/contracts/{numeroContrat}/subscriberId/{numeroAdherent}\": {\n      \"delete\": {\n        \"description\": \"Sans effet d'un contrat HTP\",\n        \"tags\": [\n          \"Sans effet d'un contrat HTP\"\n        ],\n        \"operationId\": \"deleteContract\",\n        \"parameters\": [\n          {\n            \"name\": \"idDeclarant\",\n            \"description\": \"Organisation principale\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"name\": \"numeroContrat\",\n            \"description\": \"Identifiant contrat dans le backoffice contrat\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          },\n          {\n            \"name\": \"numeroAdherent\",\n            \"description\": \"Numéro d'adhérent dans le backoffice contrat\",\n            \"in\": \"path\",\n            \"required\": true,\n            \"schema\": {\n              \"type\": \"string\"\n            }\n          }\n        ],\n        \"responses\": {\n          \"200\": {\n            \"description\": \"OK\"\n          },\n          \"404\": {\n            \"description\": \"Erreur. Contrat inconnu\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"$ref\": \"#/components/schemas/Reponse\"\n                },\n                \"example\": {\n                  \"traceid\": \"6426d7ee2107c30eaba96778\",\n                  \"status\": \"ContractNotFound\",\n                  \"errorMessages\": [\n                    \"Aucun contrat n'existe avec les informations fournies\"\n                  ],\n                  \"provider\": \"BDDS\"\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  },\n  \"components\": {\n    \"schemas\": {\n      \"Adresse\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"ligne1\": {\n            \"type\": \"string\",\n            \"description\": \"Identité du destinataire\"\n          },\n          \"ligne2\": {\n            \"type\": \"string\",\n            \"description\": \"Identification du point de remise (numéro appartement, numéro boite aux lettres, étage, ...\"\n          },\n          \"ligne3\": {\n            \"type\": \"string\",\n            \"description\": \"Complément de localisation (entrée, bâtiment, ...)\"\n          },\n          \"ligne4\": {\n            \"type\": \"string\",\n            \"description\": \"Numéro et libellé de la voie\"\n          },\n          \"ligne5\": {\n            \"type\": \"string\",\n            \"description\": \"Service de distribution - complément de localisation de la voie (poste restante, boite postale, ...)\"\n          },\n          \"ligne6\": {\n            \"type\": \"string\",\n            \"description\": \"Code postal et localité\"\n          },\n          \"ligne7\": {\n            \"type\": \"string\",\n            \"description\": \"Pays (pour l'international)\"\n          },\n          \"codePostal\": {\n            \"type\": \"string\",\n            \"description\": \"Code postal\"\n          },\n          \"pays\": {\n            \"type\": \"string\",\n            \"description\": \"Pays\"\n          },\n          \"telephone\": {\n            \"type\": \"string\",\n            \"description\": \"Numéro de téléphone\"\n          },\n          \"email\": {\n            \"type\": \"string\",\n            \"description\": \"Email\"\n          }\n        }\n      },\n      \"AdresseAssure\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"ligne1\": {\n            \"type\": \"string\",\n            \"description\": \"Identité de l'assuré\"\n          },\n          \"ligne2\": {\n            \"type\": \"string\",\n            \"description\": \"Identification du point de remise (numéro appartement, numéro boite aux lettres, étage, ...\"\n          },\n          \"ligne3\": {\n            \"type\": \"string\",\n            \"description\": \"Complément de localisation (entrée, bâtiment, ...)\"\n          },\n          \"ligne4\": {\n            \"type\": \"string\",\n            \"description\": \"Numéro et libellé de la voie\"\n          },\n          \"ligne5\": {\n            \"type\": \"string\",\n            \"description\": \"Service de distribution - complément de localisation de la voie (poste restante, boite postale, ...)\"\n          },\n          \"ligne6\": {\n            \"type\": \"string\",\n            \"description\": \"Code postal et localité\"\n          },\n          \"ligne7\": {\n            \"type\": \"string\",\n            \"description\": \"Pays (pour l'international)\"\n          },\n          \"codePostal\": {\n            \"type\": \"string\",\n            \"description\": \"Code postal\"\n          }\n        }\n      },\n      \"Contact\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"fixe\": {\n            \"type\": \"string\",\n            \"description\": \"Numéro de téléphone fixe\"\n          },\n          \"mobile\": {\n            \"type\": \"string\",\n            \"description\": \"Numéro de téléphone mobile\"\n          },\n          \"email\": {\n            \"type\": \"string\",\n            \"format\": \"email\",\n            \"description\": \"Email\"\n          }\n        }\n      },\n      \"DataAssure\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"nom\": {\n            \"$ref\": \"#/components/schemas/NomAssure\",\n            \"description\": \"Nom de l'assuré\"\n          },\n          \"adresse\": {\n            \"$ref\": \"#/components/schemas/AdresseAssure\",\n            \"description\": \"Adresse de l'assuré\"\n          },\n          \"contact\": {\n            \"$ref\": \"#/components/schemas/Contact\",\n            \"description\": \"Données de contact de l'assuré\"\n          },\n          \"DestinatairePaiements\": {\n            \"type\": \"array\",\n            \"description\": \"Destinataires de paiement de l'assuré\",\n            \"items\": {\n              \"$ref\": \"#/components/schemas/DestinatairePaiements\"\n            }\n          },\n          \"destinatairesRelevePrestations\": {\n            \"type\": \"array\",\n            \"description\": \"Destinataires de relevé de prestation de l'assuré\",\n            \"items\": {\n              \"$ref\": \"#/components/schemas/DestinataireRelevesPrestations\"\n            }\n          }\n        },\n        \"required\": [\n          \"nom\",\n          \"adresse\"\n        ]\n      },\n      \"Dematerialisation\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"isDematerialise\": {\n            \"type\": \"boolean\"\n          },\n          \"email\": {\n            \"type\": \"string\",\n            \"description\": \"Email, obligatoire si 'isDematerialise' est défini à 'true'\"\n          },\n          \"mobile\": {\n            \"type\": \"string\",\n            \"description\": \"Numéro de téléphone\"\n          }\n        },\n        \"required\": [\n          \"isDematerialise\"\n        ]\n      },\n      \"DestinatairePaiements\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"idDestinatairePaiements\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant unique du destinataire de prestation pour le backoffice émetteur\"\n          },\n          \"idBeyondDestinatairePaiements\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant unique du destinataire de prestation au sein de Beyond. Ne pas renseigner\"\n          },\n          \"nom\": {\n            \"$ref\": \"#/components/schemas/NomDestinataire\",\n            \"description\": \"Nom du destinataire de prestation\"\n          },\n          \"adresse\": {\n            \"$ref\": \"#/components/schemas/Adresse\",\n            \"description\": \"Adresse du destinataire de prestation\"\n          },\n          \"rib\": {\n            \"$ref\": \"#/components/schemas/RibAssure\",\n            \"description\": \"RIB du destinataire du paiement. Obligatoire si modePaiementPrestations.code = virement. Contrôle de l’IBAN zone SEPA \"\n          },\n          \"modePaiementPrestations\": {\n            \"$ref\": \"#/components/schemas/ModePaiement\",\n            \"description\": \"Mode de paiement des prestations\"\n          },\n          \"periode\": {\n            \"$ref\": \"#/components/schemas/Periode\",\n            \"description\": \"Période sur laquelle le destinataire de prestation est valide\"\n          }\n        },\n        \"required\": [\n          \"idDestinatairePaiements\",\n          \"nom\",\n          \"periode\"\n        ]\n      },\n      \"DestinataireRelevesPrestations\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"idDestinataireRelevesPrestations\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant unique du destinataire de relevé de prestation pour le backoffice émetteur\"\n          },\n          \"idBeyondDestinataireRelevesPrestations\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant unique du destinataire de relevé de prestation au sein de Beyond. Ne pas renseigner\"\n          },\n          \"dematerialisation\": {\n            \"$ref\": \"#/components/schemas/Dematerialisation\",\n            \"description\": \"Informations de dématérialisation\"\n          },\n          \"nom\": {\n            \"$ref\": \"#/components/schemas/NomDestinataire\",\n            \"description\": \"Nom du destinataire de relevé de prestation\"\n          },\n          \"adresse\": {\n            \"$ref\": \"#/components/schemas/AdresseAssure\",\n            \"description\": \"Adresse du destinataire de relevé de prestation\"\n          },\n          \"periode\": {\n            \"$ref\": \"#/components/schemas/Periode\",\n            \"description\": \"Période sur laquelle le destinataire de relevé de prestation est valide\"\n          }\n        },\n        \"required\": [\n          \"idDestinataireRelevesPrestations\",\n          \"dematerialisation\",\n          \"nom\",\n          \"periode\"\n        ]\n      },\n      \"ModePaiement\": {\n        \"required\": [\n          \"code\",\n          \"codeMonnaie\",\n          \"libelle\"\n        ],\n        \"type\": \"object\",\n        \"properties\": {\n          \"code\": {\n            \"type\": \"string\",\n            \"description\": \"Code du mode paiement\",\n            \"enum\": [\n              \"VIR\",\n              \"CHQ\",\n              \"ESP\"\n            ]\n          },\n          \"libelle\": {\n            \"type\": \"string\",\n            \"description\": \"Libellé du mode de paiement\",\n            \"enum\": [\n              \"Virement\",\n              \"Chèque\",\n              \"Espèces\"\n            ]\n          },\n          \"codeMonnaie\": {\n            \"type\": \"string\",\n            \"description\": \"Code de la monnaie. Exemple : EUR\"\n          }\n        }\n      },\n      \"NomAssure\": {\n        \"required\": [\n          \"civilite\",\n          \"nomFamille\",\n          \"prenom\"\n        ],\n        \"type\": \"object\",\n        \"properties\": {\n          \"nomFamille\": {\n            \"type\": \"string\",\n            \"description\": \"Nom de famille de l'assuré\"\n          },\n          \"nomUsage\": {\n            \"type\": \"string\",\n            \"description\": \"Nom d'usage de l'assuré\"\n          },\n          \"prenom\": {\n            \"type\": \"string\",\n            \"description\": \"Prénom de l'assuré\"\n          },\n          \"civilite\": {\n            \"type\": \"string\",\n            \"description\": \"Civilité de l'assuré\"\n          }\n        }\n      },\n      \"NomDestinataire\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"nomFamille\": {\n            \"type\": \"string\",\n            \"description\": \"Nom de famille du destinataire\"\n          },\n          \"nomUsage\": {\n            \"type\": \"string\",\n            \"description\": \"Nom d'usage du destinataire\"\n          },\n          \"prenom\": {\n            \"type\": \"string\",\n            \"description\": \"Prénom du destinataire\"\n          },\n          \"civilite\": {\n            \"type\": \"string\",\n            \"description\": \"Civilité du destinataire\"\n          },\n          \"raisonSociale\": {\n            \"type\": \"string\",\n            \"description\": \"Raison sociale du destinataire\"\n          }\n        },\n        \"required\": [\n          \"civilite\"\n        ]\n      },\n      \"Periode\": {\n        \"required\": [\n          \"debut\"\n        ],\n        \"type\": \"object\",\n        \"properties\": {\n          \"debut\": {\n            \"type\": \"string\",\n            \"description\": \"Date de début\"\n          },\n          \"fin\": {\n            \"type\": \"string\",\n            \"description\": \"Date de fin\"\n          }\n        }\n      },\n      \"RibAssure\": {\n        \"required\": [\n          \"bic\",\n          \"iban\"\n        ],\n        \"type\": \"object\",\n        \"properties\": {\n          \"bic\": {\n            \"type\": \"string\",\n            \"description\": \"BIC lié à l'IBAN utilisé pour les remboursements\"\n          },\n          \"iban\": {\n            \"type\": \"string\",\n            \"description\": \"IBAN utilisé pour les remboursements. Contrôle format IBAN zone SEPA\"\n          }\n        }\n      },\n      \"Reponse\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"traceid\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant technique de la trace du contrat\"\n          },\n          \"status\": {\n            \"type\": \"string\",\n            \"description\": \"Statut du traitement du contrat.\"\n          },\n          \"errorMessages\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\",\n              \"description\": \"Messages d'erreur.\"\n            }\n          },\n          \"provider\": {\n            \"type\": \"string\",\n            \"description\": \"Origine de l'erreur. Valorisé à BDDS pour toutes les erreurs fonctionnelles\"\n          }\n        }\n      },\n      \"Contrat\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"idDeclarant\": {\n            \"type\": \"string\",\n            \"description\": \"Organisation principale\"\n          },\n          \"societeEmettrice\": {\n            \"type\": \"string\",\n            \"description\": \"Organisation secondaire\"\n          },\n          \"numero\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant du contrat dans le backoffice contrat\"\n          },\n          \"numeroExterne\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant du contrat en cas de reprise d'un autre SI\"\n          },\n          \"numeroAdherent\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant du souscripteur du contrat\"\n          },\n          \"numeroAdherentComplet\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant du souscripteur du contrat dans le backoffice externe\"\n          },\n          \"dateSouscription\": {\n            \"type\": \"string\",\n            \"description\": \"Date de souscription du contrat\"\n          },\n          \"dateResiliation\": {\n            \"type\": \"string\",\n            \"description\": \"Date de résiliation du contrat\"\n          },\n          \"apporteurAffaire\": {\n            \"type\": \"string\",\n            \"description\": \"Raison sociale de l'apporteur d'affaire\"\n          },\n          \"periodesContratResponsableOuvert\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"$ref\": \"#/components/schemas/Periode\"\n            },\n            \"description\": \"Periodes durant lesquelles le contrat est considéré comme 'contrat responsable'\"\n          },\n          \"critereSecondaireDetaille\": {\n            \"type\": \"string\",\n            \"description\": \"Information permettant de découper la population (notion de portefeuille dans Organisation)\"\n          },\n          \"critereSecondaire\": {\n            \"type\": \"string\",\n            \"description\": \"Valeur inscrite au niveau de l’entête de l’attestation papier délivrée aux assurés issue du SI du backoffice\"\n          },\n          \"isContratIndividuel\": {\n            \"type\": \"boolean\",\n            \"description\": \"Booléen permettant de définir si le contrat est en gestion individuelle\"\n          },\n          \"gestionnaire\": {\n            \"type\": \"string\",\n            \"description\": \"Code du gestionnaire gérant le contrat. Valeur non contrôlée  (exemple : Adhérent, Gestionnaire, Entreprise)\"\n          },\n          \"contratCollectif\": {\n            \"$ref\": \"#/components/schemas/ContratCollectif\",\n            \"description\": \"Information du contrat collectif\"\n          },\n          \"qualification\": {\n            \"type\": \"string\",\n            \"description\": \"Valeur permettant de qualifier le contrat. Gestion des contrats de base uniquement\",\n            \"enum\": [\n              \"B\"\n            ]\n          },\n          \"ordrePriorisation\": {\n            \"type\": \"string\",\n            \"description\": \"Ordre de priorisation du contrat. Utilisable en cas de multi contrats sinon valorisé à '1'\"\n          }\n        }\n      },\n      \"ContratCollectif\": {\n        \"required\": [\n          \"numero\"\n        ],\n        \"type\": \"object\",\n        \"properties\": {\n          \"numero\": {\n            \"type\": \"string\",\n            \"description\": \"Identifiant du contrat collectif dans le backoffice externe\"\n          },\n          \"numeroExterne\": {\n            \"type\": \"string\",\n            \"description\": \"Identificant complémentaire pour le contrat collectif\"\n          }\n        }\n      }\n    }\n  }\n}",
+    "order" : 2,
+    "lastContributor" : "710f6dab-a338-482b-8f6d-aba338d82bcb",
+    "published" : true,
+    "visibility" : "PUBLIC",
+    "lastModificationDate" : 1681362405250,
+    "contentType" : "application/json",
+    "configuration" : {
+      "viewer" : "Redoc"
+    },
+    "homepage" : false,
+    "parentPath" : "",
+    "excludedAccessControls" : false,
+    "accessControls" : [ ],
+    "metadata" : { },
+    "api" : "d4ef66c3-1b8e-43ae-af66-c31b8ef3ae92",
+    "attached_media" : [ ]
+  } ],
+  "metadata" : [ {
+    "key" : "email-support",
+    "name" : "email-support",
+    "format" : "MAIL",
+    "value" : "${(api.primaryOwner.email)!''}",
+    "defaultValue" : "support@change.me",
+    "apiId" : "d4ef66c3-1b8e-43ae-af66-c31b8ef3ae92"
+  } ],
+  "id" : "d4ef66c3-1b8e-43ae-af66-c31b8ef3ae92",
+  "path_mappings" : [ "/v5/declarants/:idDeclarant/contracts", "/v5/declarants/:idDeclarant/contracts/:numeroContrat/insureds/:numeroPersonne/data", "/v3/declarants/:idDeclarant/contracts/:numeroContrat" ],
+  "proxy" : {
+    "virtual_hosts" : [ {
+      "host" : "ei04.editeur.beyond-by-cegedim.com",
+      "path" : "/beyond/api/contractevents/",
+      "override_entrypoint" : true
+    } ],
+    "strip_context_path" : false,
+    "preserve_host" : false,
+    "logging" : {
+      "mode" : "CLIENT_PROXY",
+      "content" : "HEADERS_PAYLOADS",
+      "scope" : "REQUEST_RESPONSE",
+      "condition" : "{#request.headers['Content-Type'] != null && #request.headers['Content-Type'][0] == 'application/json'}"
+    },
+    "groups" : [ {
+      "name" : "default-group",
+      "endpoints" : [ {
+        "backup" : false,
+        "inherit" : true,
+        "name" : "default",
+        "weight" : 1,
+        "type" : "http",
+        "target" : "https://ei04.editeur.beyond-by-cegedim.com"
+      } ],
+      "load_balancing" : {
+        "type" : "ROUND_ROBIN"
+      },
+      "http" : {
+        "connectTimeout" : 5000,
+        "idleTimeout" : 60000,
+        "keepAlive" : true,
+        "readTimeout" : 10000,
+        "pipelining" : false,
+        "maxConcurrentConnections" : 100,
+        "useCompression" : true,
+        "followRedirects" : false
+      }
+    } ]
+  },
+  "response_templates" : { },
+  "primaryOwner" : {
+    "id" : "eb72e43e-2cd8-4c0a-b2e4-3e2cd8ec0afe",
+    "displayName" : "admin",
+    "type" : "USER"
+  }
+}

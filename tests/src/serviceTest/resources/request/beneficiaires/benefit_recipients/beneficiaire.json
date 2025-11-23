@@ -1,0 +1,166 @@
+{
+  "services": [
+    "ServicePrestation"
+  ],
+  "key": "0000401166-MBA01bis3",
+  "contrats": [
+    {
+      "numeroContrat": "MBA01bis",
+      "numeroAdherent": "MBA01bis",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2124743",
+            "idBeyondDestinatairePaiements": "2124743-0000401166",
+            "nom": {
+              "nomFamille": "NOMTEST3",
+              "nomUsage": "NOMTEST3",
+              "prenom": "PRENOMTEST3",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST3 PRENOMTEST3",
+              "ligne3": "5 RUE DES PETUNIAS",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "rib": {
+              "bic": "AGRIFRPP848",
+              "iban": "FR7630001007941234567890185"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2020-03-09"
+            }
+          },
+          {
+            "idDestinatairePaiements": "2124743",
+            "idBeyondDestinatairePaiements": "2124743-0000401166",
+            "nom": {
+              "nomFamille": "NOMTEST3",
+              "nomUsage": "NOMTEST3",
+              "prenom": "PRENOMTEST3",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST3 PRENOMTEST3",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "rib": {
+              "bic": "AGRIFRPP848",
+              "iban": "FR7630001007941234567890185"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-03-10",
+              "fin": "2021-03-09"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2124743",
+            "idBeyondDestinataireRelevePrestations": "2124743-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "NOMTEST3",
+              "nomUsage": "NOMTEST3",
+              "prenom": "PRENOMTEST3",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST3 PRENOMTEST3",
+              "ligne3": "5 RUE DES PETUNIAS",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2020-03-09"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "212474A",
+            "idBeyondDestinataireRelevePrestations": "212474A-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "NOMTEST3",
+              "nomUsage": "NOMTEST3",
+              "prenom": "PRENOMTEST3",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST3 PRENOMTEST3",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "periode": {
+              "debut": "2020-03-10",
+              "fin": "2021-03-09"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "NOMTEST2",
+          "nomUsage": "NOMTEST2",
+          "prenom": "PRENOMTEST2",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur NOMTEST2 PRENOMTEST2",
+          "ligne3": "5 RUE DES PETUNIAS",
+          "ligne4": "22 CHEMIN DES FLEURS",
+          "ligne6": "78160 TATAOOINE",
+          "codePostal": "78160"
+        }
+      }
+    }
+  ],
+  "idClientBO": "service-account-test-es16",
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "MBA01bis",
+  "identite": {
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "2730781111178",
+          "cle": "52"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "781"
+        },
+        "periode": {
+          "debut": "2018-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "20150630",
+    "rangNaissance": "1",
+    "numeroPersonne": "MBA01bis2"
+  },
+  "audit": {
+    "dateEmission": "2023-03-21T10:41:37.783Z"
+  },
+  "traceId": "641989e10384b01ae42c968b"
+}

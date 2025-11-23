@@ -1,0 +1,64 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-00052",
+  "contrats": [
+    {
+      "numeroContrat": "A0005",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0005",
+          "nomUsage": "TESTB0005",
+          "prenom": "Giselle"
+        },
+        "adresse": {
+        },
+        "contact": {
+        }
+      },
+      "numeroAdherent": "A0005",
+      "societeEmettrice": "GEST01",
+      "numeroAMCEchange": "0000501182"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "A0005",
+  "identite": {
+    "nir": {
+      "code": "2740131111112",
+      "cle": "62"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "2740131111112",
+          "cle": "62"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19740103",
+    "rangNaissance": "1",
+    "numeroPersonne": "00052",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19740103",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-07-05T09:22:52.597Z"
+  },
+  "traceId": "64a5366c82224143073afc49"
+}

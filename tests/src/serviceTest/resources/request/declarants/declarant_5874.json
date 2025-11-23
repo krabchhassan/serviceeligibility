@@ -1,0 +1,35 @@
+{
+  "_id": "0000401166",
+  "idClientBO": "service-account-test-es16",
+  "numero": "0097810998",
+  "nom": "BALOO",
+  "libelle": "BALOO",
+  "siret": "",
+  "numeroPrefectoral": "0008400004",
+  "codePartenaire": "TNR",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "pilotages": [
+        {
+          "codeService" : "CARTE-TP",
+          "serviceOuvert" : true,
+          "isCarteEditable" : false,
+          "dateOuverture" : "2023-01-01T00:00:00.000+0000",
+          "couloirClient" : "BAL",
+          "caracteristique" : {
+
+          }
+        },
+        {
+          "codeService" : "CARTE-DEMATERIALISEE",
+          "serviceOuvert" : true,
+          "dateOuverture" : "2023-01-01T00:00:00.000+0000",
+          "couloirClient" : "BAL",
+          "caracteristique" : {
+
+          }
+        }
+  ]
+}

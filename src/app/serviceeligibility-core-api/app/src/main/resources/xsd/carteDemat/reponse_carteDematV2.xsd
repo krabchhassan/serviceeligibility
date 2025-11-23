@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+	<xs:include schemaLocation="type_code_reponse.xsd" />
+	<xs:include schemaLocation="type_commentaire.xsd" />
+	<xs:include schemaLocation="carteDematerialiseeV2ResponseType.xsd" />
+	<xs:include schemaLocation="../header/type_header_out.xsd" />
+
+
+	<xs:element name="carteDematerialiseeV2Response">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header_out" type="type_header_out" />
+				<xs:element name="code_response" type="code_reponse"
+					minOccurs="0" />
+				<xs:element name="cartes" type="cartesV2" minOccurs="0"/>
+				<xs:element name="commentaires" type="commentaires"
+					minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Information à destination de l'utilisateur final
+						</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="cartesV2">
+		<xs:sequence>
+			<xs:element name="carte" type="carteDematerialiseeV2ResponseType"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

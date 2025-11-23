@@ -1,0 +1,141 @@
+{
+  "id": null,
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "93000808",
+  "contrats": [
+    {
+      "numeroContrat": "93000808",
+      "data": {
+        "nom": {
+          "nomFamille": "MADALE",
+          "nomUsage": "MADALE",
+          "prenom": "JEAN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MADALE JEAN",
+          "ligne4": "50 ROI",
+          "ligne6": "78510 VILLE",
+          "codePostal": "78510"
+        },
+        "contact": {
+          "email": "jean.MADALE@zoo.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2121639",
+            "idBeyondDestinatairePaiements": "2121639-0000401166",
+            "nom": {
+              "nomFamille": "MADALE",
+              "nomUsage": "MADALE",
+              "prenom": "JEAN",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur MADALE JEAN",
+              "ligne4": "50 QUAI AUGUSTE ROY",
+              "ligne6": "78510 VILLE",
+              "codePostal": "78510"
+            },
+            "rib": {
+              "bic": "AGRIFRPP848",
+              "iban": "FR7630006000011234567890189"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2121639",
+            "idBeyondDestinataireRelevePrestations": "2121639-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MADALE",
+              "nomUsage": "MADALE",
+              "prenom": "JEAN",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur MADALE JEAN",
+              "ligne4": "50 QUAI AUGUSTE ROY",
+              "ligne6": "78510 VILLE",
+              "codePostal": "78510"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "numeroAdherent": "93000808",
+      "societeEmettrice": "000ER00693",
+      "periodes": [
+        {
+          "debut": "2020-01-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "societesEmettrices": [
+    {
+      "code": "000ER00693",
+      "periodes": [
+        {
+          "debut": "2020-01-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "identite": {
+    "nir": {
+      "code": "1860598145145",
+      "cle": "24"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1860598145145",
+          "cle": "24"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "781"
+        },
+        "periode": {
+          "debut": "2018-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "18690428",
+    "rangNaissance": "1",
+    "numeroPersonne": "2121639",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "18690428",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": null
+  },
+  "traceId": null,
+  "services": [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key": "0000401166-2121639"
+}

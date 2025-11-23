@@ -1,0 +1,73 @@
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+
+CLOUD_PROVIDER: home
+TARGET_DOMAIN: dev
+TARGET_ENV: local
+
+COMMON_INDEX_BASENAME: local
+ELASTICSEARCH_LOGIN: login
+ELASTICSEARCH_PASSWORD: password
+ELASTICSEARCH_URL: https://beyond-data-dev.es.cegedim.cloud
+
+CONSUMER_GROUP_ID_NAME: demandeDeclaration
+KAFKA_SERVERS: localhost:9092
+KAFKA_TOPIC_BDD-DEMANDE-DECLARATION: demandeDeclaration
+
+ORGA_LIB_ENABLED: true
+PW_API_NB_RESULT_PER_PAGE: '10'
+PW_API_URL: https://htp-es15.dev.beyond.cegedim.cloud/engine/core/api
+SEND_EVENTS: 'false'
+SETTINGS_API_URL: https://htp-es15.dev.beyond.cegedim.cloud/settingsui
+
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+schema:
+  path: Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+kafka:
+  topic:
+    beyond-events: events
+    bdd-demande-abandon-trigger: bdd-demande-abandon-trigger
+    bdd-demande-declaration: bdd-demande-declaration
+    bdd-contrattp: bdd-contrattp
+beyond:
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+  management-scope:
+    enabled: false
+logging:
+  level:
+    com:
+      cegedim:
+        next: info
+server:
+  port: '8082'
+  servlet:
+    context-path: /serviceeligibility/trigger/worker
+service:
+  code: serviceeligibility
+socle:
+  code: Insurance
+
+s3_access_key: nzua4ydzoc19biobbyqz
+s3_bucket: cegedim-beyond-dev-htp-es15-msdata
+s3_file_path: insurance/organisation/setting-scopes/scopes.json
+s3_host: storage-et1.cloud.cegedim.com
+s3_orga_admin_data_path: insurance/organisation/organisations-admin-data/
+s3_region: eu-west-1
+s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+s3_secure: true
+
+
+

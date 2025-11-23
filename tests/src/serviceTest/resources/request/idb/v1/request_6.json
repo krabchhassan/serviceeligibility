@@ -1,0 +1,40 @@
+{
+  "beneficiaire": {
+    "cleNIR": "62",
+    "dateNaissance": "20000920",
+    "rangGemellaire": 1,
+    "insc": null,
+    "nomBeneficiaire": null,
+    "prenomBeneficiaire": null,
+    "qualite": null,
+    "nircertifie": "2000931314007"
+  },
+  "amc": {
+    "nom": "IG EPH",
+    "operateurTp": null,
+    "adherent": "TEST01",
+    "idPatientGs": null,
+    "numeroAMCRNM": null,
+    "numeroAMCSIRET": null,
+    "numeroAMCPrefectoral": "0000401166"
+  },
+  "infoBdd": {
+    "typeRechercheBenef": "BENEFICIAIRE",
+    "typeRechercheSegment": 3,
+    "typeSegmentRecherche": null,
+    "listeSegmentRecherche": {
+      "segmentRecherche": [
+        "SVIL",
+        "HOSP",
+        "OPTI"
+      ]
+    },
+    "typeProfondeurRecherche": 0
+  },
+  "dates": {
+    "dateReference": "2022-01-05",
+    "typeDateReference": 1,
+    "dateDebut": "2022-01-05",
+    "dateFin": "2023-05-01"
+  }
+}

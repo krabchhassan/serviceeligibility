@@ -1,0 +1,197 @@
+{
+  "codeEtat" : "V",
+  "effetDebut" : "2024-12-29T15:57:09.737",
+  "idDeclarant" : "0000401166",
+  "isCarteTPaEditer" : true,
+  "carteTPaEditerOuDigitale" : "3",
+  "nomFichierOrigine" : "TDBBLOP_1WJR_20231226114451085435_corr.OK",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2023-12-29T15:57:09.737",
+  "userCreation" : "job605",
+  "dateModification" : "2023-12-29T15:57:09.737",
+  "userModification" : "job605",
+  "beneficiaire" : {
+    "dateNaissance" : "20110820",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1690699341180",
+    "cleNirBeneficiaire" : "72",
+    "nirOd1" : "1690699341180",
+    "cleNirOd1" : "72",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "numeroPersonne" : "586503",
+    "refExternePersonne" : "586503",
+    "affiliation" : {
+      "nom" : "KONTE",
+      "nomPatronymique" : "KONTE",
+      "nomMarital" : "KONTE",
+      "prenom" : "MOUSSA",
+      "periodeDebut" : "2024/01/01",
+      "qualite" : "E",
+      "regimeOD1" : "01",
+      "caisseOD1" : "781",
+      "centreOD1" : "0000",
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "01",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : false,
+      "typeAssure" : "enfant"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "MONSIEUR BEN 1",
+        "ligne4" : "2 RUE JEAN JACQUES ROUSSEAU",
+        "ligne6" : "78130 LES MUREAUX",
+        "codePostal" : "78130",
+        "email" : "harounakonte174@yahoo.com",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "24087",
+    "dateSouscription" : "2018/04/01",
+    "nomPorteur" : "KONTE",
+    "prenomPorteur" : "HAROUNA",
+    "civilitePorteur" : "Monsieur",
+    "numeroAdherent" : "566109",
+    "numeroAdherentComplet" : "000000000566109",
+    "qualification" : "B",
+    "numeroContratCollectif" : "24087",
+    "rangAdministratif" : "5",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "",
+    "lienFamilial" : "E",
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "",
+    "gestionnaire" : "0000401166",
+    "groupeAssures" : "ONET SERVICES YVELIN",
+    "editeurCarte" : "",
+    "fondCarte" : "BALOO-4",
+    "annexe1Carte" : "",
+    "annexe2Carte" : "",
+    "numAMCEchange" : "0000401166",
+    "numOperateur" : ""
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHNO",
+      "codeExterneProduit" : "",
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "35561_24087",
+      "libelleProduit" : "",
+      "codeGarantie" : "24087",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "BAL4",
+      "tauxRemboursement" : "PEC",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2018/02/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "PHNO-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 8,
+      "categorie" : "PHNO",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "099",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "DEclaration",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHOR",
+      "codeExterneProduit" : "",
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "35561_24087",
+      "libelleProduit" : "",
+      "codeGarantie" : "24087",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "BAL4",
+      "tauxRemboursement" : "PEC",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2018/02/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "PHOR-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 8,
+      "categorie" : "PHOR",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "099",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "DEclaration",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        }
+      ]
+    }
+  ]
+}

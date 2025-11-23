@@ -1,0 +1,126 @@
+{
+  "numeroAMC": "0000000001",
+  "periodeDebut": "2050/09/12",
+  "periodeFin": "2050/12/31",
+  "societeEmettrice": "ER34",
+  "codeConvention": "AL",
+  "libelleConvention": "Almerys",
+  "fondCarte": "C469",
+  "annexe1Carte": "",
+  "annexe2Carte": "",
+  "codeItelis": "OPTI2",
+  "numeroAMCEchange": "",
+  "contrat": {
+    "numero": "9125916",
+    "numeroAdherent": "9125916",
+    "numeroAdherentComplet": "",
+    "nomPorteur": "PARENT",
+    "prenomPorteur": "PRENOM",
+    "civilitePorteur": "MME",
+    "numeroContratCollectif": "",
+    "numeroExterneContratIndividuel": "",
+    "numeroExterneContratCollectif": "",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "individuelOuCollectif": "1",
+    "contratCMUC2S": "0",
+    "critereSecondaire": "",
+    "critereSecondaireDetaille": "500",
+    "gestionnaire": "ER34",
+    "groupeAssures": "",
+    "editeurCarte": ""
+  },
+  "domaines": [
+    {
+      "code": "LABO",
+      "rang": 1,
+      "conventions": [
+        {
+          "codeConvention": "AL",
+          "libelleConvention": "Almerys",
+          "prioriteConvention": 0
+        },
+        {
+          "codeConvention": "IS",
+          "libelleConvention": "iSante",
+          "prioriteConvention": 1
+        },
+        {
+          "codeConvention": "SP",
+          "libelleConvention": "Santé-Pharma / SP santé",
+          "prioriteConvention": 2
+        }
+      ]
+    },
+    {
+      "code": "TPALM",
+      "rang": 2,
+      "conventions": [
+        {
+          "codeConvention": "AL",
+          "libelleConvention": "Almerys",
+          "prioriteConvention": 0
+        },
+        {
+          "codeConvention": "IS",
+          "libelleConvention": "iSante",
+          "prioriteConvention": 1
+        },
+        {
+          "codeConvention": "SP",
+          "libelleConvention": "Santé-Pharma / SP santé",
+          "prioriteConvention": 2
+        }
+      ]
+    }
+  ],
+  "beneficiaires": [
+    {
+      "nomBeneficiaire": "PARENT",
+      "nomPatronymique": "PARENT",
+      "nomMarital": "PARENT",
+      "prenom": "PRENOM",
+      "qualite": "A",
+      "typeAssure": "ASSURE",
+      "lienFamilial": "A",
+      "rangAdministratif": "01",
+      "nirOd1": "2840730189104",
+      "cleNirOd1": "79",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "nirBeneficiaire": "2840730189104",
+      "cleNirBeneficiaire": "79",
+      "dateNaissance": "19840710",
+      "rangNaissance": "1",
+      "numeroPersonne": "01276474",
+      "refExternePersonne": "01276474",
+      "regimeParticulier": "",
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "debutAffiliation": "2015/11/01",
+      "couvertures": [
+        {
+          "codeDomaine": "TPALM",
+          "tauxRemboursement": "OUI",
+          "uniteTauxRemboursement": "XX",
+          "periodeDebut": "2050/09/12",
+          "periodeFin": "2050/12/31",
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "VBMOD100AR",
+          "libelleProduit": "Mod H1 AR",
+          "codeGarantie": "VBBASEARS",
+          "libelleGarantie": "MOD STE AR VS34",
+          "prioriteDroits": {
+            "code": "02",
+            "libelle": "02",
+            "typeDroit": "02",
+            "prioriteBO": "02"
+          },
+          "libelleCodeRenvoi": ""
+        }
+      ]
+    }
+  ]
+}

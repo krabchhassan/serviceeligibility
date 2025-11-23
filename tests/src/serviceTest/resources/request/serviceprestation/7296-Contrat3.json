@@ -1,0 +1,764 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "S2970566",
+  "numeroExterne": "S2970566",
+  "numeroAdherent": "S2970566",
+  "numeroAdherentComplet": "S2970566",
+  "dateSouscription": "2024-07-11",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2024-07-11"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "005",
+  "gestionnaire": "IRCEM",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-08-18",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCartePapierAEditer": true,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19670424",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2806216135104",
+          "cle": "49"
+        },
+        "numeroPersonne": 2559019,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "941",
+              "codeRegime": "01"
+            },
+            "periode": {
+              "debut": "2024-06-01"
+            },
+            "nir": {
+              "code": "2806216135104",
+              "cle": "49"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DJOKIC",
+          "nomUsage": "MORTUC",
+          "prenom": "MANON",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame MORTUC MANON",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "42T RUE MAURICE CHEVALIER",
+          "ligne5": "",
+          "ligne6": "33000 BORDEAUX",
+          "ligne7": "",
+          "codePostal": "33000"
+        },
+        "contact": {
+          "email": "MORTUC@hotmail.fr"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2559019",
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "rib": {
+              "iban": "FR7630056009271234567890182",
+              "bic": "SOGEFRPP"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2559019",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2024-07-11",
+      "dateDebutAdhesionIndividuelle": "2024-07-11",
+      "numeroAdhesionIndividuelle": "S2970566",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2024-07-11"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2024-07-11"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "GARANTIE SANTE NIVEAU 3",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2024-07-11"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2024-07-11",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    },
+    {
+      "identite": {
+        "dateNaissance": "19590705",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1806216135104",
+          "cle": "02"
+        },
+        "numeroPersonne": 2559020,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "941",
+              "codeRegime": "01"
+            },
+            "periode": {
+              "debut": "2024-06-01"
+            },
+            "nir": {
+              "code": "1806216135104",
+              "cle": "02"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "MORTUC",
+          "nomUsage": "MORTUC",
+          "prenom": "MICHEL",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MORTUC MICHEL",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "42T RUE MAURICE CHEVALIER",
+          "ligne5": "",
+          "ligne6": "33000 BORDEAUX",
+          "ligne7": "",
+          "codePostal": "33000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2559019",
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "rib": {
+              "iban": "FR7630056009271234567890182",
+              "bic": "SOGEFRPP"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2559019",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 2,
+      "dateAdhesionMutuelle": "2024-07-11",
+      "dateDebutAdhesionIndividuelle": "2024-07-11",
+      "numeroAdhesionIndividuelle": "S2970566",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2024-07-11"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2024-07-11"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "GARANTIE SANTE NIVEAU 3",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2024-07-11"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2024-07-11",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "20000721",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1006216135104",
+          "cle": "42"
+        },
+        "numeroPersonne": 3480256,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "941",
+              "codeRegime": "01"
+            },
+            "periode": {
+              "debut": "2024-11-01"
+            },
+            "nir": {
+              "code": "1006216135104",
+              "cle": "42"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "MORTUC",
+          "nomUsage": "MORTUC",
+          "prenom": "YVAN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MORTUC YVAN",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "42T RUE MAURICE CHEVALIER",
+          "ligne5": "",
+          "ligne6": "33000 BORDEAUX",
+          "ligne7": "",
+          "codePostal": "33000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2559019",
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "rib": {
+              "iban": "FR7630056009271234567890182",
+              "bic": "SOGEFRPP"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2559019",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 6,
+      "dateAdhesionMutuelle": "2024-11-01",
+      "dateDebutAdhesionIndividuelle": "2024-11-01",
+      "numeroAdhesionIndividuelle": "S2970566",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2024-11-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2024-11-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "GARANTIE SANTE NIVEAU 3",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2024-11-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2024-11-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19980616",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2986216135104",
+          "cle": "40"
+        },
+        "numeroPersonne": 3480257,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "941",
+              "codeRegime": "01"
+            },
+            "periode": {
+              "debut": "2024-11-01"
+            },
+            "nir": {
+              "code": "2986216135104",
+              "cle": "40"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "MORTUC",
+          "nomUsage": "MORTUC",
+          "prenom": "MONICA",
+          "civilite": "MLLE"
+        },
+        "adresse": {
+          "ligne1": "Mademoiselle MORTUC MONICA",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "42T RUE MAURICE CHEVALIER",
+          "ligne5": "",
+          "ligne6": "33000 BORDEAUX",
+          "ligne7": "",
+          "codePostal": "33000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2559019",
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "rib": {
+              "iban": "FR7630056009271234567890182",
+              "bic": "SOGEFRPP"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2559019",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 4,
+      "dateAdhesionMutuelle": "2024-11-01",
+      "dateDebutAdhesionIndividuelle": "2024-11-01",
+      "numeroAdhesionIndividuelle": "S2970566",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2024-11-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2024-11-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "GARANTIE SANTE NIVEAU 3",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2024-11-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2024-11-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "20000721",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1006216135104",
+          "cle": "42"
+        },
+        "numeroPersonne": 3480256,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "941",
+              "codeRegime": "01"
+            },
+            "periode": {
+              "debut": "2024-11-01"
+            },
+            "nir": {
+              "code": "1006216135104",
+              "cle": "42"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "MORTUC",
+          "nomUsage": "MORTUC",
+          "prenom": "YVAN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MORTUC YVAN",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "42T RUE MAURICE CHEVALIER",
+          "ligne5": "",
+          "ligne6": "33000 BORDEAUX",
+          "ligne7": "",
+          "codePostal": "33000"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2559019",
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "rib": {
+              "iban": "FR7630056009271234567890182",
+              "bic": "SOGEFRPP"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2559019",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MORTUC",
+              "nomUsage": "MORTUC",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MORTUC MANON",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "42T RUE MAURICE CHEVALIER",
+              "ligne5": "",
+              "ligne6": "33000 BORDEAUX",
+              "ligne7": "",
+              "codePostal": "33000"
+            },
+            "periode": {
+              "debut": "2024-07-11"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 5,
+      "dateAdhesionMutuelle": "2024-11-01",
+      "dateDebutAdhesionIndividuelle": "2024-11-01",
+      "numeroAdhesionIndividuelle": "S2970566",
+      "dateRadiation": "2024-10-31",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2024-11-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2024-11-01",
+          "fin": "2024-11-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "GARANTIE SANTE NIVEAU 3",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2024-11-01",
+            "fin": "2024-10-31"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2024-11-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "isContratIndividuel": true
+}

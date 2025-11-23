@@ -1,0 +1,41 @@
+{
+  "data": [
+    {
+      "validityDate": "2022-01-01",
+      "endValidityDate": "2022-03-31",
+      "code": 1,
+      "offerCode": "OFFRE",
+      "natures": [
+        "OPTIQUE",
+        "HOSPITALISATION"
+      ],
+      "products": [
+        "A"
+      ]
+    },
+    {
+      "validityDate": "2022-04-01",
+      "endValidityDate": "2022-06-30",
+      "code": 2,
+      "offerCode": "OFFRE",
+      "natures": [
+        "HOSPITALISATION"
+      ],
+      "products": [
+        "A"
+      ]
+    },
+    {
+      "validityDate": "2022-07-01",
+      "code": 3,
+      "offerCode": "OFFRE",
+      "natures": [
+        "OPTIQUE",
+        "HOSPITALISATION"
+      ],
+      "products": [
+        "A"
+      ]
+    }
+  ]
+}

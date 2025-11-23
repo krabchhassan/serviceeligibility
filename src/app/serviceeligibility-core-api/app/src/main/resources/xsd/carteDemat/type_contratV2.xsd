@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+<xs:include schemaLocation="type_contrat.xsd" />
+	<xs:complexType name="type_contratV2">
+		<xs:annotation>
+			<xs:documentation>Proprietes du contrat V2</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="type_contrat">
+				<xs:sequence>
+					<xs:element name="annexe1Carte" type="xs:string"
+						minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Annexe 1
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="annexe2Carte" type="xs:string"
+						minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Annexe 2
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="fondCarte" type="xs:string"
+						minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Fond carte
+							</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,54 @@
+[
+  {
+    "$match": {
+      "idDeclarant": "$idDeclarant",
+      "assures.identite.numeroPersonne": "$numeroPersonne"
+    }
+  },
+  {
+    "$match": {
+      "$or": [
+        {
+          "dateResiliation": {
+            "$exists": false
+          }
+        },
+        {
+          "dateResiliation": {
+            "$gt": "$dateResiliationTiret"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$unwind": {
+      "path": "$assures"
+    }
+  },
+  {
+    "$match": {
+      "assures.identite.numeroPersonne": "$numeroPersonne",
+      "$or": [
+        {
+          "assures.dateRadiation": {
+            "$exists": false
+          }
+        },
+        {
+          "assures.dateRadiation": {
+            "$gt": "$dateRadiationTiret"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "numeroContrat": "$numero",
+      "numeroAdherent": "$numeroAdherent",
+      "dateSouscription": "$dateSouscription"
+    }
+  }
+]

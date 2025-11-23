@@ -1,0 +1,187 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "MBA0003",
+  "numeroAdherent": "MBA0003",
+  "numeroAdherentComplet": "MBA0003-Complet",
+  "dateSouscription": "2021/03/02",
+  "nomPorteur": "MASON",
+  "prenomPorteur": "EDWIN",
+  "civilitePorteur": "Monsieur",
+  "qualification": "B",
+  "numeroContratCollectif": "29869",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "destinataire": "AD",
+  "individuelOuCollectif": "",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "0000401166",
+  "groupeAssures": "GROUPE CHATEAUFORM",
+  "editeurCarte": "",
+  "fondCarte": "BALOO-4",
+  "annexe1Carte": "",
+  "annexe2Carte": "",
+  "numAMCEchange": "0000401167",
+  "numOperateur": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "dateCreation": "2023-02-13T16:23:32.531Z",
+  "dateModification": "2023-02-13T16:23:35.926Z",
+  "dateConsolidation": "2023-02-13T16:23:35.926Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateCreation": "2023-02-13T16:23:32.531Z",
+      "dateModification": "2023-02-13T16:23:35.926Z",
+      "dateNaissance": "20041026",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1791062498044",
+      "cleNirBeneficiaire": "48",
+      "nirOd1": "1041062498044",
+      "cleNirOd1": "37",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "MBA0003-002",
+      "refExternePersonne": "MBA0003-002",
+      "rangAdministratif": "A",
+      "modePaiementPrestations": "",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "MASON",
+        "nomPatronymique": "MASON",
+        "nomMarital": "MASON",
+        "prenom": "EDWIN",
+        "periodeDebut": "2022/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "351",
+        "centreOD1": "0000",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "01",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "AssurePrin"
+      },
+      "adresses": [
+        {
+          "ligne1": "MONSIEUR MASON EDWIN",
+          "ligne4": "11 B RUE DU CLOS COLLIN",
+          "ligne6": "35780 LA RICHARDAIS",
+          "codePostal": "35780",
+          "email": "edwin-mason@hotmail.fr",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPAU",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2016/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "libelleProduit": "BLUE_002",
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPAU-NOSEL",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "IN"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/01/01",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "IN"
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "XX",
+                              "uniteTauxRemboursement": "PEC",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": [
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

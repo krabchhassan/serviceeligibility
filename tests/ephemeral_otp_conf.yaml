@@ -1,0 +1,807 @@
+global:
+  nature: dev
+  instanceEnv:
+    # celui injecté dans l'infra env est faux.
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events"
+    CLIENT_TYPE: OTP
+    keycloak_realm: 'otp'
+    BEYOND_MANAGEMENTSCOPE_ENABLED: "false"
+    BEYOND_MANAGEMENTSCOPE_S3ACCESSKEY: nzua4ydzoc19biobbyqz
+    BEYOND_MANAGEMENTSCOPE_S3BUCKET: cegedim-beyond-dev-otp-es16-msdata
+    BEYOND_MANAGEMENTSCOPE_S3FILE: export-management-scopes.json
+    BEYOND_MANAGEMENTSCOPE_S3FOLDER: Application/settings-ui/export
+    BEYOND_MANAGEMENTSCOPE_S3HOST: storage-et1.cegedim.cloud
+    BEYOND_MANAGEMENTSCOPE_S3REGION: eu-west-1
+    BEYOND_MANAGEMENTSCOPE_S3SECRETKEY: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+    BEYOND_MANAGEMENTSCOPE_S3SECUREREQUEST: "true"
+    SERVICE_CODE: "serviceeligibility"
+    SOCLE_CODE: "Insurance"
+    COMMON_INDEX_BASENAME: ${COULOIR}
+    COULOIR_VERSION: ${COULOIR}-es16
+    # lié à la classe Producer.java et MessageService.java
+    KAFKA_TOPIC_BDD-CONTRATTP: ${COULOIR}-bdd-contrattp
+    KAFKA_TOPIC_BDD-DEMANDE-ABANDON-TRIGGER: ${COULOIR}-bdd-demandeAbandonTrigger
+    KAFKA_TOPIC_BDD-DEMANDE-DECLARATION: ${COULOIR}-bdd-demandeDeclaration
+    KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION: ${COULOIR}-bdd-demandeRenouvellementDeclaration
+    KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE: ${COULOIR}-bdd-demandeRenouvellementDeclarationUnitaire
+    KAFKA_TOPIC_BDD-UPDATE-RENOUVELLEMENT-DECLARATION: ${COULOIR}-bdd-updateRenouvellementDeclaration
+    KAFKA_TOPIC_BDD-RECIPIENTS-REQUEST: bdd-recipients-request-${COULOIR_VERSION}
+    KAFKA_TOPIC_BDD-UNDUE-RETENTION: ${COULOIR}-bdd-undue-retention
+dependencies:
+  # Define all dependencies to microservices (name, type=(mock/referenceEnvironment/gatewayAPI))
+  microservices:
+    next-engine-core-api:
+      type: referenceEnvironment
+      path: /engine/core/api
+    next-multioc-core-api:
+      type: referenceEnvironment
+      path: /multioc/core/api
+    next-beyond-configuration:
+      type: referenceEnvironment
+      path: /settingsui/
+    next-referential-core-api:
+      type: referenceEnvironment
+      path: /referential/core/api
+    next-catalogintegrationpoints-core-api:
+      type: referenceEnvironment
+      path: /catalogintegrationpoints/core/api
+    next-aiguillage-core-api:
+      type: referenceEnvironment
+      path: /aiguillage/core/api
+    next-authorization-core-api:
+      type: referenceEnvironment
+      path: /authorization/core/api
+
+
+  datas:
+    vault:
+      enabled: "true"
+    PostgreSQL: { }
+    MongoDB:
+      serviceeligibility-core-api:
+        dbname: bdd-next-serviceeligibility-core-api-${COULOIR}
+
+    Kafka:
+      ${COULOIR}.serviceeligibility-core-api-${COULOIR}.declarations:
+        alias: bdd-declaration
+        extraConfig:
+          partitions: 1
+          replication: 2
+      ${COULOIR}-bdd-demandeRenouvellementDeclarationUnitaire:
+        alias: bdd-demandeRenouvellementDeclarationUnitaire
+        extraConfig:
+          partitions: 4
+          replication: 2
+    # beyond-events:
+    #   fromReferenceEnvironment: true
+
+    KafkaConnect:
+      itcare_${COULOIR}-elasticBddBenefConnector:
+        consumes:
+          - ${COULOIR}.serviceeligibility-core-api-${COULOIR}.beneficiaires
+      itcare_${COULOIR}-mongoBddBenefConnector:
+        produces:
+          - ${COULOIR}.serviceeligibility-core-api-${COULOIR}.beneficiaires
+          - ${COULOIR}-refresh-tokens
+      itcare_${COULOIR}-mongoBddDeclarationsConnector:
+        produces:
+          - ${COULOIR}.serviceeligibility-core-api-${COULOIR}.declarations
+          - ${COULOIR}-refresh-tokens
+      itcare_${COULOIR}-mongoBddPrestIJConnector:
+        consumes:
+          - ${COULOIR}-bdd-prestij
+
+  GatewayAPI: { }
+
+serviceeligibility-core-api:
+  service:
+    enabled: "true"
+  instanceEnv:
+    ARL_FOLDER: "/tmp/ARL_RDO_SP/"
+    BEYOND_MANAGEMENTSCOPE_ENABLED: "true"
+    allowCleanServices: "true"
+    PW_OFFERSTRUCTURE_VERSION: "V4"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    allowContratCreation: "true"
+    wsdl_api_path: https://${COULOIR}.dev.beyond.cegedim.cloud/serviceeligibility/core/api
+    logging.level.com.cegedim.next: "DEBUG"
+    MAXIMUM_REJECT_LIST_SIZE: "5000"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_ENDPOINT_OFFERSTRUCTURE: "/v4/offerStructure"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    serviceeligibility: https://${COULOIR}.dev.beyond.cegedim.cloud/serviceeligibility/core/api
+    schema.path: "Insurance/serviceeligibility/"
+    s3_host: storage-et1.cloud.cegedim.com
+    s3_bucket: cegedim-beyond-dev-otp-es15-msdata
+    s3_access_key: nzua4ydzoc19biobbyqz
+    s3_connection_timeout: "900"
+    s3_port: "0"
+    s3_read_timeout: "900"
+    s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+    s3_orga_admin_data_path: insurance/organisation/organisations-admin-data/
+    s3_file_path: insurance/organisation/setting-scopes/scopes.json
+    s3_region: eu-west-1
+    s3_write_timeout: "900"
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-kconnect-api:
+  service:
+    enabled: "true"
+  instanceEnv:
+    keycloak_enabled: "false"
+    DATABASE_FOR_BENEF_CONNECTOR: serviceeligibility-core-api-${COULOIR}
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    DATABASE_FOR_DECLARATIONS_CONNECTOR: serviceeligibility-core-api-${COULOIR}
+    DATABASE_FOR_PRESTIJ_CONNECTOR: serviceeligibility-core-api-${COULOIR}
+    TOPIC_PREFIX: ${COULOIR}
+    schema.path: "Insurance/serviceeligibility"
+  resources:
+    requests:
+      memory: "768Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "768Mi"
+      ephemeral-storage: "250Mi"
+
+
+serviceeligibility-beneficiary-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    parameterCacheEnabled: "false"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    USE_KAFKA_SECURITY: "true"
+    logging.level.com.cegedim.next: "DEBUG"
+    schema.path: "Insurance/serviceeligibility/"
+    SEND_EVENTS: "false"
+    # LOGGING_LEVEL_ROOT: "DEBUG"
+    # DEBUG: "true"
+  resources:
+    requests:
+      memory: "1024Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "1024Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-consumer-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    BATCH_SIZE: "10000"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    keycloak_realm: 'otp'
+    logging.level.com.cegedim.next: "DEBUG"
+    PW_OFFERSTRUCTURE_VERSION: "V4"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+    PW_ENDPOINT_OFFERSTRUCTURE: "/v4/offerStructure"
+    REFERENTIAL_API_URL: "http://next-referential-core-api:8080"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    TRANSACTIONNAL: "true"
+    IGNORE_EVENTS_SCHEMA_VALIDATION: "true"
+    schema.path: "Insurance/serviceeligibility/"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    #Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+    SEND_EVENTS: "false"
+    SEND_RECIPIENT_MESSAGE: "true"
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-consumer-api:
+  service:
+    enabled: "true"
+  instanceEnv:
+    BATCH_SIZE: "10000"
+    BEYOND_MANAGEMENTSCOPE_ENABLED: "true"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    loadDeclarantsOnlyOnRedeploy: "false"
+    logging.level.com.cegedim.next: "DEBUG"
+    PW_OFFERSTRUCTURE_VERSION: "V4"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+    REFERENTIAL_API_URL: "http://next-referential-core-api:8080"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    IGNORE_EVENTS_SCHEMA_VALIDATION: "true"
+    schema.path: "Insurance/serviceeligibility/"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    # Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+    SEND_EVENTS: "false"
+    SEND_RECIPIENT_MESSAGE: "true"
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-prestij-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    schema.path: "Insurance/serviceeligibility"
+    SEND_EVENTS: "false"
+    s3_host: storage-et1.cloud.cegedim.com
+    s3_bucket: cegedim-beyond-dev-evol2-msdata
+    s3_access_key: nzua4ydzoc19biobbyqz
+    s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+  resources:
+    requests:
+      memory: "1024Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "1024Mi"
+      ephemeral-storage: "250Mi"
+
+
+serviceeligibility-trigger-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    keycloak_realm: "otp"
+    logging.level.com.cegedim: "DEBUG"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    schema.path: "Insurance/serviceeligibility"
+    PW_OFFERSTRUCTURE_VERSION: "V4"
+    PW_ENDPOINT_OFFERSTRUCTURE: "/v4/offerStructure"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    s3_export_trigger_benef_path: "testbleuexporttriggerbenef"
+    #Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+    SEND_EVENTS: "false"
+
+  resources:
+    requests:
+      memory: "1024Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "1024Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-triggerrenouvellement-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    USE_KAFKA_SECURITY: "true"
+    logging.level.com.cegedim.next: "INFO"
+    schema.path: "Insurance/serviceeligibility"
+    SEND_EVENTS: "false"
+    s3_secure: "true"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_connection_timeout: "900"
+    s3_port: "0"
+    s3_read_timeout: "900"
+    s3_write_timeout: "900"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "2Gi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "2Gi"
+
+serviceeligibility-triggerrenouvellement-unitaire-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    BATCH_SIZE: "10000"
+    API_INFO_ENABLE: "true"
+    keycloak_enabled: "true"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    USE_KAFKA_SECURITY: "true"
+    logging.level.com.cegedim.next: "INFO"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    BOBB_API_URL: "http://next-serviceeligibility-core-api:8080"
+    schema.path: "Insurance/serviceeligibility/"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_connection_timeout: "900"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_export_trigger_benef_path: "testbleuexporttriggerbenef"
+    s3_port: "0"
+    s3_read_timeout: "900"
+    s3_write_timeout: "900"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    TRANSACTIONNAL: "true"
+    #Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+    SEND_EVENTS: "false"
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+
+
+rdoserviceprestationpurge-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    ELASTICSEARCH_TIMEOUT: "300000"
+    SEND_EVENTS: "false"
+
+common-excel-api:
+  service:
+    enabled: "true"
+  instanceEnv: { }
+  resources:
+    requests:
+      memory: "512Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "512Mi"
+      ephemeral-storage: "250Mi"
+
+
+facturation-htp-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    CSV_DELIMITER: ";"
+    CSV_OUTPUT_DIRECTORY: "/pefb/serviceeligibility/billing"
+    CLIENT_TYPE: "OTP"
+
+extractpopulation-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    CSV_DELIMITER: ";"
+    OUTPUT_DIRECTORY: "/pefb/serviceeligibility/extractpopulation/out"
+
+serviceeligibility-core-ui:
+  service:
+    enabled: "true"
+  instanceEnv:
+    authorization_enabled: "true"
+    USE_BEYOND_API: "false"
+    BEYOND_API_URL: "/beyond/internal/api/bdds/v1/ui"
+    SHOW_ITELIS_CODE: "true"
+    CLIENT_TYPE: "OTP"
+    FEATURE: "TP_ALMERYS"
+  resources:
+    requests:
+      memory: "256Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "256Mi"
+      ephemeral-storage: "250Mi"
+
+serviceeligibility-consolidationcontract-worker:
+  service:
+    enabled: "true"
+  instanceEnv:
+    dbProfile: "aws"
+    scale_down_deploy: "true"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    logging.level.com.cegedim.next: "DEBUG"
+    schema.path: "Insurance/serviceeligibility/"
+    SEND_EVENTS: "false"
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+
+consolidationcontract-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    logging.level.com.cegedim.next: "DEBUG"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    SEND_EVENTS: "false"
+
+serviceeligibility-batch635-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    logging.level.com.cegedim.next: "DEBUG"
+    SERVICE_ELIGIBILITY_PEFB_INPUT: "/pefb/serviceeligibility/job-635/input/"
+    SERVICE_ELIGIBILITY_PEFB_OUTPUT: "/pefb/serviceeligibility/job-635/output/"
+    CONTROL_META: "false"
+
+serviceeligibility-batch620-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    ARL_FOLDER: "/pefb/serviceeligibility/batch620/out"
+    MAXIMUM_REJECT_LIST_SIZE: "5000"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_connection_timeout: "900"
+    s3_endpoint_url: "https://storage-et1.cloud.cegedim.com"
+    s3_port: "0"
+    s3_read_timeout: "900"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_write_timeout: "900"
+    insurer_settings_file_path: "insurance/serviceeligibility/insurer_settings.json"
+
+almerys-608-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    JAVA_TOOL_OPTIONS: "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
+    MAXIMUM_REJECT_LIST_SIZE: "5000"
+    ARL_FOLDER: "/pefb/serviceeligibility/batch608/out"
+
+
+extractbenefmultios-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    OUTPUT_PATH: "/workdir/serviceeligibility/extractbenefmultios/"
+    EXTRACT_FLUX: "true"
+
+purgeserviceprestationrdo-job:
+  service:
+    enabled: "true"
+  instanceEnv: { }
+  resources:
+    requests:
+      memory: "1024Mi"
+      ephemeral-storage: "100Mi"
+    limits:
+      memory: "1024Mi"
+      ephemeral-storage: "100Mi"
+
+serviceeligibility-rdoserviceprestation-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    INPUT_FOLDER: "/pefb/serviceeligibility/rdobis/in"
+    ARL_FOLDER: "/pefb/serviceeligibility/rdobis/out"
+    CONTROL_META: "false"
+    keycloak_realm: "otp"
+    logging.level.com.cegedim.next: "ERROR"
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    schema.path: "Insurance/serviceeligibility/"
+    SEND_EVENTS: "false"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    #Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+  resources:
+    requests:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+    limits:
+      memory: "2048Mi"
+      ephemeral-storage: "250Mi"
+
+
+serviceeligibility-renouvellementdroitstp-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    logging.level.com.cegedim.next: "INFO"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    SEND_EVENTS: "false"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp2-es14-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    #Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+    CLIENT_ID: generation-droits-tp
+    CLIENT_SECRET: a4adaad1-185e-40e9-b053-848aafc08514
+    keycloak_realm: 'otp'
+
+reprise-beneficiaires-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    schema.path: "Insurance/serviceeligibility"
+
+serviceeligibility-almerysacl-job:
+  instanceEnv:
+    WORKDIR_INPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/in/"
+    WORKDIR_OUTPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/step2/"
+    ARCHIVE_PATH: "/workdir/serviceeligibility/almerysACL/archive/"
+    JAVA_OPTS: "-XX:MinRAMPercentage=20.0 -XX:MaxRAMPercentage=90.0 -XshowSettings:vm"
+
+mergealmerys-job:
+  instanceEnv:
+    WORKDIR_INPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/step2/"
+    WORKDIR_OUTPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/out/"
+    ACTIVATED: "true"
+
+is-bdds-609:
+  step-file-server-to-workdir:
+    parameters:
+      strategy: moveFromSshToWorkdir
+      source_path: "/XCHANGE/ENV-EPH/files/ALMV3/tmpout/XML/"
+      destination_path: "/workdir/serviceeligibility/almerysACL/in/"
+  step-609:
+    parameters:
+      WORKDIR_INPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/in/"
+      WORKDIR_OUTPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/step2/"
+      ARCHIVE_PATH: "/workdir/serviceeligibility/almerysACL/archive/"
+      JAVA_OPTS: "-XX:+PrintFlagsFinal -XX:+UseStringDeduplication -XX:MaxRAMPercentage=80 -XX:ActiveProcessorCount=6"
+  step-merge-almerys:
+    parameters:
+      WORKDIR_INPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/step2/"
+      WORKDIR_OUTPUT_FOLDER: "/workdir/serviceeligibility/almerysACL/out/"
+      ACTIVATED: "true"
+  step-workdir-to-pefb-or-ssh:
+    parameters:
+      strategy: moveFromWorkdirToSsh
+      source_path: "/workdir/serviceeligibility/almerysACL/out/"
+      destination_path: "/XCHANGE/ENV-EPH/files/ALMV3/out/"
+
+is-bdds-620-java:
+  step-620-java:
+    resources:
+      requests:
+        memory: "4Gi"
+        ephemeral-storage: "1024Mi"
+      limits:
+        memory: "4Gi"
+        ephemeral-storage: "1024Mi"
+
+is-bdds-renouvtp:
+  step-renouvtp-job:
+    resources:
+      requests:
+        memory: "4Gi"
+        ephemeral-storage: "256Mi"
+      limits:
+        memory: "4Gi"
+        ephemeral-storage: "256Mi"
+
+exporttriggerinfos-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_bucket: "cegedim-beyond-dev-otp-es15-msdata"
+    s3_connection_timeout: "900"
+    s3_endpoint_url: "https://storage-et1.cloud.cegedim.com"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_export_trigger_benef_path: "testbleuexporttriggerbenef"
+    s3_port: "0"
+    s3_region: "#"
+    s3_secure: "false"
+    s3_write_timeout: "900"
+
+
+serviceeligibility-recalculblb-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    SCHEMA_URL: "https://documentation.beyond-by-cegedim.com/schemas/events"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_orga_admin_data_path: "insurance/organisation/organisations-admin-data/"
+    s3_file_path: "insurance/organisation/setting-scopes/scopes.json"
+    #Clé API pour l'appel de lib PT:CPI_P_READ_DETAILS_CATA
+    ORGA_LIB_ENABLED: "true" # Pour activer l'autoConfiguration de la librairie
+
+extractrecipient-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    WORKDIR_PATH: "/workdir/exports/bdds/"
+
+otp-search:
+  service:
+    enabled: "false"
+  instanceEnv:
+    PROFILE: "dev"
+    PAU_URL: "http://next-serviceeligibility-core-api:8080/v1"
+    AIGUILLAGE_URL: "http://next-aiguillage-core-api:8080"
+    #CATALOG_INTEGRATION_BASE_URL: "/"
+    # KEYCLOAK
+    issuer: "https://idp.dev.beyond.cegedim.cloud/auth/realms/dev-evol2"
+    CLIENT_ID: "apik_serviceeligibility_otpsearchdetail-dev-evol2"
+    CLIENT_SECRET: "43abdb18-2100-4188-b7d2-f1e79df8dd71"
+
+    # S3
+    s3_endpoint_url: "https://storage-et1.cloud.cegedim.com"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+
+    s3_region: "eu-west-1"
+
+    # MLS CATALOG API (need PT:CPI_P_READ_DETAILS_CATA)
+    IDENTITY: "apik_serviceeligibility_otpsearchdetail-dev-evol2"
+    PASSWORD: "43abdb18-2100-4188-b7d2-f1e79df8dd71"
+    BASENAME: "dev-evol2"
+    DIRNAME: "https://idp.dev.beyond.cegedim.cloud/auth"
+    API_CALL_BASE_URL: "http://next-catalogintegrationpoints-core-api:8080"
+    CATALOG_INTEGRATION_BASE_URL: "/"
+
+
+otp-detail:
+  service:
+    enabled: "false"
+  instanceEnv:
+    PROFILE: "dev"
+    PAU_URL: "http://next-serviceeligibility-core-api:8080/v1"
+    # KEYCLOAK
+    issuer: "https://idp.dev.beyond.cegedim.cloud/auth/realms/dev-evol2"
+    CLIENT_ID: "apik_serviceeligibility_otpsearchdetail-dev-evol2"
+    CLIENT_SECRET: "43abdb18-2100-4188-b7d2-f1e79df8dd71"
+
+    # S3
+    s3_endpoint_url: "https://storage-et1.cloud.cegedim.com"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+
+    s3_region: "eu-west-1"
+
+    # MLS CATALOG API (need PT:CPI_P_READ_DETAILS_CATA)
+    IDENTITY: "apik_serviceeligibility_otpsearchdetail-dev-evol2"
+    PASSWORD: "43abdb18-2100-4188-b7d2-f1e79df8dd71"
+    BASENAME: "dev-evol2"
+    DIRNAME: "https://idp.dev.beyond.cegedim.cloud/auth"
+    API_CALL_BASE_URL: "http://next-catalogintegrationpoints-core-api:8080"
+    CATALOG_INTEGRATION_BASE_URL: "/"
+
+
+otp-extract-rights-job:
+  service:
+    enabled: "false"
+  instanceEnv:
+    PROFILE: "dev"
+    PAU_URL: "http://next-serviceeligibility-core-api:8080/v1"
+    # KEYCLOAK
+    issuer: "https://idp.dev.beyond.cegedim.cloud/auth/realms/dev-evol2"
+    CLIENT_ID: "apik_serviceeligibility_otpsearchdetail-dev-evol2"
+    CLIENT_SECRET: "43abdb18-2100-4188-b7d2-f1e79df8dd71"
+
+    # S3
+    s3_endpoint_url: "https://storage-et1.cloud.cegedim.com"
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_bucket: "cegedim-beyond-dev-htp-es15-msdata"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+
+    s3_region: "eu-west-1"
+
+    # MLS CATALOG API (need PT:CPI_P_READ_DETAILS_CATA)
+    IDENTITY: "apik_serviceeligibility_otpsearchdetail-dev-evol2"
+    PASSWORD: "43abdb18-2100-4188-b7d2-f1e79df8dd71"
+    BASENAME: "dev-evol2"
+    DIRNAME: "https://idp.dev.beyond.cegedim.cloud/auth"
+    API_CALL_BASE_URL: "http://next-catalogintegrationpoints-core-api:8080"
+    CATALOG_INTEGRATION_BASE_URL: "/"
+
+bobb-import-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    VOLUMETRY_RATE: "95"
+#   INPUT_FOLDER: "/workdir/bobb/"
+
+bobb-transfo-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    INPUT_FOLDER: "/pefb/bobb/import"
+#   OUTPUT_FOLDER: "/workdir/bobb/"
+
+
+bobb-export-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    OUTPUT_FOLDER: "editeur/bobb/export/"
+
+is-bdds-634:
+  step-634:
+    resources:
+      requests:
+        memory: "4096Mi"
+        ephemeral-storage: "1024Mi"
+      limits:
+        memory: "4096Mi"
+        ephemeral-storage: "1024Mi"
+
+
+purgehistoconsos-job:
+  service:
+    enabled: "true"
+  instanceEnv:
+    s3_host: "storage-et1.cloud.cegedim.com"
+    s3_access_key: "nzua4ydzoc19biobbyqz"
+    s3_bucket: "cegedim-beyond-dev-evol2-msdata"
+    s3_connection_timeout: "900"
+    s3_endpoint_url: "https://storage-et1.cloud.cegedim.com"
+    s3_secret_access_key: "NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw"
+    s3_extraction_histo_consos: "testbleuhistoconsos"
+    s3_port: "0"
+    s3_read_timeout: "900"
+    s3_write_timeout: "900"
+
+
+bobb-purge-job:
+  service:
+    enabled: "true"

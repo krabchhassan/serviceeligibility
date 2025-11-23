@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Déclencheur bénéficiaire terminé",
+  "description": "Déclencheur bénéficiaire terminé",
+  "additionalProperties": false,
+  "properties": {
+    "idDeclencheur": {
+      "type": "string",
+      "description": "Identifiant du déclencheur dans la BDDS"
+    },
+    "idPersonneBeyond": {
+      "type": "string",
+      "description": "Identifiant de la personne"
+    },
+    "societeEmettrice": {
+      "type": "string",
+      "description": "Code de la société émettrice fournie par le BO externe"
+    },
+    "codeAnomalie": {
+      "type": "string",
+      "description": "Code de l’anomalie lors de la génération des droits TP"
+    },
+    "numeroContrat": {
+      "type": "string",
+      "description": "Numéro de contrat"
+    },
+    "numeroContratCollectif": {
+      "type": "string",
+      "description": "Numéro de contrat collectif"
+    },
+    "critereSecondaireDetaille": {
+      "type": "string",
+      "description": "Le critère secondaire détaillé"
+    },
+    "numeroAdherent": {
+      "type": "string",
+      "description": "Numéro d'adhérent"
+    },
+    "idDeclarant": {
+      "type": "string",
+      "description": "Id du déclarant"
+    }
+  },
+  "required": [
+    "idDeclencheur",
+    "idPersonneBeyond",
+    "societeEmettrice",
+    "numeroContrat",
+    "numeroAdherent",
+    "idDeclarant"
+  ],
+  "$id": "Insurance.serviceeligibility.trigger.beneficiary.finished.event/0.0.1"
+}

@@ -1,0 +1,13 @@
+{
+    "_id" : "0000452433",
+    "nom" : "MAPA",
+    "libelle" : "MAPA LONG",
+    "numeroPrefectoral" : "0000452433",
+    "codePartenaire" : "MPR",
+    "type" : "amc",
+    "codeCircuit" : "03",
+    "emetteurDroits" : "AMC",
+    "operateurPrincipal" : "SP",
+    "userCreation" : "bddOffice",
+    "_class" : "com.cegedim.next.serviceeligibility.core.model.entity.Declarant"
+}

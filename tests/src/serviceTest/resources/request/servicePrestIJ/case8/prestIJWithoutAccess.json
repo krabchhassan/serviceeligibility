@@ -1,0 +1,45 @@
+{
+  "contrat" : {
+    "numero" : "123456789",
+    "numeroAdherent" : "123456789",
+    "dateSouscription" : "2019-09-04",
+    "dateEffet": "2020-01-01",
+    "isContratIndividuel" : false
+  },
+  "oc" : {
+      "identifiantPrestIj" : "M0004",
+      "identifiant" : "0008400004",
+      "denomination" : "First Mutuelle"
+  },
+  "entreprise": {
+    "identifiantSiret": "identifiantSiret",
+    "identifiantSiren": "identifiantSiren",
+    "identifiantNic": "identifiantSiret",
+    "raisonSociale": "identifiantSiret"
+  },
+  "assures": [
+    {
+        "nir" : {
+            "code": "1791062498046",
+            "cle": "46"
+        },
+        "numeroPersonne" : "123456783",
+        "referenceExternePersonne" : "123456783",
+        "dateNaissance" : "19791006",
+        "rangNaissance" : "1",
+        "data" : {
+            "nom" : {
+                "nomFamille" :"HERMEZ",
+                "prenom" : "REYNALD",
+                "civilite" : "MR"
+            }
+        },
+        "droits" : [
+            {
+            "type" : "IJ",
+            "dateDebut" : "2020-03-04"
+            }
+        ]
+    }
+    ]
+}

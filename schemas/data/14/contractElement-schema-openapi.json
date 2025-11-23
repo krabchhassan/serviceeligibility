@@ -1,0 +1,107 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "contractElement",
+      "description": "Collection qui contient l'ensemble des correspondances BOBB"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ContractElement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ID technique"
+          },
+          "codeAMC": {
+            "type": "string"
+          },
+          "codeInsurer": {
+            "type": "string",
+            "description" : "Code assureur de la garantie"
+          },
+          "codeContractElement": {
+            "type": "string",
+            "description" : "Code de la garantie"
+          },
+          "label": {
+            "type": "string",
+            "description" : "Libellé de la garantie"
+          },
+          "alertId": {
+            "type": "string",
+            "description": "deprecated"
+          },
+          "deadline": {
+            "type": "string",
+            "format": "date"
+          },
+          "productElements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProductElement"
+            }
+          },
+          "ignored": {
+            "type": "boolean",
+            "description": "Permet d'ignorer l'élément lors de la génération des droits TP par exemple"
+          },
+          "origine": {
+            "type": "string",
+            "description": "Origine de la donnée (IMPORT par exemple)"
+          },
+          "user": {
+            "type": "string",
+            "description": "Dernier utilisateur à avoir créer/modifier la donnée"
+          }
+        },
+        "required": [],
+        "title": "ContractElement"
+      },
+      "ProductElement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeOffer": {
+            "type": "string",
+            "description" : "Code de l'offre dans l'atelier produit"
+          },
+          "codeProduct": {
+            "type": "string",
+            "description" : "Code du produit dans l'atelier produit"
+          },
+          "codeBenefitNature": {
+            "type": "string"
+          },
+          "codeAmc": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string",
+            "format": "date",
+            "description": "date de début de validité"
+          },
+          "to": {
+            "type": "string",
+            "format": "date",
+            "description": "date de fin de validité"
+          },
+          "effectiveDate": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": [],
+        "title": "ProductElement"
+      }
+    }
+  }
+}

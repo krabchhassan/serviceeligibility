@@ -1,0 +1,32 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
+            https://idp.dev.beyond.cegedim.cloud/auth/realms/dev
+beyond:
+  redis:
+    sentinel:
+      nodes:
+        - detcisedtrd001.hosting.cegedim.cloud:26379
+        - detcisedtrd002.hosting.cegedim.cloud:26379
+        - detcisedtrd003.hosting.cegedim.cloud:26379
+      master: detcisedtrd01
+      username: redis
+      password: Ratp4(WazuVupa
+    port: 26379
+    username: user_generic
+    password: UJP59A0@baBJRVH3
+    ssl:
+      enabled: true
+      trustManager: ${user.home}/.redis/redis.truststore.crt
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur
+keycloak:
+  enabled: false

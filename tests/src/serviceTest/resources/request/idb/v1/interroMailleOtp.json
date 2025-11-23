@@ -1,0 +1,26 @@
+{
+  "beneficiaire": {
+    "nircertifie": "1791062498049",
+    "cleNIR": "43",
+    "dateNaissance": "19791006",
+    "rangGemellaire": "1"
+  },
+  "amc": {
+    "numeroAMCPrefectoral": "0000401166"
+  },
+  "infoBdd": {
+    "typeRechercheBenef": "0",
+    "typeRechercheSegment": "3",
+    "listeSegmentRecherche": {
+      "segmentRecherche": [
+        "HOSP"
+      ]
+    },
+    "typeProfondeurRecherche": "0",
+    "typeGaranties": "1"
+  },
+  "dates": {
+    "dateDebut": "2023-01-15",
+    "dateFin": "2023-12-15"
+  }
+}

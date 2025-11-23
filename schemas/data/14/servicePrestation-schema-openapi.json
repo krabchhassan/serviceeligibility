@@ -1,0 +1,237 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "servicePrestation",
+      "description": "Collection contenant l'ensemble des contrats HTP reçus depuis un backoffice externe"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ContratAIV5": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "contexteTiersPayant": {
+            "$ref": "#/components/schemas/ContexteTP"
+          },
+          "assures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AssureV5"
+            }
+          },
+          "version": {
+            "type": "string"
+          },
+          "periodesSuspension": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/PeriodeSuspension"
+            }
+          },
+          "codeOc": {
+            "type": "string"
+          },
+          "periodesContratCMUOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/PeriodeContratCMUOuvert"
+            }
+          },
+          "nomFichierOrigine": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "traceId": {
+            "type": "string"
+          },
+          "idDeclarant": {
+            "type": "string"
+          },
+          "societeEmettrice": {
+            "type": "string"
+          },
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "apporteurAffaire": {
+            "type": "string"
+          },
+          "periodesContratResponsableOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "critereSecondaireDetaille": {
+            "type": "string"
+          },
+          "critereSecondaire": {
+            "type": "string"
+          },
+          "isContratIndividuel": {
+            "type": "boolean"
+          },
+          "gestionnaire": {
+            "type": "string"
+          },
+          "contratCollectif": {
+            "$ref": "#/components/schemas/ContratCollectif"
+          },
+          "qualification": {
+            "type": "string"
+          },
+          "ordrePriorisation": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ContratAIV5"
+      },
+      "AssureV5": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/DataAssure"
+          },
+          "digitRelation": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/DigitRelation"
+          },
+          "droits": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/DroitAssure"
+            }
+          },
+          "isSouscripteur": {
+            "type": "boolean"
+          },
+          "rangAdministratif": {
+            "type": "string"
+          },
+          "identite": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/IdentiteContrat"
+          },
+          "dateAdhesionMutuelle": {
+            "type": "string"
+          },
+          "dateDebutAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "numeroAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "dateRadiation": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "periodes": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "periodesMedecinTraitantOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "regimesParticuliers": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/CodePeriode"
+            }
+          },
+          "situationsParticulieres": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/CodePeriode"
+            }
+          },
+          "qualite": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/QualiteAssure"
+          }
+        },
+        "required": [],
+        "title": "AssureV5"
+      },
+      "ContexteTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isCartePapierAEditer": {
+            "type": "boolean"
+          },
+          "periodesDroitsCarte": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/PeriodesDroitsCarte"
+          },
+          "dateRestitutionCarte": {
+            "type": "string"
+          },
+          "college": {
+            "type": "string"
+          },
+          "collectivite": {
+            "type": "string"
+          },
+          "isCarteDematerialisee": {
+            "type": "boolean"
+          },
+          "isCartePapier": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "ContexteTP"
+      },
+      "ContratCollectif": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "numero"
+        ],
+        "title": "ContratCollectif"
+      }
+    }
+  }
+}

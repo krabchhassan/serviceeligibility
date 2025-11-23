@@ -1,0 +1,16 @@
+plugins {
+    id("beyond.gradle.plugins.python-app")
+}
+
+pythonAppExtension {
+    setActivateLint(false)
+}
+
+dependencies {
+    lib(project(":lib-otp-common"))
+}
+
+
+tasks.named("dockerPrepare") {
+    from("entrypoint.sh")
+}

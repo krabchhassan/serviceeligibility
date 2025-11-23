@@ -1,0 +1,40 @@
+[
+  {
+    "validityDate": "2022-01-01",
+    "endValidityDate": "2022-06-30",
+    "offerCode": "123",
+    "code": 1,
+    "natures": [
+      "OPTIQUE",
+      "AUDIOLOGIE",
+      "MEDECINE",
+      "PHARMACIE",
+      "DENTAIRE",
+      "RADIOLOGIE"
+    ],
+    "products": [
+      "KC_PlatineComp2",
+      "KC_PlatineBase",
+      "KC_PlatineComp"
+    ]
+  },
+  {
+    "validityDate": "2022-07-01",
+    "code": 2,
+    "offerCode": "123",
+    "natures": [
+      "OPTIQUE",
+      "AUDIOLOGIE",
+      "MEDECINE",
+      "PHARMACIE",
+      "DENTAIRE",
+      "RADIOLOGIE",
+      "HOSPITALISATION"
+    ],
+    "products": [
+      "KC_PlatineComp2",
+      "KC_PlatineBase",
+      "KC_PlatineComp"
+    ]
+  }
+]

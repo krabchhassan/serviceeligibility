@@ -1,0 +1,15 @@
+:global {
+    .no-gutters {
+        align-items: center !important;
+    }
+}
+
+.borderBoxLeft {
+    border-left: 1px dashed;
+    border-image: repeating-linear-gradient(to bottom, transparent, transparent 1px, #a3a5a6 5px, #a3a5a6 10px) 1;
+}
+
+.borderBoxBottom {
+    border-bottom: #a3a5a6 1px dashed;
+    border-image: repeating-linear-gradient(to right, transparent, transparent 1px, #a3a5a6 5px, #a3a5a6 10px) 1;
+}

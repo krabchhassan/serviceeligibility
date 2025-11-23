@@ -1,0 +1,76 @@
+{
+  "offerCode": "OFFRE",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2022_janv_01.1",
+      "catalogOfferVersion": "2022_janv_01.4",
+      "catalogOfferCode": "SANTE_CAT_BLUE",
+      "effectDate": "2023-04-20T18:18:16.195Z",
+      "validityDate": "2022-01-01",
+      "endValidityDate": "2022-06-30",
+      "engineVersion": "31.0",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "AUDI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "AUDIOLOGIE"
+          }
+        },
+        {
+          "domainCode": "MEDE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "MEDECINE"
+          }
+        },
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "DENTAIRE"
+          }
+        },
+        {
+          "domainCode": "RADI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "RADIOLOGIE"
+          }
+        }
+      ]
+    }
+  ]
+}

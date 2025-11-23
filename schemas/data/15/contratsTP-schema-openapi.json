@@ -1,0 +1,1010 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "contratsTP",
+      "description": "Collection qui contient l'ensemble des contrats TP (consolidation des déclarations)"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Contract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "type": "string"
+          },
+          "numeroContrat": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "codeOc": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "nomPorteur": {
+            "type": "string"
+          },
+          "prenomPorteur": {
+            "type": "string"
+          },
+          "civilitePorteur": {
+            "type": "string"
+          },
+          "qualification": {
+            "type": "string"
+          },
+          "numeroContratCollectif": {
+            "type": "string"
+          },
+          "isContratResponsable": {
+            "type": "boolean"
+          },
+          "isContratCMU": {
+            "type": "boolean"
+          },
+          "destinataire": {
+            "type": "string"
+          },
+          "individuelOuCollectif": {
+            "type": "string"
+          },
+          "situationDebut": {
+            "type": "string"
+          },
+          "situationFin": {
+            "type": "string"
+          },
+          "motifFinSituation": {
+            "type": "string"
+          },
+          "typeConvention": {
+            "type": "string"
+          },
+          "critereSecondaire": {
+            "type": "string"
+          },
+          "critereSecondaireDetaille": {
+            "type": "string"
+          },
+          "numeroExterneContratIndividuel": {
+            "type": "string"
+          },
+          "numeroExterneContratCollectif": {
+            "type": "string"
+          },
+          "gestionnaire": {
+            "type": "string"
+          },
+          "groupeAssures": {
+            "type": "string"
+          },
+          "numAMCEchange": {
+            "type": "string"
+          },
+          "numOperateur": {
+            "type": "string"
+          },
+          "ordrePriorisation": {
+            "type": "string"
+          },
+          "contratCMUC2S": {
+            "type": "string"
+          },
+          "dateRestitution": {
+            "type": "string"
+          },
+          "origineDeclaration": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateConsolidation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "beneficiaires": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BeneficiaireContract"
+            }
+          },
+          "suspension": {
+            "$ref": "#/components/schemas/SuspensionContract"
+          },
+          "identifiantCollectivite": {
+            "type": "string"
+          },
+          "raisonSociale": {
+            "type": "string"
+          },
+          "siret": {
+            "type": "string"
+          },
+          "groupePopulation": {
+            "type": "string"
+          },
+          "periodeCMUOuverts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "string"
+                    },
+                    "fin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "debut"
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "periode"
+              ]
+            }
+          },
+          "periodeResponsableOuverts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "debut": {
+                  "type": "string"
+                },
+                "fin": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "debut"
+              ]
+            }
+          },
+          "codeItelis": {
+            "type": "string"
+          },
+          "carteTPaEditerOuDigitale": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Contract"
+      },
+      "BeneficiaireContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateRadiation": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string"
+          },
+          "nirBeneficiaire": {
+            "type": "string"
+          },
+          "cleNirBeneficiaire": {
+            "type": "string"
+          },
+          "nirOd1": {
+            "type": "string"
+          },
+          "cleNirOd1": {
+            "type": "string"
+          },
+          "nirOd2": {
+            "type": "string"
+          },
+          "cleNirOd2": {
+            "type": "string"
+          },
+          "insc": {
+            "type": "string"
+          },
+          "numeroPersonne": {
+            "type": "string"
+          },
+          "refExternePersonne": {
+            "type": "string"
+          },
+          "rangAdministratif": {
+            "type": "string"
+          },
+          "categorieSociale": {
+            "type": "string"
+          },
+          "situationParticuliere": {
+            "type": "string"
+          },
+          "modePaiementPrestations": {
+            "type": "string"
+          },
+          "dateAdhesionMutuelle": {
+            "type": "string"
+          },
+          "dateDebutAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "numeroAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "dernierMouvementRecu": {
+            "type": "string"
+          },
+          "affiliation": {
+            "$ref": "#/components/schemas/Affiliation"
+          },
+          "adresses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Adresse"
+            }
+          },
+          "affiliationsRO": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "nir": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "cle": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "cle"
+                  ]
+                },
+                "rattachementRO": {
+                  "type": "object",
+                  "properties": {
+                    "codeRegime": {
+                      "type": "string"
+                    },
+                    "codeCaisse": {
+                      "type": "string"
+                    },
+                    "codeCentre": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "codeRegime",
+                    "codeCaisse",
+                    "codeCentre"
+                  ]
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "string"
+                    },
+                    "fin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "debut"
+                  ]
+                }
+              },
+              "required": [
+                "nir",
+                "rattachementRO",
+                "periode"
+              ]
+            }
+          },
+          "periodesMedecinTraitant": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "debut": {
+                  "type": "string"
+                },
+                "fin": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "debut"
+              ]
+            }
+          },
+          "teletransmissions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "string"
+                    },
+                    "fin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "debut"
+                  ]
+                },
+                "isTeletransmission": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "periode",
+                "isTeletransmission"
+              ]
+            }
+          },
+          "regimesParticuliers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "string"
+                    },
+                    "fin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "debut"
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "periode"
+              ]
+            }
+          },
+          "situationsParticulieres": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "string"
+                    },
+                    "fin": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "debut"
+                  ]
+                }
+              },
+              "required": [
+                "code",
+                "periode"
+              ]
+            }
+          },
+          "domaineDroits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DomaineDroitContract"
+            }
+          }
+        },
+        "required": [],
+        "title": "BeneficiaireContract"
+      },
+      "Affiliation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "nomPatronymique": {
+            "type": "string"
+          },
+          "nomMarital": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          },
+          "periodeDebut": {
+            "type": "string"
+          },
+          "periodeFin": {
+            "type": "string"
+          },
+          "qualite": {
+            "type": "string"
+          },
+          "regimeOD1": {
+            "type": "string"
+          },
+          "caisseOD1": {
+            "type": "string"
+          },
+          "centreOD1": {
+            "type": "string"
+          },
+          "regimeOD2": {
+            "type": "string"
+          },
+          "caisseOD2": {
+            "type": "string"
+          },
+          "centreOD2": {
+            "type": "string"
+          },
+          "hasMedecinTraitant": {
+            "type": "boolean"
+          },
+          "regimeParticulier": {
+            "type": "string"
+          },
+          "isBeneficiaireACS": {
+            "type": "boolean"
+          },
+          "isTeleTransmission": {
+            "type": "boolean"
+          },
+          "typeAssure": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Affiliation"
+      },
+      "Adresse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ligne1": {
+            "type": "string"
+          },
+          "ligne2": {
+            "type": "string"
+          },
+          "ligne3": {
+            "type": "string"
+          },
+          "ligne4": {
+            "type": "string"
+          },
+          "ligne5": {
+            "type": "string"
+          },
+          "ligne6": {
+            "type": "string"
+          },
+          "ligne7": {
+            "type": "string"
+          },
+          "codePostal": {
+            "type": "string"
+          },
+          "pays": {
+            "type": "string"
+          },
+          "telephone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "typeAdresse": {
+            "$ref": "#/components/schemas/TypeAdresse"
+          }
+        },
+        "required": [],
+        "title": "Adress"
+      },
+      "TypeAdresse": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "libelle": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "description": "Valeurs possibles :'AD' adresse ADhérent,'EN' adresse de l’ENtreprise,'GE' adresse du GEstionnaire du contrat"
+          }
+        },
+        "required": [],
+        "title": "TypeAdresse"
+      },
+      "DomaineDroitContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "codeExterne": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "libelleExterne": {
+            "type": "string"
+          },
+          "codeProfil": {
+            "type": "string"
+          },
+          "garanties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Garantie"
+            }
+          }
+        },
+        "required": [],
+        "title": "DomaineDroitContract"
+      },
+      "Garantie": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeGarantie": {
+            "type": "string"
+          },
+          "libelleGarantie": {
+            "type": "string"
+          },
+          "codeAssureurGarantie": {
+            "type": "string"
+          },
+          "codeCarence": {
+            "type": "string"
+          },
+          "codeOrigine": {
+            "type": "string"
+          },
+          "codeAssureurOrigine": {
+            "type": "string"
+          },
+          "dateAdhesionCouverture": {
+            "type": "string"
+          },
+          "produits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Produit"
+            }
+          }
+        }
+      },
+      "Produit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeProduit": {
+            "type": "string"
+          },
+          "libelleProduit": {
+            "type": "string"
+          },
+          "codeExterneProduit": {
+            "type": "string"
+          },
+          "libelleExterneProduit": {
+            "type": "string"
+          },
+          "referencesCouverture": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReferenceCouverture"
+            }
+          },
+          "codeOc": {
+            "type": "string"
+          },
+          "codeOffre": {
+            "type": "string"
+          }
+        }
+      },
+      "ReferenceCouverture": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "referenceCouverture": {
+            "type": "string"
+          },
+          "naturesPrestation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/NaturePrestation"
+            }
+          }
+        },
+        "required": [],
+        "title": "ReferenceCouverture"
+      },
+      "NaturePrestation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "naturePrestation": {
+            "type": "string"
+          },
+          "periodesDroit": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodeDroitContract"
+            }
+          },
+          "prioritesDroit": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PrioriteDroitContrat"
+            }
+          },
+          "conventionnements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConventionnementContrat"
+            }
+          },
+          "prestations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PrestationContrat"
+            }
+          },
+          "remboursements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RemboursementContrat"
+            }
+          }
+        },
+        "required": [],
+        "title": "NaturePrestation"
+      },
+      "PeriodeDroitContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "typePeriode": {
+            "type": "string",
+            "enum": [
+              "ONLINE",
+              "OFFLINE"
+            ]
+          },
+          "periodeDebut": {
+            "type": "string"
+          },
+          "periodeFin": {
+            "type": "string"
+          },
+          "periodeFinFermeture": {
+            "type": "string"
+          },
+          "libelleEvenement": {
+            "type": "string"
+          },
+          "modeObtention": {
+            "type": "string"
+          },
+          "motifEvenement": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PeriodeDroitContract"
+      },
+      "SuspensionContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "periodesSuspension": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodeSuspensionContract"
+            }
+          },
+          "etatSuspension": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "SuspensionContract"
+      },
+      "PeriodeSuspensionContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateDebutSuspension": {
+            "type": "string"
+          },
+          "dateFinSuspension": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PeriodeSuspensionContract"
+      },
+      "PrioriteDroitContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "typeDroit": {
+            "type": "string"
+          },
+          "prioriteBO": {
+            "type": "string"
+          },
+          "nirPrio1": {
+            "type": "string"
+          },
+          "nirPrio2": {
+            "type": "string"
+          },
+          "prioDroitNir1": {
+            "type": "string"
+          },
+          "prioDroitNir2": {
+            "type": "string"
+          },
+          "prioContratNir1": {
+            "type": "string"
+          },
+          "prioContratNir2": {
+            "type": "string"
+          },
+          "periodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            }
+          }
+        },
+        "required": [],
+        "title": "PrioriteDroitContrat"
+      },
+      "ConventionnementContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "priorite": {
+            "type": "integer"
+          },
+          "typeConventionnement": {
+            "$ref": "#/components/schemas/TypeConventionnement"
+          },
+          "periodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            }
+          }
+        },
+        "required": [],
+        "title": "ConventionnementContrat"
+      },
+      "TypeConventionnement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "TypeConventionnement"
+      },
+      "PrestationContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "codeRegroupement": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "isEditionRisqueCarte": {
+            "type": "boolean"
+          },
+          "dateEffet": {
+            "type": "string"
+          },
+          "formule": {
+            "$ref": "#/components/schemas/Formule"
+          },
+          "formuleMetier": {
+            "$ref": "#/components/schemas/FormuleMetier"
+          },
+          "periodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            }
+          }
+        },
+        "required": [],
+        "title": "PrestationContrat"
+      },
+      "Formule": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "masqueFormule": {
+            "type": "string"
+          },
+          "parametres": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Parametre"
+            }
+          }
+        },
+        "required": [],
+        "title": "Formule"
+      },
+      "FormuleMetier": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "FormuleMetier"
+      },
+      "Parametre": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "valeur": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Parametre"
+      },
+      "RemboursementContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "tauxRemboursement": {
+            "type": "string"
+          },
+          "uniteTauxRemboursement": {
+            "type": "string"
+          },
+          "periodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            }
+          }
+        },
+        "required": [],
+        "title": "RemboursementContrat"
+      },
+      "Periode": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "debut": {
+            "type": "string"
+          },
+          "fin": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "debut"
+        ],
+        "title": "Periode"
+      }
+    }
+  }
+}

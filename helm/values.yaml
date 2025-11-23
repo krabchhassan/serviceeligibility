@@ -1,0 +1,183 @@
+global:
+  socleCode: Insurance
+  serviceCode: serviceeligibility
+  deployment:
+    annotations:
+      reloader.stakater.com/auto: "true"
+  functions:
+    instanceEnv:
+      s3_region: eu-west-1
+      s3_secure: "true"
+    annotations:
+      sidecar.istio.io/inject: "false"
+  vault:
+    enabled: "true"
+  instanceEnv:
+    s3_region: eu-west-1
+    s3_secure: "true"
+    logging.level.org.springframework.data.convert.CustomConversions: ERROR
+    AUDIT_SCHEMA_PATH: "/var/audits"
+    AUDIT_VERSIONDEF_PATH: "/var/audits/versions.def.yaml"
+    SERVER_MAX_HTTP_HEADER_SIZE: "50KB"
+
+is-bdds-609:
+  step-file-server-to-workdir:
+    generic_parameters:
+      registry: "${imageRegistry}"
+      image_type: "${imageType}"
+      tag: "${imageTag}"
+    parameters:
+      strategy: moveFromSshToWorkdir
+      source_path: "/mnt/sshfs/files/ALMV3/tmpout/XML/"
+      destination_path: "/workdir/serviceeligibility/almerysACL/in/"
+  step-workdir-to-pefb-or-ssh:
+    generic_parameters:
+      registry: "${imageRegistry}"
+      image_type: "${imageType}"
+      tag: "${imageTag}"
+    parameters:
+      strategy: moveFromWorkdirToSsh
+      source_path: "/workdir/serviceeligibility/almerysACL/out/"
+      destination_path: "/XCHANGE/ENV-EPH/files/ALMV3/out/"
+
+is-bdds-extractcard:
+  editing-system-generation:
+    generic_parameters:
+      registry: "${imageRegistry}"
+      image_type: "${imageType}"
+      tag: "${imageTag}"
+    parameters:
+      documentType: CARTES_PAPIER
+      TEMP_WORKDIR_PATH: ""
+      TOTAL_EPHEMERAL_STORAGE_MB: "250"
+      PEFB_ORGANIZATION_FULL_PATH: ""
+      OBJECT_TYPE: ""
+      PEFB_FILE_NAME: ""
+      PEFB_FILES_MAX_SIZE_MB: ""
+      FILE_HEADER_NAME: ""
+      FILE_HEADER_LIST_NAME: ""
+      FILE_HEADER_OBJECT_NAME: ""
+      PROCESSING_DATE: ""
+      FREQUENCY: ""
+      BREAKDOWN_STRATEGY: ""
+      BREAKDOWN_FILE_PATTERN: ""
+      DEFAULT_MAIN_ORGANIZATION: ""
+  file-manager:
+    generic_parameters:
+      registry: "${imageRegistry}"
+      image_type: "${imageType}"
+      tag: "${imageTag}"
+    parameters:
+      strategy: move
+      source_path: ""
+
+data-test-generation-script:
+  enabled: false
+
+extractpopulation-job:
+  env:
+    CSV_DELIMITER: ";"
+
+facturation-htp-job:
+  env:
+    CSV_DELIMITER: ","
+
+otp-detail:
+  env:
+    API_CALL_BASE_URL: "http://next-catalogintegrationpoints-core-api:8080"
+    CATALOG_INTEGRATION_BASE_URL: "/"
+
+otp-extract-rights-job:
+  env:
+    API_CALL_BASE_URL: "http://next-catalogintegrationpoints-core-api:8080"
+    CATALOG_INTEGRATION_BASE_URL: "/"
+
+otp-search:
+  env:
+    API_CALL_BASE_URL: "http://next-catalogintegrationpoints-core-api:8080"
+    CATALOG_INTEGRATION_BASE_URL: "/"
+
+serviceeligibility-batch620-job:
+  env:
+    insurer_settings_file_path: "insurance/editingsystem/editing-batch/insurer_settings.json"
+
+serviceeligibility-consumer-worker:
+  env:
+    ORGA_LIB_ENABLED: "true"
+    SPRING_APPLICATION_NAME: "serviceeligibility-consumer-worker"
+
+serviceeligibility-consumer-api:
+  env:
+    ORGA_LIB_ENABLED: "true"
+    SPRING_APPLICATION_NAME: "serviceeligibility-consumer-api"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    SE_WAITING_PERIODS: "/api/carences"
+    PW_ENDPOINT_OFFERSTRUCTURE: "/v4/offerStructure"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+
+serviceeligibility-core-api:
+  env:
+    ORGA_LIB_ENABLED: "true"
+    allowCleanServices: "false"
+    RDO_KEY_SEPARATOR: "#"
+    SPRING_APPLICATION_NAME: "serviceeligibility-core-api"
+    LEVEL_OF_GUARANTEE: HIGH
+    COLLECTIVE_CONTRACT_DOUBLE_SEARCH_ENABLED: "false"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    TASK_BATCH_SIZE: "5"
+
+serviceeligibility-renouvellementdroitstp-job:
+  env:
+    ORGA_LIB_ENABLED: "true"
+
+serviceeligibility-rdoserviceprestation-job:
+  env:
+    ORGA_LIB_ENABLED: "true"
+
+serviceeligibility-trigger-worker:
+  env:
+    ORGA_LIB_ENABLED: "true"
+    SPRING_APPLICATION_NAME: "serviceeligibility-trigger-worker"
+
+serviceeligibility-triggerrenouvellement-unitaire-worker:
+  env:
+    ORGA_LIB_ENABLED: "true"
+    SETTINGS_API_URL: "http://next-beyond-configuration:8080"
+    SE_WAITING_PERIODS: "/api/carences"
+    PW_ENDPOINT_OFFERSTRUCTURE: "/v4/offerStructure"
+    PW_API_NB_RESULT_PER_PAGE: "10"
+    PW_API_URL: "http://next-engine-core-api:8080"
+    PW_ENDPOINT_TPOFFLINERIGHTS_V4: "/v4/tpOfflineRights"
+    PW_ENDPOINT_TPRIGHTS_V4: "/v4/tpRights"
+    SPRING_APPLICATION_NAME: "serviceeligibility-triggerrenouvellement-unitaire-worker"
+
+serviceeligibility-triggerrenouvellement-worker:
+  env:
+    SPRING_APPLICATION_NAME: "serviceeligibility-triggerrenouvellement-worker"
+
+serviceeligibility-consolidationcontract-worker:
+  env:
+    SPRING_APPLICATION_NAME: "serviceeligibility-consolidationcontract-worker"
+
+serviceeligibility-core-ui:
+  env:
+    USE_BEYOND_API: "true"
+    authorization_enabled: "true"
+
+is-bdds-extracttpoff:
+  step-extract-rights:
+    parameters:
+      OMU_ID: '{{ workflow.name }}'
+
+serviceeligibility-undueretention-job:
+  env:
+    ORGA_LIB_ENABLED: "true"
+
+editing-core-job:
+  instanceMountedcm: []
+
+update-status-job:
+  instanceMountedcm: []

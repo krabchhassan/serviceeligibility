@@ -1,0 +1,50 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-2121639",
+  "contrats": [
+    {
+      "numeroContrat": "01599324",
+      "numeroAdherent": "01599324",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "LE GRIEL",
+          "nomUsage": "LE GRIEL",
+          "prenom": "SOPHIE"
+        }
+      }
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "identite": {
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "18690428",
+        "rangNaissance": "1"
+      }
+    ],
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1860598145145",
+          "cle": "24"
+        },
+        "rattachementRO": {
+          "codeRegime": "03",
+          "codeCaisse": "054",
+          "codeCentre": "6200"
+        },
+        "periode": {
+          "debut": "2019-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "20080519",
+    "rangNaissance": "1",
+    "numeroPersonne": "2121639"
+  }
+}

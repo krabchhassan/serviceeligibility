@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Fermeture droits HTP assuré",
+  "description": "Fermeture droits HTP assuré",
+  "additionalProperties": false,
+  "properties": {
+    "insurerId": {
+      "type": "string",
+      "description": "Identifiant du déclarant du contrat"
+    },
+    "issuingCompanyCode": {
+      "type": "string",
+      "description": "Société émettrice du contrat"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro d'adhérent au contrat"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "personNumber": {
+      "type": "string",
+      "description": "Identifiant de la personne"
+    },
+    "nir": {
+      "type": "string",
+      "description": "NIR de la personne"
+    },
+    "affiliationsRO": {
+      "type": "array",
+      "description": "Liste des affiliations RO de la personne",
+      "items": {
+        "$ref": "#/components/schemas/AffiliationRO"
+      }
+    },
+    "birthDate": {
+      "type": "string",
+      "description": "Date de naissance de la personne (AAAAMMJJ)"
+    },
+    "birthRank": {
+      "type": "string",
+      "description": "Rang de naissance de la personne"
+    },
+    "previousEndDate": {
+      "type": "string",
+      "description": "Ancienne date de fermeture"
+    },
+    "newEndDate": {
+      "type": "string",
+      "description": "Nouvelle date de fermeture"
+    }
+  },
+  "required": [
+    "insurerId",
+    "issuingCompanyCode",
+    "subscriberNumber",
+    "contractNumber",
+    "personNumber",
+    "birthDate",
+    "birthRank",
+    "newEndDate"
+  ],
+  "components": {
+    "schemas": {
+      "AffiliationRO": {
+        "type": "object",
+        "properties": {
+          "attachementRO": {
+            "$ref": "#/components/schemas/AttachementRO"
+          },
+          "nir": {
+            "$ref": "#/components/schemas/Nir"
+          },
+          "period": {
+            "$ref": "#/components/schemas/Period"
+          }
+        }
+      },
+      "AttachementRO": {
+        "type": "object",
+        "properties": {
+          "centerCode": {
+            "type": "string"
+          },
+          "healthInsuranceCompanyCode": {
+            "type": "string"
+          },
+          "regimeCode": {
+            "type": "string"
+          }
+        }
+      },
+      "Nir": {
+        "required": [
+          "key",
+          "code"
+        ],
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        }
+      },
+      "Period": {
+        "type": "object",
+        "properties": {
+          "end": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "$id": "Insurance.serviceeligibility.insured.termination.event/0.0.1"
+}

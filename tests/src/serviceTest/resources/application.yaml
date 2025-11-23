@@ -1,0 +1,1398 @@
+ARL_FOLDER: C:/tmp/arlfiles
+BEYOND_CUSTOMER: ephemeral
+BEYOND_INSTANCE: htp-es16
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+CLIENT_USERNAME: service-account-test-es16
+CLIENT_TYPE: INSURER
+CLOUD_PROVIDER: itcare
+ELASTICSEARCH_LOGIN: admin
+ELASTICSEARCH_PASSWORD: bPVjay9MR5123+
+ELASTICSEARCH_URL: https://beyond-data-dev.es.cegedim.cloud
+COMMON_INDEX_BASENAME: ${TARGET_ENV}
+KAFKA_SERVERS: dkafkab01.hosting.cegedim.cloud:9094,dkafkab02.hosting.cegedim.cloud:9094,dkafkab03.hosting.cegedim.cloud:9094
+KAFKA_TOPIC_BDD-BENEFAI: ${TARGET_ENV}-bdd-benefai
+MANAGEMENT_SCOPE_ENABLED: false
+MONGODB_DATABASE_NAME: serviceeligibility-core-api-${TARGET_ENV}
+MONGODB_URL: mongodb://userAdmin:53lLrBSWb8q7@detmongodev11.hosting.cegedim.cloud,detmongodev12.hosting.cegedim.cloud,detmongodev13.hosting.cegedim.cloud:27017
+NATURE: dev
+ORGA_LIB_ENABLED: true
+RDO_KEY_SEPARATOR: null
+SEND_EVENTS: false
+SLEEP_BETWEEN_TRIES: '100'
+TARGET_DOMAIN: dev
+TARGET_ENV: t-973517
+FAIL_FAST: false
+TARGET_ENV_ES: ${TARGET_ENV}-es16
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+beyond:
+  instances:
+    htp-es16:
+      organisations:
+        - code: AS251060
+          shortCode: AS2
+          amc: AS2510607879
+          siret: AS251060
+          siren: AS251060
+          commercialName: AS251060
+          fullName: AS251060
+          address:
+            line1: laurent_2510
+            line2:
+            line3:
+            line4: 25 rue de la paix
+            line5:
+            line6: 31240 L UNION
+            locality: L UNION
+            zipCode: '31240'
+
+          roles:
+            - startDate: '2022-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00012
+          shortCode: G14
+          amc: 000ER00012
+          siret: '77566635700063'
+          siren: '775666357'
+          commercialName: IPSEC
+          fullName: IPSEC
+          address:
+            line1: IPSEC
+            line2:
+            line3:
+            line4: f
+            line5:
+            line6: 69000 LYON
+            locality: LYON
+            zipCode: '69000'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00019
+          shortCode: AXA
+          amc: 000ER00019
+          siret: '31049995900891'
+          siren: '310499959'
+          commercialName: AXA FRANCE VIE
+          fullName: AXA FRANCE VIE
+          address:
+            line1: AXA FRANCE VIE
+            line2:
+            line3:
+            line4: cs
+            line5:
+            line6: c V
+            locality: V
+            zipCode: c
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00037
+          shortCode: 4A2
+          amc: 000ER00037
+          siret: '34023496207046'
+          siren: '340234962'
+          commercialName: ALLIANZ VIE
+          fullName: ALLIANZ VIE
+          address:
+            line1: ALLIANZ VIE
+            line2:
+            line3:
+            line4: k
+            line5:
+            line6: 75000 PARIS
+            locality: PARIS
+            zipCode: '75000'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00060
+          shortCode: G43
+          amc: 000ER00060
+          siret: '34042761601428'
+          siren: '340427616'
+          commercialName: GROUPAMA GAN VIE
+          fullName: GROUPAMA GAN VIE
+          address:
+            line1: GROUPAMA GAN VIE
+            line2:
+            line3:
+            line4: c
+            line5:
+            line6: c C
+            locality: C
+            zipCode: c
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00076
+          shortCode: XS1
+          amc: 000ER00076
+          siret: '84059993000012'
+          siren: '840599930'
+          commercialName: MALAKOFF MEDERIC COURTAGE
+          fullName: MALAKOFF MEDERIC COURTAGE
+          address:
+            line1: MALAKOFF MEDERIC COURTAGE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00079
+          shortCode: JSL
+          amc: 000ER00079
+          siret: '34042761601428'
+          siren: '340427616'
+          commercialName: GROUPAMA GAN VIE COLL
+          fullName: GROUPAMA GAN VIE COLL
+          address:
+            line1: GROUPAMA GAN VIE COLL
+            line2:
+            line3:
+            line4: f
+            line5:
+            line6: f F
+            locality: F
+            zipCode: f
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00092
+          shortCode: MQU
+          amc: 000ER00092
+          siret: '32221502100096'
+          siren: '322215021'
+          commercialName: SWISS LIFE
+          fullName: SWISS LIFE
+          address:
+            line1: SWISS LIFE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00098
+          shortCode: PPS
+          amc: 000ER00098
+          siret: '60206248102212'
+          siren: '602062481'
+          commercialName: GENERALI_BALOO
+          fullName: GENERALI_BALOO
+          address:
+            line1: GENERALI_BALOO
+            line2:
+            line3:
+            line4: f
+            line5:
+            line6: f D
+            locality: D
+            zipCode: f
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00104
+          shortCode: GO8
+          amc: 000ER00104
+          siret: '31899073600049'
+          siren: '318990736'
+          commercialName: UNI PREVOYANCE
+          fullName: UNI PREVOYANCE
+          address:
+            line1: UNI PREVOYANCE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00131
+          shortCode: GNH
+          amc: 000ER00131
+          siret: '41041588900022'
+          siren: '410415889'
+          commercialName: KLESIA PREVOYANCE
+          fullName: KLESIA PREVOYANCE
+          address:
+            line1: KLESIA PREVOYANCE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00132
+          shortCode: EOB
+          amc: 000ER00132
+          siret: '42935170300054'
+          siren: '429351703'
+          commercialName: ANIPS
+          fullName: ANIPS
+          address:
+            line1: ANIPS
+            line2:
+            line3:
+            line4: gd
+            line5:
+            line6: 75000 PARIS
+            locality: PARIS
+            zipCode: '75000'
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00136
+          shortCode: 4KU
+          amc: 000ER00136
+          siret: '78466995400025'
+          siren: '784669954'
+          commercialName: SMI
+          fullName: SMI
+          address:
+            line1: SMI
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00152
+          shortCode: BOW
+          amc: 000ER00152
+          siret: '80379503800048'
+          siren: '803795038'
+          commercialName: A2VIP
+          fullName: A2VIPTES
+          address:
+            line1: A2VIP
+            line2:
+            line3:
+            line4: d
+            line5:
+            line6: 13001 MARSEILLE
+            locality: MARSEILLE
+            zipCode: '13001'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00153
+          shortCode: WNI
+          amc: 000ER00153
+          siret: '80529010300045'
+          siren: '805290103'
+          commercialName: MGEN SOLUTIONS
+          fullName: MGEN SOLUTIONS
+          address:
+            line1: MGEN SOLUTIONS
+            line2:
+            line3:
+            line4: f
+            line5:
+            line6: f F
+            locality: F
+            zipCode: f
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00155
+          shortCode: 30H
+          amc: 000ER00155
+          siret: '77568534003557'
+          siren: '775685340'
+          commercialName: LA MUTUELLE GENERALE
+          fullName: LA MUTUELLE GENERALE
+          address:
+            line1: LA MUTUELLE GENERALE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00156
+          shortCode: ANL
+          amc: 000ER00156
+          siret: '44957125600147'
+          siren: '449571256'
+          commercialName: MUTUALIA TERRITOIRES SOLIDAIRE
+          fullName: MUTUALIA TERRITOIRES SOLIDAIRE
+          address:
+            line1: MUTUALIA TERRITOIRES SOLIDAIRE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00160
+          shortCode: ZCP
+          amc: 000ER00160
+          siret: '34042761601428'
+          siren: '340427616'
+          commercialName: GAN ASSURANCES
+          fullName: GAN ASSURANCES
+          address:
+            line1: GAN ASSURANCES
+            line2:
+            line3:
+            line4: ds
+            line5:
+            line6: sd D
+            locality: D
+            zipCode: sd
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00175
+          shortCode: T35
+          amc: 000ER00175
+          siret: '77565212601918'
+          siren: '775652126'
+          commercialName: MMA VIE
+          fullName: MMA VIE
+          address:
+            line1: MMA VIE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00176
+          shortCode: RM7
+          amc: 000ER00176
+          siret: '37983490600073'
+          siren: '379834906'
+          commercialName: GROUPAMA MEDITERRANEE
+          fullName: GROUPAMA MEDITERRANEE
+          address:
+            line1: GROUPAMA MEDITERRANEE
+            line2:
+            line3:
+            line4: F
+            line5:
+            line6: F F
+            locality: F
+            zipCode: F
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00187
+          shortCode: 4PL
+          amc: 000ER00187
+          siret: '32186250000014'
+          siren: '321862500'
+          commercialName: APICIL PREVOYANCE
+          fullName: APICIL PREVOYANCE
+          address:
+            line1: APICIL PREVOYANCE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00189
+          shortCode: ITD
+          amc: 000ER00189
+          siret: '38398762500019'
+          siren: '383987625'
+          commercialName: 'GROUPAMA NORD EST '
+          fullName: 'GROUPAMA NORD EST '
+          address:
+            line1: 'GROUPAMA NORD EST '
+            line2:
+            line3:
+            line4: C
+            line5:
+            line6: C C
+            locality: C
+            zipCode: C
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00204
+          shortCode: RN4
+          amc: 000ER00204
+          siret: '77565992300079'
+          siren: '775659923'
+          commercialName: UMEN
+          fullName: UMEN
+          address:
+            line1: UMEN
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00206
+          shortCode: KQ4
+          amc: 000ER00206
+          siret: '31558837600022'
+          siren: '315588376'
+          commercialName: 'ARPEGE PREVOYANCE '
+          fullName: 'ARPEGE PREVOYANCE '
+          address:
+            line1: 'ARPEGE PREVOYANCE '
+            line2:
+            line3:
+            line4: dfs
+            line5:
+            line6: 68200 MULHOUSE
+            locality: MULHOUSE
+            zipCode: '68200'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00212
+          shortCode: 56G
+          amc: 000ER00212
+          siret: '39922740400023'
+          siren: '399227404'
+          commercialName: SAINT CHRISTOPHE PREVOYANCE
+          fullName: SAINT CHRISTOPHE PREVOYANCE
+          address:
+            line1: SAINT CHRISTOPHE PREVOYANCE
+            line2:
+            line3:
+            line4: 105 rue de nantes
+            line5:
+            line6: 75526 PARIS
+            locality: PARIS
+            zipCode: '75526'
+
+          roles:
+            - startDate: '2016-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2016-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00214
+          shortCode: RLX
+          amc: 000ER00214
+          siret: '38228526002533'
+          siren: '382285260'
+          commercialName: GROUPAMA VAL DE LOIRE
+          fullName: GROUPAMA VAL DE LOIRE
+          address:
+            line1: GROUPAMA VAL DE LOIRE
+            line2:
+            line3:
+            line4: C
+            line5:
+            line6: C C
+            locality: C
+            zipCode: C
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00215
+          shortCode: WF0
+          amc: 000ER00215
+          siret: '77983836600028'
+          siren: '779838366'
+          commercialName: GROUPAMA RHONES ALPES
+          fullName: GROUPAMA RHONES ALPES
+          address:
+            line1: GROUPAMA RHONES ALPES
+            line2:
+            line3:
+            line4: C
+            line5:
+            line6: C C
+            locality: C
+            zipCode: C
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00217
+          shortCode: GR1
+          amc: 000ER00217
+          siret: '38426841300026'
+          siren: '384268413'
+          commercialName: AUDIENS SANTE PREVOYANCE
+          fullName: AUDIENS SANTE PREVOYANCE
+          address:
+            line1: AUDIENS SANTE PREVOYANCE
+            line2:
+            line3:
+            line4: dfs
+            line5:
+            line6: 92170 VANVES
+            locality: VANVES
+            zipCode: '92170'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00223
+          shortCode: 3ZN
+          amc: 000ER00223
+          siret: '77562739100755'
+          siren: '775627391'
+          commercialName: AESIO
+          fullName: AESIO
+          address:
+            line1: AESIO
+            line2:
+            line3:
+            line4: g
+            line5:
+            line6: 75008 PARIS
+            locality: PARIS
+            zipCode: '75008'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00615
+          shortCode: VP4
+          amc: 000ER00615
+          siret: '19279182019291'
+          siren: '192791820'
+          commercialName: HUMANIS ENTREPRISES
+          fullName: HUMANIS ENTREPRISES
+          address:
+            line1: HUMANIS ENTREPRISES
+            line2:
+            line3:
+            line4: V
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00693
+          shortCode: DUL
+          amc: 000ER00693
+          siret: '53851847300011'
+          siren: '538518473'
+          commercialName: HARMONIE MUTUELLE
+          fullName: HARMONIE MUTUELLE
+          address:
+            line1: HARMONIE MUTUELLE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00718
+          shortCode: MNU
+          amc: 000ER00718
+          siret: '78449208400156'
+          siren: '784492084'
+          commercialName: GROUPE FRANCE MUTUELLE
+          fullName: GROUPE FRANCE MUTUELLE
+          address:
+            line1: GROUPE FRANCE MUTUELLE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00903
+          shortCode: DQI
+          amc: 000ER00903
+          siret: '77568477201184'
+          siren: '775684772'
+          commercialName: SMA VIE
+          fullName: SMA VIE
+          address:
+            line1: SMA VIE
+            line2:
+            line3:
+            line4: vg
+            line5:
+            line6: v V
+            locality: V
+            zipCode: v
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00908
+          shortCode: 8S7
+          amc: 000ER00908
+          siret: '34885538800040'
+          siren: '348855388'
+          commercialName: CARCEPT PREVOYANCE
+          fullName: CARCEPT PREVOYANCE
+          address:
+            line1: CARCEPT PREVOYANCE
+            line2:
+            line3:
+            line4: f
+            line5:
+            line6: 75000 PARIS
+            locality: PARIS
+            zipCode: '75000'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00955
+          shortCode: WME
+          amc: 000ER00955
+          siret: '32186250000014'
+          siren: '321862500'
+          commercialName: APICIL
+          fullName: APICIL
+          address:
+            line1: APICIL
+            line2:
+            line3:
+            line4: az
+            line5:
+            line6: 69244 CALUIRE ET CUIRE
+            locality: CALUIRE ET CUIRE
+            zipCode: '69244'
+
+          roles:
+            - startDate: '2016-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2016-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00971
+          shortCode: GHQ
+          amc: 000ER00971
+          siret: '84059993000012'
+          siren: '840599930'
+          commercialName: MALAKOFF HUMANIS PREVOYANCE
+          fullName: MALAKOFF HUMANIS PREVOYANCE
+          address:
+            line1: MALAKOFF HUMANIS PREVOYANCE
+            line2:
+            line3:
+            line4: v
+            line5:
+            line6: V V
+            locality: V
+            zipCode: V
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ASSU00983
+          shortCode: SYG
+          amc: 000ER00983
+          siret: '78116629300097'
+          siren: '781166293'
+          commercialName: SMATIS FRANCE
+          fullName: SMATIS FRANCE
+          address:
+            line1: SMATIS FRANCE
+            line2: f
+            line3:
+            line4: f
+            line5:
+            line6: f F
+            locality: F
+            zipCode: f
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: BALOO
+          shortCode: WOS
+          amc: '0000401166'
+          siret: '79756683300019'
+          siren: '797566833'
+          commercialName: BALOO
+          fullName: BALOO
+          address:
+            line1: Baloo
+            line2:
+            line3:
+            line4: '105 rue de Nantes '
+            line5:
+            line6: 13000 MARSEILLE
+            locality: MARSEILLE
+            zipCode: '13000'
+
+          roles:
+            - startDate: '2016-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2016-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2016-01-01'
+              endDate:
+              role: DELEGATED_MANAGEMENT
+          secondaryOrganizationsAmcs:
+            - '0000000001'
+            - 000ER00012
+            - 000ER00019
+            - 000ER00037
+            - 000ER00060
+            - 000ER00076
+            - 000ER00079
+            - 000ER00092
+            - 000ER00098
+            - 000ER00104
+            - 000ER00131
+            - 000ER00132
+            - 000ER00136
+            - 000ER00152
+            - 000ER00153
+            - 000ER00155
+            - 000ER00156
+            - 000ER00160
+            - 000ER00175
+            - 000ER00176
+            - 000ER00187
+            - 000ER00189
+            - 000ER00204
+            - 000ER00206
+            - 000ER00212
+            - 000ER00214
+            - 000ER00215
+            - 000ER00217
+            - 000ER00223
+            - 000ER00615
+            - 000ER00693
+            - 000ER00718
+            - 000ER00903
+            - 000ER00908
+            - 000ER00955
+            - 000ER00971
+            - 000ER00983
+            - 0ERBOOST19
+            - '125796321'
+            - '6666666666'
+            - '78541296'
+            - AS2510607879
+            - UNKNOWN
+          main: true
+        - code: CONTRAT_GROUPE_AXA
+          shortCode: GHO
+          amc: '0000452433'
+          siret: '31049995900891'
+          siren: '310499959'
+          commercialName: CONTRAT GROUPE AXA
+          fullName: CONTRAT GROUPE AXA
+          address:
+            line1: 'Centre de gestion Cegedim '
+            line2:
+            line3:
+            line4: TSA 10501
+            line5:
+            line6: 78457 VELIZY VILLACOUBLAY CEDEX
+            locality: VELIZY VILLACOUBLAY CEDEX
+            zipCode: '78457'
+          beneficiaryContact:
+            fullName: 'Centre de gestion Cegedim '
+            email: test@test.fr
+          roles:
+            - startDate: '2020-01-01'
+              endDate:
+              role: RISK_CARRIER
+            - startDate: '2020-01-02'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: IRCEM
+          shortCode: FXZ
+          amc: '0080996135'
+          siret: '43830118600013'
+          siren: '438301186'
+          commercialName: IRCEM
+          fullName: IRCEM
+          address:
+            line1: IRCEM
+            line2:
+            line3:
+            line4: '261 AVENUE DES NATIONS UNIES '
+            line5:
+            line6: 59100 ROUBAIX
+            locality: ROUBAIX
+            zipCode: '59100'
+          beneficiaryContact:
+            fullName: Contact IRCEM benef
+            email: ircem-beneficiaire@test.test
+          organizationContact:
+            fullName: Contact IRCEM étab
+            email: ircem-etab@test.test
+          roles:
+            - startDate: '2010-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2010-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: ISANTE
+          shortCode: ISA
+          amc: '78541296'
+          siret: '32154584514212'
+          siren: '987658456'
+          commercialName: ISANTE
+          fullName: ISANTE
+          address:
+            line1: ISANTE
+            line2:
+            line3: ISANTE
+            line4: rue du machin
+            line5:
+            line6: 31000 31000
+            locality: '31000'
+            zipCode: '31000'
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: LBPP
+          shortCode: QHB
+          amc: '0008400004'
+          siret: '41990126900045'
+          siren: '419901269'
+          commercialName: LA BANQUE POSTALE PREVOYANCE
+          fullName: LA BANQUE POSTALE PREVOYANCE
+          address:
+            line1: LA BANQUE POSTALE PREVOYANCE
+            line2:
+            line3:
+            line4: 101 BOULEVARD DE LA REVOLUTION
+            line5:
+            line6: 13003 MARSEILLE
+            locality: MARSEILLE
+            zipCode: '13003'
+          roles:
+            - startDate: '2010-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2010-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+        - code: LBPP_P
+          shortCode: CNP
+          amc: 00000ADIGE
+          siret: '41990126900045'
+          siren: '419901269'
+          commercialName: LBPP_P
+          fullName: LA BANQUE POSTALE PREVOYANCE - prev
+          address:
+            line1: La Banque Postale Prévoyance
+            line2:
+            line3:
+            line4: TSA 30503
+            line5:
+            line6: 78457 VELIZY VILLACOUBLAY CEDEX
+            locality: VELIZY VILLACOUBLAY CEDEX
+            zipCode: '78457'
+
+          roles:
+            - startDate: '2000-01-01'
+              endDate:
+              role: ISSUING_COMPANY
+            - startDate: '2000-01-01'
+              endDate:
+              role: RISK_CARRIER
+          secondaryOrganizationsAmcs: [ ]
+          main: false
+  caching:
+    specs:
+      bobb:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      declarantCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      lotCacheById:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      ocCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      ocCodeCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      offerStructureCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      pwCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      referentialCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      referentialCacheRDO:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      servicePrestationsRdoCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCarteTPCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+    enabled: false
+  couloir: htp
+  customer: ${TARGET_ENV}
+  instance: htp-es16
+  databases:
+    data:
+      indexes:
+        bdd-histo-contrat_index: itcare_${TARGET_ENV}_bdd-histo-contrat_index
+  event:
+    publisher:
+      enabled: false
+    consumer:
+      enabled: false
+  management-scope:
+    enabled: ${MANAGEMENT_SCOPE_ENABLED:true}
+    s3AccessKey: ${s3_access_key}
+    s3Bucket: ${NATURE}-${BEYOND_INSTANCE}-${BEYOND_CUSTOMER}
+    s3File: ${MANAGEMENT_SCOPE_FILE:export-management-scopes.json}
+    s3Folder: ${MANAGEMENT_SCOPE_FOLDER:Application/settings-ui/export}
+    s3Host: ${s3_host}
+    s3Region: ${s3_region}
+    s3SecretKey: ${s3_secret_access_key}
+    s3SecureRequest: ${s3_secure}
+  messaging:
+    cloudEvent:
+      enabled: true
+    security-context:
+      enabled: false
+    transactional: false
+    types:
+      String: java.lang.String
+      BenefAIV5: com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5
+      RecipientsMessageDto: com.cegedim.beyond.schemas.RecipientsMessageDto
+      BeneficiaryId: com.cegedim.next.serviceeligibility.core.model.kafka.benef.BeneficiaireId
+      TriggerId: com.cegedim.next.serviceeligibility.core.model.kafka.TriggerId
+  redis:
+    password: UJP59A0@baBJRVH3
+    sentinel:
+      master: detcisedtrd01
+      nodes:
+        - detcisedtrd001.hosting.cegedim.cloud:26379
+        - detcisedtrd002.hosting.cegedim.cloud:26379
+        - detcisedtrd003.hosting.cegedim.cloud:26379
+      password: Ratp4(WazuVupa
+      username: redis
+    ssl:
+      enabled: true
+      trustManager: classpath:redis.truststore.crt
+    username: generic_user
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+    server:
+      enabled: true
+env:
+  baseUrl: ${LOCAL:https://${TARGET_ENV}.ccs2-cis-beyond-dev.ccs.cegedim.cloud}
+excel:
+  api: https://htp-es16.ccs2-cis-beyond-dev.ccs.cegedim.cloud/common/excel/api
+insurer_settings_file_path: insurance/serviceeligibility/insurer_settings.json
+kafka:
+  topic:
+    beyond-events: beyond-events-${TARGET_ENV_ES}
+    bdd-undue-retention: bdd-undue-retention-${TARGET_ENV_ES}
+    bdd-recipients-request: bdd-recipients-request-${TARGET_ENV_ES}
+    bdd-demande-abandon-trigger: ${TARGET_ENV}-bdd-demandeAbandonTrigger
+    bdd-demande-declaration: ${TARGET_ENV}-bdd-demandeDeclaration
+    bdd-demande-renouvellement-declaration: ${TARGET_ENV}-bdd-demandeRenouvellementDeclaration
+    bdd-extract-contract: ${TARGET_ENV}-bdd-extract-contract
+keycloak:
+  enabled: true
+  url: https://idp.dev.beyond.cegedim.cloud/auth
+  realm: htp
+logging:
+  level.com.cegedim.next: ERROR
+  level.com.cegedim.beyond.serviceeligibility.core.cucumber: INFO
+  level.io.cucumber: ${LOGGING_LEVEL:INFO}
+  level.org.springframework: ${LOGGING_LEVEL:INFO}
+  level.org.springframework.web.client.RestTemplate: INFO
+  level.root: ${LOGGING_LEVEL:INFO}
+  level.test: ${LOGGING_LEVEL:INFO}
+  level.org.apache.kafka: ERROR
+  level.com.cegedim.common: ERROR
+s3_access_key: nzua4ydzoc19biobbyqz
+s3_bucket: testservicebleu
+s3_file_path: insurance/organisation/setting-scopes/scopes.json
+s3_host: storage-et1.cloud.cegedim.com
+s3_orga_admin_data_path: insurance/organisation/organisations-admin-data/
+s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+s3_secure: true
+schema:
+  path: Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+  servlet:
+    context-path: /serviceeligibility/core/api
+service:
+  code: serviceeligibility
+socle:
+  code: Insurance
+spring:
+  application:
+    name: serviceeligibility-service-test
+  data:
+    mongodb:
+      database: ${MONGODB_DATABASE_NAME}
+      uri: ${MONGODB_URL}
+  datasource:
+    tomcat:
+      initialSize: '2'
+      max-active: '5'
+  jackson:
+    mapper:
+      default-view-inclusion: true
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS}
+    properties:
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.scram.ScramLoginModule required
+            username='dev' password='dev';
+        mechanism: SCRAM-SHA-256
+      security:
+        protocol: ${KAFKA_SECURITY_PROTOCOL:SASL_SSL}
+    ssl:
+      trust-store-location: classpath:kafka.truststore.jks
+      trust-store-password: kafka_truststore_password
+  main:
+    web-application-type: servlet
+  output.ansi.enabled: ALWAYS
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+MULTIOC_API: https://${TARGET_ENV}.ccs2-cis-beyond-dev.ccs.cegedim.cloud/multioc/core/api
+PW_API_URL: https://${TARGET_ENV}.ccs2-cis-beyond-dev.ccs.cegedim.cloud/engine/core/api
+SETTINGS_API_URL: https://${TARGET_ENV}.ccs2-cis-beyond-dev.ccs.cegedim.cloud/settingsui
+CONTROLE_CORRESPONDANCE_BOBB: "false"
+USE_REFERENTIAL_VALIDATION: "false"

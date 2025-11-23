@@ -1,0 +1,10 @@
+apiVersion: v2
+name: orange-6305
+description: Helm chart for orange-6305 in serviceeligibility service.
+type: application
+appVersion: "${imageTag}"
+version: 0.0.0
+dependencies:
+  - name: helm-chart-beyond-common
+    repository: "oci://registry-dev.beyond.cegedim.cloud/devops-infra"
+    version: v15.2.25

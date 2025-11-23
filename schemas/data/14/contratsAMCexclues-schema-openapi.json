@@ -1,0 +1,52 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "contrats-AMCexclues",
+      "description": ""
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ContratsAMCexclues": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "listeAMC": {
+            "type": "array",
+			"items": {
+			  "$ref": "#/components/schemas/ListeAMC"
+			}
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ContratsAMCexclues"
+      },
+	  "ListeAMC": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+		  "idDeclarant": {
+		    "type": "string"
+		  },
+		  "idDerniereDeclaration": {
+		    "type": "string"
+		  },
+		  "reprise": {
+		    "type": "boolean"
+		  }
+		},
+        "required": [],
+        "title": "ListeAMC"
+      }
+    }
+  }
+}

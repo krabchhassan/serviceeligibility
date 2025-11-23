@@ -1,0 +1,10 @@
+apiVersion: v2
+name: data-test-generation-script
+description: Helm chart for data-test-generation-script in serviceeligibility service.
+type: application
+appVersion: "${imageTag}"
+version: 0.0.0
+dependencies:
+  - name: helm-chart-beyond-common
+    repository: "oci://registry-dev.beyond.cegedim.cloud/devops-infra"
+    version: v16.0.7

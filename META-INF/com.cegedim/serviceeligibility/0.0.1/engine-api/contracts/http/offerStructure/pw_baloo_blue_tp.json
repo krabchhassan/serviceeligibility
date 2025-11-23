@@ -1,0 +1,19 @@
+[
+  {
+    "validityDate": "2022-01-01",
+    "code": 9,
+    "offerCode": "BLUE_TP",
+    "natures": [
+      "OPTIQUE",
+      "AUDIOLOGIE",
+      "MEDECINE",
+      "PHARMACIE",
+      "DENTAIRE",
+      "RADIOLOGIE",
+      "HOSPITALISATION"
+    ],
+    "products": [
+      "SANTE_100"
+    ]
+  }
+]

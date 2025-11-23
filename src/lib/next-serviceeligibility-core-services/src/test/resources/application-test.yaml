@@ -1,0 +1,20 @@
+beyond:
+  service: bdds
+  socle: Insurance
+  event:
+    group-id: "bdds-test"
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+logging:
+  level:
+    com:
+      cegedim: debug
+TARGET_ENV: local
+TRANSACTIONNAL: false
+PW_CACHE_ENABLED: false
+spring:
+  main:
+    allow-circular-references: true

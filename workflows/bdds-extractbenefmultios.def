@@ -1,0 +1,22 @@
+workflowDefinition:
+  - code: is-bdds-extbenmultos
+    name: Extraction des bénéficiaires multi os
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à créer un fichier d'extraction, sur le workdir, des beneficiaires ayant des societeEmettrice differentes sur des periodes se chevauchant
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-extbenmultos-job
+        job: extractbenefmultios-job
+        type: java
+        useBeyondWorkdir: true
+        produceOutputs: true
+
+    crex:
+      - name: cheminFichierExtraction
+        description: Chemin vers le fichier d'extraction dans le workdir
+        ref: steps/step-extbenmultos-job/parameters/outputs/cheminFichierExtraction
+      - name: nbBeneficiairesExtraits
+        description: Nombre de beneficiaires extraits
+        ref: steps/step-extbenmultos-job/parameters/outputs/nbBeneficiairesExtraits

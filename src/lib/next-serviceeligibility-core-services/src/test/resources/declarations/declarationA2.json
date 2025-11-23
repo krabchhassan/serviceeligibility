@@ -1,0 +1,293 @@
+{
+    "referenceExterne": null,
+    "codeEtat": "V",
+    "effetDebut": "2016-12-13T12:01:04.360Z",
+    "idDeclarant": "0000000002",
+    "isCarteTPaEditer": true,
+    "nomFichierOrigine": "TDB_V3.OK",
+    "dateCreation": "2016-12-13T12:01:04.360Z",
+    "userCreation": "job605",
+    "dateModification": "2016-12-13T12:01:04.360Z",
+    "userModification": "job605",
+    "versionDeclaration": "V03",
+    "beneficiaire": {
+        "dateNaissance": "19880425",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "1880446121080",
+        "cleNirBeneficiaire": "62",
+        "nirOd1": "1880446121080",
+        "cleNirOd1": "62",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "insc": null,
+        "numeroPersonne": "200000000000123",
+        "refExternePersonne": "10000000",
+        "affiliation": {
+            "nom": "BENEFCONVENTION",
+            "nomPatronymique": "BENEFCONVENTION",
+            "nomMarital": "BENEFCONVENTION",
+            "prenom": "PRENOMCONV",
+            "civilite": null,
+            "periodeDebut": "2009/01/01",
+            "periodeFin": null,
+            "qualite": "A",
+            "regimeOD1": "10",
+            "caisseOD1": "000",
+            "centreOD1": "0001",
+            "regimeOD2": null,
+            "caisseOD2": null,
+            "centreOD2": null,
+            "hasMedecinTraitant": true,
+            "regimeParticulier": "",
+            "isBeneficiaireACS": false,
+            "isTeleTransmission": false,
+            "typeAssure": "Assure"
+        },
+        "adresses": [{
+            "ligne1": "Mr BENEFCONVENTION PRENOMCONV",
+            "ligne2": null,
+            "ligne3": null,
+            "ligne4": "numero, nom rue benefconv",
+            "ligne5": null,
+            "ligne6": "31 000 Toulouse",
+            "ligne7": null,
+            "codePostal": "31000",
+            "telephone": "0123456789",
+            "email": "sophie.fonfec@gmail.com",
+            "typeAdresse": {
+                "libelle": null,
+                "type": "AD"
+            }
+        }
+        ]
+    },
+    "contrat": {
+        "numero": "Contrat1",
+        "dateSouscription": "2009/01/01",
+        "dateResiliation": null,
+        "type": "TEST",
+        "nomPorteur": "BENEFCONVENTION",
+        "prenomPorteur": "PRENOMCONV",
+        "civilitePorteur": "Mr",
+        "numeroAdherent": "15211521",
+        "numeroAdherentComplet": "15211521-125",
+        "qualification": "B",
+        "numeroContratCollectif": "",
+        "rangAdministratif": "2",
+        "isContratResponsable": true,
+        "isContratCMU": true,
+        "destinataire": "AD",
+        "individuelOuCollectif": "1",
+        "situationDebut": null,
+        "situationFin": null,
+        "motifFinSituation": null,
+        "lienFamilial": "A",
+        "categorieSociale": null,
+        "situationParticuliere": null,
+        "typeConvention": "SP",
+        "critereSecondaireDetaille": "CSR1          X",
+        "critereSecondaire": "CSR",
+        "numeroExterneContratIndividuel": "800000100000015",
+        "numeroExterneContratCollectif": "",
+        "modePaiementPrestations": "",
+        "gestionnaire": "",
+        "groupeAssures": "",
+        "numeroCarte": null,
+        "editeurCarte": "",
+        "fondCarte": "",
+        "annexe1Carte": "",
+        "annexe2Carte": "",
+        "numAMCEchange": "",
+        "numOperateur": ""
+    },
+    "domaineDroits": [{
+        "code": "OPTI",
+        "codeExterne": null,
+        "libelle": null,
+        "codeExterneProduit": "",
+        "libelleExterne": null,
+        "codeOptionMutualiste": "SC2",
+        "libelleOptionMutualiste": "",
+        "codeProduit": "TEST",
+        "libelleProduit": "Consultation IS 1",
+        "codeOffre": "offreTest",
+        "versionOffre" : "v1",
+        "codeGarantie": "G1",
+        "libelleGarantie": "",
+        "codeProfil": "",
+        "libelleCodeRenvoi": "",
+        "tauxRemboursement": "070",
+        "isEditable": true,
+        "isSuspension": false,
+        "dateAdhesionCouverture": null,
+        "uniteTauxRemboursement": "PO",
+        "referenceCouverture": "OPTI-02A-100",
+        "origineDroits": "",
+        "noOrdreDroit": 1,
+        "categorie": "OPTI",
+        "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "03",
+            "prioriteBO": "01"
+        },
+        "prestations": [{
+            "code": "DEF",
+            "codeRegroupement": null,
+            "libelle": null,
+            "isEditionRisqueCarte": false,
+            "dateEffet": null,
+            "formule": {
+                "numero": "050",
+                "libelle": null,
+                "parametres": [{
+                    "numero": "6",
+                    "valeur": "070.00"
+                }
+                ]
+            },
+            "formuleMetier": null
+        }
+        ],
+        "periodeDroit": {
+            "periodeDebut": "2015/01/01",
+            "periodeFin": "2050/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "Declaration",
+            "modeObtention": "O"
+        },
+        "conventionnements": [{
+            "priorite": 1,
+            "typeConventionnement": {
+                "code": "SP",
+                "libelle": "SP"
+            }
+        }
+        ]
+    }, {
+        "code": "OPTI",
+        "codeExterne": null,
+        "libelle": null,
+        "codeExterneProduit": "",
+        "libelleExterne": null,
+        "codeOptionMutualiste": "SC2",
+        "libelleOptionMutualiste": "",
+        "codeProduit": "TEST",
+        "libelleProduit": "Consultation SP 2",
+        "codeGarantie": "G2",
+        "libelleGarantie": "",
+        "codeProfil": "",
+        "libelleCodeRenvoi": "",
+        "tauxRemboursement": "080",
+        "isEditable": true,
+        "isSuspension": false,
+        "dateAdhesionCouverture": null,
+        "uniteTauxRemboursement": "PO",
+        "referenceCouverture": "OPTI-02A-100",
+        "origineDroits": "",
+        "noOrdreDroit": 2,
+        "categorie": "OPTI",
+        "prioriteDroit": {
+            "code": "02",
+            "libelle": "02",
+            "typeDroit": "03",
+            "prioriteBO": "02"
+        },
+        "prestations": [{
+            "code": "DEF",
+            "codeRegroupement": null,
+            "libelle": null,
+            "isEditionRisqueCarte": false,
+            "dateEffet": null,
+            "formule": {
+                "numero": "050",
+                "libelle": null,
+                "parametres": [{
+                    "numero": "6",
+                    "valeur": "080.00"
+                }
+                ]
+            },
+            "formuleMetier": null
+        }
+        ],
+        "periodeDroit": {
+            "periodeDebut": "2015/01/01",
+            "periodeFin": "2050/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "Declaration",
+            "modeObtention": "O"
+        },
+        "conventionnements": [{
+            "priorite": 2,
+            "typeConventionnement": {
+                "code": "IS",
+                "libelle": "IS"
+            }
+        }
+        ]
+    }, {
+        "code": "OPTI",
+        "codeExterne": null,
+        "libelle": null,
+        "codeExterneProduit": "",
+        "libelleExterne": null,
+        "codeOptionMutualiste": "SC2",
+        "libelleOptionMutualiste": "",
+        "codeProduit": "C",
+        "libelleProduit": "Consultation SP 3",
+        "codeGarantie": "G3",
+        "libelleGarantie": "",
+        "codeProfil": "",
+        "libelleCodeRenvoi": "",
+        "tauxRemboursement": "010",
+        "isEditable": true,
+        "isSuspension": false,
+        "dateAdhesionCouverture": null,
+        "uniteTauxRemboursement": "PO",
+        "referenceCouverture": "OPTI-02A-100",
+        "origineDroits": "",
+        "noOrdreDroit": 3,
+        "categorie": "OPTI",
+        "prioriteDroit": {
+            "code": "03",
+            "libelle": "03",
+            "typeDroit": "03",
+            "prioriteBO": "03"
+        },
+        "prestations": [{
+            "code": "DEF",
+            "codeRegroupement": null,
+            "libelle": null,
+            "isEditionRisqueCarte": false,
+            "dateEffet": null,
+            "formule": {
+                "numero": "050",
+                "libelle": null,
+                "parametres": [{
+                    "numero": "6",
+                    "valeur": "090.00"
+                }
+                ]
+            },
+            "formuleMetier": null
+        }
+        ],
+        "periodeDroit": {
+            "periodeDebut": "2015/01/01",
+            "periodeFin": "2050/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "Declaration",
+            "modeObtention": "O"
+        },
+        "conventionnements": [{
+            "priorite": 3,
+            "typeConventionnement": {
+                "code": "IT",
+                "libelle": "IT"
+            }
+        }
+        ]
+    }
+    ]
+}

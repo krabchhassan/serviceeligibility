@@ -1,0 +1,41 @@
+events:
+  - name: payment-recipient-reception-event
+    version: 0.0.1
+  - name: benefit-recipient-reception-event
+    version: 0.0.1
+  - name: beneficiary-creation-event
+    version: 0.0.1
+  - name: beneficiary-modification-event
+    version: 0.0.1
+  - name: contract-creation-event
+    version: 0.0.1
+  - name: contract-modification-event
+    version: 0.0.1
+  - name: contract-reception-event
+    version: 0.0.2
+  - name: contract-suppression-event
+    version: 0.0.1
+  - name: contract-invalid-reception-event
+    version: 0.0.2
+  - name: insured-reception-event
+    version: 0.0.1
+  - name: insured-invalid-reception-event
+    version: 0.0.1
+  - name: prestij-reception-event
+    version: 0.0.1
+  - name: prestij-creation-event
+    version: 0.0.1
+  - name: prestij-modification-event
+    version: 0.0.1
+  - name: prestij-invalid-reception-event
+    version: 0.0.1
+  - name: contract-suspension-event
+    version: 0.0.1
+  - name: contract-suspension-lifted-event
+    version: 0.0.1
+  - name: insured-payment-recipient-modification-event
+    version: 0.0.1
+  - name: recalcul-blb-start-event
+    version: 0.0.1
+  - name: recalcul-blb-end-event
+    version: 0.0.1

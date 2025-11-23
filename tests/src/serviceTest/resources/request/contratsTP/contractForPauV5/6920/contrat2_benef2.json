@@ -1,0 +1,209 @@
+{
+  "idDeclarant": "0000401166",
+  "codeOc": null,
+  "numeroContrat": "D00011",
+  "dateSouscription": "2023/01/01",
+  "dateResiliation": null,
+  "type": null,
+  "nomPorteur": "LE GRIEL",
+  "prenomPorteur": "",
+  "civilitePorteur": "",
+  "numeroAdherent": "00052492",
+  "numeroAdherentComplet": "",
+  "qualification": "B",
+  "numeroContratCollectif": "",
+  "isContratResponsable": true,
+  "isContratCMU": true,
+  "destinataire": null,
+  "individuelOuCollectif": "",
+  "situationDebut": null,
+  "situationFin": null,
+  "critereSecondaireDetaille": "",
+  "motifFinSituation": null,
+  "critereSecondaire": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "AXA",
+  "groupeAssures": "",
+  "numeroCarte": "00052492",
+  "editeurCarte": null,
+  "fondCarte": null,
+  "annexe1Carte": null,
+  "annexe2Carte": null,
+  "numAMCEchange": "0000401166",
+  "numOperateur": "0000733931",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": null,
+  "typeConvention": "",
+  "dateConsolidation": "2022-06-02T13:52:23.000Z",
+  "dateRestitution": null,
+  "dateCreation": "2022-06-02T13:53:23.000Z",
+  "dateModification": "2022-06-02T13:54:23.000Z",
+  "origineDeclaration": "Event",
+  "beneficiaires": [
+    {
+      "modePaiementPrestations": "",
+      "situationParticuliere": null,
+      "categorieSociale": null,
+      "rangAdministratif": "",
+      "isCarteTPaEditer": false,
+      "dateRadiation": null,
+      "dateCreation": "2022-06-02T13:55:23.000Z",
+      "dateAdhesionMutuelle": null,
+      "dateDebutAdhesionIndividuelle": null,
+      "numeroAdhesionIndividuelle": null,
+      "dateModification": "2022-06-02T13:56:23.000Z",
+      "dateNaissance": "19621023",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "",
+      "cleNirBeneficiaire": "",
+      "nirOd1": "1591275115460",
+      "cleNirOd1": "46",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "insc": null,
+      "numeroPersonne": "P00013",
+      "refExternePersonne": "08043266",
+      "affiliation": {
+        "nom": "LE GRIEL",
+        "nomPatronymique": "LE GRIEL",
+        "nomMarital": "LE GRIEL",
+        "prenom": "SOPHIE",
+        "civilite": null,
+        "periodeDebut": "2023/01/01",
+        "periodeFin": null,
+        "qualite": "C",
+        "regimeOD1": "03",
+        "caisseOD1": "054",
+        "centreOD1": "6200",
+        "regimeOD2": null,
+        "caisseOD2": null,
+        "centreOD2": null,
+        "hasMedecinTraitant": true,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "Conjoint"
+      },
+      "adresses": [
+        {
+          "ligne1": "AON",
+          "ligne2": null,
+          "ligne3": null,
+          "ligne4": "28 ALLEE DE BELLEVUECS 7000",
+          "ligne5": null,
+          "ligne6": "16918 ANGOULEME CEDEX 9",
+          "ligne7": "FRANCE",
+          "codePostal": "16918",
+          "telephone": "01 73 10 30 55",
+          "email": null,
+          "typeAdresse": {
+            "libelle": null,
+            "type": "GE"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2020/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "codeOffre": "BLUE_TP",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-099-GPAON3",
+                      "formulaMask": "PEC",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": [
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

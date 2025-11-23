@@ -1,0 +1,12 @@
+[
+    {
+        "validityDate": "2022-07-01",
+        "code": 3,
+        "natures": [
+            "DENTAIRE"
+        ],
+        "products": [
+            "PDT_REMP4_02"
+        ]
+    }
+]

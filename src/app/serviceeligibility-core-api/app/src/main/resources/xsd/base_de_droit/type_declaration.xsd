@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" 
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_declarant.xsd"/>
+	<xs:include schemaLocation="type_declarant_amc.xsd"/>
+	<xs:include schemaLocation="type_declarant_amo.xsd"/>
+	<xs:include schemaLocation="type_beneficiaire.xsd"/>
+	<xs:include schemaLocation="type_contrat.xsd"/>
+	<xs:include schemaLocation="type_domaine_droit.xsd"/>
+	<xs:complexType name="type_declaration">
+		<xs:sequence>
+            <!-- TODO n'est plus utilisé par la BDD -->
+            <xs:element name="id_interne" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+			<xs:element name="reference_externe" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="45"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_etat" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="effet_debut" minOccurs="1" maxOccurs="1" type="xs:date"/>
+			<xs:element name="declarant_amc" minOccurs="0" maxOccurs="1" type="base_de_droit:type_declarant_amc"/>
+			<xs:element name="declarant_amo" minOccurs="0" maxOccurs="1" type="base_de_droit:type_declarant_amo"/>
+			<xs:element name="beneficiaire" minOccurs="1" maxOccurs="1" type="base_de_droit:type_beneficiaire"/>
+			<xs:element name="contrat" minOccurs="1" maxOccurs="1" type="base_de_droit:type_contrat"/>
+			<xs:element name="domaine_droits" minOccurs="0" maxOccurs="unbounded" type="base_de_droit:type_domaine_droit"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

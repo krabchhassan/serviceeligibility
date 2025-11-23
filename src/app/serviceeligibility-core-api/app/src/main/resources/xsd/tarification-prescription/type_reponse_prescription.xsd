@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_reponse_prestation.xsd"/>
+	<xs:complexType name="type_reponse_prescription">
+		<xs:sequence>
+			<xs:element name="id_prescription">
+				<xs:annotation>
+					<xs:documentation>Numéro ordre prescription</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_bloc_prescription">
+				<xs:annotation>
+					<xs:documentation>Total bloc prescription</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_pec_prescription">
+				<xs:annotation>
+					<xs:documentation>Total PEC prescription
+Calculé par Tarification en ligne</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_rac_prescription">
+				<xs:annotation>
+					<xs:documentation>Total RAC assuré prescription
+Calculé par Tarification en ligne</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nombre_prestations">
+				<xs:annotation>
+					<xs:documentation>Nombre de prestations
+Nombre d'entités infoPrestation de la prescription</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numero_accreditation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numéro d'accréditation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="reponsePrestation" type="type_reponse_prestation" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- <xs:complexType name="type_reponse_prestation">
+		<xs:sequence>
+			<xs:element name="reponsePrestation" type="type_reponse_prestation" minOccurs="1" maxOccurs="unbounded"/>					
+		</xs:sequence>
+	</xs:complexType> -->
+</xs:schema>

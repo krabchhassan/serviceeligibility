@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Rétention terminée",
+  "description": "Rétention terminée",
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "CREE",
+        "MODIFIE",
+        "ANNULE",
+        "TRAITE"
+      ],
+      "description": "Action réalisée Créé/Modifié/Annulé/Traité"
+    },
+    "currentEndDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Nouvelle date de fermeture"
+    },
+    "originalEndDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Date de fermeture originelle"
+    },
+    "historique": {
+      "type": "array",
+      "description": "La liste des dates permettant de déterminer la currentEndDate",
+      "items": {
+        "$ref": "#/components/schemas/Historique"
+      }
+    },
+    "idDeclarant": {
+      "type": "string",
+      "description": "ID du déclarant"
+    },
+    "numeroContrat": {
+      "type": "string",
+      "description": "Le numéro de contrat"
+    },
+    "numeroAdherent": {
+      "type": "string",
+      "description": "Le numéro de l'adhérent"
+    },
+    "numeroPersonne": {
+      "type": "string",
+      "description": "Le numero de personne"
+    }
+  },
+  "required": [
+    "action",
+    "idDeclarant",
+    "numeroContrat",
+    "numeroAdherent",
+    "numeroPersonne",
+    "historique"
+  ],
+  "components": {
+    "schemas": {
+      "Historique": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "creation": {
+            "type": "string",
+            "format": "datetime",
+            "description": "Date de creation du contrat htp"
+          },
+          "dateResiliation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Date de résiliation du contrat htp"
+          },
+          "dateRadiation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Date de radiation la plus grande de l'assure htp"
+          },
+          "dateSansEffet": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Date de sans effet"
+          }
+        },
+        "required": [
+          "creation"
+        ]
+      }
+    }
+  },
+  "$id": "Insurance.serviceeligibility.retention.finished.event/0.0.1"
+}

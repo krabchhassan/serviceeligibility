@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Echec d'intégration d'une ligne BOBB",
+  "description": "Evènement émis lors de l'échec d'intégration d'une ligne BOBB",
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "type": "string",
+      "description": "Status"
+    },
+    "line": {
+      "type": "integer",
+      "description": "Line"
+    },
+    "error": {
+      "type": "string",
+      "description": "Error"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "$id": "Insurance.serviceeligibility.bobb.line.integration.failed.event/0.0.1"
+}

@@ -1,0 +1,36 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns5:getInfoBddRequest xmlns="http://norme.cegedimassurances.com/commun" xmlns:ns2="http://norme.cegedimassurances.com/base_de_droit" xmlns:ns3="http://norme.cegedimassurances.com/beneficiaire" xmlns:ns4="http://norme.cegedimassurances.com/amc" xmlns:ns5="http://ws.cegedimassurance.com/basededroit/wsdl">
+            <ns2:header_in>
+                <headerTech>
+                    <id_logiciel_client>CCMO - Espace adhérent</id_logiciel_client>
+                    <version_logiciel_client>1</version_logiciel_client>
+                    <id_session_serveur>d5740a83-e8d4-4fd3-80ba-e7ba66e088b3</id_session_serveur>
+                </headerTech>
+                <headerFonc>
+                    <code_contexte>CD-01</code_contexte>
+                    <code_proprietaire>60005615</code_proprietaire>
+                </headerFonc>
+            </ns2:header_in>
+            <ns2:beneficiaire>
+                <ns3:NIR_certifie>2820660057098</ns3:NIR_certifie>
+                <ns3:cle_NIR>19</ns3:cle_NIR>
+                <ns3:date_naissance>19820615</ns3:date_naissance>
+                <ns3:rang_gemellaire>1</ns3:rang_gemellaire>
+            </ns2:beneficiaire>
+            <ns2:amc>
+                <ns4:numero_AMC_prefectoral>0060005615</ns4:numero_AMC_prefectoral>
+            </ns2:amc>
+            <ns2:info_bdd>
+                <ns2:type_recherche_benef>1</ns2:type_recherche_benef>
+                <ns2:type_recherche_segment>2</ns2:type_recherche_segment>
+                <ns2:type_segment_recherche/>
+                <ns2:type_profondeur_recherche>1</ns2:type_profondeur_recherche>
+            </ns2:info_bdd>
+            <ns2:dates>
+                <date_reference>2016-05-05</date_reference>
+                <type_date_reference>3</type_date_reference>
+            </ns2:dates>
+        </ns5:getInfoBddRequest>
+    </soap:Body>
+</soap:Envelope>

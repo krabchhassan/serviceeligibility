@@ -1,0 +1,187 @@
+{
+  "offerCode": "BAL_5458_001",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2000_janv_01.2",
+      "effectDate": "2023-11-03T13:46:12.741Z",
+      "validityDate": "2000-01-01",
+      "engineVersion": "37.1",
+      "domains": [
+        {
+          "domainCode": "LABO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "BIOLOGIE"
+          },
+          "tpOnline": {
+            "nature": "BIOLOGIE"
+          }
+        },
+        {
+          "domainCode": "PHCO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "EXTE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_"
+          },
+          "tpOnline": {
+            "nature": "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_"
+          }
+        },
+        {
+          "domainCode": "LPPS",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "APPAREILLAGE"
+          },
+          "tpOnline": {
+            "nature": "APPAREILLAGE",
+            "network": "IT"
+          }
+        },
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "HOSPITALISATION__OPTAM___NON_OPTAM_"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION__OPTAM___NON_OPTAM_",
+            "network": "KA"
+          }
+        },
+        {
+          "domainCode": "AUDI",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "APPAREILLAGE"
+          },
+          "tpOnline": {
+            "nature": "APPAREILLAGE",
+            "network": "IT"
+          }
+        },
+        {
+          "domainCode": "TRAN",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "MEDECINE_GENERALE__OPTAM___NON_OPTAM_"
+          },
+          "tpOnline": {
+            "nature": "MEDECINE_GENERALE__OPTAM___NON_OPTAM_"
+          }
+        },
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "OPTIQUE"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUE",
+            "network": "IT"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "FRAIS_DENTAIRES"
+          },
+          "tpOnline": {
+            "nature": "FRAIS_DENTAIRES",
+            "network": "IT"
+          }
+        },
+        {
+          "domainCode": "PHNO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "MEDE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "MEDECINE_GENERALE__OPTAM___NON_OPTAM_"
+          },
+          "tpOnline": {
+            "nature": "MEDECINE_GENERALE__OPTAM___NON_OPTAM_"
+          }
+        },
+        {
+          "domainCode": "CSTE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_"
+          },
+          "tpOnline": {
+            "nature": "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_"
+          }
+        },
+        {
+          "domainCode": "PHOR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        }
+      ]
+    }
+  ]
+}

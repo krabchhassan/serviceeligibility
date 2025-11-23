@@ -1,0 +1,72 @@
+workflowDefinition:
+  - code: is-bdds-609
+    name: 609 - Correction et merge des fichiers Almerys
+    nature: [ "dev", "qa", "preprod", "prod" ]
+    description: Correction des numeros d'ordre des produits et merge des fichiers Almerys
+    documentation-path: docs/workflows/0.0.1
+    parameters: [ ]
+
+    steps:
+      - name: step-file-server-to-workdir
+        job:
+          name: file-manager-generic-job
+          socle: application
+          service: scheduling
+        type: python
+        fileExchangePlatform: true
+        useBeyondWorkdir: true
+        parameters:
+          arguments:
+            - name: strategy
+            - name: source_path
+            - name: destination_path
+        produceOutputs: true
+      - name: step-609
+        job: serviceeligibility-almerysacl-job
+        type: java
+        useBeyondWorkdir: true
+        dependsOn:
+          - step-file-server-to-workdir
+      - name: step-merge-almerys
+        job: mergealmerys-job
+        type: java
+        useBeyondWorkdir: true
+        dependsOn:
+          - step-609
+        produceOutputs: true
+      - name: step-workdir-to-pefb-or-ssh
+        job:
+          name: file-manager-generic-job
+          socle: application
+          service: scheduling
+        type: python
+        fileExchangePlatform: true
+        useBeyondWorkdir: true
+        parameters:
+          arguments:
+            - name: strategy
+            - name: source_path
+            - name: destination_path
+        dependsOn:
+          - step-merge-almerys
+        produceOutputs: true
+
+    crex:
+      - name: list_from_file_server
+        description: Liste des fichiers copiés depuis le serveur de fichier vers le workdir
+        ref: steps/step-file-server-to-workdir/parameters/outputs/list_files_step-file-server-to-workdir
+      - name: nb_fichiers_crees
+        description: Nombre de fichier créés
+        ref: steps/step-merge-almerys/parameters/outputs/nbFichiersCrees
+      - name: nb_fichiers_aggreges
+        description: Nombre de fichier aggrégés
+        ref: steps/step-merge-almerys/parameters/outputs/nbFichiersAggreges
+      - name: fichiers_crees
+        description: Liste de fichiers créés
+        ref: steps/step-merge-almerys/parameters/outputs/fichiersCrees
+      - name: fichiers_aggreges
+        description: Liste de fichiers aggrégés
+        ref: steps/step-merge-almerys/parameters/outputs/fichiersAggreges
+      - name: list_from_workdir
+        description: Liste des fichiers copiés depuis le workdir vers la PEFB ou vers le serveur de fichier
+        ref: steps/step-workdir-to-pefb-or-ssh/parameters/outputs/list_files_step-workdir-to-pefb-or-ssh

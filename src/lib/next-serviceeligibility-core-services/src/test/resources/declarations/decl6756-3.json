@@ -1,0 +1,166 @@
+{
+  "codeEtat" : "R",
+  "effetDebut" : "2024-06-26T21:18:35.272",
+  "idDeclarant" : "0000401166",
+  "isCarteTPaEditer" : false,
+  "carteTPaEditerOuDigitale" : "3",
+  "idTrigger" : "667c6544af4b44711d160852",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2024-06-26T21:18:35.272",
+  "userCreation" : "WORKER",
+  "dateModification" : "2024-06-26T19:26:03.133",
+  "userModification" : "GenerationDroitTP",
+  "beneficiaire" : {
+    "dateNaissance" : "19760925",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1760957672179",
+    "cleNirBeneficiaire" : "03",
+    "nirOd1" : "1760957672179",
+    "cleNirOd1" : "03",
+    "numeroPersonne" : "278112",
+    "refExternePersonne" : "171054",
+    "dateAdhesionMutuelle" : "2019/01/01",
+    "dateDebutAdhesionIndividuelle" : "2019/01/01",
+    "affiliation" : {
+      "nom" : "MINAUT",
+      "nomPatronymique" : "MINAUT",
+      "nomMarital" : "MINAUT",
+      "prenom" : "LIONEL",
+      "civilite" : "M",
+      "periodeDebut" : "2019/01/01",
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "571",
+      "centreOD1" : "",
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "AM",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "Assuré principal"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "Monsieur MINAUT LIONEL",
+        "ligne2" : "",
+        "ligne3" : "",
+        "ligne4" : "35 GRAND RUE",
+        "ligne5" : "",
+        "ligne6" : "57250 MOYEUVRE PETITE",
+        "ligne7" : "",
+        "codePostal" : "57250",
+        "telephone" : "06 06 78 20 48",
+        "email" : "lionelminaut@hotmail.fr",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "0171054",
+    "dateSouscription" : "2019/01/01",
+    "type" : "B",
+    "nomPorteur" : "MINAUT",
+    "prenomPorteur" : "LIONEL",
+    "civilitePorteur" : "M",
+    "numeroAdherent" : "0171054",
+    "numeroAdherentComplet" : "0171054",
+    "qualification" : "B",
+    "numeroContratCollectif" : "32056809033805",
+    "rangAdministratif" : "1",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "2",
+    "lienFamilial" : "A",
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "0171054",
+    "numeroExterneContratCollectif" : "2705075420005S4235IS1",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "000ER00019",
+    "fondCarte" : "santeclair.jpg",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1",
+    "identifiantCollectivite" : "320568090",
+    "raisonSociale" : "TRANSPELOR",
+    "siret" : "32056809000031",
+    "groupePopulation" : "38"
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHCO",
+      "codeProduit" : "FSSC33809A",
+      "modeAssemblage" : "INCLUSION",
+      "codeGarantie" : "FSSC33809A",
+      "libelleGarantie" : "Garantie frais de santé",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2019/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "PHCO-050-100",
+      "noOrdreDroit" : 2,
+      "categorie" : "PHCO",
+      "formulaMask" : "100%TM",
+      "naturePrestation" : "PHARMACIE",
+      "naturePrestationOnline" : "PHARMACIE",
+      "codeAssureurGarantie" : "ASSU00019",
+      "codeOffre" : "FSC33805-2",
+      "versionOffre" : "2022_janv_01.1",
+      "codeOc" : "ASSU00019",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "03",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "050",
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2022/01/01",
+        "periodeFin" : "2022/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M",
+        "periodeFermetureDebut" : "2023/01/01",
+        "periodeFermetureFin" : "2022/12/31"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2022/01/01",
+        "periodeFin" : "2022/12/31",
+        "motifEvenement" : "",
+        "periodeFermetureDebut" : "2023/01/01",
+        "periodeFermetureFin" : "2024/05/31"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSanté"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "2018-01-01"
+      }
+    }
+  ],
+  "idOrigine" : "667c6b4a7733cb4296975bd4",
+  "etatSuspension" : "-1"
+}

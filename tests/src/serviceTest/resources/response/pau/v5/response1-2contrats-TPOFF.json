@@ -1,0 +1,283 @@
+{
+  "contracts": [
+    {
+      "context": "TP_OFFLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "00052492000000144052",
+      "externalNumber": "",
+      "subscriberId": "00052492",
+      "subscriberFullId": "",
+      "subscriptionDate": "2019-01-01",
+      "secondaryCriterion": "",
+      "detailedSecondaryCriterion": "",
+      "isIndividualContract": false,
+      "operator": "AXA",
+      "collectiveContract": {
+        "number": "",
+        "externalNumber": ""
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "",
+        "identity": {
+          "nir": {
+            "code": "",
+            "key": ""
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1591275115460",
+                "key": "46"
+              },
+              "attachementRO": {
+                "regimeCode": "03",
+                "healthInsuranceCompanyCode": "054",
+                "centerCode": "6200"
+              },
+              "period": {
+                "start": "2019-01-01",
+                "end": "2022-12-16"
+              }
+            }
+          ],
+          "birthDate": "19621023",
+          "birthRank": "1",
+          "personNumber": "0000401166-08043266",
+          "personExternalRef": "08043266"
+        },
+        "data": {
+          "name": {
+            "lastName": "LE GRIEL",
+            "commonName": "LE GRIEL",
+            "firstName": "SOPHIE"
+          },
+          "address": {
+            "line1": "AON",
+            "line4": "28 ALLEE DE BELLEVUECS 7000",
+            "line6": "16918 ANGOULEME CEDEX 9",
+            "line7": "FRANCE",
+            "postcode": "16918"
+          },
+          "contact": {
+            "landline": "01 73 10 30 55",
+            "mobile": "01 73 10 30 55"
+          }
+        },
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2018-01-02",
+                "end": "2023-01-03"
+              },
+              "isRemotelyTransmitted": false
+            }
+          ]
+        },
+        "quality": {
+          "code": "C",
+          "label": "Conjoint"
+        },
+        "rights": [
+          {
+            "code": "SANTE_100",
+            "prioritizationOrder": "01",
+            "guaranteeAgeDate": "2021-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "OFFRE",
+                "productCode": "SANTE_100",
+                "benefitsType": [
+                  {
+                    "benefitType": "OPTIQUE",
+                    "period": {
+                      "start": "2019-01-01",
+                      "end": "2022-12-16"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2019-01-01",
+                  "end": "2022-12-16"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    },
+    {
+      "context": "TP_OFFLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "1394031002",
+      "externalNumber": "1394031002",
+      "subscriberId": "00052492",
+      "subscriberFullId": "1394031002-COMPLET",
+      "subscriptionDate": "2021-01-01",
+      "secondaryCriterion": "Employés",
+      "detailedSecondaryCriterion": "GEO-FRA-OCC",
+      "isIndividualContract": true,
+      "operator": "AXA",
+      "collectiveContract": {
+        "number": "03094493",
+        "externalNumber": "DKMMMS09049304930"
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "1",
+        "identity": {
+          "nir": {
+            "code": "1591275115460",
+            "key": "46"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "2791059632524",
+                "key": "41"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "624",
+                "centerCode": "0156"
+              },
+              "period": {
+                "start": "2021-01-01",
+                "end": "2023-01-03"
+              }
+            }
+          ],
+          "birthDate": "19621023",
+          "birthRank": "1",
+          "personNumber": "0000401166-08043266",
+          "personExternalRef": "EXT-1394031002-001"
+        },
+        "data": {
+          "name": {
+            "lastName": "PEHAHUT",
+            "commonName": "PEHAHUT",
+            "firstName": "RACHIDA",
+            "civility": "Mme"
+          },
+          "address": {
+            "line1": "MR PEHAHUT VAITROUAT RACHIDA",
+            "line4": "25 RUE DES MAGNOLIAS",
+            "line6": "59250 HALLUIN",
+            "postcode": "59250"
+          },
+          "contact": {
+            "email": "59250"
+          }
+        },
+        "healthMutualSubscriptionDate": "2021-01-01",
+        "individualSubscriptionStartDate": "2021-01-01",
+        "individualSubscriptionNumber": "120320020",
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2018-01-02",
+                "end": "2023-01-03"
+              },
+              "isRemotelyTransmitted": true
+            }
+          ]
+        },
+        "specialPlans": [
+          {
+            "code": "AM",
+            "period": {
+              "start": "2018-01-02",
+              "end": "2023-01-03"
+            }
+          }
+        ],
+        "quality": {
+          "code": "A",
+          "label": "Adhérent"
+        },
+        "rights": [
+          {
+            "code": "BAL_BASE",
+            "prioritizationOrder": "01",
+            "guaranteeAgeDate": "2021-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "fGl_DE00001_100pctFraisReels",
+                "productCode": "SANTE_100",
+                "benefitsType": [
+                  {
+                    "benefitType": "HOSPITALISATION",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  },
+                  {
+                    "benefitType": "AUDIOLOGIE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  },
+                  {
+                    "benefitType": "PHARMACIE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  },
+                  {
+                    "benefitType": "MEDECINE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  },
+                  {
+                    "benefitType": "OPTIQUE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  },
+                  {
+                    "benefitType": "RADIOLOGIE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  },
+                  {
+                    "benefitType": "DENTAIRE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2023-01-03"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2022-01-01",
+                  "end": "2023-01-03"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

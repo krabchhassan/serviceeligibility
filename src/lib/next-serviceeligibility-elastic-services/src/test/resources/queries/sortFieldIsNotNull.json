@@ -1,0 +1,13 @@
+[{
+  "field.name" : {
+    "order" : "desc"
+  }
+}, {
+  "contrats.data.nom.prenom.keyword" : {
+    "order" : "desc"
+  }
+}, {
+  "contrats.data.nom.nomUsage.keyword" : {
+    "order" : "desc"
+  }
+}]

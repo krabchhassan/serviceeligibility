@@ -1,0 +1,13 @@
+{
+"_id" : "0000401182",
+"_class" : "com.cegedimactiv.basededroit.entity.Declarant",
+"nom" : "AON",
+"libelle" : "AON",
+"numeroPrefectoral" : "0000401182",
+"codePartenaire" : "AON",
+"type" : "amc",
+"codeCircuit" : "01",
+"emetteurDroits" : "AMC",
+"operateurPrincipal" : "SP",
+"userCreation" : "bddOffice"
+}

@@ -1,0 +1,90 @@
+{
+  "_id": "0000401166",
+  "idClientBO": "service-account-test-es16",
+  "numero": "0097810998",
+  "nom": "BALOO",
+  "libelle": "BALOO",
+  "siret": "",
+  "numeroPrefectoral": "0000401166",
+  "codePartenaire": "TNR",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "pilotages": [
+    {
+      "codeService": "TPG-IS",
+      "serviceOuvert": true,
+      "couloirClient": "MAI",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "00000006565656",
+        "versionNorme": "V02",
+        "codeClient": "TEST"
+      }
+    },
+    {
+      "codeService": "PRIORISATION",
+      "serviceOuvert": true,
+      "couloirClient": "MAI"
+    },
+    {
+      "codeService": "DCLBEN",
+      "serviceOuvert": true,
+      "couloirClient": "MAI",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0000000001",
+        "versionNorme": "002",
+        "codeClient": "TEST"
+      }
+    },
+    {
+      "codeService": "VISIODROIT",
+      "serviceOuvert": true
+    }
+  ],
+  "conventionTP": [
+    {
+      "conventionTPOuReseauSoin": "OP",
+      "domaineTP": "OPAU",
+      "conventionCible": "IT/IS",
+      "dateDebut": "2023-01-01T00:00:00.000Z",
+      "dateFin": "2023-12-31T00:00:00.000Z",
+      "isConventionConcatenable": false
+    },
+    {
+      "conventionTPOuReseauSoin": "OP",
+      "domaineTP": "HOSP",
+      "conventionCible": "IT/IS",
+      "dateDebut": "2023-01-01T00:00:00.000Z",
+      "isConventionConcatenable": false
+    }
+  ],
+  "codeRenvoiTP": [
+    {
+      "domaineTP": "OPAU",
+      "reseauSoin": "OP",
+      "codeRenvoi": "Amc_opau_code_r",
+      "dateDebut": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineTP": "HOSP",
+      "reseauSoin": "OP",
+      "codeRenvoi": "Amc_hosp_code_r",
+      "dateDebut": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineTP": "PHAR",
+      "reseauSoin": "OP",
+      "codeRenvoi": "Amc_phar_code_r",
+      "dateDebut": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineTP": "DENT",
+      "reseauSoin": "OP",
+      "codeRenvoi": "Amc_dent_code_r",
+      "dateDebut": "2023-01-01T00:00:00.000Z"
+    }
+  ]
+}

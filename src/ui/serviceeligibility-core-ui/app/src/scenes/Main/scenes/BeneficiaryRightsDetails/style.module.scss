@@ -1,0 +1,60 @@
+.full-size-panel {
+    display: flex;
+
+    > div {
+        display: flex;
+        flex: auto;
+
+        > div {
+            flex: auto;
+        }
+    }
+}
+
+.modal-xxl {
+    max-width: 1500px;
+}
+
+.display-panel-content-center {
+    display: flex;
+    flex-direction: column;
+
+    > div:nth-child(2) {
+        display: flex;
+        flex: auto;
+        align-items: center;
+    }
+}
+
+.modal-in-modal {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    max-width: 20%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.content {
+    padding-left: 0;
+    max-width: 80%;
+}
+
+.first-col {
+    margin-left: -20px;
+}
+
+.second-col {
+    margin-left: -70px;
+}
+
+.third-col {
+    margin-left: -45px;
+}

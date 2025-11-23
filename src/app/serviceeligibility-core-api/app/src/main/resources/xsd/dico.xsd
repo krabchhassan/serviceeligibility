@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:commun="http://norme.cegedimassurances.com/commun"  xmlns:ps="http://norme.cegedimassurances.com/ps" xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire" xmlns:amc="http://norme.cegedimassurances.com/amc" xmlns:abonnement="http://norme.cegedimassurances.com/abonnement" xmlns:carte="http://norme.cegedimassurances.com/carte" xmlns:ns="http://norme.cegedimassurances.com/xsd">
+	
+	<xs:import namespace="http://norme.cegedimassurances.com/abonnement" schemaLocation="abonnement/type_services.xsd"></xs:import>
+	<xs:import namespace="http://norme.cegedimassurances.com/abonnement" schemaLocation="abonnement/type_service.xsd"></xs:import>
+	
+	<xs:import namespace="http://norme.cegedimassurances.com/amc" schemaLocation="amc/type_amc.xsd"></xs:import>
+	
+	<xs:import	namespace="http://norme.cegedimassurances.com/beneficiaire" schemaLocation="beneficiaire/type_beneficiaire_demandeur.xsd"></xs:import>
+
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="commun/type_header_in.xsd"></xs:import>
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="commun/type_header_out.xsd"></xs:import>
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="commun/type_codeReponse.xsd"></xs:import>
+			
+	<xs:import namespace="http://norme.cegedimassurances.com/carte" schemaLocation="droits/type_carteTP.xsd"></xs:import>
+	<xs:import namespace="http://norme.cegedimassurances.com/carte" schemaLocation="droits/type_droitsCarteTP.xsd"></xs:import>
+	<xs:import namespace="http://norme.cegedimassurances.com/carte" schemaLocation="droits/type_infoCarteTP.xsd"></xs:import>
+						
+	<xs:import namespace="http://norme.cegedimassurances.com/ps" schemaLocation="ps/type_ps_demandeur.xsd"></xs:import>
+	<xs:import namespace="http://norme.cegedimassurances.com/ps" schemaLocation="ps/type_ps_identifiant.xsd"></xs:import>
+</xs:schema>

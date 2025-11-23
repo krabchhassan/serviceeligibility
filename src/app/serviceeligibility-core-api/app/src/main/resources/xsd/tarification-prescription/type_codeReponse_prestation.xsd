@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:complexType name="type_codeReponse_prestation">
+		<xs:sequence>
+			<xs:element name="code" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>code réponse de la ligne prestation
+Renseigné en cas d'erreur de calcul sur une prestation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelle" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Libellé en cas d'erreur</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="150"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

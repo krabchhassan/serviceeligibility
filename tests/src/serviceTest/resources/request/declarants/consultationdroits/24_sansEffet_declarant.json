@@ -1,0 +1,9 @@
+{
+"_id" : "0000401471",
+"_class" : "com.cegedimactiv.basededroit.entity.DeclarantAMC",
+"numeroRNM" : "0000401471",
+"isInscritDansAnnuaireAMC" : false,
+"nom" : "CCMO",
+"libelle" : "Declarant AMC CCMO",
+"numeroPrefectoral" : "0000401471"
+}

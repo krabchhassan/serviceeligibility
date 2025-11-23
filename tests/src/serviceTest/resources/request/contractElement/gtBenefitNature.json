@@ -1,0 +1,45 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "BALOO",
+  "codeContractElement" : "GT_NATURE",
+  "label" : "TEST BOBB AVEC NATURE DE PREST",
+  "productElements" : [
+    {
+      "codeOffer" : "NATURAL",
+      "codeProduct" : "NAT_P01",
+      "codeBenefitNature" : "OPTIQUE",
+      "codeAmc" : "BALOO",
+      "from" : "2016-01-01T00:00:00.000Z",
+      "effectiveDate" : "2020-09-17T00:00:00.000Z"
+    },
+    {
+      "codeOffer" : "NATURAL",
+      "codeProduct" : "NAT_P01",
+      "codeBenefitNature" : "DENTAIRE",
+      "codeAmc" : "BALOO",
+      "from" : "2016-01-01T00:00:00.000Z",
+      "effectiveDate" : "2020-09-17T00:00:00.000Z"
+    },
+    {
+      "codeOffer" : "NATURAL",
+      "codeProduct" : "NAT_P01",
+      "codeBenefitNature" : "AUDIOLOGIE",
+      "codeAmc" : "BALOO",
+      "from" : "2016-01-01T00:00:00.000Z",
+      "effectiveDate" : "2020-09-17T00:00:00.000Z"
+    },
+    {
+      "codeOffer" : "NATURAL",
+      "codeProduct" : "NAT_P01",
+      "codeBenefitNature" : "PHARMACIE",
+      "codeAmc" : "BALOO",
+      "from" : "2016-01-01T00:00:00.000Z",
+      "effectiveDate" : "2020-09-17T00:00:00.000Z"
+    }
+  ],
+  "ignored" : false,
+  "origine" : "IMPORT",
+  "user" : "anthony.bougaud@cegedim.com",
+  "_class" : "com.cegedim.next.serviceeligibility.core.bobb.ContractElement",
+  "status" : "ACTIVE"
+}

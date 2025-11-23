@@ -1,0 +1,30 @@
+{
+  "id": "paramManuel",
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "oc": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2018-04-27",
+  "dateCreation": "2022-01-01T07:45:49.495Z",
+  "userCreation": "reynald.hermez@cegedim-activ.com",
+  "priorite" : 30,
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "debutEcheance": "01/01",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique",
+    "annulDroitsOffline": false
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+    ],
+    "isCarteEditablePapier": false
+  }
+}

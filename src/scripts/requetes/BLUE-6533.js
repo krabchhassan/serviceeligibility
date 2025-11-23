@@ -1,0 +1,1 @@
+db.beneficiaireConsultationHistory.deleteMany({});

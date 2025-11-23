@@ -1,0 +1,225 @@
+{
+  "contracts": [
+    {
+      "context": "HTP",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "1394200704",
+      "externalNumber": "1394200704",
+      "subscriberId": "1394200704",
+      "subscriberFullId": "1394200704-COMPLET",
+      "subscriptionDate": "2021-01-01",
+      "businessContributor": "Courtier & Co",
+      "responsibleContractOpenPeriods": [
+        {
+          "start": "2021-01-01",
+          "end": "2021-12-31"
+        }
+      ],
+      "cmuContractOpenPeriods": [],
+      "secondaryCriterion": "Employés",
+      "detailedSecondaryCriterion": "GEO-FRA-OCC",
+      "isIndividualContract": true,
+      "operator": "IGestion",
+      "collectiveContract": {
+        "number": "03094493",
+        "externalNumber": "DKMMMS09049304930"
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "suspensionPeriods": [],
+      "insured": {
+        "isSubscriber": true,
+        "administrativeRank": "1",
+        "identity": {
+          "nir": {
+            "code": "1791054142506",
+            "key": "06"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1791054142506",
+                "key": "06"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "624",
+                "centerCode": "0156"
+              },
+              "period": {
+                "start": "2022-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "1791054142506",
+                "key": "06"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "595",
+                "centerCode": "0123"
+              },
+              "period": {
+                "start": "2020-01-01",
+                "end": "2022-02-13"
+              }
+            }
+          ],
+          "birthDate": "19791006",
+          "birthRank": "1",
+          "personNumber": "0000401166-1394200704-001",
+          "personExternalRef": "EXT-1394200704-001"
+        },
+        "data": {
+          "name": {
+            "lastName": "PEHAHUT",
+            "commonName": "VAITROUAT",
+            "firstName": "DAVID",
+            "civility": "Mr"
+          },
+          "address": {
+            "line1": "MR PEHAHUT VAITROUAT DAVID",
+            "line4": "152B BOULEVARD LAMARTINE",
+            "line6": "65000 TARBES",
+            "postcode": "65000"
+          },
+          "contact": {
+            "landline": "0321992364",
+            "mobile": "0735427677"
+          },
+          "paymentRecipients": [
+            {
+              "paymentRecipientId": "DP-1394200704",
+              "name": {
+                "lastName": "PEHAHUT",
+                "commonName": "VAITROUAT",
+                "firstName": "DAVID",
+                "civility": "Mr"
+              },
+              "address": {
+                "line1": "MR PEHAHUT VAITROUAT DAVID",
+                "line4": "152B BOULEVARD LAMARTINE",
+                "line6": "65000 TARBES",
+                "postcode": "65000"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "benefitPaymentMode": {
+                "code": "VIR",
+                "label": "Virement",
+                "currencyCode": "EUR"
+              },
+              "period": {
+                "start": "2021-01-01"
+              }
+            }
+          ],
+          "benefitStatementRecipients": [
+            {
+              "benefitStatementRecipientId": "DRP-1394200704",
+              "name": {
+                "lastName": "PEHAHUT",
+                "commonName": "VAITROUAT",
+                "firstName": "DAVID",
+                "civility": "Mr"
+              },
+              "address": {
+                "line1": "MR PEHAHUT VAITROUAT DAVID",
+                "line4": "152B BOULEVARD LAMARTINE",
+                "line6": "65000 TARBES",
+                "postcode": "65000"
+              },
+              "period": {
+                "start": "2021-01-01"
+              }
+            }
+          ]
+        },
+        "healthMutualSubscriptionDate": "2021-01-01",
+        "individualSubscriptionStartDate": "2021-01-01",
+        "individualSubscriptionNumber": "120320020",
+        "digitRelation": {
+          "dematerialization": {
+            "isDematerialized": true,
+            "mobile": "0735427677"
+          },
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2021-01-01"
+              },
+              "isRemotelyTransmitted": true
+            }
+          ]
+        },
+        "attendingPhysicianOpenedPeriods": [
+          {
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          {
+            "start": "2020-01-01",
+            "end": "2020-12-31"
+          }
+        ],
+        "specialPlans": [
+          {
+            "code": "AM",
+            "period": {
+              "start": "2021-01-01",
+              "end": "2021-12-31"
+            }
+          }
+        ],
+        "specialStatuses": [
+          {
+            "code": "ALD",
+            "period": {
+              "start": "2021-01-01",
+              "end": "2021-12-31"
+            }
+          }
+        ],
+        "quality": {
+          "code": "A",
+          "label": "ASSURE"
+        },
+        "rights": [
+          {
+            "code": "BAL_BASMOD030",
+            "insurerCode": "ASS_BALOO",
+            "type": "BASE",
+            "prioritizationOrder": "1",
+            "guaranteeAgeDate": "2022-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "BLUE_TP",
+                "productCode": "SANTE_100",
+                "benefitsType": [
+                  {
+                    "benefitType": "RADIOLOGIE",
+                    "period": {
+                      "start": "2022-01-10",
+                      "end": "2022-01-10"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2022-01-10",
+                  "end": "2022-01-10"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

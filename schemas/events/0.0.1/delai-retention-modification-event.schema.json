@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Modification delai retention",
+  "description": "Modification du délai de rétention dans une AMC",
+  "additionalProperties": false,
+  "properties": {
+    "insurerId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC : numéro préfectoral"
+    },
+    "previousDetentionPeriod": {
+      "type": "string",
+      "description": "Ancienne valeur du délai de rétention"
+    },
+    "newDetentionPeriod": {
+      "type": "string",
+      "description": "Nouvelle valeur du délai de rétention"
+    }
+  },
+  "required": [
+    "insurerId",
+    "previousDetentionPeriod",
+    "newDetentionPeriod"
+  ],
+  "$id": "Insurance.serviceeligibility.delai.retention.modification.event/0.0.1"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Déclencheur créé en anomalie",
+  "description": "Déclencheur créé en anomalie",
+  "additionalProperties": false,
+  "properties": {
+    "amcNumber": {
+      "type": "string",
+      "description": "Numéro d'AMC"
+    },
+    "issuingCompany": {
+      "type": "string",
+      "description": "Société émettrice"
+    },
+    "insuredNumber": {
+      "type": "string",
+      "description": "Numéro d'adhérent"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro de contrat"
+    },
+    "anomalyDescription": {
+      "type": "string",
+      "description": "La description de non détermination positionnée dans le déclencheur en anomalie"
+    }
+  },
+  "required": [
+    "amcNumber",
+    "issuingCompany",
+    "insuredNumber",
+    "contractNumber",
+    "anomalyDescription"
+  ],
+  "$id": "Insurance.serviceeligibility.trigger.created.in.error.event/0.0.1"
+}

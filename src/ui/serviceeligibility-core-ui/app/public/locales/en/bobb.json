@@ -1,0 +1,57 @@
+{
+  "pageTitle": "Management of technical guarantees batches",
+  "tabTitle": "Management of technical guarantees batches",
+  "import": {
+    "title": "Import mapping file",
+    "success": "The file has been correctly imported.",
+    "content": "You are going to import a new version of the file mapping.",
+    "file": "file",
+    "spinnerMessage" : "Importing file {{ fileNameToImport }}, please do not refresh the page"
+  },
+  "search": {
+    "title": "Search",
+    "codeLot": "Code of the lot",
+    "codeLotPlaceholder": "Enter the code",
+    "libelleLot": "Label of the lot",
+    "libelleLotPlaceholder": "Enter the label",
+    "codeAssureurGT": "Insurer code of the technical guarantee",
+    "codeAssureurGTPlaceholder": "Enter the insurer code of the technical guarantee",
+    "codeGT": "Code of the technical guarantee",
+    "codeGTPlaceholder": "Enter the code of the technical guarantee",
+    "garantiesTechniques": "Technical guarantees",
+    "garantiesTechniquesPlaceholder": "Select at least 2 technical guarantees"
+  },
+  "create": {
+    "createdLot": "The lot has been created successfully",
+    "erreurCreationLotGT": "Error creating lot. A lot must contain at least 2 technical guarantees.",
+    "erreurLotExistant": "Error creating lot. A lot with the same code already exists.",
+    "erreurCreationLot": "Error creating lot.",
+    "erreurCodeLotVide": "Error creating lot. The code of the lot is empty.",
+    "erreurLibelleVide": "Error creating lot. The label of the lot is empty."
+  },
+  "modify": {
+    "modifiedLot": "The lot has been modified successfully",
+    "erreurModificationLot": "Modification error. A lot must contain 2 technical guarantees minimum."
+  },
+  "resultSearch": {
+    "title": "Search results",
+    "code": "Code of the lot",
+    "libelle": "Label of the lot",
+    "garantieTechniques": "Total of technical guarantees",
+    "modalTitle": "Details of technical guarantees of lot {{lot}}",
+    "ajoutLot": "Add a lot",
+    "modificationLot": "Modification of the lot",
+    "importExport": "Import / Export",
+    "chipsGTSupprimees": "Include lots withe deleted technical guarantees",
+    "chipsGTSupprimeesTooltip": "This option can only be used if an insurer code and/or a technical guarantee code is entered. In this case, the search result includes lots containing the searched guarantee even if it has been deleted from the lot.",
+    "filtre": "Include deleted technical guarantees"
+  },
+  "technicalGuaranteeDetail": {
+    "codeAssureur": "Insurer code",
+    "codeGarantie": "Technical guarantee code",
+    "dateAjout": "Creation date",
+    "dateSuppressionLogique": "Deletion date",
+    "chipsGTSupprimees": "Display of deleted technical guarantees",
+    "filtre": "Include technical guarantees removed from the lot"
+  }
+}

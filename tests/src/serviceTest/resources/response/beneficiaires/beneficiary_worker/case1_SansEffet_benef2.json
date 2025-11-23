@@ -1,0 +1,41 @@
+{
+  "id": null,
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "54580211001",
+  "contrats": [],
+  "societesEmettrices": [],
+  "identite": {
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "091"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "20081024",
+    "rangNaissance": "1",
+    "numeroPersonne": "54580211001-02",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "20081024",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": null
+  },
+  "traceId": null,
+  "services": [],
+  "key": "0000401166-54580211001-02"
+}

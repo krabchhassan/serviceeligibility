@@ -1,0 +1,98 @@
+workflowDefinition:
+  - name: BOBB - Import des fichiers de correspondance
+    code: is-bdds-bobb-import
+    description: l'OMU “BOBBImport” consiste à importer des fichiers de correspondance produit BO/Beyond.
+    documentation-path: docs/workflows/0.0.1
+    nature: [ "dev", "qa", "preprod", "prod" ]
+    dashboard-url:
+      baseUrl: grafana/d/AIN-2512-0001/import-export-bobb
+      parameters:
+        - var-omuId: "OMU__omu_id"
+        - from: "OMU__start_date"
+        - to: "OMU__end_date"
+    parameters:
+      - name: input_file
+        description: fichier à lire
+        optional: true
+        selection-display: file
+      - name: mode
+        description: mode de l'import (COMPLET ou DIFFERENTIEL)
+        optional: false
+      - name: forcage
+        description: mode de forcage (OUI ou NON)
+        optional: false
+    steps:
+      - name: bobb-transfo
+        job: bobb-transfo-job
+        type: python
+        fileExchangePlatform: true
+        produceWorkdir: true
+        produceOutputs: true
+        useBeyondWorkdir: true
+        usePersonalWorkdir: true
+        parameters:
+          arguments:
+            - name: input_file
+              ref: parameters/input_file
+
+      - name: bobb-import
+        job: bobb-import-job
+        type: python
+        produceWorkdir: true
+        produceOutputs: true
+        useBeyondWorkdir: true
+        usePersonalWorkdir: true
+        fileExchangePlatform: true
+        parameters:
+          arguments:
+            - name: mode
+              ref: parameters/mode
+            - name: forcage
+              ref: parameters/forcage
+        dependsOn:
+          - bobb-transfo
+        consumeWorkdirs:
+          - bobb-transfo
+        consumeOutputs:
+          - bobb-transfo
+
+      - name: bobb-historization
+        job: bobb-historization-job
+        type: python
+        useBeyondWorkdir: true
+        dependsOn:
+          - bobb-import
+        consumeOutputs:
+          - bobb-import
+
+    crex:
+      - name: list_input_files
+        description: Liste des fichiers en entrée
+        ref: steps/bobb-transfo/parameters/outputs/list_input_files
+      - name: number_input_files
+        description: Nombre des fichiers en entrée
+        ref: steps/bobb-transfo/parameters/outputs/number_input_files
+      - name: list_selected_files
+        description: Liste des fichiers séléctionnés
+        ref: steps/bobb-transfo/parameters/outputs/list_selected_files
+      - name: number_selected_files
+        description: Nombre des fichiers séléctionnés
+        ref: steps/bobb-transfo/parameters/outputs/number_selected_files
+      - name: list_imported_files_ok
+        description: liste des fichiers importés
+        ref: steps/bobb-import/parameters/outputs/list_imported_files_ok
+      - name: number_imported_files_ok
+        description: Nombre des fichiers importés
+        ref: steps/bobb-import/parameters/outputs/number_imported_files_ok
+      - name: list_imported_files_ko
+        description: Liste des fichiers non importés
+        ref: steps/bobb-import/parameters/outputs/list_imported_files_ko
+      - name: number_imported_files_ko
+        description: Nombre des fichiers non importés
+        ref: steps/bobb-import/parameters/outputs/number_imported_files_ko
+      - name: number_lines_ok
+        description: Nombre de lignes intégrées
+        ref: steps/bobb-import/parameters/outputs/number_lines_ok
+      - name: number_lines_ko
+        description: Nombre de lignes non intégrées
+        ref: steps/bobb-import/parameters/outputs/number_lines_ko

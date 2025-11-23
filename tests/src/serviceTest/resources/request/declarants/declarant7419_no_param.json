@@ -1,0 +1,42 @@
+{
+  "_id": "0002420016",
+  "codeCircuit": "03",
+  "codePartenaire": "MAB",
+  "codeRenvoiTP":
+  [],
+  "conventionTP":
+  [],
+  "dateModification": "2024-08-02T13:59:24.636",
+  "delaiRetention": "3",
+  "emetteurDroits": "AMC",
+  "libelle": "MUTUELLE D'ASSURANCE DE LA BOULANGERIE",
+  "nom": "MAB",
+  "numeroPrefectoral": "0002420016",
+  "operateurPrincipal": "SP",
+  "pilotages":
+  [
+    {
+      "caracteristique":
+      {},
+      "codeService": "PEPOU",
+      "dateOuverture": "2016-12-31T00:00:00.000",
+      "serviceOuvert": true
+    },
+    {
+      "caracteristique":
+      {
+        "dureeValidite": 5
+      },
+      "codeService": "PEPO",
+      "dateOuverture":"2024-03-01T00:00:00.000",
+      "serviceOuvert": true
+    }
+  ],
+  "regroupementDomainesTP":
+  [],
+  "siret": "",
+  "transcodageDomainesTP":
+  [],
+  "type": "amc",
+  "userModification": "cedric.fontubier@cegedim.com"
+}

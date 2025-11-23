@@ -1,0 +1,290 @@
+{
+  "_id": null,
+  "idDeclarant": "0000401166",
+  "numeroContrat": "44269CA001",
+  "numeroAdherent": "44269CA001",
+  "numeroAdherentComplet": "44269CA001",
+  "dateSouscription": "2019/07/01",
+  "type": "B",
+  "nomPorteur": "SOUSSAN",
+  "prenomPorteur": "NATHALIE",
+  "civilitePorteur": "MME",
+  "qualification": "B",
+  "numeroContratCollectif": "44269CA000",
+  "isContratResponsable": false,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "001",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "44269CA001",
+  "numeroExterneContratCollectif": "PI44269CA000",
+  "gestionnaire": "000ER00955",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "dateCreation": null,
+  "dateModification": null,
+  "dateConsolidation": null,
+  "carteTPaEditerOuDigitale": "0",
+  "beneficiaires":
+  [
+    {
+      "dateCreation": null,
+      "dateModification": null,
+      "dateNaissance": "19610214",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2610225056125",
+      "cleNirBeneficiaire": "89",
+      "nirOd1": "2610225056125",
+      "cleNirOd1": "89",
+      "numeroPersonne": "3142036",
+      "rangAdministratif": "2",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2019/07/01",
+      "dateDebutAdhesionIndividuelle": "2019/07/01",
+      "dernierMouvementRecu": "V",
+      "affiliation":
+      {
+        "nom": "SOUSSAN",
+        "nomPatronymique": "SOUSSAN",
+        "nomMarital": "SOUSSAN",
+        "prenom": "NATHALIE",
+        "civilite": "MME",
+        "periodeDebut": "2019/07/01",
+        "qualite": "C",
+        "regimeOD1": "01",
+        "caisseOD1": "682",
+        "centreOD1": "",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Conjoint/Concubin"
+      },
+      "adresses":
+      [
+        {
+          "ligne1": "Monsieur SOUSSAN ROBERT",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "10 RUE DES TULIPES",
+          "ligne5": "",
+          "ligne6": "68100 MULHOUSE",
+          "ligne7": "",
+          "codePostal": "68100",
+          "typeAdresse":
+          {
+            "type": "AD"
+          }
+        }
+      ],
+      "affiliationsRO":
+      [
+        {
+          "nir":
+          {
+            "code": "2610225056125",
+            "cle": "89"
+          },
+          "rattachementRO":
+          {
+            "codeRegime": "01",
+            "codeCaisse": "682",
+            "codeCentre": ""
+          },
+          "periode":
+          {
+            "debut": "2019/07/01"
+          }
+        }
+      ],
+      "teletransmissions":
+      [
+        {
+          "periode":
+          {
+            "debut": "2019/07/01"
+          },
+          "isTeletransmission": true
+        }
+      ],
+      "regimesParticuliers":
+      [
+        {
+          "code": "AM",
+          "periode":
+          {
+            "debut": "2019/07/01"
+          }
+        }
+      ],
+      "situationsParticulieres":
+      [
+        {
+          "code": "ALD",
+          "periode":
+          {
+            "debut": "2019/07/01"
+          }
+        }
+      ],
+      "domaineDroits":
+      [
+        {
+          "code": "DENT",
+          "garanties":
+          [
+            {
+              "codeGarantie": "GT_7319",
+              "libelleGarantie": "SOCLE SANTE",
+              "codeAssureurGarantie": "baloo",
+              "dateAdhesionCouverture": "2019/07/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "7319-01-P01",
+                  "codeOffre": "7319-01",
+                  "codeOc": "BALOO",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "DENT-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "FRAIS_DENTAIRE",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2024/10/01",
+                              "periodeFin": "2024/09/30",
+                              "periodeFinFermeture": "2024/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2025/01/01",
+                              "periodeFin": "2024/12/31",
+                              "periodeFinFermeture": "2025/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [],
+                          "prioritesDroit":
+                          [],
+                          "conventionnements":
+                          [],
+                          "prestations":
+                          []
+                        }
+                      ]
+                    },
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "DENT_AIRE",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2024/10/01",
+                              "motifEvenement": ""
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2024/10/01",
+                              "periodeFin": "2024/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/10/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/10/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/10/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "010",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/10/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+apiVersion: v2
+name: serviceeligibility-core-ui
+description: Helm chart for serviceeligibility-core-ui in serviceeligibility service.
+type: application
+appVersion: "${imageTag}"
+version: 0.0.0
+dependencies:
+  - name: helm-chart-beyond-common
+    repository: "oci://registry-dev.beyond.cegedim.cloud/devops-infra"
+    version: v16.0.7

@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "historiqueExecutions",
+      "description": "Collection qui contient la liste de toutes les  executions des batchs historiques"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "HistoriqueExecutions": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "Batch": {
+            "type": "string"
+          },
+          "dateExecution": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idDerniereDeclarationTraitee": {
+            "type": "string"
+          },
+          "nbContratCree": {
+            "type": "integer"
+          },
+          "nbDeclarationTraitee": {
+            "type": "integer"
+          },
+          "nbDeclarationIgnoree": {
+            "type": "integer"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "HistoriqueExecutions"
+      }
+    }
+  }
+}

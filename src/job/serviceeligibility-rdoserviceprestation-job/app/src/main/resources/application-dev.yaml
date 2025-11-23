@@ -1,0 +1,83 @@
+spring:
+  kafka:
+    properties:
+      sasl:
+        mechanism: SCRAM-SHA-256
+        jaas:
+          config: "org.apache.kafka.common.security.scram.ScramLoginModule required username='beyond-kafka-dev2' password='0c3G5a?33V2g';"
+      security:
+        protocol: SASL_SSL
+    ssl:
+      trust-store-location: "file:///${user.home}/.kafka/kafka.truststore.jks"
+      trust-store-password: "kafka_truststore_password"
+    bootstrap-servers: ${KAFKA_SERVERS}
+keycloak:
+  clientId: test-es16
+  clientSecret: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+  realm: htp
+  url: https://idp.dev.beyond.cegedim.cloud/auth
+kafka:
+  topic:
+    beyond-events: events
+beyond:
+  customer: editeur
+  couloir: htp
+  instance: htp-es15
+schema:
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+  path: Insurance/serviceeligibility
+SEND_EVENTS: 'false'
+CONTROL_META: "false"
+CONTROLE_CORRESPONDANCE_BOBB: 'true'
+USE_REFERENTIAL_VALIDATION: 'true'
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+logging:
+  level:
+    com:
+      cegedim: debug
+socle:
+  code: Insurance
+TARGET_DOMAIN: dev
+ARL_FOLDER: C:\dev\git\next-serviceeligibility-rdoserviceprestation-job\arlfiles
+service:
+  code: serviceeligibility
+PW_API_URL: https://htp-es15.dev.beyond.cegedim.cloud/engine/core/api
+KAFKA_SERVERS: detcisk01.hosting.cegedim.cloud:9094,detcisk02.hosting.cegedim.cloud:9094,detcisk03.hosting.cegedim.cloud:9094
+KAFKA_TOPIC_BDD-CONTRATTP: bdd-contrattp
+KAFKA_TOPIC_BDD-DEMANDE-DECLARATION: demandeDeclaration
+KAFKA_TOPIC_BDD-DEMANDE-ABANDON-TRIGGER: demandeAbandonTrigger
+KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION: demandeRenouvellementDeclaration
+KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE: demandeRenouvellementDeclarationUnitaire
+KAFKA_TOPIC_BDD-RECIPIENTS-REQUEST: bdd-recipients-request
+KAFKA_TOPIC_BDD-UNDUE-RETENTION: bdd-undue-retention
+KAFKA_TOPIC_BDD-UPDATE-RENOUVELLEMENT-DECLARATION: updateRenouvellementDeclaration
+keycloak_realm: htp
+CLOUD_PROVIDER: itcare
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+server:
+  port: '8090'
+ORGA_LIB_ENABLED: 'true'
+TARGET_ENV: local
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+REFERENTIAL_API_URL: https://htp-es15.dev.beyond.cegedim.cloud/referential/core/api
+INPUT_FOLDER: C:\dev\git\next-serviceeligibility-rdoserviceprestation-job\files
+CONTROLE_METIER_HTP: 'true'
+SEND_RECIPIENT_MESSAGE: false
+ELASTICSEARCH_LOGIN: login
+ELASTICSEARCH_PASSWORD: password
+ELASTICSEARCH_URL: https://beyond-data-dev.es.cegedim.cloud
+environment: local
+s3_access_key: nzua4ydzoc19biobbyqz
+s3_bucket: cegedim-beyond-dev-htp-es15-msdata
+s3_file_path: insurance/organisation/setting-scopes/scopes.json
+s3_host: storage-et1.cloud.cegedim.com
+s3_orga_admin_data_path: insurance/organisation/organisations-admin-data/
+s3_region: eu-west-1
+s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+s3_secure: true
+debug: true

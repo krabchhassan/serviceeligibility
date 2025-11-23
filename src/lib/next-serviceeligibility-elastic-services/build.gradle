@@ -1,0 +1,29 @@
+plugins {
+    id "beyond.gradle.plugins.java-library"
+    id "java-library"
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+
+    // ----------------
+    // Spring framework
+    // ----------------
+    implementation("org.springframework.boot:spring-boot-starter-data-elasticsearch")
+    api("com.cegedim.beyond.framework:lib-beyond-spring-data-opensearch-starter")
+    implementation('com.cegedim.beyond.framework:lib-beyond-http-starter') {
+        exclude group: "org.springframework.data", module: "spring-data-elasticsearch"
+    }
+    implementation(project(":lib-next-serviceeligibility-core-model"))
+
+    implementation("org.apache.commons:commons-collections4")
+    implementation("org.json:json")
+    implementation("com.fasterxml.jackson.core:jackson-core")
+
+    //Tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-data-elasticsearch")
+    testImplementation("org.apache.lucene:lucene-core:7.7.3")
+
+}

@@ -1,0 +1,19 @@
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+beyond:
+  event:
+    group-id: bdds-test
+  service: bdds
+  socle: Insurance
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+keycloak:
+  clientId: ${CLIENT_ID:test-es16}
+  clientSecret: ${CLIENT_SECRET:nn6SAeEsmeij97djO5bSHs6rEjdw5cgd}
+  realm: ${keycloak_realm:htp}
+  enabled: true
+  url: ${keycloak_auth_server_url:https://idp.dev.beyond.cegedim.cloud/auth}
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur

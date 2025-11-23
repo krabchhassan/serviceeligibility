@@ -1,0 +1,411 @@
+{
+  "_id": "67c7d265c9fe1b5c87882d4f",
+  "beneficiaires":
+  [
+    {
+      "adresses":
+      [],
+      "affiliation":
+      {
+        "caisseOD1": "111",
+        "centreOD1": "1111",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "nom": "FEBRE",
+        "nomMarital": "FEBRE",
+        "nomPatronymique": "FEBRE",
+        "periodeDebut": "2023/01/10",
+        "prenom": "MATHILDE",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "regimeParticulier": "",
+        "typeAssure": ""
+      },
+      "cleNirBeneficiaire": "",
+      "cleNirOd1": "95",
+      "cleNirOd2": "",
+      "dateCreation": "2025-03-05T04:26:11.859",
+      "dateModification":"2025-03-05T04:26:11.859",
+      "dateNaissance": "19960419",
+      "dernierMouvementRecu": "R",
+      "domaineDroits":
+      [
+        {
+          "code": "EXTE",
+          "codeProfil": "",
+          "garanties":
+          [
+            {
+              "codeGarantie": "G",
+              "libelleGarantie": "",
+              "produits":
+              [
+                {
+                  "codeExterneProduit": "",
+                  "codeProduit": "",
+                  "libelleProduit": "",
+                  "referencesCouverture":
+                  [
+                    {
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "SP",
+                                "libelle": "SP"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE",
+                              "periodeDebut": "2023/01/10",
+                              "periodeFin": "2025/01/14",
+                              "periodeFinFermeture": "2025/12/31",
+                              "typePeriode": "OFFLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "02A",
+                                "parametres":
+                                [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": ""
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "TA"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "EXTE-02A-100"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "codeProfil": "",
+          "garanties":
+          [
+            {
+              "codeGarantie": "G",
+              "libelleGarantie": "",
+              "produits":
+              [
+                {
+                  "codeExterneProduit": "",
+                  "codeProduit": "",
+                  "libelleProduit": "",
+                  "referencesCouverture":
+                  [
+                    {
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "SP",
+                                "libelle": "SP"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE",
+                              "periodeDebut": "2023/01/10",
+                              "periodeFin": "2025/01/14",
+                              "periodeFinFermeture": "2025/12/31",
+                              "typePeriode": "OFFLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": ""
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "HOSP-099"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "codeProfil": "",
+          "garanties":
+          [
+            {
+              "codeGarantie": "G",
+              "libelleGarantie": "",
+              "produits":
+              [
+                {
+                  "codeExterneProduit": "",
+                  "codeProduit": "",
+                  "libelleProduit": "",
+                  "referencesCouverture":
+                  [
+                    {
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "SP",
+                                "libelle": "SP"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE",
+                              "periodeDebut": "2023/01/10",
+                              "periodeFin": "2025/01/14",
+                              "periodeFinFermeture": "2025/12/31",
+                              "typePeriode": "OFFLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "052",
+                                "parametres":
+                                []
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": ""
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2023/01/10",
+                                  "fin": "2025/01/14"
+                                }
+                              ],
+                              "tauxRemboursement": "100/100/100",
+                              "uniteTauxRemboursement": "XX"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "PHAR-02A-100"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "modePaiementPrestations": "",
+      "nirBeneficiaire": "",
+      "nirOd1": "2610469227041",
+      "nirOd2": "",
+      "numeroPersonne": "000423GAMQF9580",
+      "rangAdministratif": "",
+      "rangNaissance": "1",
+      "refExternePersonne": "000423GAMQF9580"
+    }
+  ],
+  "carteTPaEditerOuDigitale": "0",
+  "civilitePorteur": "",
+  "contratCMUC2S": "0",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "dateConsolidation": "2025-03-05T04:26:11.859",
+  "dateCreation":"2025-03-05T04:26:11.859",
+  "dateModification": "2025-03-05T04:26:11.859",
+  "dateSouscription": "2023/01/10",
+  "gestionnaire": "",
+  "groupeAssures": "",
+  "idDeclarant": "0002420016",
+  "individuelOuCollectif": "",
+  "isContratCMU": false,
+  "isContratResponsable": false,
+  "nomPorteur": "FEBRE ERIC",
+  "numAMCEchange": "",
+  "numOperateur": "",
+  "numeroAdherent": "00146490",
+  "numeroAdherentComplet": "",
+  "numeroContrat": "00000014649050130000",
+  "numeroContratCollectif": "",
+  "numeroExterneContratCollectif": "",
+  "numeroExterneContratIndividuel": "",
+  "origineDeclaration": "TDB/TFD",
+  "prenomPorteur": "",
+  "qualification": "B",
+  "typeConvention": ""
+}

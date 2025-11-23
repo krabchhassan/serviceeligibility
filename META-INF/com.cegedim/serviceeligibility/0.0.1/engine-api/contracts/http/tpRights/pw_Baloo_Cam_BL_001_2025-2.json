@@ -1,0 +1,114 @@
+{
+  "offerCode": "DIFF_TP_2",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2023_janv_01.1",
+      "effectDate": "2025-04-20T08:43:37.513Z",
+      "validityDate": "2025-01-01",
+      "endValidityDate": "2025-05-31",
+      "engineVersion": "29.5",
+      "domains": [
+        {
+          "domainCode": "PHCO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "PHCN",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "DENTAIRE"
+          },
+          "tpOnline": {
+            "nature": "DENTAIRE"
+          }
+        },
+        {
+          "domainCode": "PHNO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "PHOR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        }
+      ]
+    },
+    {
+      "offerVersionCode": "2023_june_01.1",
+      "effectDate": "2023-04-20T08:43:37.513Z",
+      "validityDate": "2025-06-01",
+      "endValidityDate": "2025-12-31",
+      "engineVersion": "29.5",
+      "domains": [
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "DENTAIRE"
+          },
+          "tpOnline": {
+            "nature": "DENTAIRE"
+          }
+        }
+      ]
+    }
+  ]
+}

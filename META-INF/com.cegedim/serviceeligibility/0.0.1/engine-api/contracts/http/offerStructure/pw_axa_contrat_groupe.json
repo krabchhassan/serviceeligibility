@@ -1,0 +1,13 @@
+[
+  {
+    "validityDate": "2021-01-01",
+    "code": 1,
+    "natures": [
+      "HOSPITALISATION",
+      "OPTIQUEAUDIO"
+    ],
+    "products": [
+      "AXASC_CGDIM"
+    ]
+  }
+]

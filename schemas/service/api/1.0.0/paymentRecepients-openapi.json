@@ -1,0 +1,277 @@
+{
+	"openapi": "3.0.2",
+	"info": {
+		"title": "Récupération des destinataires de paiement d’un bénéficiaire pour une liste de contrats",
+		"description": "API specification",
+		"version": "1.0.0"
+	},
+	"paths": {
+		"/v1/paymentRecipientsByContract": {
+			"post": {
+				"summary": "Récupérer des destinataires de paiement d’un bénéficiaire pour une liste de contrats",
+				"operationId": "getPaymentRecipientsByContract",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/RequestPaymentRecipientsByContract"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "Liste des destinataires de paiement du bénéficiaire",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"contracts": {
+											"type": "array",
+											"items": {
+												"$ref": "#/components/schemas/PaymentRecipientsByContractDto"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"RequestPaymentRecipientsByContract": {
+				"type": "object",
+				"properties": {
+					"insurerId": {
+						"type": "string",
+						"description": "Numéro de l’AMC"
+					},
+					"beneficiaryId": {
+						"type": "string",
+						"description": "Identifiant du bénéficiaire (concaténation du n° d’AMC et du n° de personne)"
+					},
+					"contracts": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/RequestContract"
+						}
+					},
+					"referenceDate": {
+						"type": "string",
+						"format": "date",
+						"description": "Date de référence permettant de rechercher les destinataires valides à partir de cette date"
+					}
+				},
+				"required": ["insurerId", "beneficiaryId", "contracts", "referenceDate"]
+			},
+			"RequestContract": {
+				"type": "object",
+				"properties": {
+					"subscriberId": {
+						"type": "string",
+						"description": "Numéro adhérent"
+					},
+					"number": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					}
+				},
+				"required": ["subscriberId", "number"]
+			},
+			"PaymentRecipientsByContractDto": {
+				"type": "object",
+				"properties": {
+					"contractId": {
+						"$ref": "#/components/schemas/ContractIdDto"
+					},
+					"insuredPeriods": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/InsuredPeriodDto"
+						}
+					},
+					"paymentRecipients": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/PaymentRecipient"
+						}
+					}
+				}
+			},
+			"ContractIdDto": {
+				"type": "object",
+				"properties": {
+					"insurerId": {
+						"type": "string",
+						"description": "Identifiant de l'assureur"
+					},
+					"subscriberId": {
+						"type": "string",
+						"description": "Identifiant de l'adhérent"
+					},
+					"number": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					}
+				}
+			},
+			"InsuredPeriodDto": {
+				"type": "object",
+				"properties": {
+					"start": {
+						"type": "string",
+						"format": "date",
+						"description": "Date de début de la période assurée"
+					},
+					"end": {
+						"type": "string",
+						"format": "date",
+						"description": "Date de fin de la période assurée"
+					}
+				}
+			},
+			"PaymentRecipient": {
+				"type": "object",
+				"properties": {
+					"paymentRecipientId": {
+						"type": "string",
+						"description": "Identifiant du destinataire de paiement dans le back-office d'origine"
+					},
+					"beyondPaymentRecipientId": {
+						"type": "string",
+						"description": "Identifiant Beyond du destinataire de paiement"
+					},
+					"name": {
+						"$ref": "#/components/schemas/NameCorporate"
+					},
+					"address": {
+						"$ref": "#/components/schemas/Address"
+					},
+					"rib": {
+						"$ref": "#/components/schemas/Rib"
+					},
+					"benefitPaymentMode": {
+						"$ref": "#/components/schemas/BenefitPaymentMode"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				},
+				"required": ["benefitPaymentMode"]
+			},
+			"NameCorporate": {
+				"type": "object",
+				"properties": {
+					"lastName": {
+						"description": "Nom de famille",
+						"type": "string"
+					},
+					"commonName": {
+						"description": "Nom d'usage",
+						"type": "string"
+					},
+					"firstName": {
+						"description": "Prénom",
+						"type": "string"
+					},
+					"civility": {
+						"description": "Civilité",
+						"type": "string"
+					},
+					"corporateName": {
+						"description": "Raison sociale",
+						"type": "string"
+					}
+				}
+			},
+			"Address": {
+				"type": "object",
+				"properties": {
+					"line1": {
+						"type": "string",
+						"description": "Ligne d'adresse 1"
+					},
+					"line2": {
+						"type": "string",
+						"description": "Ligne d'adresse 2"
+					},
+					"line3": {
+						"type": "string",
+						"description": "Ligne d'adresse 3"
+					},
+					"line4": {
+						"type": "string",
+						"description": "Ligne d'adresse 4"
+					},
+					"line5": {
+						"type": "string",
+						"description": "Ligne d'adresse 5"
+					},
+					"line6": {
+						"type": "string",
+						"description": "Ligne d'adresse 6"
+					},
+					"line7": {
+						"type": "string",
+						"description": "Ligne d'adresse 7"
+					},
+					"postcode": {
+						"type": "string",
+						"description": "Code postal"
+					}
+				}
+			},
+			"Rib": {
+				"type": "object",
+				"properties": {
+					"bic": {
+						"type": "string",
+						"description": "Code BIC"
+					},
+					"iban": {
+						"type": "string",
+						"description": "Code IBAN"
+					}
+				}
+			},
+			"BenefitPaymentMode": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code du mode de paiement"
+					},
+					"label": {
+						"type": "string",
+						"description": "Libellé du mode de paiement"
+					},
+					"currencyCode": {
+						"type": "string",
+						"description": "Code de la devise"
+					}
+				}
+			},
+			"Period": {
+				"type": "object",
+				"properties": {
+					"start": {
+						"type": "string",
+						"format": "date",
+						"description": "Début de la période"
+					},
+					"end": {
+						"type": "string",
+						"format": "date",
+						"description": "Fin de la période"
+					}
+				}
+			}
+		}
+	}
+}

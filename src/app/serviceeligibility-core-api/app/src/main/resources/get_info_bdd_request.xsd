@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:droit="http://ws.cegedimassurance.com/basededroit/wsdl"  xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" targetNamespace="http://ws.cegedimassurance.com/basededroit/wsdl"
+elementFormDefault="qualified">
+
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="classpath://./xsd/commun/type_header_in.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="classpath://./xsd/commun/type_dates.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/beneficiaire" schemaLocation="classpath://./xsd/beneficiaire/type_beneficiaire_demandeur.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/amc" schemaLocation="classpath://./xsd/amc/type_amc.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/base_de_droit" schemaLocation="classpath://./xsd/base_de_droit/type_info_bdd.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/base_de_droit" schemaLocation="base_de_droit.xsd"/>
+
+	<xs:element name="getInfoBddRequest" type="droit:get_info_bdd_request" />
+	<xs:element name="getInfoBddResponse" type="base_de_droit:get_info_bdd_response" />
+
+	<xs:complexType name="get_info_bdd_request">
+		<xs:sequence>
+			<xs:element ref="base_de_droit:header_in"/>
+			<xs:element ref="base_de_droit:beneficiaire"/>
+			<xs:element ref="base_de_droit:amc" />
+			<xs:element ref="base_de_droit:info_bdd"/>
+			<xs:element ref="base_de_droit:dates" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

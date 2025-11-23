@@ -1,0 +1,155 @@
+{
+    "referenceExterne" : null,
+    "codeEtat" : "R",
+    "effetDebut" : "2020-03-17T00:03:06.834",
+    "idDeclarant" : "0002420008",
+    "isCarteTPaEditer" : false,
+    "nomFichierOrigine" : "PA600050_AMCVDTFP_I4144327_20200316_215202.OK",
+    "dateCreation" : "2020-03-17T00:03:06.834",
+    "userCreation" : "job606",
+    "dateModification" : "2020-03-17T00:03:06.834",
+    "userModification" : "job606",
+    "versionDeclaration" : "V01",
+    "beneficiaire" : {
+        "dateNaissance" : "20000208",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : null,
+        "cleNirBeneficiaire" : null,
+        "nirOd1" : "1000231555844",
+        "cleNirOd1" : "81",
+        "nirOd2" : "",
+        "cleNirOd2" : "",
+        "insc" : null,
+        "numeroPersonne" : "000000000196252",
+        "refExternePersonne" : "000000000196252",
+        "affiliation" : {
+            "nom" : "LAI",
+            "nomPatronymique" : "LAI",
+            "nomMarital" : "LAI",
+            "prenom" : "OCTAVE",
+            "civilite" : null,
+            "periodeDebut" : "2019/12/02",
+            "periodeFin" : null,
+            "qualite" : "A",
+            "regimeOD1" : "01",
+            "caisseOD1" : "931",
+            "centreOD1" : "2021",
+            "regimeOD2" : null,
+            "caisseOD2" : null,
+            "centreOD2" : null,
+            "hasMedecinTraitant" : false,
+            "regimeParticulier" : null,
+            "isBeneficiaireACS" : false,
+            "isTeleTransmission" : false,
+            "typeAssure" : null
+        },
+        "adresses" : [
+
+        ]
+    },
+    "contrat" : {
+        "numero" : "00000239671550010005",
+        "dateSouscription" : "2019/12/02",
+        "dateResiliation" : null,
+        "type" : null,
+        "nomPorteur" : null,
+        "prenomPorteur" : null,
+        "civilitePorteur" : null,
+        "numeroAdherent" : "02396715",
+        "numeroAdherentComplet" : null,
+        "qualification" : "B",
+        "numeroContratCollectif" : null,
+        "rangAdministratif" : null,
+        "isContratResponsable" : false,
+        "isContratCMU" : false,
+        "destinataire" : null,
+        "individuelOuCollectif" : null,
+        "situationDebut" : null,
+        "situationFin" : null,
+        "motifFinSituation" : null,
+        "lienFamilial" : "A",
+        "categorieSociale" : null,
+        "situationParticuliere" : null,
+        "typeConvention" : null,
+        "critereSecondaireDetaille" : null,
+        "critereSecondaire" : null,
+        "numeroExterneContratIndividuel" : null,
+        "numeroExterneContratCollectif" : null,
+        "modePaiementPrestations" : null,
+        "gestionnaire" : null,
+        "groupeAssures" : null,
+        "numeroCarte" : "02396715",
+        "editeurCarte" : null,
+        "fondCarte" : null,
+        "annexe1Carte" : null,
+        "annexe2Carte" : null,
+        "numAMCEchange" : null,
+        "numOperateur" : null
+    },
+    "domaineDroits" : [
+        {
+            "code" : "PHAR",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : null,
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : null,
+            "libelleOptionMutualiste" : null,
+            "codeProduit" : null,
+            "libelleProduit" : null,
+            "codeGarantie" : null,
+            "libelleGarantie" : null,
+            "codeProfil" : null,
+            "libelleCodeRenvoi" : null,
+            "tauxRemboursement" : null,
+            "isEditable" : null,
+            "isSuspension" : null,
+            "dateAdhesionCouverture" : null,
+            "uniteTauxRemboursement" : null,
+            "referenceCouverture" : null,
+            "origineDroits" : null,
+            "noOrdreDroit" : 1,
+            "categorie" : "PHAR",
+            "prioriteDroit" : {
+                "code" : "0",
+                "libelle" : "0",
+                "typeDroit" : null,
+                "prioriteBO" : "0"
+            },
+            "prestations" : [
+                {
+                    "code" : "DEF",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "052",
+                        "libelle" : null,
+                        "parametres" : [
+
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2019/12/02",
+                "periodeFin" : "2020/03/31",
+                "motifEvenement" : "FE",
+                "libelleEvenement" : "Fermeture droits",
+                "modeObtention" : "F"
+            },
+            "conventionnements" : [
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "",
+                        "libelle" : ""
+                    }
+                }
+            ]
+        }
+    ],
+    "idOrigine" : "5de5f4cfcac05462cf79012b"
+}

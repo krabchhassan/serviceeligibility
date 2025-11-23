@@ -1,0 +1,64 @@
+{
+  "services" : [
+    "Service_TP"
+  ],
+  "key" : "P00081",
+  "contrats" : [
+    {
+      "numeroContrat" : "00052492000000144052",
+      "societeEmettrice": "AXA",
+      "numeroAdherent" : "A00082",
+      "codeEtat" : "R",
+      "data" : {
+        "nom" : {
+          "nomFamille" : "LE GRIEL",
+          "nomUsage" : "LE GRIEL",
+          "prenom" : "SOPHIE"
+        },
+        "adresse" : {
+
+        },
+        "contact" : {
+
+        }
+      }
+    }
+  ],
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "A00082",
+  "identite" : {
+    "historiqueDateRangNaissance": [{
+      "dateNaissance" : "19700101",
+      "rangNaissance" : "1"
+    },
+    {
+      "dateNaissance" : "19700201",
+      "rangNaissance" : "1"
+    },
+    {
+      "dateNaissance" : "19700201",
+      "rangNaissance" : "2"
+    }],
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1591275115460",
+          "cle" : "46"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "03",
+          "codeCaisse" : "054",
+          "codeCentre" : "6200"
+        },
+        "periode" : {
+          "debut" : "2019-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19700201",
+    "rangNaissance" : "2",
+    "numeroPersonne" : "P00081"
+  }
+}

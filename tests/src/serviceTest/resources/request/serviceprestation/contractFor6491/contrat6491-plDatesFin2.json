@@ -1,0 +1,283 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "12345679",
+  "numeroExterne": "12345679",
+  "numeroAdherent": "12345679",
+  "numeroAdherentComplet": "12345679",
+  "dateSouscription": "%%CURRENT_YEAR%%-10-01",
+  "dateResiliation": "%%CURRENT_YEAR%%-12-02",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "%%CURRENT_YEAR%%-10-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "gestionnaire": "ER00098",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-10-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCartePapierAEditer": true,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "contratCollectif": {
+    "numero": "777888999",
+    "numeroExterne": "21015884",
+    "identifiantCollectivite": "99999",
+    "raisonSociale": "TEST",
+    "siret": "12345",
+    "groupePopulation": "00"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [
+    {
+      "periode": {
+        "debut": "%%CURRENT_YEAR%%-01-23"
+      },
+      "typeSuspension": "Provisoire",
+      "motifSuspension": "NON_PAIEMENT_COTISATIONS"
+    }
+  ],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19880508",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2810631555490",
+          "cle": "69"
+        },
+        "numeroPersonne": 1345,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "191",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-17"
+            },
+            "nir": {
+              "code": "2810631555490",
+              "cle": "69"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "191",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-01",
+              "fin": "%%CURRENT_YEAR%%-10-16"
+            },
+            "nir": {
+              "code": "2810631555490",
+              "cle": "69"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "NOMTEST",
+          "nomUsage": "NOMTEST",
+          "prenom": "MARIE",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame NOMTEST MARIE",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "12, RUE PETUNIA",
+          "ligne5": "",
+          "ligne6": "31000 TEST",
+          "ligne7": "",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "0100000000",
+          "email": "test@test.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "1345",
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "MARIE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST MARIE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "12, RUE PETUNIA",
+              "ligne5": "",
+              "ligne6": "31000 TEST",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "BCHAFR21"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-17"
+            }
+          },
+          {
+            "idDestinatairePaiements": "1345",
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "MARIE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST MARIE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "12, RUE PETUNIA",
+              "ligne5": "",
+              "ligne6": "31000 TEST",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "BCHAFR21"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-01",
+              "fin": "%%CURRENT_YEAR%%-10-16"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "1345",
+            "dematerialisation": {
+              "mobile": "0100000000",
+              "email": "test@test.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "MARIE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST MARIE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "12, RUE PETUNIA",
+              "ligne5": "",
+              "ligne6": "31000 TEST",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-17"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "1345",
+            "dematerialisation": {
+              "mobile": "0100000000",
+              "email": "test@test.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "MARIE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST MARIE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "12, RUE PETUNIA",
+              "ligne5": "",
+              "ligne6": "31000 TEST",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-01",
+              "fin": "%%CURRENT_YEAR%%-10-16"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "%%CURRENT_YEAR%%-10-01",
+      "dateDebutAdhesionIndividuelle": "%%CURRENT_YEAR%%-10-01",
+      "dateRadiation": "%%CURRENT_YEAR%%-11-08",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-10-01"
+            },
+            "isTeletransmission": true
+          }
+        ],
+        "dematerialisation": {
+          "mobile": "0100000000",
+          "email": "test@test.com",
+          "isDematerialise": true
+        }
+      },
+      "periodes": [
+        {
+          "debut": "%%CURRENT_YEAR%%-10-01",
+          "fin": "%%CURRENT_YEAR%%-10-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "GT_BASE",
+          "libelle": "Garantie frais de santé",
+          "codeAssureur": "BALOO",
+          "periode": {
+            "debut": "%%CURRENT_YEAR%%-10-01"
+          },
+          "ordrePriorisation": 2,
+          "type": "B",
+          "dateAncienneteGarantie": "%%CURRENT_YEAR%%-10-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": false
+}

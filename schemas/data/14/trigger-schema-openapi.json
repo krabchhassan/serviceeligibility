@@ -1,0 +1,85 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "trigger",
+      "description": "Collection contenant les déclencheurs de génération des droits TP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Trigger": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "origine": {
+            "type": "string"
+          },
+          "dateEffet": {
+            "type": "string"
+          },
+          "dateFinStandBy": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateDebutTraitement": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateFinTraitement": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "nomFichierOrigine": {
+            "type": "string"
+          },
+          "nbBenef": {
+            "type": "integer"
+          },
+          "nbBenefKO": {
+            "type": "integer"
+          },
+          "nbBenefWarning": {
+            "type": "integer"
+          },
+          "nbBenefToProcess": {
+            "type": "integer"
+          },
+          "amc": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "dateRestitution": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Trigger"
+      }
+    }
+  }
+}

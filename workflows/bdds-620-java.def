@@ -1,0 +1,47 @@
+workflowDefinition:
+  - code: is-bdds-620-java
+    name: 620 - Consolidation et génération cartes dematerialisées et papier
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Consolidation et génération des cartes dematerialisées et papier
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: couloirClient
+        description: Couloir client défini dans les pilotages des amcs
+        optional: true
+
+    steps:
+      - name: step-620-java
+        job: serviceeligibility-batch620-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: COULOIR_CLIENT
+              ref: parameters/couloirClient
+
+    crex:
+      - name: nombreConsolidationEnSucces
+        description: Nombre de consolidations en succès
+        ref: steps/step-620-java/parameters/outputs/nombreConsolidationEnSucces
+      - name: nombreConsolidationEnEchec
+        description: Nombre de consolidations en échec
+        ref: steps/step-620-java/parameters/outputs/nombreConsolidationEnEchec
+      - name: nombreCartesDematCrees
+        description: Nombre de cartes TP créées
+        ref: steps/step-620-java/parameters/outputs/nombreCartesDematCrees
+      - name: nombreCartesDematInvalidees
+        description: Nombre de cartes dematerialisées invalidées
+        ref: steps/step-620-java/parameters/outputs/nombreCartesDematInvalidees
+      - name: nombreCartesDematRejetees
+        description: Nombre de cartes TP rejetées
+        ref: steps/step-620-java/parameters/outputs/nombreCartesDematRejetees
+      - name: nombreCartesPapierAEditer
+        description: Nombre de cartes papiers à éditer
+        ref: steps/step-620-java/parameters/outputs/nombreCartesPapierAEditer
+      - name: nombreCartesPapierRejetees
+        description: Nombre de cartes papiers en échec
+        ref: steps/step-620-java/parameters/outputs/nombreCartesPapierRejetees
+      - name: identifiant
+        description: Identifiant du batch 620
+        ref: steps/step-620-java/parameters/outputs/identifiant

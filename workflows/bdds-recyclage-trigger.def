@@ -1,0 +1,26 @@
+workflowDefinition:
+  - name: Recyclage des déclencheurs en anomalie
+    code: is-bdds-recycletrig
+    description: l'OMU permet de recycler les déclencheurs en anomalie contenus dans le fichier déposé sur l'espace personnel.
+    documentation-path: docs/workflows/0.0.1
+    nature: ["dev", "qa", "preprod", "prod"]
+    authorization: SCH_P_LANCER_SAAO
+    parameters:
+      - name: file_path
+        description: Fichier d'entrée à lire
+        optional: false
+        selection-display: file
+    steps:
+      - name: recyclage-trigger-job
+        job: recyclage-trigger-job
+        type: python
+        usePersonalWorkdir: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: file_path
+              ref: parameters/file_path
+    crex:
+      - name: number_triggers
+        description : Le nombre de triggers recyclés
+        ref: steps/recycletrigger/parameters/outputs/number_triggers

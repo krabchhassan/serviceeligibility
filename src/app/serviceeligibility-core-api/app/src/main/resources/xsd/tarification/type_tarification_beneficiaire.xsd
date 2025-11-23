@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tarification="http://norme.cegedimassurances.com/tarification"
+	targetNamespace="http://norme.cegedimassurances.com/tarification" elementFormDefault="qualified">
+	<xs:complexType name="type_tarification_beneficiaire">
+		<xs:sequence>
+			<xs:element name="id_beneficiaire" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="age" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:int"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="sexe" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+
+	</xs:complexType>
+
+</xs:schema>

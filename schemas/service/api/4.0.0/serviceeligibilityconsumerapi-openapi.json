@@ -1,0 +1,474 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Payment API",
+    "version": "0.0.1"
+  },
+  "servers": [
+    {
+      "url": "https://htp-es16.dev.beyond.cegedim.cloud/serviceeligibility/consumer/api",
+      "description": "Generated server url"
+    }
+  ],
+  "security": [
+    {
+      "bearer": [
+        "read",
+        "write"
+      ]
+    }
+  ],
+  "paths": {
+    "/v4/declarants/{idDeclarant}/contracts/{numeroContrat}/insureds/{dateRangNaissance}/data": {
+      "put": {
+        "tags": [
+          "insured-controller"
+        ],
+        "operationId": "updateDataInsuredV4",
+        "parameters": [
+          {
+            "name": "idDeclarant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "numeroContrat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dateRangNaissance",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataAssureV4"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreationResponseV2"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v4/declarants/{idDeclarant}/contracts/{numeroContrat}/subscriberId/{subscriberId}": {
+      "delete": {
+        "tags": [
+          "contract-controller"
+        ],
+        "operationId": "deleteContractV4",
+        "parameters": [
+          {
+            "name": "idDeclarant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "numeroContrat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subscriberId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreationResponseV2"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Adresse": {
+        "type": "object",
+        "properties": {
+          "ligne1": {
+            "type": "string"
+          },
+          "ligne2": {
+            "type": "string"
+          },
+          "ligne3": {
+            "type": "string"
+          },
+          "ligne4": {
+            "type": "string"
+          },
+          "ligne5": {
+            "type": "string"
+          },
+          "ligne6": {
+            "type": "string"
+          },
+          "ligne7": {
+            "type": "string"
+          },
+          "codePostal": {
+            "type": "string"
+          },
+          "pays": {
+            "type": "string"
+          },
+          "telephone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "typeAdresse": {
+            "$ref": "#/components/schemas/TypeAdresse"
+          }
+        }
+      },
+      "AdresseAssure": {
+        "type": "object",
+        "properties": {
+          "ligne1": {
+            "type": "string"
+          },
+          "ligne2": {
+            "type": "string"
+          },
+          "ligne3": {
+            "type": "string"
+          },
+          "ligne4": {
+            "type": "string"
+          },
+          "ligne5": {
+            "type": "string"
+          },
+          "ligne6": {
+            "type": "string"
+          },
+          "ligne7": {
+            "type": "string"
+          },
+          "codePostal": {
+            "type": "string"
+          }
+        }
+      },
+      "Contact": {
+        "type": "object",
+        "properties": {
+          "fixe": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "Dematerialisation": {
+        "type": "object",
+        "properties": {
+          "isDematerialise": {
+            "type": "boolean"
+          },
+          "email": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          }
+        }
+      },
+      "DestinatairePrestationsV4": {
+        "type": "object",
+        "properties": {
+          "idDestinatairePaiements": {
+            "type": "string"
+          },
+          "idBeyondDestinatairePaiements": {
+            "type": "string"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataireV3"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/Adresse"
+          },
+          "rib": {
+            "$ref": "#/components/schemas/RibAssure"
+          },
+          "modePaiementPrestations": {
+            "$ref": "#/components/schemas/ModePaiement"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      },
+      "ModePaiement": {
+        "required": [
+          "code",
+          "codeMonnaie",
+          "libelle"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "codeMonnaie": {
+            "type": "string"
+          }
+        }
+      },
+      "Nir": {
+        "required": [
+          "cle",
+          "code"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "cle": {
+            "type": "string"
+          }
+        }
+      },
+      "NirRattachementRO": {
+        "required": [
+          "nir",
+          "periode"
+        ],
+        "type": "object",
+        "properties": {
+          "nir": {
+            "$ref": "#/components/schemas/Nir"
+          },
+          "rattachementRO": {
+            "$ref": "#/components/schemas/RattachementRO"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      },
+      "NomAssure": {
+        "required": [
+          "civilite",
+          "nomFamille",
+          "prenom"
+        ],
+        "type": "object",
+        "properties": {
+          "nomFamille": {
+            "type": "string"
+          },
+          "nomUsage": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          }
+        }
+      },
+      "NomDestinataireV3": {
+        "type": "object",
+        "properties": {
+          "nomFamille": {
+            "type": "string"
+          },
+          "nomUsage": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          },
+          "raisonSociale": {
+            "type": "string"
+          }
+        }
+      },
+      "Periode": {
+        "required": [
+          "debut"
+        ],
+        "type": "object",
+        "properties": {
+          "debut": {
+            "type": "string"
+          },
+          "fin": {
+            "type": "string"
+          }
+        }
+      },
+      "RattachementRO": {
+        "type": "object",
+        "properties": {
+          "codeRegime": {
+            "type": "string"
+          },
+          "codeCaisse": {
+            "type": "string"
+          },
+          "codeCentre": {
+            "type": "string"
+          }
+        }
+      },
+      "RibAssure": {
+        "required": [
+          "bic",
+          "iban"
+        ],
+        "type": "object",
+        "properties": {
+          "bic": {
+            "type": "string"
+          },
+          "iban": {
+            "type": "string"
+          }
+        }
+      },
+      "TypeAdresse": {
+        "type": "object",
+        "properties": {
+          "libelle": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        }
+      },
+      "CreationResponseV2": {
+        "type": "object",
+        "properties": {
+          "traceid": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "errorMessages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provider": {
+            "type": "string"
+          }
+        }
+      },
+      "DataAssureV4": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "$ref": "#/components/schemas/NomAssure"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/AdresseAssure"
+          },
+          "contact": {
+            "$ref": "#/components/schemas/Contact"
+          },
+          "destinatairesPaiements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DestinatairePrestationsV4"
+            }
+          },
+          "destinatairesRelevePrestations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DestinataireRelevePrestationsV4"
+            }
+          }
+        }
+      },
+      "DestinataireRelevePrestationsV4": {
+        "type": "object",
+        "properties": {
+          "idDestinataireRelevePrestations": {
+            "type": "string"
+          },
+          "idBeyondDestinataireRelevePrestations": {
+            "type": "string"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataireV3"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/AdresseAssure"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

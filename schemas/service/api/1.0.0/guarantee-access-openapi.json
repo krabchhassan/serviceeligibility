@@ -1,0 +1,413 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "Guarantee Access API",
+    "description": "API d’accès aux écrans des garanties techniques.\nCette API permet de générer des URL d’accès pour la visualisation et la création d’une garantie technique.\nLorsqu’une demande de visualisation est effectuée, l’API vérifie si la garantie existe dans notre système. \nSi la garantie est disponible, l’utilisateur est automatiquement redirigé vers notre interface de gestion afin de consulter le détail et, si besoin, effectuer des actions associées.\nSi la garantie n’existe pas, l’utilisateur est automatiquement redirigé vers notre interface de création d’une garantie technique.\nLorsqu’une demande de création est effectuée, l’API vérifie si la garantie existe. \nSi la garantie est disponible un message d'erreur est envoyé indiquant que la garantie technique existe déjà, sinon l’utilisateur est automatiquement redirigé vers notre interface de création d’une garantie technique.",
+
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/v1/guarantee/access-url": {
+      "post": {
+        "summary": "Créer une URL d'accès pour une garantie",
+        "operationId": "createCorrespondenceAccess",
+        "tags": ["Guarantee"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GuaranteeAccessRequest"
+              },
+              "examples": {
+                "validRequest": {
+                  "summary": "Exemple de requête valide",
+                  "value": {
+                    "guaranteeId": "GAR-12345",
+                    "codeInsurer": "INS-999",
+                    "validityDate": "2025-12-31",
+                    "preferredUsername": "user@example.com"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "URL d'accès créé avec succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GuaranteeAccessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide – Identifiant de la garantie, code de l’assureur, la date de validité ou l'dentifiant de l’utilisateur est null ou vide",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Errors"
+                },
+                "examples": {
+                  "Missing parameter": {
+                    "value": {
+                      "errors": [{
+                        "errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00054",
+                        "message": ["L'information codeInsurer est obligatoire"],
+                        "level": "ERROR"
+                      }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "L’utilisateur n'a pas les habilitations nécessaires pour consulter les GT",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Errors"
+                },
+                "examples": {
+                  "Unauthorized Access": {
+                    "value": {
+                      "errors": [{
+                        "errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00090",
+                        "message": ["L’utilisateur n'a pas les habilitations nécessaires pour consulter les GT"],
+                        "level": "ERROR"
+                      }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur interne du serveur",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Errors"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/guarantee/creation-access-url": {
+      "post": {
+        "summary": "Créer une URL d'accès pour l’écran de création d’une garantie",
+        "operationId": "createCreationCorrespondenceAccess",
+        "tags": ["Guarantee"],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GuaranteeAccessRequest"
+              },
+              "examples": {
+                "validRequest": {
+                  "summary": "Exemple de requête valide pour la création",
+                  "value": {
+                    "guaranteeId": "GAR-67890",
+                    "codeInsurer": "INS-999",
+                    "validityDate": "2025-12-31",
+                    "preferredUsername": "user@example.com"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "URL d'accès pour création généré avec succès",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GuaranteeCreationAccessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide – Identifiant de la garantie, code de l’assureur, la date de validité ou l'dentifiant de l’utilisateur est null ou vide",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Errors"
+                },
+                "examples": {
+                  "Missing parameter": {
+                    "value": {
+                      "errors": [{
+                        "errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00054",
+                        "message": ["L'information validityDate est obligatoire"],
+                        "level": "ERROR"
+                      }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "L’utilisateur n'a pas les habilitations nécessaires pour consulter les GT",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Errors"
+                },
+                "examples": {
+                  "Unauthorized Access": {
+                    "value": {
+                      "errors": [{
+                        "errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00090",
+                        "message": ["L’utilisateur n'a pas les habilitations nécessaires pour consulter les GT"],
+                        "level": "ERROR"
+                      }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Erreur interne du serveur",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Errors"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/guarantee/visualisation": {
+      "get": {
+        "summary": "Récupérer l'identifiant GT associé à un contextKey",
+        "operationId": "getGtIdByContextKey",
+        "tags": ["Guarantee"],
+        "parameters": [
+          {
+            "name": "contextKey",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Clé unique",
+            "example": "nFh8IjoQHrghLTuVlpFJ_6c-J3jqSoJpi0-Gj0rM8d4"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Identifiant GT trouvé",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/GuaranteeVisualisationResponse" }
+              }
+            }
+          },
+          "400": {
+            "description": "ContextKey invalide ou expiré",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Errors" },
+                "example": {
+                  "value": {
+                    "errors": [{
+                      "errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00089",
+                      "message": ["Invalid or expired contextKey: kVo60Jsm1O_YT9QCRNyINnU4LFo-kEk_N52KowKkXw"],
+                      "level": "ERROR"
+                    }]
+                  }
+                }
+              }
+            }
+          },
+          "500": { "description": "Erreur interne du serveur" }
+        }
+      }
+    },
+    "/v1/guarantee/creation": {
+      "get": {
+        "summary": "Récupérer les informations de garantie (code assureur, code garantie, date de validité)",
+        "operationId": "getGuaranteeInfoByContextKey",
+        "tags": ["Guarantee"],
+        "parameters": [
+          {
+            "name": "contextKey",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Clé de contexte unique",
+            "example": "nFh8IjoQHrghLTuVlpFJ_6c-J3jqSoJpi0-Gj0rM8d4"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Informations de la garantie trouvées",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/GuaranteeCreationResponse" }
+              }
+            }
+          },
+          "400": {
+            "description": "ContextKey invalide ou expiré",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Errors" },
+                "example": {
+                  "value": {
+                    "errors": [{
+                      "errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00089",
+                      "message": ["Invalid or expired contextKey: kVo60Jsm1O_YT9QCRNyINnU4LFo-kEk_N52KowKkXw"],
+                      "level": "ERROR"
+                    }]
+                  }
+                }
+              }
+            }
+          },
+          "500": { "description": "Erreur interne du serveur" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "errorCode": {
+            "type": "string",
+            "description": "Code spécifique de l'erreur"
+          },
+          "message": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Liste des messages détaillés de l'erreur"
+          },
+          "level": {
+            "type": "string",
+            "description": "Niveau de l'erreur"
+          }
+        }
+      },
+      "Errors": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        }
+      },
+      "GuaranteeAccessRequest": {
+        "type": "object",
+        "properties": {
+          "guaranteeId": {
+            "type": "string",
+            "description": "Identifiant unique de la garantie"
+          },
+          "codeInsurer": {
+            "type": "string",
+            "description": "Code de l’assureur"
+          },
+          "validityDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Date de validité format(yyyy-MM-dd)"
+          },
+          "preferredUsername": {
+            "type": "string",
+            "description": "Identifiant de l’utilisateur effectuant la demande.\nPeut être soit un nom d’utilisateur interne, soit une adresse e-mail selon le mode d’authentification"
+          }
+        },
+        "required": ["guaranteeId", "codeInsurer", "validityDate", "preferredUsername"]
+      },
+      "GuaranteeCreationAccessResponse": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL d’accès généré"
+          },
+          "expiresAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date et heure d’expiration du jeton"
+          }
+        },
+        "required": ["url", "expiresAt"]
+      },
+      "GuaranteeAccessResponse": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "URL d’accès généré"
+          },
+          "expiresAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date et heure d’expiration du jeton"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type d’URL d’accès",
+            "enum": ["visualization", "creation"]
+          }
+        },
+        "required": ["url", "expiresAt", "type"]
+      },
+      "GuaranteeVisualisationResponse": {
+        "type": "object",
+        "properties": {
+          "gtId": {
+            "type": "string",
+            "description": "Identifiant de la GT associé à ce contexte",
+            "example": "GT12345"
+          }
+        }
+      },
+      "GuaranteeCreationResponse": {
+        "type": "object",
+        "properties": {
+          "insurerCode": {
+            "type": "string",
+            "description": "Code de l’assureur",
+            "example": "INS001"
+          },
+          "guaranteeId": {
+            "type": "string",
+            "description": "Code de la garantie associée",
+            "example": "GAR-123"
+          },
+          "validityDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Date de validité format(yyyy-MM-dd)",
+            "example": "2025-12-31"
+          }
+        }
+      }
+    }
+  }
+}

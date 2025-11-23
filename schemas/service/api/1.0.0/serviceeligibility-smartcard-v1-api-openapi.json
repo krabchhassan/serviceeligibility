@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "smartcard-v1-bdds-api",
+    "description": "Expose le endpoint SmartCard (carteDematerialisee) pour FSIQ",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "/beyond/api/sel/v1/carteDematerialisee"
+    }
+  ],
+  "paths": {
+    "/carteDematerialisee": {
+      "post": {
+        "operationId": "calculSOAP11Binding_CallStub",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error throws by the Backend Service",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "x-graviteeio-soap-action": "http://calcul.commun.serviWeb.soltim.com/CallStub",
+        "x-graviteeio-soap-envelope": "<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\">\n    <SOAP-ENV:Header/>\n    <SOAP-ENV:Body>\n        <ns5:getInfoBddResponse xmlns:ns2=\"http://norme.cegedimassurances.com/commun\" xmlns:ns3=\"http://norme.cegedimassurances.com/base_de_droit\" xmlns:ns5=\"http://ws.cegedimassurance.com/basededroit/wsdl\">\n            <ns3:header_out>\n                <ns2:headerTech>\n                    <ns2:id_serveur>ALLIANCE PREMIUM</ns2:id_serveur>\n                    <ns2:date>2023-07-20T14:51:16.431Z</ns2:date>\n                    <ns2:id_session_serveur>107f4d8a-04ee-4909-8b7b-390700ba61cd</ns2:id_session_serveur>\n                    <ns2:version_serveur>V201_15_07</ns2:version_serveur>\n                </ns2:headerTech>\n                <ns2:headerFonc>\n                    <ns2:code_contexte>CD-01</ns2:code_contexte>\n                </ns2:headerFonc>\n            </ns3:header_out>\n            <ns3:code_reponse>\n                <ns2:code>6001</ns2:code>\n                <ns2:libelle>Bénéficiaire inconnu</ns2:libelle>\n            </ns3:code_reponse>\n        </ns5:getInfoBddResponse>\n    </SOAP-ENV:Body>\n</SOAP-ENV:Envelope>"
+      }
+    }
+  }
+}

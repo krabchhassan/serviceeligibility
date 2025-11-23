@@ -1,0 +1,15 @@
+JOB_SPAN_NAME: serviceeligibility-almerysacl-job
+beyond:
+  observability:
+    log:
+      enabled: true
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          convert:
+            CustomConversions: ERROR
+spring:
+  application:
+    name: serviceeligibility-almerysacl-job

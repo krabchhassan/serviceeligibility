@@ -1,0 +1,163 @@
+{
+  "data": {
+    "parametres": [
+      {
+        "code": "conventionnement",
+        "listeValeurs": [
+          {
+            "code": "AC",
+            "libelle": "ACTIL"
+          },
+          {
+            "code": "AL",
+            "libelle": "Almerys"
+          },
+          {
+            "code": "CB",
+            "libelle": "Carte Blanche Partenaires"
+          },
+          {
+            "code": "HD",
+            "libelle": "Gestion séparée sans DRE / MF"
+          },
+          {
+            "code": "IS",
+            "libelle": "iSante"
+          },
+          {
+            "code": "IT",
+            "libelle": "Itelis"
+          },
+          {
+            "code": "KL",
+            "libelle": "Korelio"
+          },
+          {
+            "code": "MA",
+            "libelle": "Mutualité Sociale Agricole"
+          },
+          {
+            "code": "MU",
+            "libelle": "Gestion séparée avec DRE / MF"
+          },
+          {
+            "code": "OC",
+            "libelle": "Organisme d’assurance maladie Complémentaire"
+          },
+          {
+            "code": "RO",
+            "libelle": "Organisme complémentaire en gestion unique"
+          },
+          {
+            "code": "SC",
+            "libelle": "Santéclair"
+          },
+          {
+            "code": "SE",
+            "libelle": "Sévéane"
+          },
+          {
+            "code": "SP",
+            "libelle": "Santé-Pharma / SP santé"
+          },
+          {
+            "code": "TB",
+            "libelle": "CBTP"
+          },
+          {
+            "code": "TR",
+            "libelle": "Terciane"
+          },
+          {
+            "code": "TS",
+            "libelle": "TP+"
+          },
+          {
+            "code": "VM",
+            "libelle": "Viamedis"
+          },
+          {
+            "code": "CB/SP",
+            "libelle": "CB/SP"
+          },
+          {
+            "code": "IT/SP",
+            "libelle": "IT/SP"
+          },
+          {
+            "code": "SC/SP",
+            "libelle": "SC/SP"
+          },
+          {
+            "code": "IT/IS",
+            "libelle": "IT/IS"
+          },
+          {
+            "code": "SP/OC",
+            "libelle": "SP/OC"
+          },
+          {
+            "code": "SC/TS",
+            "libelle": "SC/TS"
+          },
+          {
+            "code": "SC/IS",
+            "libelle": "SC/IS"
+          },
+          {
+            "code": "SE/IS",
+            "libelle": "SE/IS"
+          },
+          {
+            "code": "OC/IS",
+            "libelle": "OC/IS"
+          },
+          {
+            "code": "SE/SP",
+            "libelle": "SE/SP"
+          },
+          {
+            "code": "OC/SP",
+            "libelle": "OC/SP"
+          },
+          {
+            "code": "KA",
+            "libelle": "KALIVIA"
+          },
+          {
+            "code": "IT/OC",
+            "libelle": "IT/OC"
+          },
+          {
+            "code": "OC/IT",
+            "libelle": "OC/IT"
+          },
+          {
+            "code": "SC/OC",
+            "libelle": "SC/OC"
+          },
+          {
+            "code": "OC/CB",
+            "libelle": "OC/CB"
+          },
+          {
+            "code": "CB/OC",
+            "libelle": "CB/OC"
+          },
+          {
+            "code": "SE/OC",
+            "libelle": "SE/OC"
+          },
+          {
+            "code": "aa",
+            "libelle": "aa"
+          },
+          {
+            "code": "KA/IS",
+            "libelle": "KA/IS"
+          }
+        ]
+      }
+    ]
+  }
+}

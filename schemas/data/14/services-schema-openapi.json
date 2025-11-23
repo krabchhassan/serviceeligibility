@@ -1,0 +1,85 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "services",
+      "description": "Liste des services gérés au sein du service TP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Services": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+		  "code": {
+			"description": "Code du service",
+			"type": "string"
+          },
+		  "triRestitution": {
+			"description": "Tri pour la restitution",
+			"type": "integer"
+          },
+		  "transco": {
+			"description": "Liste des fonctions de transcodage associées au service",
+			"type": "array",
+            "items": {
+			  "type": "string"
+			}
+          },
+		  "serviceFictif": {
+			"description": "Indique si le service est fictif",
+			"type": "boolean"
+          },
+		  "typeService": {
+			"description": "Type du service",
+			"type": "string"
+          },
+		  "controleContextuel": {
+			"$ref": "#/components/schemas/ControleContextuel"
+          }
+        },
+        "required": [],
+        "title": "Services"
+      },
+	  "ControleContextuel": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "beneficiaire": {
+            "description": "Contrôles pour le bénéficiaire",
+			"type": "array",
+            "items": {
+			  "$ref": "#/components/schemas/MapInt"
+			}
+          },
+          "contrat": {
+            "description": "Contrôles pour le contrat",
+			"type": "array",
+            "items": {
+			  "$ref": "#/components/schemas/MapInt"
+			}
+          },
+          "domaineDroits": {
+            "description": "Contrôles pour le domaine des droits",
+			"type": "array",
+            "items": {
+			  "$ref": "#/components/schemas/MapInt"
+			}
+          }
+        },
+        "required": [],
+        "title": "ControleContextuel"
+      },
+	  "MapInt": {
+	    "type": "object",
+	    "additionalProperties": { "type": "integer" }
+	  }
+    }
+  }
+}

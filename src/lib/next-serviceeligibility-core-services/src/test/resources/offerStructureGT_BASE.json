@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "validityDate": "2024-01-01",
+      "endValidityDate": "2024-06-30",
+      "offerCode": "offer1",
+      "code": 1,
+      "natures": [
+        "OPTIQUE",
+        "AUDIOLOGIE",
+        "MEDECINE",
+        "PHARMACIE",
+        "DENTAIRE",
+        "RADIOLOGIE"
+      ],
+      "products": [
+        "GT_BASE",
+        "GT_BASE2"
+      ]
+    }
+  ]
+}
+

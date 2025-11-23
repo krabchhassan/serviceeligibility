@@ -1,0 +1,11 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
+            https://idp.dev.beyond.cegedim.cloud/auth/realms/dev
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur
+keycloak:
+  enabled: false

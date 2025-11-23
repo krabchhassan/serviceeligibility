@@ -1,0 +1,33 @@
+{
+  "amc": "0008400004",
+  "amcNom": "TEST BLUE",
+  "oc": "TEST BLUE",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2020-01-01",
+  "userCreation": "beyond-tester@outlook.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "debutEcheance": "01/01",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "Isanté",
+    "isCarteEditablePapier": false,
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "AMY",
+        "libelleDomaineTP": "Orthoptie",
+        "isDomaineEditable": true,
+        "convention": "AL"
+      }
+    ]
+  }
+}

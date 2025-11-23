@@ -1,0 +1,21 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "ASSU00187",
+  "codeContractElement" : "FSOC49568A",
+  "label" : "FSOC49568A",
+  "productElements" : [
+    {
+      "codeOffer" : "FSC49567",
+      "codeProduct" : "FSOC49568A",
+      "codeBenefitNature" : "",
+      "codeAmc" : "ASSU00187",
+      "from" : "2021-01-01T00:00:00.000Z",
+      "effectiveDate" : "2021-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored" : false,
+  "status": "ACTIVE",
+  "origine" : "IMPORT",
+  "user" : "paul.thiaudiere@cegedim-activ.com",
+  "_class" : "com.cegedim.next.serviceeligibility.core.bobb.ContractElement"
+}

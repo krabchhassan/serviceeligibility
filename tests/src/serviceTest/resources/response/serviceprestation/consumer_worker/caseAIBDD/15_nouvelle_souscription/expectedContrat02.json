@@ -1,0 +1,195 @@
+{
+	"id": null,
+	"traceId": null,
+	"idDeclarant": "0032165199",
+	"societeEmettrice": "CODMUT",
+	"numero": "AI-BYD-00000004",
+	"numeroExterne": "AI-BYD-00000004",
+	"numeroAdherent": "I-BYD-00",
+	"numeroAdherentComplet": "AI-BYD-00000004",
+	"dateSouscription": "2020-01-01",
+	"periodesContratResponsableOuvert": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"periodesContratCMUOuvert": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"critereSecondaireDetaille": " ",
+	"critereSecondaire": " ",
+	"isContratIndividuel": true,
+	"gestionnaire": "CEGEDIM",
+	"qualification": "B",
+	"ordrePriorisation": "1",
+	"periodesDroitsComptablesOuverts": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"assures": [
+		{
+			"isSouscripteur": false,
+			"rangAdministratif": "61",
+			"identite": {
+				"nir": {
+					"code": "1700631666928",
+					"cle": "91"
+				},
+				"affiliationsRO": [
+					{
+						"nir": {
+							"code": "1700631666928",
+							"cle": "91"
+						},
+						"rattachementRO": {
+							"codeRegime": "01",
+							"codeCaisse": "111",
+							"codeCentre": "1111"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"dateNaissance": "19700101",
+				"rangNaissance": "1",
+				"numeroPersonne": "20288136"
+			},
+			"dateAdhesionMutuelle": "2020-01-01",
+			"dateDebutAdhesionIndividuelle": "2020-01-01",
+			"numeroAdhesionIndividuelle": "AI-BYD-00000004",
+			"periodes": [
+				{
+					"debut": "2020-01-01"
+				}
+			],
+			"periodesMedecinTraitantOuvert": [],
+			"regimesParticuliers": [],
+			"situationsParticulieres": [],
+			"qualite": {
+				"code": "ASSPRI",
+				"libelle": "Assure principal"
+			},
+			"data": {
+				"nom": {
+					"nomFamille": "LECLOITRE",
+					"nomUsage": "LECLOITRE",
+					"prenom": "paul",
+					"civilite": "M."
+				},
+				"adresse": {
+					"ligne1": "M. LECLOITRE paul",
+					"ligne4": "ALLEES DU PDT FRANKLIN ROOSEVELT",
+					"ligne6": "31000 TOULOUSE",
+					"codePostal": "31000"
+				},
+				"destinatairesPaiements": [
+					{
+            "idDestinatairePaiements":"83747438-288939000-DestPaiement-1",
+            "idBeyondDestinatairePaiements":"83747438-288939000-DestPaiement-1-0032165199",
+            "nom": {
+							"nomFamille": "LECLOITRE",
+							"nomUsage": "LECLOITRE",
+							"prenom": "jeanne",
+							"civilite": "MME"
+						},
+						"rib": {
+							"bic": "AGRIFRPP822",
+							"iban": "FR7612206008005600551640075"
+						},
+						"modePaiementPrestations": {
+							"code": "V ",
+							"libelle": "Virement",
+							"codeMonnaie": "EUR  "
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"destinatairesRelevePrestations": [
+					{
+            "idDestinataireRelevePrestations":"83747438-288939000-DestRelevePrest-1",
+            "idBeyondDestinataireRelevePrestations":"83747438-288939000-DestRelevePrest-1-0032165199",
+            "nom": {
+							"nomFamille": "LECLOITRE",
+							"nomUsage": "LECLOITRE",
+							"prenom": "jeanne",
+							"civilite": "MME"
+						},
+						"adresse": {
+							"ligne1": "Mme LECLOITRE jeanne",
+							"ligne4": "ALLEES DU PDT FRANKLIN ROOSEVELT",
+							"ligne6": "31000 TOULOUSE",
+							"codePostal": "31000"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				]
+			},
+			"digitRelation": {
+				"teletransmissions": [
+					{
+						"periode": {
+							"debut": "2020-01-01"
+						},
+						"isTeletransmission": true
+					}
+				]
+			},
+			"droits": [
+				{
+					"code": "OR",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie OR",
+					"ordrePriorisation": "1",
+					"type": "B",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01",
+					"carences": [
+						{
+							"code": "1TRIM",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-03-30"
+							}
+						},
+						{
+							"code": "1SEME",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-06-29"
+							}
+						},
+						{
+							"code": "1MOIS",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-01-30"
+							}
+						}
+					]
+				},
+				{
+					"code": "PLOMB",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie PLOMB",
+					"ordrePriorisation": "10",
+					"type": "O",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01"
+				}
+			]
+		}
+	],
+	"version": "5"
+}

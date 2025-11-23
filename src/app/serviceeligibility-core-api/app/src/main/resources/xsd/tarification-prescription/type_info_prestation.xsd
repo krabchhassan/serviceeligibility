@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_in_prestation_lpp.xsd"/>
+	<xs:include schemaLocation="type_in_prestation_cip.xsd"/>
+	<xs:include schemaLocation="type_in_prestation_acte.xsd"/>
+	<xs:complexType name="type_info_prestation">
+		<xs:sequence>
+			<xs:element name="id_prestation">
+				<xs:annotation>
+					<xs:documentation>Numéro d'ordre de la prestation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="date_execution" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date d'execution de la prestatiton</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lieu_execution" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>0 pour lieu exercice du PS 1 pour domicile du patient</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_prestation" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code regroupement NGAP (PH7,PH2,PAN,AAD,HN,...)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_justification" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code justification exoneration TM :
+3 - Soins particuliers exonérés
+(traitement de la stérilité, soins aux prématurés,
+actes exonrants, soins en établissement des nourrissons dans
+les 30 premiers jours de vie,
+test de dépistage du virus HIV)
+4 - Soins conformes au protocole ALD
+6 - Exonération régimes spéciaux (Service
+médical SNCF, Régime des Mines)
+7 - Soins dispensés en risque maladie et exonérés
+dans le cadre d'un dispositif de prévention5(*)
+0 - pas d'exonération
+5 - Assuré ou bénéficiaire exonéré
+9 - FSV</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="4"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="7"/>
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_honoraires">
+				<xs:annotation>
+					<xs:documentation> = Somme des montants facturés détail prestations CIP ou LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="qualificatif_depense">
+				<xs:annotation>
+					<xs:documentation>Qualificatif de la dépense :
+
+D - entente directe
+E - exigence particulire
+F - déplacement non prescrit
+G - acte gratuit
+N - acte non remboursable 
+A - dépassement autoris 
+M - dépassement matris 
+B - dépassement autoris et entente directe
+C - dépassement matris et exigence particulire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="D"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="F"/>
+						<xs:enumeration value="G"/>
+						<xs:enumeration value="N"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="M"/>
+						<xs:enumeration value="B"/>
+						<xs:enumeration value="C"/>
+						<xs:enumeration value=" "/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="coefficient" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Coefficient</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="5"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="quantite">
+				<xs:annotation>
+					<xs:documentation>Quantité</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="denombrement" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Dénombrement</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prix_unitaire">
+				<xs:annotation>
+					<xs:documentation>Prix unitaire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="base_remboursement">
+				<xs:annotation>
+					<xs:documentation>Base de remboursement</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="taux_ro">
+				<xs:annotation>
+					<xs:documentation>Taux RO applicable à la prestation 
+100%, 60%, 30%, 15%, 0%</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_ro">
+				<xs:annotation>
+					<xs:documentation>Montant RO groupe prestation
+Calculé sur poste PS</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_rc">
+				<xs:annotation>
+					<xs:documentation>Montant RC groupe prestation
+Calculé sur poste PS</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_rac">
+				<xs:annotation>
+					<xs:documentation>Montant RAC assuré groupe prestation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="detail_prestation_cip" type="type_in_prestation_cip" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="detail_prestation_lpp" type="type_in_prestation_lpp" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="detail_prestation_acte" type="type_in_prestation_acte" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

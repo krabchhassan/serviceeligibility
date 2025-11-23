@@ -1,0 +1,297 @@
+{
+  "beneficiaires":
+  [
+    {
+      "domaineDroits":
+      [
+        {
+          "code": "EXTE",
+          "codeProfil": "",
+          "garanties":
+          [
+            {
+              "codeGarantie": "B",
+              "libelleGarantie": "",
+              "produits":
+              [
+                {
+                  "codeProduit": "",
+                  "libelleProduit": "",
+                  "codeExterneProduit": "",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "EXTE-050-100-ISANTE",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2020/01/01",
+                              "periodeFin": "2999/12/31",
+                              "libelleEvenement": "Declaration",
+                              "modeObtention": "O",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "100.00",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "050",
+                                "parametres":
+                                [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "codeProfil": "",
+          "garanties":
+          [
+            {
+              "codeGarantie": "B",
+              "libelleGarantie": "",
+              "produits":
+              [
+                {
+                  "codeProduit": "",
+                  "libelleProduit": "",
+                  "codeExterneProduit": "",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "HOSP-099",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2020/01/01",
+                              "periodeFin": "2999/12/31",
+                              "libelleEvenement": "Declaration",
+                              "modeObtention": "O",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2020/01/01",
+                                  "fin": "2999/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateCreation": "2025-01-21T17:22:18.172",
+      "dateModification": "2025-01-21T17:22:18.172",
+      "dateNaissance": "20000105",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "",
+      "cleNirBeneficiaire": "",
+      "nirOd1": "2000101102142",
+      "cleNirOd1": "82",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "IS00000RBS00001",
+      "refExternePersonne": "IS00000RBS00001",
+      "rangAdministratif": "",
+      "modePaiementPrestations": "",
+      "dernierMouvementRecu": "V",
+      "affiliation":
+      {
+        "nom": "LAPORTE",
+        "nomPatronymique": "LAPORTE",
+        "nomMarital": "LAPORTE",
+        "prenom": "HENRY",
+        "periodeDebut": "2020/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "072",
+        "centreOD1": "0000",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": ""
+      },
+      "adresses":
+      []
+    }
+  ],
+  "idDeclarant": "0000401166",
+  "numeroContrat": "CRBS00001",
+  "numeroAdherent": "RBS00001",
+  "numeroAdherentComplet": "",
+  "dateSouscription": "2020/01/01",
+  "nomPorteur": "",
+  "prenomPorteur": "",
+  "civilitePorteur": "",
+  "qualification": "B",
+  "numeroContratCollectif": "",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "",
+  "typeConvention": "",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "",
+  "groupeAssures": "",
+  "numAMCEchange": "",
+  "numOperateur": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "dateCreation": "2025-01-21T17:22:18.172",
+  "dateModification": "2025-01-21T17:22:18.172",
+  "dateConsolidation": "2025-01-21T17:22:18.172",
+  "carteTPaEditerOuDigitale": "0"
+}

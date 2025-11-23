@@ -1,0 +1,27 @@
+{
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "collectivite": "",
+  "college": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2000-07-16",
+  "userCreation": "herve.charrier@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "AnniversaireContrat",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "delaiRenouvellement": 30,
+    "dateExecutionBatch": "2022-02-01",
+    "dateDebutDroitTP": "2022-01-01",
+    "modeDeclenchement": "Manuel"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+    ],
+    "isCarteEditablePapier": false
+  }
+}

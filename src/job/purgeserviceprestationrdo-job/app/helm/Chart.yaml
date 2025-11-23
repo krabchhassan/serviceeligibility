@@ -1,0 +1,10 @@
+apiVersion: v2
+name: purgeserviceprestationrdo-job
+description: Helm chart for purgeserviceprestationrdo-job in serviceeligibility service.
+type: application
+appVersion: "${imageTag}"
+version: 0.0.0
+dependencies:
+  - name: helm-chart-beyond-common
+    repository: "@beyond"
+    version: v15.1.6

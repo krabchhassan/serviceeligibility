@@ -1,0 +1,351 @@
+{
+  "contexteTiersPayant" : {
+    "isCartePapierAEditer" : false,
+    "periodesDroitsCarte" : {
+      "debut" : "%%LAST_YEAR%%-01-01",
+      "fin" : "%%LAST_YEAR%%-12-31"
+    },
+    "college" : "100",
+    "collectivite" : "CETIP",
+    "isCarteDematerialisee" : false,
+    "isCartePapier" : false
+  },
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2123376",
+            "idBeyondDestinatairePaiements" : "2123376-0000452433",
+            "nom" : {
+              "nomFamille" : "GRAND",
+              "nomUsage" : "GRAND",
+              "prenom" : "PHILIPPE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur GRAND PHILIPPE",
+              "ligne4" : "5 CHEMIN DU VALLON",
+              "ligne6" : "31670 LABEGE",
+              "codePostal" : "31670"
+            },
+            "rib" : {
+              "bic" : "AGRIFRPP831",
+              "iban" : "FR7613106004001693976110188"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2024-03-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2123376",
+            "idBeyondDestinataireRelevePrestations" : "2123376-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "grandjuran@gmail.com"
+            },
+            "nom" : {
+              "nomFamille" : "GRAND",
+              "nomUsage" : "GRAND",
+              "prenom" : "PHILIPPE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur GRAND PHILIPPE",
+              "ligne4" : "5 CHEMIN DU VALLON",
+              "ligne6" : "31670 LABEGE",
+              "codePostal" : "31670"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2024-03-31"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "GRAND",
+          "nomUsage" : "GRAND",
+          "prenom" : "PHILIPPE",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur GRAND PHILIPPE",
+          "ligne4" : "5 CHEMIN DU VALLON",
+          "ligne6" : "31670 LABEGE",
+          "codePostal" : "31670"
+        },
+        "contact" : {
+          "email" : "GRANDJURAN@GMAIL.COM"
+        }
+      },
+      "digitRelation" : {
+        "dematerialisation" : {
+          "isDematerialise" : true,
+          "email" : "grandjuran@gmail.com"
+        },
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIM",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01",
+            "fin" : "2024-03-31"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "1591281065073",
+          "cle" : "25"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1591281065073",
+              "cle" : "25"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "311"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19591227",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2123376"
+      },
+      "dateAdhesionMutuelle" : "2018-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateRadiation" : "2024-03-31",
+      "dateCreation" : "2023-04-29T18:50:41.555Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01",
+          "fin" : "2024-03-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2123376",
+            "idBeyondDestinatairePaiements" : "2123376-0000452433",
+            "nom" : {
+              "nomFamille" : "GRAND",
+              "nomUsage" : "GRAND",
+              "prenom" : "PHILIPPE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur GRAND PHILIPPE",
+              "ligne4" : "5 CHEMIN DU VALLON",
+              "ligne6" : "31670 LABEGE",
+              "codePostal" : "31670"
+            },
+            "rib" : {
+              "bic" : "AGRIFRPP831",
+              "iban" : "FR7613106004001693976110188"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2024-03-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2123376",
+            "idBeyondDestinataireRelevePrestations" : "2123376-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "grandjuran@gmail.com"
+            },
+            "nom" : {
+              "nomFamille" : "GRAND",
+              "nomUsage" : "GRAND",
+              "prenom" : "PHILIPPE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur GRAND PHILIPPE",
+              "ligne4" : "5 CHEMIN DU VALLON",
+              "ligne6" : "31670 LABEGE",
+              "codePostal" : "31670"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2024-03-31"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "GRAND",
+          "nomUsage" : "GRAND",
+          "prenom" : "CHANTAL",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "Madame GRAND CHANTAL",
+          "ligne4" : "5 CHEMIN DU VALLON",
+          "ligne6" : "31670 LABEGE",
+          "codePostal" : "31670"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIM",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01",
+            "fin" : "2022-12-31"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "2",
+      "identite" : {
+        "nir" : {
+          "code" : "2610905061088",
+          "cle" : "46"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2610905061088",
+              "cle" : "46"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "311"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19610927",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2123537"
+      },
+      "dateAdhesionMutuelle" : "2018-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateRadiation" : "2022-12-31",
+      "dateCreation" : "2023-04-29T18:50:41.555Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01",
+          "fin" : "2022-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "C",
+        "libelle" : "Conjoint/Concubin"
+      }
+    }
+  ],
+  "version" : "5",
+  "periodesSuspension" : [
+
+  ],
+  "codeOc" : "CONTRAT_GROUPE_AXA",
+  "periodesContratCMUOuvert" : [
+
+  ],
+  "traceId" : "644d6701bd308f2c1741cfe4",
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero" : "02249711",
+  "numeroExterne" : "02249711",
+  "numeroAdherent" : "02249711",
+  "numeroAdherentComplet" : "02249711",
+  "dateSouscription" : "2018-01-01",
+  "dateResiliation" : "2024-04-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2018-01-01",
+      "fin" : "2024-03-31"
+    }
+  ],
+  "critereSecondaire" : "001",
+  "isContratIndividuel" : false,
+  "gestionnaire" : "AXA",
+  "contratCollectif" : {
+    "numero" : "00219210"
+  },
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

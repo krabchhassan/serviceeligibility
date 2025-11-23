@@ -1,0 +1,92 @@
+{
+    "offerCode": "CAS3",
+	"offerVersions": [
+	{
+		"domains": [
+			{
+				"domainCode":"DENT",
+					"tpOffline": {
+						"formulaCode": "fGl_DE00001_100pctFraisReels",
+						"formulaLabel": " DE00001_100% Frais Réels ",
+						"formulaMask": " 100% FR ",
+						"stsFormulaCode": "010",
+						"nature":"DENTAIRE"
+					},
+				"tpOnline": {
+					"nature": "DENTAIRE"
+				}
+			},
+			{
+				"domainCode":"HOSP",
+					"tpOffline": {
+						"formulaCode": "fGl_STS021_TR",
+						"formulaLabel": "STS021 : % TR",
+						"formulaMask": "100% TR ",
+						"stsFormulaCode": "021",
+						"nature":"HOSPITALISATION",
+						"variables": [
+							{
+								"variableCode": "$txBR",
+								"stsVariableNumber": 3,
+								"value": "100"
+							}
+						]
+					},
+				"tpOnline": {
+					"nature": "HOSPITALISATION"
+				}
+			},
+			{
+				"domainCode":"PHAR",
+				"tpOffline": {
+					"formulaCode": "fGl_DE00001_100pctFraisReels",
+					"formulaLabel": " DE00001_100% Frais Réels ",
+					"formulaMask": " 100% FR ",
+					"stsFormulaCode": "010",
+					"nature":"PHARMACIE"
+				},
+				"tpOnline": {
+					"nature": "PHARMACIE"
+				}
+			},
+			{
+				"domainCode":"OPTI",
+					"tpOffline": {
+						"formulaCode": "fGl_STS021_TR",
+						"formulaLabel": "STS021 : % TR",
+						"formulaMask": "50% TR ",
+						"stsFormulaCode": "021",
+						"nature":"OPTIQUE",
+						"variables": [
+							{
+								"variableCode": "$txBR",
+								"stsVariableNumber": 3,
+								"value": "50"
+							}
+						]
+					},
+				"tpOnline": {
+					"nature": "OPTIQUE"
+				}
+			},
+			{
+			"domainCode":"APDE",
+				"tpOffline": {
+					"formulaCode": "fGl_DE00001_100pctFraisReels",
+					"formulaLabel": " DE00001_100% Frais Réels ",
+					"formulaMask": " 100% FR ",
+					"stsFormulaCode": "010",
+					"nature":"APPAREILLAGEDENTAIRE"
+				},
+				"tpOnline": {
+					"nature": "APPAREILLAGEDENTAIRE"
+				}
+			}
+		],
+		"offerVersionCode": "22",
+		"effectDate": "2022-03-03T14:53:32.994Z",
+		"validityDate": "2022-01-01",
+		"engineVersion": "1.0"
+	}
+  ]
+}

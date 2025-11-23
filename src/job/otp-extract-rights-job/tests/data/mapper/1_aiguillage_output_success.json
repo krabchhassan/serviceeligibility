@@ -1,0 +1,30 @@
+{
+  "1-1-1-1": [
+    {
+      "nir_benef": "1",
+      "date_naissance":"1",
+      "amc": "1",
+      "date_soins": "1"
+    },
+    {
+      "nir_benef": "1",
+      "date_naissance":"1",
+      "amc": "1",
+      "date_soins": "1"
+    }
+  ],
+  "1-1-2-1": [
+    {
+      "nir_benef": "1",
+      "date_naissance":"1",
+      "amc": "1",
+      "date_soins": "2"
+    },
+    {
+      "nir_benef": "1",
+      "date_naissance":"2",
+      "amc": "1",
+      "date_soins": "2"
+    }
+  ]
+}

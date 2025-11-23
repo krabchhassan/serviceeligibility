@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "bdds-to-blb-tracking",
+      "description": ""
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "BddsToBlbTracking": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nir": {
+            "type": "string"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Bdds-to-blb-tracking"
+      }
+    }
+  }
+}

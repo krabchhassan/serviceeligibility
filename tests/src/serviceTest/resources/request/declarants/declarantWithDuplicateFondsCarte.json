@@ -1,0 +1,36 @@
+{
+  "_id" : "0000401166",
+  "idClientBO" : "service-account-test-es16",
+  "nom" : "BALOO",
+  "libelle" : "BALOO",
+  "siret" : "123456789",
+  "numeroPrefectoral" : "0000401166",
+  "numero": "0097810998",
+  "codePartenaire" : "BAL",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "pilotages" : [
+
+  ],
+  "transcodageDomainesTP" : [
+
+  ],
+  "regroupementDomainesTP" : [
+
+  ],
+  "fondCarteTP" : [
+    {
+      "reseauSoin" : "CB",
+      "fondCarte" : "Test.jpeg",
+      "dateDebut" : "2020-06-01T00:00:00.000Z",
+      "dateFin" : "2024-06-01T00:00:00.000Z"
+    },
+    {
+      "reseauSoin" : "CB",
+      "fondCarte" : "Test2.jpeg",
+      "dateDebut" : "2023-06-01T00:00:00.000Z"
+    }
+  ]
+}

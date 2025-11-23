@@ -1,0 +1,70 @@
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+
+spring:
+  application:
+    admin:
+      enabled: true
+    name: serviceeligibility-undueretention-job
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/next-serviceeligibility-core-api
+  kafka:
+    properties:
+      sasl:
+        mechanism: SCRAM-SHA-256
+        jaas:
+          config: "org.apache.kafka.common.security.scram.ScramLoginModule required username='dev' password='dev';"
+      security:
+        protocol: SASL_SSL
+    ssl:
+      trust-store-location: "file:///${user.home}/.kafka/kafka.truststore.jks"
+      trust-store-password: "kafka_truststore_password"
+    bootstrap-servers: ${KAFKA_SERVERS}
+
+    producer:
+      compression-type: snappy
+      acks: all
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        linger.ms: 1
+        request.timeout.ms: 50000
+KAFKA_SERVERS: detcisk01.hosting.cegedim.cloud:9094,detcisk02.hosting.cegedim.cloud:9094,detcisk03.hosting.cegedim.cloud:9094
+
+kafka:
+  topic:
+    beyond-events: beyond-events
+
+# Log
+logging:
+  level:
+    org.springframework.web: INFO
+    org.springframework.messaging: INFO
+    com.cegedim.next: INFO
+    com.cegedim.next.core.scaffolding: DEBUG
+
+socle:
+  code: Insurance
+service:
+  code: serviceeligibility
+schema:
+  url: https://documentation.beyond-by-cegedim.com/schemas/events
+  path: Insurance/serviceeligibility
+beyond:
+  instance: dev
+  customer: editeur
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+
+keycloak:
+  clientId: test2
+  clientSecret: 4b117051-c8bd-4499-8b6a-208f5fd19414
+keycloak.enabled: true
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+ORGA_LIB_ENABLED: true

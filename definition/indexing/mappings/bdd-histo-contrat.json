@@ -1,0 +1,1789 @@
+{
+  "properties": {
+    "contrat": {
+      "type": "object",
+      "properties": {
+        "idDeclarant": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroContrat": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroAdherent": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "codeOc": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroAdherentComplet": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "dateSouscription": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "dateResiliation": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "type": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nomPorteur": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "prenomPorteur": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "civilitePorteur": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "qualification": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroContratCollectif": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "isContratResponsable": {
+          "type": "boolean"
+        },
+        "isContratCMU": {
+          "type": "boolean"
+        },
+        "destinataire": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "individuelOuCollectif": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "situationDebut": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "situationFin": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "motifFinSituation": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "typeConvention": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "critereSecondaire": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "critereSecondaireDetaille": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroExterneContratIndividuel": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroExterneContratCollectif": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "gestionnaire": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "groupeAssures": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numAMCEchange": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numOperateur": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ordrePriorisation": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "contratCMUC2S": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "dateRestitution": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "origineDeclaration": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "dateCreation": {
+          "type": "date"
+        },
+        "dateModification": {
+          "type": "date"
+        },
+        "dateConsolidation": {
+          "type": "date"
+        },
+        "beneficiaires": {
+          "type": "nested",
+          "properties": {
+            "dateRadiation": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "dateCreation": {
+              "type": "date"
+            },
+            "dateModification": {
+              "type": "date"
+            },
+            "dateNaissance": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rangNaissance": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "nirBeneficiaire": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cleNirBeneficiaire": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "nirOd1": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cleNirOd1": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "nirOd2": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "cleNirOd2": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "insc": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "numeroPersonne": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "refExternePersonne": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rangAdministratif": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "categorieSociale": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "situationParticuliere": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "modePaiementPrestations": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "dateAdhesionMutuelle": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "dateDebutAdhesionIndividuelle": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "numeroAdhesionIndividuelle": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "dernierMouvementRecu": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "affiliation": {
+              "type": "object",
+              "properties": {
+                "nom": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "nomPatronymique": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "nomMarital": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "prenom": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "civilite": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "periodeDebut": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "periodeFin": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "qualite": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "regimeOD1": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "caisseOD1": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "centreOD1": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "regimeOD2": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "caisseOD2": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "centreOD2": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "hasMedecinTraitant": {
+                  "type": "boolean"
+                },
+                "regimeParticulier": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "isBeneficiaireACS": {
+                  "type": "boolean"
+                },
+                "isTeleTransmission": {
+                  "type": "boolean"
+                },
+                "typeAssure": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "adresses": {
+              "type": "nested",
+              "properties": {
+                "ligne1": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne2": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne3": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne4": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne5": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne6": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne7": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "codePostal": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "pays": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "telephone": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "email": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "typeAdresse": {
+                  "type": "object",
+                  "properties": {
+                    "libelle": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "type": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "affiliationsRO": {
+              "type": "nested",
+              "properties": {
+                "nir": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "cle": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "rattachementRO": {
+                  "type": "object",
+                  "properties": {
+                    "codeRegime": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeCaisse": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeCentre": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "fin": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "periodesMedecinTraitant": {
+              "type": "nested",
+              "properties": {
+                "debut": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "fin": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "teletransmissions": {
+              "type": "nested",
+              "properties": {
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "fin": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "isTeletransmission": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "regimesParticuliers": {
+              "type": "nested",
+              "properties": {
+                "code": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "fin": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "situationsParticulieres": {
+              "type": "nested",
+              "properties": {
+                "code": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "periode": {
+                  "type": "object",
+                  "properties": {
+                    "debut": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "fin": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "domaineDroits": {
+              "type": "nested",
+              "properties": {
+                "code": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "codeExterne": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "libelle": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "libelleExterne": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "codeProfil": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "garanties": {
+                  "type": "nested",
+                  "properties": {
+                    "codeGarantie": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "libelleGarantie": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeAssureurGarantie": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeCarence": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeOrigine": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeAssureurOrigine": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "dateAdhesionCouverture": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "produits": {
+                      "type": "nested",
+                      "properties": {
+                        "codeProduit": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "libelleProduit": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "codeExterneProduit": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "libelleExterneProduit": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "referencesCouverture": {
+                          "type": "nested",
+                          "properties": {
+                            "referenceCouverture": {
+                              "type": "text",
+                              "fields": {
+                                "keyword": {
+                                  "type": "keyword",
+                                  "ignore_above": 256
+                                }
+                              }
+                            },
+                            "naturesPrestation": {
+                              "type": "nested",
+                              "properties": {
+                                "naturePrestation": {
+                                  "type": "text",
+                                  "fields": {
+                                    "keyword": {
+                                      "type": "keyword",
+                                      "ignore_above": 256
+                                    }
+                                  }
+                                },
+                                "periodesDroit": {
+                                  "type": "nested",
+                                  "properties": {
+                                    "typePeriode": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "periodeDebut": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "periodeFin": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "periodeFinFermeture": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "libelleEvenement": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "modeObtention": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "motifEvenement": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "prioritesDroit": {
+                                  "type": "nested",
+                                  "properties": {
+                                    "code": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "libelle": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "typeDroit": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "prioriteBO": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "nirPrio1": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "nirPrio2": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "prioDroitNir1": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "prioDroitNir2": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "prioContratNir1": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "prioContratNir2": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "periodes": {
+                                      "type": "nested",
+                                      "properties": {
+                                        "debut": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "fin": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "conventionnements": {
+                                  "type": "nested",
+                                  "properties": {
+                                    "priorite": {
+                                      "type": "long"
+                                    },
+                                    "typeConventionnement": {
+                                      "type": "object",
+                                      "properties": {
+                                        "code": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "libelle": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "periodes": {
+                                      "type": "nested",
+                                      "properties": {
+                                        "debut": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "fin": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "prestations": {
+                                  "type": "nested",
+                                  "properties": {
+                                    "code": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "codeRegroupement": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "libelle": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "isEditionRisqueCarte": {
+                                      "type": "boolean"
+                                    },
+                                    "dateEffet": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "formule": {
+                                      "type": "object",
+                                      "properties": {
+                                        "numero": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "libelle": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "parametres": {
+                                          "type": "nested",
+                                          "properties": {
+                                            "numero": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "libelle": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            },
+                                            "valeur": {
+                                              "type": "text",
+                                              "fields": {
+                                                "keyword": {
+                                                  "type": "keyword",
+                                                  "ignore_above": 256
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "formuleMetier": {
+                                      "type": "object",
+                                      "properties": {
+                                        "code": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "libelle": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "periodes": {
+                                      "type": "nested",
+                                      "properties": {
+                                        "debut": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "fin": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "remboursements": {
+                                  "type": "nested",
+                                  "properties": {
+                                    "tauxRemboursement": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "uniteTauxRemboursement": {
+                                      "type": "text",
+                                      "fields": {
+                                        "keyword": {
+                                          "type": "keyword",
+                                          "ignore_above": 256
+                                        }
+                                      }
+                                    },
+                                    "periodes": {
+                                      "type": "nested",
+                                      "properties": {
+                                        "debut": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        },
+                                        "fin": {
+                                          "type": "text",
+                                          "fields": {
+                                            "keyword": {
+                                              "type": "keyword",
+                                              "ignore_above": 256
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "codeOc": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "codeOffre": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "suspension": {
+          "type": "object",
+          "properties": {
+            "periodesSuspension": {
+              "type": "nested",
+              "properties": {
+                "dateDebutSuspension": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "dateFinSuspension": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "etatSuspension": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "identifiantCollectivite": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "raisonSociale": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "siret": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "groupePopulation": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "periodeCMUOuverts": {
+          "type": "nested",
+          "properties": {
+            "code": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "periode": {
+              "type": "object",
+              "properties": {
+                "debut": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "fin": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "periodeResponsableOuverts": {
+          "type": "nested",
+          "properties": {
+            "debut": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "fin": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+          "codeItelis": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "carteTPaEditerOuDigitale": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "_id": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          }
+        }
+      },
+      "dateSauvegarde": {
+        "type": "date"
+      }
+    }
+}

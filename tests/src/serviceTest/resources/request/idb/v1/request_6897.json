@@ -1,0 +1,27 @@
+{
+  "beneficiaire": {
+    "nircertifie": "2342468697432",
+    "cleNIR": "78",
+    "dateNaissance": "20000105",
+    "rangGemellaire": "1"
+  },
+  "amc": {
+    "numeroAMCPrefectoral": "0000401166",
+    "adherent": "RBS00001"
+  },
+  "infoBdd": {
+    "typeRechercheBenef": "0",
+    "typeRechercheSegment": "3",
+    "listeSegmentRecherche": {
+      "segmentRecherche": [
+        "HOSP"
+      ]
+    },
+    "typeProfondeurRecherche": "0",
+    "typeGaranties": "1"
+  },
+  "dates": {
+    "dateDebut": "2025-03-11",
+    "dateFin": "2025-03-06"
+  }
+}

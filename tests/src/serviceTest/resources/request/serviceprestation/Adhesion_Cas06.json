@@ -1,0 +1,400 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "1394200706",
+  "numeroExterne": "1394200706",
+  "numeroAdherent": "1394200706",
+  "numeroAdherentComplet": "1394200706-COMPLET",
+  "dateSouscription": "2021-01-01",
+  "dateResiliation": null,
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2021-01-01",
+      "fin": "2021-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Employés",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodeDroitsCarte": {
+      "debut": "2021-01-01",
+      "fin": "2023-12-31"
+    },
+    "college": "Cadre",
+    "collectivite": "362521879",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1791054102544",
+          "cle": "04"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1791054102544",
+              "cle": "04"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2022-02-14"
+            }
+          },
+          {
+            "nir": {
+              "code": "1791054102544",
+              "cle": "04"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2022-02-13"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "numeroPersonne": "1394200706-001",
+        "refExternePersonne": "EXT-1394200706-001"
+      },
+      "dateAdhesionMutuelle": "2021-01-01",
+      "dateDebutAdhesionIndividuelle": "2021-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "periodes": [
+        {
+          "debut": "2021-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2021-01-01",
+          "fin": "2021-12-31"
+        },
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PEHAHUT",
+          "nomUsage": "VAITROUAT",
+          "prenom": "CHRISTOPHE",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "MR PEHAHUT VAITROUAT CHRISTOPHE",
+          "ligne4": "25 RUE JEAN JAURES",
+          "ligne6": "91670 ANGERVILLE",
+          "codePostal": "91670"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-1394200706",
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTOPHE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTOPHE",
+              "ligne4": "25 RUE JEAN JAURES",
+              "ligne6": "91670 ANGERVILLE",
+              "codePostal": "91670"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3916702005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-1394200706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTOPHE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTOPHE",
+              "ligne4": "25 RUE JEAN JAURES",
+              "ligne6": "91670 ANGERVILLE",
+              "codePostal": "91670"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "BAL_BASIGN010",
+          "codeAssureur": "ASS_BALOO",
+          "libelle": "Baloo Base ignore",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2022-01-01"
+          },
+          "dateAncienneteGarantie": "2022-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "2",
+      "identite": {
+        "nir": {
+          "code": "1041054105207",
+          "cle": "46"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1791054102544",
+              "cle": "04"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2022-02-14"
+            }
+          },
+          {
+            "nir": {
+              "code": "1791054102544",
+              "cle": "04"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2022-02-13"
+            }
+          }
+        ],
+        "dateNaissance": "20041026",
+        "rangNaissance": "1",
+        "numeroPersonne": "1394200706-002",
+        "refExternePersonne": "EXT-1394200706-002"
+      },
+      "dateAdhesionMutuelle": "2021-01-01",
+      "dateDebutAdhesionIndividuelle": "2021-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "periodes": [
+        {
+          "debut": "2021-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2021-01-01",
+          "fin": "2021-12-31"
+        },
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PEHAHUT",
+          "nomUsage": "VAITROUAT",
+          "prenom": "PIERRE",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "MR PEHAHUT VAITROUAT CHRISTOPHE",
+          "ligne4": "25 RUE JEAN JAURES",
+          "ligne6": "91670 ANGERVILLE",
+          "codePostal": "91670"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-1394200706",
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTOPHE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTOPHE",
+              "ligne4": "25 RUE JEAN JAURES",
+              "ligne6": "91670 ANGERVILLE",
+              "codePostal": "91670"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3916702005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-1394200706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTOPHE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTOPHE",
+              "ligne4": "25 RUE JEAN JAURES",
+              "ligne6": "91670 ANGERVILLE",
+              "codePostal": "91670"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "BAL_BASIGN010",
+          "codeAssureur": "ASS_BALOO",
+          "libelle": "Baloo Base ignore",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2022-01-01"
+          },
+          "dateAncienneteGarantie": "2022-01-01"
+        }
+      ]
+    }
+  ]
+}

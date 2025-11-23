@@ -1,0 +1,197 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "1107070",
+  "numeroExterne": "1107070",
+  "numeroAdherent": "1107070",
+  "numeroAdherentComplet": "1107070",
+  "dateSouscription": "2022-01-01",
+  "dateResiliation": "2025-03-31",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "2025-01-01",
+      "fin": "2025-03-31"
+    },
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": false,
+    "isCartePapier": false
+  },
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2022-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "isContratIndividuel": false,
+  "gestionnaire": "ER00019",
+  "contratCollectif": {
+    "numero": "49776728558409",
+    "numeroExterne": "2704100019000J9537900",
+    "identifiantCollectivite": "497767285",
+    "raisonSociale": "CHARVIN LOGISTIQUES",
+    "siret": "49776728500032",
+    "groupePopulation": "00"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "691951",
+            "nom": {
+              "nomFamille": "BOURSON",
+              "nomUsage": "BILLOTE",
+              "prenom": "SEBASTIEN",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BOURSON SEBASTIEN",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "11 JARDIN DES ACACIAS",
+              "ligne5": "",
+              "ligne6": "38122 MONTSEROUX MILIEU",
+              "ligne7": "",
+              "codePostal": "38122"
+            },
+            "rib": {
+              "bic": "CMCIFR2AXXX",
+              "iban": "FR7610278072120002106960126"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "691951",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "s.bourson@charvin-logistics.eu"
+            },
+            "nom": {
+              "nomFamille": "BOURSON",
+              "nomUsage": "BILLOTE",
+              "prenom": "SEBASTIEN",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BOURSON SEBASTIEN",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "11 JARDIN DES ACACIAS",
+              "ligne5": "",
+              "ligne6": "38122 MONTSEROUX MILIEU",
+              "ligne7": "",
+              "codePostal": "38122"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "BOURSON",
+          "nomUsage": "BILLOTE",
+          "prenom": "SEBASTIEN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur BOURSON SEBASTIEN",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "11 JARDIN DES ACACIAS",
+          "ligne5": "",
+          "ligne6": "38122 MONTSEROUX MILIEU",
+          "ligne7": "",
+          "codePostal": "38122"
+        },
+        "contact": {
+          "fixe": "06 82 79 25 47",
+          "email": "s.bourson@charvin-logistics.eu"
+        }
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "email": "s.bourson@charvin-logistics.eu"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2022-01-01"
+          },
+          "dateAncienneteGarantie": "2022-01-01"
+        }
+      ],
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1760638544082",
+          "cle": "40"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1760638544082",
+              "cle": "40"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "381",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19760630",
+        "rangNaissance": "1",
+        "numeroPersonne": "691951",
+        "refExternePersonne": "1107070"
+      },
+      "dateAdhesionMutuelle": "2022-01-01",
+      "dateDebutAdhesionIndividuelle": "2022-01-01",
+      "periodes": [
+        {
+          "debut": "2022-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    }
+  ]
+}

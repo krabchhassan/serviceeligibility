@@ -1,0 +1,35 @@
+DATABASE_PAGINATION_LIMIT: '20000'
+kafka:
+  topic:
+    beyond-events: beyond-events
+CONTROL_META: true
+spring:
+  main:
+    web-application-type: servlet
+  application:
+    name: serviceeligibility-batch635-job
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  batch:
+    job:
+      enabled: false
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+      database: ${MONGODB_DATABASE_NAME}
+SERVICE_ELIGIBILITY_PEFB_OUTPUT: C:/tmp/serviceeligibility_output_pefb/
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-batch635-job
+  management-scope:
+    enabled: false
+SERVICE_ELIGIBILITY_PEFB_INPUT: C:/tmp/serviceeligibility_input_pefb/
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: error
+PARALLEL_AMC_SIZE: '5'

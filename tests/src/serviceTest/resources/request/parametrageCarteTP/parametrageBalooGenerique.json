@@ -1,0 +1,43 @@
+{
+  "id": "GENERIQUE",
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "collectivite": "",
+  "college": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2023-03-18",
+  "priorite": "99999",
+  "dateCreation": "2023-03-18T12:07:24.370Z",
+  "userCreation": "marianne.barrailh@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "debutEcheance": "01/01",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": true,
+    "detailsDroit": [
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "DENT",
+        "libelleDomaineTP": "Dentaire",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 2,
+        "codeDomaineTP": "HOSP",
+        "libelleDomaineTP": "Séjour hospitalier",
+        "codeRenvoiAction": "COMPLETER",
+        "codeRenvoi": "RV2"
+      }
+    ],
+    "isCarteEditablePapier": true
+  },
+  "garantieTechniques": null,
+  "idLots": null
+}

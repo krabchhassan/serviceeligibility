@@ -1,0 +1,83 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "declarationsConsolideesTPG"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "DeclarationsConsolideesTPG": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeEtat": {
+            "type": "string"
+          },
+          "effetDebut": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idDeclarant": {
+            "type": "string"
+          },
+          "isCarteTPaEditer": {
+            "type": "boolean"
+          },
+          "carteTPaEditerOuDigitale": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "beneficiaire": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Beneficiaire"
+          },
+          "contrat": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Contrat"
+          },
+          "domaineDroits": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/DomaineDroit"
+            }
+          },
+          "codeService": {
+            "type": "string"
+          },
+          "idDeclarations": {
+            "type": "array",
+			"items": {
+			  "type": "string"
+			}
+          },
+          "dateConsolidation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "DeclarationsConsolideesTPG"
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "amc" : "0000401166",
+  "amcNom" : "baloo",
+  "identifiantCollectivite" : "",
+  "groupePopulation" : "",
+  "critereSecondaireDetaille" : "",
+  "statut" : "Actif",
+  "dateDebutValidite" : "2025-02-18",
+  "dateCreation" : "2025-02-18T17:02:21.305Z",
+  "userCreation" : "reynald.hermez@cegedim-activ.com",
+  "parametrageRenouvellement" : {
+    "dateRenouvellementCarteTP" : "DebutEcheance",
+    "dureeValiditeDroitsCarteTP" : "Annuel",
+    "delaiDeclenchementCarteTP" : 0,
+    "dateExecutionBatch" : "%%CURRENT_YEAR%%-02-18",
+    "dateDebutDroitTP" : "%%CURRENT_YEAR%%-01-01",
+    "modeDeclenchement" : "Manuel",
+    "derniereExecution" : "2025-02-18T18:18:05.660Z",
+    "annulDroitsOffline" : false
+  },
+  "parametrageDroitsCarteTP" : {
+    "codeConventionTP" : "IS",
+    "codeOperateurTP" : "IS",
+    "isCarteDematerialisee" : false,
+    "detailsDroit" : [
+
+    ],
+    "isCarteEditablePapier" : false
+  },
+  "priorite" : 0,
+  "garantieTechniques" : [
+
+  ],
+  "idLots" : [
+
+  ]
+}

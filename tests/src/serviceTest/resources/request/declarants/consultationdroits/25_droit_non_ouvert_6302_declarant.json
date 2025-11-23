@@ -1,0 +1,47 @@
+{
+  "_id" : "0004400008",
+  "nom" : "MUTUELLE DE POITIERS",
+  "libelle" : "MUTUELLE DE POITIERS ASSURANCES",
+  "numeroPrefectoral" : "0004400008",
+  "codePartenaire" : "MUTPOIT",
+  "type" : "amc",
+  "codeCircuit" : "03",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "SP",
+  "dateCreation" : "2020-11-16T08:26:55.121+0000",
+  "userCreation" : "sandrine.coudert@cegedim.com",
+  "dateModification" : "2020-11-16T08:26:55.121+0000",
+  "userModification" : "sandrine.coudert@cegedim.com",
+  "pilotages" : [
+    {
+      "codeService" : "VISIODROIT",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2020-12-01T00:00:00.000+0000",
+      "caracteristique" : {
+        "codeComptable" : "00061",
+        "generateFichier" : true
+      }
+    },
+    {
+      "codeService" : "SEL-TP",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2020-12-01T00:00:00.000+0000",
+      "caracteristique" : {
+
+      }
+    },
+    {
+      "codeService" : "DCLBEN",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2020-10-15T00:00:00.000+0000",
+      "couloirClient" : "IS",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0004400008",
+        "versionNorme" : "003",
+        "codeClient" : "IS"
+      }
+    }
+  ]
+}

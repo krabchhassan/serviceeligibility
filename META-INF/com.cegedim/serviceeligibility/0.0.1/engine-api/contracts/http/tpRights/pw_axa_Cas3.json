@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "error_code": "NEXT-ENGINE-CORE-00408-2",
+      "data": {},
+      "message": "Aucune offre avec le TP Offline paramétré disponible pour la société émettrice BALOO et le code produit 18875",
+      "level": "ERROR"
+    }
+  ]
+}

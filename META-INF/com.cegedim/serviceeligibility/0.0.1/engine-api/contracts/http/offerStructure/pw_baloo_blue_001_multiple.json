@@ -1,0 +1,39 @@
+[
+  {
+    "validityDate": "2022-01-01",
+    "endValidityDate": "2022-03-31",
+    "code": 1,
+    "offerCode": "OFFER_BLUE_001",
+    "natures": [
+      "OPTIQUE",
+      "HOSPITALISATION"
+    ],
+    "products": [
+      "BLUE_001_MULTIPLE"
+    ]
+  },
+  {
+    "validityDate": "2022-04-01",
+    "endValidityDate": "2022-06-30",
+    "code": 2,
+    "offerCode": "OFFER_BLUE_001",
+    "natures": [
+      "HOSPITALISATION"
+    ],
+    "products": [
+      "BLUE_001_MULTIPLE"
+    ]
+  },
+  {
+    "validityDate": "2022-07-01",
+    "code": 3,
+    "offerCode": "OFFER_BLUE_001",
+    "natures": [
+      "OPTIQUE",
+      "HOSPITALISATION"
+    ],
+    "products": [
+      "BLUE_001_MULTIPLE"
+    ]
+  }
+]

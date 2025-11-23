@@ -1,0 +1,83 @@
+beyond:
+  caching:
+    specs:
+      bobb:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      pwCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCarteTPCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      lotCacheByIdForRenewal:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-triggerrenouvellement-unitaire-worker
+    publisher:
+      enabled: true
+  features:
+    mongo: true
+  messaging:
+    transactional: false
+    security-context:
+      enabled: false
+    types:
+      TriggerId: com.cegedim.next.serviceeligibility.core.model.kafka.TriggerId
+      TriggerBatchUnitaire: com.cegedim.next.serviceeligibility.core.model.domain.trigger.TriggerBatchUnitaire
+      ConsolidationDeclarationsContratTrigger: com.cegedim.next.serviceeligibility.core.services.pojo.ConsolidationDeclarationsContratTrigger
+    concurrency: 5
+  observability:
+    log:
+      enabled: true
+    tracing:
+      enabled: true
+  security:
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+logging:
+  level:
+    com:
+      cegedim: error
+    org:
+      springframework: info
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+spring:
+  application:
+    name: serviceeligibility-triggerrenouvellement-unitaire-worker
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  kafka:
+    consumer:
+      max-poll-records: 50
+      enable-auto-commit: false
+      isolation-level: read_committed
+    listener:
+      ack-mode: manual_immediate
+  main:
+    web-application-type: servlet

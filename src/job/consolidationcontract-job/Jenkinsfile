@@ -1,0 +1,7 @@
+#!groovy
+SOCLE_CODE = "Insurance"
+SERVICE_CODE = "serviceeligibility"
+// Load common Gradle pipeline script
+def gradlePipeline = fileLoader.fromGit('pipeline/gradle', 'https://bitbucket.org/cegedim-insurance/bastion-jenkins-pipeline-scripts.git', 'master', 'Bitbucket', '')
+def config = ['docker:build-java-image': 'registry-forge.dev.beyond.cegedim.cloud/cegedim/bastion-pipeline-build-java_11_docker:0.0.14', "validation:file-tester:excludes": ["**/*.{pdf,doc,jpg,jpeg,xlsx}"],'integration-tests:readiness-timeout': 180]
+gradlePipeline.execute(config)

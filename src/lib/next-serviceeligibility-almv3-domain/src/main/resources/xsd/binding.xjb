@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings version="2.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	jaxb:extensionBindingPrefixes="xjc">
+
+	<jaxb:globalBindings>
+		<xjc:simple />
+		<xjc:serializable uid="-1" />
+
+		<!-- Permet de traiter les proprietes de type Date en type String -->
+		<xjc:javaType name="java.lang.String" xmlType="xs:date"
+			adapter="com.cegedim.next.serviceeligibility.batch.almerys.normev3.adapter.DateAdapter" />
+
+		<!-- Permet de traiter les proprietes de type DateTime en type String -->
+		<xjc:javaType name="java.util.Date" xmlType="xs:dateTime"
+			adapter="com.cegedim.next.serviceeligibility.batch.almerys.normev3.adapter.DateTimeAdapter" />
+
+		<!-- Permet de traiter les proprietes de type PositiveInteger (BigInteger)
+			en type Integer -->
+		<xjc:javaType name="java.lang.Integer" xmlType="xs:positiveInteger"
+			adapter="com.cegedim.next.serviceeligibility.batch.almerys.normev3.adapter.PositiveIntegerAdapter" />
+
+		<!-- Permet de traiter les proprietes de type NonNegativeInteger (BigInteger)
+			en type Integer -->
+		<xjc:javaType name="java.lang.Integer" xmlType="xs:nonNegativeInteger"
+			adapter="com.cegedim.next.serviceeligibility.batch.almerys.normev3.adapter.PositiveIntegerAdapter" />
+
+		<!-- Permet de traiter les proprietes de type Boolean false, true en type
+			Integer 0, 1 -->
+		<xjc:javaType name="java.lang.Boolean" xmlType="xs:boolean"
+			adapter="com.cegedim.next.serviceeligibility.batch.almerys.normev3.adapter.BooleanAdapter" />
+
+	</jaxb:globalBindings>
+
+</jaxb:bindings>

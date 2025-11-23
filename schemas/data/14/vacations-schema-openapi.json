@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "vacation"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Vacation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "identifiant": {
+            "type": "string"
+          },
+		  "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Vacation"
+      }
+    }
+  }
+}

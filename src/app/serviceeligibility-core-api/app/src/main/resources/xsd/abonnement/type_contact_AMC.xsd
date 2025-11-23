@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:abonnement="http://norme.cegedimassurances.com/abonnement"
+	targetNamespace="http://norme.cegedimassurances.com/abonnement"
+	elementFormDefault="qualified">
+	<xs:complexType name="type_contact_AMC">
+		<xs:sequence>
+			<xs:element name="nom" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="email" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="256" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="telephone" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

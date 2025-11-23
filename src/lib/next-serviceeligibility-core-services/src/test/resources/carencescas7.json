@@ -1,0 +1,13 @@
+{
+  "carences": [
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "DENTAIRE",
+      "startEffectDate": "2020-01-01",
+      "endEffectDate": null
+    }
+  ]
+}

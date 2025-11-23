@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsAbonnement="http://norme.cegedimassurances.com/abonnement/" 
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AbonnementWSDL" 
+targetNamespace="http://norme.cegedimassurances.com/abonnement/">
+  <wsdl:types>
+
+    <xsd:schema targetNamespace="http://norme.cegedimassurances.com/abonnement/" 
+    xmlns:abonnement="http://norme.cegedimassurances.com/abonnement">
+            <xsd:import schemaLocation="../xsd/abonnement/getAbonnement.xsd" namespace="http://norme.cegedimassurances.com/abonnement"></xsd:import>
+            <xsd:element name="getAbonnementIn"  type="abonnement:getAbonnement_in">      </xsd:element>
+            <xsd:element name="getAbonnementOut" type="abonnement:getAbonnement_out">     </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getAbonnementRequest">
+    <wsdl:part name="parameters"
+    	element="wsAbonnement:getAbonnementIn" />
+  </wsdl:message>
+  <wsdl:message name="getAbonnementResponse">
+    <wsdl:part name="parameters"
+    	element="wsAbonnement:getAbonnementOut" />
+  </wsdl:message>
+  <wsdl:portType name="WSABONNEMENT">
+    <wsdl:operation name="getAbonnement">
+      <wsdl:input message="wsAbonnement:getAbonnementRequest"/>
+      <wsdl:output message="wsAbonnement:getAbonnementResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSABONNEMENTBINDING" type="wsAbonnement:WSABONNEMENT">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getAbonnement">
+      <soap:operation soapAction="http://ws.cegedim-activ.com/wsAbonnement/getAbonnement"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsAbonnementWSDL">
+    <wsdl:port binding="wsAbonnement:WSABONNEMENTBINDING" name="WSABONNEMENT">
+      <soap:address location="http://www.cegedim-activ.com/wsAbonnement/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

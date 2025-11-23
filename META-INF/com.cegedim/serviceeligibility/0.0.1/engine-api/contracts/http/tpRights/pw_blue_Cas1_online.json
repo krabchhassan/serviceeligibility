@@ -1,0 +1,91 @@
+{
+  "offerCode": "BLUE_OFFRE_001",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2023_janv_01.1",
+      "effectDate": "2023-02-10T16:09:40.755Z",
+      "validityDate": "2022-01-01",
+      "engineVersion": "24.3",
+      "domains": [
+        {
+          "domainCode":"OPTI",
+            "tpOffline": {
+              "formulaCode": "fGl_STS010_FraisReels",
+              "formulaLabel": "STS010_Frais réels",
+              "formulaMask": "100% FR",
+              "stsFormulaCode": "010",
+              "nature":"OPTIQUE"
+            },
+          "tpOnline" : {
+              "nature" : "OPTIQUE"
+            }
+        },
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature":"HOSPITALISATION"
+          },
+          "tpOnline" : {
+            "nature" : "HOSPITALISATION"
+          }
+        },
+        {
+          "domainCode":"AUDI",
+            "tpOffline": {
+              "formulaCode": "fGl_STS010_FraisReels",
+              "formulaLabel": "STS010_Frais réels",
+              "formulaMask": "100% FR",
+              "stsFormulaCode": "010",
+              "nature":"AUDIOLOGIE"
+            },
+          "tpOnline" : {
+            "nature" : "AUDIOLOGIE"
+          }
+        },
+        {
+          "domainCode":"DENT",
+            "tpOffline": {
+              "formulaCode": "fGl_STS010_FraisReels",
+              "formulaLabel": "STS010_Frais réels",
+              "formulaMask": "100% FR",
+              "stsFormulaCode": "010",
+              "nature":"DENTAIRE"
+            },
+          "tpOnline" : {
+            "nature" : "DENTAIRE"
+          }
+        },
+        {
+          "domainCode":"PHAR",
+            "tpOffline": {
+              "formulaCode": "fGl_STS010_FraisReels",
+              "formulaLabel": "STS010_Frais réels",
+              "formulaMask": "100% FR",
+              "stsFormulaCode": "010",
+              "nature":"PHARMACIE"
+            },
+          "tpOnline" : {
+            "nature" : "PHARMACIE"
+          }
+        },
+        {
+          "domainCode":"MEDG",
+            "tpOffline": {
+              "formulaCode": "fGl_STS010_FraisReels",
+              "formulaLabel": "STS010_Frais réels",
+              "formulaMask": "100% FR",
+              "stsFormulaCode": "010",
+              "nature": "MEDECINE"
+            },"tpOnline" : {
+          "nature" : "MEDECINE"
+        }
+
+          }
+        ]
+    }
+  ]
+}

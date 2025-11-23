@@ -1,0 +1,227 @@
+{
+  "services" : [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key" : "0000401166-123456",
+  "societesEmettrices" : [
+    {
+      "code" : "000ER00955",
+      "periodes" : [
+        {
+          "debut" : "2024-01-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats" : [
+    {
+      "numeroContrat" : "0807783",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "123456",
+            "idBeyondDestinatairePaiements" : "123456-0000401166",
+            "nom" : {
+              "nomFamille" : "LOLO",
+              "nomUsage" : "LOLO",
+              "prenom" : "LOLA",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur LOLO LOLA",
+              "ligne4" : "52 RUE DOCTEUR HERMITE",
+              "ligne6" : "38000 GRENOBLE",
+              "codePostal" : "38000"
+            },
+            "rib" : {
+              "bic" : "CMCIFR2AXXX",
+              "iban" : "FR7610278089250002005720169"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "123456",
+            "idBeyondDestinataireRelevePrestations" : "123456-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "LOLO.LOLA@gmail.com"
+            },
+            "nom" : {
+              "nomFamille" : "LOLO",
+              "nomUsage" : "LOLO",
+              "prenom" : "LOLA",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur LOLO LOLA",
+              "ligne4" : "52 RUE DOCTEUR HERMITE",
+              "ligne6" : "38000 GRENOBLE",
+              "codePostal" : "38000"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "LOLO",
+          "nomUsage" : "LOLO",
+          "prenom" : "LOLA",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur LOLO LOLA",
+          "ligne4" : "52 RUE DOCTEUR HERMITE",
+          "ligne6" : "38000 GRENOBLE",
+          "codePostal" : "38000"
+        },
+        "contact" : {
+          "fixe" : "06 00 00 00 00",
+          "email" : "LOLO.LOLA@gmail.com"
+        }
+      },
+      "numeroAdherent" : "0807783",
+      "societeEmettrice" : "000ER00955",
+      "periodes" : [
+        {
+          "debut" : "2024-01-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    },
+    {
+      "numeroContrat" : "0807784",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "123456",
+            "idBeyondDestinatairePaiements" : "123456-0000401166",
+            "nom" : {
+              "nomFamille" : "LOLO",
+              "nomUsage" : "LOLO",
+              "prenom" : "LOLA",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur LOLO LOLA",
+              "ligne4" : "52 RUE DU PARADIS",
+              "ligne6" : "38000 GRENOBLE",
+              "codePostal" : "38000"
+            },
+            "rib" : {
+              "bic" : "CMCIFR2AXXX",
+              "iban" : "FR7610278089250002005720169"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "123456",
+            "idBeyondDestinataireRelevePrestations" : "123456-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "LOLO.LOLA@gmail.com"
+            },
+            "nom" : {
+              "nomFamille" : "LOLO",
+              "nomUsage" : "LOLO",
+              "prenom" : "LOLA",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur LOLO LOLA",
+              "ligne4" : "52 RUE DU PARADIS",
+              "ligne6" : "38000 GRENOBLE",
+              "codePostal" : "38000"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "LOLO",
+          "nomUsage" : "LOLO",
+          "prenom" : "LOLA",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur LOLO LOLA",
+          "ligne4" : "52 RUE DU PARADIS",
+          "ligne6" : "38000 GRENOBLE",
+          "codePostal" : "38000"
+        },
+        "contact" : {
+          "fixe" : "06 00 00 00 00",
+          "email" : "LOLO.LOLA@gmail.com"
+        }
+      },
+      "numeroAdherent" : "0807783",
+      "societeEmettrice" : "000ER00955",
+      "periodes" : [
+        {
+          "debut" : "2024-01-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO" : "elea.turc@cegedim-activ.com",
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "0807783",
+  "identite" : {
+    "nir" : {
+      "code" : "1000611111111",
+      "cle" : "91"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1000611111111",
+          "cle" : "91"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "381"
+        },
+        "periode" : {
+          "debut" : "2020-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19590224",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "123456",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "19590224",
+        "rangNaissance" : "1"
+      }
+    ]
+  },
+  "audit" : {
+    "dateEmission" : "2025-01-31T10:00:04.416Z"
+  },
+  "traceId" : "679c9f247f27193ac350a368"
+}

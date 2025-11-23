@@ -1,0 +1,170 @@
+{
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-01-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "assures": [
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "GR100314",
+            "idBeyondDestinatairePaiements": "GR100314-0000401166",
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "VIOLET",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M BLUE VIOLET",
+              "ligne4": "7, boulevard Bryas",
+              "ligne6": "97610 DZAOUDZI",
+              "ligne7": "France",
+              "codePostal": "97610"
+            },
+            "rib": {
+              "bic": "AGRIFRPP882",
+              "iban": "FR7618206000062578974521458"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "GRP100314",
+            "idBeyondDestinataireRelevePrestations": "GRP100314-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "VIOLET",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M BLUE VIOLET",
+              "ligne4": "7, boulevard Bryas",
+              "ligne6": "97610 DZAOUDZI",
+              "ligne7": "France",
+              "codePostal": "97610"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "BLUE",
+          "prenom": "VIOLET",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "M BLUE VIOLET",
+          "ligne4": "7, boulevard Bryas",
+          "ligne6": "97610 DZAOUDZI",
+          "ligne7": "France",
+          "codePostal": "97610"
+        },
+        "contact": {
+          "fixe": "01.02.22.33.38",
+          "mobile": "06.63.48.78.21",
+          "email": "vincentGREEN@yahaa.coum"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          },
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "BAL_5458_001",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "BAL_5458",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2024-01-01"
+          },
+          "dateAncienneteGarantie": "2023-01-01"
+        }
+      ],
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1592026010111",
+              "cle": "49"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "numeroPersonne": "59202601011101",
+        "refExternePersonne": "16633210"
+      },
+      "dateAdhesionMutuelle": "2001-01-01",
+      "dateDebutAdhesionIndividuelle": "2001-01-01",
+      "numeroAdhesionIndividuelle": "166314001",
+      "periodes": [
+        {
+          "debut": "2001-01-01"
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      }
+    }
+  ],
+  "version": "6",
+  "contratCollectif": {
+    "identifiantCollectivite": "N/A",
+    "raisonSociale": "N/A",
+    "groupePopulation": "N/A",
+    "numero": "GR00",
+    "numeroExterne": "GR00"
+  },
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "592026010111",
+  "numeroExterne": "592026010111",
+  "numeroAdherent": "592026010111",
+  "numeroAdherentComplet": "GRE0314_00",
+  "dateSouscription": "2001-01-01",
+  "apporteurAffaire": "Courtier & Co",
+  "critereSecondaireDetaille": "CADSUP",
+  "critereSecondaire": "CAD",
+  "isContratIndividuel": false,
+  "gestionnaire": "IGestion",
+  "qualification": "B",
+  "ordrePriorisation": "1"
+}

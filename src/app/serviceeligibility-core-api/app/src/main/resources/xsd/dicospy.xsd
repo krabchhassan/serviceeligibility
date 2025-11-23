@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.example.org/dicospy/"
+	targetNamespace="http://www.example.org/dicospy/"
+	xmlns:carte="http://norme.cegedimassurances.com/carte"
+	xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire"
+	xmlns:abonnement="http://norme.cegedimassurances.com/abonnement"
+	xmlns:ps="http://norme.cegedimassurances.com/ps" xmlns:commun="http://norme.cegedimassurances.com/commun">
+		<import schemaLocation="ps/requete_ps.xsd"
+		namespace="http://norme.cegedimassurances.com/ps">
+	</import>
+		<import schemaLocation="beneficiaire/requete_beneficiaire.xsd"
+		namespace="http://norme.cegedimassurances.com/beneficiaire">
+	</import>
+	<import schemaLocation="carte/reponse_carteTP.xsd"
+		namespace="http://norme.cegedimassurances.com/carte">
+	</import>
+
+	<import schemaLocation="abonnement/reponse_abonnement.xsd"
+		namespace="http://norme.cegedimassurances.com/abonnement">
+	</import>
+
+	<import schemaLocation="commun/reponse_commun.xsd" namespace="http://norme.cegedimassurances.com/commun"></import>
+</schema>

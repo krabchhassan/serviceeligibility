@@ -1,0 +1,179 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "99992004002",
+  "numeroExterne": "99992004002",
+  "numeroAdherent": "99992004002",
+  "numeroAdherentComplet": "99992004002",
+  "dateSouscription": "2018-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "gestionnaire": "AXA",
+  "contexteTiersPayant": {
+    "college": "100",
+    "collectivite": "CEGEDIM ACTIV",
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": false,
+    "isCartePapier": false
+  },
+  "contratCollectif": {
+    "numero": "00219071",
+    "numeroExterne": ""
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "numeroPersonne": "A999200400201",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2024-03-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HELLY",
+          "nomUsage": "HELLO",
+          "prenom": "EPOP",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HELLO EPOP",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "LILLO",
+          "ligne5": "",
+          "ligne6": "09 09",
+          "ligne7": "",
+          "codePostal": "09"
+        },
+        "contact": {
+          "email": "HELLO@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HELLY",
+              "nomUsage": "HELLO",
+              "prenom": "EPOP",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HELLO EPOP",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "LILLO",
+              "ligne5": "",
+              "ligne6": "09 09",
+              "ligne7": "",
+              "codePostal": "09"
+            },
+            "rib": {
+              "iban": "FR7613106001004578945612336",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HELLY",
+              "nomUsage": "HELLO",
+              "prenom": "EPOP",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HELLO EPOP",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "LILLO",
+              "ligne5": "",
+              "ligne6": "09 09",
+              "ligne7": "",
+              "codePostal": "09"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIV",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2024-02-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": false
+}

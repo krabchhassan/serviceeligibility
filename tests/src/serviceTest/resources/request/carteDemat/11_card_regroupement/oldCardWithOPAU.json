@@ -1,0 +1,227 @@
+{
+  "_id": "CARTEDEMAT2024",
+  "idDeclarant": "0000401166",
+  "periodeDebut": "2050/01/01",
+  "periodeFin": "2050/12/31",
+  "isLastCarteDemat": true,
+  "isCartePapier": false,
+  "AMC_contrat": "0000401166-CONSOW0",
+  "dateCreation": "2024-01-23T09:53:02.927+0000",
+  "userCreation": "job620",
+  "dateModification": "2024-01-23T09:53:02.927+0000",
+  "userModification": "job620",
+  "contrat": {
+    "numero": "CONSOW0",
+    "dateSouscription": "2021/01/01",
+    "type": "A",
+    "nomPorteur": "POPI",
+    "prenomPorteur": "JEAN PIERRE",
+    "civilitePorteur": "Mr",
+    "numeroAdherent": "CONSOW0",
+    "numeroAdherentComplet": "CONSOW0-COMPLET",
+    "qualification": "B",
+    "numeroContratCollectif": "03094493",
+    "rangAdministratif": "1",
+    "isContratResponsable": false,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "1",
+    "lienFamilial": "A",
+    "typeConvention": "IS",
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Emplyés",
+    "numeroExterneContratIndividuel": "CONSOW0",
+    "numeroExterneContratCollectif": "DKMMMS09049304930",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "IGestion",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1"
+  },
+  "beneficiaires": [
+    {
+      "lienContrat": {
+        "lienFamilial": "A",
+        "rangAdministratif": "1",
+        "modePaiementPrestations": "V"
+      },
+      "beneficiaire": {
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "1701062498046",
+        "cleNirBeneficiaire": "02",
+        "nirOd1": "1701062498046",
+        "cleNirOd1": "02",
+        "numeroPersonne": "MBA-000",
+        "refExternePersonne": "7209738ADF",
+        "dateAdhesionMutuelle": "2021/01/01",
+        "dateDebutAdhesionIndividuelle": "2021/01/01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "affiliation": {
+          "nom": "POPI",
+          "nomPatronymique": "POPI",
+          "nomMarital": "POPI",
+          "prenom": "JEAN PIERRE",
+          "civilite": "Mr",
+          "periodeDebut": "2021/01/01",
+          "qualite": "A",
+          "regimeOD1": "01",
+          "caisseOD1": "624",
+          "centreOD1": "0156",
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "AM",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "BENEFICIAIRE"
+        },
+        "adresses": [
+          {
+            "ligne1": "25 RUE DES LAGRADES",
+            "ligne2": "RESIDENCE DES PLATEAUX",
+            "ligne3": "59250",
+            "ligne4": "HALLUIN",
+            "ligne5": "F",
+            "ligne6": "FRANCE",
+            "ligne7": "CEDEX41",
+            "codePostal": "5920",
+            "email": "5920",
+            "typeAdresse": {
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "OPTI",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "35561_24087",
+          "libelleProduit": "",
+          "codeGarantie": "24087",
+          "libelleGarantie": "",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "BAL4",
+          "tauxRemboursement": "PEC",
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2018/02/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "OPTI-NOSEL",
+          "origineDroits": "",
+          "noOrdreDroit": 8,
+          "categorie": "OPTI",
+          "isEditable": true,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "099",
+                "parametres": [
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2050/01/01",
+            "periodeFin": "2050/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "DEclaration",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 1,
+              "typeConventionnement": {
+                "code": "IS",
+                "libelle": "IS"
+              }
+            }
+          ]
+        },
+        {
+          "code": "AUDI",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "35561_24087",
+          "libelleProduit": "",
+          "codeGarantie": "24087",
+          "libelleGarantie": "",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "BAL4",
+          "tauxRemboursement": "PEC",
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2018/02/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "AUDI-NOSEL",
+          "origineDroits": "",
+          "noOrdreDroit": 10,
+          "categorie": "AUDI",
+          "isEditable": true,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "099",
+                "parametres": [
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2050/01/01",
+            "periodeFin": "2050/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "DEclaration",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 1,
+              "typeConventionnement": {
+                "code": "IS",
+                "libelle": "IS"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "domainesConventions": [
+    {
+      "code": "OPTI",
+      "rang": 0,
+      "conventions": [
+        {
+          "priorite": 0,
+          "code": "IS"
+        }
+      ]
+    },
+    {
+      "code": "AUDI",
+      "rang": 0,
+      "conventions": [
+        {
+          "priorite": 0,
+          "code": "IS"
+        }
+      ]
+    }
+  ]
+}

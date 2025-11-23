@@ -1,0 +1,15 @@
+{
+   "BEYOND_VERSION": "${BEYOND_VERSION}",
+  "clientId": "${keycloak_clientId}",
+  "url": "${keycloak_auth_server_url}",
+  "enabled": ${keycloak_enabled},
+  "realm": "${keycloak_realm}",
+  "authorizationEnabled": ${authorization_enabled},
+  "clientType": "${CLIENT_TYPE}",
+  "useBeyondApi": ${USE_BEYOND_API},
+  "beyondApiUrl": "${BEYOND_API_URL}",
+  "showItelisCode": ${SHOW_ITELIS_CODE},
+  "editorInstance": "${EDITOR_INSTANCE}",
+  "notificationsEnabled": "${NOTIFICATIONS_ENABLED}",
+  "feature": "${FEATURE}"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:carte="http://norme.cegedimassurances.com/carte" targetNamespace="http://norme.cegedimassurances.com/carte" elementFormDefault="qualified">
+    <xs:include schemaLocation="type_adressage_sesam_vitale.xsd"></xs:include>
+    <xs:include schemaLocation="type_renvoi.xsd"></xs:include>
+    <xs:complexType name="type_infoCarteTP">
+		<xs:sequence>
+			<xs:element name="titre_attestation" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="num_amc_RNM" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="num_amc_prefectoral" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            <xs:element name="nom_adresse_amc_ligne1" minOccurs="0" maxOccurs="1" type="xs:string"/>
+			<xs:element name="nom_adresse_amc_ligne2" minOccurs="0" maxOccurs="1" type="xs:string"/>
+			<xs:element name="nom_adresse_amc_ligne3" minOccurs="0" maxOccurs="1" type="xs:string"/>
+			<xs:element name="nom_adresse_amc_ligne4" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="logo_assureur" minOccurs="0" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>URL de l'image</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element name="code_regime" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"></xs:minLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+            <xs:element name="code_gestion" minOccurs="0" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                	<xs:documentation>Code ou centre de gestion</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="num_contrat" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="num_adherent" minOccurs="0" maxOccurs="1" type="xs:string"/>
+            <xs:element name="date_debut_droits" minOccurs="1" maxOccurs="1" type="xs:date"/>
+			<xs:element name="date_fin_droits" minOccurs="1" maxOccurs="1" type="xs:date"/>
+			<xs:element name="adressage_SV" minOccurs="0" maxOccurs="1" type="carte:type_adressage_sesam_vitale"/>
+			<xs:element name="critere_secondaire" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>CSR</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="logo_operateur_TP" minOccurs="0" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+				    <xs:documentation>URL de l'image</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="logo_promoteur" minOccurs="0" maxOccurs="1" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>URL de l'image</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element name="liste_renvois" type="carte:type_renvoi" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

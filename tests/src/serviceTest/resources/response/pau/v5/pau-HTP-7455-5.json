@@ -1,0 +1,273 @@
+{
+  "contracts": [
+    {
+      "context": "HTP",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "C7229-CAS-02",
+      "externalNumber": "C7229-CAS-02",
+      "subscriberId": "C7229-CAS-02",
+      "subscriberFullId": "C7229-CAS-02",
+      "subscriptionDate": "2001-06-01",
+      "businessContributor": "Courtier & Co",
+      "responsibleContractOpenPeriods": [],
+      "cmuContractOpenPeriods": [
+        {
+          "code": "CMU",
+          "period": {
+            "start": "2020-01-01"
+          }
+        }
+      ],
+      "secondaryCriterion": "CAD",
+      "detailedSecondaryCriterion": "CADSUP",
+      "isIndividualContract": false,
+      "operator": "IGestion",
+      "collectiveContract": {
+        "number": "CC01",
+        "externalNumber": "CC01",
+        "companyName": "ma raison sociale"
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "suspensionPeriods": [],
+      "insured": {
+        "isSubscriber": true,
+        "administrativeRank": "1",
+        "identity": {
+          "nir": {
+            "code": "2810631555499",
+            "key": "60"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "2810631555499",
+                "key": "60"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "111",
+                "centerCode": "1018"
+              },
+              "period": {
+                "start": "2001-01-01"
+              }
+            },
+            {
+              "nir": {
+                "code": "2810631555491",
+                "key": "68"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "111",
+                "centerCode": "1018"
+              },
+              "period": {
+                "start": "2004-01-01"
+              }
+            }
+          ],
+          "birthDate": "19900619",
+          "birthRank": "1",
+          "personNumber": "0000401166-C7229-CAS-0201",
+          "personExternalRef": "C7229-CAS-02"
+        },
+        "data": {
+          "name": {
+            "lastName": "BLUE",
+            "firstName": "CERISE",
+            "civility": "Mme"
+          },
+          "address": {
+            "line1": "Mme BLUE CERISE",
+            "line4": "19, rue des étoiles",
+            "line6": "31000 PARADIS",
+            "line7": "France",
+            "postcode": "31000"
+          },
+          "contact": {
+            "landline": "05 00 00 00 00",
+            "mobile": "06 00 00 00 00",
+            "email": "bluecerise@test.com"
+          },
+          "paymentRecipients": [
+            {
+              "paymentRecipientId": "GR100314",
+              "beyondPaymentRecipientId": null,
+              "name": {
+                "lastName": "BLUE",
+                "firstName": "CERISE",
+                "civility": "Mme"
+              },
+              "address": {
+                "line1": "Mme BLUE CERISE",
+                "line4": "19, rue des étoiles",
+                "line6": "31000 PARADIS",
+                "line7": "France",
+                "postcode": "31000"
+              },
+              "rib": {
+                "bic": "AGRIFRPP882",
+                "iban": "FR7618206000062578974521458"
+              },
+              "benefitPaymentMode": {
+                "code": "VIR",
+                "label": "Virement",
+                "currencyCode": "EUR"
+              },
+              "period": {
+                "start": "2001-01-01"
+              }
+            }
+          ],
+          "benefitStatementRecipients": [
+            {
+              "benefitStatementRecipientId": "GRP100314",
+              "beyondBenefitStatementRecipientId": null,
+              "name": {
+                "lastName": "BLUE",
+                "firstName": "CERISE",
+                "civility": "Mme"
+              },
+              "address": {
+                "line1": "Mme BLUE CERISE",
+                "line4": "19, rue des étoiles",
+                "line6": "31000 PARADIS",
+                "line7": "France",
+                "postcode": "31000"
+              },
+              "period": {
+                "start": "2001-01-01"
+              }
+            }
+          ]
+        },
+        "healthMutualSubscriptionDate": "2001-01-01",
+        "individualSubscriptionStartDate": "2001-01-01",
+        "individualSubscriptionNumber": "166314001",
+        "digitRelation": {
+          "dematerialization": {},
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2021-01-01"
+              },
+              "isRemotelyTransmitted": true
+            },
+            {
+              "period": {
+                "start": "2021-01-01"
+              },
+              "isRemotelyTransmitted": false
+            }
+          ]
+        },
+        "attendingPhysicianOpenedPeriods": [
+          {
+            "start": "2020-01-01"
+          }
+        ],
+        "specialPlans": [
+          {
+            "code": "AM",
+            "period": {
+              "start": "2020-01-01"
+            }
+          }
+        ],
+        "specialStatuses": [
+          {
+            "code": "ALD",
+            "period": {
+              "start": "2020-01-01"
+            }
+          }
+        ],
+        "quality": {
+          "code": "A",
+          "label": "ASSURE"
+        },
+        "rights": [
+          {
+            "code": "GT_5497_D2",
+            "insurerCode": "baloo",
+            "type": "BASE",
+            "prioritizationOrder": "1",
+            "guaranteeAgeDate": "2020-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "1472_AJOUT_01",
+                "productCode": "1472_AJOUT_01_P01",
+                "benefitsType": [
+                  {
+                    "benefitType": "AUDI",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2021-03-02"
+                    }
+                  },
+                  {
+                    "benefitType": "HOSPITALISATION",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2021-03-02"
+                    }
+                  },
+                  {
+                    "benefitType": "PHARMACIE",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2021-03-02"
+                    }
+                  },
+                  {
+                    "benefitType": "DENTAIRE",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2021-03-02"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2021-01-01",
+                  "end": "2021-03-02"
+                }
+              },
+              {
+                "issuingCompanyCode": "CONTRAT_GROUPE_AXA",
+                "issuingCompanyName": "CONTRAT GROUPE AXA",
+                "offerCode": "CONTRATGROUPEAXA",
+                "productCode": "AXASC_CGDIM",
+                "benefitsType": [
+                  {
+                    "benefitType": "OPTIQUEAUDIO",
+                    "period": {
+                      "start": "2021-03-03",
+                      "end": "2022-02-01"
+                    }
+                  },
+                  {
+                    "benefitType": "HOSPITALISATION",
+                    "period": {
+                      "start": "2021-03-03",
+                      "end": "2022-02-01"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2021-03-03",
+                  "end": "2022-02-01"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

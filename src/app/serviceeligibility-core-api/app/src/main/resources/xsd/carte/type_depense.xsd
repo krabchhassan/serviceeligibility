@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:carte="http://norme.cegedimassurances.com/carte" targetNamespace="http://norme.cegedimassurances.com/carte" elementFormDefault="qualified">
+	<xs:complexType name="type_depense">
+		<xs:sequence>
+			<xs:element name="code_libelle" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                	<xs:documentation>nom de la colonne</xs:documentation>
+                </xs:annotation>
+			</xs:element>
+	        <xs:element name="code_convention" minOccurs="0" maxOccurs="1" type="xs:string"/>
+			<xs:element name="code_formule" minOccurs="1" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                	<xs:documentation>formule et renvois</xs:documentation>
+                </xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

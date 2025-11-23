@@ -1,0 +1,49 @@
+[
+  {
+    "content": {
+      "1-1-1-1": [
+        {
+          "lastname": "lastname",
+          "firstname": "firstname",
+          "insee_code": "1",
+          "birth_date": "1",
+          "birth_rank": "1",
+          "insurer_id": "1"
+        },
+        {
+          "lastname": "lastname",
+          "firstname": "firstname",
+          "insee_code": "1",
+          "birth_date": "1",
+          "birth_rank": "2",
+          "insurer_id": "1"
+        }
+      ],
+      "1-1-2-1": [
+        {
+          "lastname": "lastname",
+          "firstname": "firstname",
+          "insee_code": "1",
+          "birth_date": "1",
+          "birth_rank": "1",
+          "insurer_id": "1"
+        },
+        {
+          "lastname": "lastname",
+          "firstname": "firstname",
+          "insee_code": "1",
+          "birth_date": "1",
+          "birth_rank": "2",
+          "insurer_id": "1"
+        }
+      ]
+    },
+    "errors": {
+      "2-2-2": {
+        "code": "NEXT-AIGUILLAGE-CORE-EXTRACTED-404-1",
+        "msg": "",
+        "request": {}
+      }
+    }
+  }
+]

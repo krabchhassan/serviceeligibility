@@ -1,0 +1,65 @@
+{
+  "offerCode": "DIFF_TP_2",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2026_janv_01.1",
+      "effectDate": "2025-04-20T08:47:43.746Z",
+      "validityDate": "2026-01-01",
+      "engineVersion": "29.5",
+      "domains": [
+        {
+          "domainCode": "RADL",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "RADIOLOGIE"
+          },
+          "tpOnline": {
+            "nature": "RADIOLOGIE"
+          }
+        },
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "DENTAIRE"
+          },
+          "tpOnline": {
+            "nature": "DENTAIRE"
+          }
+        },
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+	"id": null,
+	"traceId": null,
+	"idDeclarant": "0008400004",
+	"societeEmettrice": "CODMUT",
+	"numero": "AIBYD3333333333",
+	"numeroExterne": "AIBYD3333333333",
+	"numeroAdherent": "IBYD3333",
+	"numeroAdherentComplet": "AIBYD3333333333",
+	"dateSouscription": "2020-05-01",
+	"periodesContratResponsableOuvert": [
+		{
+			"debut": "2020-05-01"
+		}
+	],
+	"periodesContratCMUOuvert": [],
+	"critereSecondaireDetaille": " ",
+	"critereSecondaire": " ",
+	"isContratIndividuel": true,
+	"gestionnaire": "CEGEDIM",
+	"qualification": "B",
+	"ordrePriorisation": "1",
+	"periodesDroitsComptablesOuverts": [
+		{
+			"debut": "2020-05-01"
+		}
+	],
+	"assures": [
+		{
+			"isSouscripteur": true,
+			"rangAdministratif": "1",
+			"identite": {
+				"nir": {
+					"code": "1720131589478",
+					"cle": "54"
+				},
+				"affiliationsRO": [
+					{
+						"nir": {
+							"code": "1720131589478",
+							"cle": "54"
+						},
+						"rattachementRO": {
+							"codeRegime": "01",
+							"codeCaisse": "111",
+							"codeCentre": "1018"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"dateNaissance": "19720101",
+				"rangNaissance": "1",
+				"numeroPersonne": "20288139"
+			},
+			"dateAdhesionMutuelle": "2020-05-01",
+			"dateDebutAdhesionIndividuelle": "2020-05-01",
+			"numeroAdhesionIndividuelle": "AIBYD3333333333",
+			"periodes": [
+				{
+					"debut": "2020-05-01"
+				}
+			],
+			"periodesMedecinTraitantOuvert": [],
+			"regimesParticuliers": [],
+			"situationsParticulieres": [],
+			"qualite": {
+				"code": "ASSPRI",
+				"libelle": "Assure principal"
+			},
+			"data": {
+				"nom": {
+					"nomFamille": "MONTAGUS",
+					"nomUsage": "MONTAGUS",
+					"prenom": "hervé",
+					"civilite": "M"
+				},
+				"adresse": {
+					"ligne1": "M MONTAGUS hervé",
+					"ligne4": "AVENUE DE L ANCIEN VELODROME",
+					"ligne6": "31000 TOULOUSE",
+					"codePostal": "31000"
+				},
+				"destinatairesPaiements": [
+					{
+            "idDestinatairePaiements":"83747438-20288139-DestPaiement-1",
+            "idBeyondDestinatairePaiements":"83747438-20288139-DestPaiement-1-0008400004",
+            "nom": {
+							"nomFamille": "MONTAGUS",
+							"nomUsage": "MONTAGUS",
+							"prenom": "hervé",
+							"civilite": "M"
+						},
+						"rib": {
+							"bic": "SOGEGPGP",
+							"iban": "FR7618079067601111111111101"
+						},
+						"modePaiementPrestations": {
+							"code": "V ",
+							"libelle": "Virement",
+							"codeMonnaie": "EUR  "
+						},
+						"periode": {
+							"debut": "2020-05-01"
+						}
+					}
+				],
+				"destinatairesRelevePrestations": [
+					{
+            "idDestinataireRelevePrestations":"83747438-20288139-DestRelevePrest-1",
+            "idBeyondDestinataireRelevePrestations":"83747438-20288139-DestRelevePrest-1-0008400004",
+            "nom": {
+							"nomFamille": "MONTAGUS",
+							"nomUsage": "MONTAGUS",
+							"prenom": "hervé",
+							"civilite": "M"
+						},
+						"adresse": {
+							"ligne1": "M MONTAGUS hervé",
+							"ligne4": "AVENUE DE L ANCIEN VELODROME",
+							"ligne6": "31000 TOULOUSE",
+							"codePostal": "31000"
+						},
+						"periode": {
+							"debut": "2020-05-01"
+						}
+					}
+				]
+			},
+			"digitRelation": {
+				"teletransmissions": [
+					{
+						"periode": {
+							"debut": "2020-05-01"
+						},
+						"isTeletransmission": false
+					}
+				]
+			},
+			"droits": [
+				{
+					"code": "SANTE",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "SANTE",
+					"ordrePriorisation": "2",
+					"type": "B",
+					"periode": {
+						"debut": "2020-05-01"
+					},
+					"dateAncienneteGarantie": "2020-05-01"
+				}
+			]
+		}
+	],
+	"version": "5"
+}

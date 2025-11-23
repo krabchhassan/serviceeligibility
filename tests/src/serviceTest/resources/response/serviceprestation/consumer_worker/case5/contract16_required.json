@@ -1,0 +1,47 @@
+{
+  "idDeclarant": "0032165199",
+  "societeEmettrice": "0032165199",
+  "numero": "8343484392",
+  "numeroExterne": "SLOK4983989",
+  "numeroAdherent": "83747438",
+  "numeroAdherentComplet": "TBT83747438",
+  "dateSouscription": "2020-01-22",
+  "dateResiliation": null,
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "CAD",
+  "critereSecondaire": "Cadres",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "porteurRisque": {
+    "code": "ATR",
+    "libelle": "Agence Tous risque"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "periodesDroitsComptablesOuverts": [
+    {
+      "debut": "2019-01-01",
+      "fin": "2019-12-31"
+    },
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ]
+}

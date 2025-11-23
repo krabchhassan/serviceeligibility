@@ -1,0 +1,17 @@
+{
+  "id" : "59d35cbad9bb357b792638b3",
+  "parametrageCarteTPId": "3",
+  "status": "ProcessedWithErrors",
+  "origine": "Renewal",
+  "dateEffet": "2021-05-03T00:00:00.000Z",
+  "dateFinStandBy": null,
+  "dateDebutTraitement": "2021-04-06T00:00:00.000Z",
+  "dateFinTraitement": "2021-04-07T00:00:00.000Z",
+  "nbBenef": 0,
+  "nbBenefKO": 1,
+  "amc": "AMC3",
+  "dateCreation": "2021-02-01T00:00:00.000Z",
+  "dateModification": "2021-02-01T00:00:00.000Z",
+  "userCreation": "beyond-tester@outlook.com",
+  "userModification": "beyond-tester@outlook.com"
+}

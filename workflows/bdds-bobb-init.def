@@ -1,0 +1,28 @@
+workflowDefinition:
+  - code: is-bdds-init-bobb
+    name: BOBB - Init bobb
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à lancer un traitement d'extraction de bobb dans une base redis
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: mode
+        description: mode de la gestion (CLEAR ou SYNC)
+        optional: false
+
+    steps:
+      - name: bobb-cache-sync
+        job: bobb-cache-sync-job
+        type: python
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: mode
+              ref: parameters/mode
+
+    crex:
+      - name: nb_correspondance_bobb_supprimees
+        description: Nombre de correspondances BOBB supprimées du cache
+        ref: steps/bobb-cache-sync/parameters/outputs/nb_correspondance_bobb_supprimees
+      - name: nb_correspondance_bobb_creees
+        description: Nombre de correspondances BOBB créées
+        ref: steps/bobb-cache-sync/parameters/outputs/nb_correspondance_bobb_creees

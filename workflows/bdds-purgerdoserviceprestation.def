@@ -1,0 +1,18 @@
+workflowDefinition:
+  - code: is-bdds-purge-benkey
+    name: purge des contrats HTP de la collection rdoServicePrestation
+    nature: ["dev", "qa","preprod","prod"]
+    description: Cet OMU sert à purger l'ensemble des contrats HTP de la collection rdoServicePrestation
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-purgeserviceprestationrdo-job
+        job: purgeserviceprestationrdo-job
+        type: java
+        produceOutputs: true
+
+    crex:
+      - name: benefKeyCount
+        description: Nombre de clés beneficiaire purgés
+        ref: steps/step-purgeserviceprestationrdo-job/parameters/outputs/benefKeyCount

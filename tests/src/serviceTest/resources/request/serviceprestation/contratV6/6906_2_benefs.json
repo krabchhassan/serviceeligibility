@@ -1,0 +1,407 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "5894-01",
+  "numeroExterne": "5894-01-externe",
+  "numeroAdherent": "5894-01",
+  "numeroAdherentComplet": "5894-01-complet",
+  "dateSouscription": "2022-01-22",
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2022-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "code": "CMU",
+      "periode": {
+        "debut": "2022-01-01"
+      }
+    }
+  ],
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930",
+    "raisonSociale": "CGW",
+    "siret": "552 178 639 00132",
+    "groupePopulation": "cadre",
+    "identifiantCollectivite": "coll"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "periodesDroitsComptables": [
+    {
+      "periode": {
+        "debut": "2022-01-01"
+      },
+      "etat": "Ouverture"
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Employés",
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1800692014015",
+          "cle": "94"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1800692014015",
+              "cle": "94"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19800515",
+        "rangNaissance": "1",
+        "numeroPersonne": "1234567895894-01",
+        "refExternePersonne": "7909738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "EUDES",
+          "nomUsage": null,
+          "prenom": "Jean",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "Mr EUDES Jean",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "420 rue des Lilas",
+          "ligne5": "",
+          "ligne6": "31000 Toulouse",
+          "ligne7": "FRANCE",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "0404040404",
+          "mobile": "0606060606",
+          "email": "JeanEudes@mail.ca"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-5894-01-01",
+            "nom": {
+              "nomFamille": "EUDES-DP01",
+              "nomUsage": "EUDES-DP01",
+              "prenom": "Jean-DP01",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "Mr EUDES Jean - DP01",
+              "ligne2": "DP01",
+              "ligne3": "",
+              "ligne4": "420 rue des Lilas",
+              "ligne5": "",
+              "ligne6": "31000 Toulouse",
+              "ligne7": "FRANCE",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR2430002048180000070129A90"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2022-01-02"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-5894-01-01",
+            "nom": {
+              "nomFamille": "EUDES-DRP01",
+              "nomUsage": "EUDES-DRP01",
+              "prenom": "Jean-DRP01",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "Mr EUDES Jean - DRP01",
+              "ligne2": "DRP01",
+              "ligne3": "",
+              "ligne4": "420 rue des Lilas",
+              "ligne5": "",
+              "ligne6": "31000 Toulouse",
+              "ligne7": "FRANCE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dematerialisation": {
+              "isDematerialise": "true",
+              "email": "test@test.com",
+              "mobile": "0600000000"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2022-01-01",
+      "dateDebutAdhesionIndividuelle": "2022-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dateRadiation": null,
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": "true",
+          "email": "JeanEudes@mail.ca",
+          "mobile": "0707070707"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2022-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2022-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2022-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2022-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASS"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2022-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "10",
+      "identite": {
+        "nir": {
+          "code": "1000611111111",
+          "cle": "91"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1000611111111",
+              "cle": "91"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "20000603",
+        "rangNaissance": "1",
+        "numeroPersonne": "1234567895894-02",
+        "refExternePersonne": "7909738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "YOOOO",
+          "nomUsage": null,
+          "prenom": "Louis",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "Mr EUDES Jean",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "420 rue des Lilas",
+          "ligne5": "",
+          "ligne6": "31000 Toulouse",
+          "ligne7": "FRANCE",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "0404040404",
+          "mobile": "0606060606",
+          "email": "JeanEudes@mail.ca"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-5894-01-01",
+            "nom": {
+              "nomFamille": "EUDES-DP01",
+              "nomUsage": "EUDES-DP01",
+              "prenom": "Jean-DP01",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "Mr EUDES Jean - DP01",
+              "ligne2": "DP01",
+              "ligne3": "",
+              "ligne4": "420 rue des Lilas",
+              "ligne5": "",
+              "ligne6": "31000 Toulouse",
+              "ligne7": "FRANCE",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR2430002048180000070129A90"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2022-01-02"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-5894-01-01",
+            "nom": {
+              "nomFamille": "EUDES-DRP01",
+              "nomUsage": "EUDES-DRP01",
+              "prenom": "Jean-DRP01",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "Mr EUDES Jean - DRP01",
+              "ligne2": "DRP01",
+              "ligne3": "",
+              "ligne4": "420 rue des Lilas",
+              "ligne5": "",
+              "ligne6": "31000 Toulouse",
+              "ligne7": "FRANCE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dematerialisation": {
+              "isDematerialise": "true",
+              "email": "test@test.com",
+              "mobile": "0600000000"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2022-01-01",
+      "dateDebutAdhesionIndividuelle": "2022-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dateRadiation": null,
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": "true",
+          "email": "JeanEudes@mail.ca",
+          "mobile": "0707070707"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2022-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2022-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2022-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2022-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "E",
+        "libelle": "ENF"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2022-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ]
+    }
+  ]
+}

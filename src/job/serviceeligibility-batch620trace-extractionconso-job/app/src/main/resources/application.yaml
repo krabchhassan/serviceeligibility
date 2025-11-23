@@ -1,0 +1,16 @@
+beyond:
+  messaging:
+    transactional: false
+    security-context:
+      enabled: false
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-batch620trace-extractionconso-job
+  observability:
+    tracing:
+      enabled: false
+spring:
+  application:
+    name: serviceeligibility-batch620trace-extractionconso-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}

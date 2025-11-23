@@ -1,0 +1,54 @@
+{
+  "services" : [
+    "Service_TP"
+  ],
+  "key" : "0000401166-2124745",
+  "contrats" : [
+    {
+      "numeroContrat" : "01599324",
+      "codeEtat" : "V",
+      "data" : {
+        "nom" : {
+          "nomFamille" : "NOMTEST2",
+          "nomUsage" : "NOMTEST2",
+          "prenom" : "PRENOMTEST2"
+        },
+        "adresse" : {
+
+        },
+        "contact" : {
+
+        }
+      }
+    }
+  ],
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "01599324",
+  "identite" : {
+    "historiqueDateRangNaissance": [{
+      "dateNaissance" : "20080519",
+      "rangNaissance" : "1"
+    }],
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "2730781111113",
+          "cle" : "20"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "781",
+          "codeCentre" : ""
+        },
+        "periode" : {
+          "debut" : "2018-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "20080519",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "2124745"
+  }
+}

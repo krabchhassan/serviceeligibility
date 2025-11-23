@@ -1,0 +1,66 @@
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-declarationConsolidation
+  features:
+    mongo: true
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+  messaging:
+    transactional: false
+    types:
+      Declaration: com.cegedim.next.serviceeligibility.core.model.entity.Declaration
+      String: java.lang.String
+      ConsolidationDeclarationsContratTrigger: com.cegedim.next.serviceeligibility.core.services.pojo.ConsolidationDeclarationsContratTrigger
+    security-context:
+      enabled: false
+  observability:
+    log:
+      enabled: true
+    tracing:
+      enabled: true
+endpoints:
+  enabled: false
+logging:
+  level:
+    com:
+      cegedim: error
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+spring:
+  # pas compris pourquoi il faut remettre cette partie là , sans cela le pod ne démarre pas (il démarre en local) :( A revoir dans une prochaine MR
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            token-uri: ${keycloak_auth_server_url:https://idp.dev.beyond.cegedim.cloud/auth}/realms/${keycloak_realm:htp}/protocol/openid-connect/token
+        registration:
+          keycloak:
+            authorization-grant-type: client_credentials
+            client-id: ${CLIENT_ID:test-es16}
+            client-secret: ${CLIENT_SECRET:nn6SAeEsmeij97djO5bSHs6rEjdw5cgd}
+  application:
+    name: serviceeligibility-consolidationcontract-worker
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  kafka:
+    consumer:
+      max-poll-records: 50
+  main:
+    web-application-type: servlet

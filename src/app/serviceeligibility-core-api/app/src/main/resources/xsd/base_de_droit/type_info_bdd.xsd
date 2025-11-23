@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:amc="http://norme.cegedimassurances.com/base_de_droit"
+		   targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:complexType name="type_info_bdd">
+		<xs:sequence>
+			<xs:element name="type_garanties" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>0 - Toutes garanties<br/>1 - Garanties Priorité basse</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="type_recherche_benef" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>0 - Bénéficiaire<br/>1 - Carte Famille</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="type_recherche_segment" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>0 - Pas de recherche segment<br/>1 - Mono segment<br/>2 - Tout segment<br/>3 - Liste segments</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="type_segment_recherche" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Valeur du segment recherché : PHAR, EXTE, ....</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="liste_segment_recherche" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Liste des segments recherchés : PHAR, EXTE, ....</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence minOccurs="1" maxOccurs="unbounded">
+						<xs:element name="segment_recherche" type="xs:string" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="type_profondeur_recherche" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>0 - Avec formules<br/>1 - Sans formules<br/>2 - Sans domaines</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,149 @@
+{
+  "_id" : "0000401166",
+  "idClientBO" : "service-account-test-es16",
+  "nom" : "baloo",
+  "libelle" : "baloo, Votre courtier gestionnaire spécialiste de la Santé",
+  "numeroPrefectoral" : "0000401166",
+  "codePartenaire" : "BAL",
+  "type" : "amc",
+  "codeCircuit" : "03",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "dateCreation" : "2021-08-26T09:25:16.080",
+  "userCreation" : "Unidentified",
+  "dateModification" : "2024-03-12T12:29:25.994",
+  "userModification" : "marianne.barrailh@cegedim-activ.com",
+  "pilotages" : [
+    {
+      "codeService" : "CARTE-TP",
+      "serviceOuvert" : true,
+      "isCarteEditable" : false,
+      "dateOuverture" : "2023-01-01T00:00:00.000",
+      "couloirClient" : "BAL",
+      "caracteristique" : {
+
+      }
+    },
+    {
+      "codeService" : "CARTE-DEMATERIALISEE",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2023-01-01T00:00:00.000",
+      "couloirClient" : "BAL",
+      "caracteristique" : {
+        "validitesDomainesDroits" : [
+          {
+            "codeDomaine" : "LARA",
+            "duree" : 1,
+            "unite" : "Mois",
+            "positionnerFinDeMois" : true
+          }
+        ]
+      }
+    }
+  ],
+  "transcodageDomainesTP" : [
+
+  ],
+  "conventionTP" : [
+    {
+      "reseauSoin" : "AL",
+      "conventionCible" : "VM",
+      "concatenation" : true,
+      "dateDebut" : "2000-01-01T00:00:00.000",
+      "isConventionConcatenable" : false
+    }
+  ],
+  "codeRenvoiTP" : [
+    {
+      "domaineTP" : "DENT",
+      "codeRenvoi" : "35",
+      "dateDebut" : "2020-01-01T00:00:00.000"
+    },
+    {
+      "domaineTP" : "HOSP",
+      "codeRenvoi" : "RV1",
+      "dateDebut" : "2020-01-01T00:00:00.000"
+    }
+  ],
+  "regroupementDomainesTP" : [
+    {
+      "domaineRegroupementTP" : "LARA",
+      "codesDomainesTP" : [
+        "LABO",
+        "RADL"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "PHAR",
+      "codesDomainesTP" : [
+        "PHNO",
+        "PHOR",
+        "SVIL",
+        "PHAR"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "OPAU",
+      "codesDomainesTP" : [
+        "OPTI",
+        "AUDI"
+      ],
+      "niveauRemboursementIdentique" : true,
+      "dateDebut" : "2000-01-01T00:00:00.000",
+      "dateFin" : "2000-01-01T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "OPAU",
+      "codesDomainesTP" : [
+        "OPTI",
+        "AUDI"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2000-03-01T00:00:00.000",
+      "dateFin" : "2000-03-01T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "OPAU",
+      "codesDomainesTP" : [
+        "OPTI",
+        "AUDI"
+      ],
+      "niveauRemboursementIdentique" : true,
+      "dateDebut" : "2004-04-01T00:00:00.000",
+      "dateFin" : "2004-03-31T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "OPAU",
+      "codesDomainesTP" : [
+        "OPTI",
+        "AUDI"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2004-04-01T00:00:00.000",
+      "dateFin" : "2004-03-31T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "OPAU",
+      "codesDomainesTP" : [
+        "AUDI",
+        "OPTI"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2024-04-01T00:00:00.000",
+      "dateFin" : "2024-03-31T00:00:00.000"
+    },
+    {
+      "domaineRegroupementTP" : "OPAU",
+      "codesDomainesTP" : [
+        "AUDI",
+        "OPTI"
+      ],
+      "niveauRemboursementIdentique" : true,
+      "dateDebut" : "2004-04-01T00:00:00.000"
+    }
+  ]
+}

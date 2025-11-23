@@ -1,0 +1,102 @@
+workflowDefinition:
+  - code: is-bdds-634
+    name: 634 - consolidation contrats
+    nature: [ "dev", "qa", "preprod", "prod" ]
+    description: Cet OMU sert à consolider les droits TP
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: liste_amc_stop
+        description: Liste des AMCs à ignorer
+        optional: true
+      - name: liste_amc_reprise
+        description: Liste des AMCs à reprendre
+        optional: true
+      - name: collection_contract_name
+        description: Nom de la collection 'contrats' pour RDO
+        optional: true
+      - name: date_synchro
+        description: Date de synchronisation (au format JJ/MM/AAAA)
+        optional: true
+      - name: batch_mode
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Batch Mode - RDO / NO_RDO
+        optional: true
+      - name: partition_size
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Taille des paquets de déclarations traités
+        optional: true
+      - name: declaration_fetch_size
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Taille des paquets de déclarations traités
+        optional: true
+      - name: contrat_partition_size
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Taille des paquets de contrat traités
+        optional: true
+      - name: from_declaration
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Permet de découper en plusieurs Batch
+        optional: true
+      - name: to_declaration
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Permet de découper en plusieurs Batch
+        optional: true
+      - name: save_buffer_size
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Taille des paquets de contrats à sauvegarder
+        optional: true
+      - name: batch_id
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - Batch_ID - Mettre un nombre différent pour des lancement en parallèle
+        optional: true
+      - name: parallelisme
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Parrallélisme - PARALLELISME - Nombre de thread en parallèle
+        optional: true
+      - name: should_historize
+        description: Active l'historisation des images contrats lors d'une RDO
+        optional: true
+      - name: declarants_list
+        description: Ne pas utiliser ce paramètre sans l'accord explicite de l'équipe Beyond BDDS. Liste de déclarants - DECLARANTS_LIST - Liste des idDeclarant pour un job
+        optional: true
+    steps:
+      - name: step-634
+        job: consolidationcontract-job
+        type: java
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: LISTE_AMC_STOP
+              ref: parameters/liste_amc_stop
+            - name: LISTE_AMC_REPRISE
+              ref: parameters/liste_amc_reprise
+            - name: COLLECTION_CONTRACT_NAME
+              ref: parameters/collection_contract_name
+            - name: DATE_SYNCHRO
+              ref: parameters/date_synchro
+            - name: BATCH_MODE
+              ref: parameters/batch_mode
+            - name: PARTITION_SIZE
+              ref: parameters/partition_size
+            - name: CONTRAT_PARTITION_SIZE
+              ref: parameters/contrat_partition_size
+            - name: DECLARATION_FETCH_SIZE
+              ref: parameters/declaration_fetch_size
+            - name: SAVE_BUFFER_SIZE
+              ref: parameters/save_buffer_size
+            - name: BATCH_ID
+              ref: parameters/batch_id
+            - name: PARALLELISME
+              ref: parameters/parallelisme
+            - name: FROM_DECLARATION
+              ref: parameters/from_declaration
+            - name: TO_DECLARATION
+              ref: parameters/to_declaration
+            - name: SHOULD_HISTORIZE
+              ref: parameters/should_historize
+            - name: DECLARANTS_LIST
+              ref: parameters/declarants_list
+    crex:
+      - name: nombreDeclarationTraitee
+        description: Nombre de déclarations traitées
+        ref: steps/step-634/parameters/outputs/nombreDeclarationTraitee
+      - name: nombreDeclarationIgnoree
+        description: Nombre de déclarations ignorées
+        ref: steps/step-634/parameters/outputs/nombreDeclarationIgnoree
+      - name: nbContratCree
+        description: Nombre de contrats créés
+        ref: steps/step-634/parameters/outputs/nbContratCree
+      - name: nbContratModifie
+        description: Nombre de contrats modifiés
+        ref: steps/step-634/parameters/outputs/nbContratModifie

@@ -1,0 +1,226 @@
+{
+  "codeEtat" : "R",
+  "effetDebut" : "%%LAST_YEAR%%-12-06T11:53:52.241+0000",
+  "idDeclarant" : "0000401166",
+  "carteTPaEditerOuDigitale" : "0",
+  "idTrigger" : "675180c82ae8b251f59080c6",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2024-12-06T11:53:52.241+0000",
+  "userCreation" : "Renewal",
+  "dateModification" : "2024-12-05T11:07:07.499+0000",
+  "userModification" : "GenerationDroitTP",
+  "beneficiaire" : {
+    "dateNaissance" : "20000603",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1710176231017",
+    "cleNirBeneficiaire" : "01",
+    "nirOd1" : "1710176231017",
+    "cleNirOd1" : "01",
+    "numeroPersonne" : "73792",
+    "dateAdhesionMutuelle" : "2024/03/15",
+    "dateDebutAdhesionIndividuelle" : "2024/03/15",
+    "affiliation" : {
+      "nom" : "LOLO",
+      "nomPatronymique" : "LOLO",
+      "nomMarital" : "LOLO",
+      "prenom" : "LOLA",
+      "civilite" : "MME",
+      "periodeDebut" : "2024/03/15",
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "751",
+      "centreOD1" : "",
+      "hasMedecinTraitant" : false,
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "Assuré principal"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "Madame LOLO LOLA",
+        "ligne2" : "",
+        "ligne3" : "",
+        "ligne4" : "123 RUE DU PARADIS",
+        "ligne5" : "",
+        "ligne6" : "75007 PARIS",
+        "ligne7" : "",
+        "codePostal" : "75007",
+        "telephone" : "06 00 00 00 00",
+        "email" : "meLOLO@gmail.com",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "12345678",
+    "dateSouscription" : "2024/03/15",
+    "type" : "B",
+    "nomPorteur" : "LOLO",
+    "prenomPorteur" : "LOLA",
+    "civilitePorteur" : "MME",
+    "numeroAdherent" : "12345678",
+    "numeroAdherentComplet" : "12345678",
+    "qualification" : "B",
+    "rangAdministratif" : "1",
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "1",
+    "lienFamilial" : "A",
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "6000118783",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "00GENERALI",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1"
+  },
+  "domaineDroits" : [
+    {
+      "code" : "HOSP",
+      "codeProduit" : "1472_DELTA_01_P01",
+      "modeAssemblage" : "DELTA",
+      "codeGarantie" : "GT_6476",
+      "libelleGarantie" : "LIBERTE L1 OPTIQUE AUDIO DENTAIRE",
+      "codeRenvoi" : "1",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2024/03/15",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "HOSP-010",
+      "noOrdreDroit" : 1,
+      "categorie" : "HOSP",
+      "formulaMask" : "100% FR",
+      "naturePrestation" : "HOSPITALISATION",
+      "naturePrestationOnline" : "HOSPITALISATION",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "1472_DELTA_01",
+      "versionOffre" : "2023_janv_01.17",
+      "codeOc" : "BALOO",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "%%LAST_YEAR%%/07/03",
+        "periodeFin" : "%%LAST_YEAR%%/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "M",
+        "periodeFermetureDebut" : "%%CURRENT_YEAR%%/01/01",
+        "periodeFermetureFin" : "%%LAST_YEAR%%/12/31"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "%%LAST_YEAR%%/07/03",
+        "periodeFin" : "%%LAST_YEAR%%/12/31",
+        "motifEvenement" : "",
+        "periodeFermetureDebut" : "%%CURRENT_YEAR%%/01/01"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "AL",
+            "libelle" : "AL"
+          }
+        },
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "%%LAST_YEAR%%-01-01"
+      }
+    },
+    {
+      "code" : "PHOR",
+      "codeProduit" : "1472_DELTA_01_P01",
+      "modeAssemblage" : "DELTA",
+      "codeGarantie" : "GT_6476",
+      "libelleGarantie" : "LIBERTE L1 OPTIQUE AUDIO DENTAIRE",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "%%LAST_YEAR%%/03/15",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "PHOR-010",
+      "noOrdreDroit" : 2,
+      "categorie" : "PHOR",
+      "formulaMask" : "100% FR",
+      "naturePrestation" : "MEDECINE",
+      "naturePrestationOnline" : "MEDECINE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "1472_DELTA_01",
+      "versionOffre" : "2023_janv_01.17",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "%%LAST_YEAR%%/07/03",
+        "periodeFin" : "%%LAST_YEAR%%/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "M",
+        "periodeFermetureDebut" : "%%CURRENT_YEAR%%/01/01",
+        "periodeFermetureFin" : "%%LAST_YEAR%%/12/31"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "%%LAST_YEAR%%/07/03",
+        "periodeFin" : "%%LAST_YEAR%%/12/31",
+        "motifEvenement" : "",
+        "periodeFermetureDebut" : "%%CURRENT_YEAR%%/01/01"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "%%LAST_YEAR%%-01-01"
+      }
+    }
+  ],
+  "etatSuspension" : "-1"
+}

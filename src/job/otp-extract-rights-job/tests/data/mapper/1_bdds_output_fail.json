@@ -1,0 +1,10 @@
+{
+  "1-1-2-1": {
+    "code_erreur": "ERREUR_BDDS",
+    "libelle_erreur": "NO_BENEF"
+  },
+  "1-2-2-1": {
+    "code_erreur": "ERREUR_BDDS",
+    "libelle_erreur": "NO_BENEF"
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "02059235",
+  "numeroAdherent": "02059235",
+  "numeroAdherentComplet": "02059235",
+  "dateSouscription": "2018/01/01",
+  "type": "B",
+  "nomPorteur": "VARON",
+  "prenomPorteur": "JEAN",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "00219181",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "001",
+  "numeroExterneContratIndividuel": "02059235",
+  "gestionnaire": "000452433",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateNaissance": "19611107",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1611195277061",
+      "cleNirBeneficiaire": "82",
+      "nirOd1": "1611195277061",
+      "cleNirOd1": "82",
+      "numeroPersonne": "2125259",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2015/05/25",
+      "dateDebutAdhesionIndividuelle": "2018/01/01",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "VARON",
+        "nomPatronymique": "VARON",
+        "nomMarital": "VARON",
+        "prenom": "JEAN",
+        "civilite": "M",
+        "periodeDebut": "2015/05/25",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "921",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "Monsieur VARON JEAN",
+          "ligne3": "APT C15",
+          "ligne4": "1 RUE JACQUES MARTY",
+          "ligne6": "32000 MAUVE",
+          "codePostal": "32000",
+          "email": "jeans@gmail.com",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "BLUE_001_MULTIPLE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDE-02A-100",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "ONMETQUOIREYNALD",
+                          "prioriteDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2021/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "BLUE_001_MULTIPLE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "CSTE-02A-100",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "ONMETQUOIREYNALD",
+                          "prioriteDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2021/01/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2021/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

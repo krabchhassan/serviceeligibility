@@ -1,0 +1,221 @@
+{
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "000ER00693",
+  "numero" : "1139211",
+  "numeroExterne" : "1139211",
+  "numeroAdherent" : "1139211",
+  "numeroAdherentComplet" : "1139211",
+  "dateSouscription" : "2022-03-01",
+  "dateResiliation" : "%%CURRENT_YEAR%%-01-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2022-03-01",
+      "fin" : "2024-12-31"
+    }
+  ],
+  "periodesContratCMUOuvert" : [
+  ],
+  "critereSecondaireDetaille" : "",
+  "critereSecondaire" : "",
+  "gestionnaire" : "ER00019",
+  "contexteTiersPayant" : {
+    "periodesDroitsCarte" : {
+      "debut" : "%%CURRENT_YEAR%%-01-01",
+      "fin" : "%%CURRENT_YEAR%%-01-01"
+    },
+    "isCartePapierAEditer" : false,
+    "isCarteDematerialisee" : true,
+    "isCartePapier" : true
+  },
+  "contratCollectif" : {
+    "numero" : "79414818959408",
+    "numeroExterne" : "2274326400000Q95BASE",
+    "identifiantCollectivite" : "794148189",
+    "raisonSociale" : "CONCEPTOLE INDUSTRIE (EX CONCEPTOLE)",
+    "siret" : "79414818900028",
+    "groupePopulation" : "00"
+  },
+  "qualification" : "B",
+  "ordrePriorisation" : 1,
+  "periodesSuspension" : [
+  ],
+  "assures" : [
+    {
+      "identite" : {
+        "dateNaissance" : "19971110",
+        "rangNaissance" : 1,
+        "nir" : {
+          "code" : "2971191027239",
+          "cle" : "62"
+        },
+        "refExternePersonne" : "1139211",
+        "numeroPersonne" : "111537",
+        "affiliationsRO" : [
+          {
+            "rattachementRO" : {
+              "codeCaisse" : "342",
+              "codeRegime" : "01",
+              "codeCentre" : ""
+            },
+            "periode" : {
+              "debut" : "2022-03-01"
+            },
+            "nir" : {
+              "code" : "2971191027239",
+              "cle" : "62"
+            }
+          },
+          {
+            "rattachementRO" : {
+              "codeCaisse" : "342",
+              "codeRegime" : "01",
+              "codeCentre" : ""
+            },
+            "periode" : {
+              "debut" : "2022-01-01",
+              "fin" : "2022-02-28"
+            },
+            "nir" : {
+              "code" : "2971191027239",
+              "cle" : "62"
+            }
+          }
+        ]
+      },
+      "data" : {
+        "nom" : {
+          "nomFamille" : "JANOH",
+          "nomUsage" : "JANOH",
+          "prenom" : "SHIRLEY",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "Madame JANOH SHIRLEY",
+          "ligne2" : "",
+          "ligne3" : "CARNON PLAGE",
+          "ligne4" : "57 AV GRASSION CIBRAND",
+          "ligne5" : "",
+          "ligne6" : "34130 MAUGUIO",
+          "ligne7" : "",
+          "codePostal" : "34130"
+        },
+        "contact" : {
+          "email" : "shirleyag34@gmail.col"
+        },
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "111538",
+            "nom" : {
+              "nomFamille" : "JANOH",
+              "nomUsage" : "JANOH",
+              "prenom" : "SHIRLEY",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame JANOH SHIRLEY",
+              "ligne2" : "",
+              "ligne3" : "CARNON PLAGE",
+              "ligne4" : "57 AV GRASSION CIBRAND",
+              "ligne5" : "",
+              "ligne6" : "34130 MAUGUIO",
+              "ligne7" : "",
+              "codePostal" : "34130"
+            },
+            "rib" : {
+              "iban" : "FR7613506100008511583600041",
+              "bic" : "AGRIFRPP835"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-03-01",
+              "fin" : "2024-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "111538",
+            "dematerialisation" : {
+              "email" : "shirleyag34@gmail.col",
+              "isDematerialise" : true
+            },
+            "nom" : {
+              "nomFamille" : "JANOH",
+              "nomUsage" : "JANOH",
+              "prenom" : "SHIRLEY",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame JANOH SHIRLEY",
+              "ligne2" : "",
+              "ligne3" : "CARNON PLAGE",
+              "ligne4" : "57 AV GRASSION CIBRAND",
+              "ligne5" : "",
+              "ligne6" : "34130 MAUGUIO",
+              "ligne7" : "",
+              "codePostal" : "34130"
+            },
+            "periode" : {
+              "debut" : "2022-03-01",
+              "fin" : "2024-12-31"
+            }
+          }
+        ]
+      },
+      "rangAdministratif" : 1,
+      "dateAdhesionMutuelle" : "2022-03-01",
+      "dateDebutAdhesionIndividuelle" : "2022-03-01",
+      "dateRadiation" : "2024-12-31",
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2022-03-01"
+            },
+            "isTeletransmission" : true
+          }
+        ],
+        "dematerialisation" : {
+          "email" : "shirleyag34@gmail.col",
+          "isDematerialise" : true
+        }
+      },
+      "periodes" : [
+        {
+          "debut" : "2022-03-01",
+          "fin" : "2024-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+      ],
+      "regimesParticuliers" : [
+      ],
+      "situationsParticulieres" : [
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      },
+      "droits" : [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2020-03-10"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur" : true
+    }
+  ],
+  "isContratIndividuel" : false
+}

@@ -1,0 +1,1338 @@
+{
+  "properties": {
+    "_class": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "amc": {
+      "properties": {
+        "idDeclarant": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "libelle": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    },
+    "audit": {
+      "properties": {
+        "dateEmission": {
+          "type": "date"
+        }
+      }
+    },
+    "contrats": {
+      "type": "nested",
+      "properties": {
+        "codeEtat": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "data": {
+          "properties": {
+            "adresse": {
+              "properties": {
+                "codePostal": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne1": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne2": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne3": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne4": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne5": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne6": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "ligne7": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "contact": {
+              "properties": {
+                "email": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "fixe": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "mobile": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "destinatairesPaiements": {
+              "properties": {
+                "adresse": {
+                  "properties": {
+                    "codePostal": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne1": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne2": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne3": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne4": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne5": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne6": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne7": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "idBeyondDestinatairePaiements": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "idDestinatairePaiements": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "modePaiementPrestations": {
+                  "properties": {
+                    "code": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeMonnaie": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "libelle": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "periode": {
+                      "properties": {
+                        "debut": {
+                          "type": "date"
+                        },
+                        "fin": {
+                          "type": "date"
+                        }
+                      }
+                    }
+                  }
+                },
+                "nom": {
+                  "properties": {
+                    "civilite": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "nomFamille": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "nomUsage": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "prenom": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "raisonSociale": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    }
+                  }
+                },
+                "periode": {
+                  "properties": {
+                    "debut": {
+                      "type": "date"
+                    },
+                    "fin": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "rib": {
+                  "properties": {
+                    "bic": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "iban": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "destinatairesPrestations": {
+              "properties": {
+                "adresse": {
+                  "properties": {
+                    "codePostal": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne1": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne2": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne3": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne4": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne5": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne6": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne7": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "modePaiementPrestations": {
+                  "properties": {
+                    "code": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "codeMonnaie": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "libelle": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "periode": {
+                      "properties": {
+                        "debut": {
+                          "type": "date"
+                        },
+                        "fin": {
+                          "type": "date"
+                        }
+                      }
+                    }
+                  }
+                },
+                "nom": {
+                  "properties": {
+                    "civilite": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "nomFamille": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "nomUsage": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "prenom": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "raisonSociale": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    }
+                  }
+                },
+                "periode": {
+                  "properties": {
+                    "debut": {
+                      "type": "date"
+                    },
+                    "fin": {
+                      "type": "date"
+                    }
+                  }
+                },
+                "rib": {
+                  "properties": {
+                    "bic": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "iban": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "destinatairesRelevePrestations": {
+              "properties": {
+                "adresse": {
+                  "properties": {
+                    "codePostal": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne1": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne2": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne3": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne4": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne5": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne6": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "ligne7": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "dematerialisation": {
+                  "properties": {
+                    "email": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "isDematerialise": {
+                      "type": "boolean"
+                    },
+                    "mobile": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
+                },
+                "idBeyondDestinataireRelevePrestations": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "idDestinataireRelevePrestations": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "nom": {
+                  "properties": {
+                    "civilite": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "nomFamille": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "nomUsage": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "prenom": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    },
+                    "raisonSociale": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        },
+                        "stemmer": {
+                          "type": "text",
+                          "analyzer": "FrenchAnalyzerStemmer"
+                        }
+                      },
+                      "analyzer": "FrenchAnalyzer"
+                    }
+                  }
+                },
+                "periode": {
+                  "properties": {
+                    "debut": {
+                      "type": "date"
+                    },
+                    "fin": {
+                      "type": "date"
+                    }
+                  }
+                }
+              }
+            },
+            "nom": {
+              "properties": {
+                "civilite": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "nomFamille": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256,
+                      "normalizer": "keyword_uppercase"
+                    },
+                    "stemmer": {
+                      "type": "text",
+                      "analyzer": "FrenchAnalyzerStemmer"
+                    }
+                  },
+                  "analyzer": "FrenchAnalyzer"
+                },
+                "nomUsage": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256,
+                      "normalizer": "keyword_uppercase"
+                    },
+                    "stemmer": {
+                      "type": "text",
+                      "analyzer": "FrenchAnalyzerStemmer"
+                    }
+                  },
+                  "analyzer": "FrenchAnalyzer"
+                },
+                "prenom": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256,
+                      "normalizer": "keyword_uppercase"
+                    },
+                    "stemmer": {
+                      "type": "text",
+                      "analyzer": "FrenchAnalyzerStemmer"
+                    }
+                  },
+                  "analyzer": "FrenchAnalyzer"
+                }
+              }
+            }
+          }
+        },
+        "numeroAMCEchange": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroAdherent": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "numeroContrat": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "periodes": {
+          "type": "nested",
+          "properties": {
+            "debut": {
+              "type": "date"
+            },
+            "fin": {
+              "type": "date"
+            }
+          }
+        },
+        "societeEmettrice": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    },
+    "data": {
+      "properties": {
+        "adresse": {
+          "properties": {
+            "codePostal": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne1": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne2": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne3": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne4": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne5": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne6": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "ligne7": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "contact": {
+          "properties": {
+            "email": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "fixe": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "mobile": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "nom": {
+          "properties": {
+            "civilite": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                },
+                "stemmer": {
+                  "type": "text",
+                  "analyzer": "FrenchAnalyzerStemmer"
+                }
+              },
+              "analyzer": "FrenchAnalyzer"
+            },
+            "nomFamille": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                },
+                "stemmer": {
+                  "type": "text",
+                  "analyzer": "FrenchAnalyzerStemmer"
+                }
+              },
+              "analyzer": "FrenchAnalyzer"
+            },
+            "nomUsage": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                },
+                "stemmer": {
+                  "type": "text",
+                  "analyzer": "FrenchAnalyzerStemmer"
+                }
+              },
+              "analyzer": "FrenchAnalyzer"
+            },
+            "prenom": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                },
+                "stemmer": {
+                  "type": "text",
+                  "analyzer": "FrenchAnalyzerStemmer"
+                }
+              },
+              "analyzer": "FrenchAnalyzer"
+            }
+          }
+        }
+      }
+    },
+    "idClientBO": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "identite": {
+      "properties": {
+        "affiliationsRO": {
+          "properties": {
+            "nir": {
+              "properties": {
+                "cle": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "code": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "periode": {
+              "properties": {
+                "debut": {
+                  "type": "date"
+                },
+                "fin": {
+                  "type": "date"
+                }
+              }
+            },
+            "rattachementRO": {
+              "properties": {
+                "codeCaisse": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "codeCentre": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "codeRegime": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "dateNaissance": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "nir": {
+          "properties": {
+            "cle": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "code": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "numeroPersonne": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "rangNaissance": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "refExternePersonne": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "historiqueDateRangNaissance": {
+          "type": "nested",
+          "properties": {
+            "dateNaissance": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "rangNaissance": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "key": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "numeroAdherent": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "services": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "traceId": {
+      "type": "text",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "updateElastic": {
+      "type": "integer",
+      "fields": {
+        "keyword": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    },
+    "societesEmettrices": {
+      "type": "nested",
+      "properties": {
+        "code": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "periodes": {
+          "type": "nested",
+          "properties": {
+            "debut": {
+              "type": "date"
+            },
+            "fin": {
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  }
+}

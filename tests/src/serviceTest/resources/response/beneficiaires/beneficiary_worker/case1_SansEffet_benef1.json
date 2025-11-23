@@ -1,0 +1,140 @@
+{
+  "id": null,
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "54580211001",
+  "contrats": [
+    {
+      "numeroContrat": "54580211001",
+      "data": {
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "nomUsage": "DELMOTTE",
+          "prenom": "JEAN PIERRE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+          "ligne4": "2 RUE DE LA FONTAINE",
+          "ligne6": "11130 SIGEAN",
+          "codePostal": "11130"
+        },
+        "contact": {
+          "email": "jp-delmotte@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "idBeyondDestinatairePaiements": "2122706-0000401166",
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne6": "11130 SIGEAN",
+              "codePostal": "11130"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "idBeyondDestinataireRelevePrestations": "2122706-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne6": "11130 SIGEAN",
+              "codePostal": "11130"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "numeroAdherent": "54580211001",
+      "societeEmettrice": "000ER00693",
+      "periodes": [
+        {
+          "debut": "2023-01-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "societesEmettrices": [
+    {
+      "code": "000ER00693",
+      "periodes": [
+        {
+          "debut": "2023-01-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "identite": {
+    "nir": {
+      "code": "1791062498046",
+      "cle": "46"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "091"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19791006",
+    "rangNaissance": "1",
+    "numeroPersonne": "54580211001-01",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19791006",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": null
+  },
+  "traceId": null,
+  "services": [
+    "ServicePrestation"
+  ],
+  "key": "0000401166-54580211001-01"
+}

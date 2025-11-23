@@ -1,0 +1,309 @@
+{
+    "idDeclarant" : "929405823444",
+    "societeEmettrice" : "Test TEAM BLUE",
+    "numero" : "8343484392",
+    "numeroExterne" : "SLOK4983989",
+    "numeroAdherent" : "83747438",
+    "numeroAdherentComplet" : "TBT83747438",
+    "dateSouscription" : "2020-01-22",
+    "dateResiliation" : "2020-12-31",
+    "apporteurAffaire" : "Courtier & Co",
+    "destinataire" : "EN",
+    "critereSecondaireDetaille" : "CADSUP",
+    "critereSecondaire" : "CAD",
+    "isContratIndividuel" : false,
+    "gestionnaire" : "IGestion",
+    "contratCollectif" : {
+        "numero" : "03094493",
+        "numeroExterne" : "DKMMMS09049304930"
+    },
+    "porteurRisque" : {
+        "code" : "ATR",
+        "libelle" : "Agence Traitement Risque"
+    },
+    "qualification" : "Base",
+    "ordrePriorisation" : "1",
+    "periodesDroitsComptablesOuverts" : [
+        {
+            "debut" : "2019-01-01",
+            "fin" : "2019-12-31"
+        },
+        {
+            "debut" : "2020-01-01",
+            "fin" : "2020-12-31"
+        }
+    ],
+    "assures" : [
+        {
+            "rangAdministratif" : "1",
+            "identite" : {
+                "nir" : {
+                    "code" : "1701062498046",
+                    "cle" : "46"
+                },
+                "dateNaissance" : "19791006",
+                "rangNaissance" : "1",
+                "numeroPersonne" : "288939000",
+                "refExternePersonne" : "7209738ADF"
+            },
+            "data" : {
+                "nom" : {
+                    "nomFamille" : "DELMOTTE",
+                    "nomUsage" : "",
+                    "prenom" : "JEAN PIERRE",
+                    "civilite" : "Mr"
+                },
+                "adresse" : {
+                    "ligne1" : "25 RUE DES LAGRADES",
+                    "ligne2" : "RESIDENCE DES PLATEAUX",
+                    "ligne3" : "59250",
+                    "ligne4" : "HALLUIN",
+                    "ligne5" : "F",
+                    "ligne6" : "FRANCE",
+                    "ligne7" : "CEDEX41",
+                    "codePostal" : "5920"
+                },
+                "contact" : {
+                    "fixe" : "03.21.99.23.64",
+                    "mobile" : "07/35/42/76/77",
+                    "email" : "jp-delmotte@gagamil.coum"
+                },
+              "destinatairesPaiements":
+              [
+                {
+                  "nom": {
+                    "nomFamille": "TEST2",
+                    "nomUsage": "TEST2",
+                    "prenom": "ASSPRIN",
+                    "civilite": "Mme"
+                  },
+                  "rib": {
+                    "iban": "FR7613106001004578945612336",
+                    "bic": "AGRIFRPP831"
+                  },
+                  "modePaiementPrestations": {
+                    "code": "V",
+                    "libelle": "Virement",
+                    "codeMonnaie": "EUR"
+                  },
+                  "periode": {
+                    "debut": "2020-01-01"
+                  }
+                }
+              ],
+              "destinatairesRelevePrestations": [{
+                "nom": {
+                  "nomFamille": "TEST3",
+                  "nomUsage": "TEST3",
+                  "prenom": "ASSPRIN",
+                  "civilite": "Mme"
+                },
+                "adresse": {
+                  "ligne1": "Mme TEST2 ASSPRIN",
+                  "ligne2": "",
+                  "ligne3": "",
+                  "ligne4": "1 GRAND RUE",
+                  "ligne5": "",
+                  "ligne6": "93100 MONTREUIL",
+                  "ligne7": "France",
+                  "codePostal": "93100"
+                },
+                "periode": {
+                  "debut": "2020-01-01"
+                }
+              }
+              ]
+            },
+            "dateAdhesionMutuelle" : "2020-01-01",
+            "dateDebutAdhesionIndividuelle" : "2020-01-01",
+            "numeroAdhesionIndividuelle" : "120320020",
+            "dateRadiation" : "",
+            "digitRelation" : {
+                "isDematerialise" : true,
+                "isTeleTransmission" : true
+            },
+            "modePaiementPrestations" : {
+                "code" : "VIR",
+                "libelle" : "Virement",
+                "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+                "debut" : "2020-01-01",
+                "fin" : "2020-12-31"
+            },
+            "qualite" : {
+                "code" : "B",
+                "libelle" : "BENEFICIAIRE"
+            },
+            "droits" : [
+                {
+                    "code" : "ATRDENT",
+                    "codeAssureur" : "DNT",
+                    "libelle" : "DENTAIRE",
+                    "ordrePriorisation" : "1",
+                    "type" : "BASE",
+                    "periode" : {
+                        "debut" : "2020-01-01",
+                        "fin" : "2020-12-31"
+                    },
+                    "dateAncienneteGarantie" : "2020-01-01",
+                    "carence" : {
+                        "code" : "3M",
+                        "codeDroitRemplacement" : "ATRDT",
+                        "periode" : {
+                            "debut" : "2020-03-01",
+                            "fin" : "2020-12-31"
+                        }
+                    }
+                },
+                {
+                    "code" : "ATRPHAR",
+                    "codeAssureur" : "PHR",
+                    "libelle" : "PHARMACIE",
+                    "ordrePriorisation" : "2",
+                    "type" : "BASE",
+                    "periode" : {
+                        "debut" : "2020-01-01",
+                        "fin" : "2020-12-31"
+                    },
+                    "dateAncienneteGarantie" : "2020-01-01",
+                    "carence" : {
+                        "code" : "0M",
+                        "codeDroitRemplacement" : "ATRPH",
+                        "periode" : {
+                            "debut" : "2020-01-01",
+                            "fin" : "2020-12-31"
+                        }
+                    }
+                },
+                {
+                    "code" : "ATROPTI",
+                    "codeAssureur" : "OPT",
+                    "libelle" : "OPTIQUE",
+                    "ordrePriorisation" : "3",
+                    "type" : "BASE",
+                    "periode" : {
+                        "debut" : "2020-01-01",
+                        "fin" : "2020-12-31"
+                    },
+                    "dateAncienneteGarantie" : "2020-01-01"
+                }
+            ]
+        },
+        {
+            "rangAdministratif" : "2",
+            "identite" : {
+                "nir" : {
+                    "code" : "2770662498046",
+                    "cle" : "56"
+                },
+                "dateNaissance" : "19770224",
+                "rangNaissance" : "1",
+                "numeroPersonne" : "312939015",
+                "refExternePersonne" : "7209144ADF"
+            },
+            "data" : {
+                "nom" : {
+                    "nomFamille" : "DELMOTTE",
+                    "nomUsage" : "HURMAND",
+                    "prenom" : "PERRINNE",
+                    "civilite" : "Mme"
+                },
+                "adresse" : {
+                    "ligne1" : "25 RUE DES LAGRADES",
+                    "ligne2" : "RESIDENCE DES PLATEAUX",
+                    "ligne3" : "59250",
+                    "ligne4" : "HALLUIN",
+                    "ligne5" : "F",
+                    "ligne6" : "FRANCE",
+                    "ligne7" : "CEDEX41",
+                    "codePostal" : "5920"
+                },
+                "contact" : {
+                    "fixe" : "03.21.99.23.64",
+                    "mobile" : "06.24.55.62.81",
+                    "email" : "phurmand@freexx.fre"
+                },
+                "rib" : {
+                    "bic" : "MCCFFRP1",
+                    "iban" : "FR3330002005500000157841Z25"
+                }
+            },
+            "dateAdhesionMutuelle" : "2020-01-01",
+            "dateDebutAdhesionIndividuelle" : "2020-01-01",
+            "numeroAdhesionIndividuelle" : "120320020",
+            "dateRadiation" : "2020-12-31",
+            "digitRelation" : {
+                "isDematerialise" : true,
+                "isTeleTransmission" : true
+            },
+            "modePaiementPrestations" : {
+                "code" : "VIR",
+                "libelle" : "Virement",
+                "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+                "debut" : "2020-01-01",
+                "fin" : "2020-12-31"
+            },
+            "qualite" : {
+                "code" : "B",
+                "libelle" : "BENEFICIAIRE"
+            },
+            "droits" : [
+                {
+                    "code" : "ATRDENT",
+                    "codeAssureur" : "DNT",
+                    "libelle" : "DENTAIRE",
+                    "ordrePriorisation" : "1",
+                    "type" : "BASE",
+                    "periode" : {
+                        "debut" : "2020-01-01",
+                        "fin" : "2020-12-31"
+                    },
+                    "dateAncienneteGarantie" : "2020-01-01",
+                    "carence" : {
+                        "code" : "3M",
+                        "codeDroitRemplacement" : "ATRDT",
+                        "periode" : {
+                            "debut" : "2020-03-01",
+                            "fin" : "2020-12-31"
+                        }
+                    }
+                },
+                {
+                    "code" : "ATRPHAR",
+                    "codeAssureur" : "PHR",
+                    "libelle" : "PHARMACIE",
+                    "ordrePriorisation" : "2",
+                    "type" : "BASE",
+                    "periode" : {
+                        "debut" : "2020-01-01",
+                        "fin" : "2020-12-31"
+                    },
+                    "dateAncienneteGarantie" : "2020-01-01",
+                    "carence" : {
+                        "code" : "0M",
+                        "codeDroitRemplacement" : "ATRPH",
+                        "periode" : {
+                            "debut" : "2020-01-01",
+                            "fin" : ""
+                        }
+                    }
+                },
+                {
+                    "code" : "ATROPTI",
+                    "codeAssureur" : "OPT",
+                    "libelle" : "OPTIQUE",
+                    "ordrePriorisation" : "3",
+                    "type" : "BASE",
+                    "periode" : {
+                        "debut" : "2020-01-01",
+                        "fin" : "2020-12-31"
+                    },
+                    "dateAncienneteGarantie" : "2020-01-01"
+                }
+            ]
+        }
+    ]
+}

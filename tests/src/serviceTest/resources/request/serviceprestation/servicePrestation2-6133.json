@@ -1,0 +1,198 @@
+{
+  "contexteTiersPayant" : {
+    "isCartePapierAEditer" : true,
+    "periodesDroitsCarte" : {
+      "debut" : "2024-01-01",
+      "fin" : "2024-12-31"
+    },
+    "isCarteDematerialisee" : true,
+    "isCartePapier" : true
+  },
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "123456",
+            "idBeyondDestinatairePaiements" : "123456-0000401166",
+            "nom" : {
+              "nomFamille" : "LOLO",
+              "nomUsage" : "LOLO",
+              "prenom" : "LOLA",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur LOLO LOLA",
+              "ligne4" : "52 RUE DU PARADIS",
+              "ligne6" : "38000 GRENOBLE",
+              "codePostal" : "38000"
+            },
+            "rib" : {
+              "bic" : "CMCIFR2AXXX",
+              "iban" : "FR7610278089250002005720169"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "123456",
+            "idBeyondDestinataireRelevePrestations" : "123456-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "LOLO.LOLA@gmail.com"
+            },
+            "nom" : {
+              "nomFamille" : "LOLO",
+              "nomUsage" : "LOLO",
+              "prenom" : "LOLA",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur LOLO LOLA",
+              "ligne4" : "52 RUE DU PARADIS",
+              "ligne6" : "38000 GRENOBLE",
+              "codePostal" : "38000"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "LOLO",
+          "nomUsage" : "LOLO",
+          "prenom" : "LOLA",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur LOLO LOLA",
+          "ligne4" : "52 RUE DU PARADIS",
+          "ligne6" : "38000 GRENOBLE",
+          "codePostal" : "38000"
+        },
+        "contact" : {
+          "fixe" : "06 00 00 00 00",
+          "email" : "LOLO.LOLA@gmail.com"
+        }
+      },
+      "digitRelation" : {
+        "dematerialisation" : {
+          "isDematerialise" : true,
+          "email" : "LOLO.LOLA@gmail.com"
+        },
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2020-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2024-01-01"
+          },
+          "dateAncienneteGarantie" : "2020-01-01"
+        }
+      ],
+      "isSouscripteur" : true,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "1000611111111",
+          "cle" : "91"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1000611111111",
+              "cle" : "91"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "381"
+            },
+            "periode" : {
+              "debut" : "2020-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19590224",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "123456",
+        "refExternePersonne" : "807783"
+      },
+      "dateAdhesionMutuelle" : "2020-01-01",
+      "dateDebutAdhesionIndividuelle" : "2020-01-01",
+      "dateCreation" : "2025-01-31T10:00:04.395Z",
+      "periodes" : [
+        {
+          "debut" : "2020-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    }
+  ],
+  "version" : "6",
+  "periodesSuspension" : [
+
+  ],
+  "periodesContratCMUOuvert" : [
+
+  ],
+  "contratCollectif" : {
+    "identifiantCollectivite" : "388942336",
+    "raisonSociale" : "GRAYFF",
+    "siret" : "38894233600016",
+    "groupePopulation" : "01",
+    "numero" : "38894233645908",
+    "numeroExterne" : "A046C/25"
+  },
+  "traceId" : "679c9f249fda866f32617476",
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "000ER00955",
+  "numero" : "0807784",
+  "numeroExterne" : "0807784",
+  "numeroAdherent" : "0807783",
+  "numeroAdherentComplet" : "0807783",
+  "dateSouscription" : "2020-01-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2020-01-01"
+    }
+  ],
+  "isContratIndividuel" : false,
+  "gestionnaire" : "ER00908",
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

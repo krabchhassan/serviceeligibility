@@ -1,0 +1,150 @@
+{
+	"openapi": "3.0.2",
+	"info": {
+		"title": "Récupération des contrats d'un bénéficiaire",
+		"description": "API specification",
+		"version": "1.0.0"
+	},
+	"paths": {
+		"/v1/contractsByBeneficiary/": {
+			"get": {
+				"operationId": "getContractsByBeneficiary",
+				"description": "Récupération des contrats d'un bénéficiaire",
+				"parameters": [
+					{
+						"name": "beneficiaryId",
+						"in": "query",
+						"description": "Identifiant du bénéficiaire (concaténation du n° d’AMC et du n° de personne séparés pas un tiret)",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"name": "context",
+						"in": "query",
+						"description": "Contexte du contrat",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Liste des contrats du bénéficiaire",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"contracts": {
+											"type": "array",
+											"items": {
+												"$ref": "#/components/schemas/ContractsByBeneficiaryDto"
+											}
+										}
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Not Found. Pas de contrat trouvé pour le bénéficiaire."
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"ContractsByBeneficiaryDto": {
+				"type": "object",
+				"properties": {
+					"insurerId": {
+						"type": "string",
+						"description": "Identifiant de l'assureur"
+					},
+					"contractNumber": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					},
+					"subscriberId": {
+						"type": "string",
+						"description": "Identifiant de l'adhérent"
+					},
+					"issuingCompanyCode": {
+						"type": "string",
+						"description": "Société émettrice du contrat"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"nir": {
+						"$ref": "#/components/schemas/NirDto"
+					},
+					"subscriber": {
+						"$ref": "#/components/schemas/NomDto"
+					},
+					"isIndividualContract": {
+						"type": "boolean",
+						"description": "Identifiant de l'assureur"
+					}
+				}
+			},
+			"Period": {
+				"type": "object",
+				"properties": {
+					"start": {
+						"type": "string",
+						"format": "date",
+						"description": "Début de la période"
+					},
+					"end": {
+						"type": "string",
+						"format": "date",
+						"description": "Fin de la période"
+					}
+				}
+			},
+			"NirDto": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code NIR du bénéficiaire"
+					},
+					"key": {
+						"type": "string",
+						"description": "Clé NIR du bénéficiaire"
+					}
+				}
+			},
+			"NomDto": {
+				"type": "object",
+				"properties": {
+					"lastname": {
+						"type": "string",
+						"description": "Nom de famille du bénéficiaire"
+					},
+					"commonName": {
+						"type": "string",
+						"description": "Nom d'usage du bénéficiaire"
+					},
+					"firstname": {
+						"type": "string",
+						"description": "Prénom du bénéficiaire"
+					},
+					"civility": {
+						"type": "string",
+						"description": "Civilité du bénéficiaire"
+					}
+				}
+			}
+		}
+	},
+	"tags": [{
+		"name": "ServiceEligibility",
+		"description": "API - Récupération des contrats d'un bénéficiaire"
+	}]
+}

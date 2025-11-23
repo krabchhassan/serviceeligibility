@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans" targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+	<xs:include schemaLocation="requete_carteDemat.xsd" />
+	<xs:include schemaLocation="reponse_carteDemat.xsd" />
+</xs:schema>

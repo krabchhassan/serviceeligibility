@@ -1,0 +1,47 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "cache",
+      "description": "Collection enregistrant les informations sur le cache utilisé pour améliorer les performances des microservices."
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Cache": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "cacheName": {
+            "description": "Nom du cache enregistré en mémoire.",
+			"type": "string"
+          },
+          "version": {
+            "description": "Numéro de version du cache. Augmenté à chaque mise à jour.",
+			"type": "integer"
+          },
+          "changeDate": {
+            "description": "Date et heure de la dernière mise à jour du cache.",
+			"type": "string",
+            "format": "date-time"
+          },
+          "userId": {
+            "description": "Adresse email de l'utilisateur ayant déclenché la modification du cache.",
+			"type": "integer"
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "Cache"
+      }
+    }
+  }
+}

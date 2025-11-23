@@ -1,0 +1,207 @@
+{
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "111538",
+            "nom" : {
+              "nomFamille" : "JANOH",
+              "nomUsage" : "JANOH",
+              "prenom" : "SHIRLEY",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame JANOH SHIRLEY",
+              "ligne2" : "",
+              "ligne3" : "CARNON PLAGE",
+              "ligne4" : "57 AV GRASSION CIBRAND",
+              "ligne5" : "",
+              "ligne6" : "34130 MAUGUIO",
+              "ligne7" : "",
+              "codePostal" : "34130"
+            },
+            "rib" : {
+              "bic" : "AGRIFRPP835",
+              "iban" : "FR7613506100008511583600041"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-03-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "111538",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "shirleyag34@gmail.col"
+            },
+            "nom" : {
+              "nomFamille" : "JANOH",
+              "nomUsage" : "JANOH",
+              "prenom" : "SHIRLEY",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame JANOH SHIRLEY",
+              "ligne2" : "",
+              "ligne3" : "CARNON PLAGE",
+              "ligne4" : "57 AV GRASSION CIBRAND",
+              "ligne5" : "",
+              "ligne6" : "34130 MAUGUIO",
+              "ligne7" : "",
+              "codePostal" : "34130"
+            },
+            "periode" : {
+              "debut" : "2022-03-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "JANOH",
+          "nomUsage" : "JANOH",
+          "prenom" : "SHIRLEY",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "Madame JANOH SHIRLEY",
+          "ligne2" : "",
+          "ligne3" : "CARNON PLAGE",
+          "ligne4" : "57 AV GRASSION CIBRAND",
+          "ligne5" : "",
+          "ligne6" : "34130 MAUGUIO",
+          "ligne7" : "",
+          "codePostal" : "34130"
+        },
+        "contact" : {
+          "email" : "shirleyag34@gmail.col"
+        }
+      },
+      "digitRelation" : {
+        "dematerialisation" : {
+          "isDematerialise" : true,
+          "email" : "shirleyag34@gmail.col"
+        },
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2022-03-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2020-03-10"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur" : true,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "2971191027239",
+          "cle" : "62"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2971191027239",
+              "cle" : "62"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "342",
+              "codeCentre" : ""
+            },
+            "periode" : {
+              "debut" : "2022-03-01"
+            }
+          },
+          {
+            "nir" : {
+              "code" : "2971191027239",
+              "cle" : "62"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "342",
+              "codeCentre" : ""
+            },
+            "periode" : {
+              "debut" : "2022-01-01",
+              "fin" : "2022-02-28"
+            }
+          }
+        ],
+        "dateNaissance" : "19971110",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "111537",
+        "refExternePersonne" : "1139211"
+      },
+      "dateAdhesionMutuelle" : "2022-03-01",
+      "dateDebutAdhesionIndividuelle" : "2022-03-01",
+      "periodes" : [
+        {
+          "debut" : "2022-03-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+      ],
+      "regimesParticuliers" : [
+      ],
+      "situationsParticulieres" : [
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    }
+  ],
+  "version" : "6",
+  "periodesSuspension" : [
+  ],
+  "periodesContratCMUOuvert" : [
+  ],
+  "contratCollectif" : {
+    "identifiantCollectivite" : "794148189",
+    "raisonSociale" : "CONCEPTOLE INDUSTRIE (EX CONCEPTOLE)",
+    "siret" : "79414818900010",
+    "groupePopulation" : "00",
+    "numero" : "79414818959408",
+    "numeroExterne" : "2274326400000Q95BASE"
+  },
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "000ER00693",
+  "numero" : "1139211",
+  "numeroExterne" : "1139211",
+  "numeroAdherent" : "1139211",
+  "numeroAdherentComplet" : "1139211",
+  "dateSouscription" : "2022-03-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2022-03-01"
+    }
+  ],
+  "critereSecondaireDetaille" : "",
+  "critereSecondaire" : "",
+  "isContratIndividuel" : false,
+  "gestionnaire" : "ER00019",
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

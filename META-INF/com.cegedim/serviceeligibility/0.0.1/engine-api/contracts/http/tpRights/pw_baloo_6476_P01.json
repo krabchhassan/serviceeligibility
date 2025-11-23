@@ -1,0 +1,78 @@
+{
+  "offerCode": "1472_DELTA_01",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2023_janv_01.17",
+      "assemblyMode": "DELTA",
+      "effectDate": "2024-10-11T08:54:19.576Z",
+      "validityDate": "2023-01-01",
+      "endValidityDate": "2025-07-02",
+      "engineVersion": "112.0",
+      "domains": [
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "HOSPITALISATION"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION",
+            "network": "AL"
+          }
+        },
+        {
+          "domainCode": "PHOR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "MEDECINE"
+          },
+          "tpOnline": {
+            "nature": "MEDECINE"
+          }
+        }
+      ]
+    },
+    {
+      "offerVersionCode": "2024_juil_03.2",
+      "assemblyMode": "DELTA",
+      "effectDate": "2024-10-22T11:55:51.688Z",
+      "validityDate": "2025-07-03",
+      "engineVersion": "112.0",
+      "domains": [
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "HOSPITALISATION"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION",
+            "network": "AL"
+          }
+        },
+        {
+          "domainCode": "PHOR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "MEDECINE"
+          },
+          "tpOnline": {
+            "nature": "MEDECINE"
+          }
+        }
+      ]
+    }
+  ]
+}

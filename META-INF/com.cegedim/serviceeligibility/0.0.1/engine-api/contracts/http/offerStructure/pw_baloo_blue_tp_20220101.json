@@ -1,0 +1,19 @@
+[
+    {
+        "validityDate": "2022-01-01",
+        "endValidityDate": "2023-01-03",
+        "code": 9,
+        "natures": [
+            "OPTIQUE",
+            "AUDIOLOGIE",
+            "MEDECINE",
+            "PHARMACIE",
+            "DENTAIRE",
+            "RADIOLOGIE",
+            "HOSPITALISATION"
+        ],
+        "products": [
+            "SANTE_100"
+        ]
+    }
+]

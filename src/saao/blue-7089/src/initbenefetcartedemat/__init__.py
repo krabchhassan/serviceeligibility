@@ -1,0 +1,1 @@
+from .init_index_benef_et_carte_demat import main

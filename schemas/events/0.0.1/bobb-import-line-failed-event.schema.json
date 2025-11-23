@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Import d'une ligne en échec",
+  "description": "Cet événement sera émis quand l'import d'une ligne de correspondance est en échec",
+  "additionalProperties": false,
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "title": "Nom du fichier",
+      "description": "Précise le nom du fichier qui est importé"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode d'import",
+      "description": "Mode de traitement d'import complet ou bien differentiel"
+    },
+    "codeContractElement": {
+      "type": "string",
+      "title": "Code de l'élément du contrat",
+      "description": "Précise le code de l'élément du contrat"
+    },
+    "codeInsurer": {
+      "type": "string",
+      "title": "Code de l'assureur",
+      "description": "Le code de l'assureur"
+    },
+    "codeAMC": {
+      "type": "string",
+      "title": "AMC",
+      "description": "Code du numéro AMC"
+    },
+    "codeOC": {
+      "type": "string",
+      "title": "Code de l'OC",
+      "description": "Code de l'organisme complementaire"
+    },
+    "codeOffer": {
+      "type": "string",
+      "title": "Code offre",
+      "description": "Précise le code offre du contrat"
+    },
+    "codeProduct": {
+      "type": "string",
+      "title": "Code produit",
+      "description": "Précise le code du produit"
+    },
+    "codeBenefitNature": {
+      "type": "string",
+      "title": "Code nature",
+      "description": "Implémenter le code nature"
+    },
+    "effectiveDate": {
+      "type": "string",
+      "title": "Date effective",
+      "description": "Date début de création du produit"
+    },
+    "to": {
+      "type": "string",
+      "title": "To",
+      "description": "Date de suppression du produit(logique)"
+    },
+    "from": {
+      "type": "string",
+      "title": "From",
+      "description": "Date fin de création du produit"
+    },
+    "ignored": {
+      "type": "string",
+      "title": "Etat GT",
+      "description": "Etat de la garantie technique (true/false)"
+    },
+    "errorMessage": {
+      "type": "string",
+      "title": "Message d'erreur",
+      "description": "Précise le message d'erreur lors de l'import d'une ligne"
+    },
+    "omuId": {
+      "type": "string",
+      "title": "Identifiant de l'omu",
+      "description": "Précise l'identifiant de l'omu"
+    }
+  },
+  "required": [
+    "fileName",
+    "mode",
+    "codeContractElement",
+    "codeInsurer",
+    "codeAMC",
+    "codeOffer",
+    "codeProduct",
+    "codeBenefitNature",
+    "effectiveDate",
+    "from",
+    "ignored",
+    "omuId"
+  ],
+  "$id": "Insurance.serviceeligibility.bobb.import.line.failed.event/0.0.1"
+}

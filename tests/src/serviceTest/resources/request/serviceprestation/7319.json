@@ -1,0 +1,221 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "44269CA001",
+  "numeroExterne": "44269CA001",
+  "numeroAdherent": "44269CA001",
+  "numeroAdherentComplet": "44269CA001",
+  "dateSouscription": "2019-07-01",
+  "periodesContratResponsableOuvert": [],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "001",
+  "gestionnaire": "ALLIANZC",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "2025-01-01",
+      "fin": "2025-12-31"
+    },
+    "college": "ENS",
+    "collectivite": "RS PARTICIPATIONS",
+    "isCartePapierAEditer": true,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "contratCollectif": {
+    "numero": "44269CA000",
+    "numeroExterne": "PI44269CA000"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19610214",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2610225056125",
+          "cle": "89"
+        },
+        "numeroPersonne": 3142036,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "682",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2019-07-01"
+            },
+            "nir": {
+              "code": "2610225056125",
+              "cle": "89"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "SOUSSAN",
+          "nomUsage": "SOUSSAN",
+          "prenom": "NATHALIE",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame SOUSSAN NATHALIE",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "10 RUE DES TULIPES",
+          "ligne5": "",
+          "ligne6": "68100 MULHOUSE",
+          "ligne7": "",
+          "codePostal": "68100"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "3142014",
+            "nom": {
+              "nomFamille": "SOUSSAN",
+              "nomUsage": "SOUSSAN",
+              "prenom": "ROBERT",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur SOUSSAN ROBERT",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "10 RUE DES TULIPES",
+              "ligne5": "",
+              "ligne6": "68100 MULHOUSE",
+              "ligne7": "",
+              "codePostal": "68100"
+            },
+            "rib": {
+              "iban": "FR7610278030010003139994042",
+              "bic": "CMCIFR2AXXX"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2019-07-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "3142014",
+            "dematerialisation": {
+              "email": "qdb.bureau@wanadoo.fr",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "SOUSSAN",
+              "nomUsage": "SOUSSAN",
+              "prenom": "ROBERT",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur SOUSSAN ROBERT",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "10 RUE DES TULIPES",
+              "ligne5": "",
+              "ligne6": "68100 MULHOUSE",
+              "ligne7": "",
+              "codePostal": "68100"
+            },
+            "periode": {
+              "debut": "2024-11-01"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "3142014",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "SOUSSAN",
+              "nomUsage": "SOUSSAN",
+              "prenom": "ROBERT",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur SOUSSAN ROBERT",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "10 RUE DES TULIPES",
+              "ligne5": "",
+              "ligne6": "68100 MULHOUSE",
+              "ligne7": "",
+              "codePostal": "68100"
+            },
+            "periode": {
+              "debut": "2019-07-01",
+              "fin": "2024-10-31"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 2,
+      "dateAdhesionMutuelle": "2019-07-01",
+      "dateDebutAdhesionIndividuelle": "2019-07-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2019-07-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2019-07-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2019-07-01"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2019-07-01"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      },
+      "droits": [
+        {
+          "code": "GT_7319",
+          "libelle": "SOCLE SANTE",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2024-10-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2019-07-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "isContratIndividuel": false
+}

@@ -1,0 +1,18 @@
+<ns5:getInfoBddResponse xmlns:ns2="http://norme.cegedimassurances.com/commun" xmlns:ns3="http://norme.cegedimassurances.com/base_de_droit" xmlns:ns5="http://ws.cegedimassurance.com/basededroit/wsdl">
+    <ns3:header_out>
+        <ns2:headerTech>
+            <ns2:id_serveur>urn:cnda:00000000</ns2:id_serveur>
+            <ns2:date>*</ns2:date>
+            <ns2:id_session_serveur>*</ns2:id_session_serveur>
+            <ns2:id_session_client>UUID070-IDB-21019-0020-CEGEDIM</ns2:id_session_client>
+            <ns2:version_serveur>1</ns2:version_serveur>
+        </ns2:headerTech>
+        <ns2:headerFonc>
+            <ns2:code_contexte>CD-01</ns2:code_contexte>
+        </ns2:headerFonc>
+    </ns3:header_out>
+    <ns3:code_reponse>
+        <ns2:code>6002</ns2:code>
+        <ns2:libelle>Droits du bénéficiaire non ouverts au 25/12/2022</ns2:libelle>
+    </ns3:code_reponse>
+</ns5:getInfoBddResponse>

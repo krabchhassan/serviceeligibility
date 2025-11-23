@@ -1,0 +1,59 @@
+{
+  "loadingComponent": {
+    "title": "Technical Problem",
+    "message": "Please refresh your browser (press F5). If the problem persist, please contact your administrator.",
+    "card": {
+      "title": "Technical Error",
+      "message": "Message",
+      "stack": "Stack"
+    }
+  },
+  "title": "Error",
+  "fields": {
+    "dontInclude": "Choice already existing",
+    "required": "Required",
+    "date": "Invalid date",
+    "dateFormat": "Invalid date format",
+    "oneRequired": "One of the fields marked by {{mark}} is required",
+    "strictLength": "Invalid format: {{length}} characters expected",
+    "maxLength": "Invalid format: {{max}} characters or less",
+    "inBetweenLength": "Invalid format: between {{min}} and {{max}} characters",
+    "maxValue": "Value must be {{max}} or less",
+    "minValue": "Value must be {{min}} or more",
+    "inBetweenValue": "Value must be between {{min}} and {{max}}",
+    "number": "Invalid format: Must be a number",
+    "integer": "Invalid format: Must be an integer",
+    "alpha": "Invalid format: Must be composed of alphanumeric characters",
+    "alphaSP": "Invalid format: Must be composed of alphanumeric characters or : - _",
+    "url": "Invalid format: Must be a valid URL",
+    "email": "Invalid email format",
+    "uniqueCode": "Code must be unique",
+    "uniqueInsurerCode": "Insurer number must be unique",
+    "lowerAlphaNumericUnderscore": "Invalid format: Only characters a-z, numbers or underscore are allowed",
+    "beforeEndDate": "Must be before end date",
+    "afterStartDate": "Must be after start date",
+    "afterOrEqualToday": "Must be after or equal to the current date",
+    "missingCriteria": "Please enter other criteria",
+    "missingAMC": "Please select an AMC",
+    "missingIssuingCompany": "Please select an issuing company",
+    "missingNom": "Please select a surname",
+    "dropzone": {
+      "error": "{{name}} rejected - {{error}}",
+      "INVALID_MIME_TYPE": "Invalid file type",
+      "ABOVE_MAX_SIZE": "File exceeded the maximum size limit"
+    }
+  },
+  "accessDenied": "You are not authorized to access this page.\n If you think this is an error, please contact your administrator.",
+  "importOnError": "An error occur during the import",
+  "importWrongFormat": "Bad file format",
+  "dropzone": {
+    "error": "{{name}} rejected - {{error}}",
+    "INVALID_MIME_TYPE": "Invalid file type",
+    "ABOVE_MAX_SIZE": "File exceeded the maximum size limit"
+  },
+  "download": {
+    "alertTitle": "File download error",
+    "alertBody": "Could not download file at the link provided."
+  },
+  "paramLastExec": "Cannot reactivate a manual setting that has already been executed"
+}

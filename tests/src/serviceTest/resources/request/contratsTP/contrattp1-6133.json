@@ -1,0 +1,305 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits": [
+        {
+          "code": "OPAU",
+          "garanties": [
+            {
+              "codeGarantie": "AXASCCGDIM",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2020/01/01",
+              "produits": [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPAU-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUEAUDIO",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2025/01/01",
+                              "motifEvenement": ""
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2025/01/01",
+                              "periodeFin": "2025/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": [
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "AXASCCGDIM",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2020/01/01",
+              "produits": [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2025/01/01",
+                              "motifEvenement": ""
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2025/01/01",
+                              "periodeFin": "2025/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": [
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2025/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateCreation" : "2025-01-31T09:52:48.841Z",
+      "dateModification" : "2025-01-31T09:52:48.841Z",
+      "dateNaissance" : "19590224",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1000611111111",
+      "cleNirBeneficiaire" : "91",
+      "nirOd1" : "1000611111111",
+      "cleNirOd1" : "91",
+      "numeroPersonne" : "123456",
+      "refExternePersonne" : "807783",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2020/01/01",
+      "dateDebutAdhesionIndividuelle" : "2020/01/01",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "LOLO",
+        "nomPatronymique" : "LOLO",
+        "nomMarital" : "LOLO",
+        "prenom" : "LOLA",
+        "civilite" : "M",
+        "periodeDebut" : "2020/01/01",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "381",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Assuré principal"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Monsieur LOLO LOLA",
+          "ligne4" : "52 RUE DOCTEUR HERMITE",
+          "ligne6" : "38000 GRENOBLE",
+          "codePostal" : "38000",
+          "telephone" : "06 00 00 00 00",
+          "email" : "LOLO.LOLA@gmail.com",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1000611111111",
+            "cle" : "91"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "381"
+          },
+          "periode" : {
+            "debut" : "2020/01/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2020/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "0807783",
+  "numeroAdherent" : "0807783",
+  "numeroAdherentComplet" : "0807783",
+  "dateSouscription" : "2020/01/01",
+  "type" : "B",
+  "nomPorteur" : "LOLO",
+  "prenomPorteur" : "LOLA",
+  "civilitePorteur" : "M",
+  "qualification" : "B",
+  "numeroContratCollectif" : "38894233645908",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "typeConvention" : "IS",
+  "numeroExterneContratIndividuel" : "0807783",
+  "numeroExterneContratCollectif" : "A046C/25",
+  "gestionnaire" : "000ER00955",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "dateCreation" : "2025-01-31T09:52:48.841Z",
+  "dateModification" : "2025-01-31T09:52:48.841Z",
+  "dateConsolidation" : "2025-01-31T09:52:48.841Z",
+  "identifiantCollectivite" : "388942336",
+  "raisonSociale" : "GRAYFF",
+  "siret" : "38894233600016",
+  "groupePopulation" : "01",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2020/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3"
+}

@@ -1,0 +1,42 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "declarationTrace",
+      "description": ""
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "DeclarationTrace": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "originId": {
+		    "type": "string"
+		  },
+          "dateCreation": {
+		    "type": "string",
+            "format": "date-time"
+		  },
+		  "message": {
+		    "type": "string"
+		  },
+		  "status": {
+		    "type": "string"
+		  },
+		  "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "DeclarationTrace"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "offerCode": "CONTRATGROUPEAXA",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2018_janv_01.1",
+      "effectDate": "2023-04-12T13:14:56.672Z",
+      "validityDate": "2018-01-01",
+      "engineVersion": "29.5",
+      "domains": [
+        {
+          "domainCode": "OPAU",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "OPTIQUEAUDIO"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUEAUDIO"
+          }
+        },
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "HOSPITALISATION"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION"
+          }
+        },
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "DENTAIRE"
+          },
+          "tpOnline": {
+            "nature": "DENTAIRE"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+
+    // tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation(project(":lib-next-serviceeligibility-core-services"))
+}
+
+packaging {
+    beyondJib {
+        extraDirectories {
+            paths {
+                path {
+                    from = 'migrations'
+                    into = '/var/beyond/migrations/'
+                }
+            }
+        }
+    }
+}

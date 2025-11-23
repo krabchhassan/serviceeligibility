@@ -1,0 +1,60 @@
+{
+  "index": {
+    "analysis": {
+      "filter": {
+        "french_elision": {
+          "type": "elision",
+          "articles": [
+            "l",
+            "m",
+            "t",
+            "qu",
+            "n",
+            "s",
+            "j",
+            "d",
+            "c",
+            "jusqu",
+            "quoiqu",
+            "lorsqu",
+            "puisqu"
+          ],
+          "articles_case": "true"
+        },
+        "french_stemmer": {
+          "type": "stemmer",
+          "language": "french"
+        }
+      },
+      "analyzer": {
+        "FrenchAnalyzerStemmer": {
+          "filter": [
+            "lowercase",
+            "asciifolding",
+            "french_elision",
+            "french_stemmer"
+          ],
+          "type": "custom",
+          "tokenizer": "standard"
+        },
+        "FrenchAnalyzer": {
+          "filter": [
+            "lowercase",
+            "asciifolding",
+            "french_elision"
+          ],
+          "type": "custom",
+          "tokenizer": "standard"
+        }
+      },
+      "normalizer": {
+        "keyword_uppercase": {
+          "type": "custom",
+          "filter": [
+            "uppercase"
+          ]
+        }
+      }
+    }
+  }
+}

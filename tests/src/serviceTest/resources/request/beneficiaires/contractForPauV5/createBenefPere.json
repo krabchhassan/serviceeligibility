@@ -1,0 +1,43 @@
+{
+	"services": [
+		"Service_TP"
+	],
+	"key": "0000401166-001",
+	"contrats": [
+		{
+			"numeroContrat": "MBA0003",
+			"codeEtat": "V",
+      	    "numeroAdherent": "MBA0001",
+			"data": {
+				"nom": {
+					"nomFamille": "PEHAHUT",
+					"nomUsage": "VAITROUAT",
+					"prenom": "AYMERIC"
+				},
+				"adresse": {},
+				"contact": {}
+			},
+			"numeroAMCEchange": "0000401167"
+		}
+	],
+	"amc": {
+		"idDeclarant": "0000401166"
+	},
+
+	"identite": {
+		"nir": {
+			"code": "1041062498044",
+			"cle": "37"
+		},
+		"historiqueDateRangNaissance": [
+			{
+				"dateNaissance": "19781026",
+				"rangNaissance": "1"
+			}
+		],
+		"affiliationsRO": [],
+		"dateNaissance": "19781026",
+		"rangNaissance": "1",
+		"numeroPersonne": "001"
+	}
+}

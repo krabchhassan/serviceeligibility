@@ -1,0 +1,22 @@
+{
+  "offerCode": "OffreReplace",
+  "offerVersions": [
+    {
+      "offerVersionCode": 1,
+      "validityDate": "2021-01-01",
+      "engineVersion": "EngineVersion1",
+      "domains": [
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+          }
+        }
+      ]
+    }
+  ]
+}

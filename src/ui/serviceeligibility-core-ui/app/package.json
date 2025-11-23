@@ -1,0 +1,116 @@
+{
+  "name": "serviceeligibility-core-ui",
+  "version": "1.0.0",
+  "scaffolding-version": "3.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cp:themes": "cross-env cp node_modules/@beyond-framework/common-uitoolkit-beyond/dist/css/beyond-theme-base.css public/theme-base.css && cp node_modules/@beyond-framework/common-uitoolkit-beyond/dist/css/beyond-theme-dark.css public/theme-dark.css && cp node_modules/@beyond-framework/common-uitoolkit-beyond/dist/css/beyond-theme-ai7.css public/theme-ai7.css  && cp node_modules/@beyond-framework/common-uitoolkit-beyond/dist/beyond_logo.png public/beyond_logo.png",
+    "start": "npm run cp:themes && craco -r @cypress/instrument-cra start",
+    "start:it": "cross-env targetEnv=it targetCluster=dev npm start",
+    "startNoKeycloak": "cross-env keycloakEnabled=false authorizationEnabled=false PORT=3000 npm start",
+    "startHttpServer": "envsub --env authorization_enabled=false --env keycloak_enabled=false ./configuration.json ./build/configuration && cross-env PORT=3000 serve -n build/",
+    "build.prod": "npm run cp:themes && cross-env INLINE_RUNTIME_CHUNK=false craco build",
+    "build.instrument": "npm run cp:themes && cross-env BUILD_PATH='./build-instrument' CYPRESS_INSTRUMENT_PRODUCTION=true INLINE_RUNTIME_CHUNK=false craco -r @cypress/instrument-cra build",
+    "test": "echo 'Remove echo to start testing ->' start-server-and-test startNoKeycloak 3000 cypress:run",
+    "cypress:run": "cypress run --headless --config video=false",
+    "cypress:open": "cypress open",
+    "lint": "eslint --ext .jsx,.js src -f table",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,scss,less,json,yml,md}\"",
+    "ci:prepare": "npm run cp:themes",
+    "ci:run:instrument": "npm run ci:prepare && cross-env keycloakEnabled=false authorizationEnabled=false BROWSER=none craco -r @cypress/instrument-cra start",
+    "ci:test:cypress": "cross-env CYPRESS_BASE_URL=http://localhost:$PORT/#/ CYPRESS_codeCoverage_url=http://localhost:$PORT/__coverage__ server-test ci:run:instrument $PORT cypress:run",
+    "ci:test": "echo 'Remove echo to start testing ->' npm run ci:test:cypress",
+    "ci:build": "unset CI && npm run build.prod"
+  },
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@beyond-framework/common-base-date": "15.10.1",
+    "@beyond-framework/common-uitoolkit-beyond": "15.0.19",
+    "@beyond-framework/common-uitoolkit-icons": "15.0.19",
+    "autobind-decorator": "2.1.0",
+    "chart.js": "2.7.2",
+    "classnames": "2.2.5",
+    "history": "4.6.1",
+    "i18next": "10.2.1",
+    "jquery": "3.3.1",
+    "lodash": "4.17.4",
+    "lodash.get": "4.4.2",
+    "moment": "2.18.1",
+    "moment-timezone": "0.5.14",
+    "prop-types": "15.6.0",
+    "react": "16.14.0",
+    "react-async-component": "1.0.2",
+    "react-chartjs-2": "2.7.4",
+    "react-dom": "16.14.0",
+    "react-redux": "5.0.5",
+    "react-router": "4.1.1",
+    "react-router-dom": "4.1.1",
+    "react-router-redux": "5.0.0-alpha.6",
+    "react-table": "6.9.2",
+    "redux": "3.6.0",
+    "redux-form": "6.7.0",
+    "redux-promise-middleware": "4.2.0",
+    "redux-thunk": "2.2.0",
+    "restful.js": "0.9.6",
+    "whatwg-fetch": "2.0.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "7.16.0",
+    "@craco/craco": "6.3.0",
+    "@cypress/code-coverage": "3.9.7",
+    "@cypress/instrument-cra": "1.4.0",
+    "cross-env": "7.0.3",
+    "cypress": "5.6.0",
+    "cypress-plugin-tab": "1.0.5",
+    "envsub": "4.0.7",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "node-sass": "6.0.1",
+    "prettier": "2.5.1",
+    "react-scripts": "4.0.3",
+    "redux-devtools-extension": "2.13.9",
+    "redux-logger": "3.0.1",
+    "serve": "12.0.1",
+    "start-server-and-test": "1.14.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "overrides": [
+      {
+        "files": [
+          "*.json"
+        ],
+        "options": {
+          "tabWidth": 2,
+          "parser": "json"
+        }
+      }
+    ]
+  },
+  "homepage": "./",
+  "nyc": {
+    "temp-dir": "build/.nyc_output",
+    "report-dir": "build/coverage"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Transformation d'un fichier avec succès",
+  "description": "Cet événement sera déclenché lorsqu'un fichier .csv est transformer en format JSON avec succès.",
+  "additionalProperties": false,
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "title": "Nom du fichier",
+      "description": "Précise le nom du fichier qui est transformer"
+    },
+    "omuId": {
+      "type": "string",
+      "title": "Identifiant de l'omu",
+      "description": "Précise l'identifiant de l'omu"
+    }
+  },
+  "required": [
+    "fileName",
+    "omuId"
+  ],
+  "$id": "Insurance.serviceeligibility.bobb.transformation.file.succeeded.event/0.0.1"
+}

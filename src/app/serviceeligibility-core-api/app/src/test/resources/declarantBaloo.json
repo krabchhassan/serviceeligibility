@@ -1,0 +1,125 @@
+{
+  "_id": "0000401166",
+  "idClientBO": "service-account-test-es16",
+  "nom": "baloo",
+  "libelle": "baloo - Courtag",
+  "numeroPrefectoral": "0000401166",
+  "codePartenaire": "BAL",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "dateCreation": "2022-12-09T13:29:21.353+0000",
+  "userCreation": "reynald.hermez@cegedim-activ.com",
+  "dateModification": "2023-07-25T12:18:29.801+0000",
+  "userModification": "nicolas.rouch@cegedim-activ.com",
+  "pilotages": [
+    {
+      "codeService": "PRIORISATION",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000+0000",
+      "couloirClient": "MPO",
+      "caracteristique": {}
+    },
+    {
+      "codeService": "VISIODROIT",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000+0000",
+      "caracteristique": {
+        "generateFichier": false
+      }
+    },
+    {
+      "codeService": "DCLBEN",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000+0000",
+      "dateSynchronisation": "2000-01-01T00:00:00.000+0000",
+      "couloirClient": "IS",
+      "typeConventionnement": "IS",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0000401166",
+        "versionNorme": "003",
+        "codeClient": "IS"
+      }
+    },
+    {
+      "codeService": "TPG-IS",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000+0000",
+      "couloirClient": "DRF",
+      "typeConventionnement": "AC",
+      "caracteristique": {
+        "numDebutFichier": 3120,
+        "numEmetteur": "3210366",
+        "versionNorme": "003",
+        "codeClient": "DKF",
+        "filtreDomaine": false
+      }
+    },
+    {
+      "codeService": "TPG-SP",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000+0000",
+      "couloirClient": "FES",
+      "typeConventionnement": "AL",
+      "caracteristique": {
+        "numDebutFichier": 31203,
+        "numEmetteur": "3210321032",
+        "versionNorme": "003",
+        "codeClient": "DGG",
+        "filtreDomaine": false
+      }
+    },
+    {
+      "codeService": "ALMV3",
+      "critereRegroupement": "132",
+      "critereRegroupementDetaille": "123",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-03-21T00:00:00.000+0000",
+      "couloirClient": "ddd",
+      "typeConventionnement": "AL",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "3210321",
+        "numClient": "321033",
+        "nomClient": "32103",
+        "versionNorme": "3210",
+        "typeFichier": "XML",
+        "codePerimetre": "32103132",
+        "nomPerimetre": "dsq",
+        "typeGestionnaireBO": "dqsdq",
+        "libelleGestionnaireBO": "3210321q",
+        "codeClient": "32103132",
+        "numExterneContratIndividuel": false,
+        "numExterneContratCollectif": false
+      }
+    },
+    {
+      "codeService": "CARTE-TP",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000+0000",
+      "couloirClient": "FDE",
+      "caracteristique": {
+        "numEmetteur": "3210321032",
+        "codeClient": "DSD",
+        "periodeReferenceDebut": "2023-01-01T00:00:00.000+0000",
+        "periodeReferenceFin": "2023-12-31T00:00:00.000+0000"
+      }
+    },
+    {
+      "codeService": "CARTE-DEMATERIALISEE",
+      "serviceOuvert": true,
+      "dateOuverture": "2022-12-01T00:00:00.000+0000",
+      "couloirClient": "BAL",
+      "caracteristique": {}
+    },
+    {
+      "codeService": "SEL-ROC",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-07-25T00:00:00.000+0000",
+      "caracteristique": {}
+    }
+  ],
+  "transcodageDomainesTP": []
+}

@@ -1,0 +1,63 @@
+{
+  "bool": {
+    "must": [
+      {
+        "nested": {
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "bool": {
+                    "should" : [
+                      {
+                        "match_phrase_prefix" : {
+                          "contrats.data.nom.nomFamille" : {
+                            "query" : "robert",
+                            "slop" : 0,
+                            "max_expansions" : 50,
+                            "zero_terms_query" : "NONE",
+                            "boost" : 1.0
+                          }
+                        }
+                      },
+                      {
+                        "match_phrase_prefix" : {
+                          "contrats.data.nom.nomUsage" : {
+                            "query" : "robert",
+                            "slop" : 0,
+                            "max_expansions" : 50,
+                            "zero_terms_query" : "NONE",
+                            "boost" : 1.0
+                          }
+                        }
+                      }
+                    ],
+                    "adjust_pure_negative": true,
+                    "boost": 1.0
+                  }
+                }
+              ],
+              "adjust_pure_negative": true,
+              "boost": 1.0
+            }
+          },
+          "path": "contrats",
+          "ignore_unmapped": false,
+          "score_mode": "sum",
+          "boost": 1.0,
+          "inner_hits": {
+            "ignore_unmapped": false,
+            "from": 0,
+            "size": 0,
+            "version": false,
+            "seq_no_primary_term": false,
+            "explain": false,
+            "track_scores": false
+          }
+        }
+      }
+    ],
+    "adjust_pure_negative": true,
+    "boost": 1.0
+  }
+}

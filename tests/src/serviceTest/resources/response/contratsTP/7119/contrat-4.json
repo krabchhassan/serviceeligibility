@@ -1,0 +1,678 @@
+{
+    "beneficiaires" : [
+        {
+            "domaineDroits" : [
+                {
+                    "code" : "HOSP",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "HOSP-021-100",
+                                            "formulaMask" : "100% TR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "HOSPITALISATION",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11",
+                                                            "libelleEvenement" : "Renouvellement des droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "RE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "021",
+                                                                "parametres" : [
+                                                                    {
+                                                                        "numero" : "3",
+                                                                        "valeur" : "100"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "AUDI",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "AUDI-021-50",
+                                            "formulaMask" : "50% TR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "AUDIOLOGIE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11",
+                                                            "libelleEvenement" : "Renouvellement des droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "RE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "50",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "021",
+                                                                "parametres" : [
+                                                                    {
+                                                                        "numero" : "3",
+                                                                        "valeur" : "50"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "DENT",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "DENT-010",
+                                            "formulaMask" : " 100% FR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "DENTAIRE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11",
+                                                            "libelleEvenement" : "Renouvellement des droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "RE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "010",
+                                                                "parametres" : [
+
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "PHAR",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "PHAR-010",
+                                            "formulaMask" : " 100% FR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "PHARMACIE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2023/01/01",
+                                                            "periodeFin" : "2023/12/11",
+                                                            "libelleEvenement" : "Renouvellement des droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "RE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2024/01/01",
+                                                            "periodeFin" : "2024/12/11",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "010",
+                                                                "parametres" : [
+
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2023/01/01",
+                                                                    "fin" : "2023/12/11"
+                                                                },
+                                                                {
+                                                                    "debut" : "2024/01/01",
+                                                                    "fin" : "2024/12/11"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "dateRadiation" : "2024/12/11",
+            "dateNaissance" : "19621120",
+            "rangNaissance" : "1",
+            "nirBeneficiaire" : "1621169149648",
+            "cleNirBeneficiaire" : "01",
+            "nirOd1" : "1621169149648",
+            "cleNirOd1" : "01",
+            "numeroPersonne" : "507513",
+            "refExternePersonne" : "82820",
+            "rangAdministratif" : "1",
+            "dateAdhesionMutuelle" : "2023/01/01",
+            "dateDebutAdhesionIndividuelle" : "2023/01/01",
+            "dernierMouvementRecu" : "V",
+            "affiliation" : {
+                "nom" : "7119_02",
+                "nomPatronymique" : "7119_02",
+                "nomMarital" : "7119_02",
+                "prenom" : "PASCAL",
+                "civilite" : "M",
+                "periodeDebut" : "2023/01/01",
+                "periodeFin" : "2024/12/11",
+                "qualite" : "A",
+                "regimeOD1" : "01",
+                "caisseOD1" : "691",
+                "hasMedecinTraitant" : false,
+                "isBeneficiaireACS" : false,
+                "isTeleTransmission" : true,
+                "typeAssure" : "Assuré principal"
+            },
+            "adresses" : [
+                {
+                    "ligne1" : "Monsieur 7119_02 PASCAL",
+                    "ligne3" : "CALURE",
+                    "ligne4" : "70 C RUE PIERRE BRUNIER",
+                    "ligne6" : "69300 CALUIRE",
+                    "codePostal" : "69300",
+                    "telephone" : "06 46 44 26 41",
+                    "email" : "pascal.7119_02@wanadoo.fr",
+                    "typeAdresse" : {
+                        "type" : "AD"
+                    }
+                }
+            ],
+            "affiliationsRO" : [
+                {
+                    "nir" : {
+                        "code" : "1621169149648",
+                        "cle" : "01"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "01",
+                        "codeCaisse" : "691"
+                    },
+                    "periode" : {
+                        "debut" : "2024/10/16"
+                    }
+                },
+                {
+                    "nir" : {
+                        "code" : "1621169149648",
+                        "cle" : "01"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "01",
+                        "codeCaisse" : "691"
+                    },
+                    "periode" : {
+                        "debut" : "2023/01/01",
+                        "fin" : "2020/12/31"
+                    }
+                },
+                {
+                    "nir" : {
+                        "code" : "1621169149648",
+                        "cle" : "01"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "01",
+                        "codeCaisse" : "691"
+                    },
+                    "periode" : {
+                        "debut" : "2021/01/01"
+                    }
+                }
+            ],
+            "teletransmissions" : [
+                {
+                    "periode" : {
+                        "debut" : "2023/01/01"
+                    },
+                    "isTeletransmission" : true
+                }
+            ]
+        }
+    ],
+    "idDeclarant" : "0000401166",
+    "numeroContrat" : "0082820S1",
+    "numeroAdherent" : "0082820S1",
+    "numeroAdherentComplet" : "0082820S1",
+    "dateSouscription" : "2023/01/01",
+    "dateResiliation" : "2024/12/12",
+    "type" : "B",
+    "nomPorteur" : "7119_02",
+    "prenomPorteur" : "PASCAL",
+    "civilitePorteur" : "M",
+    "qualification" : "B",
+    "numeroContratCollectif" : "32893161318899",
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "individuelOuCollectif" : "2",
+    "typeConvention" : "IS",
+    "numeroExterneContratIndividuel" : "0082820S1",
+    "numeroExterneContratCollectif" : "4771409260000MH4571B50B041",
+    "gestionnaire" : "000ER00955",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1",
+    "contratCMUC2S" : "0",
+    "origineDeclaration" : "Event",
+    "suspension" : {
+        "periodesSuspension" : [
+            {
+                "dateDebutSuspension" : "2024/12/12"
+            }
+        ],
+        "etatSuspension" : "1"
+    },
+    "identifiantCollectivite" : "328931613",
+    "raisonSociale" : "ONET SECURITE SH DIRECTION DI",
+    "siret" : "32893161301197",
+    "groupePopulation" : "02",
+    "periodeResponsableOuverts" : [
+        {
+            "debut" : "2023/01/01",
+            "fin" : "2024/12/11"
+        }
+    ],
+    "carteTPaEditerOuDigitale" : "4",
+    "_class" : "com.cegedim.next.serviceeligibility.core.model.domain.contract.ContractTP"
+}

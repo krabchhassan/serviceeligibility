@@ -1,0 +1,195 @@
+{
+  "services": [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key": "0000401166-123456789CT5727-01",
+  "contrats": [
+    {
+      "numeroContrat": "CT5727-01",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2124743",
+            "idBeyondDestinatairePaiements": "2124743-0000401166",
+            "nom": {
+              "nomFamille": "METEQ",
+              "nomUsage": "METEQ",
+              "prenom": "Jean",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame METEQ Jean",
+              "ligne3": "5 RUE DES PETUNIAS",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "rib": {
+              "bic": "AGRIFRPP848",
+              "iban": "FR7630001007941234567890185"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-03-10",
+              "fin": "2021-03-09"
+            }
+          },
+          {
+            "idDestinatairePaiements": "2124743",
+            "idBeyondDestinatairePaiements": "2124743-0000401166",
+            "nom": {
+              "nomFamille": "METEQ",
+              "nomUsage": "METEQ",
+              "prenom": "Jean",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame METEQ Jean",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "rib": {
+              "bic": "AGRIFRPP848",
+              "iban": "FR7630001007941234567890185"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2020-03-09"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2124743",
+            "idBeyondDestinataireRelevePrestations": "2124743-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "METEQ",
+              "nomUsage": "METEQ",
+              "prenom": "Jean",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame METEQ Jean",
+              "ligne3": "5 RUE DES PETUNIAS",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "periode": {
+              "debut": "2020-03-10",
+              "fin": "2021-03-09"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "2124743",
+            "idBeyondDestinataireRelevePrestations": "2124743-0000401166",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "METEQ",
+              "nomUsage": "METEQ",
+              "prenom": "Jean",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame METEQ Jean",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne6": "78160 TATAOOINE",
+              "codePostal": "78160"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2020-03-09"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "METEQ",
+          "nomUsage": "METEQ",
+          "prenom": "Jean",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame METEQ Jean",
+          "ligne3": "5 RUE DES PETUNIAS",
+          "ligne4": "22 CHEMIN DES FLEURS",
+          "ligne6": "78160 TATAOOINE",
+          "codePostal": "78160"
+        },
+        "contact": {
+          "mobile": "",
+          "email": "test@test.com"
+        }
+      },
+      "numeroAdherent": "CT5727-01",
+      "societeEmettrice": "AXA"
+    }
+  ],
+  "idClientBO": "service-account-test-es16",
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "CT5727-01",
+  "identite": {
+    "nir": {
+      "code": "1800692014015",
+      "cle": "94"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1800692014015",
+          "cle": "94"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "781"
+        },
+        "periode": {
+          "debut": "2018-01-01"
+        }
+      },
+      {
+        "nir": {
+          "code": "1800692014015",
+          "cle": "94"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "781"
+        },
+        "periode": {
+          "debut": "2012-01-03"
+        }
+      }
+    ],
+    "dateNaissance": "19730711",
+    "rangNaissance": "1",
+    "numeroPersonne": "123456789CT5727-01",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19730711",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-03-23T13:45:22.751Z"
+  },
+  "traceId": "641c57f2304433743304906e"
+}

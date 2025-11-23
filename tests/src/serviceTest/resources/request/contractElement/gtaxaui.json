@@ -1,0 +1,19 @@
+{
+  "codeInsurer": "AXAUI",
+  "codeAMC": "CASSA",
+  "codeContractElement": "AXASCCGDIM",
+  "label": "AXASCCGDIM",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "CONTRATGROUPEAXA",
+      "codeProduct": "AXASC_CGDIM",
+      "codeAmc": "CONTRAT_GROUPE_AXA",
+      "codeBenefitNature": "",
+      "from": "2018-01-01T06:00:00.000Z",
+      "effectiveDate": "2018-01-01T10:00:00.000Z"
+    }
+  ]
+}
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" 
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_declarant.xsd"/>
+	<xs:complexType name="type_declarant_amc">
+		<xs:complexContent>
+			<xs:extension base="base_de_droit:type_declarant">
+				<xs:sequence>
+					<xs:element name="numeroRNM" minOccurs="1" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="10"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="isInscritDansAnnuaireAMC" minOccurs="1" maxOccurs="1" type="xs:boolean"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

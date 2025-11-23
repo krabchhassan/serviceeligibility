@@ -1,0 +1,13 @@
+workflowDefinition:
+  - code: is-bdds-635
+    name: 635 - Export des bénéficiaires
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU sert à exporter les bénéficiaires à partir des données dans le fichier d'entrée
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-635
+        job: serviceeligibility-batch635-job
+        type: java
+        fileExchangePlatform: true

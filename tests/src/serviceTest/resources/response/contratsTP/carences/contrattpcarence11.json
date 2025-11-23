@@ -1,0 +1,956 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "OPTI",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BASE2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_BASE2",
+                  "codeOffre" : "CAS2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPTI-021-50",
+                      "formulaMask" : "50% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/04/01"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "50",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "50"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "GT_REMP2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "codeCarence" : "CAR001",
+              "codeOrigine" : "GT_BASE2",
+              "codeAssureurOrigine" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_REMP2",
+                  "codeOffre" : "CAS2_REMP",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPTI-021-50",
+                      "formulaMask" : "50% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/03/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/03/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "50",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "50"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BASE2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_BASE2",
+                  "codeOffre" : "CAS2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-021-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/04/01"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "GT_REMP2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "codeCarence" : "CAR001",
+              "codeOrigine" : "GT_BASE2",
+              "codeAssureurOrigine" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_REMP2",
+                  "codeOffre" : "CAS2_REMP",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-021-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/03/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/03/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BASE2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_BASE2",
+                  "codeOffre" : "CAS2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/04/01"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "GT_REMP2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "codeCarence" : "CAR001",
+              "codeOrigine" : "GT_BASE2",
+              "codeAssureurOrigine" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_REMP2",
+                  "codeOffre" : "CAS2_REMP",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/03/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/03/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/03/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BASE2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_BASE2",
+                  "codeOffre" : "CAS2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "APDE",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BASE2",
+              "libelleGarantie" : "santé",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "PDT_BASE2",
+                  "codeOffre" : "CAS2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "APDE-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "APPAREILLAGEDENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/04/01"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/04/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "20041026",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1041062498044",
+      "cleNirBeneficiaire" : "37",
+      "nirOd1" : "1791062498044",
+      "cleNirOd1" : "48",
+      "numeroPersonne" : "MBA0003-002",
+      "refExternePersonne" : "EXT-MBA0003-002",
+      "rangAdministratif" : "2",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2021/01/01",
+      "dateDebutAdhesionIndividuelle" : "2021/01/01",
+      "numeroAdhesionIndividuelle" : "120320020",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "VAITROUAT",
+        "nomPatronymique" : "PEHAHUT",
+        "nomMarital" : "VAITROUAT",
+        "prenom" : "AYMERIC",
+        "civilite" : "Mr",
+        "periodeDebut" : "2021/01/01",
+        "qualite" : "E",
+        "regimeOD1" : "01",
+        "caisseOD1" : "624",
+        "centreOD1" : "0156",
+        "hasMedecinTraitant" : false,
+        "regimeParticulier" : "AM",
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Enfant"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "MR PEHAHUT VAITROUAT CHRISTIAN",
+          "ligne4" : "125 RUE DU CHATEAU",
+          "ligne6" : "59250 HALLUIN",
+          "codePostal" : "59250",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1791062498044",
+            "cle" : "48"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "624",
+            "codeCentre" : "0156"
+          },
+          "periode" : {
+            "debut" : "2022/02/14"
+          }
+        },
+        {
+          "nir" : {
+            "code" : "1791062498044",
+            "cle" : "48"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "595",
+            "codeCentre" : "0123"
+          },
+          "periode" : {
+            "debut" : "2020/01/01",
+            "fin" : "2022/02/13"
+          }
+        }
+      ],
+      "periodesMedecinTraitant" : [
+        {
+          "debut" : "2021/01/01",
+          "fin" : "2021/12/31"
+        },
+        {
+          "debut" : "2020/01/01",
+          "fin" : "2020/12/31"
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2021/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ],
+      "regimesParticuliers" : [
+        {
+          "code" : "AM",
+          "periode" : {
+            "debut" : "2021/01/01",
+            "fin" : "2021/12/31"
+          }
+        }
+      ],
+      "situationsParticulieres" : [
+        {
+          "code" : "ALD",
+          "periode" : {
+            "debut" : "2021/01/01",
+            "fin" : "2021/12/31"
+          }
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "MBA0003",
+  "numeroAdherent" : "MBA0003",
+  "numeroAdherentComplet" : "MBA0003-COMPLET",
+  "dateSouscription" : "2021/01/01",
+  "type" : "B",
+  "nomPorteur" : "VAITROUAT",
+  "prenomPorteur" : "AYMERIC",
+  "civilitePorteur" : "Mr",
+  "qualification" : "B",
+  "numeroContratCollectif" : "03094493",
+  "isContratResponsable" : false,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "1",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "Employés",
+  "critereSecondaireDetaille" : "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel" : "MBA0003",
+  "numeroExterneContratCollectif" : "DKMMMS09049304930",
+  "gestionnaire" : "000ER00693",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "N/A",
+  "raisonSociale" : "N/A",
+  "groupePopulation" : "N/A",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2021/01/01",
+      "fin" : "2021/12/31"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3"
+}

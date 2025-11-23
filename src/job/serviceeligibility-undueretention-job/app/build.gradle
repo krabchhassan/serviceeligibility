@@ -1,0 +1,22 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    implementation("com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+    implementation("com.cegedim.beyond.framework:lib-common-organisation-settings-java:16.0.3") {
+        exclude(group: "org.springframework.cloud", module: "spring-cloud-sleuth-api")
+    }
+    implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+    // Json processing
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+
+    implementation(project(":lib-next-serviceeligibility-core-services"))
+
+}

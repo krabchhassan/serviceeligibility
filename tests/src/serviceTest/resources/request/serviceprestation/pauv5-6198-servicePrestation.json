@@ -1,0 +1,172 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "C00010",
+  "numeroExterne": "C00010",
+  "numeroAdherent": "C00010",
+  "numeroAdherentComplet": "C00010-COMPLET",
+  "dateSouscription": "2021-01-01",
+  "dateResiliation": "2022-08-11",
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2021-01-01",
+      "fin": "2021-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Employés",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodeDroitsCarte": {
+      "debut": "2021-01-01",
+      "fin": "2023-12-31"
+    },
+    "college": "Cadre",
+    "collectivite": "362521879",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "data": {
+        "destinatairesRelevePrestations": [
+          {
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "LEDUC",
+              "prenom": "ANNA",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "ANNA LEDUC",
+              "ligne4": "4 DOMAINE DE BELLEVUE",
+              "ligne6": "97200 FORT-DE-France",
+              "codePostal": "97200"
+            },
+            "periode": {
+              "debut": "2016-01-01"
+            },
+            "idDestinataireRelevePrestations": "6022870a7f82500001e8a7c000",
+            "idBeyondDestinataireRelevePrestations": "6022870a7f82500001e8a7c000-0000452874"
+          }
+        ],
+        "nom": {
+          "nomFamille": "LEDUC",
+          "prenom": "ANNA",
+          "civilite": "Mme"
+        },
+        "adresse": {
+          "ligne1": "ANNA LEDUC",
+          "ligne4": "4 DOMAINE DE BELLEVUE",
+          "ligne6": "97200 FORT-DE-France",
+          "codePostal": "97200"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "jlgohier@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "nom": {
+              "nomFamille": "LEDUC",
+              "prenom": "ANNA",
+              "civilite": "Mme"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2016-01-01"
+            },
+            "idDestinatairePaiements": "6022870a7f82500001e8a7c000",
+            "idBeyondDestinatairePaiements": "6022870a7f82500001e8a7c000-0000452874"
+          }
+        ]
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2016-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_BLUE_2",
+          "codeAssureur": "BALOO",
+          "libelle": "GT1",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2016-01-01",
+            "fin": "2022-08-11"
+          },
+          "dateAncienneteGarantie": "2016-01-01"
+        }
+      ],
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1591275115460",
+          "cle": "46"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1591275115460",
+              "cle": "46"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "601",
+              "codeCentre": "01"
+            },
+            "periode": {
+              "debut": "2016-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19510413",
+        "rangNaissance": "1",
+        "numeroPersonne": "P00012"
+      },
+      "dateAdhesionMutuelle": "2016-01-01",
+      "dateDebutAdhesionIndividuelle": "2016-01-01",
+      "numeroAdhesionIndividuelle": "10004300029647",
+      "periodes": [
+        {
+          "debut": "2016-01-01",
+          "fin": "2022-08-11"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    }
+  ]
+}

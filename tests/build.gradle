@@ -1,0 +1,133 @@
+plugins {
+    id("beyond.gradle.plugins.java-library")
+    id("beyond.gradle.plugins.java-service-tests")
+    id("java")
+}
+
+ext {
+    jacksonVersion = '2.17.2'
+}
+configurations {
+    jaxws
+}
+
+dependencies {
+
+    //////////////////////////////////////////
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    testImplementation('com.cegedim.beyond.framework:lib-beyond-messaging-starter')
+    testImplementation('com.cegedim.beyond.framework:lib-beyond-messaging-test')
+    testImplementation('com.cegedim.beyond.framework:lib-beyond-security-test')
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-cache-starter")
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-cache-redis-starter")
+
+    // Spring
+    testImplementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+    testImplementation("org.springframework.boot:spring-boot-starter-web")
+
+    testImplementation("javax.xml.bind:jaxb-api:2.3.1")
+
+    testImplementation("io.cucumber:cucumber-spring")
+
+    testImplementation("org.junit.platform:junit-platform-suite")
+    testImplementation("org.springframework:spring-web")
+    testImplementation("org.springframework.retry:spring-retry")
+
+    testImplementation("com.google.guava:guava:31.1-jre")
+
+    // Cegedim libs
+    testImplementation(project(":lib-next-serviceeligibility-core-services"))
+    testImplementation(project(":lib-next-serviceeligibility-core-model"))
+    testImplementation(project(":lib-next-serviceeligibility-elastic-services"))
+    testImplementation(project(":lib-common-orga"))
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+    testImplementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+
+
+    // -------------------------
+    // JSON schema creation, ...
+    // -------------------------
+    testImplementation('org.json:json')
+    testImplementation('com.fasterxml.jackson.module:jackson-module-jsonSchema')
+
+    // ----------------
+    // Jackson databind
+    // ----------------
+    testImplementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}")
+    testImplementation("com.fasterxml.jackson.module:jackson-module-jsonSchema:${jacksonVersion}")
+    testImplementation("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
+    testImplementation("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}")
+    testImplementation("com.fasterxml.jackson.core:jackson-core:${jacksonVersion}") // utilisé par opensearch, à changer lors de la migration springboot33 java 21
+    testImplementation("com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}")
+    testImplementation("com.fasterxml.jackson.module:jackson-module-parameter-names:${jacksonVersion}")
+
+    //////
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client")
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-spring-data-opensearch-starter")
+
+    // IDB retour
+    testImplementation("org.apache.cxf.xjc-utils:cxf-xjc-runtime:4.1.0")
+
+    // File
+    testImplementation('commons-io:commons-io')
+
+    // Problem JAXB
+    testImplementation('org.jvnet.jaxb2_commons:jaxb2-basics:0.6.3')
+    // ----
+    // SOAP
+    // ----
+    testImplementation("org.springframework.boot:spring-boot-starter-web-services")
+    testImplementation('com.sun.xml.messaging.saaj:saaj-impl:1.5.3')
+
+    testImplementation("org.awaitility:awaitility")
+
+    jaxws 'com.sun.xml.ws:jaxws-tools:3.0.0',
+            'jakarta.xml.ws:jakarta.xml.ws-api:3.0.0',
+            'jakarta.xml.bind:jakarta.xml.bind-api:3.0.0',
+            'jakarta.activation:jakarta.activation-api:2.0.0',
+            'com.sun.xml.ws:jaxws-rt:3.0.0'
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation group: 'org.xmlunit', name: 'xmlunit-core', version: '2.10.0'
+    implementation group: 'org.xmlunit', name: 'xmlunit-matchers', version: '2.10.0'
+}
+
+// Make job on gitlab more verbose
+tasks.withType(Test.class).configureEach {
+
+    testLogging {
+        events = [
+                org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED,
+                org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED,
+                org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED,
+                org.gradle.api.tasks.testing.logging.TestLogEvent.STANDARD_OUT
+        ]
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.SHORT
+        showExceptions = true
+        showCauses = true
+        showStackTraces = true
+
+        debug {
+            events = [
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.STARTED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.STANDARD_OUT,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.STANDARD_ERROR
+            ]
+            exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+        }
+
+        info {
+            events = [
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.STARTED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.STANDARD_OUT,
+                    org.gradle.api.tasks.testing.logging.TestLogEvent.STANDARD_ERROR
+            ]
+            exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+        }
+    }
+}

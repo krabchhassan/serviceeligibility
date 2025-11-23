@@ -1,0 +1,89 @@
+{
+  "_id" : "0000452433",
+  "idClientBO" : "helene.razouls@cegedim-activ.com",
+  "nom" : "AXA CONTRAT GROUPE",
+  "libelle" : "AXA CONTRAT GROUPE",
+  "numeroPrefectoral" : "0000452433",
+  "codePartenaire" : "ICG",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "dateModification" : "2020-08-03T08:48:52.936Z",
+  "userModification" : "helene.razouls@cegedim-activ.com",
+  "pilotages" : [
+    {
+      "codeService" : "VISIODROIT",
+      "serviceOuvert" : false,
+      "dateOuverture" : "2017-12-31T00:00:00.000Z",
+      "caracteristique" : {
+        "codeComptable" : "99999",
+        "generateFichier" : true
+      }
+    },
+    {
+      "codeService" : "SEL-TP",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-11-30T00:00:00.000Z",
+      "caracteristique" : {
+
+      }
+    },
+    {
+      "codeService" : "DCLBEN",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2017-12-31T00:00:00.000Z",
+      "couloirClient" : "!is",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0000452433",
+        "versionNorme" : "003",
+        "codeClient" : "IS"
+      }
+    },
+    {
+      "codeService" : "TPG-IS",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2017-12-31T00:00:00.000Z",
+      "couloirClient" : "IS",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0000452433",
+        "versionNorme" : "V02",
+        "codeClient" : "IS",
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "TPG-SP",
+      "serviceOuvert" : false,
+      "caracteristique" : {
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "CARTE-TP",
+      "serviceOuvert" : false,
+      "dateOuverture" : "2017-12-31T00:00:00.000Z",
+      "couloirClient" : "IMO",
+      "caracteristique" : {
+        "numEmetteur" : "0000733931",
+        "codeClient" : "IMO",
+        "periodeReferenceDebut" : "2017-12-31T00:00:00.000Z",
+        "periodeReferenceFin" : "2018-12-30T00:00:00.000Z"
+      }
+    },
+    {
+      "codeService" : "CARTE-DEMATERIALISEE",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-04-30T00:00:00.000Z",
+      "couloirClient" : "ICG",
+      "caracteristique" : {
+
+      }
+    }
+  ],
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.entity.Declarant"
+}

@@ -1,0 +1,230 @@
+{
+  "idDeclarant": "0097810998",
+  "societeEmettrice": "Test Blue",
+  "numero": "contrat01",
+  "numeroExterne": "contrat01-externe",
+  "numeroAdherent": "contrat01",
+  "numeroAdherentComplet": "contrat01-complet",
+  "dateSouscription": "2021-01-22",
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2021-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "debut": "2021-01-01"
+    }
+  ],
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "qualification": "Base",
+  "ordrePriorisation": "1",
+  "periodesDroitsComptables": [
+    {
+      "periode": {
+        "debut": "2021-01-01"
+      },
+      "etat": "Ouverture"
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Employés",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodeDroitsCarte": {
+      "debut": "2021-01-01",
+      "fin": "2023-12-31"
+    },
+    "college": "Cadre",
+    "collectivite": "362521879",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1800531001001",
+          "cle": "92"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1800531001001",
+              "cle": "92"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19800515",
+        "rangNaissance": "1",
+        "numeroPersonne": "123456789",
+        "refExternePersonne": "7909738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "EUDES",
+          "nomUsage": null,
+          "prenom": "Jean",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "Mr EUDES Jean",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "420 rue des Lilas",
+          "ligne5": "",
+          "ligne6": "31000 Toulouse",
+          "ligne7": "FRANCE",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "0404040404",
+          "mobile": "0606060606",
+          "email": "JeanEudes@mail.ca"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-contrat01-01",
+            "nom": {
+              "nomFamille": "EUDES-DP01",
+              "nomUsage": "EUDES-DP01",
+              "prenom": "Jean-DP01",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "Mr EUDES Jean - DP01",
+              "ligne2": "DP01",
+              "ligne3": "",
+              "ligne4": "420 rue des Lilas",
+              "ligne5": "",
+              "ligne6": "31000 Toulouse",
+              "ligne7": "FRANCE",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z21"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-01-02"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-contrat01-02",
+            "nom": {
+              "nomFamille": "EUDES-DRP02",
+              "nomUsage": "EUDES-DRP02",
+              "prenom": "Jean-DRP02",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "Mr EUDES Jean - DRP02",
+              "ligne2": "DRP02",
+              "ligne3": "",
+              "ligne4": "420 rue des Lilas",
+              "ligne5": "",
+              "ligne6": "31000 Toulouse",
+              "ligne7": "FRANCE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "dematerialisation": {
+              "isDematerialise": "true",
+              "email": "test@test.com",
+              "mobile": "0600000000"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2021-01-01",
+      "dateDebutAdhesionIndividuelle": "2021-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dateRadiation": null,
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": "true",
+          "email": "JeanEudes@mail.ca",
+          "mobile": "0707070707"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2021-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2021-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "droits": [
+        {
+          "code": "KC_PlatineBase",
+          "codeAssureur": "KLESIA_CARCEPT",
+          "libelle": "KC_PlatineBase",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2021-01-01"
+          },
+          "dateAncienneteGarantie": "2021-01-01"
+        }
+      ]
+    }
+  ]
+}

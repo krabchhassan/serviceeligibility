@@ -1,0 +1,85 @@
+{
+  "_id" : "0000401166",
+  "idClientBO" : "service-account-test-es16",
+  "nom" : "BALOO",
+  "libelle" : "BALOO",
+  "siret" : "123456789",
+  "numeroPrefectoral" : "0000401166",
+  "numero": "0097810998",
+  "codePartenaire" : "BAL",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "pilotages" : [
+
+  ],
+  "transcodageDomainesTP" : [
+    {
+      "domaineSource" : "OPAU",
+      "domainesCible" : [
+        "OPTI",
+        "AUDI"
+      ]
+    },
+    {
+      "domaineSource" : "PHCN",
+      "domainesCible" : [
+        "PHAR"
+      ]
+    }
+  ],
+  "conventionTP" : [
+    {
+      "reseauSoin" : "KA",
+      "domaineTP" : "DENT",
+      "conventionCible" : "VM",
+      "concatenation" : false,
+      "dateDebut" : "2019-12-31T23:00:00.000Z",
+      "dateFin" : "2020-01-01T00:00:00.000Z",
+      "isConventionConcatenable" : false
+    },
+    {
+      "reseauSoin" : "KA",
+      "conventionCible" : "IT",
+      "concatenation" : false,
+      "dateDebut" : "2019-12-31T23:00:00.000Z",
+      "isConventionConcatenable" : false
+    },
+    {
+      "reseauSoin" : "CB",
+      "domaineTP" : "COSP",
+      "conventionCible" : "AL",
+      "concatenation" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "dateFin" : "2021-01-01T00:00:00.000Z",
+      "isConventionConcatenable" : false
+    },
+    {
+      "reseauSoin" : "IT",
+      "domaineTP" : "HOSP",
+      "conventionCible" : "CB",
+      "concatenation" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "dateFin" : "2019-12-31T00:00:00.000Z",
+      "isConventionConcatenable" : false
+    },
+    {
+      "reseauSoin" : "IT",
+      "domaineTP" : "HOSP",
+      "conventionCible" : "CB",
+      "concatenation" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "isConventionConcatenable" : false
+    },
+    {
+      "reseauSoin" : "CB",
+      "domaineTP" : "COSP",
+      "conventionCible" : "AL",
+      "concatenation" : false,
+      "dateDebut" : "2020-06-01T00:00:00.000Z",
+      "dateFin" : "2020-06-30T00:00:00.000Z",
+      "isConventionConcatenable" : false
+    }
+  ]
+}

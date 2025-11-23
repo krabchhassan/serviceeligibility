@@ -1,0 +1,163 @@
+{
+  "codeReponse": {
+    "code": "0000",
+    "libelle": "Autorisation transmise",
+    "detailErreur": []
+  },
+  "droits": [
+    {
+      "declarantAmc": {
+        "nom": "BALOO",
+        "libelle": "BALOO",
+        "siret": "",
+        "numeroPrefectoral": "0000401166",
+        "numeroRNM": "0000401166"
+      },
+      "beneficiaire": {
+        "dateNaissance": "19800605",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "1806954654612",
+        "cleNirBeneficiaire": "82",
+        "nirOd1": "1806954654612",
+        "cleNirOd1": "82",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "numeroPersonne": "00626814",
+        "historiqueAffiliations": [
+          {
+            "nom": "TELGENL",
+            "nomPatronymique": "TELGENL",
+            "nomMarital": "TELGENL",
+            "prenom": "JEAN",
+            "periodeDebut": "1990-11-01",
+            "qualite": "A",
+            "regimeOD1": "01",
+            "caisseOD1": "801",
+            "centreOD1": "0000",
+            "medecinTraitant": "false",
+            "regimeParticulier": "",
+            "isBeneficiaireACS": false
+          }
+        ],
+        "adresses": [
+          {
+            "ligne1": "MONSIEUR TELGENL JEAN",
+            "ligne4": "42 GR",
+            "ligne6": "81200 GRAULHET",
+            "codePostal": "81200",
+            "telephone": "0622413232",
+            "email": "jeantete34@gmail.com"
+          }
+        ]
+      },
+      "domainesDroits": [
+        {
+          "code": "EXTE",
+          "garanties": [
+            {
+              "codeGarantie": "C",
+              "produits": [
+                {
+                  "codeProduit": "C",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "EXTE-050-100",
+                      "periodesDroit": [
+                        {
+                          "typePeriode": "OFFLINE",
+                          "periodeDebut": "2025-03-13",
+                          "periodeFin": "2025-03-13",
+                          "libelleEvenement": "Declaration des droits",
+                          "modeObtention": "M",
+                          "motifEvenement": "DE"
+                        }
+                      ],
+                      "prioritesDroit": [
+                        {
+                          "code": "01",
+                          "libelle": "01",
+                          "typeDroit": "01",
+                          "prioriteBO": "01",
+                          "periodes": [
+                            {
+                              "debut": "2021-07-16",
+                              "fin": "2025-12-31"
+                            }
+                          ]
+                        }
+                      ],
+                      "conventionnements": [
+                        {
+                          "priorite": 1,
+                          "typeConventionnement": {
+                            "code": "IS",
+                            "libelle": "IS"
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2021-07-16",
+                              "fin": "2025-12-31"
+                            }
+                          ]
+                        }
+                      ],
+                      "prestations": [
+                        {
+                          "code": "DEF",
+                          "isEditionRisqueCarte": false,
+                          "formule": {
+                            "numero": "050",
+                            "parametres": [
+                              {
+                                "numero": "6",
+                                "valeur": "100.00"
+                              }
+                            ]
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2021-07-16",
+                              "fin": "2025-12-31"
+                            }
+                          ]
+                        }
+                      ],
+                      "remboursements": [
+                        {
+                          "tauxRemboursement": "00000100",
+                          "uniteTauxRemboursement": "TA",
+                          "periodes": [
+                            {
+                              "debut": "2021-07-16",
+                              "fin": "2025-12-31"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "contrat": {
+        "numero": "00711118",
+        "dateSouscription": "2018-01-01",
+        "nomPorteur": "TELGENL",
+        "prenomPorteur": "JEAN",
+        "civilitePorteur": "M",
+        "numeroAdherent": "00711118",
+        "qualification": "B",
+        "numeroContratCollectif": "",
+        "rangAdministratif": "01",
+        "isContratResponsable": true,
+        "isContratCMU": false,
+        "destinataire": "AD",
+        "individuelOuCollectif": "1",
+        "lienFamilial": "A"
+      }
+    }
+  ]
+}

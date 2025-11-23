@@ -1,0 +1,1 @@
+db.getCollection("trigger").find({ $and : [ { "origine" : "Event" }, { "dateCreation" : { $gt : ISODate("2023-12-07T20:06:53.130+0000") } }, { "dateCreation" : { $lt : ISODate("2023-12-08T00:55:05.377+0000") } } ] })

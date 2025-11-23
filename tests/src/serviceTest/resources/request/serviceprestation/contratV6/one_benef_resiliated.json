@@ -1,0 +1,195 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "93000808",
+  "numeroExterne": "93000808",
+  "numeroAdherent": "93000808",
+  "numeroAdherentComplet": "93000808",
+  "dateSouscription": "2018-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01",
+      "fin": "2024-02-21"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "001",
+  "gestionnaire": "AXA",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "2023-01-01",
+      "fin": "2023-12-31"
+    },
+    "college": "ANI",
+    "collectivite": "FCB",
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "contratCollectif": {
+    "numero": "00219217",
+    "numeroExterne": "00219217",
+    "identifiantCollectivite": "123456",
+    "raisonSociale": "159A",
+    "groupePopulation": "A"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "18690428",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1860598145145",
+          "cle": "24"
+        },
+        "numeroPersonne": 2121639,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "781",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1860598145145",
+              "cle": "24"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "MADALE",
+          "nomUsage": "MADALE",
+          "prenom": "JEAN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MADALE JEAN",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "50 ROI",
+          "ligne5": "",
+          "ligne6": "78510 VILLE",
+          "ligne7": "",
+          "codePostal": "78510"
+        },
+        "contact": {
+          "email": "jean.MADALE@zoo.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2121639",
+            "nom": {
+              "nomFamille": "MADALE",
+              "nomUsage": "MADALE",
+              "prenom": "JEAN",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur MADALE JEAN",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "50 QUAI AUGUSTE ROY",
+              "ligne5": "",
+              "ligne6": "78510 VILLE",
+              "ligne7": "",
+              "codePostal": "78510"
+            },
+            "rib": {
+              "iban": "FR7630006000011234567890189",
+              "bic": "AGRIFRPP848"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2121639",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "MADALE",
+              "nomUsage": "MADALE",
+              "prenom": "JEAN",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur MADALE JEAN",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "50 QUAI AUGUSTE ROY",
+              "ligne5": "",
+              "ligne6": "78510 VILLE",
+              "ligne7": "",
+              "codePostal": "78510"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ],
+        "dematerialisation": {
+          "email": "jean.MADALE@zoo.com",
+          "isDematerialise": true
+        }
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": false,
+  "dateResiliation": "2025-12-25"
+}

@@ -1,0 +1,243 @@
+
+{
+  "_id": "542",
+  "idInterne": 110002300085560,
+  "referenceExterne": null,
+  "codeEtat": "V",
+  "effetDebut": "2014-10-16T00:00:00.000Z",
+  "idDeclarant": "0060005615",
+  "isCarteTPaEditer": true,
+  "dateCreation": "2014-05-20T15:25:58.679Z",
+  "userCreation": "job605",
+  "dateModification": "2014-05-20T15:25:58.679Z",
+  "userModification": "job605",
+  "beneficiaire": {
+    "dateNaissance": "19420928",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1420927052002",
+    "cleNirBeneficiaire": "13",
+    "nirOd1": "1420927052002",
+    "cleNirOd1": "13",
+    "nirOd2": null,
+    "cleNirOd2": null,
+    "insc": null,
+    "numeroPersonne": "1001",
+    "refExternePersonne": "12345678",
+    "affiliation": {
+      "nom": "FONFEC",
+      "nomPatronymique": "FONFEC",
+      "nomMarital": "FONFEC",
+      "prenom": "SOPHIE",
+      "civilite": null,
+      "periodeDebut": "2009/01/01",
+      "periodeFin": null,
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "131",
+      "centreOD1": null,
+      "regimeOD2": "00",
+      "caisseOD2": null,
+      "centreOD2": null,
+      "hasMedecinTraitant": true,
+      "regimeParticulier": "",
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "Assuré"
+    },
+    "adresses": [
+      {
+        "ligne1": "Me FONFEC Sophie",
+        "ligne2": null,
+        "ligne3": null,
+        "ligne4": "1 impasse des lilas",
+        "ligne5": null,
+        "ligne6": "31 000 Toulouse",
+        "ligne7": null,
+        "codePostal": "31000",
+        "pays": null,
+        "telephone": "0123456789",
+        "email": null,
+        "typeAdresse": {
+          "libelle": null,
+          "type": "AD"
+        }
+      },
+      {
+        "ligne1": "Istya Collective",
+        "ligne2": null,
+        "ligne3": null,
+        "ligne4": "1002 rue Louis Blanc",
+        "ligne5": null,
+        "ligne6": "69 000 lyon",
+        "ligne7": null,
+        "codePostal": "69000",
+        "pays": null,
+        "telephone": "0123456789",
+        "email": null,
+        "typeAdresse": {
+          "libelle": null,
+          "type": "EN"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "112345623",
+    "dateSouscription": "2009/01/01",
+    "dateResiliation": null,
+    "type": null,
+    "nomPorteur": "FONFEC",
+    "prenomPorteur": "SOPHIE",
+    "civilitePorteur": "Mme",
+    "numeroAdherent": "000000180",
+    "qualification": "B",
+    "numeroContratCollectif": "8038-01GM",
+    "rangAdministratif": "1",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "destinataire": "",
+    "individuelOuCollectif": "I",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": null,
+    "critereSecondaireDetaille": "CSR1          X",
+    "critereSecondaire": "CR            X",
+    "numeroExterneContratIndividuel": "8037-112345623",
+    "numeroExterneContratCollectif": "8038-CHU Timone",
+    "modePaiementPrestations": "",
+    "gestionnaire": "Istya coll",
+    "groupeAssures": "MGEN",
+    "typeConvention": "MU"
+  },
+  "domaineDroits": [
+    {
+      "code": "PHAR",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "ALM1",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "OP1",
+      "libelleOptionMutualiste": "OPTION1",
+      "codeProduit": "MIAIHM_S01",
+      "libelleProduit": "MIA1",
+      "codeGarantie": "0.MHS0100",
+      "libelleGarantie": "MANCHE",
+      "codeProfil": "REV1",
+      "libelleCodeRenvoi": "SAUF PH2",
+      "referenceCouverture": "refC1",
+      "tauxRemboursement": "100%TM",
+      "isEditable": true,
+      "isSuspension": true,
+      "prioriteDroit": {
+        "code": "3",
+        "libelle": "3",
+        "typeDroit": "TP",
+        "prioriteBO": "3",
+        "nirPrio1": "1420927052002",
+        "prioContratNir1" : "02",
+        "prioDroitNir1": "1",
+        "nirPrio2": "1420927052002",
+        "prioDroitNir2": "2"
+      },
+      "prestations": [
+        {
+          "code": "HC",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "050",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "6",
+                "libelle": null,
+                "valeur": "080.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        },
+        {
+          "code": "PH7",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "050",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "6",
+                "libelle": null,
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        },
+        {
+          "code": "PH4",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "050",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "6",
+                "libelle": null,
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        },
+        {
+          "code": "PH2",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "050",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "6",
+                "libelle": null,
+                "valeur": "060.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2015/01/01",
+        "periodeFin": "2015/12/31",
+        "motifEvenement": "IN",
+        "libelleEvenement": "Déclaration",
+        "dateEvenement": null,
+        "modeObtention": "O",
+        "periodeFinInitiale": null
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "MU",
+            "libelle": "MU"
+          }
+        }
+      ]
+    }
+  ]
+}

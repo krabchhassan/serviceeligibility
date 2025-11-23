@@ -1,0 +1,20 @@
+{
+  "codeAMC": "",
+  "codeInsurer": "BAL_5458",
+  "codeContractElement": "BAL_5458_001",
+  "label": "BAL_5458_001",
+  "productElements": [
+    {
+      "codeOffer": "BAL_5458_001",
+      "codeProduct": "BAL_5458_001_P012",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "2021-01-01T06:00:00.000Z",
+      "effectiveDate": "2021-01-01T00:00:00.000"
+    }
+  ],
+  "ignored": false,
+  "status": "ACTIVE",
+  "origine": "IMPORT",
+  "user": "paul.thiaudiere@cegedim-activ.com"
+}

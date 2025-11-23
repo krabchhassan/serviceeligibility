@@ -1,0 +1,245 @@
+{
+  "assures": [
+    {
+      "data": {
+        "adresse": {
+          "codePostal": "75007",
+          "ligne1": "Madame LOLO LOLA",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "123 RUE DU PARADIS",
+          "ligne5": "",
+          "ligne6": "75007 PARIS",
+          "ligne7": ""
+        },
+        "contact": {
+          "email": "meLOLO@gmail.com",
+          "fixe": "06 00 00 00 00"
+        },
+        "destinatairesPaiements": [
+          {
+            "adresse": {
+              "codePostal": "75007",
+              "ligne1": "Madame LOLO LOLA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "123 RUE DU PARADIS",
+              "ligne5": "",
+              "ligne6": "75007 PARIS",
+              "ligne7": ""
+            },
+            "idDestinatairePaiements": "73792",
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "codeMonnaie": "EUR",
+              "libelle": "Virement"
+            },
+            "nom": {
+              "civilite": "MME",
+              "nomFamille": "LOLO",
+              "nomUsage": "LOLO",
+              "prenom": "LOLA"
+            },
+            "periode": {
+              "debut": "2024-03-15"
+            },
+            "rib": {
+              "bic": "CMCIFR2AXXX",
+              "iban": "FR7610278072120002106960126"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "adresse": {
+              "codePostal": "75007",
+              "ligne1": "Madame LOLO LOLA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "123 RUE DU PARADIS",
+              "ligne5": "",
+              "ligne6": "75007 PARIS",
+              "ligne7": ""
+            },
+            "dematerialisation": {
+              "email": "meLOLO@gmail.com",
+              "isDematerialise": true
+            },
+            "idDestinataireRelevePrestations": "73792",
+            "nom": {
+              "civilite": "MME",
+              "nomFamille": "LOLO",
+              "nomUsage": "LOLO",
+              "prenom": "LOLA"
+            },
+            "periode": {
+              "debut": "2024-12-28"
+            }
+          },
+          {
+            "adresse": {
+              "codePostal": "75007",
+              "ligne1": "Madame LOLO LOLA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "123 RUE DU PARADIS",
+              "ligne5": "",
+              "ligne6": "75007 PARIS",
+              "ligne7": ""
+            },
+            "dematerialisation": {
+              "email": "meLOLO@gmail.com",
+              "isDematerialise": true
+            },
+            "idDestinataireRelevePrestations": "73792",
+            "nom": {
+              "civilite": "MME",
+              "nomFamille": "LOLO",
+              "nomUsage": "LOLO",
+              "prenom": "LOLA"
+            },
+            "periode": {
+              "debut": "2024-12-04",
+              "fin": "2024-12-27"
+            }
+          },
+          {
+            "adresse": {
+              "codePostal": "75007",
+              "ligne1": "Madame LOLO LOLA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "123 RUE DU PARADIS",
+              "ligne5": "",
+              "ligne6": "75007 PARIS",
+              "ligne7": ""
+            },
+            "dematerialisation": {
+              "email": "meLOLO@gmail.com",
+              "isDematerialise": true
+            },
+            "idDestinataireRelevePrestations": "73792",
+            "nom": {
+              "civilite": "MME",
+              "nomFamille": "LOLO",
+              "nomUsage": "LOLO",
+              "prenom": "LOLA"
+            },
+            "periode": {
+              "debut": "2024-03-15",
+              "fin": "2024-12-03"
+            }
+          }
+        ],
+        "nom": {
+          "civilite": "MME",
+          "nomFamille": "LOLO",
+          "nomUsage": "LOLO",
+          "prenom": "LOLA"
+        }
+      },
+      "dateAdhesionMutuelle": "2024-03-15",
+      "dateDebutAdhesionIndividuelle": "2024-03-15",
+      "digitRelation": {
+        "dematerialisation": {
+          "email": "meLOLO@gmail.com",
+          "isDematerialise": true
+        },
+        "teletransmissions": [
+          {
+            "isTeletransmission": true,
+            "periode": {
+              "debut": "2024-03-15"
+            }
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [
+          ],
+          "code": "GT_6476",
+          "codeAssureur": "BALOO",
+          "dateAncienneteGarantie": "2024-03-15",
+          "libelle": "LIBERTE L1 OPTIQUE AUDIO DENTAIRE",
+          "ordrePriorisation": 1,
+          "periode": {
+            "debut": "%%LAST_YEAR%%-03-15"
+          },
+          "type": "B"
+        }
+      ],
+      "identite": {
+        "affiliationsRO": [
+          {
+            "nir": {
+              "cle": "01",
+              "code": "1710176231017"
+            },
+            "periode": {
+              "debut": "2024-03-15"
+            },
+            "rattachementRO": {
+              "codeCaisse": "751",
+              "codeCentre": "",
+              "codeRegime": "01"
+            }
+          }
+        ],
+        "dateNaissance": "20000603",
+        "nir": {
+          "cle": "01",
+          "code": "1710176231017"
+        },
+        "numeroPersonne": 73792,
+        "rangNaissance": 1
+      },
+      "isSouscripteur": true,
+      "numeroAdhesionIndividuelle": "12345678",
+      "periodes": [
+        {
+          "debut": "2024-03-15"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "rangAdministratif": 1,
+      "regimesParticuliers": [
+      ],
+      "situationsParticulieres": [
+      ]
+    }
+  ],
+  "contexteTiersPayant": {
+    "isCarteDematerialisee": true,
+    "isCartePapier": true,
+    "isCartePapierAEditer": true,
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-07-03",
+      "fin": "%%NEXT_YEAR%%-07-02"
+    }
+  },
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "dateSouscription": "2024-03-15",
+  "gestionnaire": "GENERALI",
+  "idDeclarant": "0000401166",
+  "isContratIndividuel": true,
+  "numero": "12345678",
+  "numeroAdherent": "12345678",
+  "numeroAdherentComplet": "12345678",
+  "numeroExterne": "6000118783",
+  "ordrePriorisation": 1,
+  "periodesContratCMUOuvert": [
+  ],
+  "periodesContratResponsableOuvert": [
+  ],
+  "periodesSuspension": [
+  ],
+  "qualification": "B",
+  "societeEmettrice": "000ER00955"
+}

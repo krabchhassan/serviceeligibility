@@ -1,0 +1,70 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.data:spring-data-rest-webmvc")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.data:spring-data-rest-webmvc")
+    compileOnly("org.springframework.kafka:spring-kafka")
+
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
+    // -----------------------------------------------------
+    // Apache: methods for manipulation of Java core classes
+    // -----------------------------------------------------
+    implementation("org.apache.commons:commons-collections4")
+
+
+    // -------------------------
+    // JSON schema creation, ...
+    // -------------------------
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+
+    // ------------------------------------
+    // Handling LocalDate and LocalDateTime
+    // ------------------------------------
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+    // ----------------
+    // Jackson databind
+    // ----------------
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation('com.cegedim.beyond.framework:lib-beyond-mongo-starter')
+    compileOnly ('org.mongodb:mongodb-driver-sync')
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation(project(":lib-next-serviceeligibility-core-services"))
+    implementation(project(":lib-next-serviceeligibility-elastic-services"))
+
+    implementation("com.cegedim.beyond.framework:lib-common-base-validation-services-java")
+    implementation("com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client")
+
+
+    // cache
+    implementation("com.cegedim.beyond.framework:lib-beyond-cache-redis-starter")
+
+    // ----
+    // TEST
+    // ----
+    testImplementation("org.apache.httpcomponents:httpclient")
+
+    testImplementation('com.cegedim.beyond.framework:lib-beyond-mongo-starter')
+    testImplementation ('org.mongodb:mongodb-driver-sync')
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+
+}

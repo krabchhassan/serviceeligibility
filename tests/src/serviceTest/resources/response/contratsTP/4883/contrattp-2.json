@@ -1,0 +1,549 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "OPAU",
+          "garanties" : [
+            {
+              "codeGarantie" : "AXASCCGDIM",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "AXA",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDIM",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPAU-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUEAUDIO",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2022/01/01",
+                              "periodeFin" : "2022/12/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2022/01/01",
+                              "periodeFin" : "2022/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%NEXT_YEAR%%/08/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "AXASCCGDIM",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "AXA",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDIM",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2022/01/01",
+                              "periodeFin" : "2022/12/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2022/01/01",
+                              "periodeFin" : "2022/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%NEXT_YEAR%%/08/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2022/01/01",
+                                  "fin" : "2022/12/31"
+                                },
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%NEXT_YEAR%%/08/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "codeProduit" : "PDT_4883",
+                  "codeOffre" : "OFFER",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-022-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/01/01",
+                              "periodeFin" : "2023/12/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/01/01",
+                              "periodeFin" : "2023/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "022",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "referenceCouverture" : "HOSP-032-120",
+                      "formulaMask" : "120% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2024/01/01",
+                              "periodeFin" : "2024/12/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2024/01/01",
+                              "periodeFin" : "2024/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "120",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "032",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "120"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "20080519",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "2730781111112",
+      "cleNirBeneficiaire" : "21",
+      "nirOd1" : "2730781111112",
+      "cleNirOd1" : "21",
+      "numeroPersonne" : "2124744",
+      "rangAdministratif" : "2",
+      "dateAdhesionMutuelle" : "2012/01/03",
+      "dateDebutAdhesionIndividuelle" : "2018/01/01",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "NOMTEST2",
+        "nomPatronymique" : "NOMTEST2",
+        "nomMarital" : "NOMTEST2",
+        "prenom" : "PRENOMTEST2",
+        "civilite" : "M",
+        "periodeDebut" : "2012/01/03",
+        "periodeFin" : "%%NEXT_YEAR%%/08/01",
+        "qualite" : "E",
+        "regimeOD1" : "01",
+        "caisseOD1" : "781",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Enfant"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Madame NOMTEST PRENOMTEST",
+          "ligne3" : "5 RUE DES PETUNIAS",
+          "ligne4" : "22 CHEMIN DES FLEURS",
+          "ligne6" : "78160 TATAOOINE",
+          "codePostal" : "78160",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "2730781111112",
+            "cle" : "21"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "781"
+          },
+          "periode" : {
+            "debut" : "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2018/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "01599324",
+  "numeroAdherent" : "01599324",
+  "numeroAdherentComplet" : "01599324",
+  "dateSouscription" : "2018/01/01",
+  "dateResiliation" : "%%NEXT_YEAR%%/08/01",
+  "type" : "B",
+  "nomPorteur" : "NOMTEST2",
+  "prenomPorteur" : "PRENOMTEST2",
+  "civilitePorteur" : "M",
+  "qualification" : "B",
+  "numeroContratCollectif" : "00219184",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "001",
+  "numeroExterneContratIndividuel" : "01599324",
+  "gestionnaire" : "000ER00693",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "N/A",
+  "raisonSociale" : "N/A",
+  "groupePopulation" : "N/A",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2020/03/10"
+    },
+    {
+      "debut" : "2018/01/01",
+      "fin" : "2020/03/09"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "0"
+}

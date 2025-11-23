@@ -1,0 +1,20 @@
+{
+  "carences": [
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "DENTAIRE",
+      "startEffectDate": "XXXX-02-01"
+    },
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "OPTIQUE",
+      "startEffectDate": "2020-01-01"
+    }
+  ]
+}

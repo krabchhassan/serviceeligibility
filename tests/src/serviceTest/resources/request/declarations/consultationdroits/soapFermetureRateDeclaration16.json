@@ -1,0 +1,917 @@
+{
+  "_id": "65ea55e79dcb727f1040b139",
+  "referenceExterne": null,
+  "codeEtat": "R",
+  "effetDebut": "2024-03-08T00:03:33.607Z",
+  "idDeclarant": "0782395511",
+  "isCarteTPaEditer": false,
+  "carteTPaEditerOuDigitale": "1",
+  "nomFichierOrigine": "mds_mlup00_P_TFD_03_20240307_AC135.CE041S02.PROQUO-AC135.PROQUO.07000.20240307-204100.OK",
+  "dateCreation": "2024-03-08T00:03:33.607Z",
+  "userCreation": "job606",
+  "dateModification": "2024-03-08T00:03:33.607Z",
+  "userModification": "job606",
+  "versionDeclaration": "V03",
+  "beneficiaire": {
+    "dateNaissance": "19690101",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "2695214521012",
+    "cleNirBeneficiaire": "52",
+    "nirOd1": "2695214521012",
+    "cleNirOd1": "52",
+    "nirOd2": "",
+    "cleNirOd2": "",
+    "insc": null,
+    "numeroPersonne": "00205364",
+    "refExternePersonne": "00205364",
+    "affiliation": {
+      "nom": "FLEUR",
+      "nomPatronymique": "FLEUR",
+      "nomMarital": "FLEUR",
+      "prenom": "FRANCIS",
+      "civilite": null,
+      "periodeDebut": "2022/11/09",
+      "periodeFin": null,
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "841",
+      "centreOD1": null,
+      "regimeOD2": null,
+      "caisseOD2": null,
+      "centreOD2": null,
+      "hasMedecinTraitant": false,
+      "regimeParticulier": "",
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "ASSURE"
+    },
+    "adresses": [
+    ]
+  },
+  "contrat": {
+    "numero": "0000335947",
+    "dateSouscription": "2022/11/09",
+    "dateResiliation": null,
+    "type": null,
+    "nomPorteur": "FLEUR",
+    "prenomPorteur": "FRANCIS",
+    "civilitePorteur": "MME",
+    "numeroAdherent": "00335947",
+    "numeroAdherentComplet": "0000335947",
+    "qualification": "B",
+    "numeroContratCollectif": "7028",
+    "rangAdministratif": "01",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "destinataire": "AD",
+    "individuelOuCollectif": "2",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": null,
+    "typeConvention": "MU",
+    "critereSecondaireDetaille": "",
+    "critereSecondaire": "",
+    "numeroExterneContratIndividuel": "",
+    "numeroExterneContratCollectif": "",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "MUTSOLEIL",
+    "groupeAssures": "RETR",
+    "numeroCarte": null,
+    "editeurCarte": "",
+    "fondCarte": "",
+    "annexe1Carte": "",
+    "annexe2Carte": "",
+    "numAMCEchange": "",
+    "numOperateur": ""
+  },
+  "domaineDroits": [
+    {
+      "code": "PHNO",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "PHNO2A100",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "PHNO-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 1,
+      "categorie": "PHAR",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "PHCO",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "PHCO2A100",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "PHCO-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 2,
+      "categorie": "PHAR",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "PHOR",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "PHOR2A100",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "PHOR-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 3,
+      "categorie": "PHAR",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "MEDE",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "MEDE2ADEF",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "MEDE-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 4,
+      "categorie": "MED",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "SVIL",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "SVIL2ADEF",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "SVIL-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 5,
+      "categorie": "SVIL",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "TRAN",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "TRAN2ADEF",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "TRAN-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 6,
+      "categorie": "TRAN",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "CSTE",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "CSTE2ADEF",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "CSTE-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 7,
+      "categorie": "CSTE",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "DENT",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "DENT99PEC",
+      "libelleCodeRenvoi": "PEC SANTECLAIR SUR www.santeclair.fr/fr/ps",
+      "tauxRemboursement": "PEC",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "DENT-NOSEL",
+      "origineDroits": "",
+      "noOrdreDroit": 8,
+      "categorie": "DENT",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "099",
+            "libelle": null,
+            "parametres": [
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 1,
+          "typeConventionnement": {
+            "code": "SC",
+            "libelle": "SC"
+          }
+        },
+        {
+          "priorite": 2,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "OPTI",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "OPTI99PEC",
+      "libelleCodeRenvoi": "PEC SANTECLAIR SUR www.santeclair.fr/fr/ps",
+      "tauxRemboursement": "PEC",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "OPTI-NOSEL",
+      "origineDroits": "",
+      "noOrdreDroit": 10,
+      "categorie": "OPTI",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "099",
+            "libelle": null,
+            "parametres": [
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 1,
+          "typeConventionnement": {
+            "code": "SC",
+            "libelle": "SC"
+          }
+        },
+        {
+          "priorite": 2,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "AUDI",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "AUDI99PEC",
+      "libelleCodeRenvoi": "PEC SANTECLAIR SUR www.santeclair.fr/fr/ps",
+      "tauxRemboursement": "PEC",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "AUDI-NOSEL",
+      "origineDroits": "",
+      "noOrdreDroit": 12,
+      "categorie": "AUDI",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "099",
+            "libelle": null,
+            "parametres": [
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 1,
+          "typeConventionnement": {
+            "code": "SC",
+            "libelle": "SC"
+          }
+        },
+        {
+          "priorite": 2,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "EXTE",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "EXTE2ADEF",
+      "libelleCodeRenvoi": "REGLE DE CALCUL 02A : MT RC = % TR - MRO",
+      "tauxRemboursement": "00000100",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "TA",
+      "referenceCouverture": "EXTE-02A-100",
+      "origineDroits": "",
+      "noOrdreDroit": 14,
+      "categorie": "EXTE",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "02A",
+            "libelle": null,
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100.00"
+              }
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "HOSP",
+      "codeExterne": null,
+      "libelle": null,
+      "codeExterneProduit": "",
+      "libelleExterne": null,
+      "codeOptionMutualiste": "GTS2000",
+      "libelleOptionMutualiste": "",
+      "codeProduit": "7028A",
+      "libelleProduit": "S2000",
+      "codeGarantie": "GTS2000",
+      "libelleGarantie": "GTS2000",
+      "codeProfil": "HOSP99PEC",
+      "libelleCodeRenvoi": "",
+      "tauxRemboursement": "PEC",
+      "isEditable": true,
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/11/09",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "HOSP-NOSEL",
+      "origineDroits": "",
+      "noOrdreDroit": 15,
+      "categorie": "HOSP",
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "codeRegroupement": null,
+          "libelle": null,
+          "isEditionRisqueCarte": false,
+          "dateEffet": null,
+          "formule": {
+            "numero": "099",
+            "libelle": null,
+            "parametres": [
+            ]
+          },
+          "formuleMetier": null
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/12/28",
+        "periodeFin": "2024/01/28",
+        "motifEvenement": "FE",
+        "libelleEvenement": "Fermeture droits",
+        "modeObtention": "F",
+        "periodeFermetureDebut": "2024/01/29",
+        "periodeFermetureFin": "2024/01/07"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "idOrigine": "65b83e059dcb727f10417c94",
+  "updateElastic": 2,
+  "dateRestitution": "2024/02/02"
+}

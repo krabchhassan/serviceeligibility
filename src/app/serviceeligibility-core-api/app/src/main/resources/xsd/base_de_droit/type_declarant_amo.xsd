@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" 
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_declarant.xsd"/>
+	<xs:complexType name="type_declarant_amo">
+		<xs:complexContent>
+			<xs:extension base="base_de_droit:type_declarant">
+				<xs:sequence>
+					<xs:element name="regime" minOccurs="0" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="2"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="caisse" minOccurs="0" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="3"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="centre" minOccurs="0" maxOccurs="1">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="4"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

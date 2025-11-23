@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "value": {
+        "code": "Qualification",
+        "label": "Qualification",
+        "authorizedValues": "B"
+      },
+      "id": "e7905682-d00e-48dc-9523-0a1f611f8d53"
+    },
+    {
+      "value": {
+        "code": "PeriodesContratCMUOuvert.Code",
+        "label": "Code de contrat CMU ouvert",
+        "authorizedValues": "CMU,CMUP"
+      },
+      "id": "034c3748-e46c-488a-a0f9-3a9abe485717"
+    },
+    {
+      "value": {
+        "code": "PeriodesSuspension.TypeSuspension",
+        "label": "Type de suspension",
+        "authorizedValues": "Provisoire,Definitif"
+      },
+      "id": "cc98ae4a-a786-4a75-b183-529e8d2c09a9"
+    },
+    {
+      "value": {
+        "code": "Assures.RegimesParticuliers.Code",
+        "label": "Code de regime particulier",
+        "authorizedValues": "AM"
+      },
+      "id": "023fee9b-cc37-4daf-8280-7b25ec050621"
+    },
+    {
+      "value": {
+        "code": "Assures.SituationsParticulieres.Code",
+        "label": "Code de situation particuliere",
+        "authorizedValues": "ALD,INV,MAT"
+      },
+      "id": "02e8a1f1-c54b-4b3c-86c6-2fb323fdc5f9"
+    },
+    {
+      "value": {
+        "code": "Assures.Data.DestinatairesPaiements.ModePaiementPrestations.Code",
+        "label": "Mode de paiement prestation",
+        "authorizedValues": "VIR,CHQ,ESP"
+      },
+      "id": "87e65420-f884-425f-bcae-7b813ff17937"
+    },
+    {
+      "value": {
+        "code": "Assures.Qualite.Code",
+        "label": "Code de la qualité",
+        "authorizedValues": "A,C,E,X"
+      },
+      "id": "9d2fb88d-dd33-4451-940b-d032b34c95cf"
+    },
+    {
+      "value": {
+        "code": "PeriodesSuspension.MotifSuspension",
+        "label": "Motif de suspension",
+        "authorizedValues": "NON_PAIEMENT_COTISATIONS, PORTABILITE_NON_JUSTIFIEE"
+      },
+      "id": "acabaf15-3805-46ad-b644-1baf56ba8827"
+    }
+  ]
+}

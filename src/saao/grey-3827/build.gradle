@@ -1,0 +1,7 @@
+plugins {
+    id("beyond.gradle.plugins.python-app")
+}
+
+tasks.named("dockerPrepare") {
+    from("entrypoint.sh")
+}

@@ -1,0 +1,9 @@
+beyond:
+  service: bdds
+  socle: Insurance
+  event:
+    group-id: "bdds-test"
+CSV_DELIMITER: ;
+CSV_OUTPUT_DIRECTORY:
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur

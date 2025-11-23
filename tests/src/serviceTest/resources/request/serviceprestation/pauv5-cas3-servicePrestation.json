@@ -1,0 +1,405 @@
+{
+  "idDeclarant": "0000401166",
+  "numAMCEchange": "0000401182",
+  "societeEmettrice": "000ER00693",
+  "numero": "C00030",
+  "numeroExterne": "C00030",
+  "numeroAdherent": "C00030",
+  "numeroAdherentComplet": "C00030-COMPLET",
+  "dateSouscription": "2021-01-01",
+  "dateResiliation": null,
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2021-01-01",
+      "fin": "2021-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Employés",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodeDroitsCarte": {
+      "debut": "2021-01-01",
+      "fin": "2023-12-31"
+    },
+    "college": "Cadre",
+    "collectivite": "362521879",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "2",
+      "identite": {
+        "nir": {
+          "code": "1041062498044",
+          "cle": "37"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1791062498044",
+              "cle": "48"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2022-02-14"
+            }
+          },
+          {
+            "nir": {
+              "code": "1791062498044",
+              "cle": "48"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2022-02-13"
+            }
+          }
+        ],
+        "dateNaissance": "20041026",
+        "rangNaissance": "1",
+        "numeroPersonne": "P00031",
+        "refExternePersonne": "EXT-P00011"
+      },
+      "dateAdhesionMutuelle": "2021-01-01",
+      "dateDebutAdhesionIndividuelle": "2021-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "periodes": [
+        {
+          "debut": "2021-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2021-01-01",
+          "fin": "2021-12-31"
+        },
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "PEHAHUT",
+          "nomUsage": "VAITROUAT",
+          "prenom": "AYMERIC",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "MR PEHAHUT VAITROUAT CHRISTIAN",
+          "ligne4": "125 RUE DU CHATEAU",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-003",
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTIAN01",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTIAN",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2010-01-01",
+              "fin": "2015-12-31"
+            }
+          },
+          {
+            "idDestinatairePaiements": "DP-002",
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTIAN02",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTIAN",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2016-01-01",
+              "fin": "2018-12-31"
+            }
+          },
+          {
+            "idDestinatairePaiements": "DP-003",
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTIAN03",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTIAN",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2019-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-MBA0003",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "PEHAHUT",
+              "nomUsage": "VAITROUAT",
+              "prenom": "CHRISTIAN",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR PEHAHUT VAITROUAT CHRISTIAN",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_BLUE_2",
+          "codeAssureur": "BALOO",
+          "libelle": "santé",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2022-01-01"
+          },
+          "dateAncienneteGarantie": "2021-01-01"
+        }
+      ]
+    },
+    {
+      "data": {
+        "destinatairesRelevePrestations": [
+          {
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "LEDUC",
+              "prenom": "ANNA",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "ANNA LEDUC",
+              "ligne4": "4 DOMAINE DE BELLEVUE",
+              "ligne6": "97200 FORT-DE-France",
+              "codePostal": "97200"
+            },
+            "periode": {
+              "debut": "2016-01-01"
+            },
+            "idDestinataireRelevePrestations": "6022870a7f82500001e8a7c000",
+            "idBeyondDestinataireRelevePrestations": "6022870a7f82500001e8a7c000-0000452874"
+          }
+        ],
+        "nom": {
+          "nomFamille": "LEDUC",
+          "prenom": "ANNA",
+          "civilite": "Mme"
+        },
+        "adresse": {
+          "ligne1": "ANNA LEDUC",
+          "ligne4": "4 DOMAINE DE BELLEVUE",
+          "ligne6": "97200 FORT-DE-France",
+          "codePostal": "97200"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "jlgohier@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "nom": {
+              "nomFamille": "LEDUC",
+              "prenom": "ANNA",
+              "civilite": "Mme"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2016-01-01"
+            },
+            "idDestinatairePaiements": "6022870a7f82500001e8a7c000",
+            "idBeyondDestinatairePaiements": "6022870a7f82500001e8a7c000-0000452874"
+          }
+        ]
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2016-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_BLUE_2",
+          "codeAssureur": "BALOO",
+          "libelle": "GT1",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2016-01-01"
+          },
+          "dateAncienneteGarantie": "2016-01-01"
+        }
+      ],
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "2510497209105",
+          "cle": "14"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2510497209105",
+              "cle": "14"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "601",
+              "codeCentre": "01"
+            },
+            "periode": {
+              "debut": "2016-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19510413",
+        "rangNaissance": "1",
+        "numeroPersonne": "P00032"
+      },
+      "dateAdhesionMutuelle": "2016-01-01",
+      "dateDebutAdhesionIndividuelle": "2016-01-01",
+      "numeroAdhesionIndividuelle": "10004300029647",
+      "periodes": [
+        {
+          "debut": "2016-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    }
+  ]
+}

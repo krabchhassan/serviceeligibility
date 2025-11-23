@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:ps="http://norme.cegedimassurances.com/ps" xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire"
+xmlns:amc="http://norme.cegedimassurances.com/amc" targetNamespace="http://norme.cegedimassurances.com/ps" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance" jaxb:extensionBindingPrefixes="inheritance"
+elementFormDefault="qualified">
+
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_header_in.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_dates.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/amc" schemaLocation="../amc/type_amc.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/beneficiaire" schemaLocation="../beneficiaire/type_beneficiaire_demandeur.xsd"/>
+	<xs:include schemaLocation="type_ps_identifiant.xsd"/>
+	<xs:complexType name="requete_ps">
+		<xs:annotation>
+			<xs:appinfo>
+				<inheritance:implements>com.cegedimactiv.norme.fsiq.api.RequeteWsFsiq</inheritance:implements>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="header_in" minOccurs="1" maxOccurs="1" type="commun:type_header_in"/>
+			<xs:element name="ps" minOccurs="1" maxOccurs="1" type="ps:type_ps_identifiant"/>
+			<xs:element name="amc" minOccurs="1" maxOccurs="1" type="amc:type_amc"/>
+			<xs:element name="beneficiaire" minOccurs="0" maxOccurs="1" type="beneficiaire:type_beneficiaire_demandeur"/>
+			<xs:element name="dates" minOccurs="1" maxOccurs="1" type="commun:type_dates"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

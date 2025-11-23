@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: exporttriggerinfos-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          convert:
+            CustomConversions: ERROR
+beyond:
+  messaging:
+    transactional: false
+    security-context:
+      enabled: false
+  management-scope:
+    enabled: false

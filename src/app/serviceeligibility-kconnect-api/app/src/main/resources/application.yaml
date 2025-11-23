@@ -1,0 +1,103 @@
+# Uncomment these lines if you want to test on local
+#SPEC_KAFKA_TOPIC_BENEF: itcare_it1.BDDTEST-next-serviceeligibility-beneficiary-worker-it1.beneficiaires
+#SPEC_KAFKA_TOPIC_DECLARATIONS: itcare_it1.bdd-next-serviceeligibility-core-api-it1.declarations
+#KAFKA_TOPIC_BDD-BENEFAI: itcare-it1-bddtest-bdd-benefai
+#KAFKA_TOPIC_BDD-PRESTIJ: itcare-it1-bddtest-bdd-prestij
+#KAFKA_TOPIC_BDD-BENEF: itcare-it1-bddtest-next-serviceeligibility-beneficiary-worker-it1.beneficiaires
+#KAFKA_CONNECT_URL: https://kafka-connect-it1.cegedim-beyond.net/connectors
+#KAFKA_SERVERS: kafka-0-prod.cegedim-beyond.net:9092,kafka-1-prod.cegedim-beyond.net:9092,kafka-2-prod.cegedim-beyond.net:9092
+#CLOUD_PROVIDER: itcare
+#TARGET_ENV: it1
+#ELASTICSEARCH_URL: https://prod-elasticsearch-admin.cegedim-beyond.net
+#DATABASE_FOR_BENEF_CONNECTOR: bddtest-next-serviceeligibility-beneficiary-worker-it1
+#DATABASE_FOR_DECLARATIONS_CONNECTOR: bdd-next-serviceeligibility-core-api-it1
+#DATABASE_FOR_PRESTIJ_CONNECTOR: bddtest-next-serviceeligibility-prestij-worker-it1
+#MONGODB_URL: "mongodb://dev:dev@mongodb0/admin?replicaSet=rs0"
+spring:
+  main:
+    web-application-type: servlet
+  application:
+    admin:
+      enabled: true
+    name: serviceeligibility-kconnect-api
+# Log
+logging:
+  level:
+    org.springframework.web: INFO
+    org.springframework.messaging: INFO
+    com.cegedim.next: INFO
+    com.cegedim.next.core.scaffolding: DEBUG
+
+# Artifact info
+info:
+  artifact_version: ${ARTIFACT_VERSION}
+  product_version: ${PRODUCT_VERSION}
+  java:
+    specification:
+      vendor: ${java.specification.vendor}
+      version: ${java.specification.version}
+      name: ${java.specification.name}
+    runtime:
+      name: ${java.runtime.name}
+      version: ${java.runtime.version}
+  hostname: ${HOSTNAME}
+
+
+next:
+  common:
+    kafkaconnect:
+      connectors:
+        connectorURL: "${KAFKA_CONNECT_URL:http://kafka-connect-service:8083/connectors}"
+        elasticURL: ${ELASTICSEARCH_URL:http://elasticsearch:9200}
+        elasticLogin: ${ELASTICSEARCH_LOGIN}
+        elasticPassword: ${ELASTICSEARCH_PASSWORD}
+        connectorConfigurations:
+          - connectorName: ${CLOUD_PROVIDER:not-configured}_${TARGET_ENV:not-configured}-mongoBddBenefConnector
+            connectorSourceFile: "mongoBenef.json"
+            disableTopicNameLowerCase: true
+            topicPrefix: ${TOPIC_PREFIX:${CLOUD_PROVIDER}_${TARGET_ENV}}
+            mongoConnector: true
+            databaseUriConnection: ${MONGODB_URL:not-configured}
+            database: ${DATABASE_FOR_BENEF_CONNECTOR:not-configured}
+          - connectorName: ${CLOUD_PROVIDER:not-configured}_${TARGET_ENV:not-configured}-elasticBddBenefConnector
+            connectorSourceFile: "elasticBenefConnector.json"
+            indexName: bdd-benef-${BEYOND_INSTANCE}
+            topicName: ${SPEC_KAFKA_TOPIC_BENEF:not_configured}
+            disableTopicNameLowerCase: true
+          - connectorName: ${CLOUD_PROVIDER:not-configured}_${TARGET_ENV:not-configured}-mongoBddDeclarationsConnector
+            connectorSourceFile: "mongoDeclarations.json"
+            disableTopicNameLowerCase: true
+            topicPrefix: ${TOPIC_PREFIX:${CLOUD_PROVIDER}_${TARGET_ENV}}
+            mongoConnector: true
+            databaseUriConnection: ${MONGODB_URL:not-configured}
+            database: ${DATABASE_FOR_DECLARATIONS_CONNECTOR:not-configured}
+          - connectorName: ${CLOUD_PROVIDER:not-configured}_${TARGET_ENV:not-configured}-mongoBddPrestIJConnector
+            connectorSourceFile: "mongoPrestIJ.json"
+            topicName: ${KAFKA_TOPIC_BDD-PRESTIJ:not_configured}
+            mongoConnector: true
+            databaseUriConnection: ${MONGODB_URL:not-configured}
+            database: ${DATABASE_FOR_PRESTIJ_CONNECTOR:not-configured}
+
+beyond:
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+  observability:
+    log:
+      enabled: true
+    tracing:
+      enabled: true
+# HTTP server
+server:
+  compression:
+    enabled: "true"
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 10
+  forward-headers-strategy: native
+
+# ElasticSearch verion conflict
+behavior.on.version.conflict: warn

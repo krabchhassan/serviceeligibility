@@ -1,0 +1,122 @@
+{
+  "offerCode": "BAL_5497_001",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2000_janv_01.2",
+      "assemblyMode": "DELTA",
+      "effectDate": "2023-11-03T13:46:12.741Z",
+      "validityDate": "2000-01-01",
+      "engineVersion": "37.1",
+      "domains": [
+        {
+          "domainCode": "LABO",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "BIOLOGIE"
+          },
+          "tpOnline": {
+            "nature": "BIOLOGIE"
+          }
+        },
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature": "HOSPITALISATION__OPTAM___NON_OPTAM_"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION__OPTAM___NON_OPTAM_",
+            "network": "KA"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_NC",
+            "formulaLabel": "Non couvert",
+            "formulaMask": "NC",
+            "stsFormulaCode": "090",
+            "nature": "FRAIS_DENTAIRES"
+          },
+          "tpOnline": {
+            "nature": "FRAIS_DENTAIRES",
+            "network": "IT"
+          }
+        },
+        {
+          "domainCode": "PHOR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "70% TR",
+            "stsFormulaCode": "021",
+            "nature": "PHARMACIE",
+            "variables": [
+              {
+                "variableCode": "$txBR",
+                "stsVariableNumber": 3,
+                "value": "70"
+              }
+            ]
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "PHCO",
+          "tpOffline": {
+            "formulaCode": "fGl_NC",
+            "formulaLabel": "Non couvert",
+            "formulaMask": "NC",
+            "stsFormulaCode": "090",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE"
+          }
+        },
+        {
+          "domainCode": "LPPS",
+          "tpOffline": {
+            "formulaCode": "fGl_STS02A_TRmoinsMRO",
+            "formulaLabel": "STS02A : % TR - MRO (globale)",
+            "formulaMask": "70% TR - MRO (globale)",
+            "stsFormulaCode": "02A",
+            "nature": "APPAREILLAGE"
+          },
+          "tpOnline": {
+            "nature": "APPAREILLAGE",
+            "network": "IT"
+          }
+        },
+        {
+          "domainCode": "CURE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "RADIOLOGIE",
+            "variables": [
+              {
+                "variableCode": "$txBR",
+                "stsVariableNumber": 3,
+                "value": "300"
+              }
+            ]
+          },
+          "tpOnline": {
+            "nature": "RADIOLOGIE"
+          }
+        }
+      ]
+    }
+  ]
+}

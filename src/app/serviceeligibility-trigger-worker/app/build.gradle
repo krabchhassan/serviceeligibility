@@ -1,0 +1,79 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+
+    // cache
+    implementation('com.cegedim.beyond.framework:lib-beyond-cache-starter')
+
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.data:spring-data-rest-webmvc")
+
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
+    // ----------------
+    // Spring framework
+    // ----------------
+    implementation("org.springframework.ws:spring-ws-core")
+    implementation("org.springframework.ws:spring-ws-security")
+    implementation("org.springframework.kafka:spring-kafka")
+
+    // --------------------------------------
+    // Java implementation for JSON web token
+    // --------------------------------------
+    implementation("com.auth0:java-jwt:3.8.1")
+
+    // -----------------------------------------------------
+    // Apache: methods for manipulation of Java core classes
+    // -----------------------------------------------------
+    implementation("org.apache.commons:commons-collections4")
+
+
+
+    // -------------------------
+    // JSON schema creation, ...
+    // -------------------------
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+
+    // ------------------------------------
+    // Handling LocalDate and LocalDateTime
+    // ------------------------------------
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+    // ----------------
+    // Jackson databind
+    // ----------------
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation('com.cegedim.beyond.framework:lib-beyond-mongo-starter')
+    implementation('org.mongodb:mongodb-driver-sync')
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation(project(":lib-next-serviceeligibility-core-services"))
+    implementation(project(":lib-next-serviceeligibility-elastic-services"))
+    implementation("com.cegedim.beyond.framework:lib-common-base-validation-services-java")
+
+    implementation('com.fasterxml.jackson.core:jackson-annotations')
+
+    // ----
+    // TEST
+    // ----
+
+    testImplementation("org.apache.httpcomponents:httpclient")
+
+    testImplementation("org.junit.jupiter:junit-jupiter")
+
+}

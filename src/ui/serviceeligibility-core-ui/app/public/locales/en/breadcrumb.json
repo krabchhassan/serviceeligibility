@@ -1,0 +1,22 @@
+{
+  "breadcrumb": {
+    "fileTracking": "TDB/TFD File tracking",
+    "create": "Create",
+    "edit": "Edit",
+    "copy": "Duplicate",
+    "details": "Insurer details",
+    "beneficiaryRightTracking": "Beneficiary rights tracking",
+    "beneficiaryRightDetails": "Beneficiary rights details",
+    "transcodage": "Transcoding",
+    "parameters": "parameters",
+    "businessParameters": "Business parameters",
+    "parametrageDroitsTP": "Third party rights settings research",
+    "parametrageContrat": "TP Rights generation for a contract",
+    "parametrageTPContrat": "Third party rights generation settings",
+    "almerysProduct": "Almerys product referential settings",
+    "volumetry": "Volumetry",
+    "beneficiariesTracking": "Beneficiary search",
+    "tracking": "File tracking",
+    "triggerTracking": "Third party rights generation trigger tracking"
+  }
+}

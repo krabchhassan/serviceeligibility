@@ -1,0 +1,33 @@
+{
+  "offerCode": "CAS2_JUIN",
+  "offerVersions": [
+    {
+      "domains": [
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "100% TR ",
+            "stsFormulaCode": "022",
+            "nature": "HOSPITALISATION",
+            "variables": [
+              {
+                "variableCode": "$txBR",
+                "stsVariableNumber": 3,
+                "value": "100"
+              }
+            ]
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION"
+          }
+        }
+      ],
+      "offerVersionCode": "22",
+      "effectDate": "2022-03-03T14:53:32.994Z",
+      "validityDate": "2026-06-01",
+      "engineVersion": "1.0"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "services" : [
+    "ServicePrestation"
+  ],
+  "key" : "0000401166-1234567895894-01",
+  "contrats" : [
+    {
+      "numeroContrat" : "14725497",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "DP-5894-01-01",
+            "idBeyondDestinatairePaiements" : "DP-5894-01-01-0000401166",
+            "nom" : {
+              "nomFamille" : "DEBENARD-DP01",
+              "nomUsage" : "DEBENARD-DP01",
+              "prenom" : "Christelle-DP01",
+              "civilite" : "Mme"
+            },
+            "adresse" : {
+              "ligne1" : "Mme DE BENARD Christelle",
+              "ligne4" : "3 chemin de Launay",
+              "ligne6" : "31000 Toulouse",
+              "ligne7" : "FRANCE",
+              "codePostal" : "31000"
+            },
+            "rib" : {
+              "bic" : "MCCFFRP1",
+              "iban" : "FR2430002048180000070129A90"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-01-02"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "DRP-5894-01-01",
+            "idBeyondDestinataireRelevePrestations" : "DRP-5894-01-01-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "test@test.com",
+              "mobile" : "0600000000"
+            },
+            "nom" : {
+              "nomFamille" : "DEBENARD-DRP01",
+              "nomUsage" : "DEBENARD-DRP01",
+              "prenom" : "Christelle-DRP01",
+              "civilite" : "Mme"
+            },
+            "adresse" : {
+              "ligne1" : "Mme DE BENARD Christelle",
+              "ligne4" : "3 chemin de Launay",
+              "ligne6" : "31000 Toulouse",
+              "ligne7" : "FRANCE",
+              "codePostal" : "31000"
+            },
+            "periode" : {
+              "debut" : "2022-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "DE BENARD",
+          "nomUsage" : "JOLY",
+          "prenom" : "Christelle",
+          "civilite" : "Mme"
+        },
+        "adresse" : {
+          "ligne1" : "Mme DE BENARD Christelle",
+          "ligne4" : "3 chemin de Launay",
+          "ligne6" : "31000 Toulouse",
+          "ligne7" : "FRANCE",
+          "codePostal" : "31000"
+        },
+        "contact" : {
+          "fixe" : "0404040404",
+          "mobile" : "0606060606",
+          "email" : "chrisjo@mail.ca"
+        }
+      },
+      "numeroAdherent" : "14725497",
+      "societeEmettrice" : "0000401166"
+    }
+  ],
+  "idClientBO" : "service-account-test-es16",
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "14725497",
+  "identite" : {
+    "nir" : {
+      "code" : "2800619784004",
+      "cle" : "72"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "2800619784004",
+          "cle" : "72"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "595",
+          "codeCentre" : "0123"
+        },
+        "periode" : {
+          "debut" : "2022-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19800615",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "1234567895894-01",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "19800615",
+        "rangNaissance" : "1"
+      }
+    ]
+  },
+  "audit" : {
+    "dateEmission" : "2024-03-27T09:53:27.161Z"
+  },
+  "traceId" : "6603ec973797774f32120254"
+}

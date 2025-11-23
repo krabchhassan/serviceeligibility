@@ -1,0 +1,188 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "99992004003",
+  "numeroExterne": "99992004003",
+  "numeroAdherent": "99992004003",
+  "numeroAdherentComplet": "99992004003",
+  "dateSouscription": "2018-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01",
+      "fin": "2025-02-21"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "gestionnaire": "AXA",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-01-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "college": "100",
+    "collectivite": "CEGEDIM ACTIV",
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": false,
+    "isCartePapier": false
+  },
+  "contratCollectif": {
+    "numero": "00219071",
+    "numeroExterne": ""
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19801006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1801062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "9999200400309",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1801062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "ZEMREH",
+          "nomUsage": "ZEMREH",
+          "prenom": "DLANYER",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur ZEMREH DLANYER",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RZEMREH@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122707",
+            "nom": {
+              "nomFamille": "ZEMREH",
+              "nomUsage": "ZEMREH",
+              "prenom": "DLANYER",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur ZEMREH DLANYER",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122707",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "ZEMREH",
+              "nomUsage": "ZEMREH",
+              "prenom": "DLANYER",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur ZEMREH DLANYER",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIV",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": false
+}

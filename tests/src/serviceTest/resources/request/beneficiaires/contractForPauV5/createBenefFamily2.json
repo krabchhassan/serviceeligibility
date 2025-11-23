@@ -1,0 +1,120 @@
+{
+  "services" : [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key" : "0000401166-22091400000067",
+  "contrats" : [
+    {
+      "numeroContrat" : "22091400000020",
+      "codeEtat" : "R",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "20",
+            "nom" : {
+              "nomFamille" : "ASSURE PRINCIPAL 20",
+              "prenom" : "1",
+              "civilite" : "MR"
+            },
+            "adresse" : {
+              "ligne1" : "9789 RUE DE XQDYLGSIT",
+              "ligne6" : "84858 TOBAFPYWDIQX",
+              "codePostal" : "84858"
+            },
+            "rib" : {
+              "bic" : "AGRIFRPP831",
+              "iban" : "FR9810096000504861538231U73"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "20",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "ddnvsmc@ccqfvq.fr",
+              "mobile" : "0719871108"
+            },
+            "nom" : {
+              "nomFamille" : "ASSURE PRINCIPAL 20",
+              "prenom" : "1",
+              "civilite" : "MR"
+            },
+            "adresse" : {
+              "ligne1" : "9789 RUE DE XQDYLGSIT",
+              "ligne6" : "84858 TOBAFPYWDIQX",
+              "codePostal" : "84858"
+            },
+            "periode" : {
+              "debut" : "2022-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "RDO_SP_20",
+          "nomUsage" : "RDO_SP_20",
+          "prenom" : "CONJOINT2",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "9789 RUE DE XQDYLGSIT",
+          "ligne6" : "84858 TOBAFPYWDIQX",
+          "codePostal" : "84858"
+        },
+        "contact" : {
+          "fixe" : "ap32493516@gmail.coum",
+          "mobile" : "0463888467",
+          "email" : "84858"
+        }
+      }
+    }
+  ],
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "ADH_22091400000020",
+  "identite" : {
+    "nir" : {
+      "code" : "2890327887247",
+      "cle" : "11"
+    },
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19890404",
+        "rangNaissance": "1"
+      }
+    ],
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "2890327887247",
+          "cle" : "11"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "624",
+          "codeCentre" : "1253"
+        },
+        "periode" : {
+          "debut" : "2022-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19890404",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "22091400000067"
+  },
+  "audit" : {
+    "dateEmission" : "2022-09-28T10:51:22.993Z"
+  },
+  "traceId" : "6334272aad7f727fd40d6b87"
+}

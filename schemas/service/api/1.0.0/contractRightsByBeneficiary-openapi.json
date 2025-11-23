@@ -1,0 +1,856 @@
+{
+	"openapi": "3.0.2",
+	"info": {
+		"title": "Récupération des droits d’un bénéficiaire à partir d'une liste de contrats",
+		"description": "API specification",
+		"version": "1.0.0"
+	},
+	"paths": {
+		"/v1/contractRightsByBeneficiary/": {
+			"post": {
+				"operationId": "getContractRightsByBeneficiary",
+				"description": "Récupération des droits d’un bénéficiaire à partir d'une liste de contrats",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/RequestContractRightsByBeneficiary"
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Liste des droits du bénéficiaire",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"contracts": {
+											"type": "array",
+											"items": {
+												"$ref": "#/components/schemas/ContractRightsByBeneficiaryDto"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"RequestContractRightsByBeneficiary": {
+				"type": "object",
+				"properties": {
+					"beneficiaryId": {
+						"type": "string",
+						"description": "Identifiant du bénéficiaire (concaténation du n° d’AMC et du n° de personne séparés pas un tiret)"
+					},
+					"context": {
+						"type": "string",
+						"description": "Contexte de l'appel contrat : HTP, TP_ONLINE, TP_OFFLINE"
+					},
+					"contractList": {
+						"type": "array",
+						"description": "Liste des contrats",
+						"items": {
+							"$ref": "#/components/schemas/RequestContractList"
+						}
+					},
+					"nir": {
+						"type": "string",
+						"description": "Code du NIR"
+					}
+				},
+				"required": ["beneficiaryId", "context", "contractList", "nir"]
+			},
+			"RequestContractList": {
+				"type": "object",
+				"properties": {
+					"subscriberId": {
+						"type": "string",
+						"description": "Numéro adhérent"
+					},
+					"contractNumber": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					}
+				},
+				"required": ["subscriberId", "contractNumber"]
+			},
+			"ContractRightsByBeneficiaryDto": {
+				"type": "object",
+				"properties": {
+					"businessContributor": {
+						"type": "string",
+						"description": "Apporteur d’affaire"
+					},
+					"cmuContractOpenPeriods": {
+						"type": "array",
+						"description": "Liste des périodes durant lesquelles le contrat est topé CMU",
+						"items": {
+							"$ref": "#/components/schemas/CmuContractOpenPeriod"
+						}
+					},
+					"collectiveContract": {
+						"type": "object",
+						"description": "Contrat collectif",
+						"items": {
+							"$ref": "#/components/schemas/CollectiveContract"
+						}
+					},
+					"context": {
+						"type": "string",
+						"description": "Contexte du contrat : HTP, TP_ONLINE, TP_OFFLINE"
+					},
+					"detailedSecondaryCriterion": {
+						"type": "string",
+						"description": "Critère secondaire détaillé : Information permettant d'éclater une population"
+					},
+					"externalNumber": {
+						"type": "string",
+						"description": "Numéro externe du contrat"
+					},
+					"insured": {
+						"$ref": "#/components/schemas/Insured"
+					},
+					"insurerId": {
+						"type": "string",
+						"description": "Identifiant de l’AMC dans le référentiel BDDS"
+					},
+					"isIndividualContract": {
+						"type": "boolean",
+						"description": "Contrat individuel"
+					},
+					"issuingCompanyCode": {
+						"type": "string",
+						"description": "Société emettrice"
+					},
+					"itelisCode": {
+						"type": "string",
+						"description": "Code Itelis"
+					},
+					"number": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					},
+					"ocCode": {
+						"type": "string",
+						"description": "Code de l’organisme de gestion"
+					},
+					"operator": {
+						"type": "string",
+						"description": "Gestionnaire"
+					},
+					"prioritizationOrder": {
+						"type": "string",
+						"description": "Ordre de priorisation du contrat"
+					},
+					"qualification": {
+						"type": "string",
+						"description": "Qualification du contrat (Base, Option) "
+					},
+					"responsibleContractOpenPeriods": {
+						"type": "array",
+						"description": "Liste des périodes durant lesquelles le contrat est responsable",
+						"items": {
+							"$ref": "#/components/schemas/Period"
+						}
+					},
+					"secondaryCriterion": {
+						"type": "string",
+						"description": "Critère secondaire : Information permettant d'éclater une population"
+					},
+					"subscriberFullId": {
+						"type": "string",
+						"description": "Identifiant externe de l’adhérent"
+					},
+					"subscriberId": {
+						"type": "string",
+						"description": "Identifiant de l’adhérent"
+					},
+					"subscriptionDate": {
+						"type": "string",
+						"description": "Date de souscription du contrat"
+					},
+					"suspensionPeriods": {
+						"type": "array",
+						"description": "Liste de périodes pendant lesquelles le contrat est suspendu",
+						"items": {
+							"$ref": "#/components/schemas/SuspensionPeriod"
+						}
+					},
+					"terminationDate": {
+						"type": "string",
+						"description": "Date de résiliation du contrat"
+					}
+				}
+			},
+			"CmuContractOpenPeriod": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code CMU"
+					},
+					"period": {
+						"type": "object",
+						"description": "Période CMU",
+						"items": {
+							"$ref": "#/components/schemas/Period"
+						}
+					}
+				}
+			},
+			"CollectiveContract": {
+				"type": "object",
+				"properties": {
+					"externalNumber": {
+						"type": "string",
+						"description": "Numéro externe du contrat collectif associé au contrat"
+					},
+					"number": {
+						"type": "string",
+						"description": "Numéro du contrat collectif associé au contrat "
+					}
+				}
+			},
+			"Insured": {
+				"type": "object",
+				"description": "Assuré",
+				"properties": {
+					"administrativeRank": {
+						"type": "string",
+						"description": "Rang administratif de l’assuré "
+					},
+					"attendingPhysicianOpenedPeriods": {
+						"type": "array",
+						"description": "Liste des périodes durant lesquelles l’assuré a un médecin traitant",
+						"items": {
+							"$ref": "#/components/schemas/Period"
+						}
+					},
+					"cancellationDate": {
+						"type": "string",
+						"description": "Date de radiation de l’assuré dans le contrat"
+					},
+					"data": {
+						"$ref": "#/components/schemas/InsuredData"
+					},
+					"digitRelation": {
+						"$ref": "#/components/schemas/DigitRelation"
+					},
+					"healthMutualSubscriptionDate": {
+						"type": "string"
+					},
+					"identity": {
+						"$ref": "#/components/schemas/Identity"
+					},
+					"individualSubscriptionNumber": {
+						"type": "string",
+						"description": "Numéro d’adhésion individuel"
+					},
+					"individualSubscriptionStartDate": {
+						"type": "string",
+						"description": "Date de début d’adhésion au contrat individuel"
+					},
+					"isSubscriber": {
+						"type": "boolean",
+						"description": "Indique si l'assuré est le souscripteur du contrat ou non"
+					},
+					"quality": {
+						"$ref": "#/components/schemas/Quality"
+					},
+					"rights": {
+						"type": "array",
+						"description": "Liste des droits de l’assuré",
+						"items": {
+							"$ref": "#/components/schemas/Right"
+						}
+					},
+					"specialPlans": {
+						"type": "array",
+						"description": "Liste des régimes particuliers",
+						"items": {
+							"$ref": "#/components/schemas/SpecialPlan"
+						}
+					},
+					"specialStatuses": {
+						"type": "array",
+						"description": "Liste des situations particulières de la personne",
+						"items": {
+							"$ref": "#/components/schemas/SpecialStatus"
+						}
+					}
+				}
+			},
+			"InsuredData": {
+				"type": "object",
+				"properties": {
+					"address": {
+						"type": "object",
+						"description": "Adresse de l'assuré",
+						"items": {
+							"$ref": "#/components/schemas/Address"
+						}
+					},
+					"benefitStatementRecipients": {
+						"type": "array",
+						"description": "Liste des destinataires de relevé de prestations",
+						"items": {
+							"$ref": "#/components/schemas/BenefitStatementRecipient"
+						}
+					},
+					"contact": {
+						"type": "object",
+						"description": "Contact de l'assuré",
+						"items": {
+							"$ref": "#/components/schemas/Contact"
+						}
+					},
+					"name": {
+						"type": "object",
+						"description": "Noms de l'assuré",
+						"items": {
+							"$ref": "#/components/schemas/Name"
+						}
+					},
+					"paymentRecipients": {
+						"type": "array",
+						"description": "Liste des destinataires de paiements",
+						"items": {
+							"$ref": "#/components/schemas/PaymentRecipient"
+						}
+					}
+				}
+			},
+			"DigitRelation": {
+				"type": "object",
+				"description": "Mode de communication",
+				"properties": {
+					"dematerialization": {
+						"$ref": "#/components/schemas/Dematerialization"
+					},
+					"remoteTransmissions": {
+						"type": "array",
+						"description": "Liste teletransmissions",
+						"items": {
+							"$ref": "#/components/schemas/RemoteTransmission"
+						}
+					}
+				}
+			},
+			"Dematerialization": {
+				"type": "object",
+				"description": "Dématérialisation",
+				"properties": {
+					"email": {
+						"type": "string",
+						"description": "Email"
+					},
+					"isDematerialized": {
+						"type": "boolean",
+						"description": "Envoi en dématérialisé"
+					},
+					"mobile": {
+						"type": "string",
+						"description": "Téléphone mobile"
+					}
+				}
+			},
+			"Identity": {
+				"type": "object",
+				"description": "Information permettant l’identification de l’assuré",
+				"properties": {
+					"affiliationsRO": {
+						"type": "array",
+						"description": "Liste des affiliations RO de l’assuré",
+						"items": {
+							"$ref": "#/components/schemas/AffiliationRO"
+						}
+					},
+					"birthDate": {
+						"type": "string",
+						"description": "Date de naissance"
+					},
+					"birthRank": {
+						"type": "string",
+						"description": "Rang de naissance"
+					},
+					"nir": {
+						"type": "object",
+						"description": "Nir principal",
+						"items": {
+							"$ref": "#/components/schemas/Nir"
+						}
+					},
+					"personExternalRef": {
+						"type": "string",
+						"description": "Référence externe"
+					},
+					"personNumber": {
+						"type": "string",
+						"description": "Numéro de personne"
+					}
+				}
+			},
+			"AffiliationRO": {
+				"type": "object",
+				"properties": {
+					"attachementRO": {
+						"$ref": "#/components/schemas/AttachementRO"
+					},
+					"nir": {
+						"type": "object",
+						"description": "Nir",
+						"items": {
+							"$ref": "#/components/schemas/Nir"
+						}
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"AttachementRO": {
+				"type": "object",
+				"description": "Information de rattachement au Régime Obligatoire",
+				"properties": {
+					"centerCode": {
+						"type": "string",
+						"description": "Code du centre payeur"
+					},
+					"healthInsuranceCompanyCode": {
+						"type": "string",
+						"description": "Code de la caisse"
+					},
+					"regimeCode": {
+						"type": "string",
+						"description": "Code du grand Régime"
+					}
+				}
+			},
+			"Name": {
+				"type": "object",
+				"properties": {
+					"civility": {
+						"type": "string",
+						"description": "Civilité"
+					},
+					"commonName": {
+						"type": "string",
+						"description": "Nom d’usage"
+					},
+					"firstName": {
+						"type": "string",
+						"description": "Prénom"
+					},
+					"lastName": {
+						"type": "string",
+						"description": "Nom de famille"
+					}
+				}
+			},
+			"NameCorporate": {
+				"type": "object",
+				"properties": {
+					"civility": {
+						"type": "string",
+						"description": "Civilité"
+					},
+					"commonName": {
+						"type": "string",
+						"description": "Nom d’usage"
+					},
+					"corporateName": {
+						"type": "string",
+						"description": "Raison sociale"
+					},
+					"firstName": {
+						"type": "string",
+						"description": "Prénom"
+					},
+					"lastName": {
+						"type": "string",
+						"description": "Nom de famille"
+					}
+				}
+			},
+			"Nir": {
+				"required": [
+					"key",
+					"code"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code NIR"
+					},
+					"key": {
+						"type": "string",
+						"description": "Code NIR"
+					}
+				}
+			},
+			"PaymentRecipient": {
+				"type": "object",
+				"description": "Destinataire de paiements",
+				"properties": {
+					"address": {
+						"description": "Adresse destinataire de paiement",
+						"items": {
+							"$ref": "#/components/schemas/Address"
+						}
+					},
+					"benefitPaymentMode": {
+						"type": "object",
+						"items": {
+							"$ref": "#/components/schemas/BenefitPaymentMode"
+						}
+					},
+					"beyondPaymentRecipientId": {
+						"type": "string",
+						"description": "Identifiant du destinataire dans le Back Office Beyond"
+					},
+					"name": {
+						"description": "Noms destinataire de paiement",
+						"items": {
+							"$ref": "#/components/schemas/NameCorporate"
+						}
+					},
+					"paymentRecipientId": {
+						"type": "string",
+						"description": "Identifiant du destinataire dans le Back Office"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"rib": {
+						"$ref": "#/components/schemas/Rib"
+					}
+				}
+			},
+			"Address": {
+				"type": "object",
+				"properties": {
+					"line1": {
+						"type": "string",
+						"description": "Ligne d'adresse 1"
+					},
+					"line2": {
+						"type": "string",
+						"description": "Ligne d'adresse 2"
+					},
+					"line3": {
+						"type": "string",
+						"description": "Ligne d'adresse 3"
+					},
+					"line4": {
+						"type": "string",
+						"description": "Ligne d'adresse 4"
+					},
+					"line5": {
+						"type": "string",
+						"description": "Ligne d'adresse 5"
+					},
+					"line6": {
+						"type": "string",
+						"description": "Ligne d'adresse 6"
+					},
+					"line7": {
+						"type": "string",
+						"description": "Ligne d'adresse 7"
+					},
+					"postcode": {
+						"type": "string",
+						"description": "Code postal"
+					}
+				}
+			},
+			"BenefitStatementRecipient": {
+				"type": "object",
+				"description": "Destinataire de relevé de prestation",
+				"properties": {
+					"address": {
+						"type": "object",
+						"description": "Adresse de destinataire de relevé de prestation",
+						"items": {
+							"$ref": "#/components/schemas/Address"
+						}
+					},
+					"benefitStatementRecipientId": {
+						"type": "string",
+						"description": "Identifiant du destinataire dans le Back Office"
+					},
+					"beyondBenefitStatementRecipientId": {
+						"type": "string",
+						"description": "Identifiant du destinataire dans le Back Office Beyond"
+					},
+					"name": {
+						"type": "object",
+						"description": "Noms destinataire de relevé de prestation",
+						"items": {
+							"$ref": "#/components/schemas/NameCorporate"
+						}
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"Contact": {
+				"type": "object",
+				"properties": {
+					"email": {
+						"type": "string",
+						"description": "Email"
+					},
+					"landline": {
+						"type": "string",
+						"description": "Fixe"
+					},
+					"mobile": {
+						"type": "string",
+						"description": "Mobile"
+					}
+				}
+			},
+			"BenefitPaymentMode": {
+				"type": "object",
+				"description": "Mode paiement prestations",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code du mode de paiement"
+					},
+					"currencyCode": {
+						"type": "string",
+						"description": "Code de la monnaie utilisée "
+					},
+					"label": {
+						"type": "string",
+						"description": "Libellé du mode de paiement "
+					}
+				}
+			},
+			"Period": {
+				"type": "object",
+				"properties": {
+					"end": {
+						"type": "string",
+						"description": "Date de fin"
+					},
+					"start": {
+						"type": "string",
+						"description": "Date de début"
+					}
+				}
+			},
+			"Product": {
+				"type": "object",
+				"properties": {
+					"benefitsType": {
+						"uniqueItems": true,
+						"type": "array",
+						"description": "Liste des natures prestations",
+						"items": {
+							"$ref": "#/components/schemas/BenefitType"
+						}
+					},
+					"issuingCompanyCode": {
+						"type": "string",
+						"description": "Société émettrice"
+					},
+					"issuingCompanyName": {
+						"type": "string",
+						"description": "Nom de la société émettrice"
+					},
+					"offerCode": {
+						"type": "string",
+						"description": "Code de l’Offre"
+					},
+					"otpProductCode": {
+						"type": "string",
+						"description": "Code du Produit OTP"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"productCode": {
+						"type": "string",
+						"description": "Code du Produit"
+					}
+				}
+			},
+			"BenefitType": {
+				"type": "object",
+				"properties": {
+					"benefitType": {
+						"type": "string",
+						"description": "Nature prestation"
+					},
+					"domains": {
+						"type": "array",
+						"description": "Liste des domaines",
+						"items": {
+							"$ref": "#/components/schemas/Domain"
+						}
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"Domain": {
+				"type": "object",
+				"properties": {
+					"convention": {
+						"type": "string",
+						"description": "Convention"
+					},
+					"domainCode": {
+						"type": "string",
+						"description": "Code domaine"
+					}
+				}
+			},
+			"Quality": {
+				"type": "object",
+				"description": "Qualité de l’assuré",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code qualité"
+					},
+					"label": {
+						"type": "string",
+						"description": "Libellé qualité"
+					}
+				}
+			},
+			"RemoteTransmission": {
+				"type": "object",
+				"properties": {
+					"isRemotelyTransmitted": {
+						"type": "boolean",
+						"description": "Télétransmission à la CPAM"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"Rib": {
+				"type": "object",
+				"properties": {
+					"bic": {
+						"type": "string",
+						"description": "BIC"
+					},
+					"iban": {
+						"type": "string",
+						"description": "IBAN"
+					}
+				}
+			},
+			"Right": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code garantie"
+					},
+					"guaranteeAgeDate": {
+						"type": "string",
+						"description": "Date ancienneté garantie"
+					},
+					"insurerCode": {
+						"type": "string",
+						"description": "Code de l’assureur"
+					},
+					"originCode": {
+						"type": "string",
+						"description": "Code origine"
+					},
+					"originInsurerCode": {
+						"type": "string",
+						"description": "Code assureur origine"
+					},
+					"prioritizationOrder": {
+						"type": "string",
+						"description": "Ordre de priorisation de la garantie"
+					},
+					"products": {
+						"type": "array",
+						"description": "Liste des produits rattachés",
+						"items": {
+							"$ref": "#/components/schemas/Product"
+						}
+					},
+					"type": {
+						"type": "string",
+						"description": "Type garantie"
+					},
+					"waitingCode": {
+						"type": "string",
+						"description": "Code carence"
+					}
+				}
+			},
+			"SpecialPlan": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code régime particulier"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"SpecialStatus": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code du régime particulier"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"SuspensionPeriod": {
+				"type": "object",
+				"properties": {
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"suspensionReason": {
+						"type": "string",
+						"description": "Motif de la suspension"
+					},
+					"suspensionRemovalReason": {
+						"type": "string",
+						"description": "Motif de la levée de suspension"
+					},
+					"suspensionType": {
+						"type": "string",
+						"description": "Type de suspension : Provisoire, Definitif"
+					}
+				}
+			}
+		}
+	},
+	"tags": [{
+		"name": "ServiceEligibility",
+		"description": "API - Récupération des droits d'un bénéficiaire"
+	}]
+}

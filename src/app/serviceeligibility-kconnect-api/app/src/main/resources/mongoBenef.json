@@ -1,0 +1,20 @@
+{
+  "name": "${CONNECTOR_NAME}",
+  "config":
+  {
+    "collection": "beneficiaires",
+    "connection.uri": "${DATABASE_URI_CONNECTION}",
+    "database": "${DATABASE}",
+    "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
+    "pipeline": "[]",
+    "tasks.max": "2",
+    "topic.prefix": "${TOPIC_PREFIX}",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "publish.full.document.only": "true",
+    "poll.await.time.ms": "5000",
+    "poll.max.batch.size": "10",
+    "heartbeat.interval.ms": "60000",
+    "heartbeat.topic.name": "${TOPIC_PREFIX}-refresh-tokens"
+  }
+}

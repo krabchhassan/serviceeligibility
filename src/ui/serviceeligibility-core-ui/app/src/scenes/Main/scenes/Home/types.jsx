@@ -1,0 +1,16 @@
+/* ************************************* */
+/* ********       EXPORTS       ******** */
+/* ************************************* */
+export default {
+    SEARCH_DECLARANT: { type: 'SEARCH_DECLARANT' },
+    SEARCH_DECLARANT_PENDING: { type: 'SEARCH_DECLARANT_PENDING' },
+    SEARCH_DECLARANT_FULFILLED: { type: 'SEARCH_DECLARANT_FULFILLED' },
+    SEARCH_DECLARANT_REJECTED: { type: 'SEARCH_DECLARANT_REJECTED' },
+
+    CHANGE_HOME_SEARCH_CRITERIA: { type: 'CHANGE_HOME_SEARCH_CRITERIA' },
+
+    GET_LAST_MODIFIED_REJECTED: { type: 'GET_LAST_MODIFIED_REJECTED' },
+    GET_LAST_MODIFIED_FULFILLED: { type: 'GET_LAST_MODIFIED_FULFILLED' },
+    GET_LAST_MODIFIED_PENDING: { type: 'GET_LAST_MODIFIED_PENDING' },
+    GET_LAST_MODIFIED: { type: 'GET_LAST_MODIFIED' },
+};

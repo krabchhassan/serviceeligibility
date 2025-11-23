@@ -1,0 +1,35 @@
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+
+TARGET_ENV: local
+TARGET_DOMAIN: dev
+CONTROL_META: 'false'
+DATABASE_PAGINATION_LIMIT: '20000'
+SERVICE_ELIGIBILITY_PEFB_OUTPUT: C:/tmp/serviceeligibility_output_pefb/
+SERVICE_ELIGIBILITY_PEFB_INPUT: C:/tmp/serviceeligibility_input_pefb/
+PARALLEL_AMC_SIZE: '5'
+CLOUD_PROVIDER: itcare
+
+logging:
+  level:
+    com:
+      cegedim: debug
+
+beyond:
+  customer: editeur
+  couloir: htp
+  instance: htp-es15
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+
+server:
+  port: '8090'

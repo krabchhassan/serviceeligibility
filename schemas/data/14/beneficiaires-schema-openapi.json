@@ -1,0 +1,123 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "beneficiaires",
+      "description": "Collection contenant l'ensemble des bénéficiaires"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Beneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idClientBO": {
+            "description": "Id du client BackOffice qui envoie le bénéficiaire",
+            "type": "string"
+          },
+          "key": {
+            "type": "string",
+            "description": "Clé unique : concaténation de l'amc et du numéro de personne"
+          },
+          "numeroAdherent": {
+            "type": "string",
+            "description": "deprecated"
+          },
+          "services": {
+            "description": "Liste des services du bénéficiaire (valeurs possibles : ServicePrestation, ServiceTP, ServicePrestij)",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "amc": {
+            "$ref": "#/components/schemas/Amc"
+          },
+          "contrats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Contrat"
+            }
+          },
+          "identite": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/IdentiteContrat"
+          },
+          "audit": {
+            "$ref": "#/components/schemas/Audit"
+          }
+        },
+        "required": [
+          "key",
+          "amc",
+          "contrats",
+          "identite"
+        ],
+        "title": "Beneficiaire"
+      },
+      "Amc": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "description": "Identifiant de l'AMC",
+            "type": "string"
+          }
+        },
+        "required": [
+          "idDeclarant"
+        ],
+        "title": "Amc"
+      },
+      "Audit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateEmission": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Audit"
+      },
+      "Contrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numeroContrat": {
+            "type": "string"
+          },
+          "codeEtat": {
+            "description": "Etat du contrat (valeurs possibles : V pour valide, R pour résilié)",
+            "type": "string"
+          },
+          "data": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/DataAssure"
+          },
+          "numeroAdherent": {
+            "type": "string",
+            "description": "Numéro d'adhérent du contrat"
+          },
+          "societeEmettrice": {
+            "type": "string",
+            "description": "Organisation secondaire"
+          },
+          "numeroAMCEchange": {
+            "description": "N° identifiant l'AMC dans les échanges entre l'AMC et ses partenaires.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "codeEtat",
+          "numeroContrat"
+        ],
+        "title": "Contrat"
+      }
+    }
+  }
+}

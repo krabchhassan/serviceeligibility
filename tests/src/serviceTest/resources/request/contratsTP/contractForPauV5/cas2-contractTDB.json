@@ -1,0 +1,1079 @@
+{
+  "idDeclarant": "0000401166",
+  "codeOc": null,
+  "numeroContrat": "C00024",
+  "dateSouscription": "2019/01/01",
+  "dateResiliation": null,
+  "type": null,
+  "nomPorteur": "LE GRIEL",
+  "prenomPorteur": "",
+  "civilitePorteur": "",
+  "numeroAdherent": "AC00021",
+  "numeroAdherentComplet": "",
+  "qualification": "B",
+  "numeroContratCollectif": "",
+  "isContratResponsable": false,
+  "isContratCMU": false,
+  "destinataire": null,
+  "individuelOuCollectif": "",
+  "situationDebut": null,
+  "situationFin": null,
+  "critereSecondaireDetaille": "",
+  "motifFinSituation": null,
+  "critereSecondaire": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "0000401182",
+  "groupeAssures": "",
+  "numeroCarte": "00052492",
+  "editeurCarte": null,
+  "fondCarte": null,
+  "annexe1Carte": null,
+  "annexe2Carte": null,
+  "numAMCEchange": "0000401166",
+  "numOperateur": "0000733931",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": null,
+  "typeConvention": "",
+  "dateConsolidation": "2022-06-02T13:52:23.000Z",
+  "dateRestitution": null,
+  "dateCreation": "2022-06-02T13:53:23.000Z",
+  "dateModification": "2022-06-02T13:54:23.000Z",
+  "origineDeclaration": "TDB/TFD",
+  "beneficiaires": [
+    {
+      "modePaiementPrestations": "",
+      "situationParticuliere": null,
+      "categorieSociale": null,
+      "rangAdministratif": "",
+      "isCarteTPaEditer": false,
+      "dateRadiation": null,
+      "dateCreation": "2022-06-02T13:55:23.000Z",
+      "dateAdhesionMutuelle": null,
+      "dateDebutAdhesionIndividuelle": null,
+      "numeroAdhesionIndividuelle": null,
+      "dateModification": "2022-06-02T13:56:23.000Z",
+      "dateNaissance": "19621023",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "",
+      "cleNirBeneficiaire": "",
+      "nirOd1": "1591275115460",
+      "cleNirOd1": "46",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "insc": null,
+      "numeroPersonne": "PC00020",
+      "refExternePersonne": "08043266",
+      "affiliation": {
+        "nom": "LE GRIEL",
+        "nomPatronymique": "LE GRIEL",
+        "nomMarital": "LE GRIEL",
+        "prenom": "SOPHIE",
+        "civilite": null,
+        "periodeDebut": "2019/01/01",
+        "periodeFin": null,
+        "qualite": "C",
+        "regimeOD1": "03",
+        "caisseOD1": "054",
+        "centreOD1": "6200",
+        "regimeOD2": null,
+        "caisseOD2": null,
+        "centreOD2": null,
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "Conjoint"
+      },
+      "adresses": [
+        {
+          "ligne1": "AON",
+          "ligne2": null,
+          "ligne3": null,
+          "ligne4": "28 ALLEE DE BELLEVUECS 7000",
+          "ligne5": null,
+          "ligne6": "16918 ANGOULEME CEDEX 9",
+          "ligne7": "FRANCE",
+          "codePostal": "16918",
+          "telephone": "01 73 10 30 55",
+          "email": null,
+          "typeAdresse": {
+            "libelle": null,
+            "type": "GE"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "SVIL",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "BASE",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "SVIL-050-100-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100%",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "OPTI",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-099-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "EXTE",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "EXTE-050-100-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100%",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-099-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "OC",
+                                "libelle": "OC"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AUDI",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "AUDI-099-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "OC",
+                                "libelle": "OC"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-099-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-050-100-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100%",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "TRAN",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "TRAN-050-100-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100%",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MED",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MED-050-100-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100%",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "CSTE",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "SANTE_100",
+              "libelleGarantie": "GPAON16",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "libelleProduit": "CONTRAT TBS",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "CSTE-050-100-GPAON3",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2019/01/01",
+                              "periodeFin": "2022/12/15",
+                              "periodeFinFermeture": "2022/12/16",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100%",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2019/01/01",
+                                  "fin": "2022/12/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "suspension": {
+    "etatSuspension": "B",
+    "periodesSuspension": [
+      {
+        "dateDebutSuspension": "2022-19-15",
+        "dateFinSuspension": "2022-18-15"
+      }
+    ]
+  }
+}

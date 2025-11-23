@@ -1,0 +1,34 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    // ---------------------------------------------------------------
+    // Configuration Metadata managed by configuration properties file
+    // ---------------------------------------------------------------
+    compileOnly('org.springframework.boot:spring-boot-configuration-processor')
+
+    // ----------------
+    // Spring framework
+    // ----------------
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-security')
+
+    // -------------------------
+    // JSON schema creation, ...
+    // -------------------------
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation('org.sourcelab:kafka-connect-client:4.0.5') {
+        exclude group: "commons-logging", module: "commons-logging"
+    }
+
+}

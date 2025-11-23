@@ -1,0 +1,43 @@
+nombre-lignes-integrees-par-fichier-pipeline:
+  source:
+    pipeline:
+      name: 'businessmonitoring-events-pipeline'
+  processor:
+    - select_entries:
+        include_keys:
+          - metricName
+          - type
+          - axes
+          - time
+          - customer
+          - instance
+    - aggregate:
+        group_duration: "60s"
+        identification_keys:
+          - metricName
+          - type
+          - axes
+          - time
+          - customer
+          - instance
+        action:
+          count:
+            count_key: count
+            output_format: raw
+    - select_entries:
+        include_keys:
+          - metricName
+          - type
+          - axes
+          - time
+          - customer
+          - instance
+          - count
+  sink:
+    - stdout:
+    - opensearch:
+        hosts: [ "${ELASTICSEARCH_EVENT_URL}" ]
+        username: "${ELASTICSEARCH_EVENT_LOGIN}"
+        password: "${ELASTICSEARCH_EVENT_PASSWORD}"
+        insecure: true
+        index: "bma-${/instance}"

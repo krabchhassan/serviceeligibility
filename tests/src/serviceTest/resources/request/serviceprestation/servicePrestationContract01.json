@@ -1,0 +1,238 @@
+{
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2240266",
+            "idBeyondDestinatairePaiements" : "2240266-0000401166",
+            "nom" : {
+              "nomFamille" : "YAKER",
+              "nomUsage" : "YAKER",
+              "prenom" : "MILISSA",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame YAKER MILISSA",
+              "ligne3" : "BAT A2",
+              "ligne4" : "79 RUE DE LA MAURELLE",
+              "ligne6" : "13013 MARSEILLE 13",
+              "codePostal" : "13013"
+            },
+            "rib" : {
+              "bic" : "PSSTFRPPMAR",
+              "iban" : "FR6920041010082892250P02931"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-09-01"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2240266_02",
+            "idBeyondDestinatairePaiements" : "2240266-0000401166",
+            "nom" : {
+              "nomFamille" : "YAKER",
+              "nomUsage" : "YAKER",
+              "prenom" : "MILISSA",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame YAKER MILISSA",
+              "ligne4" : "391 RUE SAINT PIERRE",
+              "ligne6" : "13005 MARSEILLE 05",
+              "codePostal" : "13005"
+            },
+            "rib" : {
+              "bic" : "PSSTFRPPMAR",
+              "iban" : "FR6920041010082892250P02931"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-02-01",
+              "fin" : "2022-03-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2240266",
+            "idBeyondDestinataireRelevePrestations" : "2240266-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "YAKER",
+              "nomUsage" : "YAKER",
+              "prenom" : "MILISSA",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame YAKER MILISSA",
+              "ligne3" : "BAT A2",
+              "ligne4" : "79 RUE DE LA MAURELLE",
+              "ligne6" : "13013 MARSEILLE 13",
+              "codePostal" : "13013"
+            },
+            "periode" : {
+              "debut" : "2022-09-10"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations" : "2240266",
+            "idBeyondDestinataireRelevePrestations" : "2240266-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "YAKER",
+              "nomUsage" : "YAKER",
+              "prenom" : "MILISSA",
+              "civilite" : "MME"
+            },
+            "adresse" : {
+              "ligne1" : "Madame YAKER MILISSA",
+              "ligne4" : "391 RUE SAINT PIERRE",
+              "ligne6" : "13005 MARSEILLE 05",
+              "codePostal" : "13005"
+            },
+            "periode" : {
+              "debut" : "2022-02-01",
+              "fin" : "2022-09-09"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "YAKER",
+          "nomUsage" : "YAKER",
+          "prenom" : "MILISSA",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "Madame YAKER MILISSA",
+          "ligne3" : "BAT A2",
+          "ligne4" : "79 RUE DE LA MAURELLE",
+          "ligne6" : "13013 MARSEILLE 13",
+          "codePostal" : "13013"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2022-09-10"
+            },
+            "isTeletransmission" : true
+          },
+          {
+            "periode" : {
+              "debut" : "2021-09-13",
+              "fin" : "2022-09-09"
+            },
+            "isTeletransmission" : false
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIM",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2022-02-01"
+          },
+          "dateAncienneteGarantie" : "2021-09-13"
+        }
+      ],
+      "isSouscripteur" : true,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "2011099352674",
+          "cle" : "72"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2011099352674",
+              "cle" : "72"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "131"
+            },
+            "periode" : {
+              "debut" : "2021-09-13"
+            }
+          }
+        ],
+        "dateNaissance" : "20011031",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "02785498"
+      },
+      "dateAdhesionMutuelle" : "2021-09-13",
+      "dateDebutAdhesionIndividuelle" : "2021-09-13",
+      "dateCreation": "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2022-02-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    }
+  ],
+  "version" : "5",
+  "periodesSuspension" : [
+
+  ],
+  "codeOc" : "BALOO",
+  "periodesContratCMUOuvert" : [
+
+  ],
+  "traceId" : "645cf46755bdb0163c410abe",
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "000452433",
+  "numero" : "02785498",
+  "numeroExterne" : "02785498",
+  "numeroAdherent" : "02785498",
+  "numeroAdherentComplet" : "02785498",
+  "dateSouscription" : "2021-09-13",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2022-02-01"
+    }
+  ],
+  "critereSecondaire" : "001",
+  "isContratIndividuel" : false,
+  "gestionnaire" : "AXA",
+  "contratCollectif" : {
+    "numero" : "00219210"
+  },
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

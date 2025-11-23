@@ -1,0 +1,121 @@
+{
+  "nom": {
+    "nomFamille": "DELMOTTE",
+    "nomUsage": null,
+    "prenom": "JEAN PIERRE",
+    "civilite": "MR"
+  },
+  "adresse": {
+    "ligne1": "25 RUE DES LAGRADES",
+    "ligne2": "RESIDENCE DES PLATEAUX",
+    "ligne3": "59250",
+    "ligne4": "HALLUIN",
+    "ligne5": "F",
+    "ligne6": "FRANCE",
+    "ligne7": "CEDEX41",
+    "codePostal": "5920"
+  },
+  "contact": {
+    "fixe": "0321992364",
+    "mobile": "0735427677",
+    "email": "jp-delmotte@gagamil.coum"
+  },
+  "destinatairesPaiements": [
+    {
+      "idDestinatairePaiements": "123456",
+      "nom": {
+        "nomFamille": "DELMOTTE",
+        "nomUsage": null,
+        "prenom": "JEAN PIERRE",
+        "civilite": "Mr"
+      },
+      "adresse": {
+        "ligne1": "25 RUE DES LAGRADES",
+        "ligne2": "RESIDENCE DES PLATEAUX",
+        "ligne3": "59250",
+        "ligne4": "HALLUIN",
+        "ligne5": "F",
+        "ligne6": "FRANCE",
+        "ligne7": "CEDEX41",
+        "codePostal": "5920"
+      },
+      "rib": {
+        "bic": "MCCFFRP1",
+        "iban": "FR3330002005500000157841Z25"
+      },
+      "modePaiementPrestations": {
+        "code": "VIR",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR"
+      },
+      "periode": {
+        "debut": "2020-01-01",
+        "fin": "2020-06-30"
+      }
+    },
+    {
+      "idDestinatairePaiements": "123457",
+      "nom": {
+        "raisonSociale": "GDP"
+      },
+      "adresse": {
+        "ligne1": "284 RUE DU PLATEAU",
+        "ligne6": "FRANCE",
+        "ligne7": "62138 HAISNES",
+        "codePostal": "62138"
+      },
+      "rib": {
+        "bic": "MCCFFRP1",
+        "iban": "FR3330002005500000157841Z25"
+      },
+      "modePaiementPrestations": {
+        "code": "VIR",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR"
+      },
+      "periode": {
+        "debut": "2020-07-01"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "idDestinataireRelevePrestations": "123456",
+      "nom": {
+        "nomFamille": "DELMOTTE",
+        "nomUsage": null,
+        "prenom": "JEAN PIERRE",
+        "civilite": "MR"
+      },
+      "adresse": {
+        "ligne1": "25 RUE DES LAGRADES",
+        "ligne2": "RESIDENCE DES PLATEAUX",
+        "ligne3": "59250",
+        "ligne4": "HALLUIN",
+        "ligne5": "F",
+        "ligne6": "FRANCE",
+        "ligne7": "CEDEX41",
+        "codePostal": "5920"
+      },
+      "periode": {
+        "debut": "2020-01-01",
+        "fin": "2020-06-30"
+      }
+    },
+    {
+      "idDestinataireRelevePrestations": "123457",
+      "nom": {
+        "raisonSociale": "GDP"
+      },
+      "adresse": {
+        "ligne1": "284 RUE DU PLATEAU",
+        "ligne6": "FRANCE",
+        "ligne7": "62138 HAISNES",
+        "codePostal": "62138"
+      },
+      "periode": {
+        "debut": "2020-07-01"
+      }
+    }
+  ]
+}

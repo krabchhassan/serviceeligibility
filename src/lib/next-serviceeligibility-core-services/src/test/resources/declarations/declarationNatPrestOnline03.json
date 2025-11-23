@@ -1,0 +1,143 @@
+{
+  "codeEtat" : "R",
+  "effetDebut" : "2023-05-12T11:47:33.027+0000",
+  "idDeclarant" : "0000401166",
+  "carteTPaEditerOuDigitale" : "4",
+  "idTrigger" : "645e27546d59301d104ef84e",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2023-05-12T11:47:33.027+0000",
+  "userCreation" : "WORKER",
+  "dateModification" : "2023-05-12T11:47:33.027+0000",
+  "userModification" : "WORKER",
+  "beneficiaire" : {
+    "dateNaissance" : "20080519",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "2730781111177",
+    "cleNirBeneficiaire" : "53",
+    "nirOd1" : "2730781111177",
+    "cleNirOd1" : "53",
+    "numeroPersonne" : "MBA041",
+    "dateAdhesionMutuelle" : "2012/01/03",
+    "dateDebutAdhesionIndividuelle" : "2018/01/01",
+    "affiliation" : {
+      "nom" : "NOMTEST2",
+      "nomPatronymique" : "NOMTEST2",
+      "nomMarital" : "NOMTEST2",
+      "prenom" : "PRENOMTEST2",
+      "civilite" : "M",
+      "periodeDebut" : "2012/01/03",
+      "qualite" : "E",
+      "regimeOD1" : "01",
+      "caisseOD1" : "781",
+      "hasMedecinTraitant" : false,
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "Enfant"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "Monsieur NOMTEST2 PRENOMTEST2",
+        "ligne3" : "5 RUE DES PETUNIAS",
+        "ligne4" : "22 CHEMIN DES FLEURS",
+        "ligne6" : "78160 TATAOOINE",
+        "codePostal" : "78160",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "NRO01",
+    "dateSouscription" : "2018/01/01",
+    "dateResiliation": "2023/05/31",
+    "type" : "B",
+    "nomPorteur" : "NOMTEST2",
+    "prenomPorteur" : "PRENOMTEST2",
+    "civilitePorteur" : "M",
+    "numeroAdherent" : "NRO01",
+    "numeroAdherentComplet" : "NRO01",
+    "qualification" : "B",
+    "numeroContratCollectif" : "00219184",
+    "rangAdministratif" : "2",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "2",
+    "lienFamilial" : "E",
+    "typeConvention" : "IS",
+    "critereSecondaire" : "001",
+    "numeroExterneContratIndividuel" : "NRO01",
+    "gestionnaire" : "00452433",
+    "fondCarte" : "img_carte_TPball",
+    "annexe1Carte" : "annexe CGV",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1"
+  },
+  "domaineDroits" : [
+    {
+      "code" : "DENT",
+      "codeProduit" : "BLUE_003",
+      "codeGarantie" : "GT_BLUE_3",
+      "libelleGarantie" : "CG SANTE CONFORT",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2018/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "DENT-010",
+      "noOrdreDroit" : 0,
+      "categorie" : "DENT",
+      "formulaMask" : "100% FR",
+      "naturePrestation" : "DENTAIRE",
+      "naturePrestationOnline" : "DENTAIRE_ONLINE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "BLUEOffre003",
+      "versionOffre" : "2023_juil_01.3",
+      "codeOc" : "BALOO",
+      "isEditable" : true,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/01/01",
+        "periodeFin" : "2023/05/31",
+        "motifEvenement" : "RL",
+        "libelleEvenement" : "Resiliation",
+        "modeObtention" : "M",
+        "periodeFermetureDebut": "2023/06/01",
+        "periodeFermetureFin": "2023/12/31"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/05/01",
+        "periodeFin": "2023/05/31",
+        "motifEvenement" : "",
+        "periodeFermetureDebut": "2023/06/01"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSanté"
+          }
+        }
+      ]
+    }
+  ],
+  "etatSuspension" : "-1"
+}

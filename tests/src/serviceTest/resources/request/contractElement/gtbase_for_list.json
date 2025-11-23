@@ -1,0 +1,19 @@
+{
+  "codeInsurer": "FAKE1006",
+  "codeAMC": "FAKE1006",
+  "codeContractElement": "FAKE1006",
+  "label": "FAKE1006",
+  "ignored": false,
+  "productElements": [
+    {
+      "codeOffer":"FAKE1006",
+      "codeProduct":"FAKE1006",
+      "codeBenefitNature":"",
+      "codeAmc":"FAKE1006",
+      "from":"2020-01-01T00:00:00.000",
+      "to":null,
+      "effectiveDate":"2020-01-01T00:00:00.000"
+    }
+  ]
+}
+

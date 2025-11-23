@@ -1,0 +1,355 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "00000012085750160351",
+  "numeroAdherent": "00120857",
+  "numeroAdherentComplet": "",
+  "dateSouscription": "2024/05/30",
+  "nomPorteur": "MAPA MUTUELLE DASSURANCE",
+  "prenomPorteur": "",
+  "civilitePorteur": "",
+  "qualification": "B",
+  "numeroContratCollectif": "",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "",
+  "typeConvention": "",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "",
+  "groupeAssures": "",
+  "numAMCEchange": "",
+  "numOperateur": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateNaissance": "20160122",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "",
+      "cleNirBeneficiaire": "",
+      "nirOd1": "2800682012094",
+      "cleNirOd1": "04",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "000000000049729",
+      "refExternePersonne": "0003BAV87HKVCA5",
+      "rangAdministratif": "",
+      "modePaiementPrestations": "",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "PINSON",
+        "nomPatronymique": "PINSON",
+        "nomMarital": "PINSON",
+        "prenom": "LOLA",
+        "periodeDebut": "2024/11/12",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "571",
+        "centreOD1": "1860",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": ""
+      },
+      "adresses": [
+      ],
+      "domaineDroits": [
+        {
+          "code" : "EXTE",
+          "codeProfil" : "",
+          "garanties" : [
+            {
+              "codeGarantie" : "F7-E",
+              "libelleGarantie" : "",
+              "produits" : [
+                {
+                  "codeProduit" : "",
+                  "libelleProduit" : "",
+                  "codeExterneProduit" : "",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "EXTE-02A-100",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2024/11/12",
+                              "periodeFin" : "2025/12/31",
+                              "libelleEvenement" : "Declaration",
+                              "modeObtention" : "",
+                              "motifEvenement" : "IN"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "TA",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SP",
+                                "libelle" : "SP"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "02A",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeProfil" : "",
+          "garanties" : [
+            {
+              "codeGarantie" : "F7-E",
+              "libelleGarantie" : "",
+              "produits" : [
+                {
+                  "codeProduit" : "",
+                  "libelleProduit" : "",
+                  "codeExterneProduit" : "",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2024/11/12",
+                              "periodeFin" : "2025/12/31",
+                              "libelleEvenement" : "Declaration",
+                              "modeObtention" : "",
+                              "motifEvenement" : "IN"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SP",
+                                "libelle" : "SP"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "codeProfil" : "",
+          "garanties" : [
+            {
+              "codeGarantie" : "F7",
+              "libelleGarantie" : "",
+              "produits" : [
+                {
+                  "codeProduit" : "",
+                  "libelleProduit" : "",
+                  "codeExterneProduit" : "",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-02A-100",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2024/11/12",
+                              "periodeFin" : "2025/12/31",
+                              "libelleEvenement" : "Declaration",
+                              "modeObtention" : "",
+                              "motifEvenement" : "IN"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100/100/100",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SP",
+                                "libelle" : "SP"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/11/12",
+                                  "fin" : "2025/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "beneficiaireConsultationHistory",
+      "description": "Collection enregistrant l'historique des consultations des bénéficiaires dans la base de données."
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "BeneficiaireConsultationHistory": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idElasticBeneficiaire": {
+            "description": "Identifiant du bénéficiaire dans le système Elastic.",
+			"type": "string"
+          },
+          "user": {
+            "description": "Adresse email de l'utilisateur ayant effectué la consultation.",
+			"type": "string"
+          },
+          "dateConsultation": {
+            "description": "Date et heure de la consultation.",
+			"type": "string",
+            "format": "date-time"
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "BeneficiaireConsultationHistory"
+      }
+    }
+  }
+}

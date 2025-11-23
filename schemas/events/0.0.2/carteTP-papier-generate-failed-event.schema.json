@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Echec génération carte papier.",
+  "description": "Echec de la génération d'une carte TP papier.",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC"
+    },
+    "issuingCompanyCode": {
+      "type": "string",
+      "description": "Code de la société émettrice"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adherent du contrat"
+    },
+    "startDate": {
+      "type": "string",
+      "description": "Période début de droit générée"
+    },
+    "endDate": {
+      "type": "string",
+      "description": "Période fin de droit générée"
+    },
+    "nbBeneficiaries": {
+      "type": "integer",
+      "description": "Nombre de bénéficiaires présent sur la carte"
+    },
+    "error": {
+      "type": "string",
+      "description": "Erreur remontée lors de la généation d'une carte TP papier"
+    }
+  },
+  "required": [
+    "declarantId",
+    "issuingCompanyCode",
+    "contractNumber",
+    "subscriberNumber",
+    "startDate",
+    "endDate",
+    "nbBeneficiaries"
+  ],
+  "$id": "Insurance.serviceeligibility.carteTP.papier.generate.failed.event/0.0.1"
+}

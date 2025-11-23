@@ -1,0 +1,43 @@
+{
+  "offerCode": "OffreMultiOK",
+  "offerVersions": [
+    {
+      "offerVersionCode": "22",
+      "effectDate": "2022-03-06T00:00:00.000Z",
+      "validityDate": "2022-01-01",
+      "engineVersion": "27.0",
+      "domains": [
+        {
+          "domainCode":"PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_DE00001_100pctFraisReels",
+            "formulaLabel": "Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature":"NatureMulti01"
+          }
+        },
+        {
+          "domainCode":"OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_DE00001_100pctFraisReels",
+            "formulaLabel": "DE00001_100% Frais Réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature":"NatureMulti01"
+          }
+        },
+        {
+          "domainCode":"DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_PEC",
+            "formulaLabel": "Demande de PEC obligatoire",
+            "formulaMask": "PEC",
+            "stsFormulaCode": "099",
+            "nature":"NatureMulti01"
+          }
+        }
+      ]
+    }
+  ]
+}

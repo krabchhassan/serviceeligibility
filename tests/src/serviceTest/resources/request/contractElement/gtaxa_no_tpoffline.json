@@ -1,0 +1,19 @@
+{
+  "codeInsurer": "AXA",
+  "codeAMC": "",
+  "codeContractElement": "NO_TPOFFLINE",
+  "label": "NO_TPOFFLINE",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "18875",
+      "codeProduct": "18875",
+      "codeAmc": "BALOO",
+      "codeBenefitNature": "",
+      "from": "2018-01-01T06:00:00.000Z",
+      "effectiveDate": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}
+

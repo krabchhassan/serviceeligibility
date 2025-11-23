@@ -1,0 +1,338 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "OPAU",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_10",
+              "libelleGarantie" : "GT_10",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2022/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDIV-5515",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPAU-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUEAUDIO",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_10",
+              "libelleGarantie" : "GT_10",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2022/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDIV-5515",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19800615",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "2800619784004",
+      "cleNirBeneficiaire" : "72",
+      "nirOd1" : "2800619784004",
+      "cleNirOd1" : "72",
+      "numeroPersonne" : "1234567895894-01",
+      "refExternePersonne" : "7909738ADF",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2022/01/01",
+      "dateDebutAdhesionIndividuelle" : "2022/01/01",
+      "numeroAdhesionIndividuelle" : "120320020",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "JOLY",
+        "nomPatronymique" : "DE BENARD",
+        "nomMarital" : "JOLY",
+        "prenom" : "Christelle",
+        "civilite" : "Mme",
+        "periodeDebut" : "2022/01/01",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "595",
+        "centreOD1" : "0123",
+        "hasMedecinTraitant" : true,
+        "regimeParticulier" : "AM",
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "ASS"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Mme DE BENARD Christelle",
+          "ligne4" : "3 chemin de Launay",
+          "ligne6" : "31000 Toulouse",
+          "ligne7" : "FRANCE",
+          "codePostal" : "31000",
+          "telephone" : "0606060606",
+          "email" : "chrisjo@mail.ca",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "2800619784004",
+            "cle" : "72"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "595",
+            "codeCentre" : "0123"
+          },
+          "periode" : {
+            "debut" : "2022/01/01"
+          }
+        }
+      ],
+      "periodesMedecinTraitant" : [
+        {
+          "debut" : "2022/01/01"
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2022/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ],
+      "regimesParticuliers" : [
+        {
+          "code" : "AM",
+          "periode" : {
+            "debut" : "2022/01/01",
+            "fin" : "2022/12/31"
+          }
+        }
+      ],
+      "situationsParticulieres" : [
+        {
+          "code" : "ALD",
+          "periode" : {
+            "debut" : "2022/01/01",
+            "fin" : "2022/12/31"
+          }
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "14725497",
+  "numeroAdherent" : "14725497",
+  "numeroAdherentComplet" : "14725497-complet",
+  "dateSouscription" : "2022/01/22",
+  "type" : "B",
+  "nomPorteur" : "JOLY",
+  "prenomPorteur" : "Christelle",
+  "civilitePorteur" : "Mme",
+  "qualification" : "B",
+  "numeroContratCollectif" : "03094493",
+  "isContratResponsable" : true,
+  "isContratCMU" : true,
+  "individuelOuCollectif" : "1",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "Employés",
+  "critereSecondaireDetaille" : "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel" : "14725497-externe",
+  "numeroExterneContratCollectif" : "DKMMMS09049304930",
+  "gestionnaire" : "000ER00693",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "1",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "coll",
+  "raisonSociale" : "CGW",
+  "siret" : "552 178 639 00132",
+  "groupePopulation" : "cadre",
+  "periodeCMUOuverts" : [
+    {
+      "code" : "CMU",
+      "periode" : {
+        "debut" : "2022/01/01"
+      }
+    }
+  ],
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2022/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3"
+}

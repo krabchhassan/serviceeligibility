@@ -1,0 +1,241 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "MBA11754",
+  "numeroExterne": "MBATESTC99",
+  "numeroAdherent": "MBA11754",
+  "numeroAdherentComplet": "MBA11754",
+  "dateSouscription": "2018-01-01",
+  "dateResiliation": null,
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01",
+      "fin": "2020-03-09"
+    },
+    {
+      "debut": "2020-03-10"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "001",
+  "gestionnaire": "AXA",
+  "contratCollectif": {
+    "numero": "00219184"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19730711",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2730781111166",
+          "cle": "64"
+        },
+        "numeroPersonne": "MBA11754",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "781",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "2730781111166",
+              "cle": "64"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BAAT",
+          "nomUsage": "NOMTEST",
+          "prenom": "PRENOMTEST",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame NOMTEST PRENOMTEST",
+          "ligne2": "",
+          "ligne3": "5 RUE DES PETUNIAS",
+          "ligne4": "22 CHEMIN DES FLEURS",
+          "ligne5": "",
+          "ligne6": "78160 TATAOOINE",
+          "ligne7": "",
+          "codePostal": "78160"
+        },
+        "contact": {
+          "email": "test@test.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2124743",
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "PRENOMTEST",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST PRENOMTEST",
+              "ligne2": "",
+              "ligne3": "5 RUE DES PETUNIAS",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne5": "",
+              "ligne6": "78160 TATAOOINE",
+              "ligne7": "",
+              "codePostal": "78160"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "AGRIFRPP848"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-03-10",
+              "fin": "2021-03-09"
+            }
+          },
+          {
+            "idDestinatairePaiements": "2124743",
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "PRENOMTEST",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST PRENOMTEST",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne5": "",
+              "ligne6": "78160 TATAOOINE",
+              "ligne7": "",
+              "codePostal": "78160"
+            },
+            "rib": {
+              "iban": "FR7630001007941234567890185",
+              "bic": "AGRIFRPP848"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2020-03-09"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2124743",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "PRENOMTEST",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST PRENOMTEST",
+              "ligne2": "",
+              "ligne3": "5 RUE DES PETUNIAS",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne5": "",
+              "ligne6": "78160 TATAOOINE",
+              "ligne7": "",
+              "codePostal": "78160"
+            },
+            "periode": {
+              "debut": "2020-03-10",
+              "fin": "2021-03-09"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "2124743",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "NOMTEST",
+              "nomUsage": "NOMTEST",
+              "prenom": "PRENOMTEST",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame NOMTEST PRENOMTEST",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "22 CHEMIN DES FLEURS",
+              "ligne5": "",
+              "ligne6": "78160 TATAOOINE",
+              "ligne7": "",
+              "codePostal": "78160"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2020-03-09"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2012-01-03",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2024-01-01",
+            "fin": "2023-12-31"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-03-10",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": false
+}

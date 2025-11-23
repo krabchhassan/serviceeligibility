@@ -1,0 +1,270 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "historiqueDeclarants",
+      "description": "Historique des déclarants"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "HistoriqueDeclarants": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+		  "nom": {
+			"description": "Nom du déclarant",
+			"type": "string"
+          },
+		  "libelle": {
+			"description": "Libellé du déclarant",
+			"type": "string"
+          },
+		  "siret": {
+			"description": "Numéro SIRET du déclarant",
+			"type": "string",
+            "format": "date-time"
+          },
+		  "numeroPrefectoral": {
+			"description": "Numéro préfectoral du déclarant",
+			"type": "string"
+          },
+		  "codePartenaire": {
+			"description": "Code partenaire du déclarant",
+			"type": "string"
+          },
+		  "type": {
+			"description": "Type de déclarant (amc/amo)",
+			"type": "string",
+			"enum": [
+				"amc",
+				"amo"
+			]
+          },
+		  "codeCircuit": {
+			"description": "Code de circuit du déclarant",
+			"type": "string"
+          },
+		  "emetteurDroits": {
+			"description": "Emetteur des droits du déclarant",
+			"type": "string"
+          },
+		  "operateurPrincipal": {
+			"description": "Opérateur principal du déclarant",
+			"type": "string"
+          },
+		  "dateCreation": {
+			"description": "Date de création",
+			"type": "string",
+            "format": "date-time"
+          },
+		  "userCreation": {
+			"description": "Utilisateur ayant créé l'objet",
+			"type": "string"
+          },
+		  "dateModification": {
+			"description": "Date de dernière modification",
+			"type": "string",
+            "format": "date-time"
+          },
+		  "userModification": {
+			"description": "Utilisateur ayant effectué la dernière modification",
+			"type": "string"
+          },
+          "pilotages": {
+            "description": "Liste des pilotages associés",
+			"type": "array",
+            "items": {
+			  "$ref": "#/components/schemas/Pilotages"
+			}
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "HistoriqueDeclarants"
+      },
+	  "Pilotages": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeService": {
+            "description": "Code du service de pilotage",
+			"type": "string"
+          },
+          "triRestitution": {
+            "description": "Tri de restitution du pilotage",
+			"type": "integer"
+          },
+          "critereRegroupement": {
+            "description": "Critère de regroupement du pilotage",
+			"type": "string"
+          },
+          "critereRegroupementDetaille": {
+            "description": "Critère de regroupement détaillé du pilotage",
+			"type": "string"
+          },
+          "serviceOuvert": {
+            "description": "Indique si le service est ouvert",
+			"type": "boolean"
+          },
+          "dateOuverture": {
+            "description": "Date d'ouverture du service",
+			"type": "string",
+            "format": "date-time"
+          },
+          "dateSynchronisation": {
+            "description": "Date de synchronisayion",
+			"type": "string",
+            "format": "date-time"
+          },
+          "couloirClient": {
+            "description": "Couloir du client",
+			"type": "string"
+          },
+          "typeConventionnement": {
+            "description": "Indique le type de conventionnement",
+			"type": "string"
+          },
+          "caracteristique": {
+			"$ref": "#/components/schemas/Caractéristiques"
+          }
+        },
+        "required": [],
+        "title": "Pilotages"
+      },
+	  "Caractéristiques": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numDebutFichier": {
+            "description": "Numéro de début du fichier",
+			"type": "integer"
+          },
+          "numEmetteur": {
+            "description": "Numéro de l'émetteur",
+			"type": "string"
+          },
+          "numClient": {
+            "description": "Numéro du client",
+			"type": "string"
+          },
+          "nomClient": {
+            "description": "Nom du client",
+			"type": "string"
+          },
+          "versionNorme": {
+            "description": "Indique la version de la norme",
+			"type": "string"
+          },
+          "typeFichier": {
+            "description": "Décrit les types de fichiers échangés",
+			"type": "string"
+          },
+          "codePerimetre": {
+            "description": "Code du perimètre",
+			"type": "string"
+          },
+          "nomPerimetre": {
+            "description": "Nom du perimètre",
+			"type": "string"
+          },
+          "typeGestionnaireBO": {
+            "description": "Type du gestionnaire BO",
+			"type": "string"
+          },
+          "libelleGestionnaireBO": {
+            "description": "Libellé du gestionnaire BO",
+			"type": "string"
+          },
+          "codeClient": {
+            "description": "Code du client",
+			"type": "string"
+          },
+          "numExterneContratIndividuel": {
+            "description": "Indique si c'est un contrat individuel",
+			"type": "boolean"
+          },
+          "numExterneContratCollectif": {
+            "description": "Indique si c'est un contrat collectif",
+			"type": "boolean"
+          },
+          "codeComptable": {
+            "description": "Code comptable",
+			"type": "string"
+          },
+          "periodeReferenceDebut": {
+            "description": "Date de reference début",
+			"type": "string",
+            "format": "date-time"
+          },
+          "periodeReferenceFin": {
+            "description": "Date de reference fin",
+			"type": "string",
+            "format": "date-time"
+          },
+          "filtreDomaine": {
+            "description": "Indique si c'est filtré par domain",
+			"type": "boolean"
+          },
+          "generateFichier": {
+            "description": "Indique si le fichier est généré",
+			"type": "boolean"
+          },
+          "dureeValidite": {
+            "description": "Durée de validité",
+			"type": "integer"
+          },
+          "periodeValidite": {
+            "description": "Période de validité",
+			"type": "string"
+          },
+          "validitesDomainesDroits": {
+            "description": "Liste des validités des domaines de droits",
+			"type": "array",
+            "items": {
+			  "$ref": "#/components/schemas/ValiditesDomainesDroits"
+			}
+          }
+        },
+        "required": [],
+        "title": "Caractéristiques"
+      },
+	  "ValiditesDomainesDroits": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeDomaine": {
+            "description": "Code du domaine",
+			"type": "string"
+          },
+          "duree": {
+            "description": "Durée de validité",
+			"type": "integer"
+          },
+          "unite": {
+            "description": "Unité de la durée de validité",
+			"type": "string",
+			"enum" : [
+			  "Jours",
+			  "Mois"
+			]
+          },
+          "positionnerFinDeMois": {
+            "description": "Indique si la fin de mois est positionnée",
+			"type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "ValiditesDomainesDroits"
+      }
+    }
+  }
+}

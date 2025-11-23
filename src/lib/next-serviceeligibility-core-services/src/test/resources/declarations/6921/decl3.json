@@ -1,0 +1,158 @@
+{
+  "_id": "67dc4d7483fb6e06617fdae8",
+  "codeEtat": "R",
+  "effetDebut": "2025-03-20T17:16:36.168+0000",
+  "idDeclarant": "0000402925",
+  "isCarteTPaEditer": false,
+  "carteTPaEditerOuDigitale": "3",
+  "idTrigger": "67dc436969e50270f335ac06",
+  "versionDeclaration": "3.1",
+  "dateCreation": "2025-03-20T17:16:36.168+0000",
+  "userCreation": "Event",
+  "dateModification": "2024-12-26T19:22:27.843+0000",
+  "userModification": "GenerationDroitTP",
+  "beneficiaire": {
+    "dateNaissance": "19711016",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1711092014059",
+    "cleNirBeneficiaire": "70",
+    "nirOd1": "1711092014059",
+    "cleNirOd1": "70",
+    "numeroPersonne": "186160",
+    "dateAdhesionMutuelle": "2022/01/01",
+    "dateDebutAdhesionIndividuelle": "2022/01/01",
+    "affiliation": {
+      "nom": "BUTEAU",
+      "nomPatronymique": "BUTEAU",
+      "nomMarital": "BUTEAU",
+      "prenom": "PASCAL",
+      "civilite": "M",
+      "periodeDebut": "2022/01/01",
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "851",
+      "hasMedecinTraitant": false,
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "Assuré principal"
+    },
+    "adresses": [
+      {
+        "ligne1": "Monsieur BUTEAU PASCAL",
+        "ligne4": "10 RUE TESSIER NAU",
+        "ligne6": "85400 LES MAGNILS REIGNIERS",
+        "codePostal": "85400",
+        "telephone": "0616755583",
+        "email": "caropascal85@free.fr",
+        "typeAdresse": {
+          "type": "AD"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "10037227",
+    "dateSouscription": "2022/01/01",
+    "type": "B",
+    "nomPorteur": "BUTEAU",
+    "prenomPorteur": "PASCAL",
+    "civilitePorteur": "M",
+    "numeroAdherent": "10037227",
+    "numeroAdherentComplet": "10037227",
+    "qualification": "B",
+    "numeroContratCollectif": "C01_0000000471A",
+    "rangAdministratif": "1",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "2",
+    "lienFamilial": "A",
+    "typeConvention": "IS",
+    "numeroExterneContratIndividuel": "C01_00004776",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "0333232270",
+    "fondCarte": "FOND_CB",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1",
+    "identifiantCollectivite": "511239915",
+    "raisonSociale": "BIO HABITAT",
+    "siret": "51123991500016",
+    "groupePopulation": "NARG"
+  },
+  "domaineDroits": [
+    {
+      "code": "PHNO",
+      "codeProduit": "GROUPEBENETEAUNONCADRESBASE",
+      "modeAssemblage": "INCLUSION",
+      "codeGarantie": "GNABA0471A",
+      "libelleGarantie": "BASE",
+      "codeRenvoi": "4",
+      "libelleCodeRenvoi": " .../.../... : Taux AMC sur combinaison pharmacie à (65% LPP 60%)/30%/15%",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2022/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "PHNO-050-100",
+      "noOrdreDroit": 1,
+      "categorie": "PHNO",
+      "formulaMask": "100%TM",
+      "naturePrestation": "PHARMACIE",
+      "naturePrestationOnline": "SOINSCOURANTS",
+      "codeAssureurGarantie": "AG2R",
+      "codeOffre": "GROUPEBENETEAUNONCADRES",
+      "versionOffre": "2023_janv_01.3",
+      "codeOc": "AG2R",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "050",
+            "parametres": [
+              {
+                "numero": "6",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2025/01/01",
+        "periodeFin": "2024/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M",
+        "periodeFermetureDebut": "2025/01/01",
+        "periodeFermetureFin": "2024/12/31"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2025/01/01",
+        "periodeFin": "2024/12/31",
+        "periodeFermetureDebut": "2025/01/01",
+        "periodeFermetureFin": "2024/12/31"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "iSanté"
+          }
+        }
+      ],
+      "periodeProductElement": {
+        "debut": "1900-01-01"
+      }
+    }
+  ],
+  "idOrigine": "67856709de8296206d2d219f",
+  "etatSuspension": "-1"
+}

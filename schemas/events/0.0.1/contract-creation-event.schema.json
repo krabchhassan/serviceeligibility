@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Création contrat",
+  "description": "Création du contrat",
+  "additionalProperties": false,
+  "properties": {
+    "contractId": {
+      "type": "string",
+      "description": "Identifiant technique du contrat"
+    },
+    "number": {
+      "type": "string",
+      "description": "Numéro du contrat issu du backoffice"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adhérent issu du backoffice"
+    },
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC : numéro préfectoral"
+    },
+    "traceId": {
+      "type": "string",
+      "description": "Identifiant de la trace liée au contrat"
+    }
+  },
+  "required": [
+    "contractId",
+    "number",
+    "subscriberNumber",
+    "declarantId",
+    "traceId"
+  ],
+  "$id": "Insurance.serviceeligibility.contract.creation.event/0.0.1"
+}

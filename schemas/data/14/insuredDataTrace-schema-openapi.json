@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "insuredDataTrace",
+      "description": "Collection contenant la liste des traces 'Insured' reçues"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Trace": {
+        "$ref": "/commons-schema-openapi.json#/components/schemas/Trace"
+      }
+    }
+  }
+}

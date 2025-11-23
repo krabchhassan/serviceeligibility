@@ -1,0 +1,172 @@
+{
+  "_id": "2",
+  "referenceExterne": null,
+  "codeEtat": "V",
+  "effetDebut": "2022-12-01T01:51:12.462Z",
+  "idDeclarant": "0000401471",
+  "isCarteTPaEditer": false,
+  "carteTPaEditerOuDigitale": "0",
+  "nomFichierOrigine": "file1.OK",
+  "dateCreation": "2022-12-01T01:51:12.462Z",
+  "userCreation": "job605",
+  "dateModification": "2022-12-01T01:51:12.462Z",
+  "userModification": "job605",
+  "versionDeclaration": "V03",
+  "beneficiaire": {
+    "dateNaissance": "19990909",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1234567890123",
+    "cleNirBeneficiaire": "99",
+    "nirOd1": "1234567890123",
+    "cleNirOd1": "99",
+    "nirOd2": "",
+    "cleNirOd2": "",
+    "insc": null,
+    "numeroPersonne": "01234567",
+    "refExternePersonne": "01234567",
+    "affiliation": {
+      "nom": "A",
+      "nomPatronymique": "A",
+      "nomMarital": "A",
+      "prenom": "B",
+      "civilite": null,
+      "periodeDebut": "1996/05/01",
+      "periodeFin": null,
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "691",
+      "centreOD1": null,
+      "regimeOD2": null,
+      "caisseOD2": null,
+      "centreOD2": null,
+      "hasMedecinTraitant": false,
+      "regimeParticulier": "",
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "ASSURE"
+    },
+    "adresses": [{
+      "ligne1": "Madame A B",
+      "ligne2": null,
+      "ligne3": null,
+      "ligne4": "1 RUE DE LA PAIX",
+      "ligne5": null,
+      "ligne6": "75000 PARIS",
+      "ligne7": null,
+      "codePostal": "69005",
+      "telephone": "0666666666",
+      "email": "toto@gmail.com",
+      "typeAdresse": {
+        "libelle": null,
+        "type": "AD"
+      }
+    }
+    ]
+  },
+  "contrat": {
+    "numero": "C123",
+    "dateSouscription": "2022/01/01",
+    "dateResiliation": null,
+    "type": null,
+    "nomPorteur": "A",
+    "prenomPorteur": "B",
+    "civilitePorteur": "MME",
+    "numeroAdherent": "C123",
+    "numeroAdherentComplet": "",
+    "qualification": "B",
+    "numeroContratCollectif": "C123",
+    "rangAdministratif": "01",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "destinataire": "AD",
+    "individuelOuCollectif": "2",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": null,
+    "typeConvention": "IS",
+    "critereSecondaireDetaille": "G16",
+    "critereSecondaire": "",
+    "numeroExterneContratIndividuel": "",
+    "numeroExterneContratCollectif": "",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "BCAC",
+    "groupeAssures": "EN0001",
+    "numeroCarte": null,
+    "editeurCarte": "",
+    "fondCarte": "",
+    "annexe1Carte": "",
+    "annexe2Carte": "",
+    "numAMCEchange": "",
+    "numOperateur": ""
+  },
+  "domaineDroits": [{
+    "code": "AUDI",
+    "codeExterne": null,
+    "libelle": null,
+    "codeExterneProduit": "",
+    "libelleExterne": null,
+    "codeOptionMutualiste": "RAMFCBA",
+    "libelleOptionMutualiste": "",
+    "codeProduit": "PSRT800881",
+    "libelleProduit": "SANTE RET 00881",
+    "codeGarantie": "RAMFCBA",
+    "libelleGarantie": "RAM FC BA",
+    "codeProfil": "AUDI99PEC",
+    "libelleCodeRenvoi": "SC1",
+    "tauxRemboursement": "PEC",
+    "isEditable": true,
+    "isSuspension": false,
+    "dateAdhesionCouverture": "2022/01/01",
+    "uniteTauxRemboursement": "XX",
+    "referenceCouverture": "AUDI-NOSEL",
+    "origineDroits": "",
+    "noOrdreDroit": 10,
+    "categorie": "AUDI",
+    "prioriteDroit": {
+      "code": "01",
+      "libelle": "01",
+      "typeDroit": "01",
+      "prioriteBO": "01"
+    },
+    "prestations": [{
+      "code": "DEF",
+      "codeRegroupement": null,
+      "libelle": null,
+      "isEditionRisqueCarte": false,
+      "dateEffet": null,
+      "formule": {
+        "numero": "099",
+        "libelle": null,
+        "parametres": []
+      },
+      "formuleMetier": null
+    }
+    ],
+    "periodeDroit": {
+      "periodeDebut": "2023/01/01",
+      "periodeFin": "2023/12/31",
+      "motifEvenement": "DE",
+      "libelleEvenement": "Declaration des droits",
+      "modeObtention": "M"
+    },
+    "conventionnements": [{
+      "priorite": 1,
+      "typeConventionnement": {
+        "code": "SC",
+        "libelle": "SC"
+      }
+    }, {
+      "priorite": 2,
+      "typeConventionnement": {
+        "code": "TS",
+        "libelle": "TS"
+      }
+    }
+    ]
+  }
+  ]
+}

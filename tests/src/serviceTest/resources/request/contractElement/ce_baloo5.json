@@ -1,0 +1,17 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "ASS_BALOO",
+  "codeContractElement" : "BAL_BASINE010",
+  "label" : "BAL_BASINE010",
+  "productElements" : [
+    {
+      "codeOffer" : "BLUE_TP_999",
+      "codeProduct" : "SANTE_INEXISTANT",
+      "codeBenefitNature" : "OPTIQUE",
+      "codeAmc" : "BALOO",
+      "from" : "2020-01-01T06:00:00.000Z",
+      "effectiveDate" : "2020-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored" : false
+}

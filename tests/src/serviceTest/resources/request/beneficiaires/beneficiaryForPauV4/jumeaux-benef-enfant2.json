@@ -1,0 +1,75 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-00054",
+  "contrats": [
+    {
+      "numeroContrat": "A0005",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0005",
+          "nomUsage": "TESTB0005",
+          "prenom": "Lolette"
+        },
+        "adresse": {
+        },
+        "contact": {
+        }
+      },
+      "numeroAdherent": "A0005",
+      "societeEmettrice": "GEST01",
+      "numeroAMCEchange": "0000501182"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "A0005",
+  "identite": {
+    "nir": {
+      "code": "2101031111114",
+      "cle": "42"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1720131111112",
+          "cle": "16"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      },
+      {
+        "nir": {
+          "code": "2740131111112",
+          "cle": "62"
+        },
+        "rattachementRO": {
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "20101010",
+    "rangNaissance": "2",
+    "numeroPersonne": "00054",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "20101010",
+        "rangNaissance": "2"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-07-05T09:26:23.735Z"
+  },
+  "traceId": "64a5373f82224143073afc4d"
+}

@@ -1,0 +1,302 @@
+metrics_mongo_executor:
+# HTP
+- name: "metrics.serviceeligibility.htp.personnes.executor"
+  domain: serviceeligibility.htp
+  spec:
+    collections:
+    - "servicePrestation"
+    aggregations:
+    - $match:
+        societeEmettrice: "$$societeEmettrice"
+    - $unwind:
+        path: $assures
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: $periodesSuspension
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: $assures.droits
+        preserveNullAndEmptyArrays: true
+    - $project:
+        societeEmettrice: "$societeEmettrice"
+        numeroPersonne: "$assures.identite.numeroPersonne"
+        periodeDebut: "$assures.droits.periode.debut"
+        periodeFin: "$assures.droits.periode.fin"
+        dateRadiation: "$assures.dateRadiation"
+        dateResiliation: "$dateResiliation"
+        periodeDebutSuspension: "$periodesSuspension.periode.debut"
+        periodeFinSuspension: "$periodesSuspension.periode.fin"
+    discriminator: numeroPersonne
+    executions:
+    - name: nombre.personnes.droits.htp.ouverts
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    - name: nombre.personnes.droits.htp.ouverts.suspendus
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    description: "Service Eligibility HTP Personnes Executor"
+
+- name: "metrics.serviceeligibility.htp.adherents.executor"
+  domain: serviceeligibility.htp
+  spec:
+    collections:
+    - "servicePrestation"
+    aggregations:
+    - $match:
+        societeEmettrice: "$$societeEmettrice"
+    - $unwind:
+        path: $assures
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: $periodesSuspension
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: $assures.droits
+        preserveNullAndEmptyArrays: true
+    - $project:
+        societeEmettrice: "$societeEmettrice"
+        numeroAdherent: "$numeroAdherent"
+        periodeDebut: "$assures.droits.periode.debut"
+        periodeFin: "$assures.droits.periode.fin"
+        dateRadiation: "$assures.dateRadiation"
+        dateResiliation: "$dateResiliation"
+        periodeDebutSuspension: "$periodesSuspension.periode.debut"
+        periodeFinSuspension: "$periodesSuspension.periode.fin"
+    discriminator: numeroAdherent
+    executions:
+    - name: nombre.adherents.droits.htp.ouverts
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    - name: nombre.adherents.droits.htp.ouverts.suspendus
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    description: "Service Eligibility HTP Adhérents Executor"
+
+# TP
+- name: "metrics.serviceeligibility.tp.personnes.executor"
+  domain: serviceeligibility.tp
+  spec:
+    collections:
+    - "contrats"
+    aggregations:
+    - $match:
+        gestionnaire: "$$societeEmettrice"
+    - $unwind:
+        path: "$beneficiaires"
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: "$suspension.periodesSuspension"
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: "$beneficiaires.domaineDroits"
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: "$beneficiaires.domaineDroits.periodesDroit"
+        preserveNullAndEmptyArrays: true
+    - $project:
+        societeEmettrice: "$$societeEmettrice"
+        generationDate: "$$generationDate"
+        numeroPersonne: "$beneficiaires.numeroPersonne"
+        domaineDroits: "$beneficiaires.domaineDroits.code"
+        periodeDebut: "$beneficiaires.domaineDroits.periodesDroit.periodeDebut"
+        periodeFin: "$beneficiaires.domaineDroits.periodesDroit.periodeFin"
+        periodeOnlineDebut: "$beneficiaires.domaineDroits.periodesDroit.periodeOnlineDebut"
+        periodeOnlineFin: "$beneficiaires.domaineDroits.periodesDroit.periodeOnlineFin"
+        periodeDebutSuspension: "$suspension.periodesSuspension.dateDebutSuspension"
+        periodeFinSuspension: "$suspension.periodesSuspension.dateFinSuspension"
+    discriminator: numeroPersonne
+    executions:
+    - name: nombre.personnes.droits.tp.online.ouverts
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    - name: nombre.personnes.droits.tp.offline.ouverts
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    - name: nombre.personnes.droits.tp.online.ouverts.suspendus
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    description: "Service Eligibility TP Personnes Executor"
+
+- name: "metrics.serviceeligibility.tp.adherents.executor"
+  domain: serviceeligibility.tp
+  spec:
+    collections:
+    - "contrats"
+    aggregations:
+    - $match:
+        gestionnaire: "$$societeEmettrice"
+    - $unwind:
+        path: "$beneficiaires"
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: "$suspension.periodesSuspension"
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: "$beneficiaires.domaineDroits"
+        preserveNullAndEmptyArrays: true
+    - $unwind:
+        path: "$beneficiaires.domaineDroits.periodesDroit"
+        preserveNullAndEmptyArrays: true
+    - $project:
+        societeEmettrice: "$$societeEmettrice"
+        generationDate: "$$generationDate"
+        numeroAdherent: "$numeroAdherent"
+        domaineDroits: "$beneficiaires.domaineDroits.code"
+        periodeDebut: "$beneficiaires.domaineDroits.periodesDroit.periodeDebut"
+        periodeFin: "$beneficiaires.domaineDroits.periodesDroit.periodeFin"
+        periodeOnlineDebut: "$beneficiaires.domaineDroits.periodesDroit.periodeOnlineDebut"
+        periodeOnlineFin: "$beneficiaires.domaineDroits.periodesDroit.periodeOnlineFin"
+        periodeDebutSuspension: "$suspension.periodesSuspension.dateDebutSuspension"
+        periodeFinSuspension: "$suspension.periodesSuspension.dateFinSuspension"
+    discriminator: numeroAdherent
+    executions:
+    - name: nombre.adherents.droits.tp.online.ouverts
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    - name: nombre.adherents.droits.tp.offline.ouverts
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    - name: nombre.adherents.droits.tp.online.ouverts.suspendus
+      extensions:
+      - jalon: 0
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,0)
+      - jalon: 15
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,15)
+      - jalon: 20
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,20)
+      - jalon: 30
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,30)
+      - jalon: 50
+        generationDate: $$generationDate
+        calculatedGenerationDate: $$$FUNCTION(ADD_DAYS_TO_LOCAL_DATE,$$generationDate,50)
+    description: "Service Eligibility TP Adhérents Executor"

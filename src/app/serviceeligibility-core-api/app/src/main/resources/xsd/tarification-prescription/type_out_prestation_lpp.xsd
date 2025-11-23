@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" xmlns:commun="http://norme.cegedimassurances.com/commun" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_codeReponse_prestation.xsd"/>
+	<xs:complexType name="type_out_prestation_lpp">
+		<xs:sequence>
+			<xs:element name="id_lpp">
+				<xs:annotation>
+					<xs:documentation>ID LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_lpp">
+				<xs:annotation>
+					<xs:documentation>Code LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="13"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nombre_unites_pec">
+				<xs:annotation>
+					<xs:documentation>Nombre unités PEC
+Calculé par tarification en ligne</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_total_lpp">
+				<xs:annotation>
+					<xs:documentation>Montant total LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_total_remise">
+				<xs:annotation>
+					<xs:documentation>Montant total après remise</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_pec">
+				<xs:annotation>
+					<xs:documentation>Montant PEC
+Calculé par tarification en ligne</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_rac">
+				<xs:annotation>
+					<xs:documentation>Montant RAC assuré
+Calculé par tarification en ligne</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="type_codeReponse_prestation" type="type_codeReponse_prestation" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

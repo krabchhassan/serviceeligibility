@@ -1,0 +1,32 @@
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  error:
+    whitelabel:
+      enabled: false
+spring:
+  application:
+    name: common-excel-api
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 1000MB
+  data:
+    rest:
+      detection-strategy: annotated
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: 'false'
+beyond:
+  management-scope:
+    enabled: ${BEYOND_MANAGEMENTSCOPE_ENABLED:true}
+  customer: ${BEYOND_CUSTOMER}
+  instance: ${BEYOND_INSTANCE}
+  service: ${service_socle:serviceeligibility}
+  socle: ${socle_socle:Insurance}
+  observability:
+    tracing:
+      enabled: ${ZIPKIN_ENABLED:true}
+    log:
+      enabled: true

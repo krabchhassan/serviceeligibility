@@ -1,0 +1,1088 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "API specification",
+		"version": "0.0.1"
+	},
+	"servers": [
+		{
+			"url": "/serviceeligibility/core/api",
+			"description": "Generated server url"
+		}
+	],
+	"security": [
+		{
+			"bearer": [
+				"read",
+				"write"
+			]
+		}
+	],
+	"paths": {
+		"/v2/servicePrestationsRdo": {
+			"post": {
+				"tags": [
+					"service-prestations-rdo-controller"
+				],
+				"summary": "Récupérer les informations des contrats pour un assuré",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"example": ["0000410993#92861CA001#1990297414825#19990203#1", "0000410993#92861CA001#1990297414825#19990203#1#123,456", "0000410993#92861CA001#1990297414825#19990203#1#789"],
+							"schema": {
+								"type": "array",
+								"description": "Liste des clés des assurés. Format par défaut d'une clé : idDeclarant#numeroAdherent#nir#dateNaissance#rangNaissance#numeroContrat1,numeroContrat2,...",
+								"items": {
+									"type": "string"
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"operationId": "postServicePrestationsRdo",
+				"responses": {
+					"200": {
+						"description": "Renvoie les informations des contrats et des assurés",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/ServicePrestationsRdo"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/v2/interrogationDroitsBenefs": {
+			"post": {
+				"operationId": "IDB",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/GetInfoBddRequestDto"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/IDBCompleteResponse"
+								}
+							}
+						},
+						"description": "OK"
+					}
+				},
+				"tags": [
+					"idb-controller"
+				]
+			}
+		},
+		"/v2/contractelement/gtlist": {
+			"post": {
+				"operationId": "gtList",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "array",
+								"items": {
+									"$ref": "#/components/schemas/GTElement"
+								}
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/GTResult"
+									}
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"contract-element-controller"
+				]
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"ServicePrestationsRdo": {
+				"type": "array",
+				"items": {
+					"properties": {
+						"key": {
+							"type": "string",
+							"description": "Clé de l'assuré (exemple: \"0000410993#92861CA001#1990297414825#19990203#1\" (pour idDeclarant#numeroAdherent#nir#dateNaissance#rangNaissance) )"
+						},
+						"contrats": {
+							"type": "array",
+							"items": {
+								"type": "object",
+								"properties": {
+									"idDeclarant": {
+										"type": "string",
+										"description": "Organisation principale"
+									},
+									"numero": {
+										"type": "string",
+										"description": "Numéro du contrat"
+									},
+									"numeroAdherent": {
+										"type": "string",
+										"description": "Numéro d'adhérent"
+									},
+									"dateSouscription": {
+										"type": "string",
+										"description": "Date de souscription du contrat",
+										"format": "date"
+									},
+									"dateResiliation": {
+										"type": "string",
+										"description": "Date de résiliation du contrat",
+										"format": "date"
+									},
+									"ordrePriorisation": {
+										"type": "string",
+										"description": "Ordre de priorisation du contrat"
+									},
+									"assure": {
+										"$ref": "#/components/schemas/Assure"
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			"Assure": {
+				"type": "object",
+				"properties": {
+					"rangAdministratif": {
+						"type": "string",
+						"description": "Rang administratif de l'assuré"
+					},
+					"identite": {
+						"type": "object",
+						"properties": {
+							"nir": {
+								"$ref": "#/components/schemas/Nir"
+							},
+							"dateNaissance": {
+								"type": "string",
+								"description": "Date de naissance de l'assuré (au format AAAAMMJJ)",
+								"format": "date"
+							},
+							"rangNaissance": {
+								"type": "string",
+								"description": "Rang de naissance de l'assuré"
+							},
+							"numeroPersonne": {
+								"type": "string",
+								"description": "Numéro de personne"
+							},
+							"affiliationsRO": {
+								"type": "array",
+								"description": "Liste des affiliations au Régime Obligatoire de l'assuré",
+								"items": {
+									"$ref": "#/components/schemas/AffiliationRO"
+								}
+							}
+						}
+					},
+					"data": {
+						"type": "object",
+						"properties": {
+							"destinatairesRelevePrestations": {
+								"type": "array",
+								"items": {
+									"$ref": "#/components/schemas/DestinataireRelevePrestations"
+								}
+							},
+							"adresse": {
+								"$ref": "#/components/schemas/AdresseAssure"
+							},
+							"nom": {
+								"$ref": "#/components/schemas/NomAssure"
+							}
+						}
+					},
+					"qualite": {
+						"$ref": "#/components/schemas/QualiteAssure"
+					},
+					"droits": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Droit"
+						}
+					}
+				}
+			},
+			"Nir": {
+				"type": "object",
+				"description": "Numéro d'Inscription au Répertoire de l'assuré (aussi appelé numéro de sécurité sociale)",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code du nir"
+					},
+					"cle": {
+						"type": "string",
+						"description": "Clé du nir"
+					}
+				}
+			},
+			"Droit": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code du droit"
+					},
+					"codeAssureur": {
+						"type": "string",
+						"description": "Code de l'assureur"
+					}
+				}
+			},
+			"DestinataireRelevePrestations": {
+				"type": "object",
+				"properties": {
+					"idBeyondDestinataireRelevePrestations": {
+						"type": "string",
+						"description": "Identifiant complémentaire du destinataire du relevé de prestations"
+					}
+				}
+			},
+			"AdresseAssure": {
+				"type": "object",
+				"properties": {
+					"ligne1": {
+						"type": "string"
+					},
+					"ligne2": {
+						"type": "string"
+					},
+					"ligne3": {
+						"type": "string"
+					},
+					"ligne4": {
+						"type": "string"
+					},
+					"ligne5": {
+						"type": "string"
+					},
+					"ligne6": {
+						"type": "string"
+					},
+					"ligne7": {
+						"type": "string"
+					}
+				}
+			},
+			"NomAssure": {
+				"type": "object",
+				"properties": {
+					"nomFamille": {
+						"type": "string",
+						"description": "Nom de famille de l'assuré"
+					},
+					"nomUsage": {
+						"type": "string",
+						"description": "Nom d'usage de l'assuré"
+					},
+					"prenom": {
+						"type": "string",
+						"description": "Prénom de l'assuré"
+					},
+					"civilite": {
+						"type": "string",
+						"description": "Civilité de l'assuré"
+					}
+				}
+			},
+			"QualiteAssure": {
+				"type": "object",
+				"description": "Qualité de l'assuré",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code de la qualité"
+					},
+					"libelle": {
+						"type": "string",
+						"description": "Libellé de la qualité"
+					}
+				}
+			},
+			"Periode": {
+				"type": "object",
+				"properties": {
+					"debut": {
+						"type": "string",
+						"description": "Date de début de la période",
+						"format": "date"
+					},
+					"fin": {
+						"type": "string",
+						"description": "Date de fin de la période",
+						"format": "date"
+					}
+				}
+			},
+			"AffiliationRO": {
+				"type": "object",
+				"properties": {
+					"nir": {
+						"$ref": "#/components/schemas/Nir"
+					},
+					"periode": {
+						"type": "object",
+						"description": "Période de rattachement",
+						"properties": {
+							"debut": {
+								"type": "string",
+								"description": "Début de la période (au format AAAA-MM-JJ)"
+							},
+							"fin": {
+								"type": "string",
+								"description": "Fin de la période (au format AAAA-MM-JJ)"
+							}
+						}
+					},
+					"rattachementRO": {
+						"$ref": "#/components/schemas/RattachementRO"
+					}
+				}
+			},
+			"RattachementRO": {
+				"type": "object",
+				"description": "Informations de rattachement au Régime Obligatoire",
+				"properties": {
+					"codeCaisse" : {
+						"type": "string",
+						"description": "Code de la caisse"
+					},
+					"codeCentre" : {
+						"type": "string",
+						"description": "Code du centre payeur"
+					},
+					"codeRegime": {
+						"type": "string",
+						"description": "Code du grand Régime"
+					}
+				}
+			},
+			"GTElement": {
+				"required": [
+					"codeInsurer",
+					"codeContractElement"
+				],
+				"type": "object",
+				"properties": {
+					"codeInsurer": {
+						"type": "string"
+					},
+					"codeContractElement": {
+						"type": "string"
+					}
+				}
+			},
+			"GTResult": {
+				"type": "object",
+				"properties": {
+					"codeInsurer": {
+						"type": "string"
+					},
+					"codeContractElement": {
+						"type": "string"
+					},
+					"gtExist": {
+						"type": "boolean"
+					},
+					"label": {
+						"type": "string"
+					},
+					"ignored": {
+						"type": "boolean"
+					},
+					"productElements": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/ProductElementDerived"
+						}
+					}
+				}
+			},
+			"ProductElementDerived": {
+				"type": "object",
+				"properties": {
+					"codeAmc": {
+						"type": "string"
+					},
+					"codeBenefitNature": {
+						"type": "string"
+					},
+					"codeOffer": {
+						"type": "string"
+					},
+					"codeProduct": {
+						"type": "string"
+					},
+					"from": {
+						"type": "string",
+						"format": "date"
+					},
+					"to": {
+						"type": "string",
+						"format": "date"
+					}
+				}
+			},
+			"GetInfoBddRequestDto": {
+				"required": [
+					"amc",
+					"beneficiaire",
+					"infoBdd"
+				],
+				"type": "object",
+				"properties": {
+					"amc": {
+						"$ref": "#/components/schemas/TypeAmc"
+					},
+					"beneficiaire": {
+						"$ref": "#/components/schemas/TypeBeneficiaireDemandeur"
+					},
+					"dates": {
+						"$ref": "#/components/schemas/TypeDates"
+					},
+					"infoBdd": {
+						"$ref": "#/components/schemas/TypeInfoBdd"
+					}
+				}
+			},
+			"TypeAmc": {
+				"type": "object",
+				"properties": {
+					"adherent": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"idPatientGs": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nom": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroAMCPrefectoral": {
+						"maxLength": 10,
+						"minLength": 8,
+						"type": "string"
+					},
+					"numeroAMCRNM": {
+						"maxLength": 9,
+						"minLength": 9,
+						"type": "string"
+					},
+					"numeroAMCSIRET": {
+						"maxLength": 14,
+						"minLength": 14,
+						"type": "string"
+					},
+					"operateurTp": {
+						"maxLength": 14,
+						"minLength": 10,
+						"type": "string"
+					}
+				}
+			},
+			"TypeAdresse" : {
+				"type" : "object",
+				"properties" : {
+					"ligne1" : {
+						"type" : "string"
+					},
+					"ligne2" : {
+						"type" : "string"
+					},
+					"ligne3" : {
+						"type" : "string"
+					},
+					"ligne4" : {
+						"type" : "string"
+					},
+					"ligne5" : {
+						"type" : "string"
+					},
+					"ligne6" : {
+						"type" : "string"
+					},
+					"ligne7" : {
+						"type" : "string"
+					},
+					"codePostal" : {
+						"type" : "string"
+					},
+					"pays" : {
+						"type" : "string"
+					},
+					"email" : {
+						"type" : "string"
+					},
+					"telephone" : {
+						"type" : "string"
+					},
+					"typeAdresse" : {
+						"$ref" : "#/components/schemas/TypeTypeAdresse"
+					}
+				}
+			},
+			"TypeTypeAdresse": {
+				"type": "object",
+				"properties": {
+					"libelle": {
+						"type": "string"
+					}
+				}
+			},
+			"TypeBeneficiaireDemandeur": {
+				"required": [
+					"rangGemellaire"
+				],
+				"type": "object",
+				"properties": {
+					"cleNIR": {
+						"pattern": "[0-9][0-9]",
+						"type": "string"
+					},
+					"dateNaissance": {
+						"maxLength": 8,
+						"minLength": 8,
+						"type": "string"
+					},
+					"insc": {
+						"maxLength": 25,
+						"minLength": 25,
+						"type": "string"
+					},
+					"nircertifie": {
+						"type": "string"
+					},
+					"nomBeneficiaire": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"prenomBeneficiaire": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"qualite": {
+						"maxLength": 1,
+						"minLength": 1,
+						"type": "string"
+					},
+					"rangGemellaire": {
+						"type": "integer",
+						"format": "int32",
+						"default": 1
+					}
+				}
+			},
+			"TypeDates": {
+				"required": [
+					"dateReference",
+					"typeDateReference"
+				],
+				"type": "object",
+				"properties": {
+					"dateDebut": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"dateFin": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"dateReference": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"typeDateReference": {
+						"type": "integer",
+						"format": "int32",
+						"default": 0
+					}
+				}
+			},
+			"TypeInfoBdd": {
+				"required": [
+					"typeProfondeurRecherche",
+					"typeRechercheBenef",
+					"typeRechercheSegment"
+				],
+				"type": "object",
+				"properties": {
+					"listeSegmentRecherche": {
+						"$ref": "#/components/schemas/ListeSegmentRecherche"
+					},
+					"typeGaranties": {
+						"type": "string"
+					},
+					"typeProfondeurRecherche": {
+						"type": "string",
+						"enum": [
+							"AVEC_FORMULES",
+							"SANS_FORMULES",
+							"SANS_DOMAINES"
+						]
+					},
+					"typeRechercheBenef": {
+						"type": "string",
+						"enum": [
+							"BENEFICIAIRE",
+							"CARTE_FAMILLE"
+						]
+					},
+					"typeRechercheSegment": {
+						"type": "string",
+						"enum": [
+							"PAS_DE_RECHERCHE_SEGMENT",
+							"MONO_SEGMENT",
+							"TOUT_SEGMENT",
+							"LISTE_SEGMENT"
+						]
+					},
+					"typeSegmentRecherche": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"ListeSegmentRecherche": {
+				"required": [
+					"segmentRecherche"
+				],
+				"type": "object",
+				"properties": {
+					"segmentRecherche": {
+						"maxItems": 2147483647,
+						"minItems": 1,
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					}
+				}
+			},
+			"IDBCompleteResponse": {
+				"type": "object",
+				"properties": {
+					"codeReponse": {
+						"$ref": "#/components/schemas/TypeCodeReponse"
+					},
+					"droits": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/IDBResponse"
+						}
+					}
+				}
+			},
+			"TypeCodeReponse": {
+				"required": [
+					"code"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"detailErreur": {
+						"type": "array",
+						"items": {
+							"type": "string"
+						}
+					},
+					"libelle": {
+						"maxLength": 150,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"IDBResponse": {
+				"type": "object",
+				"properties": {
+					"declarantAmc": {
+						"$ref": "#/components/schemas/TypeDeclarantAmc"
+					},
+					"beneficiaire": {
+						"$ref": "#/components/schemas/TypeBeneficiaire"
+					},
+					"periodesDroits": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/PeriodeIDB"
+						}
+					},
+					"contrat": {
+						"$ref": "#/components/schemas/TypeContrat"
+					}
+				}
+			},
+			"TypeDeclarantAmc": {
+				"required": [
+					"nom",
+					"numeroRNM"
+				],
+				"type": "object",
+				"properties": {
+					"libelle": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nom": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroPrefectoral": {
+						"maxLength": 20,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroRNM": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"siret": {
+						"maxLength": 14,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeBeneficiaire": {
+				"required": [
+					"dateNaissance",
+					"rangNaissance"
+				],
+				"type": "object",
+				"properties": {
+					"adresses": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeAdresse"
+						}
+					},
+					"cleNirBeneficiaire": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"cleNirOd1": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"cleNirOd2": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"dateNaissance": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string"
+					},
+					"historiqueAffiliations": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeHistoriqueAffiliation"
+						}
+					},
+					"insc": {
+						"maxLength": 25,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nirBeneficiaire": {
+						"maxLength": 13,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nirOd1": {
+						"maxLength": 13,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nirOd2": {
+						"maxLength": 13,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroPersonne": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string"
+					},
+					"rangNaissance": {
+						"maxLength": 1,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeHistoriqueAffiliation": {
+				"required": [
+					"caisseOD1",
+					"isBeneficiaireACS",
+					"nomPatronymique",
+					"periodeDebut",
+					"regimeOD1"
+				],
+				"type": "object",
+				"properties": {
+					"caisseOD1": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string"
+					},
+					"caisseOD2": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string"
+					},
+					"centreOD1": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string"
+					},
+					"centreOD2": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string"
+					},
+					"civilite": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"isBeneficiaireACS": {
+						"type": "boolean"
+					},
+					"medecinTraitant": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nom": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nomMarital": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nomPatronymique": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"periodeDebut": {
+						"type": "date"
+					},
+					"periodeFin": {
+						"type": "date"
+					},
+					"prenom": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"qualite": {
+						"maxLength": 1,
+						"minLength": 0,
+						"type": "string"
+					},
+					"regimeOD1": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"regimeOD2": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"regimeParticulier": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"PeriodeIDB": {
+				"required": [
+					"debut"
+				],
+				"type": "object",
+				"description": "Période",
+				"properties": {
+					"debut": {
+						"type": "string",
+						"description": "Date de début (format AAAA-MM-JJ)"
+					},
+					"fin": {
+						"type": "string",
+						"description": "Date de fin (format AAAA-MM-JJ)"
+					},
+					"dateRenouvellement": {
+						"type": "string",
+						"description": "Date de renouvellement (format AAAA-MM-JJ) (uniquement valorisée pour le domaine HOSP)"
+					}
+				}
+			},
+			"TypeContrat": {
+				"required": [
+					"dateSouscription",
+					"lienFamilial"
+				],
+				"type": "object",
+				"properties": {
+					"categorieSociale": {
+						"maxLength": 12,
+						"minLength": 0,
+						"type": "string"
+					},
+					"civilitePorteur": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"dateResiliation": {
+						"type": "date"
+					},
+					"dateSouscription": {
+						"type": "date"
+					},
+					"destinataire": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"individuelOuCollectif": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"isContratCMU": {
+						"type": "boolean"
+					},
+					"isContratResponsable": {
+						"type": "boolean"
+					},
+					"lienFamilial": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"motifFinSituation": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nomPorteur": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numero": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroAdherent": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroContratCollectif": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"prenomPorteur": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"qualification": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"rangAdministratif": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"situationDebut": {
+						"type": "date"
+					},
+					"situationParticuliere": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string"
+					},
+					"situationfin": {
+						"type": "date"
+					},
+					"type": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			}
+		},
+		"securitySchemes": {
+			"bearer": {
+				"type": "http",
+				"scheme": "bearer",
+				"bearerFormat": "JWT"
+			}
+		}
+	}
+}

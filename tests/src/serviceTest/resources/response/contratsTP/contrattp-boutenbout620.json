@@ -1,0 +1,2283 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "LABO",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "LABO-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "BIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "LABO-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "BIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHCO",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHCO-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHCO-090",
+                      "formulaMask" : "NC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "NC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "090",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "EXTE",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "EXTE-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "LPPS",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "LPPS-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "APPAREILLAGE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : "IT"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "LPPS-02A",
+                      "formulaMask" : "70% TR - MRO (globale)",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "APPAREILLAGE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : "IT"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "02A",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION__OPTAM___NON_OPTAM_",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "KA",
+                                "libelle" : "Ka"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION__OPTAM___NON_OPTAM_",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "KA",
+                                "libelle" : "Ka"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "APPAREILLAGE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : "IT"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "TRAN",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "TRAN-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPTI-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : "IT"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "FRAIS_DENTAIRES",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : "IT"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-090",
+                      "formulaMask" : "NC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "FRAIS_DENTAIRES",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "NC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : "IT"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "090",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "CURE",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "CURE-052-300",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "RADIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "300",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "300"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_002",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_002_P01",
+                  "codeOffre" : "BAL_5497_002",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "CURE-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "RADIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "03",
+                              "libelle" : "03",
+                              "typeDroit" : "03",
+                              "prioriteBO" : "03",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHNO",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHNO-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "MEDE",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "MEDE-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHOR",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHOR-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "BAL_5497_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5497",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5497_001_P01",
+                  "codeOffre" : "BAL_5497_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHOR-021-70",
+                      "formulaMask" : "70% TR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "70",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "02",
+                              "libelle" : "02",
+                              "typeDroit" : "02",
+                              "prioriteBO" : "02",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "70"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "CSTE",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_5458_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BAL_5458",
+              "dateAdhesionCouverture" : "2020/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BAL_5458_001_P01",
+                  "codeOffre" : "BAL_5458_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "CSTE-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19791006",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1701062498046",
+      "cleNirBeneficiaire" : "02",
+      "nirOd1" : "1701062498046",
+      "cleNirOd1" : "02",
+      "numeroPersonne" : "288939000",
+      "refExternePersonne" : "7209738ADF",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2020/01/01",
+      "dateDebutAdhesionIndividuelle" : "2020/01/01",
+      "numeroAdhesionIndividuelle" : "120320020",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "DELMOTTE",
+        "nomPatronymique" : "DELMOTTE",
+        "nomMarital" : "DELMOTTE",
+        "prenom" : "JEAN PIERRE",
+        "civilite" : "Mr",
+        "periodeDebut" : "2020/01/01",
+        "qualite" : "A",
+        "regimeOD1" : "00",
+        "caisseOD1" : "000",
+        "hasMedecinTraitant" : false,
+        "regimeParticulier" : "AM",
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "ASSURE"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "25 RUE DES LAGRADES",
+          "ligne2" : "RESIDENCE DES PLATEAUX",
+          "ligne3" : "59250",
+          "ligne4" : "HALLUIN",
+          "ligne5" : "F",
+          "ligne6" : "FRANCE",
+          "ligne7" : "CEDEX41",
+          "codePostal" : "5920",
+          "telephone" : "0735427677",
+          "email" : "jp-delmotte@gagamil.coum",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1701062498046",
+            "cle" : "02"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "624",
+            "codeCentre" : "0156"
+          },
+          "periode" : {
+            "debut" : "2020/01/01",
+            "fin" : "2020/12/31"
+          }
+        },
+        {
+          "nir" : {
+            "code" : "1701062498046",
+            "cle" : "02"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "595",
+            "codeCentre" : "0123"
+          },
+          "periode" : {
+            "debut" : "2019/01/01",
+            "fin" : "2019/12/31"
+          }
+        }
+      ],
+      "periodesMedecinTraitant" : [
+        {
+          "debut" : "2020/01/01",
+          "fin" : "2020/12/31"
+        },
+        {
+          "debut" : "2019/01/01",
+          "fin" : "2019/12/31"
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2020/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ],
+      "regimesParticuliers" : [
+        {
+          "code" : "AM",
+          "periode" : {
+            "debut" : "2020/01/01",
+            "fin" : "2020/12/31"
+          }
+        }
+      ],
+      "situationsParticulieres" : [
+        {
+          "code" : "ALD",
+          "periode" : {
+            "debut" : "2020/01/01",
+            "fin" : "2020/12/31"
+          }
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "8343484392",
+  "numeroAdherent" : "83747438",
+  "numeroAdherentComplet" : "TBT83747438",
+  "dateSouscription" : "2020/01/22",
+  "type" : "B",
+  "nomPorteur" : "DELMOTTE",
+  "prenomPorteur" : "JEAN PIERRE",
+  "civilitePorteur" : "Mr",
+  "qualification" : "B",
+  "numeroContratCollectif" : "03094493",
+  "isContratResponsable" : false,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "1",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "Cadres",
+  "critereSecondaireDetaille" : "CAD",
+  "numeroExterneContratIndividuel" : "SLOK4983989",
+  "numeroExterneContratCollectif" : "DKMMMS09049304930",
+  "gestionnaire" : "000ER00693",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "coll1",
+  "raisonSociale" : "CGW",
+  "siret" : "552 178 639 00132",
+  "groupePopulation" : "cadre",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2020/01/01",
+      "fin" : "2020/12/31"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tarification="http://norme.cegedimassurances.com/tarification" 
+	targetNamespace="http://norme.cegedimassurances.com/tarification" elementFormDefault="qualified">
+	<xs:complexType name="type_reponse_justification_calcul">
+		<xs:sequence>
+			<xs:element name="numero_accreditation">
+				<xs:annotation>
+					<xs:documentation>Numéro de l'accréditation à annuler</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

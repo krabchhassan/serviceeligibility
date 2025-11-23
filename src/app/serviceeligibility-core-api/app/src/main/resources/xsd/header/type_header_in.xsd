@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+	<xs:element name="header_in" type="type_header_in" />
+
+	<xs:complexType name="type_header_tech_in">
+		<xs:annotation>
+			<xs:documentation>entete technique de la requete</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="id_logiciel">
+				<xs:annotation>
+					<xs:documentation>numero d'agrement du logiciel
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="version_logiciel">
+				<xs:annotation>
+					<xs:documentation>version du logiciel</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="editeur_logiciel" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>nom de l'editeur du logiciel
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nom_logiciel" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>nom du logiciel
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="id_session_client" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>numero sequentiel de la
+						demande. Ce numero permet
+						d'identifier le flux technique et de detecter les doublons,
+						attribue par l'emetteur
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="id_session_serveur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>identifiant delivre par le serveur. Il permet la
+						reutilisation d'une session ouverte par un navigateur internet
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nom_norme">
+				<xs:annotation>
+					<xs:documentation>Nom de la norme d’échange "CARTEDEMAT"
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="version_norme">
+				<xs:annotation>
+					<xs:documentation>Version de la norme d’échange. Permet de gérer
+						plusieurs normes en parallèle, actuellement 1.0
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="type_header_fonctionnel_in">
+		<xs:annotation>
+			<xs:documentation>entete fonctionnelle</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="idDossier_client" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifiant de dossier, fourni par l'emetteur
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="idDossier_serveur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifiant de dossier ouvert cote serveur
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="36" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_proprietaire">
+				<xs:annotation>
+					<xs:documentation>Identification du porteur de risque ou de son
+						délégataire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="8" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_gestionnaire" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Il s’agit de l’identification de l’opérateur
+						technique portant le service. Cette information est utile au
+						demandeur pour tracer
+						et organiser l’appel des services.
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="14" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="num_accreditation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>
+						Numero d'accreditation/engagement restitué lors
+						d'un precedent appel
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="num_otp" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numéro OTP : One Time Password </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="type_header_in">
+		<xs:annotation>
+			<xs:documentation>entete de la requete</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="header_technique_in" type="type_header_tech_in" />
+			<xs:element name="header_fonctionnel_in" type="type_header_fonctionnel_in" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

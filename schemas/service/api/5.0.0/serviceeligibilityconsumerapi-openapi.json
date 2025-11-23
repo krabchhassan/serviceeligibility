@@ -1,0 +1,1111 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API de gestion des contrats HTP",
+    "version": "1.0.0",
+    "description": "API de gestion des contrats HTP"
+  },
+  "servers": [
+    {
+      "url": "https://htp-es16.dev.beyond.cegedim.cloud/serviceeligibility/consumer/api"
+    }
+  ],
+  "security": [
+    {
+      "bearer": [
+        "read",
+        "write"
+      ]
+    }
+  ],
+  "paths": {
+    "/v5/declarants/{idDeclarant}/contracts/{numeroContrat}/insureds/{numeroPersonne}/data": {
+      "put": {
+        "description": "Mise à jour des données d'un assuré identifié par son numéro de personne sur le contrat",
+        "tags": [
+          "Mise à jour d'un assuré sur un contrat"
+        ],
+        "operationId": "updateDataInsured",
+        "parameters": [
+          {
+            "name": "idDeclarant",
+            "in": "path",
+            "required": true,
+            "description": "Organisation principale",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "numeroContrat",
+            "description": "Identifiant contrat dans le backoffice contrat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "numeroPersonne",
+            "description": "Identifiant unique de l'assuré dans le backoffice Contrat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DataAssure"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Erreur. Assuré non trouvé",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reponse"
+                },
+                "example": {
+                  "traceid": "6427273c4a592414c6b1d81b",
+                  "status": "InsuredNotFound",
+                  "errorMessages": [
+                    "Le contrat TEST01 de l'AMC xxxxxxxxxx possédant le bénéficiaire ayant pour numéro de personne TEST123 n'a pas été trouvé"
+                  ],
+                  "provider": "BDDS"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erreur de validation des données en entrée ou identifiant du compte utilisé par le backoffice invalide",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reponse"
+                },
+                "example": {
+                  "traceid": "642727c24a592414c6b1d81d",
+                  "status": "ValidationFailed",
+                  "errorMessages": [
+                    "L'information dateNaissance(200805179) n'est pas une date au format yyyyMMdd"
+                  ],
+                  "provider": "BDDS"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v5/declarants/{idDeclarant}/contracts": {
+      "post": {
+        "description": "Création/mise à jour d'un contrat HTP",
+        "tags": [
+          "Création/mise à jour d'un contrat HTP"
+        ],
+        "operationId": "createContract",
+        "parameters": [
+          {
+            "name": "idDeclarant",
+            "description": "Organisation principale",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contrat"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erreur de validation du contrat ou identifiant du compte utilisé par le backoffice invalide",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reponse"
+                },
+                "example": {
+                  "traceid": "642725e74a592414c6b1d814",
+                  "status": "ValidationFailed",
+                  "errorMessages": [
+                    "L'information numero est obligatoire",
+                    "L'information periodesContratResponsableOuvert.periode.debut(2018-01-019) n'est pas une date au format yyyy-MM-dd"
+                  ],
+                  "provider": "BDDS"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v4/declarants/{idDeclarant}/contracts/{numeroContrat}/subscriberId/{numeroAdherent}": {
+      "delete": {
+        "description": "Sans effet d'un contrat HTP",
+        "tags": [
+          "Sans effet d'un contrat HTP"
+        ],
+        "operationId": "deleteContract",
+        "parameters": [
+          {
+            "name": "idDeclarant",
+            "description": "Organisation principale",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "numeroContrat",
+            "description": "Identifiant contrat dans le backoffice contrat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "numeroAdherent",
+            "description": "Numéro d'adhérent dans le backoffice contrat",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Erreur. Contrat inconnu",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Reponse"
+                },
+                "example": {
+                  "traceid": "6426d7ee2107c30eaba96778",
+                  "status": "ContractNotFound",
+                  "errorMessages": [
+                    "Aucun contrat n'existe avec les informations fournies"
+                  ],
+                  "provider": "BDDS"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Adresse": {
+        "type": "object",
+        "description": "Adresse",
+        "properties": {
+          "ligne1": {
+            "type": "string",
+            "description": "Identité du destinataire"
+          },
+          "ligne2": {
+            "type": "string",
+            "description": "Identification du point de remise (numéro appartement, numéro boite aux lettres, étage, ..."
+          },
+          "ligne3": {
+            "type": "string",
+            "description": "Complément de localisation (entrée, bâtiment, ...)"
+          },
+          "ligne4": {
+            "type": "string",
+            "description": "Numéro et libellé de la voie"
+          },
+          "ligne5": {
+            "type": "string",
+            "description": "Service de distribution - complément de localisation de la voie (poste restante, boite postale, ...)"
+          },
+          "ligne6": {
+            "type": "string",
+            "description": "Code postal et localité"
+          },
+          "ligne7": {
+            "type": "string",
+            "description": "Pays (pour l'international)"
+          },
+          "codePostal": {
+            "type": "string",
+            "description": "Code postal"
+          }
+        }
+      },
+      "AdresseAssure": {
+        "type": "object",
+        "description": "Adresse de l'assuré",
+        "properties": {
+          "ligne1": {
+            "type": "string",
+            "description": "Identité de l'assuré"
+          },
+          "ligne2": {
+            "type": "string",
+            "description": "Identification du point de remise (numéro appartement, numéro boite aux lettres, étage, ..."
+          },
+          "ligne3": {
+            "type": "string",
+            "description": "Complément de localisation (entrée, bâtiment, ...)"
+          },
+          "ligne4": {
+            "type": "string",
+            "description": "Numéro et libellé de la voie"
+          },
+          "ligne5": {
+            "type": "string",
+            "description": "Service de distribution - complément de localisation de la voie (poste restante, boite postale, ...)"
+          },
+          "ligne6": {
+            "type": "string",
+            "description": "Code postal et localité"
+          },
+          "ligne7": {
+            "type": "string",
+            "description": "Pays (pour l'international)"
+          },
+          "codePostal": {
+            "type": "string",
+            "description": "Code postal"
+          }
+        }
+      },
+      "Contact": {
+        "type": "object",
+        "description": "Données de contact de l'assuré",
+        "properties": {
+          "fixe": {
+            "type": "string",
+            "description": "Numéro de téléphone fixe"
+          },
+          "mobile": {
+            "type": "string",
+            "description": "Numéro de téléphone mobile"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email"
+          }
+        }
+      },
+      "DigitRelation": {
+        "type": "object",
+        "description": "Données de contact",
+        "properties": {
+          "isDematerialise": {
+            "type": "boolean",
+            "description": "Booléen permettant de définir si l'assuré a opté pour la dématerialisation"
+          },
+          "isTeletransmission": {
+            "type": "boolean",
+            "description": "Booléen permettant de définir si l'assuré a opté pour la télétransmission",
+            "items": {
+            }
+          }
+        }
+      },
+      "DataAssure": {
+        "type": "object",
+        "description": "Données de l'assuré",
+        "properties": {
+          "dateNaissance": {
+            "type": "string",
+            "description": "Date de naissance de l'assuré"
+          },
+          "rangNaissance": {
+            "type": "string",
+            "description": "Rang de naissance de l'assuré"
+          },
+          "nir": {
+            "$ref": "#/components/schemas/Nir"
+          },
+          "affiliationsRO": {
+            "type": "array",
+            "description": "Liste des affiliations RO de l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/AffiliationsRO"
+            }
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomAssure"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/AdresseAssure"
+          },
+          "contact": {
+            "$ref": "#/components/schemas/Contact"
+          },
+          "destinatairesPaiements": {
+            "type": "array",
+            "description": "Destinataires de paiement de l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/DestinatairePaiements"
+            }
+          },
+          "destinatairesRelevePrestations": {
+            "type": "array",
+            "description": "Destinataires de relevé de prestation de l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/DestinataireRelevesPrestations"
+            }
+          }
+        },
+        "required": [
+          "nom",
+          "adresse"
+        ]
+      },
+      "Dematerialisation": {
+        "type": "object",
+        "description": "Informations de dématérialisation",
+        "properties": {
+          "isDematerialise": {
+            "type": "boolean"
+          },
+          "email": {
+            "type": "string",
+            "description": "Email, obligatoire si 'isDematerialise' est défini à 'true'"
+          },
+          "mobile": {
+            "type": "string",
+            "description": "Numéro de téléphone"
+          }
+        },
+        "required": [
+          "isDematerialise"
+        ]
+      },
+      "Period": {
+        "required": [
+          "start"
+        ],
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "string",
+            "description": "Date de début"
+          },
+          "end": {
+            "type": "string",
+            "description": "Date de fin"
+          }
+        }
+      },
+      "DestinatairePaiements": {
+        "type": "object",
+        "properties": {
+          "idDestinatairePaiements": {
+            "type": "string",
+            "description": "Identifiant unique du destinataire de prestation pour le backoffice émetteur"
+          },
+          "idBeyondDestinatairePaiements": {
+            "type": "string",
+            "description": "Identifiant unique du destinataire de prestation au sein de Beyond. Ne pas renseigner"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataire"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/Adresse"
+          },
+          "rib": {
+            "$ref": "#/components/schemas/RibAssure"
+          },
+          "modePaiementPrestations": {
+            "$ref": "#/components/schemas/ModePaiement"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        },
+        "required": [
+          "idDestinatairePaiements",
+          "nom",
+          "periode"
+        ]
+      },
+      "DestinataireRelevesPrestations": {
+        "type": "object",
+        "properties": {
+          "idDestinataireRelevesPrestations": {
+            "type": "string",
+            "description": "Identifiant unique du destinataire de relevé de prestation pour le backoffice émetteur"
+          },
+          "idBeyondDestinataireRelevesPrestations": {
+            "type": "string",
+            "description": "Identifiant unique du destinataire de relevé de prestation au sein de Beyond. Ne pas renseigner"
+          },
+          "dematerialisation": {
+            "$ref": "#/components/schemas/Dematerialisation"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataire"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/Adresse"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        },
+        "required": [
+          "idDestinataireRelevesPrestations",
+          "dematerialisation",
+          "nom",
+          "periode"
+        ]
+      },
+      "ModePaiement": {
+        "required": [
+          "code",
+          "codeMonnaie",
+          "libelle"
+        ],
+        "type": "object",
+        "description": "Mode de paiement des prestations",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du mode paiement",
+            "enum": [
+              "VIR",
+              "CHQ",
+              "ESP"
+            ]
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé du mode de paiement",
+            "enum": [
+              "Virement",
+              "Chèque",
+              "Espèces"
+            ]
+          },
+          "codeMonnaie": {
+            "type": "string",
+            "description": "Code de la monnaie. Exemple : EUR"
+          }
+        }
+      },
+      "NomAssure": {
+        "required": [
+          "civilite",
+          "nomFamille",
+          "prenom"
+        ],
+        "type": "object",
+        "description": "Nom de l'assuré",
+        "properties": {
+          "nomFamille": {
+            "type": "string",
+            "description": "Nom de famille de l'assuré"
+          },
+          "nomUsage": {
+            "type": "string",
+            "description": "Nom d'usage de l'assuré"
+          },
+          "prenom": {
+            "type": "string",
+            "description": "Prénom de l'assuré"
+          },
+          "civilite": {
+            "type": "string",
+            "description": "Civilité de l'assuré"
+          }
+        }
+      },
+      "NomDestinataire": {
+        "type": "object",
+        "description": "Nom du destinataire de prestation",
+        "properties": {
+          "nomFamille": {
+            "type": "string",
+            "description": "Nom de famille du destinataire"
+          },
+          "nomUsage": {
+            "type": "string",
+            "description": "Nom d'usage du destinataire"
+          },
+          "prenom": {
+            "type": "string",
+            "description": "Prénom du destinataire"
+          },
+          "civilite": {
+            "type": "string",
+            "description": "Civilité du destinataire"
+          },
+          "raisonSociale": {
+            "type": "string",
+            "description": "Raison sociale du destinataire"
+          }
+        },
+        "required": [
+          "civilite"
+        ]
+      },
+      "Assure": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/DataAssure"
+          },
+          "identite": {
+            "$ref": "#/components/schemas/IdentiteAssure"
+          },
+          "isSouscripteur": {
+            "type": "boolean",
+            "description": ""
+          },
+          "rangAdministratif": {
+            "type": "integer",
+            "description": "Rang administratif de l'assuré"
+          },
+          "dateAdhesionMutuelle": {
+            "type": "string",
+            "description": "Date d'adhésion à la mutuelle"
+          },
+          "dateRadiation": {
+            "type": "string",
+            "description": "Date de radiation"
+          },
+          "digitRelation": {
+            "$ref": "#/components/schemas/DigitRelation"
+          },
+          "periodes": {
+            "type": "array",
+            "description": "Liste des périodes d'affiliation de l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            }
+          },
+          "periodesMedecinTraitantOuvert": {
+            "type": "array",
+            "description": "Liste des périodes de rattachement à un médecin traitant",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            }
+          },
+          "regimesParticuliers": {
+            "type": "array",
+            "description": "Liste des régimes particuliers",
+            "items": {
+              "$ref": "#/components/schemas/RegimesParticuliers"
+            }
+          },
+          "situationsParticulieres": {
+            "type": "array",
+            "description": "Liste des situations particulières",
+            "items": {
+              "$ref": "#/components/schemas/SituationsParticulieres"
+            }
+          },
+          "qualite": {
+            "type": "object",
+            "description": "Qualité de l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/Qualite"
+            }
+          },
+          "droits": {
+            "type": "array",
+            "description": "Liste des droits ouverts à l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/Droits"
+            }
+          }
+        }
+      },
+      "Droits": {
+        "required": [
+          "code",
+          "codeAssureur",
+          "libelle",
+          "ordrePriorisation",
+          "type",
+          "periode",
+          "dateAncienneteGarantie",
+          "carences"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du droit"
+          },
+          "codeAssureur": {
+            "type": "string",
+            "description": "Code de l'assureur"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé du droit"
+          },
+          "ordrePriorisation": {
+            "type": "string",
+            "description": "Ordre de priorisation du droit"
+          },
+          "type": {
+            "type": "string",
+            "description": "Type de droit"
+          },
+          "dateAncienneteGarantie": {
+            "type": "string",
+            "description": "Date d'ancienneté sur la garantie"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          },
+          "carences": {
+            "type": "array",
+            "description": "Liste des carences sur le droit",
+            "items": {
+              "$ref": "#/components/schemas/Carence"
+            }
+          }
+        }
+      },
+      "Carence": {
+        "required": [
+          "code",
+          "periode"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code de la carence"
+          },
+          "droitRemplacement": {
+            "$ref": "#/components/schemas/DroitRemplacement"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      },
+      "DroitRemplacement": {
+        "required": [
+          "code",
+          "libelle",
+          "codeAssureur"
+        ],
+        "type": "object",
+        "description": "Droit de remplacement de la carence",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du droit de remplacement"
+          },
+          "codeAssureur": {
+            "type": "string",
+            "description": "Code de l'assureur du droit de remplacement"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé du droit de remplacement"
+          }
+        }
+      },
+      "Qualite": {
+        "required": [
+          "code",
+          "libelle"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code de la qualité"
+          },
+          "libelle": {
+            "type": "string",
+            "description": "Libellé de la qualité"
+          }
+        }
+      },
+      "RegimesParticuliers": {
+        "required": [
+          "code",
+          "periode"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du régime particulier"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      },
+      "SituationsParticulieres": {
+        "required": [
+          "code",
+          "periode"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code de la situation particulière"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      },
+      "Periode": {
+        "required": [
+          "debut"
+        ],
+        "type": "object",
+        "description": "Période",
+        "properties": {
+          "debut": {
+            "type": "string",
+            "description": "Date de début"
+          },
+          "fin": {
+            "type": "string",
+            "description": "Date de fin"
+          }
+        }
+      },
+      "IdentiteAssure": {
+        "required": [
+          "dateNaissance",
+          "rangNaissance",
+          "numeroPersonne"
+        ],
+        "type": "object",
+        "description": "Identité de l'assuré",
+        "properties": {
+          "nir": {
+            "$ref": "#/components/schemas/Nir"
+          },
+          "affiliationsRO": {
+            "type": "array",
+            "description": "Liste des affiliations RO de l'assuré",
+            "items": {
+              "$ref": "#/components/schemas/AffiliationsRO"
+            }
+          },
+          "dateNaissance": {
+            "type": "string",
+            "description": "Date de naissance de l'assuré"
+          },
+          "rangNaissance": {
+            "type": "string",
+            "description": "Rang de naissance de l'assuré"
+          },
+          "numeroPersonne": {
+            "type": "string",
+            "description": "Numéro de personne"
+          },
+          "refExternePersonne": {
+            "type": "string",
+            "description": "Référence externe de la personne"
+          }
+        }
+      },
+      "Nir": {
+        "required": [
+          "cle",
+          "code"
+        ],
+        "type": "object",
+        "description": "NIR",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du NIR"
+          },
+          "cle": {
+            "type": "string",
+            "description": "Clé du NIR"
+          }
+        }
+      },
+      "AffiliationsRO": {
+        "required": [
+          "nir",
+          "periode"
+        ],
+        "type": "object",
+        "properties": {
+          "nir": {
+            "$ref": "#/components/schemas/Nir"
+          },
+          "rattachementRO": {
+            "$ref": "#/components/schemas/RattachementRO"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        }
+      },
+      "RattachementRO": {
+        "type": "object",
+        "description": "Rattachement ",
+        "properties": {
+          "CodeRegime": {
+            "type": "string",
+            "description": "Code régime"
+          },
+          "codeCaisse": {
+            "type": "string",
+            "description": "Code caisse"
+          },
+          "codeCentre": {
+            "type": "string",
+            "description": "Code centre"
+          }
+        }
+      },
+      "RibAssure": {
+        "required": [
+          "bic",
+          "iban"
+        ],
+        "type": "object",
+        "description": "RIB du destinataire du paiement. Contrôle de l’IBAN zone SEPA",
+        "properties": {
+          "bic": {
+            "type": "string",
+            "description": "BIC lié à l'IBAN utilisé pour les remboursements"
+          },
+          "iban": {
+            "type": "string",
+            "description": "IBAN utilisé pour les remboursements. Contrôle format IBAN zone SEPA"
+          }
+        }
+      },
+      "Reponse": {
+        "type": "object",
+        "properties": {
+          "traceid": {
+            "type": "string",
+            "description": "Identifiant technique de la trace du contrat"
+          },
+          "status": {
+            "type": "string",
+            "description": "Statut du traitement du contrat."
+          },
+          "errorMessages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Messages d'erreur."
+            }
+          },
+          "provider": {
+            "type": "string",
+            "description": "Origine de l'erreur. Valorisé à BDDS pour toutes les erreurs fonctionnelles"
+          }
+        }
+      },
+      "Contrat": {
+        "type": "object",
+        "properties": {
+          "idDeclarant": {
+            "type": "string",
+            "description": "Organisation principale"
+          },
+          "societeEmettrice": {
+            "type": "string",
+            "description": "Organisation secondaire"
+          },
+          "numero": {
+            "type": "string",
+            "description": "Identifiant du contrat dans le backoffice contrat"
+          },
+          "numeroExterne": {
+            "type": "string",
+            "description": "Identifiant du contrat en cas de reprise d'un autre SI"
+          },
+          "numeroAdherent": {
+            "type": "string",
+            "description": "Identifiant du souscripteur du contrat"
+          },
+          "numeroAdherentComplet": {
+            "type": "string",
+            "description": "Identifiant du souscripteur du contrat dans le backoffice externe"
+          },
+          "dateSouscription": {
+            "type": "string",
+            "description": "Date de souscription du contrat"
+          },
+          "dateResiliation": {
+            "type": "string",
+            "description": "Date de résiliation du contrat"
+          },
+          "apporteurAffaire": {
+            "type": "string",
+            "description": "Raison sociale de l'apporteur d'affaire"
+          },
+          "periodesContratResponsableOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Periode"
+            },
+            "description": "Periodes durant lesquelles le contrat est considéré comme 'contrat responsable'"
+          },
+          "assure": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assure"
+            },
+            "description": "Liste des assurés du contrat"
+          },
+          "critereSecondaireDetaille": {
+            "type": "string",
+            "description": "Information permettant de découper la population (notion de portefeuille dans Organisation)"
+          },
+          "critereSecondaire": {
+            "type": "string",
+            "description": "Valeur inscrite au niveau de l’entête de l’attestation papier délivrée aux assurés issue du SI du backoffice"
+          },
+          "isContratIndividuel": {
+            "type": "boolean",
+            "description": "Booléen permettant de définir si le contrat est en gestion individuelle"
+          },
+          "gestionnaire": {
+            "type": "string",
+            "description": "Code du gestionnaire gérant le contrat. Valeur non contrôlée  (exemple : Adhérent, Gestionnaire, Entreprise)"
+          },
+          "contratCollectif": {
+            "$ref": "#/components/schemas/ContratCollectif"
+          },
+          "contexteTiersPayant": {
+            "$ref": "#/components/schemas/ContexteTP"
+          },
+          "qualification": {
+            "type": "string",
+            "description": "Valeur permettant de qualifier le contrat. Gestion des contrats de base uniquement",
+            "enum": [
+              "B"
+            ]
+          },
+          "ordrePriorisation": {
+            "type": "string",
+            "description": "Ordre de priorisation du contrat. Utilisable en cas de multi contrats sinon valorisé à '1'"
+          }
+        }
+      },
+      "ContratCollectif": {
+        "required": [
+          "numero"
+        ],
+        "type": "object",
+        "properties": {
+          "numero": {
+            "type": "string",
+            "description": "Identifiant du contrat collectif dans le backoffice externe"
+          },
+          "numeroExterne": {
+            "type": "string",
+            "description": "Identificant complémentaire pour le contrat collectif"
+          }
+        }
+      },
+      "ContexteTP": {
+        "type": "object",
+        "properties": {
+          "isCartePapierAEditer": {
+            "type": "boolean",
+            "description": "Booléen indiquant si la carte est à éditer"
+          },
+          "periodesDroitsCarte": {
+            "$ref": "#/components/schemas/PeriodesDroitsCarte"
+          },
+          "dateRestitutionCarte": {
+            "type": "string",
+            "description": "Date de restitution de la carte papier"
+          },
+          "college": {
+            "type": "string",
+            "description": "Collège du contexte TP"
+          },
+          "collectivite": {
+            "type": "string",
+            "description": "Collectivité du contexte TP"
+          },
+          "isCarteDematerialisee": {
+            "type": "boolean",
+            "description": "Booléen indiquant si il y a une carte dématerialisée"
+          },
+          "isCartePapier": {
+            "type": "boolean",
+            "description": "Booléen indiquant si il y a une carte papier"
+          }
+        }
+      },
+      "PeriodesDroitsCarte": {
+        "required": [
+          "debut",
+          "fin"
+        ],
+        "type": "object",
+        "properties": {
+          "debut": {
+            "type": "string",
+            "description": "Date de début de la période de droits carte"
+          },
+          "fin": {
+            "type": "string",
+            "description": "Date de fin de la période de droits carte"
+          }
+        }
+      }
+    }
+  }
+}

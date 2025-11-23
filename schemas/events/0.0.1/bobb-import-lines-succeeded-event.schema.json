@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Synthèse de l'import des lignes intégrées",
+  "description": "Cet événement est émis à la fin de l'import pour indiquer le nombre de lignes de correspondance intégrées avec succès.",
+  "additionalProperties": false,
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "title": "Nom du fichier",
+      "description": "Précise le nom du fichier qui est importé"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode d'import",
+      "description": "Mode de traitement d'import complet ou bien différentiel"
+    },
+    "omuId": {
+      "type": "string",
+      "title": "Identifiant de l'omu",
+      "description": "Précise l'identifiant de l'omu"
+    },
+    "succeededLinesCount": {
+      "type": "integer",
+      "title": "Nombre de lignes intégrées avec succès",
+      "description": "Précise le nombre de lignes intégrées avec succès"
+    }
+  },
+  "required": [
+    "fileName",
+    "mode",
+    "omuId",
+    "succeededLinesCount"
+  ],
+  "$id": "Insurance.serviceeligibility.bobb.import.lines.succeeded.event/0.0.1"
+}

@@ -1,0 +1,33 @@
+{
+  "parametre": [
+    {
+      "waitingCode": "CAR001",
+      "validityDate": "2021-01-01",
+      "endValidityDate": "2021-12-31",
+      "natures": [
+        "SOINSCOURANTS",
+        "PRVENTIONETMDECINESALTERNATIVES",
+        "OPTIQUE"
+      ]
+    },
+    {
+      "waitingCode": "CAR001",
+      "validityDate": "2022-01-01",
+      "endValidityDate": null,
+      "natures": [
+        "SOINSCOURANTS",
+        "PRVENTIONETMDECINESALTERNATIVES",
+        "OPTIQUE",
+        "APPAREILLAGEETPROTHESES"
+      ]
+    },
+    {
+      "waitingCode": "CAR002",
+      "validityDate": "2021-01-01",
+      "endValidityDate": null,
+      "natures": [
+        "AIDESAUDITIVES"
+      ]
+    }
+  ]
+}

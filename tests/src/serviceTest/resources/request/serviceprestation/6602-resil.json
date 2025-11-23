@@ -1,0 +1,286 @@
+{
+  "assures": [
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2461421",
+            "idBeyondDestinatairePaiements": "2461421-0000452433",
+            "nom": {
+              "nomFamille": "EL OMMAL",
+              "nomUsage": "EL OMMAL",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame EL OMMAL MANON",
+              "ligne4": "54 BOULEVARD(S) JEAN MOULIN",
+              "ligne6": "44100 NANTES",
+              "codePostal": "44100"
+            },
+            "rib": {
+              "bic": "CEPAFRPP444",
+              "iban": "FR7614445004000412406078770"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-05-20",
+              "fin": "%%NEXT_YEAR%%-09-13"
+            }
+          },
+          {
+            "idDestinatairePaiements": "2461421",
+            "idBeyondDestinatairePaiements": "2461421-0000452433",
+            "nom": {
+              "nomFamille": "EL OMMAL",
+              "nomUsage": "EL OMMAL",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame EL OMMAL MANON",
+              "ligne4": "41 BOULEVARD FRANCOIS MITTERRAND",
+              "ligne6": "44800 SAINT HERBLAIN",
+              "codePostal": "44800"
+            },
+            "rib": {
+              "bic": "CEPAFRPP444",
+              "iban": "FR7614445004000412406078770"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "%%CURRENT_YEAR%%-05-19"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2461421",
+            "idBeyondDestinataireRelevePrestations": "2461421-0000452433",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "manon.elommal@hotmail.com"
+            },
+            "nom": {
+              "nomFamille": "EL OMMAL",
+              "nomUsage": "EL OMMAL",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame EL OMMAL MANON",
+              "ligne4": "54 BOULEVARD(S) JEAN MOULIN",
+              "ligne6": "44100 NANTES",
+              "codePostal": "44100"
+            },
+            "periode": {
+              "debut": "%%CURRENT_YEAR%%-05-20",
+              "fin": "%%NEXT_YEAR%%-09-13"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "2461421",
+            "idBeyondDestinataireRelevePrestations": "2461421-0000452433",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "manon.elommal@hotmail.com"
+            },
+            "nom": {
+              "nomFamille": "EL OMMAL",
+              "nomUsage": "EL OMMAL",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame EL OMMAL MANON",
+              "ligne4": "41 BOULEVARD FRANCOIS MITTERRAND",
+              "ligne6": "44800 SAINT HERBLAIN",
+              "codePostal": "44800"
+            },
+            "periode": {
+              "debut": "2023-06-07",
+              "fin": "%%CURRENT_YEAR%%-05-19"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "2461421",
+            "idBeyondDestinataireRelevePrestations": "2461421-0000452433",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "EL OMMAL",
+              "nomUsage": "EL OMMAL",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame EL OMMAL MANON",
+              "ligne4": "41 BOULEVARD FRANCOIS MITTERRAND",
+              "ligne6": "44800 SAINT HERBLAIN",
+              "codePostal": "44800"
+            },
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2023-06-06"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "EL OMMAL",
+          "nomUsage": "EL OMMAL",
+          "prenom": "AMINE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur EL OMMAL AMINE",
+          "ligne4": "54 BOULEVARD(S) JEAN MOULIN",
+          "ligne6": "44100 NANTES",
+          "codePostal": "44100"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-09"
+            },
+            "isTeletransmission": true
+          },
+          {
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2023-01-08"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [
+          ],
+          "code": "BAL_6602_001",
+          "codeAssureur": "BALOO",
+          "libelle": "CG SANTE CONFORT",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2023-01-09"
+          },
+          "dateAncienneteGarantie": "2023-01-09"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "2",
+      "identite": {
+        "nir": {
+          "code": "1991244162390",
+          "cle": "08"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1991244162390",
+              "cle": "08"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "441"
+            },
+            "periode": {
+              "debut": "2023-01-09"
+            }
+          },
+          {
+            "nir": {
+              "code": "1991244162390",
+              "cle": "08"
+            },
+            "rattachementRO": {
+            },
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2023-01-08"
+            }
+          }
+        ],
+        "dateNaissance": "19991224",
+        "rangNaissance": "1",
+        "numeroPersonne": "2461427"
+      },
+      "dateAdhesionMutuelle": "2023-01-09",
+      "dateDebutAdhesionIndividuelle": "2023-01-09",
+      "periodes": [
+        {
+          "debut": "2023-01-09"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+      ],
+      "regimesParticuliers": [
+      ],
+      "situationsParticulieres": [
+      ],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      }
+    }
+  ],
+  "version": "6",
+  "periodesSuspension": [
+  ],
+  "codeOc": "CONTRAT_GROUPE_AXA",
+  "periodesContratCMUOuvert": [
+  ],
+  "contratCollectif": {
+    "identifiantCollectivite": "350422622",
+    "raisonSociale": "CEGEDIM",
+    "groupePopulation": "ANI",
+    "numero": "00219181",
+    "numeroExterne": "00219181"
+  },
+  "traceId": "670ed0f9987bfb320f1b304d",
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "02939390",
+  "numeroExterne": "02939390",
+  "numeroAdherent": "02939390",
+  "numeroAdherentComplet": "02939390",
+  "dateSouscription": "2023-01-09",
+  "dateResiliation": "%%CURRENT_YEAR%%-10-09",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-01-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "%%CURRENT_YEAR%%-09-14"
+    },
+    {
+      "debut": "2023-01-09",
+      "fin": "%%CURRENT_YEAR%%-09-13"
+    }
+  ],
+  "critereSecondaire": "001",
+  "isContratIndividuel": false,
+  "gestionnaire": "AXA",
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratv6.ContratAIV6"
+}

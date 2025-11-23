@@ -1,0 +1,229 @@
+{
+  "idDeclarant": "0032165199",
+  "societeEmettrice": "0032165199",
+  "numero": "8343484392",
+  "numeroExterne": "SLOK4983989",
+  "numeroAdherent": "83747438",
+  "numeroAdherentComplet": "TBT83747438",
+  "dateSouscription": "2020-01-22",
+  "dateResiliation": null,
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "CAD",
+  "critereSecondaire": "Cadres",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "porteurRisque": {
+    "code": "ATR",
+    "libelle": "Agence de Risque"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "periodesDroitsComptablesOuverts": [
+    {
+      "debut": "2019-01-01",
+      "fin": "2019-12-31"
+    },
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ],
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1701062498046",
+          "cle": "02"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-12-31"
+            }
+          },
+          {
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-12-31"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "19791006",
+        "numeroPersonne": "03094493",
+        "refExternePersonne": "7209738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "nomUsage": null,
+          "prenom": "JEAN PIERRE",
+          "civilite": "Mr"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "jp-delmotte@gagamil.coum"
+        },
+        "rib": {
+          "bic": "MCCFFRP1",
+          "iban": "FR3330002005500000157841Z25"
+        }
+      },
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dateRadiation": null,
+      "dateCreation": "2018-08-22T09:53:13.460Z",
+      "dateModification": "2018-08-22T09:53:13.460Z",
+      "digitRelation": {
+        "isDematerialise": true,
+        "isTeletransmission": true
+      },
+      "modePaiementPrestations": {
+        "code": "VIR",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR"
+      },
+      "periodes": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        },
+        {
+          "debut": "2019-01-01",
+          "fin": "2019-12-31"
+        }
+      ],
+      "periodesRegimeParticulierOuvert": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        },
+        {
+          "debut": "2019-01-01",
+          "fin": "2019-12-31"
+        }
+      ],
+      "periodesBeneficiaireCSSOuvert": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        },
+        {
+          "debut": "2019-01-01",
+          "fin": "2019-12-31"
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "droits": [
+        {
+          "code": "ATRDENT",
+          "codeAssureur": "DNT",
+          "libelle": "DENTAIRE",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": null
+          },
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "3M",
+            "periode": {
+              "debut": "2020-03-01",
+              "fin": "2020-12-31"
+            },
+            "codeDroitRemplacement": "ATRDT"
+          }
+        },
+        {
+          "code": "ATRPHAR",
+          "codeAssureur": "DNT",
+          "libelle": "PHARMACIE",
+          "ordrePriorisation": "2",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": null
+          },
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "0M",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": null
+            },
+            "codeDroitRemplacement": "ATRPH"
+          }
+        },
+        {
+          "code": "ATROPTI",
+          "codeAssureur": "OPT",
+          "libelle": "OPTIQUE",
+          "ordrePriorisation": "3",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": null
+          },
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "6M",
+            "periode": {
+              "debut": "2020-06-01",
+              "fin": "2020-12-31"
+            },
+            "codeDroitRemplacement": "ATROP"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "insurerId": {
+            "type": "string"
+        },
+        "issuingCompanyCode": {
+            "type": "string"
+        },
+        "subscriberNumber": {
+            "type": "string"
+        },
+        "contractNumber": {
+            "type": "string"
+        },
+        "personNumber": {
+            "type": "string"
+        },
+        "nir": {
+            "type": "string"
+        },
+        "affiliationsRO": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "attachementRO": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "centerCode": {
+                                "type": "string"
+                            },
+                            "healthInsuranceCompanyCode": {
+                                "type": "string"
+                            },
+                            "regimeCode": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "nir": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "key": {
+                                "type": "string"
+                            },
+                            "code": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "key",
+                            "code"
+                        ]
+                    },
+                    "periode": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "start": {
+                                "type": "string"
+                            },
+                            "end": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "birthDate": {
+            "type": "string"
+        },
+        "birthRank": {
+            "type": "string"
+        },
+        "previousEndDate": {
+            "type": "string"
+        },
+        "newEndDate": {
+            "type": "string"
+        },
+        "isMultiContrat": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "insurerId",
+        "issuingCompanyCode",
+        "subscriberNumber",
+        "contractNumber",
+        "personNumber",
+        "birthDate",
+        "birthRank",
+        "newEndDate",
+        "isMultiContrats"
+    ],
+    "title": "undue retention",
+    "description": "Informations pour undue retention"
+}

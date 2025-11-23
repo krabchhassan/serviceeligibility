@@ -1,0 +1,332 @@
+{
+  "_id" : "0079001962",
+  "idClientBO" : "natacha.leone@cegedim-activ.com",
+  "nom" : "MACIF2",
+  "libelle" : "MACIF2",
+  "numeroPrefectoral" : "0079001962",
+  "codePartenaire" : "CLR",
+  "type" : "amc",
+  "codeCircuit" : "02",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "AL",
+  "dateModification" : "2020-09-21T13:44:09.415Z",
+  "userModification" : "pascal.molinie@cegedim-activ.com",
+  "pilotages" : [
+    {
+      "codeService" : "TPG-IS",
+      "serviceOuvert" : false,
+      "caracteristique" : {
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "TPG-SP",
+      "serviceOuvert" : false,
+      "caracteristique" : {
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549744",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2017-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549744",
+        "nomPerimetre" : "MFIE",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : true
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98550239",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98550239",
+        "nomPerimetre" : "MATHPREV",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98550221",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98550221",
+        "nomPerimetre" : "APIVIASANTE",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98550213",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98550213",
+        "nomPerimetre" : "APIVIASANTA",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98550205",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98550205",
+        "nomPerimetre" : "APIVIAMUT",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549629",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2015-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549629",
+        "nomPerimetre" : "MACAADSOAM",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549637",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2015-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549637",
+        "nomPerimetre" : "MAMVASOMM",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549645",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2015-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549645",
+        "nomPerimetre" : "APIVIA",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549652",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2015-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549652",
+        "nomPerimetre" : "PASCARTE",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549660",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2015-12-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549660",
+        "nomPerimetre" : "CALLYS",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549694",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-06-30T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549694",
+        "nomPerimetre" : "SMACLSOMT",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "ALMV3",
+      "critereRegroupementDetaille" : "98549710",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-07-31T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549710",
+        "nomPerimetre" : "APIVMIMA",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    },
+    {
+      "codeService" : "SEL-ROC",
+      "critereRegroupement" : "",
+      "critereRegroupementDetaille" : "98549751",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2019-01-01T00:00:00.000Z",
+      "couloirClient" : "CLR",
+      "typeConventionnement" : "AL",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "98549603",
+        "numClient" : "98549603",
+        "nomClient" : "MACIF APIVIA",
+        "dureeValidite" : 2000,
+        "versionNorme" : "V3",
+        "typeFichier" : "XML",
+        "codePerimetre" : "98549751",
+        "nomPerimetre" : "APIVIAMUTA",
+        "typeGestionnaireBO" : "BO AI",
+        "libelleGestionnaireBO" : "MACIF",
+        "codeClient" : "CLR",
+        "numExterneContratIndividuel" : true,
+        "numExterneContratCollectif" : false
+      }
+    }
+  ],
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.entity.Declarant"
+}

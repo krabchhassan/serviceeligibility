@@ -1,0 +1,19 @@
+<ns5:getInfoBddResponse xmlns:ns5="http://ws.cegedimassurance.com/basededroit/wsdl" xmlns:ns4="http://norme.cegedimassurances.com/amc" xmlns:ns3="http://norme.cegedimassurances.com/beneficiaire" xmlns:ns2="http://norme.cegedimassurances.com/base_de_droit" xmlns="http://norme.cegedimassurances.com/commun">
+    <ns2:header_out>
+        <headerTech>
+            <id_serveur>ALLIANCE PREMIUM</id_serveur>
+            <date>*</date>
+            <id_session_serveur>107f4d8a-04ee-4909-8b7b-390700ba61cd</id_session_serveur>
+            <version_serveur>V201_15_07</version_serveur>
+        </headerTech>
+        <headerFonc>
+            <code_contexte>CD-01</code_contexte>
+        </headerFonc>
+    </ns2:header_out>
+    <ns2:code_reponse>
+        <code>6005</code>
+        <libelle>Le n°adhérent est absent et celui-ci est indispensable pour identifier le bénéficiaire. Veuillez émettre une nouvelle demande avec le n°adhérent</libelle>
+    </ns2:code_reponse>
+</ns5:getInfoBddResponse>
+
+

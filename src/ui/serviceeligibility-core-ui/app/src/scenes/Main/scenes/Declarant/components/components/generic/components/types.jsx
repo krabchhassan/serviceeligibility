@@ -1,0 +1,20 @@
+/* ************************************* */
+/* ********       EXPORTS       ******** */
+/* ************************************* */
+export default {
+    // #################### TRANSCODING OBJECT ##########################
+    GET_DOMAINES_TP: { type: 'GET_DOMAINES_TP' },
+    GET_DOMAINES_TP_PENDING: { type: 'GET_DOMAINES_TP_PENDING' },
+    GET_DOMAINES_TP_FULFILLED: { type: 'GET_DOMAINES_TP_FULFILLED' },
+    GET_DOMAINES_TP_REJECTED: { type: 'GET_DOMAINES_TP_REJECTED' },
+
+    UPDATE_DECLARANT: { type: 'UPDATE_DECLARANT' },
+    UPDATE_DECLARANT_PENDING: { type: 'UPDATE_DECLARANT_PENDING' },
+    UPDATE_DECLARANT_FULFILLED: { type: 'UPDATE_DECLARANT_FULFILLED' },
+    UPDATE_DECLARANT_REJECTED: { type: 'UPDATE_DECLARANT_REJECTED' },
+
+    GET_ONE_DECLARANT: { type: 'GET_ONE_DECLARANT' },
+    GET_ONE_DECLARANT_PENDING: { type: 'GET_ONE_DECLARANT_PENDING' },
+    GET_ONE_DECLARANT_FULFILLED: { type: 'GET_ONE_DECLARANT_FULFILLED' },
+    GET_ONE_DECLARANT_REJECTED: { type: 'GET_ONE_DECLARANT_REJECTED' },
+};

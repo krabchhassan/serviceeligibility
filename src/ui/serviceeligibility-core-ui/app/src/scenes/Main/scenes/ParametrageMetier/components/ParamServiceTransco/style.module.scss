@@ -1,0 +1,20 @@
+.service-line-actions {
+    display: flex;
+
+    .cancel-button {
+        margin-left: 10px;
+    }
+}
+
+:global {
+    .ReactTable .rt-tbody .rt-td {
+        overflow: visible;
+    }
+    .Select {
+        position: relative;
+    }
+    .Select-menu-outer {
+        position: absolute;
+        z-index: 200;
+    }
+}

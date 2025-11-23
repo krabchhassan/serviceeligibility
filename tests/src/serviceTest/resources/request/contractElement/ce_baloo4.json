@@ -1,0 +1,27 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "ASS_BALOO",
+  "codeContractElement" : "BAL_BASMOD030",
+  "label" : "BAL_BASMOD030",
+  "productElements" : [
+    {
+      "codeOffer" : "BLUE_TP",
+      "codeProduct" : "SANTE_100",
+      "codeBenefitNature" : "RADIOLOGIE",
+      "codeAmc" : "BALOO",
+      "from" : "2020-01-01T06:00:00.000Z",
+      "to" : "2022-06-30T00:00:00.000Z",
+      "effectiveDate" : "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "codeOffer" : "BLUE_TP2",
+      "codeProduct" : "SANTE_200",
+      "codeBenefitNature" : "OPTIQUE",
+      "codeAmc" : "BALOO",
+      "from" : "2022-07-01T00:00:00.000Z",
+      "effectiveDate" : "2020-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored" : false,
+  "status": "ACTIVE"
+}

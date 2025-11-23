@@ -1,0 +1,83 @@
+{
+	"services": [
+		"Service_TP"
+	],
+	"key": "0000401166-003",
+	"contrats": [
+		{
+			"numeroContrat": "MBA0003",
+			"codeEtat": "V",
+      	    "numeroAdherent": "MBA0001",
+			"data": {
+				"nom": {
+					"nomFamille": "PEHAHUT",
+					"nomUsage": "VAITROUAT",
+					"prenom": "AYMERIC"
+				},
+				"adresse": {},
+				"contact": {}
+			},
+			"numeroAMCEchange": "0000401167"
+		},
+    {
+      "numeroContrat": "OOA0004",
+      "codeEtat": "V",
+      "numeroAdherent": "OOA0001",
+      "data": {
+        "nom": {
+          "nomFamille": "PEHAHUT",
+          "nomUsage": "VAITROUAT",
+          "prenom": "AYMERIC"
+        },
+        "adresse": {},
+        "contact": {}
+      },
+      "numeroAMCEchange": "0000401167"
+    }
+	],
+	"amc": {
+		"idDeclarant": "0000401166"
+	},
+
+	"identite": {
+		"nir": {},
+		"historiqueDateRangNaissance": [
+			{
+				"dateNaissance": "20041026",
+				"rangNaissance": "1"
+			}
+		],
+		"affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1041062498044",
+          "cle" : "37"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "131"
+        },
+        "periode" : {
+          "debut" : "2024-10-01"
+        }
+      },
+      {
+        "nir" : {
+          "code" : "1041062498045",
+          "cle" : "36"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "131"
+        },
+        "periode" : {
+          "debut" : "2023-10-01",
+          "fin" : "2024-09-30"
+        }
+      }
+    ],
+		"dateNaissance": "20041026",
+		"rangNaissance": "1",
+		"numeroPersonne": "003"
+	}
+}

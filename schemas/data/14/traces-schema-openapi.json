@@ -1,0 +1,230 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "traces"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Traces": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclaration": {
+		    "type": "string"
+		  },
+          "idDeclarant": {
+		    "type": "string"
+		  },
+		  "effetDebut": {
+            "type": "string",
+            "format": "date-time"
+          },
+		  "codeEtat": {
+		    "type": "string"
+		  },
+		  "critereSecondaire": {
+		    "type": "string"
+		  },
+		  "critereSecondaireDetaille": {
+		    "type": "string"
+		  },
+		  "nom": {
+		    "type": "string"
+		  },
+		  "prenom": {
+		    "type": "string"
+		  },
+		  "nirOd1": {
+		    "type": "string"
+		  },
+		  "cleNirOd1": {
+		    "type": "string"
+		  },
+		  "dateNaissance": {
+		    "type": "string"
+		  },
+		  "rangNaissance": {
+		    "type": "string"
+		  },
+		  "qualite": {
+		    "type": "string"
+		  },
+		  "numeroContrat": {
+		    "type": "string"
+		  },
+		  "numeroAdherent": {
+		    "type": "string"
+		  },
+		  "numeroPersonne": {
+		    "type": "string"
+		  },
+		  "nomFichierOrigine": {
+		    "type": "string"
+		  },
+		  "numAMCEchange": {
+		    "type": "string"
+		  },
+		  "listeConsolidations": {
+			"type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Consolidation"
+            }
+		  },
+		  "listeExtractions": {
+			"type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Extraction"
+            }
+		  },
+		  "listePriorisation": {
+			"type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Priorisation"
+            }
+		  },
+		  "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Traces"
+      },
+	  "Consolidation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarationConsolidee": {
+            "type": "string"
+          },
+          "dateExecution": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "codeService": {
+            "type": "string"
+          },
+          "codeRejet": {
+            "type": "string"
+          },
+          "batch": {
+            "type": "string"
+          },
+          "nomFichierARL": {
+            "type": "string"
+          },
+          "codeClient": {
+            "type": "string"
+          },
+          "collectionConsolidee": {
+            "type": "string"
+          },
+          "listeExtractions": {
+            "$ref": "#/components/schemas/Extraction"
+          }
+        },
+        "required": [],
+        "title": "Consolidation"
+      },
+	  "Extraction": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateExecution": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "codeService": {
+            "type": "string"
+          },
+          "codeRejet": {
+            "type": "string"
+          },
+          "batch": {
+            "type": "string"
+          },
+          "nomFichier": {
+            "type": "string"
+          },
+          "nomFichierARL": {
+            "type": "string"
+          },
+          "numeroFichier": {
+            "type": "integer"
+          },
+          "codeClient": {
+            "type": "string"
+          },
+          "idLigne": {
+            "type": "string"
+          },
+          "libelleRejet": {
+            "type": "string"
+          },
+          "valeurRejet": {
+            "type": "string"
+          },
+		  "listeRetours": {
+            "$ref": "#/components/schemas/Retour"
+          }
+        },
+        "required": [],
+        "title": "Extraction"
+      },
+	  "Retour": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateExecution": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "batch": {
+            "type": "string"
+          },
+          "libelleRejet": {
+            "type": "string"
+          },
+          "nomFichier": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Retour"
+      },
+	  "Priorisation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateExecution": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "codeService": {
+            "type": "string"
+          },
+          "codeRejet": {
+            "type": "string"
+          },
+          "nomFichierARL": {
+            "type": "string"
+          },
+          "nbPrioOrigineDifferent": {
+            "type": "string"
+          },
+          "batch": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Priorisation"
+      }
+    }
+  }
+}

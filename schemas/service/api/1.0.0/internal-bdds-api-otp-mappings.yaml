@@ -1,0 +1,16 @@
+apiName: internal-bdds-api-otp
+# all endpoints will be under this entrypointPath
+entrypointPath: "/beyond/internal/api/bdds/v1/otp"
+mappings:
+- match:
+    path: /searchBeneficiaries
+    methods: ["POST"]
+  redirect_to:
+    component: technicalComponents/otp-search
+    path: "/"
+- match:
+    path: /beneficiaryTpDetails
+    methods: ["GET"]
+  redirect_to:
+    component: technicalComponents/otp-detail
+    path: "/"

@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "validityDate": "2022-01-01",
+      "offerCode": "OFFRE_KC_PLATINE_BASE",
+      "code": 1,
+      "natures": [
+        "OPTIQUE",
+        "MEDECINE",
+        "PHARMACIE",
+        "DENTAIRE"
+      ],
+      "products": [
+        "KC_PlatineBase"
+      ]
+    }
+  ]
+}
+

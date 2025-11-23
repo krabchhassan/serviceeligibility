@@ -1,0 +1,28 @@
+spring:
+  mongodb:
+    embedded:
+      version: 4.0.12
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/serviceeligibility-core-api-dev"
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${keycloak_auth_server_url:https://idp.dev.beyond.cegedim.cloud/auth}/realms/${keycloak_realm:htp}
+      client:
+        registration:
+          keycloak:
+            client-secret: ${CLIENT_SECRET:nn6SAeEsmeij97djO5bSHs6rEjdw5cgd}
+            client-id: ${CLIENT_ID:test-es16}
+            authorization-grant-type: client_credentials
+        provider:
+          keycloak:
+            token-uri: ${keycloak_auth_server_url:https://idp.dev.beyond.cegedim.cloud/auth}/realms/${keycloak_realm:htp}/protocol/openid-connect/token
+beyond:
+  service: bdds
+  socle: Insurance
+  event:
+    group-id: "bdds-test"
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur

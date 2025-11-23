@@ -1,0 +1,3043 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "0255256S1",
+  "numeroAdherent": "0255256S1",
+  "numeroAdherentComplet": "0255256S1",
+  "dateSouscription": "2017/10/06",
+  "dateResiliation": "2024/06/01",
+  "type": "B",
+  "nomPorteur": "BENNOUI",
+  "prenomPorteur": "MERIEM",
+  "civilitePorteur": "MME",
+  "qualification": "B",
+  "numeroContratCollectif": "84484140320184",
+  "isContratResponsable": false,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "0255256S1",
+  "numeroExterneContratCollectif": "864015/00000B0008",
+  "gestionnaire": "000ER00060",
+  "fondCarte": "itelis.jpg",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "dateCreation": "2024-06-26T19:57:42.384Z",
+  "dateModification": "2024-06-27T06:17:30.661Z",
+  "dateConsolidation": "2024-06-27T06:17:30.661Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateRadiation": "2024/05/31",
+      "dateCreation": "2024-06-26T23:27:48.172Z",
+      "dateModification": "2024-06-27T06:17:30.626Z",
+      "dateNaissance": "20221201",
+      "rangNaissance": "1",
+      "nirOd1": "2830399352487",
+      "cleNirOd1": "09",
+      "nirOd2": "1720899353180",
+      "cleNirOd2": "82",
+      "numeroPersonne": "449623",
+      "refExternePersonne": "1338858",
+      "rangAdministratif": "21",
+      "dateAdhesionMutuelle": "2023/04/01",
+      "dateDebutAdhesionIndividuelle": "2023/04/01",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "BENNOUI",
+        "nomPatronymique": "BENNOUI",
+        "nomMarital": "BENNOUI",
+        "prenom": "MERIEM",
+        "civilite": "MME",
+        "periodeDebut": "2023/04/01",
+        "periodeFin": "2024/05/31",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "422",
+        "centreOD1": "",
+        "regimeOD2": "01",
+        "caisseOD2": "422",
+        "centreOD2": "",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Enfant"
+      },
+      "adresses": [
+        {
+          "ligne1": "Madame BENNOUI YASMINA",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "14 SQUARE LOUIS HUGUET",
+          "ligne5": "",
+          "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+          "ligne7": "",
+          "codePostal": "42500",
+          "telephone": "06 45 51 10 31",
+          "email": "maya-aimen@live.fr",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code" : "SVIL",
+          "noOrdreDroit" : "8",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "SVIL-010",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "MEDECINE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "02",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "03",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/31"
+                                },
+                                {
+                                  "debut" : "2024/02/01",
+                                  "fin" : "2024/01/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "KA",
+                                "libelle" : "Kalivia"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 2,
+                              "typeConventionnement" : {
+                                "code" : "SE",
+                                "libelle" : "Seveane"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/02/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "noOrdreDroit" : "1",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPTI-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeRenvoi" : "RV1",
+          "libelleCodeRenvoi" : "Mon libellé de renvoi 1 - Pour les tests de la BDDS",
+          "noOrdreDroit" : "4",
+          "codeRenvoiAdditionnel" : "RV2",
+          "libelleCodeRenvoiAdditionnel" : "Mon libellé de renvoi 2 - Pour les tests de la BDDS également.",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-010",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "VM",
+                                "libelle" : "Viamedis"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "VM",
+                                "libelle" : "Viamedis"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "VM",
+                                "libelle" : "Viamedis"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "noOrdreDroit" : "2",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                },
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "02",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "03",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                },
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "02",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "03",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "codeRenvoi" : "35",
+          "libelleCodeRenvoi" : "OPTI et AUDI : réseau Kalixia – prise en charge sur www.oxantis.net",
+          "noOrdreDroit" : "3",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isCarteTPaEditer": false,
+      "dateRadiation": "2024/05/31",
+      "dateCreation": "2024-06-26T19:57:42.384Z",
+      "dateModification": "2024-06-27T06:17:30.661Z",
+      "dateNaissance": "19830326",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2830399352487",
+      "cleNirBeneficiaire": "09",
+      "nirOd1": "2830399352487",
+      "cleNirOd1": "09",
+      "numeroPersonne": "449617",
+      "refExternePersonne": "255256",
+      "rangAdministratif": "1",
+      "dateAdhesionMutuelle": "2017/10/06",
+      "dateDebutAdhesionIndividuelle": "2017/10/06",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "BRAHAMI",
+        "nomPatronymique": "BENNOUI",
+        "nomMarital": "BENNOUI",
+        "prenom": "YASMINA",
+        "civilite": "MME",
+        "periodeDebut": "2017/10/06",
+        "periodeFin": "2024/05/31",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "422",
+        "centreOD1": "",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "Madame BENNOUI YASMINA",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "14 SQUARE LOUIS HUGUET",
+          "ligne5": "",
+          "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+          "ligne7": "",
+          "codePostal": "42500",
+          "telephone": "06 45 51 10 31",
+          "email": "maya-aimen@live.fr",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code" : "SVIL",
+          "noOrdreDroit" : "8",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "SVIL-010",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "MEDECINE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "02",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "03",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/31"
+                                },
+                                {
+                                  "debut" : "2024/02/01",
+                                  "fin" : "2024/01/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "KA",
+                                "libelle" : "Kalivia"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 2,
+                              "typeConventionnement" : {
+                                "code" : "SE",
+                                "libelle" : "Seveane"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/02/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "noOrdreDroit" : "1",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPTI-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeRenvoi" : "RV1",
+          "libelleCodeRenvoi" : "Mon libellé de renvoi 1 - Pour les tests de la BDDS",
+          "noOrdreDroit" : "4",
+          "codeRenvoiAdditionnel" : "RV2",
+          "libelleCodeRenvoiAdditionnel" : "Mon libellé de renvoi 2 - Pour les tests de la BDDS également.",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-010",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "VM",
+                                "libelle" : "Viamedis"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "VM",
+                                "libelle" : "Viamedis"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "VM",
+                                "libelle" : "Viamedis"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "masqueFormule" : "100% FR",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "noOrdreDroit" : "2",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                },
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "02",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "03",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                },
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "02",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "03",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "codeRenvoi" : "35",
+          "libelleCodeRenvoi" : "OPTI et AUDI : réseau Kalixia – prise en charge sur www.oxantis.net",
+          "noOrdreDroit" : "3",
+          "garanties" : [
+            {
+              "codeGarantie" : "FSBC20184A",
+              "libelleGarantie" : "Garantie frais de santé",
+              "codeAssureurGarantie" : "ASSU00060",
+              "dateAdhesionCouverture" : "2023/04/01",
+              "produits" : [
+                {
+                  "codeProduit" : "FSBC20184A",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-099",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "motifEvenement" : ""
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/04/01",
+                              "periodeFin" : "2024/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SC",
+                                "libelle" : "Santéclair"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/01/01"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "masqueFormule" : "PEC",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2024/01/01",
+                                  "fin" : "2024/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : "FSC20184",
+                  "codeOc" : "ASSU00060"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "identifiantCollectivite": "382152684",
+  "raisonSociale": "ISERE NETTOYAGE SERVICES",
+  "siret": "38215268400033",
+  "groupePopulation": "38",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.domain.contract.Contract"
+}

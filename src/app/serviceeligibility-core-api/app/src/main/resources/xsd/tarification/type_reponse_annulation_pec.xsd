@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tarification="http://norme.cegedimassurances.com/tarification" 
+	targetNamespace="http://norme.cegedimassurances.com/tarification" elementFormDefault="qualified">
+	<xs:complexType name="type_reponse_annulation_pec">
+		<xs:sequence>
+			<xs:element name="id_prescription">
+				<xs:annotation>
+					<xs:documentation>Numéro d'ordre de la prescription</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numero_accreditation">
+				<xs:annotation>
+					<xs:documentation>Numéro de l'accréditation annulée</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

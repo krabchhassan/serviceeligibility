@@ -1,0 +1,18 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "TEST BLUE",
+  "codeContractElement" : "KC_PlatineComp",
+  "label" : "KC_PlatineComp",
+  "ignored" : false,
+  "status": "ACTIVE",
+  "productElements" : [
+    {
+      "codeOffer" : "OffrePlatine",
+      "codeProduct" : "PlatineComp",
+      "codeBenefitNature" : "HOSPITALISATION",
+      "codeAmc" : "KLESIA_CARCEPT",
+      "from" : "2020-01-01T00:00:00.000Z",
+      "effectiveDate" : "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}

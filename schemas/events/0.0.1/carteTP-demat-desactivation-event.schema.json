@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Désactivation carte dématérialisée.",
+  "description": "Désactivation d'une carte TP dématérialisée.",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC"
+    },
+    "issuingCompanyCode": {
+      "type": "string",
+      "description": "Code de la société émettrice"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adherent du contrat"
+    },
+    "startDate": {
+      "type": "string",
+      "description": "Période début de carte désactivée"
+    },
+    "endDate": {
+      "type": "string",
+      "description": "Période fin de carte désactivée"
+    }
+  },
+  "required": [
+    "declarantId",
+    "issuingCompanyCode",
+    "contractNumber",
+    "subscriberNumber",
+    "startDate",
+    "endDate"
+  ],
+  "$id": "Insurance.serviceeligibility.carteTP.demat.desactivation.event/0.0.1"
+}

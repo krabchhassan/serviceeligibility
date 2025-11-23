@@ -1,0 +1,1515 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "99992004002",
+  "numeroExterne": "99992004002",
+  "numeroAdherent": "99992004002",
+  "numeroAdherentComplet": "99992004002",
+  "dateSouscription": "2018-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "gestionnaire": "AXA",
+  "contexteTiersPayant": {
+    "college": "100",
+    "collectivite": "CEGEDIM ACTIV",
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": false,
+    "isCartePapier": false
+  },
+  "contratCollectif": {
+    "numero": "00219071",
+    "numeroExterne": ""
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "C999200400201",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "REYNALD",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "REYNALD",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "REYNALD",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIV",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002011",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_1",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_1",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_1",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 2,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002012",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_2",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_2",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_2",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 3,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002013",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_3",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_3",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_3",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 4,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002014",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_4",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_4",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_4",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 5,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002015",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_5",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_5",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_5",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 6,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002016",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_6",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_6",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_6",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 7,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002017",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_7",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_7",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_7",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 8,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002018",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_8",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_8",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_8",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 9,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    },
+    {
+      "identite": {
+        "dateNaissance": "19791006",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "numeroPersonne": "99992004002019",
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "HERMEZ",
+          "nomUsage": "HERMEZ",
+          "prenom": "DLANYER_9",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur HERMEZ REYNALD",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+          "ligne5": "",
+          "ligne6": "09210 ST YBARS",
+          "ligne7": "",
+          "codePostal": "09210"
+        },
+        "contact": {
+          "email": "RHERMEZ@FREE.FR"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_9",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "rib": {
+              "iban": "FR7617807000772551923078631",
+              "bic": "CCBPFRPPTLS"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "HERMEZ",
+              "nomUsage": "HERMEZ",
+              "prenom": "DLANYER_9",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur HERMEZ REYNALD",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 LOTISSEMENT LE FOIRAIL",
+              "ligne5": "",
+              "ligne6": "09210 ST YBARS",
+              "ligne7": "",
+              "codePostal": "09210"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 10,
+      "dateAdhesionMutuelle": "2012-01-01",
+      "dateDebutAdhesionIndividuelle": "2018-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2018-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "isContratIndividuel": false
+}

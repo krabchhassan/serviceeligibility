@@ -1,0 +1,26 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "BALOO",
+  "codeContractElement" : "Multi_OK",
+  "label" : "Multi_OK",
+  "productElements" : [
+    {
+      "codeOffer" : "OffreMultiOK",
+      "codeProduct" : "ProduitMulti01",
+      "codeBenefitNature" : "NatureMulti01",
+      "codeAmc" : "BALOO",
+      "from" : "2020-01-01T00:00:00.000Z",
+      "effectiveDate" : "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "codeOffer" : "OffreMultiOK",
+      "codeProduct" : "ProduitMulti03",
+      "codeBenefitNature" : "NatureMulti03",
+      "codeAmc" : "BALOO",
+      "from" : "%%CURRENT_YEAR%%-06-01T00:00:00.000Z",
+      "effectiveDate" : "2018-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored" : false,
+  "status": "ACTIVE"
+}

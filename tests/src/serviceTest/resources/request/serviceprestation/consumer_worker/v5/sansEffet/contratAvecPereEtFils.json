@@ -1,0 +1,339 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "54580211001",
+  "numeroExterne": "54580211001",
+  "numeroAdherent": "54580211001",
+  "numeroAdherentComplet": "54580211001COMP",
+  "dateSouscription": "2023-01-01",
+  "apporteurAffaire": "apporteurAffaire",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2023-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "periode": {
+        "debut": "2023-01-01",
+        "fin": "2023-12-31"
+      },
+      "code": "CMUP"
+    }
+  ],
+  "critereSecondaireDetaille": "CAD",
+  "critereSecondaire": "001",
+  "isContratIndividuel": false,
+  "gestionnaire": "AXA",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": "false",
+    "periodesDroitsCarte": {
+      "debut": "2023-01-01",
+      "fin": "2023-12-31"
+    },
+    "isCarteDematerialisee": true,
+    "isCartePapier": true,
+    "college": "TEST COLLEGE",
+    "collectivite": "TEST COLLECTIVITE"
+  },
+  "contratCollectif": {
+    "numero": "00219071",
+    "numeroExterne": "12"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": 1,
+      "identite": {
+        "nir": {
+          "code": "1791062498046",
+          "cle": "46"
+        },
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "numeroPersonne": "54580211001-01",
+        "refExternePersonne": "54580211001-01EXT"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "nomUsage": "DELMOTTE",
+          "prenom": "JEAN PIERRE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 RUE DE LA FONTAINE",
+          "ligne5": "",
+          "ligne6": "11130 SIGEAN",
+          "ligne7": "",
+          "codePostal": "11130"
+        },
+        "contact": {
+          "email": "jp-delmotte@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne5": "",
+              "ligne6": "11130 SIGEAN",
+              "ligne7": "",
+              "codePostal": "11130"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne5": "",
+              "ligne6": "11130 SIGEAN",
+              "ligne7": "",
+              "codePostal": "11130"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2023-01-01",
+      "dateDebutAdhesionIndividuelle": "2023-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2023-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "GT_BASE",
+          "codeAssureur": "BALOO",
+          "libelle": "GT_BASE",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "dateAncienneteGarantie": "2023-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": 21,
+      "identite": {
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "091",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "nir": {
+              "code": "1791062498046",
+              "cle": "46"
+            }
+          }
+        ],
+        "dateNaissance": "20081024",
+        "rangNaissance": "1",
+        "numeroPersonne": "54580211001-02",
+        "refExternePersonne": "54580211001-02EXT"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "nomUsage": "DELMOTTE",
+          "prenom": "PIERRE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "2 RUE DE LA FONTAINE",
+          "ligne5": "",
+          "ligne6": "11130 SIGEAN",
+          "ligne7": "",
+          "codePostal": "11130"
+        },
+        "contact": {
+          "email": "jp-delmotte@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne5": "",
+              "ligne6": "11130 SIGEAN",
+              "ligne7": "",
+              "codePostal": "11130"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "nomUsage": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur DELMOTTE JEAN PIERRE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "2 RUE DE LA FONTAINE",
+              "ligne5": "",
+              "ligne6": "11130 SIGEAN",
+              "ligne7": "",
+              "codePostal": "11130"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2023-01-01",
+      "dateDebutAdhesionIndividuelle": "2023-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2023-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      },
+      "droits": [
+        {
+          "code": "GT_BASE",
+          "codeAssureur": "BALOO",
+          "libelle": "GT_BASE",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "dateAncienneteGarantie": "2023-01-01"
+        }
+      ]
+    }
+  ]
+}

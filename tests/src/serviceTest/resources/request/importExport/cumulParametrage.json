@@ -1,0 +1,36 @@
+{
+  "data": {
+    "parametres": [
+      {
+        "_id": "582dbb820bdf2339e8a7cd19",
+        "code": "domaine",
+        "listeValeurs": [
+          {
+            "code": "PHCO",
+            "transcodification": "PHCO",
+            "libelle": "Pharmacie remboursable à 30%",
+            "priorite": "1",
+            "isCumulGaranties": true,
+            "isCumulPlafonne": true
+          },
+          {
+            "code": "PHNO",
+            "transcodification": "PHNO",
+            "libelle": "Pharmacie remboursable à 65% et accessoires (60%)",
+            "priorite": "1",
+            "isCumulGaranties": true,
+            "isCumulPlafonne": true
+          },
+          {
+            "code": "PHOR",
+            "transcodification": "PHOR",
+            "libelle": "Pharmacie remboursable à 15%",
+            "priorite": "1",
+            "isCumulGaranties": true,
+            "isCumulPlafonne": true
+          }
+        ]
+      }
+    ]
+  }
+}

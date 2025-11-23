@@ -1,0 +1,250 @@
+{
+  "idDeclarant": "0000401166",
+  "numAMCEchange": "0000401167",
+  "numeroContrat": "003",
+  "numeroAdherent": "MBA0003",
+  "numeroAdherentComplet": "MBA0003-COMPLET",
+  "dateSouscription": "2022/01/01",
+  "type": "B",
+  "nomPorteur": "RDO_SP_14",
+  "prenomPorteur": "ASSURE PRINCIPAL1",
+  "civilitePorteur": "MR",
+  "qualification": "B",
+  "isContratResponsable": true,
+  "isContratCMU": true,
+  "individuelOuCollectif": "1",
+  "typeConvention": "IS",
+  "numeroExterneContratIndividuel": "22091400000014_EXT",
+  "gestionnaire": "GEST_BLUE",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "1",
+  "origineDeclaration": "Event",
+  "dateCreation": "2022-09-28T10:02:48.678Z",
+  "dateModification": "2022-09-28T10:51:21.630Z",
+  "dateConsolidation": "2022-09-28T10:51:21.630Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateNaissance": "20041026",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1041062498044",
+      "cleNirBeneficiaire": "37",
+      "numeroPersonne": "001",
+      "rangAdministratif": "4",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2022/01/01",
+      "dateDebutAdhesionIndividuelle": "2022/01/01",
+      "numeroAdhesionIndividuelle": "0000001400000003",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "RDO_SP_14",
+        "nomPatronymique": "RDO_SP_14",
+        "nomMarital": "RDO_SP_14",
+        "prenom": "JSVZAFUUHLMC4",
+        "civilite": "MR",
+        "periodeDebut": "2022/01/01",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "624",
+        "centreOD1": "1253",
+        "hasMedecinTraitant": true,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASSURE"
+      },
+      "adresses": [
+        {
+          "ligne1": "7372 RUE DE WKFMIEWRHWMPD",
+          "ligne6": "56603 RRRTUIZDKEXYVC",
+          "codePostal": "56603",
+          "email": "56603",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "MEDG",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASMOD020",
+              "libelleGarantie": "Option",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_200",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDG-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "MEDECINE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/02",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/02",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/02",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/02",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            },
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Base",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDG-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "MEDECINE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

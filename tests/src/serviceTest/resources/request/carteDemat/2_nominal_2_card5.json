@@ -1,0 +1,242 @@
+
+{
+  "_id": "59c501a44d1d4ef6362ff80e",
+  "idDeclarant": "0000000001",
+  "contrat": {
+    "numero": "HRA05",
+    "dateSouscription": "2014/01/01",
+    "dateResiliation": "",
+    "type": null,
+    "nomPorteur": "DOMANSKI",
+    "prenomPorteur": "PHILIPPE",
+    "civilitePorteur": "M",
+    "numeroAdherent": "9078056",
+    "qualification": "B",
+    "numeroContratCollectif": "HRA05Test",
+    "rangAdministratif": "01",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "destinataire": "AD",
+    "individuelOuCollectif": "2",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": "SP",
+    "critereSecondaireDetaille": "607",
+    "critereSecondaire": "CS",
+    "numeroExterneContratIndividuel": "5683Test",
+    "numeroExterneContratCollectif": "5683 5683A",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "ER11",
+    "groupeAssures": "ACT",
+    "typeConvention": "AL",
+    "numAMCEchange": "3333333333",
+    "numOperateur": "0123456789",
+    "numeroAdherentComplet": "9078056Test",
+    "editeurCarte": "EC"
+  },
+  "adresse": {
+    "ligne1": "VIASANTE 11",
+    "ligne2": "Testl2",
+    "ligne3": "Testl3",
+    "ligne4": "104 AVENUE FRANKLIN ROOSEVELT",
+    "ligne5": "Testl5",
+    "ligne6": "11885 CARCASSONNE CEDEX 9",
+    "ligne7": "Testl7",
+    "codePostal": "11885",
+    "pays": "TestPays",
+    "telephone": "06/11/22/33/44",
+    "email": "Test@gmail.com",
+    "typeAdresse": {
+      "libelle": null,
+      "type": "GE"
+    }
+  },
+  "domainesConventions": [
+    {
+      "code": "TPALM",
+      "rang": 1,
+      "conventions": [
+        {
+          "code": "AL",
+          "priorite": 0
+        }
+      ]
+    }
+  ],
+  "beneficiaires": [
+    {
+      "beneficiaire": {
+        "dateNaissance": "19630916",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "1630959178098",
+        "cleNirBeneficiaire": "64",
+        "nirOd1": "1630959178098",
+        "cleNirOd1": "64",
+        "nirOd2": "testnir",
+        "cleNirOd2": "testcle",
+        "insc": null,
+        "numeroPersonne": "00602928",
+        "refExternePersonne": "00602928",
+        "affiliation": {
+          "nom": "DOMANSKI",
+          "nomPatronymique": "DOMANSKI",
+          "nomMarital": "DOMANSKI",
+          "prenom": "HRA05",
+          "civilite": null,
+          "periodeDebut": "2011/01/01",
+          "periodeFin": null,
+          "qualite": "A",
+          "regimeOD1": "01",
+          "caisseOD1": "121",
+          "centreOD1": "COD1",
+          "regimeOD2": "00",
+          "caisseOD2": "CAD2",
+          "centreOD2": "COD2",
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "RP",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ASSURE"
+        },
+        "adresses": [
+          {
+            "ligne1": "MONSIEUR DOMANSKI PHILIPPE",
+            "ligne2": null,
+            "ligne3": "CAMPEYROUX LE DEVEZOU",
+            "ligne4": "CHEMIN DE CROZES",
+            "ligne5": null,
+            "ligne6": "12740 LA LOUBIERE",
+            "ligne7": null,
+            "codePostal": "12740",
+            "pays": null,
+            "telephone": "0565724213",
+            "email": null,
+            "typeAdresse": {
+              "libelle": null,
+              "type": "AD"
+            }
+          },
+          {
+            "ligne1": "VIASANTE 11",
+            "ligne2": "Testl2",
+            "ligne3": "Testl3",
+            "ligne4": "104 AVENUE FRANKLIN ROOSEVELT",
+            "ligne5": "Testl5",
+            "ligne6": "11885 CARCASSONNE CEDEX 9",
+            "ligne7": "Testl7",
+            "codePostal": "11885",
+            "pays": "TestPays",
+            "telephone": "06/11/22/33/44",
+            "email": "Test@gmail.com",
+            "typeAdresse": {
+              "libelle": null,
+              "type": "GE"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "TPALM",
+          "codeExterne": null,
+          "libelle": null,
+          "codeExterneProduit": "VIA",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "VIA-----S",
+          "libelleOptionMutualiste": "LOMTest",
+          "codeProduit": "VIA",
+          "libelleProduit": "MUT VIA BASE",
+          "codeGarantie": "VIA-----S",
+          "libelleGarantie": "MUT VIA BASE",
+          "codeProfil": "DEFAUT",
+          "libelleCodeRenvoi": "LCRTest",
+          "tauxRemboursement": "X",
+          "isEditable": true,
+          "isSuspension": false,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01",
+            "nirPrio1": "1630959178098",
+            "prioContratNir1": "01",
+            "prioDroitNir1": "01",
+            "nirPrio2": null,
+            "prioContratNir2": null,
+            "prioDroitNir2": null
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "099",
+                "libelle": null,
+                "parametres": [
+                  {
+                    "numero": "1",
+                    "libelle": null,
+                    "valeur": "350.50"
+                  },
+                  {
+                    "numero": "2",
+                    "libelle": null,
+                    "valeur": "120.00"
+                  }
+                ]
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/01/01",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "dateEvenement": null,
+            "modeObtention": "O",
+            "periodeFinInitiale": null
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "AL",
+                "libelle": "AL"
+              }
+            }
+          ],
+          "uniteTauxRemboursement": "XX",
+          "dateAdhesionCouverture": "2015/02/01",
+          "referenceCouverture": "toto",
+          "noOrdreDroit": 1,
+          "origineDroits": "O"
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "A",
+        "rangAdministratif": "01",
+        "modePaiementPrestations": "V"
+      }
+    }
+  ],
+  "periodeDebut": "2017/01/01",
+  "periodeFin": "2017/12/31",
+  "AMC_contrat": "0000000001-HRA05",
+  "idDeclarations": [
+    "5796012181ad040e842f962c"
+  ],
+  "dateConsolidation": "2017-09-22T12:27:16.464Z",
+  "dateCreation": "2017-09-22T12:27:16.464Z",
+  "userCreation": "job620",
+  "dateModification": "2017-09-22T12:27:16.464Z",
+  "userModification": "job620",
+  "isLastCarteDemat": true
+}
+

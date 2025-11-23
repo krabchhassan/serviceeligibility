@@ -1,0 +1,886 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "14725497",
+  "numeroAdherent": "14725497",
+  "numeroAdherentComplet": "14725497-complet",
+  "dateSouscription": "2022/01/22",
+  "type": "B",
+  "nomPorteur": "DE BENARD",
+  "prenomPorteur": "Christelle",
+  "civilitePorteur": "Mme",
+  "qualification": "B",
+  "numeroContratCollectif": "03094493",
+  "isContratResponsable": true,
+  "isContratCMU": true,
+  "individuelOuCollectif": "1",
+  "typeConvention": "IS",
+  "critereSecondaire": "Employés",
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel": "14725497-externe",
+  "numeroExterneContratCollectif": "DKMMMS09049304930",
+  "gestionnaire": "OS1",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "1",
+  "origineDeclaration": "Event",
+  "dateCreation": "2024-03-22T06:49:24.989",
+  "dateModification": "2024-03-22T06:49:25.210",
+  "dateConsolidation": "2024-03-22T06:49:25.210",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2024-03-22T06:49:24.989",
+      "dateModification": "2024-03-22T06:49:24.989",
+      "dateNaissance": "19800615",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2800619784004",
+      "cleNirBeneficiaire": "72",
+      "nirOd1": "2800619784004",
+      "cleNirOd1": "72",
+      "numeroPersonne": "1234567895894-01",
+      "refExternePersonne": "7909738ADF",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2022/01/01",
+      "dateDebutAdhesionIndividuelle": "2022/01/01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "DE BENARD",
+        "nomPatronymique": "JOLY",
+        "nomMarital": "JOLY",
+        "prenom": "Christelle",
+        "civilite": "Mme",
+        "periodeDebut": "2022/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "595",
+        "centreOD1": "0123",
+        "hasMedecinTraitant": true,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASS"
+      },
+      "adresses": [
+        {
+          "ligne1": "Mme DE BENARD Christelle",
+          "ligne4": "3 chemin de Launay",
+          "ligne6": "31000 Toulouse",
+          "ligne7": "FRANCE",
+          "codePostal": "31000",
+          "telephone": "0606060606",
+          "email": "chrisjo@mail.ca",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_5458_001",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BAL_5458",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BAL_5458_001_P01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/02/20"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/02/20",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IT",
+                                "libelle": "Itelis"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/20"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BAL_5458_001",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_5458_001",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BAL_5458",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BAL_5458_001_P01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-020",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/01/31"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/01/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IT",
+                                "libelle": "Itelis"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "020",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/01/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BAL_5458_001",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_5458_001",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BAL_5458",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BAL_5458_001_P01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-020",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/03/31"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/03/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "020",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/03/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BAL_5458_001",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2024-03-22T06:49:24.989",
+      "dateModification": "2024-03-22T06:49:24.989",
+      "dateNaissance": "19800615",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1800619784004",
+      "cleNirBeneficiaire": "25",
+      "nirOd1": "1800619784004",
+      "cleNirOd1": "25",
+      "numeroPersonne": "1234567895894-02",
+      "refExternePersonne": "7909738ADF",
+      "rangAdministratif": "10",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2022/01/01",
+      "dateDebutAdhesionIndividuelle": "2022/01/01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "DE BENARD",
+        "nomPatronymique": "DE BENARD",
+        "nomMarital": "DE BENARD",
+        "prenom": "Christophe",
+        "civilite": "Mr",
+        "periodeDebut": "2022/01/01",
+        "qualite": "C",
+        "regimeOD1": "01",
+        "caisseOD1": "595",
+        "centreOD1": "0123",
+        "hasMedecinTraitant": true,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "CONJOINT"
+      },
+      "adresses": [
+        {
+          "ligne1": "Mr DE BENARD Christophe",
+          "ligne4": "3 chemin de Launay",
+          "ligne6": "31000 Toulouse",
+          "ligne7": "FRANCE",
+          "codePostal": "31000",
+          "telephone": "0606060606",
+          "email": "chrisjo@mail.ca",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_5458_001",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BAL_5458",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BAL_5458_001_P01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IT",
+                                "libelle": "Itelis"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BAL_5458_001",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_5458_001",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BAL_5458",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BAL_5458_001_P01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-020",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IT",
+                                "libelle": "Itelis"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            },
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "020",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BAL_5458_001",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_5458_001",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BAL_5458",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BAL_5458_001_P01",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-020",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "020",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BAL_5458_001",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "identifiantCollectivite": "coll",
+  "raisonSociale": "CGW",
+  "siret": "552 178 639 00132",
+  "groupePopulation": "cadre"
+}

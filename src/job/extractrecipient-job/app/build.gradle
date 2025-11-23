@@ -1,0 +1,30 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    implementation("com.google.code.gson:gson")
+    runtimeOnly("org.json:json")
+    implementation("org.apache.commons:commons-collections4")
+
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    implementation("com.cegedim.beyond.framework:lib-common-base-pefb-services-java")
+    implementation("com.cegedim.beyond.framework:lib-common-base-validation-services-java")
+
+    // tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation(project(":lib-next-serviceeligibility-core-services")) {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+
+    implementation("com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client") {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+
+}

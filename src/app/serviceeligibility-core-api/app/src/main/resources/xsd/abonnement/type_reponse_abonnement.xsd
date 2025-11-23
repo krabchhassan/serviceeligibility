@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by Philippe (ca) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/abonnement" targetNamespace="http://norme.cegedimassurances.com/abonnement" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_services.xsd" />
+	<xs:include schemaLocation="type_contact_AMC.xsd" />
+	<xs:complexType name="type_reponse_abonnement">
+		<xs:sequence>
+			<xs:element name="service" type="type_services" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Liste des services en réponse d'abonnement</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numAmc" type="xs:string" minOccurs="0" maxOccurs="1" />
+			<xs:element name="nomAMC" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="45"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="contactAMC" type="type_contact_AMC" minOccurs="0" maxOccurs="1"/>   
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

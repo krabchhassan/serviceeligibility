@@ -1,0 +1,106 @@
+{
+  "amc": "0000401166",
+  "amcNom": null,
+  "oc": null,
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2022-01-01",
+  "dateCreation": "2022-01-01T07:45:49.495Z",
+  "userCreation": "marianne.barrailh@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "debutEcheance": "01/01",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": true,
+    "detailsDroit": [
+      {
+        "ordreAffichage" : 1,
+        "codeDomaineTP" : "OPTI",
+        "libelleDomaineTP" : "Opticien",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 2,
+        "codeDomaineTP" : "AUDI",
+        "libelleDomaineTP" : "Audioprothèse",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 3,
+        "codeDomaineTP" : "DENT",
+        "libelleDomaineTP" : "Dentaire",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 4,
+        "codeDomaineTP" : "HOSP",
+        "libelleDomaineTP" : "Séjour hospitalier",
+        "codeRenvoiAction" : "COMPLETER",
+        "codeRenvoi" : "RV2"
+      },
+      {
+        "ordreAffichage" : 5,
+        "codeDomaineTP" : "PHNO",
+        "libelleDomaineTP" : "Pharmacie remboursable à 65% et accessoires (60%)",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 6,
+        "codeDomaineTP" : "PHOR",
+        "libelleDomaineTP" : "Pharmacie remboursable à 15%",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 7,
+        "codeDomaineTP" : "PHAR",
+        "libelleDomaineTP" : "Pharmacie remboursable",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 8,
+        "codeDomaineTP" : "SVIL",
+        "libelleDomaineTP" : "Sage-femme, laboratoires, radiologues, auxiliaires médicaux et fournisseurs (SAGE + LABO + RADL + AUXM + LPPS)",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 9,
+        "codeDomaineTP" : "TRAN",
+        "libelleDomaineTP" : "Transporteur",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 10,
+        "codeDomaineTP" : "CURE",
+        "libelleDomaineTP" : "Cure Thermale",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 11,
+        "codeDomaineTP" : "LABO",
+        "libelleDomaineTP" : "Laboratoire",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 12,
+        "codeDomaineTP" : "PHCO",
+        "libelleDomaineTP" : "Pharmacie",
+        "codeRenvoiAction" : "GARDER"
+      },
+      {
+        "ordreAffichage" : 13,
+        "codeDomaineTP" : "EXTE",
+        "libelleDomaineTP" : "Pharmacie",
+        "codeRenvoiAction" : "GARDER"
+      }
+    ],
+    "isCarteEditablePapier": false
+  }
+}

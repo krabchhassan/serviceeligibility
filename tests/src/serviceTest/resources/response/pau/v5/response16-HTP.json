@@ -1,0 +1,140 @@
+{
+  "contracts": [
+    {
+      "context": "TP_OFFLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "C00024",
+      "externalNumber": "",
+      "subscriberId": "AC00021",
+      "subscriberFullId": "",
+      "subscriptionDate": "2019-01-01",
+      "secondaryCriterion": "",
+      "detailedSecondaryCriterion": "",
+      "isIndividualContract": false,
+      "operator": "0000401182",
+      "collectiveContract": {
+        "number": "",
+        "externalNumber": ""
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "",
+        "identity": {
+          "nir": {
+            "code": "",
+            "key": ""
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1591275115460",
+                "key": "46"
+              },
+              "attachementRO": {
+                "regimeCode": "03",
+                "healthInsuranceCompanyCode": "054",
+                "centerCode": "6200"
+              },
+              "period": {
+                "start": "2019-01-01",
+                "end": "2022-11-01"
+              }
+            }
+          ],
+          "birthDate": "19621023",
+          "birthRank": "1",
+          "personNumber": "0000401166-PC00020",
+          "personExternalRef": "08043266"
+        },
+        "data": {
+          "name": {
+            "lastName": "LE GRIEL",
+            "commonName": "LE GRIEL",
+            "firstName": "SOPHIE"
+          },
+          "address": {
+            "line1": "AON",
+            "line4": "28 ALLEE DE BELLEVUECS 7000",
+            "line6": "16918 ANGOULEME CEDEX 9",
+            "line7": "FRANCE",
+            "postcode": "16918"
+          },
+          "contact": {
+            "landline": "01 73 10 30 55",
+            "mobile": "01 73 10 30 55"
+          }
+        },
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2021-02-15",
+                "end": "2022-11-01"
+              },
+              "isRemotelyTransmitted": false
+            }
+          ]
+        },
+        "quality": {
+          "code": "C",
+          "label": "Conjoint"
+        },
+        "rights": [
+          {
+            "code": "KC_PlatineBase",
+            "insurerCode": "KLESIA_CARCEPT",
+            "prioritizationOrder": "01",
+            "guaranteeAgeDate": "2019-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "OFFRE_KC_PLATINE_BASE",
+                "productCode": "KC_PlatineBase",
+                "otpProductCode": "PlatineBase",
+                "benefitsType": [
+                  {
+                    "benefitType": "OPTIQUE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2022-11-01"
+                    }
+                  },
+                  {
+                    "benefitType": "MEDECINE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2022-11-01"
+                    }
+                  },
+                  {
+                    "benefitType": "PHARMACIE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2022-11-01"
+                    }
+                  },
+                  {
+                    "benefitType": "DENTAIRE",
+                    "period": {
+                      "start": "2022-01-01",
+                      "end": "2022-11-01"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2022-01-01",
+                  "end": "2022-11-01"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

@@ -1,0 +1,924 @@
+serviceDefinition:
+  socle: Insurance
+  name: serviceeligibility
+  shortSocle: is
+  shortName: bdds
+
+  technicalComponents:
+    - name: serviceeligibility-core-api
+      shared: true
+    - name: serviceeligibility-kconnect-api
+    - name: serviceeligibility-beneficiary-worker
+    - name: serviceeligibility-consumer-api
+      shared: true
+    - name: serviceeligibility-consumer-worker
+      shared: true
+    - name: serviceeligibility-prestij-worker
+    - name: serviceeligibility-trigger-worker
+      shared: true
+    - name: serviceeligibility-triggerrenouvellement-worker
+      shared: true
+    - name: serviceeligibility-triggerrenouvellement-unitaire-worker
+      shared: true
+    - name: serviceeligibility-consolidationcontract-worker
+      shared: true
+    - name: common-excel-api
+  functions:
+    - name: otp-search
+    - name: otp-detail
+  uis:
+    - name: serviceeligibility-core-ui
+  jobs:
+    - name: serviceeligibility-batch635-job
+    - name: serviceeligibility-rdoserviceprestation-job
+    - name: serviceeligibility-renouvellementdroitstp-job
+    - name: serviceeligibility-almerysacl-job
+    - name: mergealmerys-job
+    - name: serviceeligibility-initdeclarations-job
+    - name: rdoserviceprestationpurge-job
+    - name: consolidationcontract-job
+    - name: reprise-beneficiaires-job
+    - name: facturation-htp-job
+    - name: extractpopulation-job
+    - name: serviceeligibility-recalculblb-job
+    - name: extractrecipient-job
+    - name: almerys-608-job
+    - name: serviceeligibility-batch620-job
+    - name: otp-extract-rights-job
+    - name: serviceeligibility-batch620trace-extractionconso-job
+    - name: bobb-import-job
+    - name: bobb-export-job
+    - name: bobb-transfo-job
+    - name: bobb-purge-job
+    - name: bobb-cache-sync-job
+    - name: bobb-historization-job
+    - name: purgehistoconsos-job
+    - name: extractbenefmultios-job
+    - name: exporttriggerinfos-job
+    - name: initrdoclaim-job
+    - name: purgeserviceprestationrdo-job
+    - name: serviceeligibility-undueretention-job
+    - name: recyclage-trigger-job
+    - name: extractbenefsansdroitstp-job
+  exposedAPIs:
+    path: ""
+    artefacts:
+      - name: serviceeligibility-core-api
+        path: /serviceeligibility/core/api
+      - name: common-excel-api
+        path: /common/excel/api
+      - name: serviceeligibility-consumer-api
+        path: /serviceeligibility/consumer/api
+      - name: serviceeligibility-prestij-worker
+        path: /serviceeligibility/prestij/worker
+  exposedFunc:
+    path: /serviceeligibility
+    artefacts:
+      - name: otp-search
+        path: /otp-search
+        funcInternalPath: /
+      - name: otp-detail
+        path: /otp-detail
+        funcInternalPath: /
+  exposedUIs:
+    path: ""
+    artefacts:
+      - name: serviceeligibility-core-ui
+        path: /serviceeligibility/core/ui
+  hpa:
+    - name: technicalComponents/otp-search
+      minReplicaCount: 2
+      maxReplicaCount: 10
+      metricSource:
+        pollingInterval: 30
+        cooldownPeriod: 60
+        threshold: 10
+    - name: technicalComponents/otp-detail
+      minReplicaCount: 2
+      maxReplicaCount: 10
+      metricSource:
+        pollingInterval: 30
+        cooldownPeriod: 60
+        threshold: 10
+  serviceDependencies:
+    - name: Redis
+      socle: paas
+      consume:
+        - basenameAlias: bobb
+          dirname: database
+          usedBy:
+            - name: jobs/bobb-import-job
+            - name: jobs/bobb-cache-sync-job
+        - basenameAlias: serviceeligibility-cache
+          dirname: database
+          usedBy:
+            - name: technicalComponents/serviceeligibility-core-api
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-trigger-worker
+            - name: technicalComponents/serviceeligibility-consolidationcontract-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+      produce:
+        - basenameAlias: serviceeligibility-cache
+          dirname: database
+          usedBy:
+            - name: technicalComponents/serviceeligibility-core-api
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-trigger-worker
+            - name: technicalComponents/serviceeligibility-consolidationcontract-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+    - name: MongoDB
+      socle: paas
+      consume:
+        - basenameAlias: serviceeligibility-core-api
+          dirname: databasename
+          usedBy:
+            - name: technicalComponents/serviceeligibility-core-api
+            - name: technicalComponents/serviceeligibility-beneficiary-worker
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: technicalComponents/serviceeligibility-prestij-worker
+            - name: technicalComponents/serviceeligibility-trigger-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+            - name: technicalComponents/serviceeligibility-consolidationcontract-worker
+            - name: technicalComponents/serviceeligibility-kconnect-api
+            - name: jobs/rdoserviceprestationpurge-job
+            - name: jobs/consolidationcontract-job
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+            - name: jobs/serviceeligibility-renouvellementdroitstp-job
+            - name: jobs/serviceeligibility-batch635-job
+            - name: jobs/reprise-beneficiaires-job
+            - name: jobs/facturation-htp-job
+            - name: jobs/extractpopulation-job
+            - name: jobs/serviceeligibility-recalculblb-job
+            - name: jobs/serviceeligibility-undueretention-job
+            - name: jobs/extractrecipient-job
+            - name: jobs/almerys-608-job
+            - name: jobs/serviceeligibility-batch620-job
+            - name: jobs/serviceeligibility-batch620trace-extractionconso-job
+            - name: jobs/bobb-import-job
+            - name: jobs/bobb-export-job
+            - name: jobs/bobb-transfo-job
+            - name: jobs/bobb-purge-job
+            - name: jobs/bobb-cache-sync-job
+            - name: jobs/bobb-historization-job
+            - name: jobs/purgehistoconsos-job
+            - name: jobs/extractbenefmultios-job
+            - name: jobs/initrdoclaim-job
+            - name: jobs/purgeserviceprestationrdo-job
+            - name: jobs/exporttriggerinfos-job
+            - name: jobs/extractbenefsansdroitstp-job
+            - name: jobs/mergealmerys-job
+    - name: serviceeligibility
+      socle: Insurance
+      consumedAPIS:
+        - path: http://next-engine-core-api:8080
+          endpoint: /
+          usedBy:
+            - name: technicalComponents/serviceeligibility-core-api
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-consumer-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-consumer-api
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-trigger-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: jobs/serviceeligibility-recalculblb-job
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+        - path: http://next-multioc-core-api:8080
+          endpoint: /
+          usedBy:
+            - name: technicalComponents/serviceeligibility-core-api
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-consumer-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-consumer-api
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-trigger-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+        - path: http://next-referential-core-api:8080
+          endpoint: /v1/referentialDataWithoutPaging
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: technicalComponents/serviceeligibility-consumer-api
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+              authz:
+                apiKeyAlias: serviceeligibility-client-id
+                technicalPermissions:
+                  - PW_P_READ_DATA
+                  - REF_P_READ_NO_PAGING
+                  - SUI_P_READONLY
+                  - ORG_P_OC_RECUPERER_LISTE
+                  - ORG_P_OC_RECUPERER
+        - path: http://next-serviceeligibility-core-api:8080
+          endpoint: /v1/searchBeneficiaries
+          usedBy:
+            - name: technicalComponents/otp-search
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ SE_P_READ_HEALTHCARE ]
+        - path: http://next-serviceeligibility-core-api:8080
+          endpoint: /v1/beneficiaryTpDetails
+          usedBy:
+            - name: technicalComponents/otp-detail
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ SE_P_READ_HEALTHCARE ]
+        - path: http://next-serviceeligibility-core-api:8080
+          endpoint: /v1/contrats/extract
+          usedBy:
+            - name: jobs/otp-extract-rights-job
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ SE_P_READ_HEALTHCARE ]
+        - path: http://next-serviceeligibility-core-api:8080
+          endpoint: /v1/declencheursCarteTP
+          usedBy:
+            - name: jobs/recyclage-trigger-job
+              authz:
+                apiKeyAlias: serviceeligibility-recyclage_client_id
+                technicalPermissions: [ SE_P_WRITE_HEALTHCARE ]
+    - name: integrationpoints
+      socle: Application
+      consumedAPIS:
+        - path: http://next-catalogintegrationpoints-core-api:8080
+          endpoint: /v1/published-catalogs
+          usedBy:
+            - name: technicalComponents/otp-search
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ CPI_P_READ_POINT, CPI_P_READ_CATA, CPI_P_READ_DETAILS_CATA ]
+            - name: technicalComponents/otp-detail
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ CPI_P_READ_POINT, CPI_P_READ_CATA, CPI_P_READ_DETAILS_CATA ]
+            - name: jobs/otp-extract-rights-job
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ CPI_P_READ_POINT, CPI_P_READ_CATA, CPI_P_READ_DETAILS_CATA ]
+    - name: aiguillage
+      socle: Insurance
+      consumedAPIS:
+        - path: http://next-aiguillage-core-api:8080
+          endpoint: /otpbenefamc
+          usedBy:
+            - name: technicalComponents/otp-search
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ AIG_P_API_GET_AMC, AIG_P_API_SEARCH_BENEFICIARIES ]
+        - path: http://next-aiguillage-core-api:8080
+          endpoint: /bulkotpbenefamc
+          usedBy:
+            - name: jobs/otp-extract-rights-job
+              authz:
+                apiKeyAlias: apik_serviceeligibility_otpsearchdetail
+                technicalPermissions: [ AIG_P_API_GET_AMC, AIG_P_API_SEARCH_BENEFICIARIES ]
+
+    - name: settings-ui
+      socle: Application
+      consumedAPIS:
+        - path: http://next-beyond-configuration:8080
+          endpoint: "/settingsui/api/extraction-interfaces/"
+          usedBy:
+            - name: technicalComponents/editing-core-job
+              authz:
+                apiKeyAlias: serviceeligibility-editing-core-job-client-id
+                technicalPermissions: [ SUI_P_READONLY ]
+    
+    - name: Kafka
+      socle: paas
+      consume:
+        - dirname: topicname
+          basenameAlias: bdd-contract
+          envName: BDD-CONTRACT
+          pattern: "{{instance}}-bdd-contract"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-contract"
+        # envoyé par kconnect
+        - dirname: topicname
+          basenameAlias: bdd-declaration
+          envName: BDD-DECL
+          pattern: "{{instance}}.{{database}}.declarations"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-beneficiary-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-declaration"
+        - dirname: topicname
+          basenameAlias: bdd-contrattp
+          envName: BDD-CONTRATTP
+          pattern: "{{instance}}.{{database}}.contrattp"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consolidationcontract-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-contrattp"
+        - dirname: topicname
+          basenameAlias: bdd-benefai
+          envName: BDD-BENEFAI
+          pattern: "{{instance}}-bdd-benefai"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-beneficiary-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-beneficiary"
+        - dirname: topicname
+          basenameAlias: bdd-demandeDeclaration
+          envName: BDD-DEMANDE-DECLARATION
+          pattern: "{{instance}}-bdd-demandeDeclaration"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-trigger-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-demandeDeclaration"
+        - dirname: topicname
+          basenameAlias: bdd-demandeRenouvellementDeclaration
+          envName: BDD-DEMANDE-RENOUVELLEMENT-DECLARATION
+          pattern: "{{instance}}-bdd-demandeRenouvellementDeclaration"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-demandeRenouvellementDeclaration"
+        - dirname: topicname
+          basenameAlias: bdd-updateRenouvellementDeclaration
+          envName: BDD-UPDATE-RENOUVELLEMENT-DECLARATION
+          pattern: "{{instance}}-bdd-demandeRenouvellementDeclaration"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-updateRenouvellementDeclaration"
+        - dirname: topicname
+          basenameAlias: bdd-demandeRenouvellementDeclarationUnitaire
+          envName: BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE
+          pattern: "{{instance}}-bdd-demandeRenouvellementDeclarationUnitaire"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-demandeRenouvellementDeclarationUnitaire"
+        # envoyé par kconnect
+        - dirname: topicname
+          basenameAlias: bdd-benef
+          envName: BDD-BENEF
+          pattern: "{{instance}}.{{database}}.beneficiaires"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+              groupIdPattern: "itcare-{{instance}}-serviceeligibility-kconnect-api"
+        - dirname: connectorname
+          type: connect
+          basenameAlias: elasticBddBenefConnector
+          linkedTopic:
+            - name: bdd-benef
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+        - dirname: topicname
+          basenameAlias: bdds-to-blb-logical-deletion-response
+          envName: bdds-to-blb-logical-deletion-response
+          usedBy:
+            - name: jobs/serviceeligibility-recalculblb-job
+              groupIdPattern: "itcare-{{instance}}-blb"
+        - dirname: topicname
+          basenameAlias: bdds-to-blb-beneficiary-feeding-response
+          envName: bdds-to-blb-beneficiary-feeding-response
+          usedBy:
+            - name: jobs/serviceeligibility-recalculblb-job
+              groupIdPattern: "itcare-{{instance}}-blb"
+        - dirname: topicname
+          basenameAlias: bdd-extract-contract
+          envName: BDD-EXTRACT-CONTRACT
+          pattern: "{{instance}}-bdd-extract-contract"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-extract-contract"
+        - dirname: topicname
+          basenameAlias: bdd-demandeAbandonTrigger
+          envName: BDD-DEMANDE-ABANDON-TRIGGER
+          pattern: "{{instance}}-bdd-demandeAbandonTrigger"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-trigger-worker
+              groupIdPattern: "itcare-{{instance}}-bdd-demandeAbandonTrigger"
+      produce:
+        - dirname: topicname
+          basenameAlias: bdd-contract
+          envName: BDD-CONTRACT
+          pattern: "{{instance}}-bdd-contract"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-api
+        - dirname: topicname
+          basenameAlias: bdd-demandeDeclaration
+          envName: BDD-DEMANDE-DECLARATION
+          pattern: "{{instance}}-bdd-demandeDeclaration"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api # deleteContrat
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+            - name: technicalComponents/serviceeligibility-core-api
+        - dirname: topicname
+          basenameAlias: bdd-contrattp
+          envName: BDD-CONTRATTP
+          pattern: "{{instance}}.{{database}}.contrattp"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-trigger-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+        - dirname: topicname
+          basenameAlias: bdd-undue-retention
+          envName: BDD-UNDUE-RETENTION
+          pattern: "{{instance}}-bdd-undue-retention"
+          usedBy:
+            - name: jobs/serviceeligibility-undueretention-job
+        - dirname: topicname
+          basenameAlias: bdd-recipients-request
+          envName: BDD-RECIPIENTS-REQUEST
+          pattern: "{{instance}}-bdd-recipients-request"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+        - dirname: topicname
+          basenameAlias: beyond-events
+          envName: beyond-events
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: technicalComponents/serviceeligibility-beneficiary-worker
+            - name: technicalComponents/serviceeligibility-prestij-worker
+            - name: technicalComponents/serviceeligibility-core-api
+            - name: technicalComponents/serviceeligibility-trigger-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+            - name: technicalComponents/serviceeligibility-consolidationcontract-worker
+            - name: jobs/serviceeligibility-renouvellementdroitstp-job
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+            - name: jobs/serviceeligibility-recalculblb-job
+            - name: jobs/facturation-htp-job
+            - name: jobs/extractpopulation-job
+            - name: jobs/serviceeligibility-batch635-job
+            - name: jobs/serviceeligibility-almerysacl-job
+            - name: jobs/rdoserviceprestationpurge-job
+            - name: jobs/consolidationcontract-job
+            - name: jobs/reprise-beneficiaires-job
+            - name: jobs/extractrecipient-job
+            - name: jobs/almerys-608-job
+            - name: jobs/serviceeligibility-batch620-job
+            - name: jobs/serviceeligibility-batch620trace-extractionconso-job
+            - name: jobs/otp-extract-rights-job
+            - name: jobs/bobb-import-job
+            - name: jobs/bobb-export-job
+            - name: jobs/bobb-purge-job
+            - name: jobs/bobb-transfo-job
+            - name: jobs/bobb-cache-sync-job
+            - name: jobs/bobb-historization-job
+            - name: jobs/purgehistoconsos-job
+            - name: jobs/extractbenefmultios-job
+            - name: jobs/initrdoclaim-job
+            - name: jobs/purgeserviceprestationrdo-job
+            - name: jobs/exporttriggerinfos-job
+            - name: jobs/serviceeligibility-undueretention-job
+            - name: jobs/recyclage-trigger-job
+            - name: jobs/extractbenefsansdroitstp-job
+            - name: jobs/mergealmerys-job
+        - dirname: topicname
+          basenameAlias: beyond-audits
+          envName: beyond-audits
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: technicalComponents/serviceeligibility-beneficiary-worker
+            - name: technicalComponents/serviceeligibility-prestij-worker
+            - name: technicalComponents/serviceeligibility-core-api
+            - name: technicalComponents/serviceeligibility-trigger-worker
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+            - name: technicalComponents/serviceeligibility-consolidationcontract-worker
+            - name: jobs/serviceeligibility-renouvellementdroitstp-job
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+            - name: jobs/serviceeligibility-recalculblb-job
+            - name: jobs/facturation-htp-job
+            - name: jobs/extractpopulation-job
+            - name: jobs/serviceeligibility-batch635-job
+            - name: jobs/serviceeligibility-almerysacl-job
+            - name: jobs/rdoserviceprestationpurge-job
+            - name: jobs/consolidationcontract-job
+            - name: jobs/reprise-beneficiaires-job
+            - name: jobs/extractrecipient-job
+            - name: jobs/otp-extract-rights-job
+            - name: jobs/almerys-608-job
+            - name: jobs/serviceeligibility-batch620-job
+            - name: jobs/serviceeligibility-batch620trace-extractionconso-job
+            - name: jobs/bobb-import-job
+            - name: jobs/bobb-export-job
+            - name: jobs/bobb-purge-job
+            - name: jobs/bobb-transfo-job
+            - name: jobs/bobb-cache-sync-job
+            - name: jobs/bobb-historization-job
+            - name: jobs/purgehistoconsos-job
+            - name: jobs/extractbenefmultios-job
+            - name: jobs/exporttriggerinfos-job
+            - name: jobs/initrdoclaim-job
+            - name: jobs/purgeserviceprestationrdo-job
+            - name: jobs/serviceeligibility-undueretention-job
+            - name: jobs/mergealmerys-job
+        - dirname: topicname
+          basenameAlias: user-events
+          envName: user-events
+          usedBy:
+            - name: jobs/extractbenefsansdroitstp-job
+        - dirname: topicname
+          basenameAlias: bdd-prestij
+          envName: BDD-PRESTIJ
+          pattern: "{{instance}}-bdd-prestij"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-prestij-worker
+        - dirname: topicname
+          basenameAlias: bdd-benefai
+          envName: BDD-BENEFAI
+          pattern: "{{instance}}-bdd-benefai"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-prestij-worker
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: jobs/reprise-beneficiaires-job
+        - dirname: topicname
+          basenameAlias: bdd-demandeRenouvellementDeclaration
+          envName: BDD-DEMANDE-RENOUVELLEMENT-DECLARATION
+          pattern: "{{instance}}-bdd-demandeRenouvellementDeclaration"
+          usedBy:
+            - name: jobs/serviceeligibility-renouvellementdroitstp-job
+            - name: technicalComponents/serviceeligibility-core-api
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker # pour les tests cucumbers
+        - dirname: topicname
+          basenameAlias: bdd-updateRenouvellementDeclaration
+          envName: BDD-UPDATE-RENOUVELLEMENT-DECLARATION
+          pattern: "{{instance}}-bdd-updateRenouvellementDeclaration"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-unitaire-worker
+            - name: technicalComponents/serviceeligibility-trigger-worker
+        - dirname: topicname
+          basenameAlias: bdd-demandeRenouvellementDeclarationUnitaire
+          envName: BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE
+          pattern: "{{instance}}-bdd-demandeRenouvellementDeclarationUnitaire"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-triggerrenouvellement-worker
+        - dirname: topicname
+          basenameAlias: bdd-benef
+          envName: BDD-BENEF
+          pattern: "{{instance}}.{{database}}.beneficiaires"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+        - dirname: topicname
+          basenameAlias: refresh-tokens
+          pattern: "{{instance}}-refresh-tokens"
+          envName: REFRESH-TOKENS
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+        - dirname: connectorname
+          type: connect
+          basenameAlias: mongoBddBenefConnector
+          linkedTopic:
+            - name: bdd-benef
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+        - dirname: connectorname
+          type: connect
+          basenameAlias: mongoBddDeclarationsConnector
+          linkedTopic:
+            - name: bdd-declaration
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+        - dirname: connectorname
+          type: connect
+          basenameAlias: mongoBddPrestIJConnector
+          linkedTopic:
+            - name: bdd-prestij
+          usedBy:
+            - name: technicalComponents/serviceeligibility-kconnect-api
+        - dirname: topicname
+          basenameAlias: bdd-extract-contract
+          envName: BDD-EXTRACT-CONTRACT
+          pattern: "{{instance}}-bdd-extract-contract"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+            - name: jobs/serviceeligibility-recalculblb-job
+            - name: jobs/serviceeligibility-rdoserviceprestation-job
+        - dirname: topicname
+          basenameAlias: bdds-to-blb-logical-deletion
+          envName: bdds-to-blb-logical-deletion
+          usedBy:
+            - name: jobs/serviceeligibility-recalculblb-job
+        - dirname: topicname
+          basenameAlias: bdds-to-blb-beneficiary-feeding
+          envName: bdds-to-blb-beneficiary-feeding
+          usedBy:
+            - name: technicalComponents/serviceeligibility-consumer-worker
+            - name: technicalComponents/serviceeligibility-consumer-api
+        - dirname: topicname
+          basenameAlias: bdd-demandeAbandonTrigger
+          envName: BDD-DEMANDE-ABANDON-TRIGGER
+          pattern: "{{instance}}-bdd-demandeAbandonTrigger"
+          usedBy:
+            - name: technicalComponents/serviceeligibility-core-api
+  #    - name: Indexing
+  #      socle: paas
+  #      produce:
+  #        - dirname: aliasname
+  #          basenameAlias: bdd-benef
+  #          alias: itcare_{{instance}}_bdd-benef
+  #          pattern: itcare_{{instance}}_bdd-benef_index*
+  #          mappingsDefinition: indexing/mappings/bdd-benef.json
+  #          settingsDefinition: indexing/settings/bdd-benef.json
+  #          usedBy:
+  #            - name: technicalComponents/serviceeligibility-kconnect-api
+  #        - dirname: aliasname
+  #          basenameAlias: serviceeligibility-import-bobb
+  #          alias: itcare_{{instance}}_serviceeligibility-import-bobb
+  #          pattern: itcare_{{instance}}_serviceeligibility-import-bobb_index*
+  #          mappingsDefinition: indexing/mappings/serviceeligibility-import-bobb.json
+  #          settingsDefinition: indexing/settings/serviceeligibility-import-bobb.json
+  #          usedBy:
+  #            - name: jobs/bobb-historization-job
+  #      consume:
+  #        - dirname: aliasname
+  #          basenameAlias: bdd-benef
+  #          usedBy:
+  #            - name: technicalComponents/serviceeligibility-core-api
+  serviceExtraSecrets:
+    - scope: editor
+      technicalComponent: serviceeligibility-core-api
+      basenameAlias: ELASTICSEARCH_LOGIN
+    - scope: editor
+      technicalComponent: serviceeligibility-core-api
+      basenameAlias: ELASTICSEARCH_PASSWORD
+    - scope: editor
+      technicalComponent: serviceeligibility-kconnect-api
+      basenameAlias: ELASTICSEARCH_LOGIN
+    - scope: editor
+      technicalComponent: serviceeligibility-kconnect-api
+      basenameAlias: ELASTICSEARCH_PASSWORD
+    - scope: editor
+      technicalComponent: rdoserviceprestationpurge-job
+      basenameAlias: ELASTICSEARCH_LOGIN
+    - scope: editor
+      technicalComponent: rdoserviceprestationpurge-job
+      basenameAlias: ELASTICSEARCH_PASSWORD
+    - scope: editor
+      technicalComponent: reprise-beneficiaires-job
+      basenameAlias: ELASTICSEARCH_LOGIN
+    - scope: editor
+      technicalComponent: reprise-beneficiaires-job
+      basenameAlias: ELASTICSEARCH_PASSWORD
+    - scope: editor
+      technicalComponent: common-elasticsearch-api
+      basenameAlias: ELASTICSEARCH_LOGIN
+    - scope: editor
+      technicalComponent: common-elasticsearch-api
+      basenameAlias: ELASTICSEARCH_PASSWORD
+    - scope: editor
+      technicalComponent: serviceeligibility-core-api
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-kconnect-api
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-beneficiary-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-api
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-prestij-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-trigger-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-triggerrenouvellement-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-triggerrenouvellement-unitaire-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-consolidationcontract-worker
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-batch635-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-rdoserviceprestation-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-renouvellementdroitstp-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-almerysacl-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: bobb-rdowarranties-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: rdoserviceprestationpurge-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: consolidationcontract-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: reprise-beneficiaires-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: extractrecipient-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: extractbenefmultios-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: initrdoclaim-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: mergealmerys-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: bobb-purge-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: serviceeligibility-core-api
+      basenameAlias: s3_host
+    - scope: editor
+      technicalComponent: serviceeligibility-core-api
+      basenameAlias: s3_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-core-api
+      basenameAlias: s3_secret_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-worker
+      basenameAlias: s3_host
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-worker
+      basenameAlias: s3_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-worker
+      basenameAlias: s3_secret_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-api
+      basenameAlias: s3_host
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-api
+      basenameAlias: s3_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-consumer-api
+      basenameAlias: s3_secret_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-trigger-worker
+      basenameAlias: s3_host
+    - scope: editor
+      technicalComponent: serviceeligibility-trigger-worker
+      basenameAlias: s3_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-trigger-worker
+      basenameAlias: s3_secret_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-triggerrenouvellement-unitaire-worker
+      basenameAlias: s3_host
+    - scope: editor
+      technicalComponent: serviceeligibility-triggerrenouvellement-unitaire-worker
+      basenameAlias: s3_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-triggerrenouvellement-unitaire-worker
+      basenameAlias: s3_secret_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-rdoserviceprestation-job
+      basenameAlias: s3_host
+    - scope: editor
+      technicalComponent: serviceeligibility-rdoserviceprestation-job
+      basenameAlias: s3_access_key
+    - scope: editor
+      technicalComponent: serviceeligibility-rdoserviceprestation-job
+      basenameAlias: s3_secret_access_key
+    - scope: editor
+      technicalComponent: purgeserviceprestationrdo-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: initrdoclaim-job
+      basenameAlias: BDD_MONGODB_URL
+    - scope: editor
+      technicalComponent: extractbenefsansdroitstp-job
+      basenameAlias: BDD_MONGODB_URL

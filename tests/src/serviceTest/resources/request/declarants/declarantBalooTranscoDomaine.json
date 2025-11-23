@@ -1,0 +1,195 @@
+{
+  "_id": "0000401166",
+  "idClientBO": "service-account-ai-boup00",
+  "nom": "BALOO",
+  "libelle": "BALOO",
+  "numeroPrefectoral": "0000401166",
+  "codePartenaire": "BAL",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "dateCreation": "2022-02-08T10:55:09.859Z",
+  "userCreation": "pierre-etienne.mouhot@cegedim-activ.com",
+  "dateModification": "2024-06-19T12:20:30.678Z",
+  "userModification": "pascal.molinie@cegedim-activ.com",
+  "pilotages": [
+    {
+      "codeService": "DCLBEN",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000Z",
+      "couloirClient": "IS",
+      "typeConventionnement": "IS",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0000401166",
+        "versionNorme": "003",
+        "codeClient": "IS"
+      }
+    },
+    {
+      "codeService": "CARTE-TP",
+      "serviceOuvert": false,
+      "isCarteEditable": false,
+      "couloirClient": "IS",
+      "caracteristique": {
+      }
+    },
+    {
+      "codeService": "CARTE-DEMATERIALISEE",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000Z",
+      "couloirClient": "IS",
+      "caracteristique": {
+      }
+    }
+  ],
+  "transcodageDomainesTP": [
+    {
+      "domaineSource": "OPAU",
+      "domainesCible": [
+        "OPTI",
+        "AUDI"
+      ]
+    },
+    {
+      "domaineSource": "SVIL",
+      "domainesCible": [
+        "SVIL",
+        "SAGE",
+        "RADL",
+        "LABO",
+        "AUXM"
+      ]
+    },
+    {
+      "domaineSource": "AUDP",
+      "domainesCible": [
+        "AUDI",
+        "LPPS"
+      ]
+    },
+    {
+      "domaineSource": "MEDS",
+      "domainesCible": [
+        "MEDE"
+      ]
+    },
+    {
+      "domaineSource": "MEDG",
+      "domainesCible": [
+        "MEDE"
+      ]
+    },
+    {
+      "domaineSource": "DEPR",
+      "domainesCible": [
+        "DENT"
+      ]
+    },
+    {
+      "domaineSource": "DESO",
+      "domainesCible": [
+        "DENT"
+      ]
+    },
+    {
+      "domaineSource": "DEOR",
+      "domainesCible": [
+        "DENT"
+      ]
+    },
+    {
+      "domaineSource": "PHAR",
+      "domainesCible": [
+        "PHNO",
+        "PHCO",
+        "PHOR"
+      ]
+    },
+    {
+      "domaineSource": "AMM",
+      "domainesCible": [
+        "AUXM"
+      ]
+    },
+    {
+      "domaineSource": "AMI",
+      "domainesCible": [
+        "AUXM"
+      ]
+    },
+    {
+      "domaineSource": "AMO",
+      "domainesCible": [
+        "AUXM"
+      ]
+    },
+    {
+      "domaineSource": "AMP",
+      "domainesCible": [
+        "AUXM"
+      ]
+    },
+    {
+      "domaineSource": "AMY",
+      "domainesCible": [
+        "AUXM"
+      ]
+    },
+    {
+      "domaineSource": "DEPO",
+      "domainesCible": [
+        "DENT"
+      ]
+    },
+    {
+      "domaineSource": "DENT",
+      "domainesCible": [
+        "DESO",
+        "DEPO"
+      ]
+    },
+    {
+      "domaineSource": "CSTD",
+      "domainesCible": [
+        "DESO",
+        "DEPO"
+      ]
+    }
+  ],
+  "conventionTP": [
+  ],
+  "codeRenvoiTP": [
+    {
+      "domaineTP": "MEDR",
+      "reseauSoin": "CB",
+      "codeRenvoi": "1",
+      "dateDebut": "2022-01-01T00:00:00.000Z"
+    }
+  ],
+  "regroupementDomainesTP": [
+    {
+      "domaineRegroupementTP": "OPAU",
+      "codesDomainesTP": [
+        "AUDI",
+        "OPTI"
+      ],
+      "niveauRemboursementIdentique": true,
+      "dateDebut": "2022-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineRegroupementTP": "SVIL",
+      "codesDomainesTP": [
+        "AUXM",
+        "LPPS",
+        "RADL",
+        "LABO",
+        "SAGE"
+      ],
+      "niveauRemboursementIdentique": true,
+      "dateDebut": "2022-01-01T00:00:00.000Z"
+    }
+  ],
+  "_class": "com.cegedim.next.serviceeligibility.core.model.entity.Declarant"
+}

@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "transcodage",
+      "description": "Détail des objets de transcodage définis dans la collection 'transcoParametrage'"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Transcodage": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeService": {
+            "description": "Code du service associé à l'objet de transcodage",
+			"type": "string"
+          },
+          "codeObjetTransco": {
+            "description": "Code de l'objet de transcodage",
+			"type": "string"
+          },
+          "cle": {
+			"description": "Liste des clés de transcodage",
+			"type": "array",
+            "items": {
+			  "type": "string"
+			}
+          },
+          "codeTransco": {
+            "description": "Code de transcodage",
+			"type": "string"
+          },
+          "dateCreation": {
+            "description": "Date de création",
+			"type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "description": "Adresse email de l'utilisateur ayant créé l'objet de transcodage",
+			"type": "string"
+          },
+          "dateModification": {
+            "description": "Date de modification",
+			"type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "description": "Adresse email de l'utilisateur ayant modifié l'objet de transcodage",
+			"type": "string"
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "Transcodage"
+      }
+    }
+  }
+}
