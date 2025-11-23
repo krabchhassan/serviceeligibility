@@ -1,0 +1,763 @@
+{
+  "contexteTiersPayant" : {
+    "isCartePapierAEditer" : false,
+    "periodesDroitsCarte" : {
+      "debut" : "2023-01-01",
+      "fin" : "2023-12-31"
+    },
+    "college" : "100",
+    "collectivite" : "CEGEDIM ACTIV",
+    "isCarteDematerialisee" : false,
+    "isCartePapier" : false
+  },
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2122706",
+            "idBeyondDestinatairePaiements" : "2122706-0000452433",
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2122706",
+            "idBeyondDestinataireRelevePrestations" : "2122706-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "SIMAN",
+          "nomUsage" : "SIMAN",
+          "prenom" : "VINCENT",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Mr SIMAN VINCENT",
+          "ligne4" : "52 RUE DE LA PAIX",
+          "ligne6" : "06522 BARBY",
+          "codePostal" : "09210"
+        },
+        "contact" : {
+          "email" : "RSIMAN@FREE.FR"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIV",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : true,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "1560832135165",
+          "cle" : "15"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1560832135165",
+              "cle" : "15"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "091"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19801116",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2122706"
+      },
+      "dateAdhesionMutuelle" : "2012-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateCreation" : "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2122706",
+            "idBeyondDestinatairePaiements" : "2122706-0000452433",
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2122706",
+            "idBeyondDestinataireRelevePrestations" : "2122706-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "SIMAN",
+          "nomUsage" : "SIMAN",
+          "prenom" : "TRISTAN",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur SIMAN TRISTAN",
+          "ligne4" : "52 RUE DE LA PAIX",
+          "ligne6" : "06522 BARBY",
+          "codePostal" : "09210"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIV",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "3",
+      "identite" : {
+        "nir" : {
+          "code" : "1560832135165",
+          "cle" : "15"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1560832135165",
+              "cle" : "15"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "091"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "20081024",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2122888"
+      },
+      "dateAdhesionMutuelle" : "2012-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateCreation" : "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "E",
+        "libelle" : "Enfant"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2122706",
+            "idBeyondDestinatairePaiements" : "2122706-0000452433",
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2122706",
+            "idBeyondDestinataireRelevePrestations" : "2122706-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "SEIJAS",
+          "nomUsage" : "SEIJAS",
+          "prenom" : "MELINA",
+          "civilite" : "MLLE"
+        },
+        "adresse" : {
+          "ligne1" : "Mademoiselle SEIJAS MELINA",
+          "ligne4" : "52 RUE DE LA PAIX",
+          "ligne6" : "06522 BARBY",
+          "codePostal" : "09210"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIV",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01",
+            "fin" : "2022-12-31"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "4",
+      "identite" : {
+        "nir" : {
+          "code" : "2030359163311",
+          "cle" : "88"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2030359163311",
+              "cle" : "88"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "091"
+            },
+            "periode" : {
+              "debut" : "2021-01-01"
+            }
+          },
+          {
+            "nir" : {
+              "code" : "1560832135165",
+              "cle" : "15"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "091"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2020-12-31"
+            }
+          }
+        ],
+        "dateNaissance" : "20030330",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2122887"
+      },
+      "dateAdhesionMutuelle" : "2012-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateRadiation" : "2022-12-31",
+      "dateCreation" : "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01",
+          "fin" : "2022-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "E",
+        "libelle" : "Enfant"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2122706",
+            "idBeyondDestinatairePaiements" : "2122706-0000452433",
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2122706",
+            "idBeyondDestinataireRelevePrestations" : "2122706-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "LETELLIER",
+          "nomUsage" : "LETELLIER",
+          "prenom" : "SARAH",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "Madame LETELLIER SARAH",
+          "ligne4" : "52 RUE DE LA PAIX",
+          "ligne6" : "06522 BARBY",
+          "codePostal" : "09210"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIV",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01",
+            "fin" : "2020-02-29"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "2",
+      "identite" : {
+        "nir" : {
+          "code" : "2770260057118",
+          "cle" : "83"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2770260057118",
+              "cle" : "83"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "597"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19770217",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2122890"
+      },
+      "dateAdhesionMutuelle" : "2012-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateRadiation" : "2020-02-29",
+      "dateCreation" : "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01",
+          "fin" : "2020-02-29"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "C",
+        "libelle" : "Conjoint/Concubin"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2122706",
+            "idBeyondDestinatairePaiements" : "2122706-0000452433",
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2122706",
+            "idBeyondDestinataireRelevePrestations" : "2122706-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "SIMAN",
+          "nomUsage" : "SIMAN",
+          "prenom" : "ROMANE",
+          "civilite" : "MLLE"
+        },
+        "adresse" : {
+          "ligne1" : "Mademoiselle SIMAN ROMANE",
+          "ligne4" : "52 RUE DE LA PAIX",
+          "ligne6" : "06522 BARBY",
+          "codePostal" : "09210"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIV",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "5",
+      "identite" : {
+        "nir" : {
+          "code" : "1560832135165",
+          "cle" : "15"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1560832135165",
+              "cle" : "15"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "091"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "20090328",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2122889"
+      },
+      "dateAdhesionMutuelle" : "2012-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateCreation" : "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "E",
+        "libelle" : "Enfant"
+      }
+    }
+  ],
+  "version" : "5",
+  "periodesSuspension" : [
+
+  ],
+  "codeOc" : "CONTRAT_GROUPE_AXA",
+  "periodesContratCMUOuvert" : [
+
+  ],
+  "traceId" : "644ba6fbc9463a799fa0cb35",
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "0000401166",
+  "numero" : "NUMBERCONTRAT",
+  "numeroExterne" : "NUMBERCONTRAT",
+  "numeroAdherent" : "NUMBERCONTRAT",
+  "numeroAdherentComplet" : "NUMBERCONTRAT",
+  "dateSouscription" : "2018-01-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2018-01-01"
+    }
+  ],
+  "critereSecondaire" : "001",
+  "isContratIndividuel" : false,
+  "gestionnaire" : "AXA",
+  "contratCollectif" : {
+    "numero" : "00219071"
+  },
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

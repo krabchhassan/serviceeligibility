@@ -1,0 +1,309 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "OPAU",
+          "garanties" : [
+            {
+              "codeGarantie" : "AXASCCGDIV",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "AXA",
+              "dateAdhesionCouverture" : "2025/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDI_OK",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPAU-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUEAUDIO",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2025/01/01",
+                              "periodeFin" : "2025/05/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2025/01/01",
+                              "periodeFin" : "2025/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "AXASCCGDIV",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "AXA",
+              "dateAdhesionCouverture" : "2025/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDI_OK",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2025/01/01",
+                              "periodeFin" : "2025/05/31"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2025/01/01",
+                              "periodeFin" : "2025/05/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2025/01/01",
+                                  "fin" : "2025/05/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateRadiation": "2025/05/31",
+      "dateNaissance" : "19791006",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1791062498046",
+      "cleNirBeneficiaire" : "46",
+      "nirOd1" : "1791062498046",
+      "cleNirOd1" : "46",
+      "numeroPersonne" : "B999200400201",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2012/01/01",
+      "dateDebutAdhesionIndividuelle" : "2025/01/01",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "ZERMEH",
+        "nomPatronymique" : "ZERMEH",
+        "nomMarital" : "ZERMEH",
+        "prenom" : "DAN",
+        "civilite" : "M",
+        "periodeDebut" : "2012/01/01",
+        "periodeFin" : "2025/05/31",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "091",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Assuré principal"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Monsieur ZERMEH DAN",
+          "ligne4" : "2 LOTISSEMENT LE FOIRAIL",
+          "ligne6" : "09210 ST YBARS",
+          "codePostal" : "09210",
+          "email" : "RZERMEH@FREE.FR",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1791062498046",
+            "cle" : "46"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "091"
+          },
+          "periode" : {
+            "debut" : "2025/01/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2025/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "99992005833",
+  "numeroAdherent" : "99992005833",
+  "numeroAdherentComplet" : "99992005833",
+  "dateSouscription" : "2025/01/01",
+  "type" : "B",
+  "nomPorteur" : "ZERMEH",
+  "prenomPorteur" : "DAN",
+  "civilitePorteur" : "M",
+  "qualification" : "B",
+  "numeroContratCollectif" : "00219071",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "typeConvention" : "IS",
+  "numeroExterneContratIndividuel" : "99992005833",
+  "numeroExterneContratCollectif" : "",
+  "gestionnaire" : "000ER00693",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "N/A",
+  "raisonSociale" : "N/A",
+  "groupePopulation" : "N/A",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2025/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "0"
+}

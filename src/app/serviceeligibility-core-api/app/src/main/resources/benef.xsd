@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://norme.cegedimassurances.com/base_de_droit"
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit"
+	elementFormDefault="qualified">
+	<xs:import namespace="http://ws.cegedimassurance.com/basededroit/wsdl" schemaLocation="get_info_bdd_request.xsd" />
+	<xs:include schemaLocation="classpath://./xsd/base_de_droit/get_info_bdd_response.xsd" />
+
+</xs:schema>

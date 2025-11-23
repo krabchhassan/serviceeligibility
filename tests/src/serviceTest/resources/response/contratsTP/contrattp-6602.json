@@ -1,0 +1,332 @@
+{
+  "_id" : null,
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "02939390",
+  "numeroAdherent" : "02939390",
+  "numeroAdherentComplet" : "02939390",
+  "dateSouscription" : "2023/01/09",
+  "dateResiliation" : "%%CURRENT_YEAR%%/10/09",
+  "type" : "B",
+  "nomPorteur" : "EL OMMAL",
+  "prenomPorteur" : "AMINE",
+  "civilitePorteur" : "M",
+  "qualification" : "B",
+  "numeroContratCollectif" : "00219181",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "001",
+  "numeroExterneContratIndividuel" : "02939390",
+  "numeroExterneContratCollectif" : "00219181",
+  "gestionnaire" : "000ER00955",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "dateCreation" : null,
+  "dateModification" : null,
+  "dateConsolidation" : null,
+  "identifiantCollectivite" : "N/A",
+  "raisonSociale" : "N/A",
+  "groupePopulation" : "N/A",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "%%CURRENT_YEAR%%/09/14"
+    },
+    {
+      "debut" : "2023/01/09",
+      "fin" : "%%CURRENT_YEAR%%/09/13"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3",
+  "beneficiaires" : [
+    {
+      "dateCreation" : null,
+      "dateModification" : null,
+      "dateNaissance" : "19991224",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1991244162390",
+      "cleNirBeneficiaire" : "08",
+      "nirOd1" : "1991244162390",
+      "cleNirOd1" : "08",
+      "numeroPersonne" : "2461427",
+      "rangAdministratif" : "2",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2023/01/09",
+      "dateDebutAdhesionIndividuelle" : "2023/01/09",
+      "dernierMouvementRecu" : "R",
+      "affiliation" : {
+        "nom" : "EL OMMAL",
+        "nomPatronymique" : "EL OMMAL",
+        "nomMarital" : "EL OMMAL",
+        "prenom" : "AMINE",
+        "civilite" : "M",
+        "periodeDebut" : "2023/01/09",
+        "periodeFin" : "%%CURRENT_YEAR%%/10/09",
+        "qualite" : "C",
+        "regimeOD1" : "01",
+        "caisseOD1" : "441",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Conjoint/Concubin"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Madame EL OMMAL MANON",
+          "ligne4" : "54 BOULEVARD(S) JEAN MOULIN",
+          "ligne6" : "44100 NANTES",
+          "codePostal" : "44100",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1991244162390",
+            "cle" : "08"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "441"
+          },
+          "periode" : {
+            "debut" : "2023/01/09"
+          }
+        },
+        {
+          "nir" : {
+            "code" : "1991244162390",
+            "cle" : "08"
+          },
+          "rattachementRO" : {
+
+          },
+          "periode" : {
+            "debut" : "2023/01/09",
+            "fin" : "2023/01/08"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2023/01/09"
+          },
+          "isTeletransmission" : true
+        },
+        {
+          "periode" : {
+            "debut" : "2023/01/09",
+            "fin" : "2023/01/08"
+          },
+          "isTeletransmission" : false
+        }
+      ],
+      "domaineDroits" : [
+        {
+          "code" : "LABO",
+          "garanties" : [
+            {
+              "codeGarantie" : "BAL_6602_001",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "BALOO",
+              "dateAdhesionCouverture" : "2023/01/09",
+              "produits" : [
+                {
+                  "codeProduit" : "PROD_6602_001",
+                  "codeOffre" : "BAL_6602_001",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "LABO-052",
+                      "formulaMask" : "100%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "BIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/07/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/07/01",
+                              "libelleEvenement" : "Fermeture droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "FE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/07/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/07/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/07/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "052",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01",
+                                  "fin" : "%%CURRENT_YEAR%%/07/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "referenceCouverture" : "LABO-053",
+                      "formulaMask" : "90%TM",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "BIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/07/02",
+                              "periodeFin" : "%%CURRENT_YEAR%%/10/09"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/07/02",
+                              "periodeFin" : "%%CURRENT_YEAR%%/10/09",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Fermeture droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "FE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/07/02",
+                                  "fin" : "%%CURRENT_YEAR%%/10/09"
+                                },
+                                {
+                                  "debut" : "%%NEXT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/07/02",
+                                  "fin" : "%%CURRENT_YEAR%%/10/09"
+                                },
+                                {
+                                  "debut" : "%%NEXT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/07/02",
+                                  "fin" : "%%CURRENT_YEAR%%/10/09"
+                                },
+                                {
+                                  "debut" : "%%NEXT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "053",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/07/02",
+                                  "fin" : "%%CURRENT_YEAR%%/10/09"
+                                },
+                                {
+                                  "debut" : "%%NEXT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

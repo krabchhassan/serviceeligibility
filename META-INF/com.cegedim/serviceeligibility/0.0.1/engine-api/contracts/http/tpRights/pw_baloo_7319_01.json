@@ -1,0 +1,26 @@
+{
+  "offerCode": "7319-01",
+  "offerVersions": [
+    {
+      "domains": [
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_DE00001_100pctFraisReels",
+            "formulaLabel": " DE00001_100% Frais Réels ",
+            "formulaMask": " 100% FR ",
+            "stsFormulaCode": "010",
+            "nature": "DENT_AIRE"
+          },
+          "tpOnline": {
+            "nature": "DENT_AIRE"
+          }
+        }
+      ],
+      "offerVersionCode": "22_dent_air",
+      "effectDate": "2024-09-30T14:53:32.994Z",
+      "validityDate": "2024-10-01",
+      "engineVersion": "1.0"
+    }
+  ]
+}

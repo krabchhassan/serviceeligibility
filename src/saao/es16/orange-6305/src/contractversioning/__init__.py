@@ -1,0 +1,1 @@
+from .contractversioning import main

@@ -1,0 +1,17 @@
+{
+  "id" : "59d35cbad9bb357b792638b2",
+  "parametrageCarteTPId": "2",
+  "status": "Processed",
+  "origine": "Event",
+  "dateEffet": "2021-05-02T00:00:00.000Z",
+  "dateFinStandBy": null,
+  "dateDebutTraitement": "2021-03-06T00:00:00.000Z",
+  "dateFinTraitement": "2021-03-07T00:00:00.000Z",
+  "nbBenef": 1,
+  "nbBenefKO": 0,
+  "amc": "AMC2",
+  "dateCreation": "2021-02-02T00:00:00.000Z",
+  "dateModification": "2021-02-02T00:00:00.000Z",
+  "userCreation": "beyond-tester@outlook.com",
+  "userModification": "beyond-tester@outlook.com"
+}

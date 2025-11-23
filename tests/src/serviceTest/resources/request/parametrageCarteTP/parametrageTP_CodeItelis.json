@@ -1,0 +1,65 @@
+{
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "oc": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2022-01-01",
+  "dateCreation": "2022-01-01T07:45:49.495Z",
+  "userCreation": "marianne.barrailh@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "debutEcheance": "01/01",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": true,
+    "detailsDroit": [
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "OPAU",
+        "libelleDomaineTP": "Op",
+        "isDomaineEditable": true,
+        "convention": "IS",
+        "codeRenvoi": null,
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "HOSP",
+        "libelleDomaineTP": "Hosp",
+        "isDomaineEditable": true,
+        "convention": null,
+        "codeRenvoi": "Detail_hosp_code_r",
+        "codeRenvoiAction": "COMPLETER"
+      },
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "PHAR",
+        "libelleDomaineTP": "Phar",
+        "isDomaineEditable": true,
+        "convention": null,
+        "codeRenvoi": null,
+        "codeRenvoiAction": "INHIBER"
+      },
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "DENT",
+        "libelleDomaineTP": "Dent",
+        "isDomaineEditable": true,
+        "convention": null,
+        "codeRenvoi": "Detail_dent_code_r",
+        "codeRenvoiAction": "REMPLACER"
+      }
+    ],
+    "isCarteEditablePapier": false,
+    "codeRenvoi": "Entete_code_r",
+    "codeItelis": "BLABLO_OPTIQUE"
+  }
+}

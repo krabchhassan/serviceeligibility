@@ -1,0 +1,113 @@
+{
+  "offerCode": "BLUE_OFFRE_001",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2022_janv_01.1",
+      "effectDate": "2022-02-10T16:09:40.755Z",
+      "validityDate": "2022-01-01",
+      "endValidityDate": "2022-03-31",
+      "engineVersion": "24.3",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "HOSPITALISATION"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION"
+          }
+        }
+      ]
+    },
+    {
+      "offerVersionCode": "2022_janv_01.2",
+      "effectDate": "2022-02-10T16:09:40.755Z",
+      "validityDate": "2022-04-01",
+      "endValidityDate": "2022-06-30",
+      "engineVersion": "24.3",
+      "domains": [
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "HOSPITALISATION"
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION"
+          }
+        }
+      ]
+    },
+    {
+      "offerVersionCode": "2022_janv_01.2",
+      "effectDate": "2022-02-10T16:09:40.755Z",
+      "validityDate": "2022-07-01",
+      "endValidityDate": "2022-07-31",
+      "engineVersion": "24.3",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "HOSPITALISATION"
+          }
+        }
+      ]
+    },
+    {
+      "offerVersionCode": "2022_janv_01.2",
+      "effectDate": "2022-02-10T16:09:40.755Z",
+      "validityDate": "2022-08-01",
+      "endValidityDate": "2022-12-31",
+      "engineVersion": "24.3",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUE"
+          }
+        }
+      ]
+    }
+  ]
+}

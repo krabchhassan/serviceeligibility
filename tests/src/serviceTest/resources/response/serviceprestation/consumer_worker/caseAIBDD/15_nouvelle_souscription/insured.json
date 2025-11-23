@@ -1,0 +1,73 @@
+{
+  "nom": {
+    "nomFamille": "LECLOITRE",
+    "nomUsage": "LECLOITRE",
+    "prenom": "paul",
+    "civilite": "M."
+  },
+  "adresse": {
+    "ligne1": "M. LECLOITRE paul",
+    "ligne2": "",
+    "ligne3": "",
+    "ligne4": "ALLEES DU PDT FRANKLIN ROOSEVELT",
+    "ligne5": "",
+    "ligne6": "31000 TOULOUSE",
+    "ligne7": "",
+    "codePostal": "31000"
+  },
+  "destinatairesPrestations": [
+    {
+      "nom": {
+        "nomFamille": "LECLOITRE",
+        "nomUsage": "LECLOITRE",
+        "prenom": "jeanne",
+        "civilite": "MME"
+      },
+      "adresse": {
+        "ligne1": "Mme LECLOITRE jeanne",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "ALLEES DU PDT FRANKLIN ROOSEVELT",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "rib": {
+        "iban": "FR7612206008005600551640075",
+        "bic": "AGRIFRPP822"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "nom": {
+        "nomFamille": "LECLOITRE",
+        "nomUsage": "LECLOITRE",
+        "prenom": "jeanne",
+        "civilite": "MME"
+      },
+      "adresse": {
+        "ligne1": "Mme LECLOITRE jeanne",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "ALLEES DU PDT FRANKLIN ROOSEVELT",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ]
+}

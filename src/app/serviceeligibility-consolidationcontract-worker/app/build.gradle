@@ -1,0 +1,61 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+
+    // ----------------
+    // Spring framework
+    // ----------------
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.data:spring-data-rest-webmvc")
+    compileOnly("org.springframework.kafka:spring-kafka")
+    implementation("org.apache.commons:commons-collections4")
+
+    // ----------------
+    // Observability
+    // ----------------
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+    // --------------------------------------
+    // Java implementation for JSON web token
+    // --------------------------------------
+
+    // -------------------------
+    // JSON schema creation, ...
+    // -------------------------
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+
+    // ------------------------------------
+    // Handling LocalDate and LocalDateTime
+    // ------------------------------------
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+    // ----------------
+    // Jackson databind
+    // ----------------
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation('com.cegedim.beyond.framework:lib-beyond-mongo-starter')
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation(project(":lib-next-serviceeligibility-core-services")) {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+    implementation(project(":lib-next-serviceeligibility-elastic-services"))
+
+    // cache
+    implementation('com.cegedim.beyond.framework:lib-beyond-cache-redis-starter')
+
+}

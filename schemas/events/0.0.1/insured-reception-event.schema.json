@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Réception message assuré",
+  "description": "Réception d'un message assuré",
+  "additionalProperties": false,
+  "properties": {
+    "contractId": {
+      "type": "string",
+      "description": "Identifiant technique du contrat lié au message assuré reçu"
+    }
+  },
+  "required": [
+    "contractId"
+  ],
+  "$id": "Insurance.serviceeligibility.insured.reception.event/0.0.1"
+}

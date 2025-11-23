@@ -1,0 +1,25 @@
+:global {
+    .cgd-workflow {
+        height: 120px;
+
+        .cgd-step li {
+            width: 115px;
+        }
+    }
+
+    .ml-auto {
+        margin-left: 0px !important;
+    }
+}
+
+.full-height {
+    height: 100%;
+
+    > div {
+        height: 100%;
+
+        > div {
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "name": "Referential.xlsx",
+    "sheets": [
+      {
+        "name": "Feuil1",
+        "number": 0,
+        "columns": [
+          {
+            "position": 0,
+            "name": "Code",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 1,
+            "name": "Label",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 2,
+            "name": "String",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 3,
+            "name": "Numeric",
+            "columnFormat": "NUMERIC"
+          },
+          {
+            "position": 4,
+            "name": "DateDate",
+            "columnFormat": "DATE"
+          },
+          {
+            "position": 5,
+            "name": "DateString",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 6,
+            "name": "booleanTrueFalse",
+            "columnFormat": "BOOLEAN"
+          },
+          {
+            "position": 7,
+            "name": "booleanOuiNon",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 8,
+            "name": "booleanVraiFaux",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 9,
+            "name": "boolean01",
+            "columnFormat": "STRING"
+          }
+        ],
+        "columnsNumber": 10
+      }
+    ],
+    "sheetsNumber": 1
+  },
+  "content": [
+    {
+      "sheetName": "Feuil1",
+      "sheetContent": [
+        {
+          "lineNumber": 1,
+          "Code": "1",
+          "Label": "Test format 1",
+          "String": "test",
+          "Numeric": 123456789.0,
+          "DateDate": "2018-02-01T00:00:00Z",
+          "DateString": "2018/02/01",
+          "booleanTrueFalse": "true",
+          "booleanOuiNon": "oui",
+          "booleanVraiFaux": "TRUE",
+          "boolean01": "1"
+        },
+        {
+          "lineNumber": 2,
+          "Code": "2",
+          "Label": "Test format 2",
+          "String": "test",
+          "Numeric": "123456789.2",
+          "DateDate": "2018-02-13T00:00:00Z",
+          "DateString": "2018/02/13",
+          "booleanTrueFalse": "false",
+          "booleanOuiNon": "non",
+          "booleanVraiFaux": "FALSE",
+          "boolean01": "0"
+        },
+        {
+          "lineNumber": 3,
+          "Code": "3",
+          "Label": "Test format 3",
+          "String": "test",
+          "Numeric": "123456789.1501",
+          "DateDate": "2018-02-13T00:00:00Z",
+          "DateString": "2018/02/01",
+          "booleanTrueFalse": "true",
+          "booleanOuiNon": "oui",
+          "booleanVraiFaux": "TRUE",
+          "boolean01": "-1"
+        }
+      ],
+      "sheetLinesNumber": 3
+    }
+  ]
+}

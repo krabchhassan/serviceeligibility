@@ -1,0 +1,84 @@
+@startuml
+
+class Document [[java:com.cegedim.next.common.excel.businesscomponent.document.model.Document]] {
+	-Metadata metadata
+	-List<SheetContent> sheetContents
+	+Document()
+	+Metadata getMetadata()
+	+void setMetadata(Metadata metadata)
+	+List<SheetContent> getSheetContents()
+	+void setSheetContents(List<SheetContent> sheetContents)
+}
+
+class Column [[java:com.cegedim.next.common.excel.businesscomponent.document.model.Column]] {
+	-int position
+	-String name
+	-ColumnFormat columnFormat
+	+int getPosition()
+	+void setPosition(int position)
+	+String getName()
+	+void setName(String name)
+	+ColumnFormat getColumnFormat()
+	+void setColumnFormat(ColumnFormat columnFormat)
+}
+
+class DataLine [[java:com.cegedim.next.common.excel.businesscomponent.document.model.DataLine]] {
+	-Integer lineNumber
+	-Map<String,String> valueByColumnMap
+	+DataLine()
+	+Integer getLineNumber()
+	+void setLineNumber(Integer lineNumber)
+	+Map<String,String> getValueByColumnMap()
+	+void setValueByColumnMap(Map<String,String> valueByColumnMap)
+}
+
+class ExcelSheet [[java:com.cegedim.next.common.excel.businesscomponent.document.model.ExcelSheet]] {
+	-String name
+	-Integer number
+	-List<Column> columns
+	+ExcelSheet()
+	+Integer getColumnsNumber()
+	+String getName()
+	+void setName(String name)
+	+Integer getNumber()
+	+void setNumber(Integer number)
+	+List<Column> getColumns()
+	+void setColumns(List<Column> columns)
+}
+
+class Metadata [[java:com.cegedim.next.common.excel.businesscomponent.document.model.Metadata]] {
+	-String name
+	-List<ExcelSheet> sheets
+	+Metadata()
+	+Integer getSheetNumber()
+	+String getName()
+	+void setName(String name)
+	+List<ExcelSheet> getSheets()
+	+void setSheets(List<ExcelSheet> sheets)
+}
+
+class SheetContent [[java:com.cegedim.next.common.excel.businesscomponent.document.model.SheetContent]] {
+	-ExcelSheet sheet
+	-List<DataLine> dataLines
+	+Integer getDataLinesNumber()
+	+ExcelSheet getSheet()
+	+void setSheet(ExcelSheet sheet)
+	+List<DataLine> getDataLines()
+	+void setDataLines(List<DataLine> dataLines)
+}
+
+enum ColumnFormat [[java:com.cegedim.next.common.excel.businesscomponent.document.model.enums.ColumnFormat]] {
+	BOOLEAN
+	DATE
+	NUMERIC
+	STRING
+}
+
+Document *- "1" Metadata
+Document "1" --> "1..*" SheetContent : content
+SheetContent *- "1" ExcelSheet
+SheetContent "1" --> "0..*" DataLine : sheet-content
+Metadata "1" --> "1..*" ExcelSheet : sheets
+ExcelSheet "1" --> "0..*" Column : columns
+
+@enduml

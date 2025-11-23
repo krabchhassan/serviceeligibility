@@ -1,0 +1,157 @@
+{
+  "codeEtat" : "R",
+  "effetDebut" : "2024-10-24T13:49:09.502+0000",
+  "idDeclarant" : "0000401166",
+  "isCarteTPaEditer" : false,
+  "carteTPaEditerOuDigitale" : "3",
+  "idTrigger" : "671a5055d638f80d7ec8dafb",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2024-10-24T13:49:09.502+0000",
+  "userCreation" : "Event",
+  "dateModification" : "2024-10-24T13:49:10.244+0000",
+  "userModification" : "GenerationDroitTP",
+  "beneficiaire" : {
+    "dateNaissance" : "20041026",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1041062498044",
+    "cleNirBeneficiaire" : "37",
+    "nirOd1" : "1791062498044",
+    "cleNirOd1" : "48",
+    "numeroPersonne" : "MBA0003-002",
+    "refExternePersonne" : "EXT-MBA0003-002",
+    "dateAdhesionMutuelle" : "2021/01/01",
+    "dateDebutAdhesionIndividuelle" : "2021/01/01",
+    "numeroAdhesionIndividuelle" : "120320020",
+    "affiliation" : {
+      "nom" : "PEHAHUT",
+      "nomPatronymique" : "VAITROUAT",
+      "nomMarital" : "VAITROUAT",
+      "prenom" : "AYMERIC",
+      "civilite" : "Mr",
+      "periodeDebut" : "2021/01/01",
+      "qualite" : "E",
+      "regimeOD1" : "01",
+      "caisseOD1" : "624",
+      "centreOD1" : "0156",
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "AM",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "Enfant"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "MR PEHAHUT VAITROUAT CHRISTIAN",
+        "ligne4" : "125 RUE DU CHATEAU",
+        "ligne6" : "59250 HALLUIN",
+        "codePostal" : "59250",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "MBA0003",
+    "dateSouscription" : "2021/01/01",
+    "type" : "B",
+    "nomPorteur" : "VAITROUAT",
+    "prenomPorteur" : "AYMERIC",
+    "civilitePorteur" : "Mr",
+    "numeroAdherent" : "MBA0003",
+    "numeroAdherentComplet" : "MBA0003-COMPLET",
+    "qualification" : "B",
+    "numeroContratCollectif" : "03094493",
+    "rangAdministratif" : "2",
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "1",
+    "lienFamilial" : "E",
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "GEO-FRA-OCC",
+    "critereSecondaire" : "Employés",
+    "numeroExterneContratIndividuel" : "MBA0003",
+    "numeroExterneContratCollectif" : "DKMMMS09049304930",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "000ER00693",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1",
+    "identifiantCollectivite" : "N/A",
+    "raisonSociale" : "N/A",
+    "groupePopulation" : "N/A"
+  },
+  "domaineDroits" : [
+    {
+      "code" : "OPTI",
+      "codeProduit" : "PDT_BASE2",
+      "codeGarantie" : "GT_BASE2",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "50",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "OPTI-021-50",
+      "noOrdreDroit" : 4,
+      "categorie" : "OPTI",
+      "formulaMask" : "50% TR ",
+      "naturePrestation" : "OPTIQUE",
+      "naturePrestationOnline" : "OPTIQUE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS2",
+      "versionOffre" : "22",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "021",
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "50"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M",
+        "periodeFermetureDebut" : "2024/01/01",
+        "periodeFermetureFin" : "2024/12/31"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "",
+        "periodeFermetureDebut" : "2024/01/01"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSanté"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "2018-01-01"
+      }
+    }
+  ],
+  "idOrigine" : "671a5055d638f80d7ec8dafd",
+  "etatSuspension" : "-1"
+}

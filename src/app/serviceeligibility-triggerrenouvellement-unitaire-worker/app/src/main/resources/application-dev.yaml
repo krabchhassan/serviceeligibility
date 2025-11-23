@@ -1,0 +1,100 @@
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+
+CLOUD_PROVIDER: itcare
+TARGET_DOMAIN: dev
+TARGET_ENV: local
+
+COMMON_INDEX_BASENAME: local
+ELASTICSEARCH_LOGIN: login
+ELASTICSEARCH_PASSWORD: password
+ELASTICSEARCH_URL: https://beyond-data-dev.es.cegedim.cloud
+
+CONSUMER_GROUP_ID_NAME: demandeDeclaration
+KAFKA_SERVERS: localhost:9092
+KAFKA_TOPIC_BDD-CONTRATTP: bdd-contrattp
+KAFKA_TOPIC_BDD-DEMANDE-DECLARATION: demandeDeclaration
+KAFKA_TOPIC_BDD-DEMANDE-ABANDON-TRIGGER: demandeAbandonTrigger
+KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION: demandeRenouvellementDeclaration
+KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE: demandeRenouvellementDeclarationUnitaire
+KAFKA_TOPIC_BDD-EXTRACT-CONTRACT: bdd-extract-contract
+KAFKA_TOPIC_BDD-RECIPIENTS-REQUEST: bdd-recipients-request
+KAFKA_TOPIC_BDD-UNDUE-RETENTION: bdd-undue-retention
+KAFKA_TOPIC_BDD-UPDATE-RENOUVELLEMENT-DECLARATION: updateRenouvellementDeclaration
+
+BATCH_SIZE: '10000'
+environment: local
+ORGA_LIB_ENABLED: 'true'
+keycloak_realm: htp
+PW_API_NB_RESULT_PER_PAGE: '10'
+PW_API_URL: https://htp-es15.dev.beyond.cegedim.cloud/engine/core/api
+s3_connection_timeout: '900'
+s3_port: '0'
+s3_read_timeout: '900'
+s3_write_timeout: '900'
+proxy:
+  host: '#'
+  port: '0'
+SEND_EVENTS: 'false'
+SETTINGS_API_URL: https://htp-es15.dev.beyond.cegedim.cloud/settingsui
+
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+schema:
+  path: Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+kafka:
+  topic:
+    beyond-events: events
+
+beyond:
+  couloir: htp
+  customer: editeur
+  instance: htp-es15
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+logging:
+  level:
+    com:
+      cegedim: debug
+
+server:
+  port: '8087'
+  servlet:
+    context-path: /serviceeligibility/triggerrenouvellement-unitaire/worker
+service:
+  code: serviceeligibility
+socle:
+  code: Insurance
+
+s3_access_key: nzua4ydzoc19biobbyqz
+s3_bucket: cegedim-beyond-dev-htp-es15-msdata
+s3_file_path: insurance/organisation/setting-scopes/scopes.json
+s3_host: storage-et1.cloud.cegedim.com
+s3_mls_folder_path: insurance/organisation/mls-config/
+s3_orga_admin_data_path: insurance/organisation/organisations-admin-data/
+s3_region: eu-west-1
+s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+s3_secure: true
+
+# For redis cache
+REDIS_ADMIN_PASSWORD: password
+REDIS_ADMIN_USER: redis
+REDIS_AGENT_NODE_0: detcisedtrd001.hosting.cegedim.cloud
+REDIS_AGENT_NODE_1: detcisedtrd002.hosting.cegedim.cloud
+REDIS_AGENT_NODE_2: detcisedtrd003.hosting.cegedim.cloud
+REDIS_CRT_PATH: ${user.home}/.redis/redis.truststore.crt
+REDIS_MASTER: detcisedtrd01
+REDIS_PASSWORD: password
+REDIS_PORT: 26379
+REDIS_USER: redis

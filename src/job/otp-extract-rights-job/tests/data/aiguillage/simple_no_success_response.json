@@ -1,0 +1,15 @@
+{
+    "content": {},
+    "errors": {
+      "987654321-20200101-20210101": {
+        "code": "NEXT-AIGUILLAGE-CORE-EXTRACTED-404-1",
+        "msg": "",
+        "request": {}
+      },
+      "123456789-20200101-20210101": {
+        "code": "NEXT-AIGUILLAGE-CORE-EXTRACTED-404-1",
+        "msg": "",
+        "request": {}
+      }
+    }
+}

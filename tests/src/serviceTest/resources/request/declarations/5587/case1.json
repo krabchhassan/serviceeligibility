@@ -1,0 +1,211 @@
+{
+  "codeEtat": "V",
+  "idDeclarant": "0000401166",
+  "isCarteTPaEditer": false,
+  "carteTPaEditerOuDigitale": "0",
+  "idTrigger": "6571a3723e5212367ad24514",
+  "versionDeclaration": "3.1",
+  "userCreation": "WORKER",
+  "userModification": "WORKER",
+  "beneficiaire": {
+    "dateNaissance": "18690428",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1860598145145",
+    "cleNirBeneficiaire": "24",
+    "nirOd1": "1860598145145",
+    "cleNirOd1": "24",
+    "numeroPersonne": "2121639",
+    "dateAdhesionMutuelle": "2012/01/01",
+    "dateDebutAdhesionIndividuelle": "2018/01/01",
+    "affiliation": {
+      "nom": "PIPO",
+      "nomPatronymique": "PIPO",
+      "nomMarital": "PIPO",
+      "prenom": "JEANNO",
+      "civilite": "M",
+      "periodeDebut": "2012/01/01",
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "781",
+      "hasMedecinTraitant": false,
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "Assuré principal"
+    },
+    "adresses": [
+      {
+        "ligne1": "Monsieur MADALE JEAN",
+        "ligne4": "50 ROI",
+        "ligne6": "78510 VILLE",
+        "codePostal": "78510",
+        "email": "jean.MADALE@zoo.com",
+        "typeAdresse": {
+          "type": "AD"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "93000808",
+    "dateSouscription": "2018/01/01",
+    "type": "B",
+    "nomPorteur": "MADALE",
+    "prenomPorteur": "JEAN",
+    "civilitePorteur": "M",
+    "numeroAdherent": "93000808",
+    "numeroAdherentComplet": "93000808",
+    "qualification": "B",
+    "numeroContratCollectif": "00219217",
+    "rangAdministratif": "1",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "2",
+    "lienFamilial": "A",
+    "typeConvention": "CB",
+    "critereSecondaire": "001",
+    "numeroExterneContratIndividuel": "93000808",
+    "numeroExterneContratCollectif": "00219217",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "000ER00693",
+    "numOperateur": "CB",
+    "ordrePriorisation": "1",
+    "identifiantCollectivite": "123456",
+    "raisonSociale": "159A",
+    "groupePopulation": "A",
+    "codeRenvoi": "Entete_code_r"
+  },
+  "domaineDroits": [
+    {
+      "code": "OPAU",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "codeRenvoi": "Amc_opau_code_r",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "OPAU-099",
+      "noOrdreDroit": 2,
+      "categorie": "OPAU",
+      "formulaMask": "PEC",
+      "naturePrestation": "OPTIQUEAUDIO",
+      "naturePrestationOnline": "OPTIQUEAUDIO",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2018_janv_01.1",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/01/01",
+        "periodeFin": "2023/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2023/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 2,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "iSante"
+          }
+        }
+      ],
+      "periodeProductElement": {
+        "debut": "2020-01-01"
+      }
+    },
+    {
+      "code": "HOSP",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "codeRenvoi": "Amc_hosp_code_r",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "HOSP-099",
+      "noOrdreDroit": 2,
+      "categorie": "HOSP",
+      "formulaMask": "PEC",
+      "naturePrestation": "HOSPITALISATION",
+      "naturePrestationOnline": "HOSPITALISATION",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2018_janv_01.1",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2023/01/01",
+        "periodeFin": "2023/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2023/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 1,
+          "typeConventionnement": {
+            "code": "IT",
+            "libelle": "Itelis"
+          }
+        },
+        {
+          "priorite": 1,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "iSante"
+          }
+        }
+      ],
+      "periodeProductElement": {
+        "debut": "2020-01-01"
+      },
+      "codeRenvoiAdditionnel": "Detail_hosp_code_r"
+    }
+  ],
+  "etatSuspension": "-1"
+}

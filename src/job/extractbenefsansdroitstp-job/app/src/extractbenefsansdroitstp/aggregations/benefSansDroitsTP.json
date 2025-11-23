@@ -1,0 +1,217 @@
+[
+  {
+    "$match": {
+      "$or": [
+        {
+          "dateResiliation": {
+            "$exists": false
+          }
+        },
+        {
+          "dateResiliation": {
+            "$gt": "$dateResiliationTiret"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$unwind": {
+      "path": "$assures"
+    }
+  },
+  {
+    "$match": {
+      "$or": [
+        {
+          "assures.dateRadiation": {
+            "$exists": false
+          }
+        },
+        {
+          "assures.dateRadiation": {
+            "$gt": "$dateRadiationTiret"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "$lookup": {
+      "from": "contratsTP",
+      "let": {
+        "idDeclarant": "$idDeclarant",
+        "numContrat": "$numero",
+        "numAdherent": "$numeroAdherent",
+        "numPersonne": "$assures.identite.numeroPersonne"
+      },
+      "pipeline": [
+        {
+          "$match": {
+            "$expr": {
+              "$and": [
+                {
+                  "$eq": ["$idDeclarant", "$$$idDeclarant"]
+                },
+                {
+                  "$eq": ["$numeroContrat", "$$$numContrat"]
+                },
+                {
+                  "$eq": ["$numeroAdherent", "$$$numAdherent"]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "$match": {
+            "$or": [
+              {
+                "dateResiliation": {
+                  "$exists": false
+                }
+              },
+              {
+                "dateResiliation": {
+                  "$gt": "$dateResiliationSlash"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$unwind": {
+            "path": "$beneficiaires"
+          }
+        },
+        {
+          "$match": {
+            "$expr": {
+              "$and": [
+                {
+                  "$eq": ["$beneficiaires.numeroPersonne", "$$$numPersonne"]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "$match": {
+            "$or": [
+              {
+                "beneficiaires.dateRadiation": {
+                  "$exists": false
+                }
+              },
+              {
+                "beneficiaires.dateRadiation": {
+                  "$gt": "$dateRadiationSlash"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "$project": {
+            "maxDate": {
+              "$reduce": {
+                "input": {
+                  "$reduce": {
+                    "input": {
+                      "$reduce": {
+                        "input": {
+                          "$reduce": {
+                            "input": {
+                              "$reduce": {
+                                "input": {
+                                  "$reduce": {
+                                    "input": "$beneficiaires.domaineDroits",
+                                    "initialValue": [],
+                                    "in": {
+                                      "$concatArrays": [
+                                        "$$$value",
+                                        "$$$this.garanties"
+                                      ]
+                                    }
+                                  }
+                                },
+                                "initialValue": [],
+                                "in": {
+                                  "$concatArrays": [
+                                    "$$$value",
+                                    "$$$this.produits"
+                                  ]
+                                }
+                              }
+                            },
+                            "initialValue": [],
+                            "in": {
+                              "$concatArrays": [
+                                "$$$value",
+                                "$$$this.referencesCouverture"
+                              ]
+                            }
+                          }
+                        },
+                        "initialValue": [],
+                        "in": {
+                          "$concatArrays": [
+                            "$$$value",
+                            "$$$this.naturesPrestation"
+                          ]
+                        }
+                      }
+                    },
+                    "initialValue": [],
+                    "in": {
+                      "$concatArrays": ["$$$value", "$$$this.periodesDroit"]
+                    }
+                  }
+                },
+                "initialValue": "2024/12/31",
+                "in": {
+                  "$cond": {
+                    "if": {
+                      "$eq": ["$$$this.typePeriode", "OFFLINE"]
+                    },
+                    "then": {
+                      "$max": ["$$$this.periodeFin", "$$$value"]
+                    },
+                    "else": "$$$value"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "as": "contratsTP"
+    }
+  },
+  {
+    "$match": {
+      "$or": [
+        {
+          "contratsTP.0": { "$exists": false }
+        },
+        {
+          "contratsTP.maxDate": { "$lt": "$maxDateFinOffline" }
+        }
+      ]
+    }
+  },
+  {
+    "$project": {
+      "_id": 1,
+      "nir": "$assures.identite.nir.code",
+      "cleNir": "$assures.identite.nir.cle",
+      "numeroPersonne": "$assures.identite.numeroPersonne",
+      "identifiantCollectivite": "$contratCollectif.identifiantCollectivite",
+      "numero": 1,
+      "idDeclarant": 1,
+      "societeEmettrice": 1,
+      "numeroAdherent": 1,
+      "numeroAdherentComplet": 1
+    }
+  }
+]

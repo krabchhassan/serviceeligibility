@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="type_contrat">
+		<xs:annotation>
+			<xs:documentation>Proprietes du contrat</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="numeroAMC">
+				<xs:annotation>
+					<xs:documentation>Numero AMC
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nomAMC">
+				<xs:annotation>
+					<xs:documentation>Nom AMC</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="45" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelleAMC" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom ou raison sociale du déclarant
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="45" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="debutPeriode" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Debut periode carte
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="finPeriode" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Fin periode carte
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="numeroAMCEchanges" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Renseigné lorsque l'AMC est identifiée par ce
+						numero dans les échanges entre AMC et opérateur
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroOperateur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero de l'operateur de Tiers payant
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numero">
+				<xs:annotation>
+					<xs:documentation>Numero du contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="20" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroAdherent">
+				<xs:annotation>
+					<xs:documentation>Numero adherent AMC
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="8" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroAdherentComplet" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero adherent lorsque le numero sur 8
+						caracteres ne permet pas une identification unique dans une AMC
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroExterneContratIndividuel"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero contrat individuel ou de l'adhesion
+						individuelle au contrat collectif sur un ancien Back Office
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="20" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroContratCollectif" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero du contrat collectif associé à l'adhesion
+						individuelle
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="20" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroExterneContratCollectif"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Reference du contrat collectif sur un ancien Back
+						Office
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="20" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="editeurCarte" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Renseigné si l'AMC a délégué l'edition de la
+						carte à un operateur externe
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="gestionnaire" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gestionnaire de contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="groupeAssures" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Groupe d'assurés souscripteur du contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="20" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="typeConvention" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Si la valeur est commune à l'ensemble des
+						domaines de droits couverts
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="critereSecondaireDetaille" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Segmentation de la population d'une AMC par type
+						d'offres de services
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="critereSecondaire" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Segmentation de la population d'une AMC par type
+						d'offres de services. Contient le CSR
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nomPorteur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom du souscripteur du contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prenomPorteur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Prenom du souscripteur du contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="civilitePorteur" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Civilite du souscripteur du contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dateSouscription" type="xs:date"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date de souscription au contrat du beneficiare de
+						qualite "A"
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="qualification">
+				<xs:annotation>
+					<xs:documentation>Qualification du contrat B/S/C
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="isContratResponsable" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contrat Responsable
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isContratCMU" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Contrat CMU
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="situationParticuliere" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Situation particuliere
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

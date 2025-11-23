@@ -1,0 +1,205 @@
+{
+  "idDeclarant": "0008400004",
+  "societeEmettrice": "CODMUT",
+  "numero": "AIBYD2222222222",
+  "numeroExterne": "AIBYD2222222222",
+  "numeroAdherent": "IBYD2222",
+  "numeroAdherentComplet": "AIBYD2222222222",
+  "dateSouscription": "2020-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "critereSecondaireDetaille": " ",
+  "critereSecondaire": " ",
+  "gestionnaire": "CEGEDIM",
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesDroitsComptablesOuverts": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19720101",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1720131589478",
+          "cle": "54"
+        },
+        "numeroPersonne": 20288139,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "111",
+              "codeRegime": "01",
+              "codeCentre": "1018"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "nir": {
+              "code": "1720131589478",
+              "cle": "54"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "MONTAGUS",
+          "nomUsage": "MONTAGUS",
+          "prenom": "hervé",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "M MONTAGUS hervé",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "AVENUE DE L ANCIEN VELODROME",
+          "ligne5": "",
+          "ligne6": "31000 TOULOUSE",
+          "ligne7": "",
+          "codePostal": "31000"
+        },
+        "destinatairesPrestations": [
+          {
+            "nom": {
+              "nomFamille": "MONTAGUS",
+              "nomUsage": "MONTAGUS",
+              "prenom": "hervé",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M MONTAGUS hervé",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "AVENUE DE L ANCIEN VELODROME",
+              "ligne5": "",
+              "ligne6": "31000 TOULOUSE",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "iban": "MC5830001007941234567890185",
+              "bic": "BNPAMCM1"
+            },
+            "modePaiementPrestations": {
+              "code": "V ",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR  "
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "nom": {
+              "nomFamille": "MONTAGUS",
+              "nomUsage": "MONTAGUS",
+              "prenom": "hervé",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M MONTAGUS hervé",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "AVENUE DE L ANCIEN VELODROME",
+              "ligne5": "",
+              "ligne6": "31000 TOULOUSE",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "AIBYD2222222222",
+      "digitRelation": {
+        "isTeletransmission": true
+      },
+      "periodes": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "ASSPRI",
+        "libelle": "Assure principal"
+      },
+      "droits": [
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1TRIM",
+            "periode": {
+              "fin": "2020-03-30"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1SEME",
+            "periode": {
+              "fin": "2020-06-29"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1MOIS",
+            "periode": {
+              "fin": "2020-01-30"
+            }
+          }
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": true
+}

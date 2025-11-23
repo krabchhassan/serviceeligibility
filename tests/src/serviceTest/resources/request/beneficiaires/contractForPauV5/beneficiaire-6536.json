@@ -1,0 +1,150 @@
+{
+  "services": [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key": "0000401166-93378",
+  "societesEmettrices": [
+    {
+      "code": "000ER00667",
+      "periodes": [
+        {
+          "debut": "2022-01-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats": [
+    {
+      "numeroContrat": "1105866",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "93378",
+            "idBeyondDestinatairePaiements": "93378-0000401166",
+            "nom": {
+              "nomFamille": "UARY",
+              "nomUsage": "UARY",
+              "prenom": "SERGE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur UARY SERGE",
+              "ligne2": "Résidence",
+              "ligne4": "Rue de la paix",
+              "ligne6": "31008 PARIES",
+              "codePostal": "31008"
+            },
+            "rib": {
+              "bic": "CMCIFR2AXXX",
+              "iban": "FR7630004000031234567890143"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "93378",
+            "idBeyondDestinataireRelevePrestations": "93378-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "jean.ayru@gmail.com"
+            },
+            "nom": {
+              "nomFamille": "UARY",
+              "nomUsage": "UARY",
+              "prenom": "SERGE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur UARY SERGE",
+              "ligne2": "Résidence",
+              "ligne4": "Rue de la paix",
+              "ligne6": "31008 PARIES",
+              "codePostal": "31008"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "UARY",
+          "nomUsage": "UARY",
+          "prenom": "SERGE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur UARY SERGE",
+          "ligne2": "Résidence",
+          "ligne3": "",
+          "ligne4": "Rue de la paix",
+          "ligne5": "",
+          "ligne6": "31008 PARIES",
+          "ligne7": "",
+          "codePostal": "31008"
+        },
+        "contact": {
+          "fixe": "06 63 82 81 47",
+          "email": "jean.ayru@gmail.com"
+        }
+      },
+      "numeroAdherent": "1105866",
+      "societeEmettrice": "000ER00667",
+      "periodes": [
+        {
+          "debut": "2022-01-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO": "service-account-ai-boup00",
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "1105866",
+  "identite": {
+    "nir": {
+      "code": "1806201254854",
+      "cle": "64"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1806201254854",
+          "cle": "64"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2022-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19751211",
+    "rangNaissance": "1",
+    "numeroPersonne": "93378",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19751211",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2024-10-17T21:28:40.909Z"
+  },
+  "traceId": "6711818812f4674aa5a9e823",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5"
+}

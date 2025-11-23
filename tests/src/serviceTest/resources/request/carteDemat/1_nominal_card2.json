@@ -1,0 +1,1201 @@
+{
+  "_id": "59d7a3954d1d4ef63630496d",
+  "idDeclarant": "0000000002",
+  "contrat": {
+    "numero": "900044519",
+    "dateSouscription": "2013/01/01",
+    "nomPorteur": "BOUHOU",
+    "prenomPorteur": "Lydia",
+    "civilitePorteur": "MME",
+    "numeroAdherent": "00044519",
+    "qualification": "B",
+    "numeroContratCollectif": "",
+    "rangAdministratif": "01",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "destinataire": "AD",
+    "individuelOuCollectif": "2",
+    "lienFamilial": "A",
+    "typeConvention": "MU",
+    "critereSecondaireDetaille": "",
+    "critereSecondaire": "",
+    "numeroExterneContratIndividuel": "",
+    "numeroExterneContratCollectif": "",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "CCMO",
+    "groupeAssures": "FAFSE",
+    "numeroCarte": "000000000000063",
+    "editeurCarte": "",
+    "numAMCEchange": "1111111111"
+  },
+  "adresse": null,
+  "domainesConventions": [
+    {
+      "code": "PHAR",
+      "rang": 1,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "PHOR",
+      "rang": 2,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "LABO",
+      "rang": 3,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "RADL",
+      "rang": 4,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "HOSC",
+      "rang": 5,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "OPAU",
+      "rang": 6,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "EXTE",
+      "rang": 7,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "AUXM",
+      "rang": 8,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "DEPR",
+      "rang": 9,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "DEOR",
+      "rang": 10,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    },
+    {
+      "code": "COSL",
+      "rang": 11,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    }
+  ],
+  "beneficiaires": [
+    {
+      "beneficiaire": {
+        "dateNaissance": "19810620",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "2810684007167",
+        "cleNirBeneficiaire": "75",
+        "nirOd1": "2810684007167",
+        "cleNirOd1": "75",
+        "numeroPersonne": "00480871",
+        "refExternePersonne": "00480871",
+        "affiliation": {
+          "nom": "BOUHOU",
+          "nomPatronymique": "BOUHOU",
+          "nomMarital": "BOUHOU",
+          "prenom": "Lydia",
+          "periodeDebut": "2013/01/01",
+          "qualite": "A",
+          "regimeOD1": "02",
+          "caisseOD1": "845",
+          "regimeOD2": "00",
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ASSURE"
+        },
+        "adresses": [
+          {
+            "ligne1": "LIGNE 1",
+            "ligne2": "LIGNE 2",
+            "ligne3": "LIGNE 3",
+            "ligne4": "LIGNE 4",
+            "ligne5": "LIGNE 5",
+            "ligne6": "LIGNE 6",
+            "ligne7": "LIGNE 7",
+            "codePostal": "31280",
+            "telephone": "0561234567",
+            "typeAdresse": {
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "PHAR",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "PHAR100",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "100",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "B",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "CPH",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HD2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HD4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HD7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HG2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HG4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HG7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "MHU",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "MPI",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PG4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PG7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PHA",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PM2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PM4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PMH",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PMR",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PPI",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "SNG",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "TNS",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "UPH",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PHN",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "050",
+                "parametres": [
+                  {
+                    "numero": "6",
+                    "valeur": "000.00"
+                  }
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 1,
+          "categorie": "PHAR"
+        },
+        {
+          "code": "PHOR",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "PHOR100",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "100",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "B",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "CPH",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HD2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HD4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HD7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HG2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HG4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "HG7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "MHU",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "MPI",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PG4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PG7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PH7",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PHA",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PM2",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PM4",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PMH",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PMR",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PPI",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "SNG",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "TNS",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "UPH",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            },
+            {
+              "code": "PHN",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "050",
+                "parametres": [
+                  {
+                    "numero": "6",
+                    "valeur": "000.00"
+                  }
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 2,
+          "categorie": "PHAR"
+        },
+        {
+          "code": "LABO",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "LABO100",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "100",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "050",
+                "parametres": [
+                  {
+                    "numero": "6",
+                    "valeur": "100.00"
+                  }
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 3,
+          "categorie": "LABO"
+        },
+        {
+          "code": "RADL",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "RADL400",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "400",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "050",
+                "parametres": [
+                  {
+                    "numero": "6",
+                    "valeur": "400.00"
+                  }
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 4,
+          "categorie": "RADL"
+        },
+        {
+          "code": "HOSC",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "HOSCOUI",
+          "libelleCodeRenvoi": "Demande de PEC",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "099",
+                "parametres": []
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 5,
+          "categorie": "HOSP"
+        },
+        {
+          "code": "OPAU",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "OPAUOUI",
+          "libelleCodeRenvoi": "DEMANDE PEC OPTIQUE/AUDIO",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "099",
+                "parametres": []
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 6,
+          "categorie": "OPAU"
+        },
+        {
+          "code": "EXTE",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "EXTE100",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "100",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "N",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "052",
+                "parametres": []
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 7,
+          "categorie": "EXTE"
+        },
+        {
+          "code": "AUXM",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "AUXM400",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "400",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "050",
+                "parametres": [
+                  {
+                    "numero": "6",
+                    "valeur": "400.00"
+                  }
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 8,
+          "categorie": "AUXM"
+        },
+        {
+          "code": "DEPR",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "DEPROUI",
+          "libelleCodeRenvoi": "Demande de PEC",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "099",
+                "parametres": []
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 9,
+          "categorie": "DENT"
+        },
+        {
+          "code": "DEOR",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "DEOROUI",
+          "libelleCodeRenvoi": "Demande de PEC",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "099",
+                "parametres": []
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 10,
+          "categorie": "DENT"
+        },
+        {
+          "code": "COSL",
+          "codeExterneProduit": "",
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "FAFSEA",
+          "codeGarantie": "0.FAFSEA01",
+          "libelleGarantie": "FAFSEA",
+          "codeProfil": "COSLOUI",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "100",
+          "isEditable": true,
+          "isSuspension": false,
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "050",
+                "parametres": [
+                  {
+                    "numero": "6",
+                    "valeur": "100.00"
+                  }
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2018/01/01",
+            "periodeFin": "2018/12/31",
+            "motifEvenement": "IN",
+            "libelleEvenement": "Initialisation des droits",
+            "modeObtention": "O"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "MU"
+              }
+            }
+          ],
+          "noOrdreDroit": 11,
+          "categorie": "MED"
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "A",
+        "rangAdministratif": "01",
+        "modePaiementPrestations": "V"
+      }
+    }
+  ],
+  "periodeDebut": "2018/01/01",
+  "periodeFin": "2018/12/31",
+  "AMC_contrat": "0000000002-900044519",
+  "idDeclarations": [
+    "59d771e1f36dc52d4cbafe28"
+  ],
+  "dateConsolidation": "2017-10-06T15:39:00.286Z",
+  "dateCreation": "2017-10-06T15:39:00.286Z",
+  "userCreation": "job620",
+  "dateModification": "2017-10-06T15:39:00.286Z",
+  "userModification": "job620",
+  "isLastCarteDemat": true
+}
+

@@ -1,0 +1,35 @@
+JOB_SPAN_NAME: almerys-608-job
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-almerys-608-job
+  messaging:
+    transactional: false
+    cloudEvent:
+      enabled: false
+    security-context:
+      enabled: false
+  management-scope:
+    enabled: false
+  caching:
+    specs:
+      transcodage608:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          convert:
+            CustomConversions: ERROR
+          mongodb:
+            core:
+              convert:
+                QueryMapper: ERROR
+spring:
+  application:
+    name: almerys-608-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}

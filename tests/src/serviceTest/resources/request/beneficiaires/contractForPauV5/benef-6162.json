@@ -1,0 +1,601 @@
+{
+  "services": [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key": "0000401166-449623",
+  "societesEmettrices": [
+    {
+      "code": "000ER00060",
+      "periodes": [
+        {
+          "debut": "2023-03-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats": [
+    {
+      "numeroContrat": "0746614S1",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "451168",
+            "idBeyondDestinatairePaiements": "451168-0000401166",
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "SOFIANE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BENNOUI SOFIANE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "rib": {
+              "bic": "CEPAFRPP426",
+              "iban": "FR7614265006000401690913361"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-06-01",
+              "fin": "2024-06-01"
+            }
+          },
+          {
+            "idDestinatairePaiements": "451168",
+            "idBeyondDestinatairePaiements": "451168-0000401166",
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "SOFIANE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BENNOUI SOFIANE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2019-07-01",
+              "fin": "2024-05-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "451168",
+            "idBeyondDestinataireRelevePrestations": "451168-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "maya-aimen@live.fr"
+            },
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "SOFIANE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BENNOUI SOFIANE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "periode": {
+              "debut": "2024-06-01",
+              "fin": "2024-06-01"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "451168",
+            "idBeyondDestinataireRelevePrestations": "451168-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "maya-aimen@live.fr"
+            },
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "SOFIANE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BENNOUI SOFIANE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "periode": {
+              "debut": "2019-07-01",
+              "fin": "2024-05-31"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "BENNOUI",
+          "nomUsage": "BENNOUI",
+          "prenom": "MERIEM",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame BENNOUI MERIEM",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "14 SQUARE LOUIS HUGUET",
+          "ligne5": "",
+          "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+          "ligne7": "",
+          "codePostal": "42500"
+        },
+        "contact": {
+          "fixe": "06 45 51 10 31",
+          "email": "maya-aimen@live.fr"
+        }
+      },
+      "numeroAdherent": "0746614S1",
+      "societeEmettrice": "000ER00060",
+      "periodes": [
+        {
+          "debut": "2023-03-01",
+          "fin": "2024-05-31"
+        }
+      ]
+    },
+    {
+      "numeroContrat": "0255256S1",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "449617",
+            "idBeyondDestinatairePaiements": "449617-0000401166",
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "YASMINA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BENNOUI YASMINA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "rib": {
+              "bic": "CEPAFRPP426",
+              "iban": "FR7614265006000401690913361"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-06-01",
+              "fin": "2024-06-01"
+            }
+          },
+          {
+            "idDestinatairePaiements": "449617",
+            "idBeyondDestinatairePaiements": "449617-0000401166",
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "YASMINA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BENNOUI YASMINA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2017-10-06",
+              "fin": "2024-05-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "449617",
+            "idBeyondDestinataireRelevePrestations": "449617-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "maya-aimen@live.fr"
+            },
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "YASMINA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BENNOUI YASMINA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "periode": {
+              "debut": "2024-06-01",
+              "fin": "2024-06-01"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "449617",
+            "idBeyondDestinataireRelevePrestations": "449617-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "maya-aimen@live.fr"
+            },
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "YASMINA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BENNOUI YASMINA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "periode": {
+              "debut": "2017-10-06",
+              "fin": "2024-05-31"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "BENNOUI",
+          "nomUsage": "BENNOUI",
+          "prenom": "MERIEM",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame BENNOUI MERIEM",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "14 SQUARE LOUIS HUGUET",
+          "ligne5": "",
+          "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+          "ligne7": "",
+          "codePostal": "42500"
+        },
+        "contact": {
+          "fixe": "06 45 51 10 31",
+          "email": "maya-aimen@live.fr"
+        }
+      },
+      "numeroAdherent": "0255256S1",
+      "societeEmettrice": "000ER00060",
+      "periodes": [
+        {
+          "debut": "2023-04-01",
+          "fin": "2024-05-31"
+        }
+      ]
+    },
+    {
+      "numeroContrat": "0255256",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "449617",
+            "idBeyondDestinatairePaiements": "449617-0000401166",
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "YASMINA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BENNOUI YASMINA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "rib": {
+              "bic": "CEPAFRPP426",
+              "iban": "FR7614265006000401690913361"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-06-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "449617",
+            "idBeyondDestinataireRelevePrestations": "449617-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "maya-aimen@live.fr"
+            },
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "YASMINA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BENNOUI YASMINA",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "periode": {
+              "debut": "2024-06-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "BENNOUI",
+          "nomUsage": "BENNOUI",
+          "prenom": "MERIEM",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame BENNOUI MERIEM",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "14 SQUARE LOUIS HUGUET",
+          "ligne5": "",
+          "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+          "ligne7": "",
+          "codePostal": "42500"
+        },
+        "contact": {
+          "fixe": "06 45 51 10 31",
+          "email": "maya-aimen@live.fr"
+        }
+      },
+      "numeroAdherent": "0255256",
+      "societeEmettrice": "000ER00060",
+      "periodes": [
+        {
+          "debut": "2024-06-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    },
+    {
+      "numeroContrat": "0746614",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "451168",
+            "idBeyondDestinatairePaiements": "451168-0000401166",
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "SOFIANE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BENNOUI SOFIANE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "rib": {
+              "bic": "CEPAFRPP426",
+              "iban": "FR7614265006000401690913361"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-06-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "451168",
+            "idBeyondDestinataireRelevePrestations": "451168-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "maya-aimen@live.fr"
+            },
+            "nom": {
+              "nomFamille": "BENNOUI",
+              "nomUsage": "BENNOUI",
+              "prenom": "SOFIANE",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur BENNOUI SOFIANE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "14 SQUARE LOUIS HUGUET",
+              "ligne5": "",
+              "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+              "ligne7": "",
+              "codePostal": "42500"
+            },
+            "periode": {
+              "debut": "2024-06-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "BENNOUI",
+          "nomUsage": "BENNOUI",
+          "prenom": "MERIEM",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame BENNOUI MERIEM",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "14 SQUARE LOUIS HUGUET",
+          "ligne5": "",
+          "ligne6": "42500 LE CHAMBON FEUGEROLLES",
+          "ligne7": "",
+          "codePostal": "42500"
+        },
+        "contact": {
+          "fixe": "06 45 51 10 31",
+          "email": "maya-aimen@live.fr"
+        }
+      },
+      "numeroAdherent": "0746614",
+      "societeEmettrice": "000ER00060",
+      "periodes": [
+        {
+          "debut": "2024-06-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "0746614",
+  "identite": {
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "2830399352487",
+          "cle": "09"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "422",
+          "codeCentre": ""
+        },
+        "periode": {
+          "debut": "2024-06-01"
+        }
+      },
+      {
+        "nir": {
+          "code": "1720899353180",
+          "cle": "82"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "422",
+          "codeCentre": ""
+        },
+        "periode": {
+          "debut": "2024-06-01"
+        }
+      },
+      {
+        "nir": {
+          "code": "2830399352487",
+          "cle": "09"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "422",
+          "codeCentre": ""
+        },
+        "periode": {
+          "debut": "2023-04-01",
+          "fin": "2024-05-31"
+        }
+      },
+      {
+        "nir": {
+          "code": "1720899353180",
+          "cle": "82"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "422",
+          "codeCentre": ""
+        },
+        "periode": {
+          "debut": "2023-03-01",
+          "fin": "2024-05-31"
+        }
+      }
+    ],
+    "dateNaissance": "20221201",
+    "rangNaissance": "1",
+    "numeroPersonne": "449623",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "20221201",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2024-06-22T21:32:09.957Z"
+  },
+  "traceId": "667cc15f9fa14740e4504369"
+}

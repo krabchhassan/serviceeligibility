@@ -1,0 +1,73 @@
+{	"$project": {
+	    "idDeclarant": 1,
+	    "societeEmettrice": 1,
+		"numero": 1,
+		"numeroExterne": 1,
+		"numeroAdherent": 1,
+		"numeroAdherentComplet": 1,
+		"dateSouscription": 1,
+		"dateResiliation": 1,
+		"apporteurAffaire": 1,
+		"periodesContratResponsableOuvert": 1,
+		"periodesContratCMUOuvert": 1,
+		"critereSecondaireDetaille": 1,
+		"critereSecondaire": 1,
+		"isContratIndividuel": 1,
+		"gestionnaire": 1,
+		"contratCollectif": 1,
+		"qualification": 1,
+		"ordrePriorisation": 1,
+		"periodesDroitsComptablesOuverts": 1,
+		"periodesSuspension":1,
+	    "assures": {
+	      "$filter": {
+	        "input": {
+	          "$map": {
+	            "input": "$assures",
+	            "as": "assure",
+	            "in": {
+	              "identite": "$$assure.identite",
+	              "data": "$$assure.data",
+	              "dateAdhesionMutuelle" : "$$assure.dateAdhesionMutuelle",
+	              "dateDebutAdhesionIndividuelle" : "$$assure.dateDebutAdhesionIndividuelle",
+	              "dateRadiation": "$$assure.dateRadiation",
+	              "qualite": "$$assure.qualite",
+	              "periodesMedecinTraitantOuvert": "$$assure.periodesMedecinTraitantOuvert",
+	              "regimesParticuliers" : "$$assure.regimesParticuliers",
+	              "situationsParticulieres" : "$$assure.situationsParticulieres",
+	              "digitRelation" : "$$assure.digitRelation",
+	              "rangAdministratif": "$$assure.rangAdministratif",
+	              "dateRadiation": "$$assure.dateRadiation",
+	              "isSouscripteur": "$$assure.isSouscripteur",
+	              "periodes": "$$assure.periodes",
+	              "droits": {
+	                "$filter": {
+	                  "input": "$$assure.droits",
+	                  "as": "droit",
+	                  "cond": {
+	                      "$and": [
+	                        {"$lte": [ "$$droit.periode.debut", "##DATE_FIN_DROIT##" ]},
+	                        {"$or": [
+	                            { "$gte": [ "$$droit.periode.fin", "##DATE_RECHERCHE_DROIT##" ]},
+	                            { "$eq": [ "$$droit.periode.fin", null]},
+	                            { "$lte" : ["$$droit.periode.fin", null]}
+	                        ]}
+	                      ]
+	                  }
+	                }
+	              }
+	            }
+	          }
+	        },
+	        "as": "assures",
+	        "cond": { "$and": [{"$ne": [ "$$assures.droits", [] ]},
+	                {"$or": [
+	                    {"$eq": [ "$$assures.dateRadiation", null]},
+	                    {"$gte": [ "$$assures.dateRadiation", "##DATE_RECHERCHE_DROIT##" ]},
+	                    { "$lte" : ["$$assures.dateRadiation", null]}
+	                  ]}
+	                ]}
+	      }
+	    }
+	}
+}

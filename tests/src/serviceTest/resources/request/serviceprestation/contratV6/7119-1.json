@@ -1,0 +1,402 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "0690823",
+  "numeroExterne": "0690823",
+  "numeroAdherent": "0690823",
+  "numeroAdherentComplet": "0690823",
+  "dateSouscription": "2023-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2023-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "gestionnaire": "ER00019",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "2025-01-01",
+      "fin": "2025-12-31"
+    },
+    "isCartePapierAEditer": true,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "contratCollectif": {
+    "numero": "78292123318286",
+    "numeroExterne": "2714022000000Q95SOCLE",
+    "identifiantCollectivite": "782921233",
+    "raisonSociale": "INSTITUT PAOLI CALMETTES",
+    "siret": "78292123300014",
+    "groupePopulation": "00"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesSuspension": [],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19950208",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "2950269081223",
+          "cle": "73"
+        },
+        "refExternePersonne": "690823",
+        "numeroPersonne": 817916,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "131",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "nir": {
+              "code": "2950269081223",
+              "cle": "73"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "131",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2019-01-23",
+              "fin": "2022-12-31"
+            },
+            "nir": {
+              "code": "2950269081223",
+              "cle": "73"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BLUE_TEST",
+          "nomUsage": "BLUE_TEST",
+          "prenom": "0001",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame BLUE_TEST 0001",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "45 RUE DU TEST",
+          "ligne5": "",
+          "ligne6": "13009 MARSEILLE",
+          "ligne7": "",
+          "codePostal": "13009"
+        },
+        "contact": {
+          "fixe": "0628232173",
+          "email": "0001.BLUE_TEST@gmail.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "817916",
+            "nom": {
+              "nomFamille": "BLUE_TEST",
+              "nomUsage": "BLUE_TEST",
+              "prenom": "0001",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BLUE_TEST 0001",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "45 RUE DU TEST",
+              "ligne5": "",
+              "ligne6": "13009 MARSEILLE",
+              "ligne7": "",
+              "codePostal": "13009"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "817916",
+            "dematerialisation": {
+              "email": "0001.BLUE_TEST@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "BLUE_TEST",
+              "nomUsage": "BLUE_TEST",
+              "prenom": "0001",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BLUE_TEST 0001",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "45 RUE DU TEST",
+              "ligne5": "",
+              "ligne6": "13009 MARSEILLE",
+              "ligne7": "",
+              "codePostal": "13009"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2023-01-01",
+      "dateDebutAdhesionIndividuelle": "2023-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ],
+        "dematerialisation": {
+          "email": "0001.BLUE_TEST@gmail.com",
+          "isDematerialise": true
+        }
+      },
+      "periodes": [
+        {
+          "debut": "2023-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "Garantie frais de santé",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2023-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": true
+    },
+    {
+      "identite": {
+        "dateNaissance": "19950126",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1950113155685",
+          "cle": "04"
+        },
+        "refExternePersonne": "1136289",
+        "numeroPersonne": 144020,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "200",
+              "codeRegime": "06",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "nir": {
+              "code": "1950113155685",
+              "cle": "04"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "200",
+              "codeRegime": "06",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2022-07-01"
+            },
+            "nir": {
+              "code": "1950113155685",
+              "cle": "04"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "200",
+              "codeRegime": "06",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2022-01-13",
+              "fin": "2022-06-30"
+            },
+            "nir": {
+              "code": "1950113155685",
+              "cle": "04"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "200",
+              "codeRegime": "06",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2022-12-31"
+            },
+            "nir": {
+              "code": "1950113155685",
+              "cle": "04"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BLUE_TEST",
+          "nomUsage": "BLUE_TEST",
+          "prenom": "CONJ",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur BLUE_TEST CONJ",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "45 RUE DU TEST",
+          "ligne5": "",
+          "ligne6": "13009 MARSEILLE 09",
+          "ligne7": "",
+          "codePostal": "13009"
+        },
+        "contact": {
+          "fixe": "07 66 21 31 27",
+          "email": "CONJ.BLUE_TEST@supmaritime.fr"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "817916",
+            "nom": {
+              "nomFamille": "BLUE_TEST",
+              "nomUsage": "BLUE_TEST",
+              "prenom": "0001",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BLUE_TEST 0001",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "45 RUE DU TEST",
+              "ligne5": "",
+              "ligne6": "13009 MARSEILLE",
+              "ligne7": "",
+              "codePostal": "13009"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "817916",
+            "dematerialisation": {
+              "email": "0001.BLUE_TEST@gmail.com",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "BLUE_TEST",
+              "nomUsage": "BLUE_TEST",
+              "prenom": "0001",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame BLUE_TEST 0001",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "45 RUE DU TEST",
+              "ligne5": "",
+              "ligne6": "13009 MARSEILLE",
+              "ligne7": "",
+              "codePostal": "13009"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 11,
+      "dateAdhesionMutuelle": "2023-01-01",
+      "dateDebutAdhesionIndividuelle": "2023-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ],
+        "dematerialisation": {
+          "email": "0001.BLUE_TEST@gmail.com",
+          "isDematerialise": true
+        }
+      },
+      "periodes": [
+        {
+          "debut": "2023-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "libelle": "Garantie frais de santé",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2023-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "isContratIndividuel": false
+}

@@ -1,0 +1,40 @@
+{
+  "carences": [
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "DENTAIRE",
+      "startEffectDate": "2000-01-01",
+      "endEffectDate": null
+    },
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "HOSPITALISATION",
+      "startEffectDate": "2000-01-01",
+      "endEffectDate": null
+    },
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "OPTIQUE",
+      "startEffectDate": "2000-01-01",
+      "endEffectDate": null
+    },
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "natureCode": "APPAREILLAGEDENTAIRE",
+      "startEffectDate": "2000-01-01",
+      "endEffectDate": null
+    }
+  ]
+}

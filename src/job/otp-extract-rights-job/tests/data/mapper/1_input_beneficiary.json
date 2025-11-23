@@ -1,0 +1,22 @@
+[
+  {
+    "ligne": 1,
+    "nir": "1",
+    "date_naissance": "1",
+    "date_soins": "1",
+    "amc": "1"
+  },
+  {
+    "ligne": 2,
+    "nir": "1",
+    "date_naissance": "1",
+    "date_soins": "2",
+    "amc": "1"
+  },
+  {
+    "ligne": 3,
+    "nir": "2",
+    "date_naissance": "2",
+    "date_soins": "2"
+  }
+]

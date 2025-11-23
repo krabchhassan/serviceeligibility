@@ -1,0 +1,18 @@
+{
+  "offers": [
+  {
+    "validityDate": "2022-07-01",
+    "code": 3,
+    "natures": [
+      "DENTAIRE",
+      "HOSPITALISATION",
+      "PHARMACIE",
+      "OPTIQUE",
+      "APPAREILLAGEDENTAIRE"
+    ],
+    "products": [
+      "PDT_BASE1"
+    ]
+  }
+]
+}

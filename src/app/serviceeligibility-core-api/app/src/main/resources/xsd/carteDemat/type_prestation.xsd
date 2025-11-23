@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+	
+	<xs:include schemaLocation="type_parametre_formule.xsd" />
+
+	<xs:complexType name="type_prestation">
+		<xs:annotation>
+			<xs:documentation>Resultat de la consolidation des gararnties et des taux de couverture
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="codePrestations">
+				<xs:annotation>
+					<xs:documentation>Code prestations
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="codeFormule">
+				<xs:annotation>
+					<xs:documentation>Formule de remboursement de la prestation
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="parametresFormule" type="parametresFormule" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="parametresFormule">
+	<xs:sequence>
+		<xs:element name="parametreFormule" type="type_parametre_formule"
+			minOccurs="0" maxOccurs="10" />
+	</xs:sequence>
+	</xs:complexType>
+</xs:schema>

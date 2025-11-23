@@ -1,0 +1,53 @@
+[
+  {
+    "validityDate": "2023-04-01",
+    "endValidityDate": "2023-04-01",
+    "code": 1,
+    "offerCode": "FSC71232",
+    "natures": [
+      "ACTES_DE_PREVENTION",
+      "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+      "APPAREILLAGE",
+      "AUXILIAIRES_MEDICAUX",
+      "BIOLOGIE",
+      "FORFAITS",
+      "FRAIS_DENTAIRES",
+      "HOSPITALISATION__OPTAM___NON_OPTAM_",
+      "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+      "OPTIQUE",
+      "PHARMACIE",
+      "RADIOLOGIE__OPTAM___NON_OPTAM_"
+    ],
+    "products": [
+      "FSBC71232A",
+      "FSOC71233A",
+      "FSOC71234A",
+      "FSSC71235A"
+    ]
+  },
+  {
+    "validityDate": "2023-04-02",
+    "code": 2,
+    "offerCode": "FSC71232",
+    "natures": [
+      "ACTES_DE_PREVENTION",
+      "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+      "APPAREILLAGE",
+      "AUXILIAIRES_MEDICAUX",
+      "BIOLOGIE",
+      "FORFAITS",
+      "FRAIS_DENTAIRES",
+      "HOSPITALISATION__OPTAM___NON_OPTAM_",
+      "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+      "OPTIQUE",
+      "PHARMACIE",
+      "RADIOLOGIE__OPTAM___NON_OPTAM_"
+    ],
+    "products": [
+      "FSBC71232A",
+      "FSOC71233A",
+      "FSOC71234A",
+      "FSSC71235A"
+    ]
+  }
+]

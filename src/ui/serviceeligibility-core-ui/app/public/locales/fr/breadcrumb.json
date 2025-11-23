@@ -1,0 +1,22 @@
+{
+  "breadcrumb": {
+    "fileTracking": "Suivi des flux TDB/TFD",
+    "create": "Créer",
+    "edit": "Modifier",
+    "copy": "Dupliquer",
+    "details": "Consultation d'une AMC",
+    "beneficiaryRightTracking": "Suivi des droits d'un bénéficiaire",
+    "beneficiaryRightDetails": "Détail des droits d'un bénéficiaire",
+    "transcodage": "Transcodage",
+    "parameters": "Paramétrages",
+    "businessParameters": "Paramétrage métier",
+    "parametrageDroitsTP": "Rechercher le paramétrage des droits TP",
+    "parametrageContrat": "Génération des droits TP pour un contrat",
+    "parametrageTPContrat": "Paramétrer la génération des droits TP",
+    "almerysProduct": "Paramétrer le référentiel produit Almerys",
+    "volumetry": "Volumétrie",
+    "beneficiariesTracking": "Rechercher un bénéficiaire",
+    "tracking": "Suivi des flux",
+    "triggerTracking": "Suivi des déclencheurs de génération des droits TP"
+  }
+}

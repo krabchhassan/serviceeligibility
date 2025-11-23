@@ -1,0 +1,1073 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "C00010",
+  "numeroAdherent": "C00010",
+  "numeroAdherentComplet": "C00010-COMPLET",
+  "dateSouscription": "2021/01/01",
+  "type": "B",
+  "nomPorteur": "LEDUC",
+  "prenomPorteur": "ANNA",
+  "civilitePorteur": "Mme",
+  "qualification": "B",
+  "numeroContratCollectif": "03094493",
+  "isContratResponsable": false,
+  "isContratCMU": false,
+  "individuelOuCollectif": "1",
+  "typeConvention": "IS",
+  "critereSecondaire": "Employés",
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel": "C00010",
+  "numeroExterneContratCollectif": "DKMMMS09049304930",
+  "gestionnaire": "IGestion",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "dateNaissance": "20041026",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1041062498044",
+      "cleNirBeneficiaire": "37",
+      "nirOd1": "1041062498044",
+      "cleNirOd1": "37",
+      "numeroPersonne": "P00011",
+      "refExternePersonne": "EXT-P00011",
+      "rangAdministratif": "2",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2021/01/01",
+      "dateDebutAdhesionIndividuelle": "2021/01/01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "PEHAHUT",
+        "nomPatronymique": "VAITROUAT",
+        "nomMarital": "VAITROUAT",
+        "prenom": "AYMERIC",
+        "civilite": "Mr",
+        "periodeDebut": "2021/01/01",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "624",
+        "centreOD1": "0156",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Enfant"
+      },
+      "adresses": [
+        {
+          "ligne1": "MR PEHAHUT VAITROUAT CHRISTIAN",
+          "ligne4": "125 RUE DU CHATEAU",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "santé",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "santé",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "santé",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IT/IS",
+                                "libelle": "IT/IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "santé",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MEDG",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "santé",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDG-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "MEDECINE",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isCarteTPaEditer": true,
+      "dateNaissance": "19510413",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2510497209105",
+      "cleNirBeneficiaire": "14",
+      "nirOd1": "2510497209105",
+      "cleNirOd1": "14",
+      "numeroPersonne": "P00012",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2016/01/01",
+      "dateDebutAdhesionIndividuelle": "2016/01/01",
+      "numeroAdhesionIndividuelle": "10004300029647",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "LEDUC",
+        "nomPatronymique": "LEDUC",
+        "nomMarital": "LEDUC",
+        "prenom": "ANNA",
+        "civilite": "Mme",
+        "periodeDebut": "2016/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "601",
+        "centreOD1": "01",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "ANNA LEDUC",
+          "ligne4": "4 DOMAINE DE BELLEVUE",
+          "ligne6": "97200 FORT-DE-France",
+          "codePostal": "97200",
+          "telephone": "0735427677",
+          "email": "jlgohier@gagamil.coum",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2016/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2016/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2023/01/01",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2016/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IT/IS",
+                                "libelle": "IT/IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2016/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MEDG",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2016/01/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDG-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "MEDECINE",
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_class": "com.cegedim.next.serviceeligibility.core.model.domain.contract.Contract"
+}

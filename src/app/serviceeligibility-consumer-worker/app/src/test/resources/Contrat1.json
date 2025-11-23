@@ -1,0 +1,118 @@
+{
+  "assures": [
+    {
+      "data": {
+        "nom": {
+          "nomFamille": "",
+          "nomUsage": "",
+          "prenom": "",
+          "civilite": "M"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-02-01"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [
+            {
+              "code": "1M",
+              "periode": {
+                "debut": "2022-02-01",
+                "fin": "2022-03-01"
+              }
+            }
+          ],
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2022-02-01",
+            "fin": "2023-12-31"
+          },
+          "dateAncienneteGarantie": "2022-02-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1610561111111",
+          "cle": "14"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1610561111111",
+              "cle": "14"
+            },
+            "rattachementRO": {
+              "codeRegime": "99",
+              "codeCaisse": "751",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2024-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19610531",
+        "rangNaissance": "1",
+        "numeroPersonne": "333405"
+      },
+      "dateAdhesionMutuelle": "2022-02-01",
+      "dateDebutAdhesionIndividuelle": "2022-02-01",
+      "numeroAdhesionIndividuelle": "31500000",
+      "dateRadiation": "2023-12-31",
+      "dateCreation": "2024-06-06T16:53:13.577Z",
+      "periodes": [
+        {
+          "debut": "2022-02-01",
+          "fin": "2023-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    }
+  ],
+  "version": "6",
+  "periodesSuspension": [
+    {
+      "periode": {
+        "debut": "2024-01-01"
+      },
+      "typeSuspension": "Provisoire",
+      "motifSuspension": "NON_PAIEMENT_COTISATIONS"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "nomFichierOrigine": "Request2_2.json",
+  "contratCollectif": {},
+  "idDeclarant": "0098500000",
+  "societeEmettrice": "0378900000",
+  "numero": "31500000",
+  "numeroExterne": "A0012XXXXX",
+  "numeroAdherent": "A0012XXXXX",
+  "numeroAdherentComplet": "31500000",
+  "dateSouscription": "2022-02-01",
+  "dateResiliation": "2024-01-01",
+  "periodesContratResponsableOuvert": [],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "isContratIndividuel": true,
+  "gestionnaire": "CEGEMA",
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratv6.ContratAIV6"
+}

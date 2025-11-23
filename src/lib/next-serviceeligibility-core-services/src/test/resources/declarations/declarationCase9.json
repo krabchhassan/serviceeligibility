@@ -1,0 +1,437 @@
+{
+  "codeEtat" : "V",
+  "effetDebut" : "2023-01-23T12:12:42.528+0000",
+  "idDeclarant" : "0000401166",
+  "isCarteTPaEditer" : true,
+  "carteTPaEditerOuDigitale" : "3",
+  "idTrigger" : "63ce79b92effd67db2517506",
+  "versionDeclaration" : "3.1",
+  "dateCreation" : "2023-01-23T12:12:42.528+0000",
+  "userCreation" : "WORKER",
+  "dateModification" : "2023-01-23T12:12:42.528+0000",
+  "userModification" : "WORKER",
+  "beneficiaire" : {
+    "dateNaissance" : "20041026",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1041062498044",
+    "cleNirBeneficiaire" : "37",
+    "nirOd1" : "1041062498044",
+    "cleNirOd1" : "37",
+    "numeroPersonne" : "MBA0003-002",
+    "refExternePersonne" : "EXT-MBA0003-002",
+    "dateAdhesionMutuelle" : "2021/01/01",
+    "dateDebutAdhesionIndividuelle" : "2021/01/01",
+    "numeroAdhesionIndividuelle" : "120320020",
+    "affiliation" : {
+      "nom" : "PEHAHUT",
+      "nomPatronymique" : "VAITROUAT",
+      "nomMarital" : "VAITROUAT",
+      "prenom" : "AYMERIC",
+      "civilite" : "Mr",
+      "periodeDebut" : "2021/01/01",
+      "qualite" : "E",
+      "regimeOD1" : "01",
+      "caisseOD1" : "624",
+      "centreOD1" : "0156",
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "AM",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "Enfant"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "MR PEHAHUT VAITROUAT CHRISTIAN",
+        "ligne4" : "125 RUE DU CHATEAU",
+        "ligne6" : "59250 HALLUIN",
+        "codePostal" : "59250",
+        "email" : "59250",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "MBA0003",
+    "dateSouscription" : "2021/01/01",
+    "type" : "B",
+    "nomPorteur" : "PEHAHUT",
+    "prenomPorteur" : "AYMERIC",
+    "civilitePorteur" : "Mr",
+    "numeroAdherent" : "MBA0003",
+    "numeroAdherentComplet" : "MBA0003-COMPLET",
+    "qualification" : "B",
+    "numeroContratCollectif" : "03094493",
+    "rangAdministratif" : "2",
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "1",
+    "lienFamilial" : "E",
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "GEO-FRA-OCC",
+    "critereSecondaire" : "Employés",
+    "numeroExterneContratIndividuel" : "MBA0003",
+    "numeroExterneContratCollectif" : "DKMMMS09049304930",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "IGestion",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1"
+  },
+  "domaineDroits" : [
+    {
+      "code" : "OPTI",
+      "codeProduit" : "PDT_BASE9",
+      "codeGarantie" : "GT_BASE9",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "50",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "OPTI-021-50",
+      "noOrdreDroit" : 0,
+      "categorie" : "OPTI",
+      "formulaMask" : "50% TR ",
+      "naturePrestation" : "OPTIQUE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS9",
+      "versionOffre" : "v1",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "021",
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "50"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/04/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/04/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "codeProduit" : "PDT_BASE9",
+      "codeGarantie" : "GT_BASE9",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "HOSP-021-100",
+      "noOrdreDroit" : 1,
+      "categorie" : "HOSP",
+      "formulaMask" : "100% TR ",
+      "naturePrestation" : "HOSPITALISATION",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS9",
+      "versionOffre" : "v1",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "021",
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/01/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/01/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DENT",
+      "codeProduit" : "PDT_BASE9",
+      "codeGarantie" : "GT_BASE9",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "DENT-010",
+      "noOrdreDroit" : 2,
+      "categorie" : "DENT",
+      "formulaMask" : " 100% FR ",
+      "naturePrestation" : "DENTAIRE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS9",
+      "versionOffre" : "v1",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/04/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/04/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DENT",
+      "codeProduit" : "PDT_BASE9",
+      "codeGarantie" : "GT_BASE9",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "DENT-010",
+      "noOrdreDroit" : 2,
+      "categorie" : "DENT",
+      "formulaMask" : " 100% FR ",
+      "naturePrestation" : "DENTAIRE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS9",
+      "versionOffre" : "v1",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/01/01",
+        "periodeFin" : "2023/01/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/01/01",
+        "periodeFin" : "2023/01/31",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DENT",
+      "codeProduit" : "PDT_REMP9",
+      "codeGarantie" : "GT_REMP9",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "DENT-010",
+      "noOrdreDroit" : 2,
+      "categorie" : "DENT",
+      "formulaMask" : " 100% FR ",
+      "naturePrestation" : "DENTAIRE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS9",
+      "versionOffre" : "v1",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/02/01",
+        "periodeFin" : "2023/03/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/02/01",
+        "periodeFin" : "2023/03/31",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS"
+          }
+        }
+      ],
+      "codeCarence" : "CAR001",
+      "codeOrigine" : "GT_BASE9",
+      "codeAssureurOrigine" : "BALOO"
+    },
+    {
+      "code" : "PHAR",
+      "codeProduit" : "PDT_BASE9",
+      "codeGarantie" : "GT_BASE9",
+      "libelleGarantie" : "santé",
+      "tauxRemboursement" : "100",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "PHAR-010",
+      "noOrdreDroit" : 3,
+      "categorie" : "PHAR",
+      "formulaMask" : " 100% FR ",
+      "naturePrestation" : "PHARMACIE",
+      "codeAssureurGarantie" : "BALOO",
+      "codeOffre" : "CAS9",
+      "versionOffre" : "v1",
+      "codeOc" : "BALOO",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "010",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/01/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2023/01/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS"
+          }
+        }
+      ]
+    }
+  ]
+}

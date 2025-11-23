@@ -1,0 +1,58 @@
+{
+  "services": [
+    "ServicePrestation"
+  ],
+  "key": "0000401166-02",
+  "contrats": [
+    {
+      "numeroContrat": "ET1",
+      "codeEtat": "V",
+      "numeroAdherent": "ADH-ET",
+      "data": {
+        "nom": {
+          "nomFamille": "TUTU",
+          "nomUsage": "TUTU",
+          "prenom": "LOLO"
+        },
+        "adresse": {},
+        "contact": {}
+      },
+      "numeroAMCEchange": "0000401166"
+    },
+    {
+      "numeroContrat": "ET2",
+      "codeEtat": "V",
+      "numeroAdherent": "ADH-ET",
+      "data": {
+        "nom": {
+          "nomFamille": "TUTU",
+          "nomUsage": "TUTU",
+          "prenom": "LOLO"
+        },
+        "adresse": {},
+        "contact": {}
+      },
+      "numeroAMCEchange": "0000401166"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+
+  "identite": {
+    "nir": {
+      "code": "1000111111111",
+      "cle": "11"
+    },
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "20000103",
+        "rangNaissance": "1"
+      }
+    ],
+    "affiliationsRO": [],
+    "dateNaissance": "20000103",
+    "rangNaissance": "1",
+    "numeroPersonne": "02"
+  }
+}

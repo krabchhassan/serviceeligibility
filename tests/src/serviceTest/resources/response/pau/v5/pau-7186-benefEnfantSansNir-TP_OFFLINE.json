@@ -1,0 +1,114 @@
+{
+  "contracts": [
+    {
+      "context": "TP_OFFLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "S2274751",
+      "externalNumber": "S2274751",
+      "subscriberId": "S2274751",
+      "subscriberFullId": "S2274751",
+      "subscriptionDate": "2021-01-01",
+      "responsibleContractOpenPeriods": [
+        {
+          "start": "2021-01-01"
+        }
+      ],
+      "secondaryCriterion": "005",
+      "isIndividualContract": true,
+      "operator": "0000401166",
+      "collectiveContract": {},
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "5",
+        "identity": {
+          "nir": {
+            "code": "2870535238001",
+            "key": "47"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "2870535238001",
+                "key": "47"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "951"
+              },
+              "period": {
+                "start": "2021-01-01"
+              }
+            }
+          ],
+          "birthDate": "20070624",
+          "birthRank": "1",
+          "personNumber": "0000401166-2529742"
+        },
+        "data": {
+          "name": {
+            "lastName": "GUINEMET",
+            "commonName": "GUINEMET",
+            "firstName": "LOIC",
+            "civility": "M"
+          },
+          "address": {
+            "line1": "Madame GUINEMET LOISE",
+            "line4": "32 ALLEE DES PIGEONS",
+            "line6": "31000 TOULOUSE",
+            "postcode": "31000"
+          },
+          "contact": {}
+        },
+        "healthMutualSubscriptionDate": "2019-02-01",
+        "individualSubscriptionStartDate": "2021-01-01",
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2021-01-01"
+              },
+              "isRemotelyTransmitted": true
+            }
+          ]
+        },
+        "quality": {
+          "code": "E",
+          "label": "Enfant"
+        },
+        "rights": [
+          {
+            "code": "IRCS1GARSA",
+            "insurerCode": "IRCEMMUT",
+            "prioritizationOrder": "01",
+            "guaranteeAgeDate": "2021-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "GARANTIESANTE",
+                "productCode": "ECONOMIQUE",
+                "benefitsType": [
+                  {
+                    "benefitType": "SOINSCOURANTS",
+                    "period": {
+                      "start": "2023-01-01",
+                      "end": "2023-12-31"
+                    }
+                  }
+                ],
+                "period": {
+                  "start": "2023-01-01",
+                  "end": "2023-12-31"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

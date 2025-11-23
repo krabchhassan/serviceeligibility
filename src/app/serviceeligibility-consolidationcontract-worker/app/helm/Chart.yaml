@@ -1,0 +1,10 @@
+apiVersion: v2
+name: serviceeligibility-consolidationcontract-worker
+description: Helm chart for serviceeligibility-consolidationcontract-worker in serviceeligibility service.
+type: application
+appVersion: "${imageTag}"
+version: 0.0.0
+dependencies:
+  - name: helm-chart-beyond-common
+    repository: "oci://registry-dev.beyond.cegedim.cloud/devops-infra"
+    version: v16.0.7

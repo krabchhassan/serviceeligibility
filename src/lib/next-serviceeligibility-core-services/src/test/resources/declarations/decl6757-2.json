@@ -1,0 +1,145 @@
+{
+  "codeEtat" : "V",
+  "idDeclarant" : "0080996135",
+  "carteTPaEditerOuDigitale" : "0",
+  "idTrigger" : "6650f3a7d9d8f748dc202521",
+  "versionDeclaration" : "3.1",
+  "userCreation" : "WORKER",
+  "userModification" : "WORKER",
+  "beneficiaire" : {
+    "dateNaissance" : "19911002",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "2911060159413",
+    "cleNirBeneficiaire" : "50",
+    "nirOd1" : "2911060159413",
+    "cleNirOd1" : "50",
+    "numeroPersonne" : "2537651",
+    "dateAdhesionMutuelle" : "2023/08/01",
+    "dateDebutAdhesionIndividuelle" : "2023/08/01",
+    "affiliation" : {
+      "nom" : "DERUDDER",
+      "nomPatronymique" : "DERUDDER",
+      "nomMarital" : "DERUDDER",
+      "prenom" : "CAROLE ANNE",
+      "civilite" : "MME",
+      "periodeDebut" : "2023/08/01",
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "601",
+      "hasMedecinTraitant" : false,
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "Assuré principal"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "Madame DERUDDER CAROLE ANNE",
+        "ligne4" : "50 RUE DES JARDINS",
+        "ligne6" : "60350 ST PIERRE LES BITRY",
+        "codePostal" : "60350",
+        "telephone" : "0783734666",
+        "email" : "antonclea2019@gmail.com",
+        "typeAdresse" : {
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "S2348323",
+    "dateSouscription" : "2023/08/01",
+    "type" : "B",
+    "nomPorteur" : "DERUDDER",
+    "prenomPorteur" : "CAROLE ANNE",
+    "civilitePorteur" : "MME",
+    "numeroAdherent" : "S2348323",
+    "numeroAdherentComplet" : "S2348323",
+    "qualification" : "B",
+    "rangAdministratif" : "1",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "individuelOuCollectif" : "1",
+    "lienFamilial" : "A",
+    "typeConvention" : "IS",
+    "critereSecondaire" : "005",
+    "numeroExterneContratIndividuel" : "S2348323",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "0080996135",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1"
+  },
+  "domaineDroits" : [
+    {
+      "code" : "AUDI",
+      "codeProduit" : "RENFORCE",
+      "modeAssemblage" : "INCLUSION",
+      "codeGarantie" : "IRCS2GARSA",
+      "libelleGarantie" : "GARANTIE SANTE NIVEAU 2",
+      "tauxRemboursement" : "PEC",
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2023/08/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "AUDI-099",
+      "noOrdreDroit" : 4,
+      "categorie" : "AUDI",
+      "formulaMask" : "PEC",
+      "naturePrestation" : "AIDESAUDITIVES",
+      "naturePrestationOnline" : "AIDESAUDITIVES",
+      "codeAssureurGarantie" : "IRCEMMUT",
+      "codeOffre" : "GARANTIESANTE",
+      "versionOffre" : "2024_janv_01.6",
+      "codeOc" : "IRCEM",
+      "isEditable" : false,
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "isEditionRisqueCarte" : false,
+          "formule" : {
+            "numero" : "099",
+            "parametres" : [
+
+            ]
+          }
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/01/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration de droits",
+        "modeObtention" : "M"
+      },
+      "periodeOnline" : {
+        "periodeDebut" : "2024/01/01",
+        "motifEvenement" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "KA",
+            "libelle" : "Kalixia"
+          }
+        },
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "iSanté"
+          }
+        }
+      ],
+      "periodeProductElement" : {
+        "debut" : "2016-01-01"
+      }
+    }
+  ],
+  "etatSuspension" : "-1"
+}

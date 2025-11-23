@@ -1,0 +1,46 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "servicePrestIJTrace",
+      "description": "Collection contenant l'ensemble des traces des prestij reçus depuis un backoffice externe"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Trace": {
+        "$ref": "/commons-schema-openapi.json#/components/schemas/Trace"
+      },
+      "ServicePrestIJTrace": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "message": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ServicePrestIJTrace"
+      }
+    }
+  }
+}

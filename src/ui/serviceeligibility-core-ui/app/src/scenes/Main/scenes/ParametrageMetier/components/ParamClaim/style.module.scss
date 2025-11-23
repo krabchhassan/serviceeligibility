@@ -1,0 +1,13 @@
+.claim-line-actions {
+    display: flex;
+
+    .cancel-button {
+        margin-left: 10px;
+    }
+}
+
+:global {
+    .ReactTable .rt-td {
+        white-space: normal;
+    }
+}

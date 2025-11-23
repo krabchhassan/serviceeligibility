@@ -1,0 +1,360 @@
+{
+  "idDeclarant": "0000000002",
+  "numeroContrat": "Contrat1",
+  "numeroAdherent": "99419627",
+  "dateSouscription": "2009/01/01",
+  "dateResiliation": null,
+  "type": "TEST",
+  "nomPorteur": "BENEFCONVENTION",
+  "prenomPorteur": "PRENOMCONV",
+  "civilitePorteur": "Mr",
+  "qualification": "B",
+  "numeroContratCollectif": null,
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "destinataire": "AD",
+  "individuelOuCollectif": "I",
+  "situationDebut": null,
+  "situationFin": null,
+  "motifFinSituation": null,
+  "typeConvention": "IS",
+  "critereSecondaire": "CSR",
+  "critereSecondaireDetaille": "CSR1          X",
+  "numeroExterneContratIndividuel": "800000100000015",
+  "numeroExterneContratCollectif": null,
+  "gestionnaire": null,
+  "groupeAssures": null,
+  "editeurCarte": "",
+  "fondCarte": "",
+  "annexe1Carte": "",
+  "annexe2Carte": "",
+  "numAMCEchange": null,
+  "numOperateur": null,
+  "dateCreation": "2019-08-26T09:18:33.973Z",
+  "dateModification": "2019-08-26T09:18:33.973Z",
+  "dateConsolidation": "2019-08-26T09:18:33.973Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "motifEvenement": "DE",
+      "libelleEvenement": "Declaration",
+      "modeObtention": "O",
+      "dateRadiation": null,
+      "dateCreation": "2019-08-26T09:18:33.973Z",
+      "dateModification": "2019-08-26T09:18:33.973Z",
+      "dateNaissance": "19740202",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1740203098044",
+      "cleNirBeneficiaire": "81",
+      "nirOd1": "1880446121080",
+      "cleNirOd1": "81",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "insc": null,
+      "numeroPersonne": "200000000000123",
+      "refExternePersonne": "10000000",
+      "numeroAdherentComplet": "99419627",
+      "rangAdministratif": "1",
+      "qualite": "A",
+      "categorieSociale": null,
+      "situationParticuliere": null,
+      "modePaiementPrestations": "",
+      "affiliation": {
+        "nom": "BENEFCONVENTION",
+        "nomPatronymique": "BENEFCONVENTION",
+        "nomMarital": "BENEFCONVENTION",
+        "prenom": "PRENOMCONV",
+        "civilite": null,
+        "periodeDebut": "2009/01/01",
+        "periodeFin": null,
+        "qualite": "A",
+        "regimeOD1": "10",
+        "caisseOD1": "000",
+        "centreOD1": "0001",
+        "regimeOD2": null,
+        "caisseOD2": null,
+        "centreOD2": null,
+        "hasMedecinTraitant": true,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "Assure"
+      },
+      "adresses": [
+        {
+          "ligne1": "Mr BENEFCONVENTION PRENOMCONV",
+          "ligne2": null,
+          "ligne3": null,
+          "ligne4": "numero, nom rue benefconv",
+          "ligne5": null,
+          "ligne6": "31 000 Toulouse",
+          "ligne7": null,
+          "codePostal": "31000",
+          "telephone": "0123456789",
+          "email": "sophie.fonfec@gmail.com",
+          "typeAdresse": {
+            "libelle": null,
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "G1",
+              "libelleGarantie": "",
+              "produits": [
+                {
+                  "codeProduit": "TEST",
+                  "libelleProduit": "Consultation IS 1",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-02A-100",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2015/01/01",
+                              "periodeFin": "2050/12/31"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "070",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2015/01/01",
+                                  "fin": "2050/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "03",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2015/01/01",
+                                  "fin": "2050/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2015/01/01",
+                                  "fin": "2050/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF1",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "070.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2015/01/01",
+                                  "fin": "2050/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isCarteTPaEditer": true,
+      "motifEvenement": "DE",
+      "libelleEvenement": "Declaration",
+      "modeObtention": "O",
+      "dateRadiation": null,
+      "dateCreation": "2019-08-26T09:18:33.973Z",
+      "dateModification": "2019-08-26T09:18:33.973Z",
+      "dateNaissance": "19740202",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1740203098044",
+      "cleNirBeneficiaire": "81",
+      "nirOd1": "1880446121080",
+      "cleNirOd1": "81",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "insc": null,
+      "numeroPersonne": "200000000000129",
+      "refExternePersonne": "10000000",
+      "numeroAdherentComplet": "99419627",
+      "rangAdministratif": "1",
+      "qualite": "A",
+      "categorieSociale": null,
+      "situationParticuliere": null,
+      "modePaiementPrestations": "",
+      "affiliation": {
+        "nom": "BENEFCONVENTION",
+        "nomPatronymique": "BENEFCONVENTION",
+        "nomMarital": "BENEFCONVENTION",
+        "prenom": "PRENOMCONV",
+        "civilite": null,
+        "periodeDebut": "2009/01/01",
+        "periodeFin": null,
+        "qualite": "A",
+        "regimeOD1": "10",
+        "caisseOD1": "000",
+        "centreOD1": "0001",
+        "regimeOD2": null,
+        "caisseOD2": null,
+        "centreOD2": null,
+        "hasMedecinTraitant": true,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "Assure"
+      },
+      "adresses": [
+        {
+          "ligne1": "Mr BENEFCONVENTION PRENOMCONV",
+          "ligne2": null,
+          "ligne3": null,
+          "ligne4": "numero, nom rue benefconv",
+          "ligne5": null,
+          "ligne6": "31 000 Toulouse",
+          "ligne7": null,
+          "codePostal": "31000",
+          "telephone": "0123456789",
+          "email": "sophie.fonfec@gmail.com",
+          "typeAdresse": {
+            "libelle": null,
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "codeProfil": "",
+          "garanties": [
+            {
+              "codeGarantie": "G1",
+              "libelleGarantie": "",
+              "produits": [
+                {
+                  "codeProduit": "TEST",
+                  "libelleProduit": "Consultation IS 1",
+                  "codeExterneProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-02A-100",
+                      "naturesPrestation": [
+                        {
+                          "periodesDroit": [
+                            {
+                              "periodeDebut": "2010/01/01",
+                              "periodeFin": "2014/12/31"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "070",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2010/01/01",
+                                  "fin": "2014/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "03",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2010/01/01",
+                                  "fin": "2014/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 1,
+                              "typeConventionnement": {
+                                "code": "SP",
+                                "libelle": "SP"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2010/01/01",
+                                  "fin": "2014/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF1",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "070.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2010/01/01",
+                                  "fin": "2014/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

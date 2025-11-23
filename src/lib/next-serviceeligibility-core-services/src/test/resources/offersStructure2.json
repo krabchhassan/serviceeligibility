@@ -1,0 +1,72 @@
+{
+  "offerCode": "DIFF_TP_2",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2023_janv_01.1",
+      "effectDate": "2023-04-20T08:43:37.513Z",
+      "validityDate": "2023-01-01",
+      "endValidityDate": "2023-05-31",
+      "engineVersion": "29.5",
+      "detailsByDomain": {
+        "PHCO": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "PHARMACIE"
+        },
+        "OPTI": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "OPTIQUE"
+        },
+        "PHCN": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "PHARMACIE"
+        },
+        "DENT": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "DENTAIRE"
+        },
+        "PHNO": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "PHARMACIE"
+        },
+        "PHOR": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "PHARMACIE"
+        }
+      }
+    },
+    {
+      "offerVersionCode": "2023_june_01.1",
+      "effectDate": "2023-04-20T08:43:37.513Z",
+      "validityDate": "2023-06-01",
+      "endValidityDate": "2023-12-31",
+      "engineVersion": "29.5",
+      "detailsByDomain": {
+        "DENT": {
+          "formulaCode": "fGl_STS010_FraisReels",
+          "formulaLabel": "STS010_Frais réels",
+          "formulaMask": "100% FR",
+          "stsFormulaCode": "010",
+          "natureCode": "DENTAIRE"
+        }
+      }
+    }
+  ]
+}

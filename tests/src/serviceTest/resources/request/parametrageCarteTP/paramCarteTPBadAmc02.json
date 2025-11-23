@@ -1,0 +1,128 @@
+{
+    "parametragesAmcOffreProduit": [
+        {
+            "oc": "OC_0000111122_01",
+            "parametragesOffreProduit": [
+                {
+                    "codeOffre": "OFF_DURAND_OC01_001",
+                    "versionOffre": "0.0.12",
+                    "produits":[
+                        "PDT_DURAND_001",
+                        "PDT_DURAND_002",
+                        "PDT_DURAND_003",
+                        "PDT_DURAND_004"
+                    ]
+                },
+                {
+                    "codeOffre": "OFF_DURAND_OC01_002",
+                    "versionOffre": "0.0.14",
+                    "produits":[
+                        "PDT_DURAND_001",
+                        "PDT_DURAND_004",
+                        "PDT_DURAND_005",
+                        "PDT_DURAND_006"
+                    ]
+                },
+                {
+                    "codeOffre": "OFF_DURAND_OC01_003",
+                    "versionOffre": "0.0.586",
+                    "produits":[
+                        "PDT_DURAND_011",
+                        "PDT_DURAND_012",
+                        "PDT_DURAND_013",
+                        "PDT_DURAND_014"
+                    ]
+                }
+            ]
+        },
+        {
+            "oc": "OC_0000111122_02",
+            "parametragesOffreProduit": [
+                {
+                    "codeOffre": "OFF_DURAND_OC02_001",
+                    "versionOffre": "0.0.1544",
+                    "produits":[
+                        "PDT_DURAND_201",
+                        "PDT_DURAND_202",
+                        "PDT_DURAND_203",
+                        "PDT_DURAND_204"
+                    ]
+                },
+                {
+                    "codeOffre": "OFF_DURAND_OC02_002",
+                    "versionOffre": "0.0.845",
+                    "produits":[
+                        "PDT_DURAND_201",
+                        "PDT_DURAND_204",
+                        "PDT_DURAND_205",
+                        "PDT_DURAND_206"
+                    ]
+                },
+                {
+                    "codeOffre": "OFF_DURAND_OC02_003",
+                    "versionOffre": "0.0.54",
+                    "produits":[
+                        "PDT_DURAND_211",
+                        "PDT_DURAND_212",
+                        "PDT_DURAND_213",
+                        "PDT_DURAND_214"
+                    ]
+                }
+            ]
+        }
+    ],
+    "parametrageRenouvellement": {
+        "dateRenouvellementCarteTP": "DebutEcheance",
+        "debutEcheance": "01/01",
+        "dureeValiditeDroitsCarteTP": "Annuel",
+        "delaiDeclenchementCarteTP": 0,
+        "dateDeclenchementAutomatique": null,
+        "seuilSecurite": 100000
+    },
+    "parametrageDroitsCarteTP": {
+        "codeConventionTP": "IS",
+        "codeOperateurTP": "CB",
+        "isCarteEditablePapier": true,
+        "isCarteDematerialisee": true,
+        "refFondCarte": "fndCarte_001",
+        "codeAnnexe1": "Annexe1",
+        "codeAnnexe2": "Annexe2",
+        "detailsDroit": [
+            {
+                "ordreAffichage": 1,
+                "codeDomaineTP": "PHAR",
+                "libelleDomaineTP": "Pharmacie",
+                "isDomaineEditable": true,
+                "convention": "IS"
+            },
+            {
+                "ordreAffichage": 2,
+                "codeDomaineTP": "DENT",
+                "libelleDomaineTP": "Dentaire",
+                "isDomaineEditable": true,
+                "convention": "IS"
+            },
+            {
+                "ordreAffichage": 3,
+                "codeDomaineTP": "OPTI",
+                "libelleDomaineTP": "Optique",
+                "isDomaineEditable": true,
+                "convention": "IS"
+            },
+            {
+                "ordreAffichage": 4,
+                "codeDomaineTP": "HOSP",
+                "libelleDomaineTP": "Hospitalisation",
+                "isDomaineEditable": false,
+                "convention": "SP"
+            },
+            {
+                "ordreAffichage": 5,
+                "codeDomaineTP": "RADI",
+                "libelleDomaineTP": "Radialogie",
+                "isDomaineEditable": true,
+                "convention": "IS"
+            }
+        ]
+    }
+}

@@ -1,0 +1,184 @@
+{
+  "codeEtat": "V",
+  "effetDebut": "2023-04-29T19:30:30.953Z",
+  "idDeclarant": "0000452433",
+  "idTrigger": "644d6ef19379627f7c073d8a",
+  "userCreation": "WORKER",
+  "userModification": "WORKER",
+  "beneficiaire": {
+    "dateNaissance": "19081024",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1111111111111",
+    "cleNirBeneficiaire": "30",
+    "nirOd1": "1111111111111",
+    "cleNirOd1": "30",
+    "numeroPersonne": "2130187",
+    "dateAdhesionMutuelle": "2020/05/25",
+    "dateDebutAdhesionIndividuelle": "2021/01/01",
+    "affiliation": {
+      "nom": "DELMAS",
+      "nomPatronymique": "DELMAS",
+      "nomMarital": "DELMAS",
+      "prenom": "OWEN",
+      "civilite": "M",
+      "periodeDebut": "2020/05/25",
+      "periodeFin": "2024/03/20",
+      "qualite": "E",
+      "regimeOD1": "01",
+      "caisseOD1": "791",
+      "hasMedecinTraitant": false,
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "Enfant"
+    },
+    "adresses": [
+      {
+        "ligne1": "Monsieur DELMAS OWEN",
+        "ligne4": "718 RUE DU PORT",
+        "ligne6": "32000 PORT",
+        "codePostal": "32000",
+        "typeAdresse": {
+          "type": "AD"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "02826911",
+    "dateSouscription": "2021/01/01",
+    "type": "B",
+    "nomPorteur": "DELMAS",
+    "prenomPorteur": "OWEN",
+    "civilitePorteur": "M",
+    "numeroAdherent": "02826911",
+    "numeroAdherentComplet": "02826911",
+    "qualification": "B",
+    "numeroContratCollectif": "00219027",
+    "rangAdministratif": "2",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "2",
+    "lienFamilial": "A",
+    "typeConvention": "IS",
+    "critereSecondaire": "001",
+    "numeroExterneContratIndividuel": "02826911",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "000452433",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1"
+  },
+  "domaineDroits": [
+    {
+      "code": "OPAU",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2021/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "OPAU-099",
+      "noOrdreDroit": 0,
+      "categorie": "OPAU",
+      "formulaMask": "PEC",
+      "naturePrestation": "OPTIQUEAUDIO",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRAT_GROUPE_AXA",
+      "versionOffre": "2021_janv_01.6",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2024/01/01",
+        "periodeFin": "2024/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2024/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "HOSP",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2021/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "HOSP-099",
+      "noOrdreDroit": 0,
+      "categorie": "HOSP",
+      "formulaMask": "PEC",
+      "naturePrestation": "HOSP",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRAT_GROUPE_AXA",
+      "versionOffre": "2021_janv_01.6",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2024/01/01",
+        "periodeFin": "2024/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2024/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "etatSuspension": "-1"
+}

@@ -1,0 +1,147 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "beneficiaryTrace",
+      "description": "Collection contenant les cartes TP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "CarteDemat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "type": "string"
+          },
+          "periodeDebut": {
+            "type": "string"
+          },
+          "periodeFin": {
+            "type": "string"
+          },
+          "isLastCarteDemat": {
+            "type": "boolean"
+          },
+          "AMC_contrat": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "contrat": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Contrat"
+          },
+          "adresse": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Adresse"
+          },
+          "beneficiaires": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BenefCarteDemat"
+            }
+          },
+          "domainesConventions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DomaineConvention"
+            }
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "CarteDemat"
+      },
+      "BenefCarteDemat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "lienContrat": {
+            "$ref": "#/components/schemas/LienContrat"
+          },
+          "beneficiaire": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Beneficiaire"
+          },
+          "domainesCouverture": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/DomaineDroit"
+            }
+          }
+        },
+        "required": [],
+        "title": "BenefCarteDemat"
+      },
+      "LienContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "lienFamilial": {
+            "type": "string"
+          },
+          "rangAdministratif": {
+            "type": "string"
+          },
+          "modePaiementPrestations": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "LienContrat"
+      },
+      "DomaineConvention": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "rang": {
+            "type": "integer"
+          },
+          "conventions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Convention"
+            }
+          }
+        },
+        "required": [],
+        "title": "DomaineConvention"
+      },
+      "Convention": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "priorite": {
+            "type": "integer"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Convention"
+      }
+    }
+  }
+}

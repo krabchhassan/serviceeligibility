@@ -1,0 +1,77 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "sasContrat",
+      "description": "Collection contenant les sas contrats créés lors de la génération des droits TP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "SasContrat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "idDeclarant": {
+            "type": "string"
+          },
+          "numeroContrat": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "servicePrestationId": {
+            "type": "string"
+          },
+          "triggersBenefs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TriggerBenefs"
+            }
+          },
+          "anomalies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dates": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        },
+        "required": [],
+        "title": "SasContrat"
+      },
+      "TriggerBenefs": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "triggerId": {
+            "type": "string"
+          },
+          "benefsId": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [],
+        "title": "TriggerBenefs"
+      }
+    }
+  }
+}

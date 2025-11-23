@@ -1,0 +1,59 @@
+{
+  "offerCode": "1472_DELTA_01",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2023_janv_01.1",
+      "assemblyMode": "INCLUSION",
+      "catalogOfferVersion": "2023_janv_01.4",
+      "catalogOfferCode": "SANTE_CAT_BLUE",
+      "effectDate": "2023-04-20T18:18:16.195Z",
+      "validityDate": "2023-01-01",
+      "engineVersion": "33.0",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+            "formulaCode": "fGl_STS010_FraisReels",
+            "formulaLabel": "STS010_Frais réels",
+            "formulaMask": "100% FR",
+            "stsFormulaCode": "010",
+            "nature": "OPTIQUE"
+          },
+          "tpOnline": {
+            "nature": "OPTIQUE",
+            "network": "IT/IS"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "DENTAIRE"
+          },
+          "tpOnline": {
+            "nature": "DENTAIRE",
+            "network": "IT/IS"
+          }
+        },
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS020_100pctTR",
+            "formulaLabel": "STS020_100% TR",
+            "formulaMask": "100% TR",
+            "stsFormulaCode": "020",
+            "nature": "PHARMACIE"
+          },
+          "tpOnline": {
+            "nature": "PHARMACIE",
+            "network": ""
+          }
+        }
+      ]
+    }
+  ]
+}
+

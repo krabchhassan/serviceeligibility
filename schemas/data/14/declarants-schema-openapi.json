@@ -1,0 +1,354 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "declarants",
+      "description": "Collection qui contient la liste des AMC gérées avec la liste de leurs services ouverts"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Declarant": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idClientBO": {
+            "type": "string",
+            "description": "Clé d'API autorisée à créer des contrats/prestij pour l'AMC"
+          },
+          "nom": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "siret": {
+            "type": "string"
+          },
+          "numeroPrefectoral": {
+            "type": "string"
+          },
+          "codePartenaire": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "codeCircuit": {
+            "type": "string"
+          },
+          "emetteurDroits": {
+            "type": "string"
+          },
+          "operateurPrincipal": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "pilotages": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pilotage"
+            }
+          },
+          "numerosAMCEchanges": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "transcodageDomainesTP": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TranscoDomainesTP"
+            }
+          },
+          "_id": {
+            "type": "string"
+          },
+          "ConventionTP": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ConventionTP"
+            }
+          },
+          "CodeRenvoiTP": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CodeRenvoiTP"
+            }
+          },
+          "RegroupementDomainesTP": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegroupementDomainesTP"
+            }
+          }
+        },
+        "required": [],
+        "title": "Declarant"
+      },
+      "Pilotage": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeService": {
+            "type": "string"
+          },
+          "triRestitution": {
+            "type": "integer"
+          },
+          "critereRegroupement": {
+            "type": "string"
+          },
+          "critereRegroupementDetaille": {
+            "type": "string"
+          },
+          "serviceOuvert": {
+            "type": "boolean"
+          },
+          "dateOuverture": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateSynchronisation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "couloirClient": {
+            "type": "string"
+          },
+          "typeConventionnement": {
+            "type": "string"
+          },
+          "caracteristique": {
+            "$ref": "#/components/schemas/InfoPilotage"
+          }
+        },
+        "required": [],
+        "title": "Pilotage"
+      },
+      "InfoPilotage": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numDebutFichier": {
+            "type": "integer"
+          },
+          "numEmetteur": {
+            "type": "string"
+          },
+          "numClient": {
+            "type": "string"
+          },
+          "nomClient": {
+            "type": "string"
+          },
+          "versionNorme": {
+            "type": "string"
+          },
+          "typeFichier": {
+            "type": "string"
+          },
+          "codePerimetre": {
+            "type": "string"
+          },
+          "nomPerimetre": {
+            "type": "string"
+          },
+          "typeGestionnaireBO": {
+            "type": "string"
+          },
+          "libelleGestionnaireBO": {
+            "type": "string"
+          },
+          "codeClient": {
+            "type": "string"
+          },
+          "numExterneContratIndividuel": {
+            "type": "boolean"
+          },
+          "numExterneContratCollectif": {
+            "type": "boolean"
+          },
+          "codeComptable": {
+            "type": "string"
+          },
+          "periodeReferenceDebut": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "periodeReferenceFin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "filtreDomaine": {
+            "type": "boolean"
+          },
+          "generateFichier": {
+            "type": "boolean"
+          },
+          "dureeValidite": {
+            "type": "integer"
+          },
+          "periodeValidite": {
+            "type": "string"
+          },
+          "validitesDomainesDroits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ValiditeDomainesDroits"
+            }
+          }
+        },
+        "required": [],
+        "title": "InfoPilotage"
+      },
+      "ValiditeDomainesDroits": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeDomaine": {
+            "type": "string"
+          },
+          "duree": {
+            "type": "integer"
+          },
+          "unite": {
+            "type": "string"
+          },
+          "positionnerFinDeMois": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "ValiditeDomainesDroits"
+      },
+      "TranscoDomainesTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "domaineSource": {
+            "type": "string"
+          },
+          "domainesCible": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [],
+        "title": "TranscoDomainesTP"
+      },
+      "ConventionTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "reseauSoin": {
+            "type": "string"
+          },
+          "domaineTP": {
+            "type": "string"
+          },
+          "conventionCible": {
+            "type": "string"
+          },
+          "concatenation": {
+            "type": "boolean"
+          },
+          "dateDebut": {
+            "type": "string"
+          },
+          "dateFin": {
+            "type": "string"
+          },
+          "isConventionConcatenable": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "reseauSoin",
+          "conventionCible",
+          "dateDebut"
+        ],
+        "title": "ConventionTP"
+      },
+      "CodeRenvoiTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "domaineTP": {
+            "type": "string"
+          },
+          "reseauSoin": {
+            "type": "string"
+          },
+          "codeRenvoi": {
+            "type": "string"
+          },
+          "dateDebut": {
+            "type": "string"
+          },
+          "dateFin": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domaineTP",
+          "codeRenvoi",
+          "dateDebut"
+        ],
+        "title": "CodeRenvoiTP"
+      },
+      "RegroupementDomainesTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "domaineRegroupementTP": {
+            "type": "string"
+          },
+          "codesDomainesTP": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "niveauRemboursementIdentique": {
+            "type": "boolean"
+          },
+          "dateDebut": {
+            "type": "string"
+          },
+          "dateFin": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "domaineRegroupementTP",
+          "codesDomainesTP",
+          "niveauRemboursementIdentique",
+          "dateDebut"
+        ],
+        "title": "RegroupementDomainesTP"
+      }
+    }
+  }
+}

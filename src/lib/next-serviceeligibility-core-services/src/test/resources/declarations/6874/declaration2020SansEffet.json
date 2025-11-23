@@ -1,0 +1,248 @@
+{
+  "referenceExterne" : null,
+  "codeEtat" : "R",
+  "effetDebut" : "2019-12-03T10:34:17.147Z",
+  "idDeclarant" : "0000920101",
+  "isCarteTPaEditer" : false,
+  "nomFichierOrigine" : "XFTDB.FLUX_TDB_ENT.20191203-08100368.OK",
+  "dateCreation" : "2020-12-03T10:34:17.147Z",
+  "userCreation" : "job605",
+  "dateModification" : "2020-12-03T10:34:17.147Z",
+  "userModification" : "job605",
+  "versionDeclaration" : "V03",
+  "beneficiaire" : {
+    "dateNaissance" : "19831109",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : null,
+    "cleNirBeneficiaire" : null,
+    "nirOd1" : "2831125152212",
+    "cleNirOd1" : "68",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "IS0000003642633",
+    "refExternePersonne" : "IS0000003642633",
+    "affiliation" : {
+      "nom" : "SNUPES",
+      "nomPatronymique" : "SNUPES",
+      "nomMarital" : "SNUPES",
+      "prenom" : "AGNES",
+      "civilite" : null,
+      "periodeDebut" : "2020/01/01",
+      "periodeFin" : null,
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "422",
+      "centreOD1" : null,
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : null,
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : false,
+      "typeAssure" : null
+    },
+    "adresses" : [
+
+    ]
+  },
+  "contrat" : {
+    "numero" : "00695745",
+    "dateSouscription" : "2020/01/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : null,
+    "prenomPorteur" : null,
+    "civilitePorteur" : null,
+    "numeroAdherent" : "00695745",
+    "numeroAdherentComplet" : null,
+    "qualification" : "B",
+    "numeroContratCollectif" : null,
+    "rangAdministratif" : null,
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "destinataire" : null,
+    "individuelOuCollectif" : null,
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "A",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : null,
+    "critereSecondaireDetaille" : null,
+    "critereSecondaire" : null,
+    "numeroExterneContratIndividuel" : null,
+    "numeroExterneContratCollectif" : null,
+    "modePaiementPrestations" : null,
+    "gestionnaire" : null,
+    "groupeAssures" : null,
+    "numeroCarte" : "00695745",
+    "editeurCarte" : null,
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : null,
+    "numOperateur" : null
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHCO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "NIVEAU",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100.00",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHCO-050-100-0000920101",
+      "origineDroits" : "T",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "HD4",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        },
+        {
+          "code" : "HG4",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        },
+        {
+          "code" : "MHU",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        },
+        {
+          "code" : "PH4",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        },
+        {
+          "code" : "PM4",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        },
+        {
+          "code" : "PMH",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2020/01/01",
+        "periodeFin" : "2019/12/31",
+        "motifEvenement" : "FE",
+        "libelleEvenement" : "Fermeture",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "idOrigine" : "toto"
+}

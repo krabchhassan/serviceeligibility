@@ -1,0 +1,40 @@
+{
+  "offerCode": "Offre1",
+  "offerVersions": [
+    {
+      "offerVersionCode": 1,
+      "validityDate": "2021-01-01",
+      "engineVersion": "EngineVersion1",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+           },
+          "tpOnline" : {
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "022",
+            "nature": "DENTAIRE",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 4,
+                "value": "090"
+              }
+            ]
+          },
+          "tpOnline" : {
+            "nature": "DENTAIRE"
+          }
+        }
+      ]
+    }
+  ]
+}

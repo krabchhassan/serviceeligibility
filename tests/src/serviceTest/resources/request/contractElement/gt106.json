@@ -1,0 +1,35 @@
+{
+  "codeInsurer": "0008400004",
+  "codeAMC": "AMC",
+  "codeContractElement": "GT106",
+  "deadline": "2025-01-01",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "OFFER2",
+      "codeProduct": "PRODUCT1",
+      "codeBenefitNature": "NATURE1",
+      "codeAmc": "AMC",
+      "effectiveDate": "2019-02-01",
+      "from": "2019-01-01T06:00:00.000Z",
+      "to": "2090-12-31T00:00:00.000Z",
+    },
+    {
+      "codeOffer": "OFFER3",
+      "codeProduct": "PRODUCT1",
+      "codeBenefitNature": "NATURE1",
+      "codeAmc": "AMC",
+      "from": "2000-01-01T06:00:00.000Z",
+      "to": "2019-12-31T00:00:00.000Z"
+    },
+    {
+      "codeOffer": "OFFER4",
+      "codeProduct": "PRODUCT1",
+      "codeBenefitNature": "NATURE1",
+      "codeAmc": "AMC",
+      "from": "2099-01-01T06:00:00.000Z",
+      "to": "2099-12-31T00:00:00.000Z"
+    }
+  ]
+}

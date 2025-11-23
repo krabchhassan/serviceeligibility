@@ -1,0 +1,78 @@
+workflowDefinition:
+  - code: is-bdds-purge
+    name: Purge HTP et TP
+    nature: ["dev", "qa", "preprod"]
+    description: Cet OMU sert à purger les données HTP et TP liées à une AMC ou à un nom de fichier
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: file_name
+        description: Nom du fichier à l'origine des données à purger
+        optional: true
+      - name: amc_number
+        description: Numéro préfectoral à l'origine des données à purger
+        optional: true
+
+    steps:
+      - name: step-purge-job
+        job: rdoserviceprestationpurge-job
+        type: java
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: NUM_AMC
+              ref: parameters/amc_number
+            - name: NOM_FICHIER
+              ref: parameters/file_name
+
+    crex:
+      - name: tracesInsuredPurges
+        description: Nombre de traces assuré purgées
+        ref: steps/step-purge-job/parameters/outputs/tracesInsuredPurges
+      - name: tracesBenefPurges
+        description: Nombre de traces bénéficiaire purgées
+        ref: steps/step-purge-job/parameters/outputs/tracesBenefPurges
+      - name: benefsPurges
+        description: Nombre de beneficiaires supprimés
+        ref: steps/step-purge-job/parameters/outputs/benefsPurges
+      - name: tracesServicePrestationPurges
+        description: Nombre de traces contrat HTP purgées
+        ref: steps/step-purge-job/parameters/outputs/tracesServicePrestationPurges
+      - name: servicePrestationPurges
+        description: Nombre de contrats HTP purgés
+        ref: steps/step-purge-job/parameters/outputs/servicePrestationPurges
+      - name: benefsModifiesHTP
+        description: Nombre de beneficiaires ayant vu leurs droits HTP modifiés
+        ref: steps/step-purge-job/parameters/outputs/benefsModifiesHTP
+      - name: triggersPurges
+        description: Nombre de déclencheurs purgés
+        ref: steps/step-purge-job/parameters/outputs/triggersPurges
+      - name: triggeredBeneficiariesPurges
+        description: Nombre de bénéficiaires associés aux déclencheurs purgés
+        ref: steps/step-purge-job/parameters/outputs/triggeredBeneficiariesPurges
+      - name: contratsModifies
+        description: Nombre de contrats modifiés
+        ref: steps/step-purge-job/parameters/outputs/contratsModifies
+      - name: contratsPurges
+        description: Nombre de contrats purgés
+        ref: steps/step-purge-job/parameters/outputs/contratsPurges
+      - name: tracesDeclarationPurges
+        description: Nombre de traces déclaration purgées
+        ref: steps/step-purge-job/parameters/outputs/tracesDeclarationPurges
+      - name: declarationsPurges
+        description: Nombre de déclarations purgées
+        ref: steps/step-purge-job/parameters/outputs/declarationsPurges
+      - name: benefsModifiesTP
+        description: Nombre de bénéficiaires ayant vu leurs droits TP modifiés
+        ref: steps/step-purge-job/parameters/outputs/benefsModifiesTP
+      - name: sasContratsPurges
+        description: Nombre de sasContrats purgées
+        ref: steps/step-purge-job/parameters/outputs/sasContratsPurges
+      - name: parametrageCarteTPPurges
+        description: Nombre de parametrages de carte TP purgées
+        ref: steps/step-purge-job/parameters/outputs/parametrageCarteTPServicePurges
+      - name: referentielParametrageCarteTPPurges
+        description: Nombre de référentiels de parametrage de carte TP purgées
+        ref: steps/step-purge-job/parameters/outputs/referentielParametrageCarteTPPurges
+      - name: rdoServicePrestationPurges
+        description: Nombre de rdoServicePrestation purgées
+        ref: steps/step-purge-job/parameters/outputs/rdoServicePrestationPurges

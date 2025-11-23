@@ -1,0 +1,123 @@
+{
+  "offerCode": "Offre1",
+  "offerVersions": [
+    {
+      "offerVersionCode": 1,
+      "endValidityDate": "XXXX-06-30",
+      "validityDate": "2021-01-01",
+      "engineVersion": "EngineVersion1",
+      "domains": [
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "022",
+            "nature": "HOSPITALISATION",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 4,
+                "value": "090"
+              }
+            ]
+          }
+        },
+        {
+          "domainCode": "CURE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "023",
+            "nature": "RADIOLOGIE",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 5,
+                "value": "080"
+              }
+            ]
+          }
+        },
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "021",
+            "nature": "DENTAIRE",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 3,
+                "value": "100"
+              }
+            ]
+          }
+        },
+        {
+          "domainCode": "EXTE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "024",
+            "nature": "MEDECINE",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 6,
+                "value": "070"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "engineVersion": "EngineVersion1",
+      "offerVersionCode": 2,
+      "offerCode": "Offre1",
+      "validityDate": "XXXX-07-01",
+      "domains": [
+        {
+          "domainCode": "PHAR",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "021",
+            "nature": "DENTAIRE",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 3,
+                "value": "100"
+              }
+            ]
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "$txBR.fPa_STS021_TR% TR",
+            "stsFormulaCode": "022",
+            "nature": "HOSPITALISATION",
+            "variables": [
+              {
+                "variableCode": "$txBR.fPa_STS021_TR",
+                "stsVariableNumber": 4,
+                "value": "090"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

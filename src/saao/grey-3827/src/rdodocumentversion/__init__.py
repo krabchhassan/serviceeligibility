@@ -1,0 +1,1 @@
+from rdodocumentversion.rdo_document_version import launch

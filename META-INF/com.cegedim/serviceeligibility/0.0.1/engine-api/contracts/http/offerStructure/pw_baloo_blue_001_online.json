@@ -1,0 +1,18 @@
+[
+  {
+    "validityDate": "2022-01-01",
+    "code": 9,
+    "offerCode": "OFFER_BLUE_001",
+    "natures": [
+      "OPTIQUE",
+      "HOSPITALISATION",
+      "AUDIOLOGIE",
+      "DENTAIRE",
+      "PHARMACIE",
+      "MEDECINE"
+    ],
+    "products": [
+      "BLUE_001_ONLINE"
+    ]
+  }
+]

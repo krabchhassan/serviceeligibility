@@ -1,0 +1,48 @@
+{
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2024-01-01",
+  "userCreation": "natacha.leone@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "AnniversaireContrat",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "dateExecutionBatch": "2024-01-22",
+    "dateDebutDroitTP": "2024-01-01",
+    "modeDeclenchement": "Manuel",
+    "delaiRenouvellement": 30
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+      {
+        "ordreAffichage": 1,
+        "codeDomaineTP": "DEOR",
+        "libelleDomaineTP": "Orthodontie",
+        "codeRenvoiAction": "GARDER"
+      },
+      {
+        "ordreAffichage": 2,
+        "codeDomaineTP": "DENT",
+        "libelleDomaineTP": "DESO + DEPR + DEOR (en plus)",
+        "codeRenvoiAction": "GARDER"
+      }
+    ],
+    "isCarteEditablePapier": false
+  },
+  "priorite": 0,
+  "garantieTechniques": [
+    {
+      "codeAssureur": "BALOO",
+      "codeGarantie": "5476"
+    }
+  ],
+  "idLots": [
+  ]
+}

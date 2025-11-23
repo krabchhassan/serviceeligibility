@@ -1,0 +1,28 @@
+{
+  "offerCode": "Offre1",
+  "offerVersions": [
+    {
+      "offerVersionCode": 1,
+      "validityDate": "2021-01-01",
+      "engineVersion": "EngineVersion1",
+      "domains": [
+        {
+          "domainCode": "OPTI",
+          "tpOffline": {
+           },
+          "tpOnline" : {
+            "nature": "OPTIQUE"
+          }
+        },
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+          },
+          "tpOnline" : {
+            "nature": "DENTAIRE"
+          }
+        }
+      ]
+    }
+  ]
+}

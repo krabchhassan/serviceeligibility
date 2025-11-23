@@ -1,0 +1,675 @@
+{
+  "assures": [
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "493904",
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "rib": {
+              "bic": "CEPAFRPP313",
+              "iban": "FR7613135000800419617150090"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01",
+              "fin": "2023-01-01"
+            }
+          },
+          {
+            "idDestinatairePaiements": "493904",
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "rib": {
+              "bic": "CEPAFRPP313",
+              "iban": "FR7613135000800419617150090"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2022-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "493904",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2023-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "IZARD",
+          "nomUsage": "IZARD",
+          "prenom": "NOA",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur IZARD NOA",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "3 RUE RENE DE NAUROIS",
+          "ligne5": "",
+          "ligne6": "31340 VILLEMUR SUR TARN",
+          "ligne7": "",
+          "codePostal": "31340"
+        },
+        "contact": {
+          "mobile": "06 02 41 78 21",
+          "email": "nicoetsandy@live.fr"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-12-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSBC48516A",
+          "codeAssureur": "ASSU00060",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2021-12-01"
+          },
+          "dateAncienneteGarantie": "2021-12-01"
+        },
+        {
+          "carences": [],
+          "code": "FSOC49568A",
+          "codeAssureur": "ASSU00187",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "2",
+          "type": "B",
+          "periode": {
+            "debut": "2021-12-01"
+          },
+          "dateAncienneteGarantie": "2021-12-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "21",
+      "identite": {
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2820181004077",
+              "cle": "13"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "311",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          },
+          {
+            "nir": {
+              "code": "2820181004077",
+              "cle": "13"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "311",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2021-12-01"
+            }
+          }
+        ],
+        "dateNaissance": "20130827",
+        "rangNaissance": "1",
+        "numeroPersonne": "493908"
+      },
+      "dateAdhesionMutuelle": "2021-12-01",
+      "dateDebutAdhesionIndividuelle": "2021-12-01",
+      "periodes": [
+        {
+          "debut": "2021-12-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      }
+    },
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "493904",
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "rib": {
+              "bic": "CEPAFRPP313",
+              "iban": "FR7613135000800419617150090"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01",
+              "fin": "2023-01-01"
+            }
+          },
+          {
+            "idDestinatairePaiements": "493904",
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "rib": {
+              "bic": "CEPAFRPP313",
+              "iban": "FR7613135000800419617150090"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2022-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "493904",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2023-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "CESSAL",
+          "nomUsage": "CESSAL",
+          "prenom": "SANDRINE",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame CESSAL SANDRINE",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "3 RUE RENE DE NAUROIS",
+          "ligne5": "",
+          "ligne6": "31340 VILLEMUR SUR TARN",
+          "ligne7": "",
+          "codePostal": "31340"
+        },
+        "contact": {
+          "mobile": "06 02 41 78 21",
+          "email": "nicoetsandy@live.fr"
+        }
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "email": "nicoetsandy@live.fr"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-11-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSBC49567A",
+          "codeAssureur": "ASSU00187",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2021-11-01"
+          },
+          "dateAncienneteGarantie": "2021-11-01"
+        },
+        {
+          "carences": [],
+          "code": "FSOC49568A",
+          "codeAssureur": "ASSU00187",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "2",
+          "type": "B",
+          "periode": {
+            "debut": "2021-12-01"
+          },
+          "dateAncienneteGarantie": "2021-12-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "2820181004077",
+          "cle": "13"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2820181004077",
+              "cle": "13"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "311",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          },
+          {
+            "nir": {
+              "code": "2820181004077",
+              "cle": "13"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "311",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2021-11-01"
+            }
+          }
+        ],
+        "dateNaissance": "19820115",
+        "rangNaissance": "1",
+        "numeroPersonne": "493904"
+      },
+      "dateAdhesionMutuelle": "2021-11-01",
+      "dateDebutAdhesionIndividuelle": "2021-11-01",
+      "periodes": [
+        {
+          "debut": "2021-11-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    },
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "493904",
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "rib": {
+              "bic": "CEPAFRPP313",
+              "iban": "FR7613135000800419617150090"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-01",
+              "fin": "2023-01-01"
+            }
+          },
+          {
+            "idDestinatairePaiements": "493904",
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "rib": {
+              "bic": "CEPAFRPP313",
+              "iban": "FR7613135000800419617150090"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2022-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "493904",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "CESSAL",
+              "nomUsage": "CESSAL",
+              "prenom": "SANDRINE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame CESSAL SANDRINE",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "3 RUE RENE DE NAUROIS",
+              "ligne5": "",
+              "ligne6": "31340 VILLEMUR SUR TARN",
+              "ligne7": "",
+              "codePostal": "31340"
+            },
+            "periode": {
+              "debut": "2021-11-01",
+              "fin": "2023-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "IZARD",
+          "nomUsage": "IZARD",
+          "prenom": "NICOLAS",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur IZARD NICOLAS",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "3 RUE RENE DE NAUROIS",
+          "ligne5": "",
+          "ligne6": "31340 VILLEMUR SUR TARN",
+          "ligne7": "",
+          "codePostal": "31340"
+        },
+        "contact": {
+          "mobile": "06 02 41 78 21",
+          "email": "nicoetsandy@live.fr"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-12-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSBC49567A",
+          "codeAssureur": "ASSU00187",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2021-12-01"
+          },
+          "dateAncienneteGarantie": "2021-12-01"
+        },
+        {
+          "carences": [],
+          "code": "FSOC49568A",
+          "codeAssureur": "ASSU00187",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "2",
+          "type": "B",
+          "periode": {
+            "debut": "2021-12-01"
+          },
+          "dateAncienneteGarantie": "2021-12-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "11",
+      "identite": {
+        "nir": {
+          "code": "1810931561025",
+          "cle": "64"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1810931561025",
+              "cle": "64"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "311",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            }
+          },
+          {
+            "nir": {
+              "code": "1810931561025",
+              "cle": "64"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "311",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2021-12-01"
+            }
+          }
+        ],
+        "dateNaissance": "19810910",
+        "rangNaissance": "1",
+        "numeroPersonne": "493905"
+      },
+      "dateAdhesionMutuelle": "2021-12-01",
+      "dateDebutAdhesionIndividuelle": "2021-12-01",
+      "periodes": [
+        {
+          "debut": "2021-12-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      }
+    }
+  ],
+  "version": "5",
+  "periodesSuspension": [
+    {
+      "periode": {
+        "debut": "2023-01-01"
+      },
+      "typeSuspension": "Provisoire",
+      "motifSuspension": "PORTABILITE_NON_JUSTIFIEE"
+    },
+    {
+      "periode": {
+        "debut": "2023-01-01"
+      },
+      "typeSuspension": "Provisoire",
+      "motifSuspension": "PORTABILITE_NON_JUSTIFIEE"
+    }
+  ],
+  "periodesContratCMUOuvert": [],
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "1086171S1",
+  "numeroExterne": "1086171S1",
+  "numeroAdherent": "1086171S1",
+  "numeroAdherentComplet": "1086171S1",
+  "dateSouscription": "2021-11-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2021-11-01",
+      "fin": "2022-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "",
+  "critereSecondaire": "",
+  "isContratIndividuel": false,
+  "gestionnaire": "ER00187",
+  "contratCollectif": {
+    "numero": "40771179549567",
+    "numeroExterne": "",
+    "identifiantCollectivite": "32103203",
+    "raisonSociale": "MA COLL",
+    "groupePopulation": "Cadres"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1"
+}

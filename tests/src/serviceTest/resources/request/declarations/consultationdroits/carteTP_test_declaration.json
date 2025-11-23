@@ -1,0 +1,669 @@
+{
+    "_id" : "5b3dd0d62a4d0a0c536cbd27",
+    "referenceExterne" : null,
+    "codeEtat" : "V",
+    "effetDebut" : "2018-07-05T08:02:19.654Z",
+    "idDeclarant" : "0000452433",
+    "isCarteTPaEditer" : false,
+    "nomFichierOrigine" : "BDIGSP_20180705084920708499.OK",
+    "dateCreation" : "2018-07-05T08:02:19.654Z",
+    "userCreation" : "job605",
+    "dateModification" : "2018-07-05T08:02:19.654Z",
+    "userModification" : "job605",
+    "versionDeclaration" : "V02",
+    "beneficiaire" : {
+        "dateNaissance" : "19810619",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : "2810631555490",
+        "cleNirBeneficiaire" : "69",
+        "nirOd1" : "2810631555490",
+        "cleNirOd1" : "69",
+        "nirOd2" : "",
+        "cleNirOd2" : "",
+        "insc" : null,
+        "numeroPersonne" : "03456790",
+        "refExternePersonne" : "03456790",
+        "affiliation" : {
+            "nom" : "MARTIN",
+            "nomPatronymique" : "MARTIN",
+            "nomMarital" : "MARTIN",
+            "prenom" : "JEAN",
+            "civilite" : null,
+            "periodeDebut" : "2016/11/02",
+            "periodeFin" : null,
+            "qualite" : "A",
+            "regimeOD1" : "01",
+            "caisseOD1" : "311",
+            "centreOD1" : null,
+            "regimeOD2" : null,
+            "caisseOD2" : null,
+            "centreOD2" : null,
+            "hasMedecinTraitant" : false,
+            "regimeParticulier" : "",
+            "isBeneficiaireACS" : false,
+            "isTeleTransmission" : true,
+            "typeAssure" : "ASSURE"
+        },
+        "adresses" : []
+    },
+    "contrat" : {
+        "numero" : "02208752",
+        "dateSouscription" : "2016/11/02",
+        "dateResiliation" : null,
+        "type" : null,
+        "nomPorteur" : "MARTIN",
+        "prenomPorteur" : "JEAN",
+        "civilitePorteur" : "MME",
+        "numeroAdherent" : "02208752",
+        "numeroAdherentComplet" : null,
+        "qualification" : "B",
+        "numeroContratCollectif" : "00219071",
+        "rangAdministratif" : "01",
+        "isContratResponsable" : true,
+        "isContratCMU" : false,
+        "destinataire" : "AD",
+        "individuelOuCollectif" : "2",
+        "situationDebut" : null,
+        "situationFin" : null,
+        "motifFinSituation" : null,
+        "lienFamilial" : "A",
+        "categorieSociale" : null,
+        "situationParticuliere" : null,
+        "typeConvention" : "IS",
+        "critereSecondaireDetaille" : "",
+        "critereSecondaire" : "",
+        "numeroExterneContratIndividuel" : "",
+        "numeroExterneContratCollectif" : "",
+        "modePaiementPrestations" : "V",
+        "gestionnaire" : "AXA",
+        "groupeAssures" : "0SOUS",
+        "numeroCarte" : "000000000002362",
+        "editeurCarte" : "",
+        "fondCarte" : null,
+        "annexe1Carte" : null,
+        "annexe2Carte" : null,
+        "numAMCEchange" : null,
+        "numOperateur" : null
+    },
+    "domaineDroits" : [ 
+        {
+            "code" : "PHAR",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "PHARIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "00000100",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "TA",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 1,
+            "categorie" : "PHAR",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "02A",
+                        "libelle" : null,
+                        "parametres" : [ 
+                            {
+                                "numero" : "3",
+                                "valeur" : "100.00"
+                            }
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "MEDE",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "MEDEIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "00000100",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "TA",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 2,
+            "categorie" : "MED",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "02A",
+                        "libelle" : null,
+                        "parametres" : [ 
+                            {
+                                "numero" : "3",
+                                "valeur" : "100.00"
+                            }
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "SVIL",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "SVILIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "00000100",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "TA",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 3,
+            "categorie" : "SVIL",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "02A",
+                        "libelle" : null,
+                        "parametres" : [ 
+                            {
+                                "numero" : "3",
+                                "valeur" : "100.00"
+                            }
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "TRAN",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "TRANIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "00000100",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "TA",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 4,
+            "categorie" : "TRAN",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "02A",
+                        "libelle" : null,
+                        "parametres" : [ 
+                            {
+                                "numero" : "3",
+                                "valeur" : "100.00"
+                            }
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "EXTE",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "EXTEIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "00000100",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "TA",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 5,
+            "categorie" : "EXTE",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "02A",
+                        "libelle" : null,
+                        "parametres" : [ 
+                            {
+                                "numero" : "3",
+                                "valeur" : "100.00"
+                            }
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "CSTE",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "CSTEIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "00000100",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "TA",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 6,
+            "categorie" : "CSTE",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "02A",
+                        "libelle" : null,
+                        "parametres" : [ 
+                            {
+                                "numero" : "3",
+                                "valeur" : "100.00"
+                            }
+                        ]
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "OPTI",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "OPTIPECIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "PEC",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "XX",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 7,
+            "categorie" : "OPTI",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "099",
+                        "libelle" : null,
+                        "parametres" : []
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "AUDI",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "AUDIPECIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "PEC",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "XX",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 8,
+            "categorie" : "AUDI",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "099",
+                        "libelle" : null,
+                        "parametres" : []
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }, 
+        {
+            "code" : "DENT",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "AXASCCGDIM",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "AXACEGACT",
+            "libelleProduit" : "CEGEDIM ACTIFS",
+            "codeGarantie" : "AXASCCGDIM",
+            "libelleGarantie" : "CEGEDIM CONFORT",
+            "codeProfil" : "DENTPECIS",
+            "libelleCodeRenvoi" : "IS",
+            "tauxRemboursement" : "PEC",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2016/11/02",
+            "uniteTauxRemboursement" : "XX",
+            "referenceCouverture" : "",
+            "origineDroits" : "",
+            "noOrdreDroit" : 9,
+            "categorie" : "DENT",
+            "prioriteDroit" : {
+                "code" : "01",
+                "libelle" : "01",
+                "typeDroit" : "01",
+                "prioriteBO" : "01"
+            },
+            "prestations" : [ 
+                {
+                    "code" : "DEF1",
+                    "codeRegroupement" : null,
+                    "libelle" : null,
+                    "isEditionRisqueCarte" : false,
+                    "dateEffet" : null,
+                    "formule" : {
+                        "numero" : "099",
+                        "libelle" : null,
+                        "parametres" : []
+                    },
+                    "formuleMetier" : null
+                }
+            ],
+            "periodeDroit" : {
+                "periodeDebut" : "2018/01/01",
+                "periodeFin" : "2018/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "modeObtention" : "O"
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }
+    ]
+}

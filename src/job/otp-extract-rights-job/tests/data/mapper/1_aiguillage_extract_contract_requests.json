@@ -1,0 +1,22 @@
+[
+  {
+    "nir": "1",
+    "birthDate": "1",
+    "searchDate": "1",
+    "amc": "1",
+    "hash": "1-1-1-1"
+  },
+  {
+    "nir": "1",
+    "birthDate": "1",
+    "searchDate": "2",
+    "amc": "1",
+    "hash": "1-1-2-1"
+  },
+  {
+    "nir": "2",
+    "birthDate": "2",
+    "searchDate": "2",
+    "hash": "2-2-2"
+  }
+]

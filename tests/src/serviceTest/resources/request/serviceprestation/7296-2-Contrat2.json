@@ -1,0 +1,533 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "C7296-CAS-2",
+  "numeroExterne": "C7296-CAS-2",
+  "numeroAdherent": "C7296-CAS-2",
+  "numeroAdherentComplet": "C7296-CAS-2",
+  "dateSouscription": "2001-06-01",
+  "apporteurAffaire": "Courtier & Co",
+  "critereSecondaireDetaille": "CADSUP",
+  "critereSecondaire": "CAD",
+  "isContratIndividuel": false,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "CC01",
+    "numeroExterne": "CC01",
+    "identifiantCollectivite": "coll1",
+    "raisonSociale": "ma raison sociale",
+    "siret": "17011111",
+    "groupePopulation": "cadre"
+  },
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-01-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCartePapierAEditer": true,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "periodesContratCMUOuvert": [
+    {
+      "code": "CMU",
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01"
+          }
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "identite": {
+        "nir": {
+          "code": "2810631555499",
+          "cle": "60"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2810631555491",
+              "cle": "68"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "111",
+              "codeCentre": "1018"
+            },
+            "periode": {
+              "debut": "2004-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19900619",
+        "rangNaissance": "1",
+        "numeroPersonne": "C7296-CAS-201",
+        "refExternePersonne": "C7296-CAS-2"
+      },
+      "dateAdhesionMutuelle": "2001-01-01",
+      "dateDebutAdhesionIndividuelle": "2001-01-01",
+      "numeroAdhesionIndividuelle": "166314001",
+      "periodes": [
+        {
+          "debut": "2001-01-01"
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BLUE",
+          "prenom": "CERISE",
+          "civilite": "Mme"
+        },
+        "adresse": {
+          "ligne1": "Mme BLUE CERISE",
+          "ligne4": "19, rue des étoiles",
+          "ligne6": "31000 PARADIS",
+          "ligne7": "France",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "05 00 00 00 00",
+          "mobile": "06 00 00 00 00",
+          "email": "bluecerise@test.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "GR100314",
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "CERISE",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "Mme BLUE CERISE",
+              "ligne4": "19, rue des étoiles",
+              "ligne6": "31000 PARADIS",
+              "ligne7": "France",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "AGRIFRPP882",
+              "iban": "FR7618206000062578974521458"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "GRP100314",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "CERISE",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "Mme BLUE CERISE",
+              "ligne4": "19, rue des étoiles",
+              "ligne6": "31000 PARADIS",
+              "ligne7": "France",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          },
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "codeAssureur": "baloo",
+          "libelle": "BLUE",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "%%CURRENT_YEAR%%-01-01"
+          },
+          "dateAncienneteGarantie": "2021-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "10",
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01"
+          }
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "identite": {
+        "nir": {
+          "code": "1951166104145",
+          "cle": "27"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1951166104145",
+              "cle": "27"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "111",
+              "codeCentre": "1018"
+            },
+            "periode": {
+              "debut": "2004-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19951127",
+        "rangNaissance": "1",
+        "numeroPersonne": "C7296-CAS-202",
+        "refExternePersonne": "C7296-CAS-22"
+      },
+      "dateAdhesionMutuelle": "2001-01-01",
+      "dateDebutAdhesionIndividuelle": "2001-01-01",
+      "numeroAdhesionIndividuelle": "166314001",
+      "periodes": [
+        {
+          "debut": "2001-01-01"
+        }
+      ],
+      "qualite": {
+        "code": "E",
+        "libelle": "ENFANT"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BLUE",
+          "prenom": "CRIX",
+          "civilite": "Mme"
+        },
+        "adresse": {
+          "ligne1": "Mme BLUE CERISE",
+          "ligne4": "19, rue des étoiles",
+          "ligne6": "31000 PARADIS",
+          "ligne7": "France",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "05 00 00 00 00",
+          "mobile": "06 00 00 00 00",
+          "email": "bluecerise@test.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "GR100314",
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "CERISE",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "Mme BLUE CERISE",
+              "ligne4": "19, rue des étoiles",
+              "ligne6": "31000 PARADIS",
+              "ligne7": "France",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "AGRIFRPP882",
+              "iban": "FR7618206000062578974521458"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "GRP100314",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "CERISE",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "Mme BLUE CERISE",
+              "ligne4": "19, rue des étoiles",
+              "ligne6": "31000 PARADIS",
+              "ligne7": "France",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          },
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "codeAssureur": "baloo",
+          "libelle": "BLUE",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "%%CURRENT_YEAR%%-01-01",
+            "fin": "%%CURRENT_YEAR%%-06-03"
+          },
+          "dateAncienneteGarantie": "2021-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "11",
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01"
+          }
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "identite": {
+        "nir": {
+          "code": "1951166104145",
+          "cle": "27"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1951166104145",
+              "cle": "27"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "111",
+              "codeCentre": "1018"
+            },
+            "periode": {
+              "debut": "2004-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19951127",
+        "rangNaissance": "1",
+        "numeroPersonne": "C7296-CAS-202",
+        "refExternePersonne": "C7296-CAS-22"
+      },
+      "dateAdhesionMutuelle": "2001-01-01",
+      "dateDebutAdhesionIndividuelle": "2001-01-01",
+      "numeroAdhesionIndividuelle": "166314001",
+      "periodes": [
+        {
+          "debut": "2001-01-01"
+        }
+      ],
+      "qualite": {
+        "code": "E",
+        "libelle": "ENFANT"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "BLUE",
+          "prenom": "CRIX",
+          "civilite": "Mme"
+        },
+        "adresse": {
+          "ligne1": "Mme BLUE CERISE",
+          "ligne4": "19, rue des étoiles",
+          "ligne6": "31000 PARADIS",
+          "ligne7": "France",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "05 00 00 00 00",
+          "mobile": "06 00 00 00 00",
+          "email": "bluecerise@test.com"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "GR100314",
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "CERISE",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "Mme BLUE CERISE",
+              "ligne4": "19, rue des étoiles",
+              "ligne6": "31000 PARADIS",
+              "ligne7": "France",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "AGRIFRPP882",
+              "iban": "FR7618206000062578974521458"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "GRP100314",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "BLUE",
+              "prenom": "CERISE",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "Mme BLUE CERISE",
+              "ligne4": "19, rue des étoiles",
+              "ligne6": "31000 PARADIS",
+              "ligne7": "France",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2001-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": true
+          },
+          {
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "GT_5497_A1",
+          "codeAssureur": "baloo",
+          "libelle": "BLUE",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "%%CURRENT_YEAR%%-06-04"
+          },
+          "dateAncienneteGarantie": "2021-01-01"
+        }
+      ]
+    }
+  ]
+}

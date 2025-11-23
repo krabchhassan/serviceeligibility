@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:abonnement="http://norme.cegedimassurances.com/abonnement" targetNamespace="http://norme.cegedimassurances.com/abonnement" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_service.xsd"/>
+	<xs:complexType name="type_services">
+		<xs:sequence>
+			<xs:element name="service" type="abonnement:type_service" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Code du service externe :  SDD, PEC, TARIFICATION, CARTE_TP, ...</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

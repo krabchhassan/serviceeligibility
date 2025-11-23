@@ -1,0 +1,61 @@
+{
+  "_id": "0000452433",
+  "idClientBO": "service-account-test-es16",
+  "numero": "0000452433",
+  "nom": "AMC",
+  "libelle": "KLESIA - CARCEPT",
+  "siret": "",
+  "numeroPrefectoral": "0008400004",
+  "codePartenaire": "TNR",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "pilotages": [
+    {
+      "codeService": "TPG-IS",
+      "serviceOuvert": true,
+      "couloirClient": "MAI",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "00000006565656",
+        "versionNorme": "V02",
+        "codeClient": "TEST"
+      }
+    },
+    {
+      "codeService": "PRIORISATION",
+      "serviceOuvert": true,
+      "couloirClient": "MAI"
+    },
+    {
+      "codeService": "DCLBEN",
+      "serviceOuvert": true,
+      "couloirClient": "MAI",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0000000001",
+        "versionNorme": "002",
+        "codeClient": "TEST"
+      }
+    },
+    {
+      "codeService": "VISIODROIT",
+      "serviceOuvert": true
+    },
+    {
+      "codeService": "CARTE-DEMATERIALISEE",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000Z",
+      "caracteristique": {
+      }
+    },
+    {
+      "codeService": "CARTE-TP",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000Z",
+      "caracteristique": {
+      }
+    }
+  ]
+}

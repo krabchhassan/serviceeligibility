@@ -1,0 +1,225 @@
+{
+  "idDeclarant": "0032165199",
+  "societeEmettrice": "0032165199",
+  "numero": "BLUE-3918-0809-007",
+  "numeroExterne": "SLOK4983989",
+  "numeroAdherent": "BLUE-3918-0809-007",
+  "numeroAdherentComplet": "A1",
+  "dateSouscription": "2020-01-22",
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "code": "CMU",
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Emplyés",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodesDroitsCarte": {
+      "debut": "2020-01-01",
+      "fin": "2023-12-31"
+    },
+    "dateRestitutionCarte": "2021-09-15",
+    "college": "Cadre",
+    "collectivite": "362521879",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "2810631555490",
+          "cle": "69"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2810631555490",
+              "cle": "69"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19810619",
+        "rangNaissance": "1",
+        "numeroPersonne": "288939019",
+        "refExternePersonne": "7909738ADF"
+      },
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "periodes": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMASTE",
+          "prenom": "MARIANNE",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "MME DELMAS Marianne",
+          "ligne2": "RESIDENCE DES PETUNIAS",
+          "ligne4": "21 RUE DE LA COMMUNE",
+          "ligne6": "31120 PINSAGUEL",
+          "ligne7": "FRANCE",
+          "codePostal": "31120"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "mDELMAS@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP0101",
+            "nom": {
+              "nomFamille": "DELMAS",
+              "prenom": "MARIANNE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne",
+              "ligne2": "RESIDENCE DES PETUNIAS",
+              "ligne4": "21 RUE DE LA COMMUNE",
+              "ligne6": "31120 PINSAGUEL",
+              "ligne7": "FRANCE",
+              "codePostal": "31120"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP0103",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "test@test.com",
+              "mobile": "0600000000"
+            },
+            "nom": {
+              "nomFamille": "DELMAS",
+              "prenom": "MARIANNE",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "MME DELMAS Marianne",
+              "ligne2": "RESIDENCE DES PETUNIAS",
+              "ligne4": "21 RUE DE LA COMMUNE",
+              "ligne6": "31120 PINSAGUEL",
+              "ligne7": "FRANCE",
+              "codePostal": "31120"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "email": "jp-DELMAS@gagamil.coum",
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "KC_PlatineBase",
+          "codeAssureur": "TEST BLUE",
+          "libelle": "KC_PlatineBase",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "dateAncienneteGarantie": "2020-01-01"
+        }
+      ]
+    }
+  ],
+  "version": "5",
+  "periodesDroitsComptables": [
+    {
+      "periode": {
+        "debut": "2020-01-01"
+      },
+      "etat": "Ouverture"
+    }
+  ]
+}

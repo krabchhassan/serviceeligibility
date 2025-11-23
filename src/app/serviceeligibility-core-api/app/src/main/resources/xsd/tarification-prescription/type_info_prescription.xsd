@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="type_info_prestation.xsd"/>
+	<xs:complexType name="type_info_prescription">
+		<xs:sequence>
+			<xs:element name="id_prescription">
+				<xs:annotation>
+					<xs:documentation>Numéro ordre prescription</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="date_prescription" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date de la prescription</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ps_prescripteur" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Identifiant du prescripteur</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="origine_prescription" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Origine de la prescription
+
+T - prescription tablie par le mdecin traitant
+O - prescription tablie par un mdecin correspondant
+P - prescription tablie dans une autre situation du          parcours de soins
+S - prescription tablie hors parcours de soins
+A - Renouvellement Adapt (cas de l'optique)
+I - Renouvellement  l'Identique de la prescription      Initiale (cas de l'optique)
+H - Hors prescription
+</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="T"/>
+						<xs:enumeration value="O"/>
+						<xs:enumeration value="P"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="I"/>
+						<xs:enumeration value="H"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dispositif_prevention" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Dispositif de prévention</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="date_dispositif_prevention" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date du dispositif de prévention</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nature_operation" default="1">
+				<xs:annotation>
+					<xs:documentation>Nature de l'opération
+Valeur 1 par défaut</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="date_facturation" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date de facturation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nature_assurance">
+				<xs:annotation>
+					<xs:documentation>Nature de l'assurance</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_facture">
+				<xs:annotation>
+					<xs:documentation>Total facturé</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_ro_prescription">
+				<xs:annotation>
+					<xs:documentation>Somme montant RO Info Prestations</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_rc_prescription">
+				<xs:annotation>
+					<xs:documentation>Somme montant RC Info Prestations</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="total_rac_prescription">
+				<xs:annotation>
+					<xs:documentation>Total RAC assuré prescription calculé sur poste PS</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nombre_prestations">
+				<xs:annotation>
+					<xs:documentation>Nombre d'entités infoPrestation de la prescription</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="infoPrestation" type="type_info_prestation" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- xs:complexType name="type_info_prestation"> <xs:sequence> <xs:element 
+		name="infoPrestation" type="type_info_prestation" minOccurs="1" maxOccurs="unbounded"/> 
+		</xs:sequence> </xs:complexType> -->
+</xs:schema>

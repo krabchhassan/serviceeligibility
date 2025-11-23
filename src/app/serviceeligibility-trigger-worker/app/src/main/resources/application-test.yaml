@@ -1,0 +1,83 @@
+beyond:
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+  service: bdds
+  socle: Insurance
+  event:
+    group-id: "bdds-consildation-contrat-worker-test"
+    schema-url: "https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi15/events"
+    validate: true
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+server:
+  forward-headers-strategy: framework
+  error:
+    whitelabel:
+      enabled: 'false'
+    path: servererror
+  port: '8085'
+  compression:
+    enabled: 'true'
+    mime-types: application/json
+  http2:
+    enabled: 'true'
+spring:
+  aop:
+    proxy-target-class: 'true'
+  application:
+    name: serviceeligibility-trigger-worker
+  kafka:
+    consumer:
+      group-id: tests-bdds
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: 'false'
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-secret: ${CLIENT_SECRET:nn6SAeEsmeij97djO5bSHs6rEjdw5cgd}
+            client-id: ${CLIENT_ID:test-es16}
+            authorization-grant-type: client_credentials
+        provider:
+          keycloak:
+            token-uri: ${keycloak_auth_server_url:https://idp.dev.beyond.cegedim.cloud/auth}/realms/${keycloak_realm:htp}/protocol/openid-connect/token
+      resourceserver:
+        jwt:
+          issuer-uri: ${keycloak_auth_server_url:https://idp.dev.beyond.cegedim.cloud/auth}/realms/${keycloak_realm:htp}
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/next-serviceeligibility-core-api
+springdoc:
+  swagger-ui:
+    path: /doc/
+    display-request-duration: 'true'
+    groups-order: desc
+    tags-sorter: alpha
+  api-docs:
+    path: /doc/api-docs
+    groups:
+      enabled: 'true'
+    enabled: ${API_INFO_ENABLE:false}
+logging:
+  level:
+    com:
+      cegedim: debug
+kafka:
+  topic:
+    beyond:
+      events: beyond-events
+    beyond-events: events
+CLOUD_PROVIDER: home
+TARGET_ENV: local
+KAFKA_TOPIC_BDD-BENEFAI: bdd-benefai
+KAFKA_TOPIC_BDD-DECL: bdd-decl

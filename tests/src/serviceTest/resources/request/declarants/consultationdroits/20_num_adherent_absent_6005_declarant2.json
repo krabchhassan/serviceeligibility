@@ -1,0 +1,9 @@
+{
+"_id" : "0000000001",
+"_class" : "com.cegedimactiv.basededroit.entity.DeclarantAMC",
+"numeroRNM" : "0000000001",
+"isInscritDansAnnuaireAMC" : false,
+"nom" : "TNR",
+"libelle" : "TNR",
+"numeroPrefectoral" : "0000000001"
+}

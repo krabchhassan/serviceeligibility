@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:ns="http://ws.cegedimassurance.com/servicestarificationprescription/wsdl"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:tarification-prescription="http://norme.cegedimassurances.com/tarification-prescription" 
+	targetNamespace="http://ws.cegedimassurance.com/servicestarificationprescription/wsdl">
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://ws.cegedimassurance.com/servicestarificationprescription/wsdl">
+		</xsd:schema>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://norme.cegedimassurances.com/tarification-prescription"	schemaLocation="../xsd/tarification-prescription/getTarification_in.xsd"/>
+			<xsd:import namespace="http://norme.cegedimassurances.com/tarification-prescription"	schemaLocation="../xsd/tarification-prescription/getTarification_out.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="getTarifRequest">
+		<wsdl:part name="getTarification_in" type="tarification-prescription:getTarification_in" />
+	</wsdl:message>
+
+	<wsdl:message name="getTarifResponse">
+		<wsdl:part name="getTarification_out" type="tarification-prescription:getTarification_out" />
+	</wsdl:message>
+	
+<!-- 	<wsdl:message name="getAnnulationRequest"> -->
+<!-- 		<wsdl:part name="requete_annulation_pec" type="tarification:requete_annulation_pec" /> -->
+<!-- 	</wsdl:message> -->
+
+<!-- 	<wsdl:message name="getAnnulationResponse"> -->
+<!-- 		<wsdl:part name="reponse_annulation_pec" type="tarification:reponse_annulation_pec" /> -->
+<!-- 	</wsdl:message> -->
+
+
+	<wsdl:portType name="ServicesTarificationprescription">
+		<wsdl:operation name="getDevis">
+			<wsdl:documentation>Appel du service de devis de la tarification</wsdl:documentation>
+			<wsdl:input message="ns:getTarifRequest" />
+			<wsdl:output message="ns:getTarifResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="getPec">
+			<wsdl:documentation>Appel du service prise en charge de la tarification. Dans le header de la réponse doit être renseigné le numéro d'accréditation.</wsdl:documentation>
+			<wsdl:input message="ns:getTarifRequest" />
+			<wsdl:output message="ns:getTarifResponse" />
+		</wsdl:operation>
+<!-- 		<wsdl:operation name="annulePec"> -->
+<!-- 			<wsdl:documentation>Appel du service d'annulation de la prise en charge.</wsdl:documentation> -->
+<!-- 			<wsdl:input message="ns:getAnnulationRequest" /> -->
+<!-- 			<wsdl:output message="ns:getAnnulationResponse" /> -->
+<!-- 		</wsdl:operation> -->
+	</wsdl:portType>
+
+	<wsdl:binding name="ServicesTarificationBinding" type="ns:ServicesTarificationprescription">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getDevis">
+			<soap:operation
+				soapAction="http://ws.cegedimassurance.com/servicestarificationprescription/wsdl/getDevis" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getPec">
+			<soap:operation
+				soapAction="http://ws.cegedimassurance.com/servicestarificationprescription/wsdl/getPec" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+<!-- 		<wsdl:operation name="annulePec"> -->
+<!-- 			<soap:operation -->
+<!-- 				soapAction="http://ws.cegedimassurance.com/servicestarification/wsdl/annulePec" /> -->
+<!-- 			<wsdl:input> -->
+<!-- 				<soap:body use="literal" /> -->
+<!-- 			</wsdl:input> -->
+<!-- 			<wsdl:output> -->
+<!-- 				<soap:body use="literal" /> -->
+<!-- 			</wsdl:output> -->
+<!-- 		</wsdl:operation> -->
+	</wsdl:binding>
+
+	<wsdl:service name="FSIQServicesTarification">
+		<wsdl:port binding="ns:ServicesTarificationBinding" name="ServicesTarificationPort">
+			<soap:address
+				location="http://fsiq.services-fm.net/wa-tarification/services/services-tarification-prescription/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

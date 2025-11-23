@@ -1,0 +1,220 @@
+{
+  "bool" : {
+    "must" : [
+      {
+        "bool" : {
+          "should" : [
+            {
+              "wildcard" : {
+                "identite.nir.code" : {
+                  "wildcard" : "1880312454169",
+                  "case_insensitive" : true,
+                  "boost" : 1.0
+                }
+              }
+            },
+            {
+              "wildcard" : {
+                "identite.affiliationsRO.nir.code" : {
+                  "wildcard" : "1880312454169",
+                  "case_insensitive" : true,
+                  "boost" : 1.0
+                }
+              }
+            }
+          ],
+          "adjust_pure_negative" : true,
+          "boost" : 1.0
+        }
+      },
+      {
+        "bool" : {
+          "should" : [
+            {
+              "match" : {
+                "identite.dateNaissance" : {
+                  "query" : "19880310",
+                  "operator" : "OR",
+                  "prefix_length" : 0,
+                  "max_expansions" : 50,
+                  "fuzzy_transpositions" : true,
+                  "lenient" : false,
+                  "zero_terms_query" : "NONE",
+                  "auto_generate_synonyms_phrase_query" : true,
+                  "boost" : 1.0
+                }
+              }
+            },
+            {
+              "match" : {
+                "identite.historiqueDateRangNaissance.dateNaissance" : {
+                  "query" : "19880310",
+                  "operator" : "OR",
+                  "prefix_length" : 0,
+                  "max_expansions" : 50,
+                  "fuzzy_transpositions" : true,
+                  "lenient" : false,
+                  "zero_terms_query" : "NONE",
+                  "auto_generate_synonyms_phrase_query" : true,
+                  "boost" : 1.0
+                }
+              }
+            }
+          ],
+          "adjust_pure_negative" : true,
+          "boost" : 1.0
+        }
+      },
+      {
+        "match" : {
+          "identite.rangNaissance" : {
+            "query" : "1",
+            "operator" : "OR",
+            "prefix_length" : 0,
+            "max_expansions" : 50,
+            "fuzzy_transpositions" : true,
+            "lenient" : false,
+            "zero_terms_query" : "NONE",
+            "auto_generate_synonyms_phrase_query" : true,
+            "boost" : 1.0
+          }
+        }
+      },
+      {
+        "match" : {
+          "amc.idDeclarant" : {
+            "query" : "0000441166",
+            "operator" : "OR",
+            "prefix_length" : 0,
+            "max_expansions" : 50,
+            "fuzzy_transpositions" : true,
+            "lenient" : false,
+            "zero_terms_query" : "NONE",
+            "auto_generate_synonyms_phrase_query" : true,
+            "boost" : 1.0
+          }
+        }
+      },
+      {
+        "nested" : {
+          "query" : {
+            "bool" : {
+              "must" : [
+                {
+                  "bool" : {
+                    "should" : [
+                      {
+                        "match_phrase_prefix" : {
+                          "contrats.data.nom.nomFamille" : {
+                            "query" : "robert",
+                            "slop" : 0,
+                            "max_expansions" : 50,
+                            "zero_terms_query" : "NONE",
+                            "boost" : 1.0
+                          }
+                        }
+                      },
+                      {
+                        "match_phrase_prefix" : {
+                          "contrats.data.nom.nomUsage" : {
+                            "query" : "robert",
+                            "slop" : 0,
+                            "max_expansions" : 50,
+                            "zero_terms_query" : "NONE",
+                            "boost" : 1.0
+                          }
+                        }
+                      }
+                    ],
+                    "adjust_pure_negative" : true,
+                    "boost" : 1.0
+                  }
+                },
+                {
+                  "match_phrase" : {
+                    "contrats.data.nom.prenom" : {
+                      "query" : "oscar",
+                      "slop" : 0,
+                      "zero_terms_query" : "NONE",
+                      "boost" : 1.0
+                    }
+                  }
+                },
+                {
+                  "wildcard" : {
+                    "contrats.numeroAdherent" : {
+                      "wildcard" : "009831004",
+                      "boost" : 1.0
+                    }
+                  }
+                },
+                {
+                  "match" : {
+                    "contrats.numeroContrat" : {
+                      "query" : "112831296",
+                      "operator" : "OR",
+                      "prefix_length" : 0,
+                      "max_expansions" : 50,
+                      "fuzzy_transpositions" : true,
+                      "lenient" : false,
+                      "zero_terms_query" : "NONE",
+                      "auto_generate_synonyms_phrase_query" : true,
+                      "boost" : 1.0
+                    }
+                  }
+                },
+                {
+                  "match" : {
+                    "contrats.data.adresse.codePostal" : {
+                      "query" : "31000",
+                      "operator" : "OR",
+                      "prefix_length" : 0,
+                      "max_expansions" : 50,
+                      "fuzzy_transpositions" : true,
+                      "lenient" : false,
+                      "zero_terms_query" : "NONE",
+                      "auto_generate_synonyms_phrase_query" : true,
+                      "boost" : 1.0
+                    }
+                  }
+                },
+                {
+                  "match" : {
+                    "contrats.societeEmettrice" : {
+                      "query" : "SUD",
+                      "operator" : "OR",
+                      "prefix_length" : 0,
+                      "max_expansions" : 50,
+                      "fuzzy_transpositions" : true,
+                      "lenient" : false,
+                      "zero_terms_query" : "NONE",
+                      "auto_generate_synonyms_phrase_query" : true,
+                      "boost" : 1.0
+                    }
+                  }
+                }
+              ],
+              "adjust_pure_negative" : true,
+              "boost" : 1.0
+            }
+          },
+          "path" : "contrats",
+          "ignore_unmapped" : false,
+          "score_mode" : "sum",
+          "boost" : 1.0,
+          "inner_hits" : {
+            "ignore_unmapped" : false,
+            "from" : 0,
+            "size" : 0,
+            "version" : false,
+            "seq_no_primary_term" : false,
+            "explain" : false,
+            "track_scores" : false
+          }
+        }
+      }
+    ],
+    "adjust_pure_negative" : true,
+    "boost" : 1.0
+  }
+}

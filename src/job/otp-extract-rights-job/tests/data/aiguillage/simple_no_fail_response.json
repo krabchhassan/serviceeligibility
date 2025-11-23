@@ -1,0 +1,33 @@
+{
+    "content": {
+        "123456789-20200101-20210101": [
+            {
+                "inseeCode": "123456789",
+                "birthDate": "20200101",
+                "birthRank": "1",
+                "insurerId": "1"
+            },
+            {
+                "inseeCode": "123456789",
+                "birthDate": "20200101",
+                "birthRank": "1",
+                "insurerId": "2"
+            },
+            {
+                "inseeCode": "123456789",
+                "birthDate": "20200101",
+                "birthRank": "2",
+                "insurerId": "1"
+            }
+        ],
+      "987654321-20200101-20210101": [
+            {
+                "inseeCode": "987654321",
+                "birthDate": "20200101",
+                "birthRank": "1",
+                "insurerId": "1"
+            }
+      ]
+    },
+    "errors": {}
+}

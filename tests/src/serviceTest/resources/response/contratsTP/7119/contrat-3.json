@@ -1,0 +1,1076 @@
+{
+    "beneficiaires" : [
+        {
+            "domaineDroits" : [
+                {
+                    "code" : "HOSP",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "HOSP-021-100",
+                                            "formulaMask" : "100% TR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "HOSPITALISATION",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "021",
+                                                                "parametres" : [
+                                                                    {
+                                                                        "numero" : "3",
+                                                                        "valeur" : "100"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "AUDI",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "AUDI-021-50",
+                                            "formulaMask" : "50% TR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "AUDIOLOGIE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "50",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "021",
+                                                                "parametres" : [
+                                                                    {
+                                                                        "numero" : "3",
+                                                                        "valeur" : "50"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "DENT",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "DENT-010",
+                                            "formulaMask" : " 100% FR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "DENTAIRE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "010",
+                                                                "parametres" : [
+
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "PHAR",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "PHAR-010",
+                                            "formulaMask" : " 100% FR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "PHARMACIE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Declaration de droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "DE"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "010",
+                                                                "parametres" : [
+
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "dateRadiation" : "2025/02/28",
+            "dateNaissance" : "19950208",
+            "rangNaissance" : "1",
+            "nirBeneficiaire" : "2950269081223",
+            "cleNirBeneficiaire" : "73",
+            "nirOd1" : "2950269081223",
+            "cleNirOd1" : "73",
+            "numeroPersonne" : "817916",
+            "refExternePersonne" : "690823",
+            "rangAdministratif" : "1",
+            "modePaiementPrestations" : "V",
+            "dateAdhesionMutuelle" : "2023/01/01",
+            "dateDebutAdhesionIndividuelle" : "2023/01/01",
+            "dernierMouvementRecu" : "R",
+            "affiliation" : {
+                "nom" : "BLUE_TEST",
+                "nomPatronymique" : "BLUE_TEST",
+                "nomMarital" : "BLUE_TEST",
+                "prenom" : "0001",
+                "civilite" : "MME",
+                "periodeDebut" : "2023/01/01",
+                "qualite" : "A",
+                "regimeOD1" : "01",
+                "caisseOD1" : "131",
+                "hasMedecinTraitant" : false,
+                "isBeneficiaireACS" : false,
+                "isTeleTransmission" : true,
+                "typeAssure" : "Assuré principal"
+            },
+            "adresses" : [
+                {
+                    "ligne1" : "Madame BLUE_TEST 0001",
+                    "ligne4" : "45 RUE DU TEST",
+                    "ligne6" : "13009 MARSEILLE",
+                    "codePostal" : "13009",
+                    "telephone" : "0628232173",
+                    "email" : "0001.BLUE_TEST@gmail.com",
+                    "typeAdresse" : {
+                        "type" : "AD"
+                    }
+                }
+            ],
+            "affiliationsRO" : [
+                {
+                    "nir" : {
+                        "code" : "2950269081223",
+                        "cle" : "73"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "01",
+                        "codeCaisse" : "131"
+                    },
+                    "periode" : {
+                        "debut" : "2023/01/01"
+                    }
+                },
+                {
+                    "nir" : {
+                        "code" : "2950269081223",
+                        "cle" : "73"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "01",
+                        "codeCaisse" : "131"
+                    },
+                    "periode" : {
+                        "debut" : "2019/01/23",
+                        "fin" : "2022/12/31"
+                    }
+                }
+            ],
+            "teletransmissions" : [
+                {
+                    "periode" : {
+                        "debut" : "2023/01/01"
+                    },
+                    "isTeletransmission" : true
+                }
+            ]
+        },
+        {
+            "domaineDroits" : [
+                {
+                    "code" : "HOSP",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "HOSP-021-100",
+                                            "formulaMask" : "100% TR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "HOSPITALISATION",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Fermeture droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "FE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "021",
+                                                                "parametres" : [
+                                                                    {
+                                                                        "numero" : "3",
+                                                                        "valeur" : "100"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "AUDI",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "AUDI-021-50",
+                                            "formulaMask" : "50% TR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "AUDIOLOGIE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Fermeture droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "FE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "50",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "021",
+                                                                "parametres" : [
+                                                                    {
+                                                                        "numero" : "3",
+                                                                        "valeur" : "50"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "DENT",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "DENT-010",
+                                            "formulaMask" : " 100% FR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "DENTAIRE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Fermeture droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "FE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "010",
+                                                                "parametres" : [
+
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "code" : "PHAR",
+                    "garanties" : [
+                        {
+                            "codeGarantie" : "GT_5497_A1",
+                            "libelleGarantie" : "Garantie frais de santé",
+                            "codeAssureurGarantie" : "baloo",
+                            "dateAdhesionCouverture" : "2023/01/01",
+                            "produits" : [
+                                {
+                                    "codeProduit" : "1472_AJOUT_01_P01",
+                                    "codeOffre" : "1472_AJOUT_01",
+                                    "codeOc" : "BALOO",
+                                    "referencesCouverture" : [
+                                        {
+                                            "referenceCouverture" : "PHAR-010",
+                                            "formulaMask" : " 100% FR ",
+                                            "naturesPrestation" : [
+                                                {
+                                                    "naturePrestation" : "PHARMACIE",
+                                                    "periodesDroit" : [
+                                                        {
+                                                            "typePeriode" : "OFFLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28",
+                                                            "periodeFinFermeture" : "2025/12/31",
+                                                            "libelleEvenement" : "Fermeture droits",
+                                                            "modeObtention" : "M",
+                                                            "motifEvenement" : "FE"
+                                                        },
+                                                        {
+                                                            "typePeriode" : "ONLINE",
+                                                            "periodeDebut" : "2025/01/01",
+                                                            "periodeFin" : "2025/02/28"
+                                                        }
+                                                    ],
+                                                    "remboursements" : [
+                                                        {
+                                                            "tauxRemboursement" : "100",
+                                                            "uniteTauxRemboursement" : "PO",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prioritesDroit" : [
+                                                        {
+                                                            "code" : "01",
+                                                            "libelle" : "01",
+                                                            "typeDroit" : "01",
+                                                            "prioriteBO" : "01",
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "conventionnements" : [
+                                                        {
+                                                            "priorite" : 0,
+                                                            "typeConventionnement" : {
+                                                                "code" : "IS",
+                                                                "libelle" : "iSante"
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "prestations" : [
+                                                        {
+                                                            "code" : "DEF",
+                                                            "isEditionRisqueCarte" : false,
+                                                            "formule" : {
+                                                                "numero" : "010",
+                                                                "parametres" : [
+
+                                                                ]
+                                                            },
+                                                            "periodes" : [
+                                                                {
+                                                                    "debut" : "2025/01/01",
+                                                                    "fin" : "2025/02/28"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "dateRadiation" : "2025/02/28",
+            "dateNaissance" : "19950126",
+            "rangNaissance" : "1",
+            "nirBeneficiaire" : "1950113155685",
+            "cleNirBeneficiaire" : "04",
+            "nirOd1" : "1950113155685",
+            "cleNirOd1" : "04",
+            "numeroPersonne" : "144020",
+            "refExternePersonne" : "1136289",
+            "rangAdministratif" : "11",
+            "modePaiementPrestations" : "V",
+            "dateAdhesionMutuelle" : "2023/01/01",
+            "dateDebutAdhesionIndividuelle" : "2023/01/01",
+            "dernierMouvementRecu" : "R",
+            "affiliation" : {
+                "nom" : "BLUE_TEST",
+                "nomPatronymique" : "BLUE_TEST",
+                "nomMarital" : "BLUE_TEST",
+                "prenom" : "CONJ",
+                "civilite" : "M",
+                "periodeDebut" : "2023/01/01",
+                "periodeFin" : "2025/03/31",
+                "qualite" : "C",
+                "regimeOD1" : "06",
+                "caisseOD1" : "200",
+                "hasMedecinTraitant" : false,
+                "isBeneficiaireACS" : false,
+                "isTeleTransmission" : true,
+                "typeAssure" : "Conjoint/Concubin"
+            },
+            "adresses" : [
+                {
+                    "ligne1" : "Madame BLUE_TEST 0001",
+                    "ligne4" : "45 RUE DU TEST",
+                    "ligne6" : "13009 MARSEILLE",
+                    "codePostal" : "13009",
+                    "telephone" : "07 66 21 31 27",
+                    "email" : "CONJ.BLUE_TEST@supmaritime.fr",
+                    "typeAdresse" : {
+                        "type" : "AD"
+                    }
+                }
+            ],
+            "affiliationsRO" : [
+                {
+                    "nir" : {
+                        "code" : "1950113155685",
+                        "cle" : "04"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "06",
+                        "codeCaisse" : "200"
+                    },
+                    "periode" : {
+                        "debut" : "2023/01/01"
+                    }
+                },
+                {
+                    "nir" : {
+                        "code" : "1950113155685",
+                        "cle" : "04"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "06",
+                        "codeCaisse" : "200"
+                    },
+                    "periode" : {
+                        "debut" : "2022/07/01"
+                    }
+                },
+                {
+                    "nir" : {
+                        "code" : "1950113155685",
+                        "cle" : "04"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "06",
+                        "codeCaisse" : "200"
+                    },
+                    "periode" : {
+                        "debut" : "2022/01/13",
+                        "fin" : "2022/06/30"
+                    }
+                },
+                {
+                    "nir" : {
+                        "code" : "1950113155685",
+                        "cle" : "04"
+                    },
+                    "rattachementRO" : {
+                        "codeRegime" : "06",
+                        "codeCaisse" : "200"
+                    },
+                    "periode" : {
+                        "debut" : "2021/11/01",
+                        "fin" : "2022/12/31"
+                    }
+                }
+            ],
+            "teletransmissions" : [
+                {
+                    "periode" : {
+                        "debut" : "2023/01/01"
+                    },
+                    "isTeletransmission" : true
+                }
+            ]
+        }
+    ],
+    "idDeclarant" : "0000401166",
+    "numeroContrat" : "0690823",
+    "numeroAdherent" : "0690823",
+    "numeroAdherentComplet" : "0690823",
+    "dateSouscription" : "2023/01/01",
+    "dateResiliation" : "2025/03/01",
+    "type" : "B",
+    "nomPorteur" : "BLUE_TEST",
+    "prenomPorteur" : "0001",
+    "civilitePorteur" : "MME",
+    "qualification" : "B",
+    "numeroContratCollectif" : "78292123318286",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "individuelOuCollectif" : "2",
+    "typeConvention" : "IS",
+    "numeroExterneContratIndividuel" : "0690823",
+    "numeroExterneContratCollectif" : "2714022000000Q95SOCLE",
+    "gestionnaire" : "000ER00955",
+    "numOperateur" : "IS",
+    "ordrePriorisation" : "1",
+    "contratCMUC2S" : "0",
+    "origineDeclaration" : "Event",
+    "identifiantCollectivite" : "782921233",
+    "raisonSociale" : "INSTITUT PAOLI CALMETTES",
+    "siret" : "78292123300014",
+    "groupePopulation" : "00",
+    "periodeResponsableOuverts" : [
+        {
+            "debut" : "2023/01/01"
+        }
+    ],
+    "carteTPaEditerOuDigitale" : "4",
+    "_class" : "com.cegedim.next.serviceeligibility.core.model.domain.contract.ContractTP"
+}

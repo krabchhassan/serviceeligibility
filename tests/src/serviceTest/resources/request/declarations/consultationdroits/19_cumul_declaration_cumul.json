@@ -1,0 +1,1098 @@
+{
+  "referenceExterne" : null,
+  "codeEtat" : "V",
+  "effetDebut": "2020-01-10T00:10:05.015Z",
+  "idDeclarant" : "0000452433",
+  "isCarteTPaEditer" : true,
+  "nomFichierOrigine" : "igk_hkur02_R_TDB_01_20210217_AC134.CE041S01.PROQUO-AC134.PROQUO.17004.20210217-083059.OK",
+  "dateCreation": "2020-01-10T00:10:05.015Z",
+  "userCreation" : "job605",
+  "dateModification": "2020-01-10T00:10:05.015Z",
+  "userModification" : "job605",
+  "versionDeclaration" : "V02",
+  "beneficiaire" : {
+    "dateNaissance" : "19881122",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "2881199350342",
+    "cleNirBeneficiaire" : "97",
+    "nirOd1" : "2881199350342",
+    "cleNirOd1" : "97",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "00326694",
+    "refExternePersonne" : "00326694",
+    "affiliation" : {
+      "nom" : "MORICE",
+      "nomPatronymique" : "MORICE",
+      "nomMarital" : "MORICE",
+      "prenom" : "SOUNDOUS",
+      "civilite" : null,
+      "periodeDebut" : "2017/01/01",
+      "periodeFin" : null,
+      "qualite" : "C",
+      "regimeOD1" : "01",
+      "caisseOD1" : "561",
+      "centreOD1" : null,
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "CONJOI"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "Monsieur MORICE JULIEN",
+        "ligne2" : null,
+        "ligne3" : null,
+        "ligne4" : "9 RUE DE TOMBOUCTOU",
+        "ligne5" : null,
+        "ligne6" : "56100 LORIENT",
+        "ligne7" : null,
+        "codePostal" : "56100",
+        "telephone" : "06 86 61 32 03",
+        "email" : "julienmorice@neuf.fr",
+        "typeAdresse" : {
+          "libelle" : null,
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "K0203343",
+    "dateSouscription" : "2017/01/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "MORICE",
+    "prenomPorteur" : "JULIEN",
+    "civilitePorteur" : "M",
+    "numeroAdherent" : "K0203343",
+    "numeroAdherentComplet" : null,
+    "qualification" : "B",
+    "numeroContratCollectif" : "K0200838",
+    "rangAdministratif" : "11",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "2",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "C",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "KLE",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "K0203343",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "KLESIAP",
+    "groupeAssures" : "0SOUS",
+    "numeroCarte" : "000000006432045",
+    "editeurCarte" : "",
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : null,
+    "numOperateur" : null
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHNO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "PHNO2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHNO-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "02",
+        "libelle" : "02",
+        "typeDroit" : "02",
+        "prioriteBO" : "02"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "015.50"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHNO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLERENF0",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLR0KP2",
+      "libelleProduit" : "KPS2 Renfort 0",
+      "codeGarantie" : "KLERENF0",
+      "libelleGarantie" : "RENFORT 0",
+      "codeProfil" : "PHNO2A0",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHNO-02A-0",
+      "origineDroits" : "",
+      "noOrdreDroit" : 2,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "034.50"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHCO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "PHCO2A0",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHCO-02A-0",
+      "origineDroits" : "",
+      "noOrdreDroit" : 3,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "030.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHCO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLERENF0",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLR0KP2",
+      "libelleProduit" : "KPS2 Renfort 0",
+      "codeGarantie" : "KLERENF0",
+      "libelleGarantie" : "RENFORT 0",
+      "codeProfil" : "PHCO2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHCO-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 4,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "02",
+        "libelle" : "02",
+        "typeDroit" : "01",
+        "prioriteBO" : "02"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "80.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHOR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLERENF0",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLR0KP2",
+      "libelleProduit" : "KPS2 Renfort 0",
+      "codeGarantie" : "KLERENF0",
+      "libelleGarantie" : "RENFORT 0",
+      "codeProfil" : "PHOR2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2021/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHOR-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 5,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "050.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHOR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "PHOR2A0",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHOR-02A-0",
+      "origineDroits" : "",
+      "noOrdreDroit" : 6,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "070.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "MEDE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "MEDE2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "MEDE-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 7,
+      "categorie" : "MED",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "CSSE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "CSSE2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "CSSE-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 8,
+      "categorie" : "CSSE",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "SVIL",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "SVIL2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "SVIL-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 9,
+      "categorie" : "SVIL",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "TRAN",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "TRAN2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "TRAN-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 10,
+      "categorie" : "TRAN",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DESO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "DESO2A100",
+      "libelleCodeRenvoi" : "KIS1",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "DESO-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 11,
+      "categorie" : "DENT",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DEPR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "DEPR99PEC",
+      "libelleCodeRenvoi" : "KIS2",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "DEPR-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 12,
+      "categorie" : "DENT",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        },
+        {
+          "priorite" : 2,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DEOR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "DEOR99PEC",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "DEOR-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 14,
+      "categorie" : "DENT",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "HOSP99PEC",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "HOSP-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 15,
+      "categorie" : "HOSP",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "OPAU",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "KLEKPSANI",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "KLSKP2ANI",
+      "libelleProduit" : "BASE ANI",
+      "codeGarantie" : "KLEKPSANI",
+      "libelleGarantie" : "BASE ANI",
+      "codeProfil" : "OPAU99PEC",
+      "libelleCodeRenvoi" : "KIS2",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2017/01/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "OPAU-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 16,
+      "categorie" : "OPAU",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "42",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2021/02/17",
+        "periodeFin" : "2021/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        },
+        {
+          "priorite" : 2,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    }
+  ]
+}

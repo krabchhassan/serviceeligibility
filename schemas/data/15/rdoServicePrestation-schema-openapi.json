@@ -1,0 +1,301 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "rdoServicePrestation",
+      "description": "Rdo Service prestation"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "RdoServicePrestation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "Clé de l'objet"
+          },
+          "servicePrestationsRdo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ServicePrestationsRdo"
+            }
+          }
+        },
+        "required": [],
+        "title": "Rdo Service Prestation"
+      },
+      "ServicePrestationsRdo": {
+        "type": "object",
+        "properties": {
+          "contrats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "idDeclarant": {
+                  "type": "string",
+                  "description": "Organisation principale"
+                },
+                "numero": {
+                  "type": "string",
+                  "description": "Numéro du contrat"
+                },
+                "numeroAdherent": {
+                  "type": "string",
+                  "description": "Numéro d'adhérent"
+                },
+                "dateSouscription": {
+                  "type": "string",
+                  "description": "Date de souscription du contrat",
+                  "format": "date"
+                },
+                "dateResiliation": {
+                  "type": "string",
+                  "description": "Date de résiliation du contrat",
+                  "format": "date"
+                },
+                "ordrePriorisation": {
+                  "type": "string",
+                  "description": "Ordre de priorisation du contrat"
+                },
+                "assure": {
+                  "$ref": "#/components/schemas/Assure"
+                }
+              },
+              "required": [
+                "idDeclarant",
+                "numero",
+                "numeroAdherent",
+                "dateSouscription",
+                "ordrePriorisation",
+                "assure"
+              ]
+            }
+          }
+        }
+      },
+      "Assure": {
+        "type": "object",
+        "properties": {
+          "rangAdministratif": {
+            "type": "string",
+            "description": "Rang administratif de l'assuré"
+          },
+          "identite": {
+            "type": "object",
+            "properties": {
+              "nir": {
+                "$ref": "#/components/schemas/Nir"
+              },
+              "dateNaissance": {
+                "type": "string",
+                "description": "Date de naissance de l'assuré",
+                "format": "date"
+              },
+              "rangNaissance": {
+                "type": "string",
+                "description": "Rang de naissance de l'assuré"
+              },
+              "numeroPersonne": {
+                "type": "string",
+                "description": "Numéro de personne"
+              }
+            },
+            "required": [
+              "nir",
+              "dateNaissance",
+              "rangNaissance",
+              "numeroPersonne"
+            ]
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "destinatairesRelevePrestations": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/DestinataireRelevePrestationsV5"
+                }
+              }
+            },
+            "required": [
+              "destinatairesRelevePrestations"
+            ]
+          },
+          "droits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Droit"
+            }
+          }
+        },
+        "required": [
+          "rangAdministratif",
+          "identite",
+          "data"
+        ]
+      },
+      "Nir": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du nir"
+          }
+        },
+        "required": [
+          "code"
+        ]
+      },
+      "Droit": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code du droit"
+          },
+          "codeAssureur": {
+            "type": "string",
+            "description": "Code de l'assureur"
+          }
+        },
+        "required": [
+          "code",
+          "codeAssureur"
+        ]
+      },
+      "DestinataireRelevePrestationsV5": {
+        "type": "object",
+        "properties": {
+          "idDestinataireRelevePrestations": {
+            "type": "string",
+            "description": "Identifiant du destinataire du relevé de prestations"
+          },
+          "idBeyondDestinataireRelevePrestations": {
+            "type": "string",
+            "description": "Identifiant complémentaire du destinataire du relevé de prestations"
+          },
+          "dematerialisation": {
+            "type": "object",
+            "properties": {
+              "isDematerialise": {
+                "type": "boolean",
+                "description": "Indicateur de dématérialisation"
+              },
+              "email": {
+                "type": "string",
+                "description": "Adresse email pour la dématérialisation"
+              },
+              "mobile": {
+                "type": "string",
+                "description": "Numéro de mobile pour la dématérialisation"
+              }
+            },
+            "required": [
+              "isDematerialise"
+            ]
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataireV3"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/AdresseAssure"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/Periode"
+          }
+        },
+        "required": [
+          "idDestinataireRelevePrestations",
+          "nom",
+          "adresse",
+          "periode"
+        ]
+      },
+      "NomDestinataireV3": {
+        "type": "object",
+        "properties": {
+          "nomFamille": {
+            "type": "string",
+            "description": "Nom de famille du destinataire"
+          },
+          "nomUsage": {
+            "type": "string",
+            "description": "Nom d'usage du destinataire"
+          },
+          "prenom": {
+            "type": "string",
+            "description": "Prénom du destinataire"
+          },
+          "civilite": {
+            "type": "string",
+            "description": "Civilité du destinataire"
+          },
+          "raisonSociale": {
+            "type": "string",
+            "description": "Raison sociale du destinataire"
+          }
+        }
+      },
+      "AdresseAssure": {
+        "type": "object",
+        "properties": {
+          "ligne1": {
+            "type": "string",
+            "description": "Première ligne de l'adresse"
+          },
+          "ligne2": {
+            "type": "string",
+            "description": "Deuxième ligne de l'adresse"
+          },
+          "ligne3": {
+            "type": "string",
+            "description": "Troisième ligne de l'adresse"
+          },
+          "ligne4": {
+            "type": "string",
+            "description": "Quatrième ligne de l'adresse"
+          },
+          "ligne5": {
+            "type": "string",
+            "description": "Cinquième ligne de l'adresse"
+          },
+          "ligne6": {
+            "type": "string",
+            "description": "Sixième ligne de l'adresse"
+          },
+          "ligne7": {
+            "type": "string",
+            "description": "Septième ligne de l'adresse"
+          },
+          "codePostal": {
+            "type": "string",
+            "description": "Code postal de l'adresse"
+          }
+        }
+      },
+      "Periode": {
+        "type": "object",
+        "properties": {
+          "debut": {
+            "type": "string",
+            "description": "Date de début de la période",
+            "format": "date"
+          },
+          "fin": {
+            "type": "string",
+            "description": "Date de fin de la période",
+            "format": "date"
+          }
+        }
+      }
+    }
+  }
+}

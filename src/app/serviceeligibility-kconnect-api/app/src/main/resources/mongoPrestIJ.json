@@ -1,0 +1,17 @@
+{
+  "name": "${CONNECTOR_NAME}",
+  "config":
+  {
+    "topics": "${TOPIC_NAME}",
+    "collection": "servicePrestIJ",
+    "connection.uri": "${DATABASE_URI_CONNECTION}",
+    "database": "${DATABASE}",
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "document.id.strategy": "com.mongodb.kafka.connect.sink.processor.id.strategy.ProvidedInValueStrategy",
+    "tasks.max": "2",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "key.converter.schemas.enable": false,
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": false
+  }
+}

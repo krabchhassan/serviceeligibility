@@ -1,0 +1,189 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "beneficiaires",
+      "description": "Collection contenant l'ensemble des bénéficiaires"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Beneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idClientBO": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "services": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "amc": {
+            "$ref": "#/components/schemas/AmcBeneficiaire"
+          },
+          "contrat": {
+            "$ref": "#/components/schemas/ContratBeneficiaire"
+          },
+          "identite": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/IdentiteContrat"
+          },
+          "data": {
+            "$ref": "#/components/schemas/DataBeneficiaire"
+          },
+          "audit": {
+            "$ref": "#/components/schemas/AuditBeneficiaire"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Beneficiaire"
+      },
+      "AmcBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "AmcBeneficiaire"
+      },
+      "AuditBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateEmission": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "AuditBeneficiaire"
+      },
+      "ContratBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numeroContrat": {
+            "type": "string"
+          },
+          "codeEtat": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/DataBeneficiaire"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "societeEmettrice": {
+            "type": "string"
+          },
+          "numeroAMCEchange": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ContratBeneficiaire"
+      },
+      "DataBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "adresse": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Adresse"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomBeneficiaire"
+          },
+          "contact": {
+            "$ref": "#/components/schemas/ContactBeneficiaire"
+          },
+          "rib": {
+            "$ref": "#/components/schemas/RibBeneficiaire"
+          }
+        },
+        "required": [],
+        "title": "DataBeneficiaire"
+      },
+      "ContactBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "fixe": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ContactBeneficiaire"
+      },
+      "NomBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nomFamille": {
+            "type": "string"
+          },
+          "nomUsage": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "NomBeneficiaire"
+      },
+      "RibBeneficiaire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "bic": {
+            "type": "string"
+          },
+          "iban": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "RibBeneficiaire"
+      }
+    }
+  }
+}

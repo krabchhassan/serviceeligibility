@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by Philippe (ca) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/abonnement" xmlns:commun="http://norme.cegedimassurances.com/commun" targetNamespace="http://norme.cegedimassurances.com/abonnement" elementFormDefault="qualified">
+	<xs:include schemaLocation="getAbonnement_in.xsd"/>
+	<xs:include schemaLocation="getAbonnement_out.xsd"/>
+</xs:schema>

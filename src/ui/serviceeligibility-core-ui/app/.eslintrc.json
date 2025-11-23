@@ -1,0 +1,97 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "mocha": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/prop-types": "off",
+    "react/forbid-prop-types": "off",
+    "react/require-default-props": 0,
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        "devDependencies": true
+      }
+    ],
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "react/jsx-filename-extension": [
+      0
+    ],
+    "react/prefer-stateless-function": [
+      0,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "jsx-a11y/no-static-element-interactions": [
+      1
+    ],
+    "no-use-before-define": [
+      0
+    ],
+    "import/extensions": [
+      2
+    ],
+    // https://github.com/yannickcr/eslint-plugin-react/issues/1389
+    "react/no-typos": 0,
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/339
+    "jsx-a11y/anchor-is-valid": [
+      2,
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to",
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "allow": [
+          "^UNSAFE_"
+        ]
+      }
+    ]
+  },
+  "globals": {
+    "Cypress": "readonly",
+    "cy": "readonly",
+    "expect": "readonly"
+  }
+}

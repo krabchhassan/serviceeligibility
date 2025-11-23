@@ -1,0 +1,142 @@
+{
+  "contracts": [
+    {
+      "context": "TP_ONLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "93000808",
+      "externalNumber": "93000808",
+      "subscriberId": "93000808",
+      "subscriberFullId": "93000808",
+      "subscriptionDate": "2018-01-01",
+      "responsibleContractOpenPeriods": [
+        {
+          "start": "2018-01-01",
+          "end": "2026-02-21"
+        }
+      ],
+      "secondaryCriterion": "001",
+      "detailedSecondaryCriterion": "",
+      "isIndividualContract": false,
+      "operator": "000ER00693",
+      "collectiveContract": {
+        "number": "00219217",
+        "externalNumber": "00219217",
+        "companyName": "N/A"
+      },
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "itelisCode": "BLABLO_OPTIQUE",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "1",
+        "identity": {
+          "nir": {
+            "code": "1860598145145",
+            "key": "24"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1860598145145",
+                "key": "24"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "781"
+              },
+              "period": {
+                "start": "2018-01-01"
+              }
+            }
+          ],
+          "birthDate": "18690428",
+          "birthRank": "1",
+          "personNumber": "0000401166-2121639"
+        },
+        "data": {
+          "name": {
+            "lastName": "MADALE",
+            "commonName": "MADALE",
+            "firstName": "JEAN",
+            "civility": "M"
+          },
+          "address": {
+            "line1": "Monsieur MADALE JEAN",
+            "line4": "50 QUAI AUGUSTE ROY",
+            "line6": "78510 VILLE",
+            "postcode": "78510"
+          },
+          "contact": {
+            "email": "jean.MADALE@zoo.com"
+          }
+        },
+        "healthMutualSubscriptionDate": "2012-01-01",
+        "individualSubscriptionStartDate": "2018-01-01",
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2018-01-01"
+              },
+              "isRemotelyTransmitted": true
+            }
+          ]
+        },
+        "quality": {
+          "code": "A",
+          "label": "Adhérent"
+        },
+        "rights": [
+          {
+            "code": "AXASCCGDIM",
+            "insurerCode": "AXA",
+            "prioritizationOrder": "01",
+            "guaranteeAgeDate": "2018-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "CONTRAT_GROUPE_AXA",
+                "issuingCompanyName": "CONTRAT GROUPE AXA",
+                "offerCode": "CONTRATGROUPEAXA",
+                "productCode": "AXASC_CGDIM",
+                "benefitsType": [
+                  {
+                    "benefitType": "HOSPITALISATION",
+                    "period": {
+                      "start": "%%CURRENT_YEAR%%-12-24",
+                      "end": "%%CURRENT_YEAR%%-12-24"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "HOSP",
+                        "convention": "IT/IS"
+                      }
+                    ]
+                  },
+                  {
+                    "benefitType": "OPTIQUEAUDIO",
+                    "period": {
+                      "start": "%%CURRENT_YEAR%%-12-24",
+                      "end": "%%CURRENT_YEAR%%-12-24"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "OPAU",
+                        "convention": "IS"
+                      }
+                    ]
+                  }
+                ],
+                "period": {
+                  "start": "%%CURRENT_YEAR%%-12-24",
+                  "end": "%%CURRENT_YEAR%%-12-24"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": false
+    }
+  ]
+}

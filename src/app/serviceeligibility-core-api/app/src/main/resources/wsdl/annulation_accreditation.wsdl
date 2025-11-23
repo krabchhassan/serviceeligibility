@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+	targetNamespace="http://ws.cegedimassurance.com/annulationaccreditation/wsdl" xmlns:ns="http://ws.cegedimassurance.com/annulationaccreditation/wsdl"
+	xmlns:wsannulationaccreditation="http://norme.cegedimassurances.com/annulation_accreditation">
+
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://ws.cegedimassurance.com/annulationaccreditation/wsdl"
+			xmlns:annulation="http://norme.cegedimassurances.com/annulation_accreditation">
+			<xsd:import schemaLocation="../xsd/annulation_accreditation/getAnnulationAccreditation.xsd"
+				namespace="http://norme.cegedimassurances.com/annulation_accreditation">
+			</xsd:import>
+			<xsd:element name="annulePEC" type="annulation:getAnnulationAccreditation_in">
+			</xsd:element>
+			<xsd:element name="PECannulee" type="annulation:getAnnulationAccreditation_out">
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getannulationRequest">
+		<wsdl:part element="ns:annulePEC" name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="getannulationResponse">
+		<wsdl:part element="ns:PECannulee" name="parameters" />
+	</wsdl:message>
+	<wsdl:portType name="WSAnnulationAccreditation">
+		<wsdl:operation name="getannulation">
+			<wsdl:input message="ns:getannulationRequest" />
+			<wsdl:output message="ns:getannulationResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="WSAnnulationAccreditationBINDING" type="ns:WSAnnulationAccreditation">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getannulation">
+			<soap:operation soapAction="http://ws.fsiq.com/annulationaccreditation/getannulation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="WSannulationAccreditationWSDL">
+		<wsdl:port binding="ns:WSAnnulationAccreditationBINDING"
+			name="WSAnnulationAccreditation">
+			<soap:address location="http://www.fsiq.com/annulationaccreditation/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,352 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "OPAU",
+          "garanties" : [
+            {
+              "codeGarantie" : "AXASCCGDIM",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "AXA",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDIM",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPAU-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUEAUDIO",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%NEXT_YEAR%%/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "AXASCCGDIM",
+              "libelleGarantie" : "CG SANTE CONFORT",
+              "codeAssureurGarantie" : "AXA",
+              "dateAdhesionCouverture" : "2021/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "AXASC_CGDIM",
+                  "codeOffre" : "CONTRATGROUPEAXA",
+                  "codeOc" : "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-099",
+                      "formulaMask" : "PEC",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%NEXT_YEAR%%/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "PEC",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSante"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "099",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19791006",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1701062498046",
+      "cleNirBeneficiaire" : "02",
+      "nirOd1" : "1701062498046",
+      "cleNirOd1" : "02",
+      "numeroPersonne" : "MBA-000",
+      "refExternePersonne" : "7209738ADF",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2021/01/01",
+      "dateDebutAdhesionIndividuelle" : "2021/01/01",
+      "numeroAdhesionIndividuelle" : "120320020",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "POPI",
+        "nomPatronymique" : "POPI",
+        "nomMarital" : "POPI",
+        "prenom" : "JEAN PIERRE",
+        "civilite" : "Mr",
+        "periodeDebut" : "2021/01/01",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "624",
+        "centreOD1" : "0156",
+        "hasMedecinTraitant" : false,
+        "regimeParticulier" : "AM",
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "BENEFICIAIRE"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "18 RUE DES LAGARDES",
+          "ligne2" : "RESIDENCE DES COTEAUX",
+          "ligne3" : "59250",
+          "ligne4" : "HALLUIN",
+          "ligne5" : "F",
+          "ligne6" : "FRANCE",
+          "ligne7" : "CEDEX41",
+          "codePostal" : "5920",
+          "email" : "5920",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1701062498046",
+            "cle" : "02"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "624",
+            "codeCentre" : "0156"
+          },
+          "periode" : {
+            "debut" : "2023/01/01"
+          }
+        },
+        {
+          "nir" : {
+            "code" : "1701062498046",
+            "cle" : "02"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "624",
+            "codeCentre" : "0156"
+          },
+          "periode" : {
+            "debut" : "2018/01/01",
+            "fin" : "2022/12/31"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2018/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ],
+      "regimesParticuliers" : [
+        {
+          "code" : "AM",
+          "periode" : {
+            "debut" : "2020/01/01",
+            "fin" : "2020/12/31"
+          }
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "CONSOW0",
+  "numeroAdherent" : "54582311001",
+  "numeroAdherentComplet" : "54582311001COMP",
+  "dateSouscription" : "2018/05/27",
+  "type" : "B",
+  "nomPorteur" : "POPI",
+  "prenomPorteur" : "JEAN PIERRE",
+  "civilitePorteur" : "Mr",
+  "qualification" : "B",
+  "numeroContratCollectif" : "00219071",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "001",
+  "critereSecondaireDetaille" : "CAD",
+  "numeroExterneContratIndividuel" : "54582311001",
+  "numeroExterneContratCollectif" : "12",
+  "gestionnaire" : "000ER00955",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "N/A",
+  "raisonSociale" : "N/A",
+  "groupePopulation" : "N/A",
+  "periodeCMUOuverts" : [
+    {
+      "code" : "CMUP",
+      "periode" : {
+        "debut" : "2023/01/01",
+        "fin" : "2023/12/31"
+      }
+    },
+    {
+      "code" : "CMU",
+      "periode" : {
+        "debut" : "2018/01/01",
+        "fin" : "2022/12/31"
+      }
+    }
+  ],
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2023/01/01"
+    },
+    {
+      "debut" : "2018/01/01",
+      "fin" : "2022/12/31"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3"
+}

@@ -1,0 +1,42 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "circuits",
+      "description": "Collection enregistrant des informations sur les circuits d'alimentation de la BDDS."
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Circuits": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeCircuit": {
+            "description": "Code attribué au circuit de traitement.",
+			"type": "string"
+          },
+          "libelleCircuit": {
+            "description": "Libellé décrivant les circuits d'alimentation de la BDDS.",
+			"type": "string"
+          },
+          "emetteur": {
+            "description": "Entité émettrice associée au circuit.",
+			"type": "string"
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "Circuits"
+      }
+    }
+  }
+}

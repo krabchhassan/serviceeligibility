@@ -1,0 +1,51 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "profils"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Profils": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+		    "type": "string"
+		  },
+		  "roles": {
+		    "type": "array",
+            "items": {
+              "type": "string"
+            }
+		  },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+		  "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Profils"
+      }
+    }
+  }
+}

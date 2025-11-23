@@ -1,0 +1,253 @@
+{
+	"openapi": "3.0.2",
+	"info": {
+		"title": "Récupération des destinataires de paiement d'un bénéficiaire",
+		"description": "API specification",
+		"version": "1.4.1"
+	},
+	"paths": {
+		"/v1/beneficiaryPaymentRecipients/": {
+			"get": {
+				"description": "Récupération des destinataires de paiement d'un bénéficiaire",
+				"parameters": [{
+					"name": "insurerId",
+					"in": "query",
+					"description": "Numéro de l’AMC",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}, {
+					"name": "personNumber",
+					"in": "query",
+					"description": "Numéro de personne du bénéficiaire",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}, {
+					"name": "subscriberId",
+					"in": "query",
+					"description": "Numéro adhérent du contrat",
+					"required": false,
+					"schema": {
+						"type": "string"
+					}
+				}, {
+					"name": "date",
+					"in": "query",
+					"description": "Date permettant de rechercher les destinataires valides à partir de cette date",
+					"required": true,
+					"schema": {
+						"type": "string"
+					}
+				}
+				],
+				"operationId": "getBeneficiaryPaymentRecipients",
+				"responses": {
+					"200": {
+						"description": "Liste des contrats du bénéficiaire",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"items": {
+										"$ref": "#/components/schemas/Contract"
+									}
+								},
+								"example":
+								[{
+									"number": "4266110701",
+									"subscriberId": "4266110701",
+									"subscriptionDate": "2021-01-01",
+									"terminationDate": null,
+									"paymentRecipients": [{
+										"paymentRecipientId": "DP-123456",
+										"beyondPaymentRecipientId": "DP-123456-0012445566",
+										"name": {
+											"lastName": "DELMOTTE",
+											"commonName": null,
+											"firstName": "JEAN PIERRE",
+											"civility": "Mr",
+											"corporateName": null
+										}
+									}
+									]
+								}
+								]
+							}
+						}
+					},
+					"400": {
+						"description": "Paramètres d'entrée invalides",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Errors"
+								},
+								"examples": {
+									"Missing parameter": {
+										"value": {
+											"errors": [{
+												"errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00054",
+												"message": "Required request parameter 'insurerId' for method parameter type String is not present",
+												"level": "ERROR"
+											}
+											]
+										}
+									},
+									"Bad format date": {
+										"value": {
+											"errors": [{
+												"errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00071",
+												"message": "The date 2022-01-99 is not valid",
+												"level": "ERROR"
+											}
+											]
+										}
+									}
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Bénéficiaire non trouvé",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Errors"
+								},
+								"example": {
+									"errors": [{
+										"errorCode": "NEXT-SERVICEELIGIBILITY-CORE-00070",
+										"message": "No contract found for this beneficiary",
+										"level": "ERROR"
+									}
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Erreur interne",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Errors"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Get Payment Recipients of a beneficiary",
+					"Récupération des destinataires de paiement d'un bénéficiaire"
+				]
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"Error": {
+				"type": "object",
+				"properties": {
+					"errorCode": {
+						"type": "string",
+						"description": "Code spécifique de l'erreur"
+					},
+					"message": {
+						"type": "string",
+						"description": "Message détaillé sur l'erreur"
+					},
+					"level": {
+						"type": "string",
+						"description": "Niveau de l'erreur"
+					}
+				}
+			},
+			"Errors": {
+				"type": "object",
+				"properties": {
+					"errors": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Error"
+						}
+					}
+				}
+			},
+			"Contract": {
+				"type": "object",
+				"properties": {
+					"number": {
+						"description": "Numero du contrat",
+						"type": "string"
+					},
+					"subscriberId": {
+						"description": "Numéro adhérent",
+						"type": "string"
+					},
+					"subscriptionDate": {
+						"description": "Date de souscription",
+						"type": "string",
+						"format": "date"
+					},
+					"terminationDate": {
+						"description": "Date de résiliation",
+						"type": "string",
+						"format": "date"
+					},
+					"paymentRecipients": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/PaymentRecipient"
+						}
+					}
+				}
+			},
+			"PaymentRecipient": {
+				"type": "object",
+				"properties": {
+					"paymentRecipientId": {
+						"description": "Identifiant du destinataire de paiement dans le back-office d'origine",
+						"type": "string"
+					},
+					"beyondPaymentRecipientId": {
+						"description": "Identifiant Beyond du destinataire de paiement",
+						"type": "string"
+					},
+					"name": {
+						"type": "object",
+						"properties": {
+							"lastName": {
+								"description": "Nom de famille",
+								"type": "string"
+							},
+							"commonName": {
+								"description": "Nom d'usage",
+								"type": "string"
+							},
+							"firstName": {
+								"description": "Prénom",
+								"type": "string"
+							},
+							"civility": {
+								"description": "Civilité",
+								"type": "string"
+							},
+							"corporateName": {
+								"description": "Raison sociale",
+								"type": "string"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"tags": [{
+		"name": "ServiceEligibility",
+		"description": "API - Restitution des destinataires de paiement"
+	}
+	]
+}

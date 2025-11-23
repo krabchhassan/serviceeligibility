@@ -1,0 +1,1741 @@
+{
+  "idDeclarant" : "0000401182",
+  "contrat" : {
+    "numero" : "10901516000000179508",
+    "dateSouscription" : "2024/01/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "TEST",
+    "prenomPorteur" : "",
+    "civilitePorteur" : "",
+    "numeroAdherent" : "10901516",
+    "numeroAdherentComplet" : "",
+    "qualification" : "B",
+    "numeroContratCollectif" : "",
+    "rangAdministratif" : "",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "destinataire" : null,
+    "individuelOuCollectif" : "",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "A",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "",
+    "gestionnaire" : "",
+    "groupeAssures" : "",
+    "numeroCarte" : "10901516",
+    "editeurCarte" : null,
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : "0000401182",
+    "numOperateur" : "0000733931",
+    "numeroContratBackOffice" : "00000000000000179508"
+  },
+  "adresse" : {
+    "ligne1" : "AON",
+    "ligne2" : null,
+    "ligne3" : null,
+    "ligne4" : "2 ALLEE TEST",
+    "ligne5" : null,
+    "ligne6" : "12000 RODEZ",
+    "ligne7" : "FRANCE",
+    "codePostal" : "12000",
+    "telephone" : "00 00 00 00 00",
+    "email" : null,
+    "typeAdresse" : {
+      "libelle" : null,
+      "type" : "GE"
+    }
+  },
+  "domainesConventions" : [
+    {
+      "code" : "PHAR",
+      "rang" : 1,
+      "conventions" : [
+        {
+          "code" : "SP",
+          "priorite" : 1
+        }
+      ]
+    },
+    {
+      "code" : "OPTI",
+      "rang" : 6,
+      "conventions" : [
+        {
+          "code" : "IT",
+          "priorite" : 1
+        },
+        {
+          "code" : "SP",
+          "priorite" : 2
+        }
+      ]
+    },
+    {
+      "code" : "DENT",
+      "rang" : 8,
+      "conventions" : [
+        {
+          "code" : "IT",
+          "priorite" : 1
+        },
+        {
+          "code" : "IS",
+          "priorite" : 2
+        }
+      ]
+    },
+    {
+      "code" : "AUDI",
+      "rang" : 10,
+      "conventions" : [
+        {
+          "code" : "IT",
+          "priorite" : 1
+        },
+        {
+          "code" : "OC",
+          "priorite" : 2
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "rang" : 13,
+      "conventions" : [
+        {
+          "code" : "IS",
+          "priorite" : 1
+        }
+      ]
+    }
+  ],
+  "beneficiaires" : [
+    {
+      "beneficiaire" : {
+        "dateNaissance" : "19800321",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : "",
+        "cleNirBeneficiaire" : "",
+        "nirOd1" : "2810631555490",
+        "cleNirOd1" : "69",
+        "nirOd2" : "",
+        "cleNirOd2" : "",
+        "insc" : null,
+        "numeroPersonne" : "10901516",
+        "refExternePersonne" : "10901516",
+        "affiliation" : {
+          "nom" : "TEST",
+          "nomPatronymique" : "TEST",
+          "nomMarital" : "TEST",
+          "prenom" : "PRENOMTEST",
+          "civilite" : null,
+          "periodeDebut" : "2024/01/01",
+          "periodeFin" : null,
+          "qualite" : "A",
+          "regimeOD1" : "01",
+          "caisseOD1" : "441",
+          "centreOD1" : "1102",
+          "regimeOD2" : null,
+          "caisseOD2" : null,
+          "centreOD2" : null,
+          "hasMedecinTraitant" : false,
+          "regimeParticulier" : "",
+          "isBeneficiaireACS" : false,
+          "isTeleTransmission" : false,
+          "typeAssure" : "Ass.Princ."
+        },
+        "adresses" : [
+          {
+            "ligne1" : "AON",
+            "ligne2" : null,
+            "ligne3" : null,
+            "ligne4" : "2 ALLEE TEST",
+            "ligne5" : null,
+            "ligne6" : "12000 RODEZ",
+            "ligne7" : "FRANCE",
+            "codePostal" : "12000",
+            "telephone" : "00 00 00 00 00",
+            "email" : null,
+            "typeAdresse" : {
+              "libelle" : null,
+              "type" : "GE"
+            }
+          }
+        ]
+      },
+      "domainesCouverture" : [
+        {
+          "code" : "PHAR",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "100%",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "PHAR-050-100-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 1,
+          "categorie" : "PHAR",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "050",
+                "libelle" : null,
+                "parametres" : [
+                  {
+                    "numero" : "6",
+                    "valeur" : "100.00"
+                  }
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "OPTI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 6,
+          "categorie" : "OPTI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "DENT-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 8,
+          "categorie" : "DENT",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "AUDI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 10,
+          "categorie" : "AUDI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "OC",
+                "libelle" : "OC"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "HOSP-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 13,
+          "categorie" : "HOSP",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat" : {
+        "lienFamilial" : "A",
+        "rangAdministratif" : "",
+        "modePaiementPrestations" : ""
+      }
+    },
+    {
+      "beneficiaire" : {
+        "dateNaissance" : "19811119",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : "",
+        "cleNirBeneficiaire" : "",
+        "nirOd1" : "1811194028102",
+        "cleNirOd1" : "49",
+        "nirOd2" : "",
+        "cleNirOd2" : "",
+        "insc" : null,
+        "numeroPersonne" : "11070521",
+        "refExternePersonne" : "11070521",
+        "affiliation" : {
+          "nom" : "MENSAH",
+          "nomPatronymique" : "MENSAH",
+          "nomMarital" : "MENSAH",
+          "prenom" : "AKOUETEY",
+          "civilite" : null,
+          "periodeDebut" : "2024/01/01",
+          "periodeFin" : null,
+          "qualite" : "C",
+          "regimeOD1" : "01",
+          "caisseOD1" : "441",
+          "centreOD1" : "1103",
+          "regimeOD2" : null,
+          "caisseOD2" : null,
+          "centreOD2" : null,
+          "hasMedecinTraitant" : false,
+          "regimeParticulier" : "",
+          "isBeneficiaireACS" : false,
+          "isTeleTransmission" : false,
+          "typeAssure" : "Conjoint"
+        },
+        "adresses" : [
+          {
+            "ligne1" : "AON",
+            "ligne2" : null,
+            "ligne3" : null,
+            "ligne4" : "2 ALLEE TEST",
+            "ligne5" : null,
+            "ligne6" : "12000 RODEZ",
+            "ligne7" : "FRANCE",
+            "codePostal" : "12000",
+            "telephone" : "00 00 00 00 00",
+            "email" : null,
+            "typeAdresse" : {
+              "libelle" : null,
+              "type" : "GE"
+            }
+          }
+        ]
+      },
+      "domainesCouverture" : [
+        {
+          "code" : "PHAR",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "100%",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "PHAR-050-100-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 1,
+          "categorie" : "PHAR",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "050",
+                "libelle" : null,
+                "parametres" : [
+                  {
+                    "numero" : "6",
+                    "valeur" : "100.00"
+                  }
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "OPTI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 6,
+          "categorie" : "OPTI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "DENT-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 8,
+          "categorie" : "DENT",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "AUDI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 10,
+          "categorie" : "AUDI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "OC",
+                "libelle" : "OC"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "HOSP-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 13,
+          "categorie" : "HOSP",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat" : {
+        "lienFamilial" : "C",
+        "rangAdministratif" : "",
+        "modePaiementPrestations" : ""
+      }
+    },
+    {
+      "beneficiaire" : {
+        "dateNaissance" : "20130629",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : "",
+        "cleNirBeneficiaire" : "",
+        "nirOd1" : "2810631555490",
+        "cleNirOd1" : "69",
+        "nirOd2" : "",
+        "cleNirOd2" : "",
+        "insc" : null,
+        "numeroPersonne" : "10901521",
+        "refExternePersonne" : "10901521",
+        "affiliation" : {
+          "nom" : "MENSAH",
+          "nomPatronymique" : "MENSAH",
+          "nomMarital" : "MENSAH",
+          "prenom" : "EDEN",
+          "civilite" : null,
+          "periodeDebut" : "2024/01/01",
+          "periodeFin" : null,
+          "qualite" : "E",
+          "regimeOD1" : "01",
+          "caisseOD1" : "441",
+          "centreOD1" : "1102",
+          "regimeOD2" : null,
+          "caisseOD2" : null,
+          "centreOD2" : null,
+          "hasMedecinTraitant" : false,
+          "regimeParticulier" : "",
+          "isBeneficiaireACS" : false,
+          "isTeleTransmission" : false,
+          "typeAssure" : "Enfant"
+        },
+        "adresses" : [
+          {
+            "ligne1" : "AON",
+            "ligne2" : null,
+            "ligne3" : null,
+            "ligne4" : "2 ALLEE TEST",
+            "ligne5" : null,
+            "ligne6" : "12000 RODEZ",
+            "ligne7" : "FRANCE",
+            "codePostal" : "12000",
+            "telephone" : "00 00 00 00 00",
+            "email" : null,
+            "typeAdresse" : {
+              "libelle" : null,
+              "type" : "GE"
+            }
+          }
+        ]
+      },
+      "domainesCouverture" : [
+        {
+          "code" : "PHAR",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "100%",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "PHAR-050-100-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 1,
+          "categorie" : "PHAR",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "050",
+                "libelle" : null,
+                "parametres" : [
+                  {
+                    "numero" : "6",
+                    "valeur" : "100.00"
+                  }
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "OPTI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 6,
+          "categorie" : "OPTI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "DENT-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 8,
+          "categorie" : "DENT",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "AUDI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 10,
+          "categorie" : "AUDI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "OC",
+                "libelle" : "OC"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "HOSP-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 13,
+          "categorie" : "HOSP",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat" : {
+        "lienFamilial" : "E",
+        "rangAdministratif" : "",
+        "modePaiementPrestations" : ""
+      }
+    },
+    {
+      "beneficiaire" : {
+        "dateNaissance" : "20151211",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : "",
+        "cleNirBeneficiaire" : "",
+        "nirOd1" : "2810631555490",
+        "cleNirOd1" : "69",
+        "nirOd2" : "",
+        "cleNirOd2" : "",
+        "insc" : null,
+        "numeroPersonne" : "10901522",
+        "refExternePersonne" : "10901522",
+        "affiliation" : {
+          "nom" : "MENSAH",
+          "nomPatronymique" : "MENSAH",
+          "nomMarital" : "MENSAH",
+          "prenom" : "TESSA",
+          "civilite" : null,
+          "periodeDebut" : "2024/01/01",
+          "periodeFin" : null,
+          "qualite" : "E",
+          "regimeOD1" : "01",
+          "caisseOD1" : "441",
+          "centreOD1" : "1102",
+          "regimeOD2" : null,
+          "caisseOD2" : null,
+          "centreOD2" : null,
+          "hasMedecinTraitant" : false,
+          "regimeParticulier" : "",
+          "isBeneficiaireACS" : false,
+          "isTeleTransmission" : false,
+          "typeAssure" : "Enfant"
+        },
+        "adresses" : [
+          {
+            "ligne1" : "AON",
+            "ligne2" : null,
+            "ligne3" : null,
+            "ligne4" : "2 ALLEE TEST",
+            "ligne5" : null,
+            "ligne6" : "12000 RODEZ",
+            "ligne7" : "FRANCE",
+            "codePostal" : "12000",
+            "telephone" : "00 00 00 00 00",
+            "email" : null,
+            "typeAdresse" : {
+              "libelle" : null,
+              "type" : "GE"
+            }
+          }
+        ]
+      },
+      "domainesCouverture" : [
+        {
+          "code" : "PHAR",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "100%",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "PHAR-050-100-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 1,
+          "categorie" : "PHAR",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "050",
+                "libelle" : null,
+                "parametres" : [
+                  {
+                    "numero" : "6",
+                    "valeur" : "100.00"
+                  }
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "OPTI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 6,
+          "categorie" : "OPTI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "SP",
+                "libelle" : "SP"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "DENT-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 8,
+          "categorie" : "DENT",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "Partenaires Itelis : www.itelis.fr/espace PS",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "AUDI-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 10,
+          "categorie" : "AUDI",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IT",
+                "libelle" : "IT"
+              }
+            },
+            {
+              "priorite" : 2,
+              "typeConventionnement" : {
+                "code" : "OC",
+                "libelle" : "OC"
+              }
+            }
+          ]
+        },
+        {
+          "code" : "HOSP",
+          "codeExterne" : null,
+          "libelle" : null,
+          "codeExterneProduit" : "OPTI4",
+          "libelleExterne" : null,
+          "codeOptionMutualiste" : "",
+          "libelleOptionMutualiste" : "",
+          "codeProduit" : "TBS1",
+          "libelleProduit" : "CONTRAT TBS",
+          "codeGarantie" : "GPAON23",
+          "libelleGarantie" : "GPAON23",
+          "codeProfil" : "",
+          "libelleCodeRenvoi" : "",
+          "tauxRemboursement" : "PEC",
+          "isEditable" : true,
+          "isSuspension" : false,
+          "dateAdhesionCouverture" : null,
+          "uniteTauxRemboursement" : "XX",
+          "referenceCouverture" : "HOSP-099-GPAON1",
+          "origineDroits" : "",
+          "noOrdreDroit" : 13,
+          "categorie" : "HOSP",
+          "prioriteDroit" : {
+            "code" : "01",
+            "libelle" : "01",
+            "typeDroit" : "",
+            "prioriteBO" : "01"
+          },
+          "prestations" : [
+            {
+              "code" : "DEF",
+              "codeRegroupement" : null,
+              "libelle" : null,
+              "isEditionRisqueCarte" : false,
+              "dateEffet" : null,
+              "formule" : {
+                "numero" : "099",
+                "libelle" : null,
+                "parametres" : [
+
+                ]
+              },
+              "formuleMetier" : null
+            }
+          ],
+          "periodeDroit" : {
+            "periodeDebut" : "2050/01/01",
+            "periodeFin" : "2050/12/31",
+            "motifEvenement" : "IN",
+            "libelleEvenement" : "Declaration",
+            "modeObtention" : "O"
+          },
+          "conventionnements" : [
+            {
+              "priorite" : 1,
+              "typeConventionnement" : {
+                "code" : "IS",
+                "libelle" : "IS"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat" : {
+        "lienFamilial" : "E",
+        "rangAdministratif" : "",
+        "modePaiementPrestations" : ""
+      }
+    }
+  ],
+  "periodeDebut" : "2050/01/01",
+  "periodeFin" : "2050/12/31",
+  "AMC_contrat" : "0000401182-10901516000000179508",
+  "idDeclarations" : [
+    "65ee4e07a76cd0f9d0661456",
+    "65ee4e07a76cd0f9d0661449",
+    "65ee4e07a76cd0f9d0661457",
+    "65ee4e07a76cd0f9d0661442"
+  ],
+  "dateConsolidation" : "2024-03-11T00:20:32.755+0000",
+  "dateCreation" : "2024-03-11T00:20:32.755+0000",
+  "userCreation" : "job620",
+  "dateModification" : "2024-03-11T00:20:32.755+0000",
+  "userModification" : "job620",
+  "isLastCarteDemat" : true
+}

@@ -1,0 +1,1889 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-021-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-021-50",
+                      "formulaMask" : "50% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "50",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "50"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19670424",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "2806216135104",
+      "cleNirBeneficiaire" : "49",
+      "nirOd1" : "2806216135104",
+      "cleNirOd1" : "49",
+      "numeroPersonne" : "2559019",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2024/07/11",
+      "dateDebutAdhesionIndividuelle" : "2024/07/11",
+      "numeroAdhesionIndividuelle" : "S2970566",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "MORTUC",
+        "nomPatronymique" : "DJOKIC",
+        "nomMarital" : "MORTUC",
+        "prenom" : "MANON",
+        "civilite" : "MME",
+        "periodeDebut" : "2024/07/11",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "941",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Assuré principal"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Madame MORTUC MANON",
+          "ligne4" : "42T RUE MAURICE CHEVALIER",
+          "ligne6" : "33000 BORDEAUX",
+          "codePostal" : "33000",
+          "email" : "MORTUC@hotmail.fr",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "2806216135104",
+            "cle" : "49"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "941"
+          },
+          "periode" : {
+            "debut" : "2024/06/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2024/07/11"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    },
+    {
+      "domaineDroits" : [
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-021-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-021-50",
+                      "formulaMask" : "50% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "50",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "50"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/07/11",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19590705",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1806216135104",
+      "cleNirBeneficiaire" : "02",
+      "nirOd1" : "1806216135104",
+      "cleNirOd1" : "02",
+      "numeroPersonne" : "2559020",
+      "rangAdministratif" : "2",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2024/07/11",
+      "dateDebutAdhesionIndividuelle" : "2024/07/11",
+      "numeroAdhesionIndividuelle" : "S2970566",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "MORTUC",
+        "nomPatronymique" : "MORTUC",
+        "nomMarital" : "MORTUC",
+        "prenom" : "MICHEL",
+        "civilite" : "M",
+        "periodeDebut" : "2024/07/11",
+        "qualite" : "C",
+        "regimeOD1" : "01",
+        "caisseOD1" : "941",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Conjoint/Concubin"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Madame MORTUC MANON",
+          "ligne4" : "42T RUE MAURICE CHEVALIER",
+          "ligne6" : "33000 BORDEAUX",
+          "codePostal" : "33000",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1806216135104",
+            "cle" : "02"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "941"
+          },
+          "periode" : {
+            "debut" : "2024/06/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2024/07/11"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    },
+    {
+      "domaineDroits" : [
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-021-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-021-50",
+                      "formulaMask" : "50% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "50",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "50"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "20000721",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1006216135104",
+      "cleNirBeneficiaire" : "42",
+      "nirOd1" : "1006216135104",
+      "cleNirOd1" : "42",
+      "numeroPersonne" : "3480256",
+      "rangAdministratif" : "6",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2024/11/01",
+      "dateDebutAdhesionIndividuelle" : "2024/11/01",
+      "numeroAdhesionIndividuelle" : "S2970566",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "MORTUC",
+        "nomPatronymique" : "MORTUC",
+        "nomMarital" : "MORTUC",
+        "prenom" : "YVAN",
+        "civilite" : "M",
+        "periodeDebut" : "2024/11/01",
+        "qualite" : "E",
+        "regimeOD1" : "01",
+        "caisseOD1" : "941",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Enfant"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Madame MORTUC MANON",
+          "ligne4" : "42T RUE MAURICE CHEVALIER",
+          "ligne6" : "33000 BORDEAUX",
+          "codePostal" : "33000",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1006216135104",
+            "cle" : "42"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "941"
+          },
+          "periode" : {
+            "debut" : "2024/11/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2024/11/01"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    },
+    {
+      "domaineDroits" : [
+        {
+          "code" : "HOSP",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "HOSP-021-100",
+                      "formulaMask" : "100% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "AUDI",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUDI-021-50",
+                      "formulaMask" : "50% TR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "AUDIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "50",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "021",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "50"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_5497_A1",
+              "libelleGarantie" : "GARANTIE SANTE NIVEAU 3",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2024/11/01",
+              "produits" : [
+                {
+                  "codeProduit" : "1472_AJOUT_01_P01",
+                  "codeOffre" : "1472_AJOUT_01",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-010",
+                      "formulaMask" : " 100% FR ",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100",
+                              "uniteTauxRemboursement" : "PO",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : "iSanté"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "010",
+                                "parametres" : [
+
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19980616",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "2986216135104",
+      "cleNirBeneficiaire" : "40",
+      "nirOd1" : "2986216135104",
+      "cleNirOd1" : "40",
+      "numeroPersonne" : "3480257",
+      "rangAdministratif" : "4",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2024/11/01",
+      "dateDebutAdhesionIndividuelle" : "2024/11/01",
+      "numeroAdhesionIndividuelle" : "S2970566",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "MORTUC",
+        "nomPatronymique" : "MORTUC",
+        "nomMarital" : "MORTUC",
+        "prenom" : "MONICA",
+        "civilite" : "MLLE",
+        "periodeDebut" : "2024/11/01",
+        "qualite" : "E",
+        "regimeOD1" : "01",
+        "caisseOD1" : "941",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Enfant"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Madame MORTUC MANON",
+          "ligne4" : "42T RUE MAURICE CHEVALIER",
+          "ligne6" : "33000 BORDEAUX",
+          "codePostal" : "33000",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "2986216135104",
+            "cle" : "40"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "941"
+          },
+          "periode" : {
+            "debut" : "2024/11/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2024/11/01"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "S2970566",
+  "numeroAdherent" : "S2970566",
+  "numeroAdherentComplet" : "S2970566",
+  "dateSouscription" : "2024/07/11",
+  "type" : "B",
+  "nomPorteur" : "MORTUC",
+  "prenomPorteur" : "MANON",
+  "civilitePorteur" : "MME",
+  "qualification" : "B",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "1",
+  "typeConvention" : "IS",
+  "critereSecondaire" : "005",
+  "numeroExterneContratIndividuel" : "S2970566",
+  "gestionnaire" : "000ER00955",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2024/07/11"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "3",
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.domain.contract.ContractTP"
+}

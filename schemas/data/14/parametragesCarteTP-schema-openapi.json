@@ -1,0 +1,253 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "parametragesCarteTP",
+      "description": "Collection contenant la liste des paramétrages de carte TP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ParametrageCarteTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "amc": {
+            "type": "string"
+          },
+          "amcNom": {
+            "type": "string"
+          },
+          "identifiantCollectivite": {
+            "type": "string"
+          },
+          "groupePopulation": {
+            "type": "string"
+          },
+          "critereSecondaireDetaille": {
+            "type": "string"
+          },
+          "statut": {
+            "type": "string"
+          },
+          "dateDebutValidite": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "priorite": {
+            "type": "integer"
+          },
+          "parametrageRenouvellement": {
+            "$ref": "#/components/schemas/ParametrageRenouvellement"
+          },
+          "parametrageDroitsCarteTP": {
+            "$ref": "#/components/schemas/ParametrageDroitsCarteTP"
+          },
+          "garantieTechniques": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/GarantieTechnique"
+            }
+          },
+          "idLots": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [],
+        "title": "ParametrageCarteTP"
+      },
+      "BenefitNature": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "domainList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [],
+        "title": "BenefitNature"
+      },
+      "Produit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "ordrePriorisationServicePrestation": {
+            "type": "string"
+          },
+          "codeGarantieServicePrestation": {
+            "type": "string"
+          },
+          "libelleGarantieServicePrestation": {
+            "type": "string"
+          },
+          "periodeDebutDroit": {
+            "type": "string"
+          },
+          "periodeFinDroit": {
+            "type": "string"
+          },
+          "codeAmc": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Produit"
+      },
+      "ParametrageDroitsCarteTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeConventionTP": {
+            "type": "string"
+          },
+          "codeOperateurTP": {
+            "type": "string"
+          },
+          "isCarteDematerialisee": {
+            "type": "boolean"
+          },
+          "refFondCarte": {
+            "type": "string"
+          },
+          "codeAnnexe1": {
+            "type": "string"
+          },
+          "codeAnnexe2": {
+            "type": "string"
+          },
+          "codeRenvoi": {
+            "type": "string"
+          },
+          "detailsDroit": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DetailDroit"
+            }
+          },
+          "isCarteEditablePapier": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "ParametrageDroitsCarteTP"
+      },
+      "DetailDroit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ordreAffichage": {
+            "type": "integer"
+          },
+          "codeDomaineTP": {
+            "type": "string"
+          },
+          "libelleDomaineTP": {
+            "type": "string"
+          },
+          "convention": {
+            "type": "string"
+          },
+          "codeRenvoi": {
+            "type": "string"
+          },
+          "isDomaineEditable": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "DetailDroit"
+      },
+      "ParametrageRenouvellement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateRenouvellementCarteTP": {
+            "type": "string",
+            "enum": [
+              "DebutEcheance",
+              "AnniversaireContrat"
+            ]
+          },
+          "debutEcheance": {
+            "type": "string"
+          },
+          "dureeValiditeDroitsCarteTP": {
+            "type": "string",
+            "enum": [
+              "Annuel",
+              "Semestriel",
+              "Trimestriel"
+            ]
+          },
+          "delaiDeclenchementCarteTP": {
+            "type": "integer"
+          },
+          "dateExecutionBatch": {
+            "type": "string"
+          },
+          "dateDebutDroitTP": {
+            "type": "string"
+          },
+          "seuilSecurite": {
+            "type": "integer"
+          },
+          "modeDeclenchement": {
+            "type": "string",
+            "enum": [
+              "Automatique",
+              "Manuel",
+              "PilotageBO"
+            ]
+          },
+          "dateDeclenchementManuel": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ParametrageRenouvellement"
+      }
+    }
+  }
+}

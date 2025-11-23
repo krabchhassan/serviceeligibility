@@ -1,0 +1,129 @@
+{
+  "nom": {
+    "nomFamille": "JABOTE",
+    "nomUsage": "JABOTE",
+    "prenom": "Gregorie",
+    "civilite": "M"
+  },
+  "adresse": {
+    "ligne1": "M JABOTE Gregorie",
+    "ligne2": "",
+    "ligne3": "",
+    "ligne4": "10B RUE DU COUCHANT",
+    "ligne5": "",
+    "ligne6": "31290 BEAUTEVILLE",
+    "ligne7": "",
+    "codePostal": "31290"
+  },
+  "contact": {
+    "fixe": "0600589634"
+  },
+  "destinatairesPrestations": [
+    {
+      "nom": {
+        "nomFamille": "JABOTE",
+        "nomUsage": "JABOTE",
+        "prenom": "Gregorie",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M JABOTE Gregorie",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "10B RUE DU COUCHANT",
+        "ligne5": "",
+        "ligne6": "31290 BEAUTEVILLE",
+        "ligne7": "",
+        "codePostal": "31290"
+      },
+      "rib": {
+        "iban": "FR7613106001004578945612336",
+        "bic": "AGRIFRPP831"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-05-15"
+      }
+    },
+    {
+      "nom": {
+        "nomFamille": "JABOTE",
+        "nomUsage": "JABOTE",
+        "prenom": "Gregorie",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M JABOTE Gregorie",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "10B RUE DU COUCHANT",
+        "ligne5": "",
+        "ligne6": "31290 BEAUTEVILLE",
+        "ligne7": "",
+        "codePostal": "31290"
+      },
+      "rib": {
+        "iban": "FR7613106001004578945612336",
+        "bic": "AGRIFRPP831"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-03-01",
+        "fin": "2020-05-14"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "nom": {
+        "nomFamille": "JABOTE",
+        "nomUsage": "JABOTE",
+        "prenom": "Gregorie",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M JABOTE Gregorie",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "10B RUE DU COUCHANT",
+        "ligne5": "",
+        "ligne6": "31290 BEAUTEVILLE",
+        "ligne7": "",
+        "codePostal": "31290"
+      },
+      "periode": {
+        "debut": "2020-05-15"
+      }
+    },
+    {
+      "nom": {
+        "nomFamille": "JABOTE",
+        "nomUsage": "JABOTE",
+        "prenom": "Gregorie",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M JABOTE Gregorie",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "10B RUE DU COUCHANT",
+        "ligne5": "",
+        "ligne6": "31290 BEAUTEVILLE",
+        "ligne7": "",
+        "codePostal": "31290"
+      },
+      "periode": {
+        "debut": "2020-03-01",
+        "fin": "2020-05-14"
+      }
+    }
+  ]
+}

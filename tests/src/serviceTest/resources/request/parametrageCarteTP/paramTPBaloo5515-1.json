@@ -1,0 +1,32 @@
+{
+  "id": "idAvecLot123",
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2023-10-26",
+  "dateCreation": "2023-10-23T13:27:54.438Z",
+  "userCreation": "nicolas.rouch@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+    ],
+    "isCarteEditablePapier": false
+  },
+  "priorite": 300,
+  "garantieTechniques": [
+  ],
+  "idLots": [
+    "123"
+  ]
+}

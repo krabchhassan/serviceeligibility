@@ -1,0 +1,28 @@
+workflowDefinition:
+  - code: is-bdds-initrdoclaim
+    name: initialisation de la collection en vue de la rdo claim
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à alimenter la collection en vue de la rdo claim
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+          - name: amc_number
+            description: Numéro préfectoral pour lequel les contrats doivent être traités et insérés dans la collection servicePrestationRdo
+            optional: false
+
+    steps:
+      - name: step-initrdoclaim-job
+        job: initrdoclaim-job
+        type: java
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: NUM_AMC
+              ref: parameters/amc_number
+
+    crex:
+      - name: nombreContratsLus
+        description: Nombre de contrats lus
+        ref: steps/step-initrdoclaim-job/parameters/outputs/nombreContratsLus
+      - name: nbBeneficiairesIntegres
+        description: Nombre de beneficiaires integres
+        ref: steps/step-initrdoclaim-job/parameters/outputs/nbBeneficiairesIntegres

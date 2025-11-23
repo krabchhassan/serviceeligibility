@@ -1,0 +1,40 @@
+[
+  {
+    "FAAS_MODULE": "orchestrator",
+    "FAAS_FUNCTION": "detail",
+    "ALLOWED_PERMISSIONS": ["SE_P_READ_HEALTHCARE"],
+    "FAAS_HTTP_RETURN_CODE": "200",
+    "FAAS_EXCEPTIONS": [
+      {
+        "EXCEPTION_NAME": "AuthException",
+        "HTTP_CODE": "403",
+        "ERROR_CODE": "NEXT-BDDS-FAAS-OTP-04031",
+        "INCLUDE_EXCEPTION_MESSAGE": true
+      },
+      {
+        "EXCEPTION_NAME": "UnableToGetHttpAuthorizationHeader",
+        "HTTP_CODE": "403",
+        "ERROR_CODE": "NEXT-BDDS-FAAS-OTP-04032",
+        "INCLUDE_EXCEPTION_MESSAGE": true
+      },
+      {
+        "EXCEPTION_NAME": "AiguillageException",
+        "HTTP_CODE": "404",
+        "ERROR_CODE": "NEXT-BDDS-FAAS-OTP-04041",
+        "INCLUDE_EXCEPTION_MESSAGE": true
+      },
+      {
+        "EXCEPTION_NAME": "MlsNotFoundException",
+        "HTTP_CODE": "404",
+        "ERROR_CODE": "NEXT-BDDS-FAAS-OTP-04042",
+        "INCLUDE_EXCEPTION_MESSAGE": true
+      },
+      {
+        "EXCEPTION_NAME": "BddsException",
+        "HTTP_CODE": "404",
+        "ERROR_CODE": "NEXT-BDDS-FAAS-OTP-04043",
+        "INCLUDE_EXCEPTION_MESSAGE": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Levée suspension contrat",
+  "description": "Levée de suspension du contrat",
+  "additionalProperties": false,
+  "properties": {
+    "contractId": {
+      "type": "string",
+      "description": "Identifiant technique du contrat"
+    },
+    "startDate": {
+      "type": "string",
+      "description": "Date de début de suspension"
+    },
+    "endDate": {
+      "type": "string",
+      "description": "Date de début de suspension"
+    },
+    "typeOfSuspension": {
+      "type": "string",
+      "description": "Type de suspension"
+    },
+    "motiveSuspension": {
+      "type": "string",
+      "description": "Motif de la suspension"
+    },
+    "motiveSuspensionLift": {
+      "type": "string",
+      "description": "Motif de la levée de suspension"
+    }
+  },
+  "required": [
+    "contractId",
+    "startDate",
+    "endDate",
+    "typeOfSuspension"
+  ],
+  "$id": "Insurance.serviceeligibility.contract.suspension.lifted.event/0.0.1"
+}

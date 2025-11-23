@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<FICHIER xmlns="http://www.almerys.com/NormeV3">
+<ENTETE>
+    <NUM_FICHIER>1</NUM_FICHIER>
+    <DATE_CREATION>2025-04-30T17:06:50.922Z</DATE_CREATION>
+    <VERSION_NORME>V3</VERSION_NORME>
+    <NUM_OS_EMETTEUR>98532001</NUM_OS_EMETTEUR>
+</ENTETE>
+        <OFFREUR_SERVICE>
+        <LIBELLE_OS>AG2R</LIBELLE_OS>
+        <NUM_OS>98532001</NUM_OS>
+        <PERIMETRE_SERVICE>
+            <CODE_PERIMETRE>PERIM</CODE_PERIMETRE>
+            <LIBELLE_PERIMETRE>AG2R</LIBELLE_PERIMETRE>
+            <CRITERE_REGROUPEMENT>
+</CRITERE_REGROUPEMENT><CONTRAT>
+    <NUM_CONTRAT>NumeroContratQuiDepasse30carac</NUM_CONTRAT>
+    <ETAT_CONTRAT>OU</ETAT_CONTRAT>
+    <MEMBRE_CONTRAT>
+        <SOUSCRIPTEUR>1</SOUSCRIPTEUR>
+        <POSITION>01</POSITION>
+        <TYPE_REGIME>RC</TYPE_REGIME>
+        <INDIVIDU>
+            <REF_INTERNE_OS>RefExternePersonneRefExternePe</REF_INTERNE_OS>
+            <DATE_NAISSANCE>2000-01-01</DATE_NAISSANCE>
+            <RANG_NAISSANCE>1</RANG_NAISSANCE>
+            <NOM_PATRONIMIQUE>PatronymiquePatronymiquePatronymiquePatronymiquePatronymiquePatronymiquePatronym</NOM_PATRONIMIQUE>
+            <NOM_USAGE>NomUsagerNomUsagerNomUsagerNomUsagerNomUsagerNomUsagerNomUsagerNomUsagerNomUsage</NOM_USAGE>
+            <PRENOM>PrenomPrenomPrenomPrenomPrenomPrenomPren</PRENOM>
+            <MEDECIN_TRAITANT>0</MEDECIN_TRAITANT>
+        </INDIVIDU>
+        <ADRESSE_MEMBRE>
+            <ADRESSE_AGREGEE>
+                <LIGNE1>Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Ligne1Lign</LIGNE1>
+                <LIGNE2>Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Ligne2Lign</LIGNE2>
+                <LIGNE3>Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Ligne3Lign</LIGNE3>
+                <LIGNE4>Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Ligne4Lign</LIGNE4>
+                <LIGNE5>Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Ligne5Lign</LIGNE5>
+                <LIGNE6>Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Ligne6Lign</LIGNE6>
+                <LIGNE7>Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Ligne7Lign</LIGNE7>
+            </ADRESSE_AGREGEE>
+        </ADRESSE_MEMBRE>
+        <JOIGNABILITE>
+            <MEDIA>ME</MEDIA>
+            <ADRESSE_MEDIA>toto@gmail.com</ADRESSE_MEDIA>
+            <ACTIF>1</ACTIF>
+        </JOIGNABILITE>
+        <AUTONOME>1</AUTONOME>
+        <MODE_PAIEMENT>AU</MODE_PAIEMENT>
+    </MEMBRE_CONTRAT>
+    <SERVICE>
+        <SERVICE_TP_PEC>
+            <BENEFICIAIRE>
+                <REF_INTERNE_OS>RefExternePersonneRefExternePe</REF_INTERNE_OS>
+                <TYPE_BENEF>AS</TYPE_BENEF>
+                <CONTRAT_RESPONSABLE>0</CONTRAT_RESPONSABLE>
+                <PRODUIT>
+                    <ORDRE>3</ORDRE>
+                    <REFERENCE_PRODUIT>Lareferenceduproduitnedoitpasdepasser80caracteresLareferenceduproduitnedoitpasde</REFERENCE_PRODUIT>
+                    <DATE_ENTREE_PRODUIT>2025-01-01</DATE_ENTREE_PRODUIT>
+                    <DATE_SORTIE_PRODUIT>2025-12-31</DATE_SORTIE_PRODUIT>
+                </PRODUIT>
+                <CODE_MOUVEMENT_CARTE>MC</CODE_MOUVEMENT_CARTE>
+            </BENEFICIAIRE>
+            <SERVICE_TP>
+                <DATE_DEBUT_VALIDITE>2025-01-01</DATE_DEBUT_VALIDITE>
+                <DATE_FIN_VALIDITE>2025-12-31</DATE_FIN_VALIDITE>
+                <ACTIVATION_DESACTIVATION>AC</ACTIVATION_DESACTIVATION>
+                <ENVOI>AD</ENVOI>
+            </SERVICE_TP>
+        </SERVICE_TP_PEC>
+    </SERVICE>
+</CONTRAT>
+        </PERIMETRE_SERVICE>
+    </OFFREUR_SERVICE>
+</FICHIER>

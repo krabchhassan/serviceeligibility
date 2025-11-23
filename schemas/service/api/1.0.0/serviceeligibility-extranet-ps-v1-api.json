@@ -1,0 +1,143 @@
+{
+  "name" : "ei05-serviceeligibility-extranet-ps-v1-api",
+  "version" : "1.0.0",
+  "execution_mode" : "v3",
+  "description" : "Expose les endpoint Extranet PS (consultationDroitsV3) pour FSIQ",
+  "visibility" : "PRIVATE",
+  "flows" : [ {
+    "name" : "",
+    "path-operator" : {
+      "path" : "",
+      "operator" : "EQUALS"
+    },
+    "condition" : "",
+    "consumers" : [ ],
+    "methods" : [ "POST" ],
+    "pre" : [ {
+      "name" : "Dynamic Routing",
+      "description" : "",
+      "enabled" : true,
+      "policy" : "dynamic-routing",
+      "configuration" : {"rules":[{"pattern":"","url":"https://ei05.editeur.beyond-by-cegedim.com/serviceeligibility/core/api/services/consultationDroitsV3"}]}
+    } ],
+    "post" : [ ],
+    "enabled" : true
+  } ],
+  "gravitee" : "2.0.0",
+  "flow_mode" : "DEFAULT",
+  "resources" : [ ],
+  "properties" : [ ],
+  "plans" : [ {
+    "name" : "standard_plan_validate_token",
+    "description" : "standard plan with for token validation",
+    "validation" : "AUTO",
+    "security" : "JWT",
+    "securityDefinition" : "{\"signature\":\"RSA_RS256\",\"publicKeyResolver\":\"JWKS_URL\",\"useSystemProxy\":false,\"extractClaims\":true,\"propagateAuthHeader\":true,\"userClaim\":\"sub\",\"resolverParameter\":\"https://idp.qa.beyond.cegedim.cloud/auth/realms/ei05/protocol/openid-connect/certs\"}",
+    "type" : "API",
+    "status" : "PUBLISHED",
+    "order" : 1,
+    "characteristics" : [ ],
+    "tags" : [ ],
+    "created_at" : 1689583846599,
+    "updated_at" : 1689666734599,
+    "published_at" : 1689583846599,
+    "paths" : {
+      "/" : [ ]
+    },
+    "flows" : [ {
+      "name" : "",
+      "path-operator" : {
+        "path" : "/",
+        "operator" : "STARTS_WITH"
+      },
+      "condition" : "",
+      "consumers" : [ ],
+      "methods" : [ ],
+      "pre" : [ {
+        "name" : "Rate Limit",
+        "description" : "Global Rate Limiting for all",
+        "enabled" : true,
+        "policy" : "rate-limit",
+        "configuration" : {"async":false,"addHeaders":true,"rate":{"periodTime":1,"limit":100,"periodTimeUnit":"SECONDS","key":""}}
+      } ],
+      "post" : [ ],
+      "enabled" : true
+    } ],
+    "excluded_groups" : [ ],
+    "comment_required" : false
+  } ],
+  "members" : [ {
+    "source" : "keycloak",
+    "sourceId" : "d41acce9-d550-4b5a-b127-3daa594a6ef9",
+    "roles" : [ "4e17578c-76d1-46fc-9757-8c76d136fc01" ]
+  } ],
+  "metadata" : [ {
+    "key" : "email-support",
+    "name" : "email-support",
+    "format" : "MAIL",
+    "value" : "${(api.primaryOwner.email)!''}",
+    "defaultValue" : "support@change.me"
+  } ],
+  "path_mappings" : [ ],
+  "proxy" : {
+    "virtual_hosts" : [ {
+      "host" : "ei05.editeur.beyond-by-cegedim.com",
+      "path" : "/beyond/api/sel/v1/consultationDroits",
+      "override_entrypoint" : true
+    } ],
+    "strip_context_path" : false,
+    "preserve_host" : false,
+    "logging" : {
+      "mode" : "CLIENT_PROXY",
+      "content" : "HEADERS_PAYLOADS",
+      "scope" : "REQUEST_RESPONSE"
+    },
+    "groups" : [ {
+      "name" : "default-group",
+      "endpoints" : [ {
+        "backup" : false,
+        "inherit" : true,
+        "name" : "default",
+        "weight" : 1,
+        "type" : "http",
+        "target" : "https://ei05.editeur.beyond-by-cegedim.com"
+      } ],
+      "load_balancing" : {
+        "type" : "ROUND_ROBIN"
+      },
+      "services" : {
+        "discovery" : {
+          "enabled" : false
+        }
+      },
+      "proxy" : {
+        "enabled" : false,
+        "useSystemProxy" : false,
+        "host" : "null",
+        "port" : 0,
+        "type" : "HTTP"
+      },
+      "http" : {
+        "connectTimeout" : 5000,
+        "idleTimeout" : 60000,
+        "keepAlive" : true,
+        "readTimeout" : 30000,
+        "pipelining" : false,
+        "maxConcurrentConnections" : 100,
+        "useCompression" : true,
+        "followRedirects" : false
+      },
+      "ssl" : {
+        "trustAll" : false,
+        "hostnameVerifier" : false
+      }
+    } ]
+  },
+  "response_templates" : { },
+  "primaryOwner" : {
+    "id" : "522d6d87-6c6c-4372-ad6d-876c6ce37232",
+    "email" : "nicolas.dardenne@cegedim.com",
+    "displayName" : "Nicolas DARDENNE",
+    "type" : "USER"
+  }
+}

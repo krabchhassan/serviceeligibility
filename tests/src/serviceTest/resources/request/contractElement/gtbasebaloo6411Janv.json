@@ -1,0 +1,27 @@
+{
+  "codeInsurer": "BALOO",
+  "codeAMC": "",
+  "codeContractElement": "GT_JANV",
+  "deadline": "2020-01-01",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "6411Janv",
+      "codeProduct": "6411Janv",
+      "codeAmc": "BALOO",
+      "codeBenefitNature": "",
+      "from": "2023-01-01T00:00:00.000Z",
+      "to": "%%CURRENT_YEAR%%-07-02T00:00:00.000Z",
+      "effectiveDate": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "codeOffer": "6411Jul",
+      "codeProduct": "6411Jul",
+      "codeAmc": "BALOO",
+      "codeBenefitNature": "",
+      "from": "%%CURRENT_YEAR%%-07-03T00:00:00.000Z",
+      "effectiveDate": "2024-07-03T00:00:00.000Z"
+    }
+  ]
+}

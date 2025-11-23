@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "name": "Liste_Codes_NAF_pour_import_referentiel.xlsx",
+    "sheets": [
+      {
+        "name": "NAF_REF",
+        "number": 0,
+        "columns": [
+          {
+            "position": 0,
+            "name": "Code",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 1,
+            "name": "Libellé",
+            "columnFormat": "STRING"
+          }
+        ],
+        "columnsNumber": 2
+      }
+    ],
+    "sheetsNumber": "1"
+  },
+  "content": [
+    {
+      "sheetName": "NAF_REF",
+      "sheetContent": [
+        {
+
+          "lineNumber": 1,
+          "Code": "01.11Z",
+          "Libellé": "Culture de céréales (à l'exception du riz), de légumineuses et de graines oléagineuses"
+        },
+        {
+          "lineNumber": 2,
+          "Code": "01.12Z",
+          "Libellé": "Culture du riz"
+        },
+        {
+          "lineNumber": 3,
+          "Code": "01.13Z",
+          "Libellé": "Culture de légumes, de melons, de racines et de tubercules"
+        }
+      ],
+      "sheetLinesNumber": 3
+    }
+  ]
+}

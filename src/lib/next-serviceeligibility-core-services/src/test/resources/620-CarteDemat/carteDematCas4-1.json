@@ -1,0 +1,245 @@
+{
+  "_id": "65af80c8f96305da245183db",
+  "idDeclarant": "0097810998",
+  "contrat": {
+    "numero": "CONSOW0",
+    "dateSouscription": "2021/01/01",
+    "type": "A",
+    "nomPorteur": "POPI",
+    "prenomPorteur": "JEAN PIERRE",
+    "civilitePorteur": "Mr",
+    "numeroAdherent": "CONSOW0",
+    "numeroAdherentComplet": "CONSOW0-COMPLET",
+    "qualification": "B",
+    "numeroContratCollectif": "03094493",
+    "rangAdministratif": "1",
+    "isContratResponsable": false,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "destinataire": "AD",
+    "categorieSociale": "A",
+    "situationParticuliere": "R",
+    "individuelOuCollectif": "1",
+    "codeRenvoi": "code",
+    "libelleCodeRenvoi": "libelle",
+    "lienFamilial": "A",
+    "typeConvention": "IS",
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Emplyés",
+    "numeroExterneContratIndividuel": "CONSOW0",
+    "numeroExterneContratCollectif": "DKMMMS09049304930",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "IGestion",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1",
+    "numAMCEchange": "123456789",
+    "fondCarte": "img_carte_TP",
+    "annexe1Carte": "annexe1A",
+    "annexe2Carte": "annexe2A",
+    "numeroCarte": "123",
+    "groupeAssures": "TB",
+    "editeurCarte": "cege",
+    "identifiantCollectivite": "wa",
+    "raisonSociale": "EN",
+    "siret": "949 372 445",
+    "groupePopulation": "X",
+    "codeItelis": "BLABLA_OPTIQUE"
+  },
+  "domainesConventions": [
+    {
+      "code": "AMM",
+      "rang": 0,
+      "conventions": [
+        {
+          "code": "IS",
+          "priorite": 0
+        }
+      ]
+    }
+  ],
+  "beneficiaires": [
+    {
+      "beneficiaire": {
+        "idClientBO": "e",
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "1701062498046",
+        "cleNirBeneficiaire": "02",
+        "nirOd1": "1701062498046",
+        "cleNirOd1": "02",
+        "nirOd2": "54756235578",
+        "cleNirOd2": "11",
+        "insc": "",
+        "numeroPersonne": "MBA-000",
+        "refExternePersonne": "7209738ADF",
+        "dateAdhesionMutuelle": "2021/01/01",
+        "dateDebutAdhesionIndividuelle": "2021/01/01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "affiliation": {
+          "nom": "POPI",
+          "nomPatronymique": "POPI",
+          "nomMarital": "POPI",
+          "prenom": "JEAN PIERRE",
+          "civilite": "Mr",
+          "periodeDebut": "2021/01/01",
+          "qualite": "A",
+          "regimeOD1": "01",
+          "caisseOD1": "624",
+          "centreOD1": "0156",
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "AM",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "BENEFICIAIRE"
+        },
+        "adresses": [
+          {
+            "ligne1": "Marie-Virginie BERGER",
+            "ligne2": "",
+            "ligne3": "",
+            "ligne4": "2 IMPASSE DE MARIE",
+            "ligne5": "",
+            "ligne6": "00155 Meunier-sur-Mer",
+            "ligne7": "",
+            "codePostal": "00155",
+            "email": "5920",
+            "typeAdresse": {
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "AMM",
+          "codeProduit": "PlatineBase",
+          "codeGarantie": "KC_PlatineBase",
+          "libelleGarantie": "SilverBase",
+          "modeAssemblage": "INCLUSION",
+          "tauxRemboursement": "100",
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2021/01/01",
+          "uniteTauxRemboursement": "PO",
+          "referenceCouverture": "AMM-010",
+          "noOrdreDroit": 0,
+          "categorie": "AMM",
+          "formulaMask": " 100% FR ",
+          "naturePrestation": "couvertureComplete",
+          "codeAssureurGarantie": "KLESIA_CARCEPT",
+          "codeOffre": "fGl_DE00001_100pctFraisReels",
+          "versionOffre": "v1",
+          "isEditable": true,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF",
+              "isEditionRisqueCarte": false,
+              "formule": {
+                "numero": "010",
+                "parametres": [
+                ]
+              }
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2024/01/01",
+            "periodeFin": "2024/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "Declaration de droits",
+            "modeObtention": "M"
+          },
+          "periodeOnline": {
+            "periodeDebut": "2024/01/01",
+            "motifEvenement": "DE",
+            "libelleEvenement": "Declaration de droits",
+            "modeObtention": "M"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "IS"
+              }
+            }
+          ]
+        }
+      ],
+      "domainesRegroup": [
+        {
+          "code": "AMM",
+          "taux": "100",
+          "unite": "PO",
+          "rang": "01",
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "IS"
+              }
+            }
+          ],
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "PlatineBase",
+          "libelleProduit": "",
+          "codeGarantie": "KC_PlatineBase",
+          "libelleGarantie": "SilverBase",
+          "prioriteDroits": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "codeRenvoi": null,
+          "libelleCodeRenvoi": "",
+          "codeRenvoiAdditionnel": null,
+          "libelleCodeRenvoiAdditionnel": null,
+          "categorieDomaine": "AMM",
+          "periodeDebut": "2024/01/01",
+          "periodeFin": "2024/12/31",
+          "noOrdreDroit": 0,
+          "referenceCouverture": "AMM-010",
+          "formulaMask": " 100% FR ",
+          "isEditable": true
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "A",
+        "rangAdministratif": "1",
+        "modePaiementPrestations": "V"
+      }
+    }
+  ],
+  "periodeDebut": "2024/01/01",
+  "periodeFin": "2024/12/31",
+  "AMC_contrat": "0097810998-CONSOW0",
+  "dateCreation": "2024-01-23T09:01:39.058+0000",
+  "dateConsolidation": "2024-01-23T09:01:39.058+0000",
+  "userCreation": "job620",
+  "dateModification": "2024-01-23T09:01:39.058+0000",
+  "userModification": "job620",
+  "isLastCarteDemat": true,
+  "idDeclarations": [
+    "65af80c8f96305da459637ye"
+  ],
+  "codeServices": [
+    "CARTE-DEMATERIALISEE",
+    "CARTE-TP"
+  ],
+  "adresse": {
+    "ligne1": "Marie-Virginie BERGER",
+    "ligne2": "",
+    "ligne3": "",
+    "ligne4": "2 IMPASSE DE MARIE",
+    "ligne5": "",
+    "ligne6": "00155 Meunier-sur-Mer",
+    "ligne7": "",
+    "codePostal": "00155"
+  }
+}

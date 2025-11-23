@@ -1,0 +1,244 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "C00010",
+  "numeroAdherent": "C00010",
+  "numeroAdherentComplet": "C00010-COMPLET",
+  "dateSouscription": "2021/01/01",
+  "type": "B",
+  "nomPorteur": "LEDUC",
+  "prenomPorteur": "ANNA",
+  "civilitePorteur": "Mme",
+  "qualification": "B",
+  "numeroContratCollectif": "03094493",
+  "isContratResponsable": false,
+  "isContratCMU": false,
+  "individuelOuCollectif": "1",
+  "typeConvention": "IS",
+  "critereSecondaire": "Employés",
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel": "C00010",
+  "numeroExterneContratCollectif": "DKMMMS09049304930",
+  "gestionnaire": "IGestion",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "dateNaissance": "19510413",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2510497209105",
+      "cleNirBeneficiaire": "14",
+      "nirOd1": "2510497209105",
+      "cleNirOd1": "14",
+      "numeroPersonne": "P00012",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2016/01/01",
+      "dateDebutAdhesionIndividuelle": "2016/01/01",
+      "numeroAdhesionIndividuelle": "10004300029647",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "LEDUC",
+        "nomPatronymique": "LEDUC",
+        "nomMarital": "LEDUC",
+        "prenom": "ANNA",
+        "civilite": "Mme",
+        "periodeDebut": "2016/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "601",
+        "centreOD1": "01",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "ANNA LEDUC",
+          "ligne4": "4 DOMAINE DE BELLEVUE",
+          "ligne6": "97200 FORT-DE-France",
+          "codePostal": "97200",
+          "telephone": "0735427677",
+          "email": "jlgohier@gagamil.coum",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "PHAR",
+          "noOrdreDroit": "1",
+          "periodesDroit": [
+            {
+              "typePeriode": "ONLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeProduit": "BLUE_002",
+              "codeAssureurGarantie": "BALOO",
+              "codeOffre": "BLUEOffre002",
+              "libelleEvenement": "Declaration de droits",
+              "modeObtention": "M",
+              "motifEvenement": "DE",
+              "naturePrestation": "PHARMACIE",
+              "dateAdhesionCouverture": "2016/01/01",
+              "referenceCouverture": "PHAR-010",
+              "tauxRemboursement": "100",
+              "uniteTauxRemboursement": "PO",
+              "codeOc": "BALOO",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "01",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 1,
+                  "typeConventionnement": {
+                    "code": "IS"
+                  }
+                },
+                {
+                  "priorite": 2,
+                  "typeConventionnement": {
+                    "code": "YOP"
+                  }
+                },
+                {
+                  "priorite": 1,
+                  "typeConventionnement": {
+                    "code": "IT"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "010",
+                    "parametres": [
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "PHILOU",
+          "noOrdreDroit": "2",
+          "periodesDroit": [
+            {
+              "typePeriode": "ONLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeProduit": "BLUE_002",
+              "codeAssureurGarantie": "BALOO",
+              "codeOffre": "BLUEOffre002",
+              "libelleEvenement": "Declaration de droits",
+              "modeObtention": "M",
+              "motifEvenement": "DE",
+              "naturePrestation": "PHARMACIE",
+              "dateAdhesionCouverture": "2016/01/01",
+              "referenceCouverture": "PHAR-010",
+              "tauxRemboursement": "100",
+              "uniteTauxRemboursement": "PO",
+              "codeOc": "BALOO",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "01",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 1,
+                  "typeConventionnement": {
+                    "code": "TEST"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "010",
+                    "parametres": [
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "DENT",
+          "noOrdreDroit": "3",
+          "periodesDroit": [
+            {
+              "typePeriode": "ONLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeProduit": "BLUE_002",
+              "codeAssureurGarantie": "BALOO",
+              "codeOffre": "BLUEOffre002",
+              "libelleEvenement": "Declaration de droits",
+              "modeObtention": "M",
+              "motifEvenement": "DE",
+              "naturePrestation": "DENTAIRE",
+              "dateAdhesionCouverture": "2016/01/01",
+              "referenceCouverture": "PHAR-010",
+              "tauxRemboursement": "100",
+              "uniteTauxRemboursement": "PO",
+              "codeOc": "BALOO",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "01",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 1,
+                  "typeConventionnement": {
+                    "code": "TEST"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "010",
+                    "parametres": [
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        }
+      ]
+    }
+  ],
+  "_class": "com.cegedim.next.serviceeligibility.core.model.domain.contract.Contract"
+}

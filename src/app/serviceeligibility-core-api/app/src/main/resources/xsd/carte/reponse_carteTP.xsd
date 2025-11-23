@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:carte="http://norme.cegedimassurances.com/carte" xmlns:commun="http://norme.cegedimassurances.com/commun"  targetNamespace="http://norme.cegedimassurances.com/carte"
+elementFormDefault="qualified" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance" jaxb:extensionBindingPrefixes="inheritance">
+
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_header_out.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_codeReponse.xsd"/>
+	<xs:include schemaLocation="type_carteTP.xsd"/>
+	<xs:complexType name="reponse_carteTP">
+		<xs:annotation>
+			<xs:appinfo>
+				<inheritance:implements>com.cegedimactiv.norme.fsiq.api.ReponseWsFsiq</inheritance:implements>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="header_out" minOccurs="1" maxOccurs="1" type="commun:type_header_out"/>
+			<xs:element name="code_reponse" minOccurs="1" maxOccurs="1" type="commun:type_codeReponse"/>
+			<xs:element name="carte" minOccurs="0" maxOccurs="1" type="carte:type_carteTP"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,89 @@
+workflowDefinition:
+  - code: is-bdds-extractcard
+    name: Extraction des cartes papier
+    nature: ["dev", "qa","preprod","prod"]
+    description: Cet OMU génère des fichiers sur la pefb contenant les cartes papier
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: effectiveDate
+        description: La date d'effet de l'OMU (au format SSAA-MM-JJ)
+      - name: xmlConversion
+        description: Booléen qui indique si le fichier produit doit être au format xml
+    steps:
+      - name: editing-system-generation
+        job:
+          name: editing-core-job
+          socle: application
+          service: interfaces
+        type: python
+        useBeyondWorkdir: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: documentType
+            - name: effectiveDate
+              ref: parameters/effectiveDate
+            - name: xmlConversion
+              ref: parameters/xmlConversion
+          env:
+            - name: TEMP_WORKDIR_PATH
+            - name: TOTAL_EPHEMERAL_STORAGE_MB
+            - name: PEFB_ORGANIZATION_FULL_PATH
+            - name: OBJECT_TYPE
+            - name: PEFB_FILE_NAME
+            - name: PEFB_FILES_MAX_SIZE_MB
+            - name: FILE_HEADER_NAME
+            - name: FILE_HEADER_LIST_NAME
+            - name: FILE_HEADER_OBJECT_NAME
+            - name: PROCESSING_DATE
+            - name: FREQUENCY
+            - name: BREAKDOWN_STRATEGY
+            - name: BREAKDOWN_FILE_PATTERN
+            - name: DEFAULT_MAIN_ORGANIZATION
+      - name: file-manager
+        job:
+          name: file-manager-generic-job
+          socle: application
+          service: scheduling
+        type: python
+        fileExchangePlatform: true
+        useBeyondWorkdir: true
+        parameters:
+          arguments:
+            - name: strategy
+            - name: source_path
+        dependsOn:
+          - editing-system-generation
+        produceOutputs: true
+      - name: trace-extraction-conso
+        job: serviceeligibility-batch620trace-extractionconso-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+        dependsOn:
+          - file-manager
+    crex:
+      - name: effectiveDate
+        description: Date d'execution du batch au format SSAA-MM-JJ
+        ref: steps/editing-system-generation/parameters/arguments/effectiveDate
+      - name: xmlConversion
+        description: Booléen qui indique si le fichier produit doit être au format xml
+        ref: steps/editing-system-generation/parameters/arguments/xmlConversion
+      - name: list_fichiers
+        description: La liste des fichiers produits ou convertis
+        ref: steps/editing-system-generation/parameters/outputs/list_fichiers
+      - name: nombre_fichiers
+        description: Le nombre de fichiers produits ou convertis
+        ref: steps/editing-system-generation/parameters/outputs/nombre_fichiers
+      - name: list_of_files
+        description : Liste des fichiers copiés avec chemin absolu sur l'espace cible
+        ref: steps/file-manager/parameters/outputs/list_files_file-manager
+      - name: list_of_missing_folders
+        description : Liste des dossiers attendus mais absents sur l'espace cible
+        ref: steps/file-manager/parameters/outputs/list_missing_folders_file-manager
+      - name: nombreCartesPapierGeneresEnSucces
+        description: Nombre de cartes papier en succès
+        ref: steps/trace-extraction-conso/parameters/outputs/nombreCartesPapierGeneresEnSucces
+      - name: nombreCartesPapierGeneresEnEchec
+        description: Nombre de cartes papier en échec
+        ref: steps/trace-extraction-conso/parameters/outputs/nombreCartesPapierGeneresEnEchec

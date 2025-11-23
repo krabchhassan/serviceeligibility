@@ -1,0 +1,80 @@
+beyond:
+  caching:
+    specs:
+      managementScopeEntities:
+        expireAfterWriteDuration: PT2M
+        maxSize: 50
+        type: caffeine
+  customer: ${BEYOND_CUSTOMER}
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-prestij
+    publisher:
+      enabled: true
+  instance: ${BEYOND_INSTANCE}
+  management-scope:
+    enabled: ${BEYOND_MANAGEMENTSCOPE_ENABLED:true}
+    s3Bucket: ${NATURE}-${BEYOND_INSTANCE}-${BEYOND_CUSTOMER}
+    s3Folder: ${MANAGEMENT_SCOPE_FOLDER:Application/settings-ui/export}
+    s3File: ${MANAGEMENT_SCOPE_FILE:export-management-scopes.json}
+    s3Host: ${s3_host}
+    s3AccessKey: ${s3_access_key}
+    s3SecretKey: ${s3_secret_access_key}
+    s3Region: ${s3_region}
+    s3SecureRequest: ${s3_secure}
+  messaging:
+    serializers:
+      - topic: ${KAFKA_TOPIC_BDD-PRESTIJ:prestij}
+        value-serializer: json
+    transactional: false
+    security-context:
+      enabled: false
+    types:
+      BenefAIV5: com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5
+      PrestIJ: com.cegedim.next.serviceeligibility.core.model.kafka.prestij.PrestIJ
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+  service: ${service_socle:serviceeligibility}
+  socle: ${socle_socle:Insurance}
+  observability:
+    tracing:
+      enabled: ${ZIPKIN_ENABLED:true}
+    log:
+      enabled: true
+kafka:
+  topic:
+    beyond-events: beyond-events
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: error
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+spring:
+  application:
+    name: serviceeligibility-prestij-worker
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  main:
+    web-application-type: servlet

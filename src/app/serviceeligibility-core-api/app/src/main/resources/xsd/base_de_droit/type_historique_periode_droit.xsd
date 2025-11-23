@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" 
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_parametre.xsd"></xs:include>
+	<xs:complexType name="type_historique_periode_droit">
+		<xs:sequence>
+			<xs:element name="periode_debut" minOccurs="1" maxOccurs="1" type="xs:date"/>
+			<xs:element name="periode_fin" minOccurs="0" maxOccurs="1" type="xs:date"/>
+			<xs:element name="motif_evenement" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelle_evenement" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="45"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="date_evenemnt" minOccurs="0" maxOccurs="1" type="xs:date"/>
+			<xs:element name="mode_obtention" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

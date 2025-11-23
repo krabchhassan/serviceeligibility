@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Réception prestij invalide",
+  "description": "Réception d'une prestij invalide du backoffice",
+  "additionalProperties": false,
+  "properties": {
+    "error": {
+      "type": "string",
+      "description": "Erreur remontée à la réception d'une prestij invalide"
+    },
+    "traceId": {
+      "type": "string",
+      "description": "Identifiant de la trace liée à la prestij"
+    }
+  },
+  "required": [
+    "error",
+    "traceId"
+  ],
+  "$id": "Insurance.serviceeligibility.prestij.invalid.reception.event/0.0.1"
+}

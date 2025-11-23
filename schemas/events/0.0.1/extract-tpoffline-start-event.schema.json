@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Début extraction droits TP offline",
+  "description": "Début de l'OMU d'extraction des droits TP offline",
+  "additionalProperties": false,
+  "properties": {
+    "userHash": {
+      "type": "string",
+      "title": "Hash de l'utilisateur",
+      "description": "Hash de l'utilisateur qui a déclencher l'OMU"
+    },
+    "file": {
+      "type": "string",
+      "title": "Fichier à traiter",
+      "description": "Nom du fichier à traiter"
+    }
+  },
+  "$id": "Insurance.serviceeligibility.extract.tpoffline.start.event/0.0.1"
+}

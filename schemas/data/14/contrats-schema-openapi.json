@@ -1,0 +1,437 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "contrats",
+      "description": "Collection qui contient l'ensemble des contrats TP (consolidation des déclarations)"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Contract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "type": "string"
+          },
+          "numeroContrat": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "codeOc": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "nomPorteur": {
+            "type": "string"
+          },
+          "prenomPorteur": {
+            "type": "string"
+          },
+          "civilitePorteur": {
+            "type": "string"
+          },
+          "qualification": {
+            "type": "string"
+          },
+          "numeroContratCollectif": {
+            "type": "string"
+          },
+          "isContratResponsable": {
+            "type": "boolean"
+          },
+          "isContratCMU": {
+            "type": "boolean"
+          },
+          "destinataire": {
+            "type": "string"
+          },
+          "individuelOuCollectif": {
+            "type": "string"
+          },
+          "situationDebut": {
+            "type": "string"
+          },
+          "situationFin": {
+            "type": "string"
+          },
+          "motifFinSituation": {
+            "type": "string"
+          },
+          "typeConvention": {
+            "type": "string"
+          },
+          "critereSecondaire": {
+            "type": "string"
+          },
+          "critereSecondaireDetaille": {
+            "type": "string"
+          },
+          "numeroExterneContratIndividuel": {
+            "type": "string"
+          },
+          "numeroExterneContratCollectif": {
+            "type": "string"
+          },
+          "gestionnaire": {
+            "type": "string"
+          },
+          "groupeAssures": {
+            "type": "string"
+          },
+          "numeroCarte": {
+            "type": "string"
+          },
+          "editeurCarte": {
+            "type": "string"
+          },
+          "fondCarte": {
+            "type": "string"
+          },
+          "annexe1Carte": {
+            "type": "string"
+          },
+          "annexe2Carte": {
+            "type": "string"
+          },
+          "numAMCEchange": {
+            "type": "string"
+          },
+          "numOperateur": {
+            "type": "string"
+          },
+          "ordrePriorisation": {
+            "type": "string"
+          },
+          "contratCMUC2S": {
+            "type": "string"
+          },
+          "dateRestitution": {
+            "type": "string"
+          },
+          "origineDeclaration": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateConsolidation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "beneficiaires": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BeneficiaireContract"
+            }
+          },
+          "suspension": {
+            "$ref": "#/components/schemas/SuspensionContract"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Contract"
+      },
+      "BeneficiaireContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isCarteTPaEditer": {
+            "type": "boolean"
+          },
+          "dateRadiation": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string"
+          },
+          "nirBeneficiaire": {
+            "type": "string"
+          },
+          "cleNirBeneficiaire": {
+            "type": "string"
+          },
+          "nirOd1": {
+            "type": "string"
+          },
+          "cleNirOd1": {
+            "type": "string"
+          },
+          "nirOd2": {
+            "type": "string"
+          },
+          "cleNirOd2": {
+            "type": "string"
+          },
+          "insc": {
+            "type": "string"
+          },
+          "numeroPersonne": {
+            "type": "string"
+          },
+          "refExternePersonne": {
+            "type": "string"
+          },
+          "rangAdministratif": {
+            "type": "string"
+          },
+          "categorieSociale": {
+            "type": "string"
+          },
+          "situationParticuliere": {
+            "type": "string"
+          },
+          "modePaiementPrestations": {
+            "type": "string"
+          },
+          "dateAdhesionMutuelle": {
+            "type": "string"
+          },
+          "dateDebutAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "numeroAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "dernierMouvementRecu": {
+            "type": "string"
+          },
+          "affiliation": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Affiliation"
+          },
+          "adresses": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Adresse"
+            }
+          },
+          "domaineDroits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DomaineDroitContract"
+            }
+          }
+        },
+        "required": [],
+        "title": "BeneficiaireContract"
+      },
+      "DomaineDroitContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "codeExterne": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "libelleExterne": {
+            "type": "string"
+          },
+          "codeProfil": {
+            "type": "string"
+          },
+          "codeRenvoi": {
+            "type": "string"
+          },
+          "libelleCodeRenvoi": {
+            "type": "string"
+          },
+          "origineDroits": {
+            "type": "string"
+          },
+          "noOrdreDroit": {
+            "type": "string"
+          },
+          "periodesDroit": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodeDroitContract"
+            }
+          },
+          "isSuspension": {
+            "type": "boolean"
+          },
+          "isEditable": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "DomaineDroitContract"
+      },
+      "PeriodeDroitContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "periodeDebut": {
+            "type": "string"
+          },
+          "periodeFin": {
+            "type": "string"
+          },
+          "periodeFinFermeture": {
+            "type": "string"
+          },
+          "codeGarantie": {
+            "type": "string"
+          },
+          "libelleGarantie": {
+            "type": "string"
+          },
+          "codeProduit": {
+            "type": "string"
+          },
+          "libelleProduit": {
+            "type": "string"
+          },
+          "codeExterneProduit": {
+            "type": "string"
+          },
+          "codeAssureurGarantie": {
+            "type": "string"
+          },
+          "codeOffre": {
+            "type": "string"
+          },
+          "versionOffre": {
+            "type": "string"
+          },
+          "libelleEvenement": {
+            "type": "string"
+          },
+          "masqueFormule": {
+            "type": "string"
+          },
+          "modeObtention": {
+            "type": "string"
+          },
+          "motifEvenement": {
+            "type": "string"
+          },
+          "naturePrestation": {
+            "type": "string"
+          },
+          "dateAdhesionCouverture": {
+            "type": "string"
+          },
+          "referenceCouverture": {
+            "type": "string"
+          },
+          "tauxRemboursement": {
+            "type": "string"
+          },
+          "uniteTauxRemboursement": {
+            "type": "string"
+          },
+          "codeOc": {
+            "type": "string"
+          },
+          "periodeOnlineDebut": {
+            "type": "string"
+          },
+          "periodeOnlineFin": {
+            "type": "string"
+          },
+          "prioriteDroit": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/PrioriteDroit"
+          },
+          "conventionnements": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Conventionnement"
+            }
+          },
+          "prestations": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Prestation"
+            }
+          },
+          "codeCarence": {
+            "type": "string"
+          },
+          "codeOrigine": {
+            "type": "string"
+          },
+          "codeAssureurOrigine": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PeriodeDroitContract"
+      },
+      "SuspensionContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "periodesSuspension": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodeSuspensionContract"
+            }
+          },
+          "etatSuspension": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "SuspensionContract"
+      },
+      "PeriodeSuspensionContract": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateDebutSuspension": {
+            "type": "string"
+          },
+          "dateFinSuspension": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PeriodeSuspensionContract"
+      }
+    }
+  }
+}

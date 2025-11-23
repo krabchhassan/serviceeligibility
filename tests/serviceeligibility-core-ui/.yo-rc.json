@@ -1,0 +1,8 @@
+{
+  "generator-cgd-e2e": {
+    "applicationName": "next-payment-core-ui",
+    "suiteName": "Payment",
+    "uiUrl": "http://next.dev.cegedim-next.net/payment/core/ui/",
+    "generatorVersion": "1.0.0"
+  }
+}

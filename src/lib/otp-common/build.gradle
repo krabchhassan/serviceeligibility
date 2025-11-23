@@ -1,0 +1,9 @@
+plugins {
+    id 'beyond.gradle.plugins.python-lib'
+}
+
+pythonAppExtension {
+//    unitTestsDirectoryPath = "unit"
+//    behavioralTestsDirectoryPath = "features"
+    setActivateLint(false)
+}

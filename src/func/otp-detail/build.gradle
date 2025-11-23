@@ -1,0 +1,11 @@
+plugins {
+    id 'beyond.gradle.plugins.python-faas'
+}
+
+pythonAppExtension {
+    setActivateLint(false)
+}
+
+dependencies {
+    lib(project(":lib-otp-common"))
+}

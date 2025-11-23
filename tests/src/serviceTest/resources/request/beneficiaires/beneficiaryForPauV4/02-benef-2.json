@@ -1,0 +1,65 @@
+{
+  "id": null,
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "A0002",
+  "contrats": [
+    {
+      "numeroContrat": "A0002",
+      "numeroAdherent": "A0002",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0002",
+          "nomUsage": "TESTB0002",
+          "prenom": "Martine"
+        },
+        "adresse": {},
+        "contact": {}
+      }
+    }
+  ],
+  "identite": {
+    "nir": {
+      "code": "1700131111111",
+      "cle": "18"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1700131111111",
+          "cle": "18"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19700130",
+    "rangNaissance": "1",
+    "numeroPersonne": "0021",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19700103",
+        "rangNaissance": "1"
+      },
+      {
+        "dateNaissance": "19700130",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": null
+  },
+  "traceId": null,
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-0021"
+}

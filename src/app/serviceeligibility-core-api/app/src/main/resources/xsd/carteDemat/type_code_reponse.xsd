@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans" targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="code_reponse">
+		<xs:sequence>
+			<xs:element name="code" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Code réponse :
+						code 0 : OK
+						de 1 à 999 : plage erreur technique
+						au delà de 1000 : plage erreur fonctionnelle
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelle" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Libellé en cas d'erreur</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="150" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="detail_erreur" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Complément erreurs</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="150" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

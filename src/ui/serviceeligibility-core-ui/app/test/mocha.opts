@@ -1,0 +1,8 @@
+--timeout 10000
+--colors
+--reporter mocha-multi-reporters
+--reporter-options configFile=mocha-reporters-config.json
+--recursive
+--compilers js:babel-register
+--require babel-polyfill
+--require ignore-styles

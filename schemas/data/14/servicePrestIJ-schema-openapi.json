@@ -1,0 +1,196 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "servicePrestIJ",
+      "description": "Collection contenant l'ensemble des prestij reçus depuis un backoffice externe"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "PrestIJ": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "traceId": {
+            "type": "string"
+          },
+          "contrat": {
+            "$ref": "#/components/schemas/ContratIJ"
+          },
+          "oc": {
+            "$ref": "#/components/schemas/Oc"
+          },
+          "entreprise": {
+            "$ref": "#/components/schemas/Entreprise"
+          },
+          "assures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assure"
+            }
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PrestIJ"
+      },
+      "Assure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nir": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Nir"
+          },
+          "numeroPersonne": {
+            "type": "string"
+          },
+          "referenceExternePersonne": {
+            "type": "string"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/DataAssure"
+          },
+          "droits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DroitAssure"
+            }
+          }
+        },
+        "required": [],
+        "title": "Assure"
+      },
+      "DataAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nom": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/NomAssure"
+          }
+        },
+        "required": [],
+        "title": "DataAssure"
+      },
+      "DroitAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "dateDebut": {
+            "type": "string"
+          },
+          "dateFin": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "DroitAssure"
+      },
+      "ContratIJ": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "dateEffet": {
+            "type": "string"
+          },
+          "isContratIndividuel": {
+            "type": "boolean"
+          },
+          "contratCollectif": {
+            "$ref": "#/components/schemas/ContratCollectif"
+          }
+        },
+        "required": [],
+        "title": "ContratIJ"
+      },
+      "ContratCollectif": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ContratCollectif"
+      },
+      "Entreprise": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "identifiantSiret": {
+            "type": "string"
+          },
+          "identifiantSiren": {
+            "type": "string"
+          },
+          "identifiantNic": {
+            "type": "string"
+          },
+          "raisonSociale": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Entreprise"
+      },
+      "Oc": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idClientBO": {
+            "type": "string"
+          },
+          "identifiantPrestIj": {
+            "type": "string"
+          },
+          "identifiant": {
+            "type": "string"
+          },
+          "denomination": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Oc"
+      }
+    }
+  }
+}

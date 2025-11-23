@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    jaxb:extensionBindingPrefixes="xjc"
+    version="2.1">
+<!--     <jaxb:globalBindings generateIsSetMethod="true" fixedAttributeAsConstantProperty="true">
+        <xjc:serializable />
+    </jaxb:globalBindings>
+ -->    
+    <jaxb:bindings schemaLocation="xsd/base_de_droit/type_info_bdd.xsd">
+        <jaxb:bindings node="//xs:element[@name='type_recherche_benef']/xs:simpleType">
+            <jaxb:typesafeEnumClass name="TypeRechercheBeneficiaire" />
+         	<jaxb:bindings node="//xs:element[@name='type_recherche_benef']/xs:simpleType/xs:restriction/xs:enumeration[@value='0']">
+            	<jaxb:typesafeEnumMember name="BENEFICIAIRE"/>
+        	</jaxb:bindings>
+        	<jaxb:bindings node="//xs:element[@name='type_recherche_benef']/xs:simpleType/xs:restriction/xs:enumeration[@value='1']">
+            	<jaxb:typesafeEnumMember name="CARTE_FAMILLE"/>
+        	</jaxb:bindings>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='type_recherche_segment']/xs:simpleType">
+            <jaxb:typesafeEnumClass name="TypeRechercheSegment" />
+            <jaxb:bindings node="//xs:element[@name='type_recherche_segment']/xs:simpleType/xs:restriction/xs:enumeration[@value='0']">
+            	<jaxb:typesafeEnumMember name="PAS_DE_RECHERCHE_SEGMENT"/>
+        	</jaxb:bindings>
+        	<jaxb:bindings node="//xs:element[@name='type_recherche_segment']/xs:simpleType/xs:restriction/xs:enumeration[@value='1']">
+            	<jaxb:typesafeEnumMember name="MONO_SEGMENT"/>
+        	</jaxb:bindings>
+        	<jaxb:bindings node="//xs:element[@name='type_recherche_segment']/xs:simpleType/xs:restriction/xs:enumeration[@value='2']">
+            	<jaxb:typesafeEnumMember name="TOUT_SEGMENT"/>
+        	</jaxb:bindings>
+            <jaxb:bindings node="//xs:element[@name='type_recherche_segment']/xs:simpleType/xs:restriction/xs:enumeration[@value='3']">
+                <jaxb:typesafeEnumMember name="LISTE_SEGMENT"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+         <jaxb:bindings node="//xs:element[@name='type_profondeur_recherche']/xs:simpleType">
+            <jaxb:typesafeEnumClass name="TypeProfondeurRecherche" />
+            <jaxb:bindings node="//xs:element[@name='type_profondeur_recherche']/xs:simpleType/xs:restriction/xs:enumeration[@value='0']">
+            	<jaxb:typesafeEnumMember name="AVEC_FORMULES"/>
+        	</jaxb:bindings>
+        	<jaxb:bindings node="//xs:element[@name='type_profondeur_recherche']/xs:simpleType/xs:restriction/xs:enumeration[@value='1']">
+            	<jaxb:typesafeEnumMember name="SANS_FORMULES"/>
+        	</jaxb:bindings>
+        	<jaxb:bindings node="//xs:element[@name='type_profondeur_recherche']/xs:simpleType/xs:restriction/xs:enumeration[@value='2']">
+            	<jaxb:typesafeEnumMember name="SANS_DOMAINES"/>
+        	</jaxb:bindings>
+        </jaxb:bindings>
+   </jaxb:bindings>
+</jaxb:bindings>

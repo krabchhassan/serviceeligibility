@@ -1,0 +1,64 @@
+{
+  "id": null,
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "83747438",
+  "contrats": [
+    {
+      "numeroContrat": "8343484392",
+      "numeroAdherent": "83747438",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "nomUsage": "DELMOTTE",
+          "prenom": "JEAN PIERRE"
+        },
+        "adresse": {
+        },
+        "contact": {
+        }
+      }
+    }
+  ],
+  "identite": {
+    "nir": {
+      "code": "1701062498046",
+      "cle": "02"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1701062498046",
+          "cle": "02"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19791006",
+    "rangNaissance": "1",
+    "numeroPersonne": "288939000",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19791006",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": null
+  },
+  "traceId": null,
+  "services": [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key": "0000452433-288939000"
+}

@@ -1,0 +1,15 @@
+[
+    {
+        "validityDate": "2023-07-01",
+        "code": 3,
+        "natures": [
+            "DENTAIRE",
+            "HOSPITALISATION",
+            "PHARMACIE",
+            "OPTIQUE"
+        ],
+        "products": [
+            "PDT_BASE9"
+        ]
+    }
+]

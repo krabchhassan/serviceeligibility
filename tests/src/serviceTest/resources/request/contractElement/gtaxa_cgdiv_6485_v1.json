@@ -1,0 +1,19 @@
+{
+  "codeInsurer": "AXA6485",
+  "codeAMC": "",
+  "codeContractElement": "AXASCCGDIV",
+  "label": "AXASCCGDIM",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "CONTRATGROUPEAXA",
+      "codeProduct": "AXASC_CGDIV-6485",
+      "codeAmc": "CONTRAT_GROUPE_AXA",
+      "codeBenefitNature": "",
+      "from": "2018-01-01T06:00:00.000Z",
+      "effectiveDate": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}
+

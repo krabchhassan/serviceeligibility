@@ -1,0 +1,670 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "servicePrestation",
+      "description": "Collection contenant l'ensemble des contrats HTP reçus depuis un backoffice externe"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ContratAIV5": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "contexteTiersPayant": {
+            "$ref": "#/components/schemas/ContexteTP"
+          },
+          "assures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assure"
+            }
+          },
+          "version": {
+            "type": "string"
+          },
+          "periodesSuspension": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodeSuspension"
+            }
+          },
+          "codeOc": {
+            "type": "string"
+          },
+          "periodesContratCMUOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PeriodeContratCMUOuvert"
+            }
+          },
+          "nomFichierOrigine": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "traceId": {
+            "type": "string"
+          },
+          "idDeclarant": {
+            "type": "string"
+          },
+          "societeEmettrice": {
+            "type": "string"
+          },
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "apporteurAffaire": {
+            "type": "string"
+          },
+          "periodesContratResponsableOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "critereSecondaireDetaille": {
+            "type": "string"
+          },
+          "critereSecondaire": {
+            "type": "string"
+          },
+          "isContratIndividuel": {
+            "type": "boolean"
+          },
+          "gestionnaire": {
+            "type": "string"
+          },
+          "contratCollectif": {
+            "$ref": "#/components/schemas/ContratCollectif"
+          },
+          "qualification": {
+            "type": "string"
+          },
+          "ordrePriorisation": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ContratAIV5"
+      },
+      "Assure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/DataAssure"
+          },
+          "digitRelation": {
+            "$ref": "#/components/schemas/DigitRelation"
+          },
+          "droits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DroitAssure"
+            }
+          },
+          "isSouscripteur": {
+            "type": "boolean"
+          },
+          "rangAdministratif": {
+            "type": "string"
+          },
+          "identite": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/IdentiteContrat"
+          },
+          "dateAdhesionMutuelle": {
+            "type": "string"
+          },
+          "dateDebutAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "numeroAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "dateRadiation": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "periodes": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "periodesMedecinTraitantOuvert": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "regimesParticuliers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CodePeriode"
+            }
+          },
+          "situationsParticulieres": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CodePeriode"
+            }
+          },
+          "qualite": {
+            "$ref": "#/components/schemas/QualiteAssure"
+          }
+        },
+        "required": [],
+        "title": "Assure"
+      },
+      "DataAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "destinatairesPaiements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DestinatairePaiement"
+            }
+          },
+          "destinatairesRelevePrestations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DestinataireRelevePrestations"
+            }
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomAssure"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/AdresseAssure"
+          },
+          "contact": {
+            "$ref": "#/components/schemas/Contact"
+          }
+        },
+        "required": [],
+        "title": "DataAssure"
+      },
+      "AdresseAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ligne1": {
+            "type": "string"
+          },
+          "ligne2": {
+            "type": "string"
+          },
+          "ligne3": {
+            "type": "string"
+          },
+          "ligne4": {
+            "type": "string"
+          },
+          "ligne5": {
+            "type": "string"
+          },
+          "ligne6": {
+            "type": "string"
+          },
+          "ligne7": {
+            "type": "string"
+          },
+          "codePostal": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "AdresseAssure"
+      },
+      "Contact": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "fixe": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Contact"
+      },
+      "DestinatairePaiement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDestinatairePaiements": {
+            "type": "string"
+          },
+          "idBeyondDestinatairePaiements": {
+            "type": "string"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataire"
+          },
+          "adresse": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Adresse"
+          },
+          "rib": {
+            "$ref": "#/components/schemas/RibAssure"
+          },
+          "modePaiementPrestations": {
+            "$ref": "#/components/schemas/ModePaiement"
+          },
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          }
+        },
+        "required": [],
+        "title": "DestinatairePaiement"
+      },
+      "ModePaiement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "codeMonnaie": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "libelle",
+          "monnaie"
+        ],
+        "title": "ModePaiementPrestations"
+      },
+      "NomDestinataire": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nomFamille": {
+            "type": "string"
+          },
+          "nomUsage": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          },
+          "raisonSociale": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "NomDestinataire"
+      },
+      "RibAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "bic": {
+            "type": "string"
+          },
+          "iban": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "bic",
+          "iban"
+        ],
+        "title": "RibAssure"
+      },
+      "DestinataireRelevePrestations": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDestinataireRelevePrestations": {
+            "type": "string"
+          },
+          "idBeyondDestinataireRelevePrestations": {
+            "type": "string"
+          },
+          "dematerialisation": {
+            "$ref": "#/components/schemas/Dematerialisation"
+          },
+          "nom": {
+            "$ref": "#/components/schemas/NomDestinataire"
+          },
+          "adresse": {
+            "$ref": "#/components/schemas/AdresseAssure"
+          },
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          }
+        },
+        "required": [],
+        "title": "DestinataireRelevePrestations"
+      },
+      "DigitRelation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dematerialisation": {
+            "$ref": "#/components/schemas/Dematerialisation"
+          },
+          "teletransmissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Teletransmission"
+            }
+          }
+        },
+        "required": [],
+        "title": "DigitRelation"
+      },
+      "Teletransmission": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          },
+          "isTeletransmission": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "Teletransmission"
+      },
+      "DroitAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "carences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CarenceDroit"
+            }
+          },
+          "code": {
+            "type": "string"
+          },
+          "codeAssureur": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "ordrePriorisation": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          },
+          "dateAncienneteGarantie": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "DroitAssure"
+      },
+      "CarenceDroit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "droitRemplacement": {
+            "$ref": "#/components/schemas/DroitRemplacement"
+          },
+          "periode": {
+            "$ref": "#/components/schemas/PeriodeCarence"
+          }
+        },
+        "required": [],
+        "title": "CarenceDroit"
+      },
+      "DroitRemplacement": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeAssureur": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "DroitRemplacement"
+      },
+      "QualiteAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "libelle": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "libelle"
+        ],
+        "title": "QualiteAssure"
+      },
+      "CodePeriode": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          }
+        },
+        "required": [],
+        "title": "CodePeriode"
+      },
+      "ContexteTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isCartePapierAEditer": {
+            "type": "boolean"
+          },
+          "periodesDroitsCarte": {
+            "$ref": "#/components/schemas/PeriodesDroitsCarte"
+          },
+          "dateRestitutionCarte": {
+            "type": "string"
+          },
+          "college": {
+            "type": "string"
+          },
+          "collectivite": {
+            "type": "string"
+          },
+          "isCarteDematerialisee": {
+            "type": "boolean"
+          },
+          "isCartePapier": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "title": "ContexteTP"
+      },
+      "PeriodesDroitsCarte": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "debut": {
+            "type": "string"
+          },
+          "fin": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "debut"
+        ],
+        "title": "PeriodesDroitsCarte"
+      },
+      "ContratCollectif": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "numero"
+        ],
+        "title": "ContratCollectif"
+      },
+      "PeriodeSuspension": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          },
+          "typeSuspension": {
+            "type": "string"
+          },
+          "motifSuspension": {
+            "type": "string"
+          },
+          "motifLeveeSuspension": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PeriodeSuspension"
+      },
+      "NomAssure": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nomFamille": {
+            "type": "string"
+          },
+          "nomUsage": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "civilite",
+          "nomFamille",
+          "prenom"
+        ],
+        "title": "NomAssure"
+      },
+      "Dematerialisation": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "isDematerialise": {
+            "type": "boolean"
+          },
+          "email": {
+            "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Dematerialisation"
+      },
+      "PeriodeCarence": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "debut": {
+            "type": "string"
+          },
+          "fin": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "PeriodeCarence"
+      },
+      "PeriodeContratCMUOuvert": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "periode": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+          }
+        },
+        "required": [
+          "code",
+          "periode"
+        ],
+        "title": "PeriodeContratCMUOuvert"
+      }
+    }
+  }
+}

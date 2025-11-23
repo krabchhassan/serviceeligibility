@@ -1,0 +1,924 @@
+{
+  "contexteTiersPayant" : {
+    "isCartePapierAEditer" : false,
+    "periodesDroitsCarte" : {
+      "debut" : "%%LAST_YEAR%%-04-05",
+      "fin" : "%%LAST_YEAR%%-12-31"
+    },
+    "isCarteDematerialisee" : false,
+    "isCartePapier" : false
+  },
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "rib" : {
+              "bic" : "AXABFRPPXXX",
+              "iban" : "FR7612548940010352225424049"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-12-22",
+              "fin" : "2024-12-31"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "rib" : {
+              "bic" : "SOGEFRPP",
+              "iban" : "FR7630003002970005001983630"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-12-01",
+              "fin" : "2022-12-21"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "SOGEFRPP",
+              "iban" : "FR7630003002970005001983630"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-03-22",
+              "fin" : "2022-11-30"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "BNPAFRPPXXX",
+              "iban" : "FR7630004006270000066245432"
+            },
+            "modePaiementPrestations" : {
+              "code" : "CHQ",
+              "libelle" : "Chèque",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-01-19",
+              "fin" : "2022-03-21"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "BNPAFRPPXXX",
+              "iban" : "FR7630004006270000066245432"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2022-01-18"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2125734",
+            "idBeyondDestinataireRelevePrestations" : "2125734-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "periode" : {
+              "debut" : "2022-12-01",
+              "fin" : "2024-12-31"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations" : "2125734",
+            "idBeyondDestinataireRelevePrestations" : "2125734-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "VAHE.TOUMANIAN@GMAIL.COM"
+            },
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2022-11-30"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "TOUMANIAN",
+          "nomUsage" : "TOUMANIAN",
+          "prenom" : "RUBEN",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur TOUMANIAN RUBEN",
+          "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+          "ligne6" : "26600 TAIN L HERMITAGE",
+          "codePostal" : "26600"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2024-04-05"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "GT_BASE",
+          "codeAssureur" : "BALOO",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2024-04-05",
+            "fin" : "2024-12-31"
+          },
+          "dateAncienneteGarantie" : "2024-04-05"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "3",
+      "identite" : {
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2890257630035",
+              "cle" : "26"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "261"
+            },
+            "periode" : {
+              "debut" : "2024-04-05"
+            }
+          }
+        ],
+        "dateNaissance" : "20240405",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2513217"
+      },
+      "dateAdhesionMutuelle" : "2024-04-05",
+      "dateDebutAdhesionIndividuelle" : "2024-04-05",
+      "dateRadiation" : "2024-12-31",
+      "dateModification" : "2024-03-01T10:40:54.230Z",
+      "periodes" : [
+        {
+          "debut" : "2024-04-05",
+          "fin" : "2024-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "E",
+        "libelle" : "Enfant"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "rib" : {
+              "bic" : "AXABFRPPXXX",
+              "iban" : "FR7612548940010352225424049"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-12-22",
+              "fin" : "2024-12-31"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "rib" : {
+              "bic" : "SOGEFRPP",
+              "iban" : "FR7630003002970005001983630"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-12-01",
+              "fin" : "2022-12-21"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "SOGEFRPP",
+              "iban" : "FR7630003002970005001983630"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-03-22",
+              "fin" : "2022-11-30"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "BNPAFRPPXXX",
+              "iban" : "FR7630004006270000066245432"
+            },
+            "modePaiementPrestations" : {
+              "code" : "CHQ",
+              "libelle" : "Chèque",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-01-19",
+              "fin" : "2022-03-21"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "BNPAFRPPXXX",
+              "iban" : "FR7630004006270000066245432"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2022-01-18"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2125734",
+            "idBeyondDestinataireRelevePrestations" : "2125734-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "periode" : {
+              "debut" : "2022-12-01",
+              "fin" : "2024-12-31"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations" : "2125734",
+            "idBeyondDestinataireRelevePrestations" : "2125734-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "VAHE.TOUMANIAN@GMAIL.COM"
+            },
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2022-11-30"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "TOUMANIAN",
+          "nomUsage" : "TOUMANIAN",
+          "prenom" : "VAHE",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur TOUMANIAN VAHE",
+          "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+          "ligne6" : "26600 TAIN L HERMITAGE",
+          "codePostal" : "26600"
+        },
+        "contact" : {
+          "fixe" : "-",
+          "email" : "VAHE.TOUMANIAN@GMAIL.COM"
+        }
+      },
+      "digitRelation" : {
+        "dematerialisation" : {
+          "isDematerialise" : true,
+          "email" : "VAHE.TOUMANIAN@GMAIL.COM"
+        },
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "GT_BASE",
+          "codeAssureur" : "BALOO",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01",
+            "fin" : "2024-12-31"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "1891099252007",
+          "cle" : "59"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1891099252007",
+              "cle" : "59"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "691"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19891011",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2125734"
+      },
+      "dateAdhesionMutuelle" : "2015-11-02",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateRadiation" : "2024-12-31",
+      "dateModification" : "2024-03-01T10:40:54.230Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    },
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "rib" : {
+              "bic" : "AXABFRPPXXX",
+              "iban" : "FR7612548940010352225424049"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-12-22",
+              "fin" : "2024-12-31"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "rib" : {
+              "bic" : "SOGEFRPP",
+              "iban" : "FR7630003002970005001983630"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-12-01",
+              "fin" : "2022-12-21"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "SOGEFRPP",
+              "iban" : "FR7630003002970005001983630"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-03-22",
+              "fin" : "2022-11-30"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "BNPAFRPPXXX",
+              "iban" : "FR7630004006270000066245432"
+            },
+            "modePaiementPrestations" : {
+              "code" : "CHQ",
+              "libelle" : "Chèque",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-01-19",
+              "fin" : "2022-03-21"
+            }
+          },
+          {
+            "idDestinatairePaiements" : "2125734",
+            "idBeyondDestinatairePaiements" : "2125734-0000452433",
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "rib" : {
+              "bic" : "BNPAFRPPXXX",
+              "iban" : "FR7630004006270000066245432"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2022-01-18"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2125734",
+            "idBeyondDestinataireRelevePrestations" : "2125734-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+              "ligne6" : "26600 TAIN L HERMITAGE",
+              "codePostal" : "26600"
+            },
+            "periode" : {
+              "debut" : "2022-12-01",
+              "fin" : "2024-12-31"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations" : "2125734",
+            "idBeyondDestinataireRelevePrestations" : "2125734-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "VAHE.TOUMANIAN@GMAIL.COM"
+            },
+            "nom" : {
+              "nomFamille" : "TOUMANIAN",
+              "nomUsage" : "TOUMANIAN",
+              "prenom" : "VAHE",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur TOUMANIAN VAHE",
+              "ligne4" : "4 RUE TOURVILLE",
+              "ligne5" : "LYON 07",
+              "ligne6" : "69007 LYON",
+              "codePostal" : "69007"
+            },
+            "periode" : {
+              "debut" : "2018-01-01",
+              "fin" : "2022-11-30"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "BONVALOT",
+          "nomUsage" : "BONVALOT",
+          "prenom" : "CAROLINE",
+          "civilite" : "MME"
+        },
+        "adresse" : {
+          "ligne1" : "Madame BONVALOT CAROLINE",
+          "ligne4" : "5 RUE IMPASSE DES VIGNERONS",
+          "ligne6" : "26600 TAIN L HERMITAGE",
+          "codePostal" : "26600"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2022-12-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "GT_BASE",
+          "codeAssureur" : "BALOO",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2022-12-01",
+            "fin" : "2024-12-31"
+          },
+          "dateAncienneteGarantie" : "2022-12-01"
+        }
+      ],
+      "isSouscripteur" : false,
+      "rangAdministratif" : "2",
+      "identite" : {
+        "nir" : {
+          "code" : "2890257630035",
+          "cle" : "26"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "2890257630035",
+              "cle" : "26"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "261"
+            },
+            "periode" : {
+              "debut" : "2022-12-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19890218",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2424707"
+      },
+      "dateAdhesionMutuelle" : "2022-12-01",
+      "dateDebutAdhesionIndividuelle" : "2022-12-01",
+      "dateRadiation" : "2024-12-31",
+      "dateModification" : "2024-03-01T10:40:54.230Z",
+      "periodes" : [
+        {
+          "debut" : "2022-12-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "C",
+        "libelle" : "Conjoint/Concubin"
+      }
+    }
+  ],
+  "version" : "6",
+  "periodesSuspension" : [
+
+  ],
+  "periodesContratCMUOuvert" : [
+
+  ],
+  "contratCollectif" : {
+    "identifiantCollectivite" : "N/A",
+    "raisonSociale" : "N/A",
+    "groupePopulation" : "N/A",
+    "numero" : "00219192"
+  },
+  "traceId" : "65e1b0b6b1ccb13fc1dff8cc",
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "000ER00693",
+  "numero" : "02111986",
+  "numeroExterne" : "02111986",
+  "numeroAdherent" : "02111986",
+  "numeroAdherentComplet" : "02111986",
+  "dateSouscription" : "2018-01-01",
+  "dateResiliation" : "2025-01-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2018-01-01",
+      "fin" : "2024-12-31"
+    }
+  ],
+  "critereSecondaire" : "001",
+  "isContratIndividuel" : false,
+  "gestionnaire" : "AXA",
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

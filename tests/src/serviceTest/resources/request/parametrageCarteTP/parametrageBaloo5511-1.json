@@ -1,0 +1,38 @@
+{
+  "id" : "2",
+  "amc" : "0000401166",
+  "amcNom" : "BALOO",
+  "collectivite" : "",
+  "college" : "",
+  "critereSecondaireDetaille" : "",
+  "statut" : "Actif",
+  "dateDebutValidite" : "2023-03-18",
+  "priorite" : "200",
+  "dateCreation" : "2023-03-18T12:07:24.370Z",
+  "userCreation" : "marianne.barrailh@cegedim-activ.com",
+  "parametrageRenouvellement" : {
+    "dateRenouvellementCarteTP" : "DebutEcheance",
+    "debutEcheance" : "01/01",
+    "dureeValiditeDroitsCarteTP" : "Annuel",
+    "delaiDeclenchementCarteTP" : 0,
+    "modeDeclenchement" : "Automatique"
+  },
+  "parametrageDroitsCarteTP" : {
+    "codeConventionTP" : "IS",
+    "codeOperateurTP" : "IS",
+    "isCarteDematerialisee" : false,
+    "detailsDroit" : [
+
+    ],
+    "isCarteEditablePapier" : false
+  },
+  "garantieTechniques" : [
+    {
+      "codeAssureur" : "ASSU00187",
+      "codeGarantie" : "FSBC49567A"
+    }
+  ],
+  "idLots" : [
+    "652fd51345f0f8569003b6f7"
+  ]
+}

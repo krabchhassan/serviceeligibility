@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+
+	<xs:complexType name="type_adresse_contrat">
+		<xs:annotation>
+			<xs:documentation>Adresse contrat</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="typeAdresse">
+				<xs:annotation>
+					<xs:documentation>"GE" (Adresse du gestionnaire du contrat)
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne1">
+				<xs:annotation>
+					<xs:documentation>Identification du destinataire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complément d'identification du destinataire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne3" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Complément d'identification du point géographique
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne4">
+				<xs:annotation>
+					<xs:documentation>Numero et libelle de la voie</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne5" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lieu-dit ou service particulier de distribution
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne6">
+				<xs:annotation>
+					<xs:documentation>Code postal et localite de destination
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ligne7" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Pays</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="codePostal" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Code postal
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="telephone" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Telephone
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="email" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Adresse mail
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="50" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

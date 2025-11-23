@@ -1,0 +1,78 @@
+{
+  "_id" : "0000401166",
+  "idClientBO" : "service-account-test-es16",
+  "nom" : "BALOO",
+  "libelle" : "BALOO",
+  "siret" : "123456789",
+  "numeroPrefectoral" : "0000401166",
+  "numero": "0097810998",
+  "codePartenaire" : "BAL",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "pilotages" : [
+
+  ],
+  "transcodageDomainesTP" : [
+    {
+      "domaineSource" : "OPAU",
+      "domainesCible" : [
+        "OPTI",
+        "AUDI"
+      ]
+    },
+    {
+      "domaineSource" : "PHCN",
+      "domainesCible" : [
+        "PHAR"
+      ]
+    }
+  ],
+  "regroupementDomainesTP" : [
+    {
+      "domaineRegroupementTP" : "LARA",
+      "codesDomainesTP" : [
+        "LABO",
+        "RLAX"
+      ],
+      "niveauRemboursementIdentique" : true,
+      "dateDebut" : "2019-12-31T23:00:00.000Z",
+      "dateFin" : "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineRegroupementTP" : "LARA",
+      "codesDomainesTP" : [
+
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2020-01-02T00:00:00.000Z"
+    },
+    {
+      "domaineRegroupementTP" : "COSP",
+      "codesDomainesTP" : [
+        "DEOR"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "dateFin" : "2021-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineRegroupementTP" : "HOSP",
+      "codesDomainesTP" : [
+        "CNSD"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "dateFin" : "2019-12-31T00:00:00.000Z"
+    },
+    {
+      "domaineRegroupementTP" : "COSP",
+      "codesDomainesTP" : [
+        "LABO"
+      ],
+      "niveauRemboursementIdentique" : false,
+      "dateDebut" : "2020-06-01T00:00:00.000Z"
+    }
+  ]
+}

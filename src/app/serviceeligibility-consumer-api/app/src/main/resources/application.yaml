@@ -1,0 +1,91 @@
+beyond:
+  caching:
+    specs:
+      referentialCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      managementScopeEntities:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      bobb:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-consumer-api
+    publisher:
+      enabled: true
+  features:
+    mongo: true
+  messaging:
+    transactional: false
+    enabled: true
+    encoding: binary
+    types:
+      BenefAIV5: com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5
+      BeneficiaireId: com.cegedim.next.serviceeligibility.core.model.kafka.benef.BeneficiaireId
+      RecipientsMessageDto: com.cegedim.beyond.schemas.RecipientsMessageDto
+      String: java.lang.String
+      TriggerId: com.cegedim.next.serviceeligibility.core.model.kafka.TriggerId
+      ContratAIV5: com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.ContratAIV5
+      ContratAIV6: com.cegedim.next.serviceeligibility.core.model.kafka.contratv6.ContratAIV6
+      UndueRetentionMessageDto: com.cegedim.beyond.schemas.UndueRetentionMessageDto
+    security-context:
+      enabled: false
+  observability:
+    log:
+      enabled: true
+    tracing:
+      enabled: true
+  security:
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: error
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+spring:
+  application:
+    name: serviceeligibility-consumer-api
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS}
+    consumer:
+      auto-offset-reset: latest
+      max-poll-records: 50
+    producer:
+      acks: all
+      batch-size: 16384
+      buffer-memory: 33554432
+      compression-type: snappy
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        "linger.ms": 1
+        "request.timeout.ms": 50000
+      retries: 0
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  main:
+    web-application-type: servlet

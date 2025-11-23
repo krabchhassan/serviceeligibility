@@ -1,0 +1,18 @@
+{
+  "codeInsurer": "BALOO",
+  "codeAMC": "",
+  "codeContractElement": "GT_REMP2",
+  "deadline": "2020-01-01",
+  "ignored" : false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "CAS2_REMP",
+      "codeProduct": "PDT_REMP2",
+      "codeAmc": "BALOO",
+      "codeBenefitNature": "",
+      "from": "2018-01-01T06:00:00.000Z",
+      "effectiveDate": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}

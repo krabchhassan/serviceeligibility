@@ -1,0 +1,60 @@
+{
+  "_id": "0782395511",
+  "nom": "MDS",
+  "libelle": "Mutuelle du soleil ",
+  "numeroPrefectoral": "0782395511",
+  "codePartenaire": "MDS",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "dateCreation": "2021-01-28T08:21:28.272Z",
+  "userCreation": "philippe.gallouin@cegedim-activ.com",
+  "dateModification": "2022-12-30T00:21:45.467Z",
+  "userModification": "ilyes.moktefi@cegedim.com",
+  "pilotages": [
+    {
+      "codeService": "VISIODROIT",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000Z",
+      "caracteristique": {
+        "generateFichier": false
+      }
+    },
+    {
+      "codeService": "DCLBEN",
+      "serviceOuvert": true,
+      "dateOuverture": "2022-12-20T00:00:00.000Z",
+      "couloirClient": "IS",
+      "typeConventionnement": "IS",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0782395511",
+        "versionNorme": "003",
+        "codeClient": "IS"
+      }
+    },
+    {
+      "codeService": "TPG-IS",
+      "serviceOuvert": true,
+      "dateOuverture": "2022-12-20T00:00:00.000Z",
+      "couloirClient": "IS",
+      "typeConventionnement": "IS",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0782395511",
+        "versionNorme": "V02",
+        "codeClient": "IS",
+        "filtreDomaine": false
+      }
+    },
+    {
+      "codeService": "SEL-TP",
+      "serviceOuvert": true,
+      "dateOuverture": "2023-01-01T00:00:00.000Z",
+      "caracteristique": {
+      }
+    }
+  ],
+  "_class": "com.cegedim.next.serviceeligibility.core.model.entity.Declarant"
+}

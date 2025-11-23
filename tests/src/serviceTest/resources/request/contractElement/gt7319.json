@@ -1,0 +1,20 @@
+{
+  "codeAMC": "",
+  "codeInsurer": "baloo",
+  "codeContractElement": "GT_7319",
+  "label": "GT_7319",
+  "productElements": [
+    {
+      "codeOffer": "7319-01",
+      "codeProduct": "7319-01-P01",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "2024-10-01T00:00:00.000Z",
+      "effectiveDate": "2021-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored": false,
+  "origine": "IMPORT",
+  "status": "ACTIVE",
+  "user": "reynald.hermez@cegedim-activ.com"
+}

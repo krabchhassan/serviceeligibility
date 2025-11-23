@@ -1,0 +1,63 @@
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+
+TARGET_ENV: local
+socle:
+  code: Insurance
+allowTestingEndPoints: 'true'
+TARGET_DOMAIN: dev
+service:
+  code: serviceeligibility
+
+schema:
+  path: Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+
+CONSUMER_GROUP_ID_NAME: demandeRenouvellementDeclaration
+KAFKA_TOPIC_BDD-CONTRATTP: bdd-contrattp
+KAFKA_TOPIC_BDD-DEMANDE-DECLARATION: demandeDeclaration
+KAFKA_TOPIC_BDD-DEMANDE-ABANDON-TRIGGER: demandeAbandonTrigger
+KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION: demandeRenouvellementDeclaration
+KAFKA_TOPIC_BDD-DEMANDE-RENOUVELLEMENT-DECLARATION-UNITAIRE: demandeRenouvellementDeclarationUnitaire
+KAFKA_TOPIC_BDD-RECIPIENTS-REQUEST: bdd-recipients-request
+KAFKA_TOPIC_BDD-UNDUE-RETENTION: bdd-undue-retention
+KAFKA_TOPIC_BDD-UPDATE-RENOUVELLEMENT-DECLARATION: updateRenouvellementDeclaration
+KAFKA_SERVERS: localhost:9092
+keycloak_realm: htp
+CLOUD_PROVIDER: itcare
+environment: local
+
+kafka:
+  topic:
+    beyond-events: events
+beyond:
+  customer: editeur
+  couloir: htp
+  instance: htp-es15
+  observability:
+    log:
+      enabled: false
+    tracing:
+      enabled: false
+server:
+  port: '8090'
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+logging:
+  level:
+    com:
+      cegedim: debug
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+

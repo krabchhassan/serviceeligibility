@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Consolidation declarations",
+  "description": "Consolidation des déclarations afin de générer une carte TP.",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC"
+    },
+    "declarationsId": {
+      "type": "string",
+      "description": "Identifiant des déclarations consolidées"
+    },
+    "serviceCodes": {
+      "type": "array",
+      "description": "Services ouverts par la consolidation : CARTE-TP et/ou CARTE-DEMATERIALISEE",
+      "items": {
+        "type": "string"
+      }
+    },
+    "issuingCompanyCode": {
+      "type": "string",
+      "description": "Code de la société émettrice"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adherent du contrat"
+    },
+    "personNumber": {
+      "type": "string",
+      "description": "Numéro personne du bénéficiaire"
+    },
+    "startDate": {
+      "type": "string",
+      "description": "Période début de droit générée"
+    },
+    "endDate": {
+      "type": "string",
+      "description": "Période fin de droit générée"
+    }
+  },
+  "required": [
+    "declarantId",
+    "declarationsId",
+    "serviceCodes",
+    "issuingCompanyCode",
+    "contractNumber",
+    "subscriberNumber",
+    "personNumber",
+    "startDate",
+    "endDate"
+  ],
+  "$id": "Insurance.serviceeligibility.declaration.conso.event/0.0.1"
+}

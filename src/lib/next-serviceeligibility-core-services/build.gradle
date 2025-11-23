@@ -1,0 +1,111 @@
+plugins {
+    id "beyond.gradle.plugins.java-library"
+    id "java-library"
+    id 'io.spring.dependency-management'
+}
+
+tasks.register("jarTest", Jar) {
+    from sourceSets.test.output
+    setArchiveClassifier("test")
+}
+
+configurations {
+    testOutput
+}
+
+ext {
+    mapstructVersion = "1.6.2"
+}
+
+artifacts {
+    testOutput jarTest
+}
+
+dependencies {
+
+    implementation('com.cegedim.beyond.framework:lib-beyond-http-starter') {
+        exclude group: "org.springframework.data", module: "spring-data-elasticsearch"
+    }
+
+    // -----
+    // Mongo
+    // -----
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+    // ------
+    // OpenCSV
+    // ------
+    implementation("com.opencsv:opencsv:5.9")
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    api("com.cegedim.beyond.framework:lib-beyond-messaging-starter")
+    api("com.cegedim.beyond.framework:lib-beyond-mongo-starter")
+    api("com.cegedim.beyond.framework:lib-beyond-messaging-kafka-security-http")
+    implementation("com.cegedim.beyond.framework:lib-common-base-pefb-services-java")
+
+    // Cache
+    implementation("com.cegedim.beyond.framework:lib-beyond-cache-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-cache-redis-starter")
+
+    implementation("com.google.code.gson:gson")
+
+    // ----------------
+    // Spring framework
+    // ----------------
+    compileOnly("org.springframework.kafka:spring-kafka")
+
+    // ServiceEligibility dependencies
+    compileOnly(project(":lib-common-orga"))
+    implementation("com.cegedim.beyond.framework:lib-common-base-validation-services-java")
+    implementation("com.cegedim.beyond.framework:lib-common-base-validation-model-java")
+    api(project(":lib-next-serviceeligibility-core-model"))
+
+    compileOnly(project(":lib-next-serviceeligibility-elastic-services"))
+
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+    implementation("com.fasterxml.jackson.core:jackson-core")
+    compileOnly('io.zipkin.brave:brave:5.13.3')
+
+    // -----------------------------------------------------------------------------------
+    // Apache: methods for manipulation of Java core classes and HTTP basic authentication
+    // -----------------------------------------------------------------------------------
+    implementation("org.apache.httpcomponents:httpclient")
+    implementation("commons-validator:commons-validator")
+    implementation("org.apache.commons:commons-csv:1.8")
+
+    implementation("org.json:json")
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jdk8")
+
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+
+    implementation("org.apache.commons:commons-collections4")
+    compileOnly("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+    compileOnly 'com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client'
+    api("io.netty:netty-transport-native-unix-common:4.1.24.Final")
+
+    //Tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation("org.mapstruct:mapstruct:${mapstructVersion}")
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+    implementation(project(":schemas"))
+    testImplementation(project(":lib-next-serviceeligibility-elastic-services"))
+    testImplementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+    testImplementation("org.springframework.boot:spring-boot-starter-data-elasticsearch")
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+    testImplementation('com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client')
+    testImplementation(project(":lib-common-orga"))
+
+//    // ----
+//    // SOAP
+//    // ----
+    compileOnly('javax.xml.bind:jaxb-api:2.3.1')
+    compileOnly('org.jvnet.jaxb2_commons:jaxb2-basics:0.13.1')
+    compileOnly('org.apache.cxf.xjc-utils:cxf-xjc-runtime:4.1.0')
+    compileOnly("jakarta.xml.ws:jakarta.xml.ws-api:4.0.1")
+}

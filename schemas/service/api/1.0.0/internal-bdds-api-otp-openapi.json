@@ -1,0 +1,624 @@
+{
+  "openapi" : "3.0.1",
+  "info": {
+    "title": "BDDS internal API ",
+    "version": "1.0.0",
+    "contact": {},
+    "description": "API BDDS exposé en interne pour les communications beyond to beyond"
+  },
+  "servers": [
+    {
+      "url": "/beyond/internal/api/bdds/v1/otp"
+    }
+  ],
+  "security" : [ {
+    "bearer" : [ "read", "write" ]
+  } ],
+  "paths" : {
+    "/beneficiaryTpDetails" : {
+      "get" : {
+        "operationId": "getById",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "benefId",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/BenefAIV5"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "elastic-controller" ]
+      }
+    },
+    "/searchBeneficiaries" : {
+      "post" : {
+        "operationId" : "search",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/BenefSearchRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/BenefElasticPageResult"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "elastic-controller" ]
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Adresse" : {
+        "type" : "object",
+        "properties" : {
+          "codePostal" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          },
+          "ligne1" : {
+            "type" : "string"
+          },
+          "ligne2" : {
+            "type" : "string"
+          },
+          "ligne3" : {
+            "type" : "string"
+          },
+          "ligne4" : {
+            "type" : "string"
+          },
+          "ligne5" : {
+            "type" : "string"
+          },
+          "ligne6" : {
+            "type" : "string"
+          },
+          "ligne7" : {
+            "type" : "string"
+          },
+          "pays" : {
+            "type" : "string"
+          },
+          "telephone" : {
+            "type" : "string"
+          },
+          "typeAdresse" : {
+            "$ref" : "#/components/schemas/TypeAdresse"
+          }
+        }
+      },
+      "AdresseAssure" : {
+        "type" : "object",
+        "properties" : {
+          "codePostal" : {
+            "type" : "string"
+          },
+          "ligne1" : {
+            "type" : "string"
+          },
+          "ligne2" : {
+            "type" : "string"
+          },
+          "ligne3" : {
+            "type" : "string"
+          },
+          "ligne4" : {
+            "type" : "string"
+          },
+          "ligne5" : {
+            "type" : "string"
+          },
+          "ligne6" : {
+            "type" : "string"
+          },
+          "ligne7" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Amc" : {
+        "type" : "object",
+        "properties" : {
+          "idDeclarant" : {
+            "type" : "string"
+          },
+          "libelle" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Audit" : {
+        "type" : "object",
+        "properties" : {
+          "dateEmission" : {
+            "type" : "string"
+          }
+        }
+      },
+      "BenefAIV5" : {
+        "type" : "object",
+        "properties" : {
+          "amc" : {
+            "$ref" : "#/components/schemas/Amc"
+          },
+          "audit" : {
+            "$ref" : "#/components/schemas/Audit"
+          },
+          "contrats" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/ContratV5"
+            }
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "idClientBO" : {
+            "type" : "string"
+          },
+          "identite" : {
+            "$ref" : "#/components/schemas/IdentiteContrat"
+          },
+          "key" : {
+            "type" : "string"
+          },
+          "numeroAdherent" : {
+            "type" : "string"
+          },
+          "services" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "traceId" : {
+            "type" : "string"
+          }
+        }
+      },
+      "BenefElasticPageResult" : {
+        "type" : "object",
+        "properties" : {
+          "data" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/BenefAIV5"
+            }
+          },
+          "paging" : {
+            "$ref" : "#/components/schemas/PagingResponseModel"
+          }
+        }
+      },
+      "BenefSearchRequest" : {
+        "type" : "object",
+        "properties" : {
+          "bic" : {
+            "type" : "string"
+          },
+          "birthDate" : {
+            "type" : "string"
+          },
+          "birthRank" : {
+            "type" : "string"
+          },
+          "city" : {
+            "type" : "string"
+          },
+          "contractNumber" : {
+            "type" : "string"
+          },
+          "declarantId" : {
+            "type" : "string"
+          },
+          "declarantIdOrLabel" : {
+            "type" : "string"
+          },
+          "declarantLabel" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          },
+          "firstName" : {
+            "type" : "string"
+          },
+          "iban" : {
+            "type" : "string"
+          },
+          "insurerExchangeId" : {
+            "type" : "string"
+          },
+          "issuingCompany" : {
+            "type" : "string"
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "nameOrSubscriberIdorContractNumber" : {
+            "type" : "string"
+          },
+          "nir" : {
+            "type" : "string"
+          },
+          "page" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "perPage" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "postalCode" : {
+            "type" : "string"
+          },
+          "street" : {
+            "type" : "string"
+          },
+          "subscriberId" : {
+            "type" : "string"
+          },
+          "subscriberIdOrContractNumber" : {
+            "type" : "string"
+          },
+          "subscriberNumber" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Contact" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "fixe" : {
+            "type" : "string"
+          },
+          "mobile" : {
+            "type" : "string"
+          }
+        }
+      },
+      "ContratV5" : {
+        "type" : "object",
+        "properties" : {
+          "codeEtat" : {
+            "type" : "string"
+          },
+          "data" : {
+            "$ref" : "#/components/schemas/DataAssureV5"
+          },
+          "numeroAMCEchange" : {
+            "type" : "string"
+          },
+          "numeroAdherent" : {
+            "type" : "string"
+          },
+          "numeroContrat" : {
+            "type" : "string"
+          },
+          "societeEmettrice" : {
+            "type" : "string"
+          }
+        }
+      },
+      "DataAssureV5" : {
+        "type" : "object",
+        "properties" : {
+          "adresse" : {
+            "$ref" : "#/components/schemas/AdresseAssure"
+          },
+          "contact" : {
+            "$ref" : "#/components/schemas/Contact"
+          },
+          "destinatairesPaiements" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/DestinatairePrestationsV4"
+            }
+          },
+          "destinatairesRelevePrestations" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/DestinataireRelevePrestationsV5"
+            }
+          },
+          "nom" : {
+            "$ref" : "#/components/schemas/NomAssure"
+          }
+        }
+      },
+      "Dematerialisation" : {
+        "type" : "object",
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "isDematerialise" : {
+            "type" : "boolean"
+          },
+          "mobile" : {
+            "type" : "string"
+          }
+        }
+      },
+      "DestinatairePrestationsV4" : {
+        "type" : "object",
+        "properties" : {
+          "adresse" : {
+            "$ref" : "#/components/schemas/Adresse"
+          },
+          "idBeyondDestinatairePaiements" : {
+            "type" : "string"
+          },
+          "idDestinatairePaiements" : {
+            "type" : "string"
+          },
+          "modePaiementPrestations" : {
+            "$ref" : "#/components/schemas/ModePaiement"
+          },
+          "nom" : {
+            "$ref" : "#/components/schemas/NomDestinataireV3"
+          },
+          "periode" : {
+            "$ref" : "#/components/schemas/Periode"
+          },
+          "rib" : {
+            "$ref" : "#/components/schemas/RibAssure"
+          }
+        }
+      },
+      "DestinataireRelevePrestationsV5" : {
+        "type" : "object",
+        "properties" : {
+          "adresse" : {
+            "$ref" : "#/components/schemas/AdresseAssure"
+          },
+          "dematerialisation" : {
+            "$ref" : "#/components/schemas/Dematerialisation"
+          },
+          "idBeyondDestinataireRelevePrestations" : {
+            "type" : "string"
+          },
+          "idDestinataireRelevePrestations" : {
+            "type" : "string"
+          },
+          "nom" : {
+            "$ref" : "#/components/schemas/NomDestinataireV3"
+          },
+          "periode" : {
+            "$ref" : "#/components/schemas/Periode"
+          }
+        }
+      },
+      "HistoriqueDateRangNaissance" : {
+        "type" : "object",
+        "properties" : {
+          "dateNaissance" : {
+            "type" : "string"
+          },
+          "rangNaissance" : {
+            "type" : "string"
+          }
+        }
+      },
+      "IdentiteContrat" : {
+        "required" : [ "dateNaissance", "numeroPersonne", "rangNaissance" ],
+        "type" : "object",
+        "properties" : {
+          "affiliationsRO" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/NirRattachementRO"
+            }
+          },
+          "dateNaissance" : {
+            "type" : "string"
+          },
+          "historiqueDateRangNaissance" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/HistoriqueDateRangNaissance"
+            }
+          },
+          "nir" : {
+            "$ref" : "#/components/schemas/Nir"
+          },
+          "numeroPersonne" : {
+            "type" : "string"
+          },
+          "rangNaissance" : {
+            "type" : "string"
+          },
+          "refExternePersonne" : {
+            "type" : "string"
+          }
+        }
+      },
+      "ModePaiement" : {
+        "required" : [ "code", "codeMonnaie", "libelle" ],
+        "type" : "object",
+        "properties" : {
+          "code" : {
+            "type" : "string"
+          },
+          "codeMonnaie" : {
+            "type" : "string"
+          },
+          "libelle" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Nir" : {
+        "required" : [ "cle", "code" ],
+        "type" : "object",
+        "properties" : {
+          "cle" : {
+            "type" : "string"
+          },
+          "code" : {
+            "type" : "string"
+          }
+        }
+      },
+      "NirRattachementRO" : {
+        "required" : [ "nir", "periode" ],
+        "type" : "object",
+        "properties" : {
+          "nir" : {
+            "$ref" : "#/components/schemas/Nir"
+          },
+          "periode" : {
+            "$ref" : "#/components/schemas/Periode"
+          },
+          "rattachementRO" : {
+            "$ref" : "#/components/schemas/RattachementRO"
+          }
+        }
+      },
+      "NomAssure" : {
+        "required" : [ "civilite", "nomFamille", "prenom" ],
+        "type" : "object",
+        "properties" : {
+          "civilite" : {
+            "type" : "string"
+          },
+          "nomFamille" : {
+            "type" : "string"
+          },
+          "nomUsage" : {
+            "type" : "string"
+          },
+          "prenom" : {
+            "type" : "string"
+          }
+        }
+      },
+      "NomDestinataireV3" : {
+        "type" : "object",
+        "properties" : {
+          "civilite" : {
+            "type" : "string"
+          },
+          "nomFamille" : {
+            "type" : "string"
+          },
+          "nomUsage" : {
+            "type" : "string"
+          },
+          "prenom" : {
+            "type" : "string"
+          },
+          "raisonSociale" : {
+            "type" : "string"
+          }
+        }
+      },
+      "PagingResponseModel" : {
+        "type" : "object",
+        "properties" : {
+          "page" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "perPage" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "totalElements" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "totalPages" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      },
+      "Periode" : {
+        "required" : [ "debut" ],
+        "type" : "object",
+        "properties" : {
+          "debut" : {
+            "type" : "string"
+          },
+          "fin" : {
+            "type" : "string"
+          }
+        }
+      },
+      "RattachementRO" : {
+        "type" : "object",
+        "properties" : {
+          "codeCaisse" : {
+            "type" : "string"
+          },
+          "codeCentre" : {
+            "type" : "string"
+          },
+          "codeRegime" : {
+            "type" : "string"
+          }
+        }
+      },
+      "RibAssure" : {
+        "required" : [ "bic", "iban" ],
+        "type" : "object",
+        "properties" : {
+          "bic" : {
+            "type" : "string"
+          },
+          "iban" : {
+            "type" : "string"
+          }
+        }
+      },
+      "TypeAdresse" : {
+        "type" : "object",
+        "properties" : {
+          "libelle" : {
+            "type" : "string"
+          },
+          "type" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "securitySchemes" : {
+      "bearer" : {
+        "type" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT"
+      }
+    }
+  }
+}

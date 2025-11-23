@@ -1,0 +1,27 @@
+{
+  "offerCode": "BAL_5497_002",
+  "offerVersions": [
+    {
+      "offerVersionCode": "2000_janv_01.2",
+      "assemblyMode": "DELTA",
+      "effectDate": "2023-11-03T13:46:12.741Z",
+      "validityDate": "2000-01-01",
+      "engineVersion": "37.1",
+      "domains": [
+        {
+          "domainCode": "CURE",
+          "tpOffline": {
+            "formulaCode": "fGl_STS052_100PctTicketModerateur",
+            "formulaLabel": "STS052_100% Ticket Modérateur",
+            "formulaMask": "100%TM",
+            "stsFormulaCode": "052",
+            "nature": "RADIOLOGIE"
+          },
+          "tpOnline": {
+            "nature": "RADIOLOGIE"
+          }
+        }
+      ]
+    }
+  ]
+}

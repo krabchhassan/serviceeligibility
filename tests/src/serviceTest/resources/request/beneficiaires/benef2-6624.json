@@ -1,0 +1,146 @@
+{
+  "services" : [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key" : "0000401166-1234567895894-02",
+  "societesEmettrices" : [
+    {
+      "code" : "000ER00693",
+      "periodes" : [
+        {
+          "debut" : "2022-01-22",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats" : [
+    {
+      "numeroContrat" : "5894-01",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "DP-5894-01-01",
+            "idBeyondDestinatairePaiements" : "DP-5894-01-01-0000401166",
+            "nom" : {
+              "nomFamille" : "EUDES-DP01",
+              "nomUsage" : "EUDES-DP01",
+              "prenom" : "Jean-DP01",
+              "civilite" : "Mr"
+            },
+            "adresse" : {
+              "ligne1" : "Mr EUDES Jean - DP01",
+              "ligne2" : "DP01",
+              "ligne4" : "420 rue des Lilas",
+              "ligne6" : "31000 Toulouse",
+              "ligne7" : "FRANCE",
+              "codePostal" : "31000"
+            },
+            "rib" : {
+              "bic" : "MCCFFRP1",
+              "iban" : "FR2430002048180000070129A90"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2022-01-02"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "DRP-5894-01-01",
+            "idBeyondDestinataireRelevePrestations" : "DRP-5894-01-01-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "test@test.com",
+              "mobile" : "0600000000"
+            },
+            "nom" : {
+              "nomFamille" : "EUDES-DRP01",
+              "nomUsage" : "EUDES-DRP01",
+              "prenom" : "Jean-DRP01",
+              "civilite" : "Mr"
+            },
+            "adresse" : {
+              "ligne1" : "Mr EUDES Jean - DRP01",
+              "ligne2" : "DRP01",
+              "ligne4" : "420 rue des Lilas",
+              "ligne6" : "31000 Toulouse",
+              "ligne7" : "FRANCE",
+              "codePostal" : "31000"
+            },
+            "periode" : {
+              "debut" : "2022-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "YOOOO",
+          "prenom" : "Louis",
+          "civilite" : "Mr"
+        },
+        "adresse" : {
+          "ligne1" : "Mr EUDES Jean",
+          "ligne4" : "420 rue des Lilas",
+          "ligne6" : "31000 Toulouse",
+          "ligne7" : "FRANCE",
+          "codePostal" : "31000"
+        },
+        "contact" : {
+          "fixe" : "0404040404",
+          "mobile" : "0606060606",
+          "email" : "JeanEudes@mail.ca"
+        }
+      },
+      "numeroAdherent" : "5894-01",
+      "societeEmettrice" : "000ER00693",
+      "periodes" : [
+        {
+          "debut" : "2022-01-22",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO" : "service-account-test-es16",
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "5894-01",
+  "identite" : {
+    "nir" : {
+      "code" : "1000611111111",
+      "cle" : "91"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1000611111111",
+          "cle" : "91"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "595",
+          "codeCentre" : "0123"
+        },
+        "periode" : {
+          "debut" : "2022-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "20000603",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "1234567895894-02",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "20000603",
+        "rangNaissance" : "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "codeInsurer": "0008400004",
+  "codeAMC": "AMC",
+  "codeContractElement": "GT105",
+  "deadline": "2025-01-01",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "OFFER2",
+      "codeProduct": "PRODUCT1",
+      "codeBenefitNature": "NATURE1",
+      "codeAmc": "AMC",
+      "effectiveDate": "2019-02-01",
+      "from": "2019-01-01T06:00:00.000Z",
+      "to": "2020-01-01T00:00:00.000Z"
+    }
+  ]
+}

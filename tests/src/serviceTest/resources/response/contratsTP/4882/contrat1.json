@@ -1,0 +1,535 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "PHCO",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHCO-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%LAST_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHCN",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHCN-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%LAST_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHNO",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHNO-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%LAST_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHOR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHOR-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%LAST_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "RADL",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "RADL-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "RADIOLOGIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%NEXT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%NEXT_YEAR%%/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "OPTI-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%LAST_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%NEXT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%NEXT_YEAR%%/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "DENT",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "DENT-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "DENTAIRE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin" : "%%LAST_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement" : "Declaration de droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "DE"
+                            },
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%NEXT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%NEXT_YEAR%%/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "PHAR",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BL_002",
+              "libelleGarantie" : "GT 2",
+              "codeAssureurGarantie" : "baloo",
+              "dateAdhesionCouverture" : "2018/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "CAM_BL_002",
+                  "codeOffre" : "DIFF_TP_2",
+                  "codeOc" : "BALOO",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "PHAR-010",
+                      "formulaMask" : "100% FR",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "PHARMACIE",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "%%NEXT_YEAR%%/01/01",
+                              "periodeFin" : "%%CURRENT_YEAR%%/12/31",
+                              "periodeFinFermeture" : "%%NEXT_YEAR%%/12/31",
+                              "libelleEvenement" : "Renouvellement des droits",
+                              "modeObtention" : "M",
+                              "motifEvenement" : "RE"
+                            }
+                          ],
+                          "remboursements" : [
+
+                          ],
+                          "prioritesDroit" : [
+
+                          ],
+                          "conventionnements" : [
+
+                          ],
+                          "prestations" : [
+
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19791006",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1791062498046",
+      "cleNirBeneficiaire" : "46",
+      "nirOd1" : "1791062498046",
+      "cleNirOd1" : "46",
+      "numeroPersonne" : "D999200400201",
+      "rangAdministratif" : "1",
+      "modePaiementPrestations" : "V",
+      "dateAdhesionMutuelle" : "2012/01/01",
+      "dateDebutAdhesionIndividuelle" : "2018/01/01",
+      "dernierMouvementRecu" : "R",
+      "affiliation" : {
+        "nom" : "HERMEZ",
+        "nomPatronymique" : "HERMEZ",
+        "nomMarital" : "HERMEZ",
+        "prenom" : "REYNALD",
+        "civilite" : "M",
+        "periodeDebut" : "2012/01/01",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "091",
+        "hasMedecinTraitant" : false,
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : true,
+        "typeAssure" : "Assuré principal"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "Monsieur HERMEZ REYNALD",
+          "ligne4" : "2 LOTISSEMENT LE FOIRAIL",
+          "ligne6" : "09210 ST YBARS",
+          "codePostal" : "09210",
+          "email" : "RHERMEZ@FREE.FR",
+          "typeAdresse" : {
+            "type" : "AD"
+          }
+        }
+      ],
+      "affiliationsRO" : [
+        {
+          "nir" : {
+            "code" : "1791062498046",
+            "cle" : "46"
+          },
+          "rattachementRO" : {
+            "codeRegime" : "01",
+            "codeCaisse" : "091"
+          },
+          "periode" : {
+            "debut" : "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions" : [
+        {
+          "periode" : {
+            "debut" : "2018/01/01"
+          },
+          "isTeletransmission" : true
+        }
+      ]
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "99992004002",
+  "numeroAdherent" : "99992004002",
+  "numeroAdherentComplet" : "99992004002",
+  "dateSouscription" : "2018/01/01",
+  "type" : "B",
+  "nomPorteur" : "HERMEZ",
+  "prenomPorteur" : "REYNALD",
+  "civilitePorteur" : "M",
+  "qualification" : "B",
+  "numeroContratCollectif" : "00219071",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "typeConvention" : "IS",
+  "numeroExterneContratIndividuel" : "99992004002",
+  "gestionnaire" : "000ER00693",
+  "numOperateur" : "IS",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "Event",
+  "identifiantCollectivite" : "N/A",
+  "raisonSociale" : "N/A",
+  "groupePopulation" : "N/A",
+  "periodeResponsableOuverts" : [
+    {
+      "debut" : "2018/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale" : "2",
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.domain.contract.ContractTP"
+}

@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch0="http://norme.cegedimassurances.com/base_de_droit" xmlns:sch1="http://norme.cegedimassurances.com/commun" xmlns:sch2="http://norme.cegedimassurances.com/commun" xmlns:sch3="http://norme.cegedimassurances.com/commun" xmlns:sch4="http://norme.cegedimassurances.com/commun" xmlns:sch5="http://norme.cegedimassurances.com/beneficiaire" xmlns:sch6="http://norme.cegedimassurances.com/amc" xmlns:sch7="http://norme.cegedimassurances.com/base_de_droit" xmlns:sch8="http://norme.cegedimassurances.com/base_de_droit" xmlns:sch9="http://ws.cegedimassurance.com/basededroit/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://norme.cegedimassurances.com/base_de_droit" targetNamespace="http://norme.cegedimassurances.com/base_de_droit">
+    <wsdl:types>
+        <xs:schema xmlns="http://norme.cegedimassurances.com/base_de_droit" xmlns:ns0="http://norme.cegedimassurances.com/commun" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/base_de_droit">
+            <xs:import namespace="http://ws.cegedimassurance.com/basededroit/wsdl"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/commun"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/commun"/>
+            <xs:complexType name="get_info_bdd_response">
+                <xs:sequence>
+                    <xs:element name="header_out" type="ns0:type_header_out"/>
+                    <xs:element name="code_reponse" type="ns0:type_codeReponse"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="declarations" type="type_declaration"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_declaration">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="id_interne">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="reference_externe">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_etat">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="effet_debut" type="xs:date"/>
+                    <xs:element minOccurs="0" name="declarant_amc" type="type_declarant_amc"/>
+                    <xs:element minOccurs="0" name="declarant_amo" type="type_declarant_amo"/>
+                    <xs:element name="beneficiaire" type="type_beneficiaire"/>
+                    <xs:element name="contrat" type="type_contrat"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="domaine_droits" type="type_domaine_droit"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType abstract="true" name="type_declarant">
+                <xs:sequence>
+                    <xs:element name="nom">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="30"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="30"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="siret">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="14"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="numero_prefectoral">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="20"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="declarant_niveau_2" type="type_declarant"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="adresses" type="type_adresse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_adresse">
+                <xs:sequence>
+                    <xs:element name="ligne_1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ligne_2">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ligne_3">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ligne_4">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ligne_5">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ligne_6">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="ligne_7">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_postal">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="pays">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="telephone">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="email">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="type_adresse" type="type_type_adresse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_type_adresse">
+                <xs:sequence>
+                    <xs:element name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_declarant_amc">
+                <xs:complexContent>
+                    <xs:extension base="type_declarant">
+                        <xs:sequence>
+                            <xs:element name="numeroRNM">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="isInscritDansAnnuaireAMC" type="xs:boolean"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="type_declarant_amo">
+                <xs:complexContent>
+                    <xs:extension base="type_declarant">
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="regime">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="2"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="caisse">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="centre">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:maxLength value="4"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="type_beneficiaire">
+                <xs:sequence>
+                    <xs:element name="date_naissance">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="rang_naissance">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="nir_beneficiaire">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="13"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="cle_nir_beneficiaire">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="nir_od_1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="13"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="cle_nir_od_1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="nir_od_2">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="13"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="cle_nir_od2">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="insc">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="25"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="numero_personne">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="historique_affiliations" type="type_historique_affiliation"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="adresses" type="type_adresse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_historique_affiliation">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="nom">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="nom_patronymique">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="nom_marital">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="prenom">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="civilite">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="periode_debut" type="xs:date"/>
+                    <xs:element minOccurs="0" name="periode_fin" type="xs:date"/>
+                    <xs:element minOccurs="0" name="qualite">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="regime_OD1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="caisse_OD1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="centre_OD1">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="4"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="regime_OD2">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="caisse_OD2">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="centre_OD2">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="4"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="medecin_traitant">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="regime_particulier">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="is_beneficiaire_ACS" type="xs:boolean"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_contrat">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="numero">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="date_souscription" type="xs:date"/>
+                    <xs:element minOccurs="0" name="date_resiliation" type="xs:date"/>
+                    <xs:element minOccurs="0" name="type">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="nom_porteur">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="prenom_porteur">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="civilite_porteur">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="numero_adherent">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="qualification">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="numero_contrat_collectif">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="rang_administratif">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="is_contrat_responsable" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="is_contrat_CMU" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="destinataire">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="individuel_ou_collectif">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="situation_debut" type="xs:date"/>
+                    <xs:element minOccurs="0" name="situationfin" type="xs:date"/>
+                    <xs:element minOccurs="0" name="motif_fin_situation">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="lien_familial">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="10"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="categorie_sociale">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="12"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="situation_particuliere">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="4"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_domaine_droit">
+                <xs:sequence>
+                    <xs:element name="code">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_externe">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_externe_produit">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="35"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle_externe">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_option_mutualiste">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle_option_mutualiste">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_produit">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle_produit">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_garantie">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle_garantie">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="taux_remboursement">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle_code_renvoi">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="reference_couverture">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="priorite_droit" type="type_priorite_droit"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="historique_periode_droits" type="type_historique_periode_droit"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="conventionnements" type="type_conventionnement"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="prestations" type="type_prestation"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_priorite_droit">
+                <xs:sequence>
+                    <xs:element name="code">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_historique_periode_droit">
+                <xs:sequence>
+                    <xs:element name="periode_debut" type="xs:date"/>
+                    <xs:element minOccurs="0" name="periode_fin" type="xs:date"/>
+                    <xs:element name="motif_evenement">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle_evenement">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="date_evenemnt" type="xs:date"/>
+                    <xs:element minOccurs="0" name="mode_obtention">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_parametre">
+                <xs:sequence>
+                    <xs:element name="numero">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="valeur">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="7"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_conventionnement">
+                <xs:sequence>
+                    <xs:element name="priorite" type="xs:integer"/>
+                    <xs:element name="type_conventionnement" type="type_type_conventionnement"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_type_conventionnement">
+                <xs:sequence>
+                    <xs:element name="code">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="50"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_prestation">
+                <xs:sequence>
+                    <xs:element name="code">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_regroupement">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="20"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="is_edition_risque_carte" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="date_effet" type="xs:date"/>
+                    <xs:element minOccurs="0" name="formule" type="type_formule"/>
+                    <xs:element minOccurs="0" name="formule_metier" type="type_formule_metier"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_formule">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="numero">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="parametres" type="type_parametre"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_formule_metier">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="code">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="250"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/commun">
+            <xs:complexType name="type_header_tech_out">
+                <xs:annotation>
+                    <xs:documentation>entete technique de la requete</xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element name="id_serveur">
+                        <xs:annotation>
+                            <xs:documentation>serveur de traitement - delivré par le serveur 
+        			</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="14"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="date" type="xs:dateTime">
+                        <xs:annotation>
+                            <xs:documentation>timestamp</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="id_session_serveur">
+                        <xs:annotation>
+                            <xs:documentation>empreinte serveur et gestion de contexte cote serveur
+        			</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="id_session_client">
+                        <xs:annotation>
+                            <xs:documentation>identifiant client retourne dans la reponse si fourni dans la question
+        			</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="type_transaction">
+                        <xs:annotation>
+                            <xs:documentation>mode de transaction synchrone (blanc ou 0) ou asynchrone (1)
+        			</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="1"/>
+                                <xs:enumeration value=" "/>
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="version_serveur">
+                        <xs:annotation>
+                            <xs:documentation>version du logiciel serveur</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_header_fonctionnel_out">
+                <xs:annotation>
+                    <xs:documentation>entete fonctionnelle</xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="code_contexte">
+                        <xs:annotation>
+                            <xs:documentation>nom du service invoque</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="version">
+                        <xs:annotation>
+                            <xs:documentation>version du service invoque
+        			</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="num_accreditation">
+                        <xs:annotation>
+                            <xs:documentation>numero d'accréditation codifie de la maniere suivante :                             
+- Code Proprietaire - 2 caracteres
+- Type - 1 caractere ( D - droits ou M - montants)
+- Id unique sur le serveur - 12 caractres.
+- Serveur d'origine - 1 caractere.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="16"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="idDossier">
+                        <xs:annotation>
+                            <xs:documentation>Identifiant de dossier ouvert cote serveur (uuid) - utilisé pour la persistance de session lors d'enchainement de processus metiers</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="num_OTP">
+                        <xs:annotation>
+                            <xs:documentation>OTP (One-time password) mot de passe valable pour une session ou une transaction
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_header_out">
+                <xs:annotation>
+                    <xs:documentation>entete de la requete</xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element name="headerTech" type="commun:type_header_tech_out"/>
+                    <xs:element minOccurs="0" name="headerFonc" type="commun:type_header_fonctionnel_out"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/commun">
+            <xs:complexType name="type_codeReponse">
+                <xs:sequence>
+                    <xs:element name="code">
+                        <xs:annotation>
+                            <xs:documentation>
+Code réponse  : 
+code 0              : OK
+de 1 à 999         : plage erreur technique
+au delà de 1000 : plage erreur fonctionnelle
+                    </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="10"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="libelle">
+                        <xs:annotation>
+                            <xs:documentation>Libellé en cas d'erreur</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="150"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="detail_erreur">
+                        <xs:annotation>
+                            <xs:documentation>Complément erreurs</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="150"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/commun">
+            <xs:complexType name="type_header_tech_in">
+                <xs:annotation>
+                    <xs:documentation>entete technique de la requete</xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element name="id_logiciel_client">
+                        <xs:annotation>
+                            <xs:documentation>identifiant du logiciel client
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="version_logiciel_client">
+                        <xs:annotation>
+                            <xs:documentation>version du logiciel client </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="id_session_client">
+                        <xs:annotation>
+                            <xs:documentation>&gt;identifiant retourné dans la reponse si fourni dans la question</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="id_session_serveur">
+                        <xs:annotation>
+                            <xs:documentation>identifiant delivre par le serveur. Il permet la reutilisation d'une session.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="mode_asynchrone" type="xs:boolean">
+                        <xs:annotation>
+                            <xs:documentation>0 ou blanc = mode synchrone 1 = activation du mode Asynchrone. </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="replyto_endPoint">
+                        <xs:annotation>
+                            <xs:documentation>url pour reponse asynchrone	(http,jms,file,mail,...). Non utilise en mode d'echange synchrone.
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="65"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_header_fonctionnel_in">
+                <xs:annotation>
+                    <xs:documentation>entete fonctionnelle</xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="code_contexte">
+                        <xs:annotation>
+                            <xs:documentation> Code contexte
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="delivrance_accreditation">
+                        <xs:annotation>
+                            <xs:documentation>Top de gestion de demande de numero d'accreditation
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                                <xs:enumeration value="2"/>
+                                <xs:enumeration value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="delivrance_otp">
+                        <xs:annotation>
+                            <xs:documentation>Top de gestion de demande de numero d'OTP
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="version">
+                        <xs:annotation>
+                            <xs:documentation>version du code contexte. Cette donnee est facultative
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="idDossier">
+                        <xs:annotation>
+                            <xs:documentation>Identifiant dossier eventuellement fourni par le	serveur lors du premier echange et permettant d'assurer la persistance du contexte initial lors d'un enchainement d'echanges (par exemple pour la tarification en ligne)</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="36"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="num_OTP">
+                        <xs:annotation>
+                            <xs:documentation>Identifiant OTP</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="code_proprietaire">
+                        <xs:annotation>
+                            <xs:documentation>code du proprietaire du service ( AMC, operateur,...)</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:minLength value="8"/>
+                                <xs:maxLength value="10"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="code_gestionnaire">
+                        <xs:annotation>
+                            <xs:documentation>Identifiant de l'OCT ou du réseau </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:minLength value="8"/>
+                                <xs:maxLength value="14"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="type_header_in">
+                <xs:annotation>
+                    <xs:documentation>entete de la requete</xs:documentation>
+                </xs:annotation>
+                <xs:sequence>
+                    <xs:element name="headerTech" type="commun:type_header_tech_in"/>
+                    <xs:element minOccurs="0" name="headerFonc" type="commun:type_header_fonctionnel_in"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/commun">
+            <xs:complexType name="type_dates">
+                <xs:sequence>
+                    <xs:element name="date_reference" type="xs:date">
+                        <xs:annotation>
+                            <xs:documentation>Date de référence utilisée pour la recherche</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element default="0" name="type_date_reference">
+                        <xs:annotation>
+                            <xs:documentation>	0 : Date du jour 
+										1 : Date début de soins ou date d'entrée
+										2 : Date de prescription
+										3 : Date de facturation pour le officines
+					</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:int">
+                                <xs:totalDigits value="1"/>
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                                <xs:enumeration value="2"/>
+                                <xs:enumeration value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="date_debut" type="xs:date">
+                        <xs:annotation>
+                            <xs:documentation>
+						</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="date_fin" type="xs:date">
+                        <xs:annotation>
+                            <xs:documentation>
+					</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/beneficiaire">
+            <xs:complexType name="type_beneficiaire_demandeur">
+                <xs:sequence>
+                    <xs:element name="NIR_certifie">
+                        <xs:annotation>
+                            <xs:documentation>N° INSEE du bénéficiaire</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="13"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="cle_NIR">
+                        <xs:annotation>
+                            <xs:documentation>Clé INSEE bénéficiaire</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:pattern value="[0-9][0-9]"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="date_naissance">
+                        <xs:annotation>
+                            <xs:documentation>Date de naissance du bénéficiaire au format SSAAMMJJ</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element default="1" name="rang_gemellaire" type="xs:int">
+                        <xs:annotation>
+                            <xs:documentation>Rang gemellaire de naissance du bénéficiaire (1 par défaut)</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="INS_C">
+                        <xs:annotation>
+                            <xs:documentation>Nouvel identifiant national de santé (réservé à une utilisation future)</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="25"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="nom_beneficiaire">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="prenom_beneficiaire">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="qualite">
+                        <xs:annotation>
+                            <xs:documentation>Qualité du bénéficiaire (parent, enfant, ...) </xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:length value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:amc="http://norme.cegedimassurances.com/amc" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/amc">
+            <xs:complexType name="type_amc">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="nom">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="45"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="operateur_tp">
+                        <xs:annotation>
+                            <xs:documentation>Numéro de l'opérateur de Tiers-payant</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="14"/>
+                                <xs:minLength value="10"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="adherent">
+                        <xs:annotation>
+                            <xs:documentation>n° d'adhérent du bénéficiaire dans l'organisme complémentaire</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="10"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="id_patient_gs">
+                        <xs:annotation>
+                            <xs:documentation>Identification interne du bénéficiaire par l'organisme complémentaire</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="15"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:choice>
+                        <xs:element name="numero_AMC_RNM">
+                            <xs:annotation>
+                                <xs:documentation>Numero d'enregistrement au Registre National des Mutuelles sur 9 caractères</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:length value="9"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="numero_AMC_SIRET">
+                            <xs:annotation>
+                                <xs:documentation>Numero d'enregistrement SIRET de la mutuelle sur 14 caractères</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:length value="14"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="numero_AMC_prefectoral">
+                            <xs:annotation>
+                                <xs:documentation>Numéro de télétransmission de l'AMC (i.e numéro préfectoral, pour les mutuelles). Une de ces 3 références AMC doit être fournie, le numéro préfectoral étant prioritaire.</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:maxLength value="10"/>
+                                    <xs:minLength value="8"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:choice>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:amc="http://norme.cegedimassurances.com/base_de_droit" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/base_de_droit">
+            <xs:complexType name="type_info_bdd">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="type_garanties">
+                        <xs:annotation>
+                            <xs:documentation>0 - Toutes garanties1 - Garanties Priorité basse</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="type_recherche_benef">
+                        <xs:annotation>
+                            <xs:documentation>0 - Bénéficiaire1 - Carte Famille</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="type_recherche_segment">
+                        <xs:annotation>
+                            <xs:documentation>0 - Pas de recherche segment1 - Mono segment2 - Tout segment3 - Liste segments</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                                <xs:enumeration value="2"/>
+                                <xs:enumeration value="3"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="type_segment_recherche">
+                        <xs:annotation>
+                            <xs:documentation>Valeur du segment recherché : PHAR, EXTE, ....</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="8"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="liste_segment_recherche">
+                        <xs:annotation>
+                            <xs:documentation>Liste des segments recherchés : PHAR, EXTE, ....</xs:documentation>
+                        </xs:annotation>
+                        <xs:complexType>
+                            <xs:sequence maxOccurs="unbounded">
+                                <xs:element name="segment_recherche" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="type_profondeur_recherche">
+                        <xs:annotation>
+                            <xs:documentation>0 - Avec formules1 - Sans formules2 - Sans domaines</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                                <xs:enumeration value="2"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:amc="http://norme.cegedimassurances.com/amc" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire" xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://norme.cegedimassurances.com/base_de_droit">
+            <xs:import namespace="http://norme.cegedimassurances.com/commun"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/commun"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/beneficiaire"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/amc"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/amc"/>
+            <xs:element name="header_in" type="commun:type_header_in"/>
+            <xs:element name="beneficiaire" type="beneficiaire:type_beneficiaire_demandeur"/>
+            <xs:element name="amc" type="amc:type_amc"/>
+            <xs:element name="info_bdd" type="base_de_droit:type_info_bdd"/>
+            <xs:element name="dates" type="commun:type_dates"/>
+        </xs:schema>
+        <xs:schema xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" xmlns:droit="http://ws.cegedimassurance.com/basededroit/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ws.cegedimassurance.com/basededroit/wsdl">
+            <xs:import namespace="http://norme.cegedimassurances.com/commun"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/commun"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/beneficiaire"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/amc"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/base_de_droit"/>
+            <xs:import namespace="http://norme.cegedimassurances.com/base_de_droit"/>
+            <xs:element name="getInfoBddRequest" type="droit:get_info_bdd_request"/>
+            <xs:element name="getInfoBddResponse" type="base_de_droit:get_info_bdd_response"/>
+            <xs:complexType name="get_info_bdd_request">
+                <xs:sequence>
+                    <xs:element ref="base_de_droit:header_in"/>
+                    <xs:element ref="base_de_droit:beneficiaire"/>
+                    <xs:element ref="base_de_droit:amc"/>
+                    <xs:element ref="base_de_droit:info_bdd"/>
+                    <xs:element ref="base_de_droit:dates"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getInfoBddRequest">
+        <wsdl:part element="sch9:getInfoBddRequest" name="getInfoBddRequest">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getInfoBddResponse">
+        <wsdl:part element="sch9:getInfoBddResponse" name="getInfoBddResponse">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="BaseDeDroit">
+        <wsdl:operation name="getInfoBdd">
+            <wsdl:input message="sch7:getInfoBddRequest" name="getInfoBddRequest">
+    </wsdl:input>
+            <wsdl:output message="sch7:getInfoBddResponse" name="getInfoBddResponse">
+    </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="BaseDeDroitSoap11" type="sch7:BaseDeDroit">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getInfoBdd">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="getInfoBddRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getInfoBddResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="/services/consultationDroitsV4">
+        <wsdl:port binding="sch7:BaseDeDroitSoap11" name="BaseDeDroitSoap11">
+            <soap:address location="http://localhost:8080/services/consultationDroitsV4"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

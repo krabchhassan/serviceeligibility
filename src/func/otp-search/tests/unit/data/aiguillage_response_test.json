@@ -1,0 +1,34 @@
+[
+    {
+        "lastname": "Abécédé",
+        "firstname": "Stephanie",
+        "inseeCode": "2810631555490",
+        "birthDate": "20060425",
+        "birthRank": "1",
+        "insurerId": "0000452433"
+    },
+    {
+        "lastname": "TESTMBA",
+        "firstname": "AMIRA",
+        "inseeCode": "2810631555490",
+        "birthDate": "19800502",
+        "birthRank": "1",
+        "insurerId": "0000452433"
+    },
+    {
+        "lastname": "TESTMBA",
+        "firstname": "INESS",
+        "inseeCode": "2810631555490",
+        "birthDate": "20060425",
+        "birthRank": "1",
+        "insurerId": "0000452433"
+    },
+    {
+        "lastname": "TESTMBA",
+        "firstname": "YOUCEF",
+        "inseeCode": "2810631555490",
+        "birthDate": "19740308",
+        "birthRank": "1",
+        "insurerId": "0000452433"
+    }
+]

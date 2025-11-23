@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Insurance.serviceeligibility.bobb.import.audit",
+  "type": "object",
+  "title": "Audit d'import",
+  "description": "Audit des actions d'import BOBB, envoyé à la fin de l'import pour indiquer le nombre de lignes intégrées et non intégrées.",
+  "additionalProperties": false,
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "title": "Nom du fichier",
+      "description": "Précise le nom du fichier qui est importé"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode d'import",
+      "description": "Mode de traitement d'import complet ou bien différentiel"
+    },
+    "omuId": {
+      "type": "string",
+      "title": "Identifiant de l'omu",
+      "description": "Précise l'identifiant de l'omu"
+    },
+    "succeededLinesCount": {
+      "type": "integer",
+      "title": "Nombre de lignes intégrées avec succès",
+      "description": "Précise le nombre de lignes intégrées avec succès"
+    },
+    "failedLinesCount": {
+      "type": "integer",
+      "title": "Nombre de lignes non intégrées",
+      "description": "Précise le nombre de lignes non intégrées"
+    }
+  },
+  "required": [
+    "fileName",
+    "mode",
+    "omuId",
+    "succeededLinesCount",
+    "failedLinesCount"
+  ]
+}

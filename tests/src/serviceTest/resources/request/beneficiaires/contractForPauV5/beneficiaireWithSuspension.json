@@ -1,0 +1,71 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0008400004-NLE-3957-0110-001-001",
+  "contrats": [
+    {
+      "numeroContrat": "NLE-3957-0110-001",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "VARON",
+          "nomUsage": "VARON",
+          "prenom": "JEAN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur VARON JEAN",
+          "ligne3": "APT C15",
+          "ligne4": "1 RUE JACQUES MARTY",
+          "ligne6": "32000 MAUVE",
+          "codePostal": "32000"
+        },
+        "contact": {
+          "mobile": "",
+          "email": "jeans@gmail.com"
+        }
+      },
+      "numeroAdherent": "NLE-3957-0110-001",
+      "societeEmettrice": "000452433"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0008400004"
+  },
+  "numeroAdherent": "NLE-3957-0110-001",
+  "identite": {
+    "nir": {
+      "code": "1701062498046",
+      "cle": "02"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1701062498046",
+          "cle": "02"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "921"
+        },
+        "periode": {
+          "debut": "2015-05-25"
+        }
+      }
+    ],
+    "dateNaissance": "19791006",
+    "rangNaissance": "1",
+    "numeroPersonne": "NLE-3957-0110-001-001",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19791006",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-06-21T07:26:57.244Z"
+  },
+  "traceId": "6492a6413a43237745fa2eca"
+}

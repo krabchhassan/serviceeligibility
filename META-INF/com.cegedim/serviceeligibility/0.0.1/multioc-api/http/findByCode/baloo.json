@@ -1,0 +1,138 @@
+{
+  "id": "196bc34c-f841-4ce0-aa2a-abd7e5edf7b2",
+  "code": "BALOO",
+  "amc": "0000401166",
+  "siret": "79756683300019",
+  "siren": "797566833",
+  "commercialName": "BALOO",
+  "fullName": "BALOO",
+  "address": {
+    "id": "1d7fa753-1e3d-4393-8ce7-6266fdf70823",
+    "line1": "Baloo",
+    "line4": "105 rue de Nantes",
+    "line6": "13000 MARSEILLE",
+    "locality": "MARSEILLE",
+    "zipCode": "13000"
+  },
+  "beneficiaryContact": {
+    "id": "88c70d60-8fba-4acb-b83a-2fbec0676243",
+    "fullName": "Baloo",
+    "email": "baloo@test.com"
+  },
+  "organizationContact": {
+    "id": "ca0142d3-06a4-474b-86d8-a45feb771c4b",
+    "fullName": "Baloo",
+    "email": "baloo@test.com"
+  },
+  "roles": [
+    {
+      "id": "26f04206-0b3c-4d4a-9571-4b4eb273dbc7",
+      "role": "ISSUING_COMPANY",
+      "startDate": "2016-01-01"
+    },
+    {
+      "id": "40574f01-b41e-4ad6-9053-b204ae9c721e",
+      "role": "DELEGATED_MANAGEMENT",
+      "startDate": "2016-01-01"
+    }
+  ],
+  "portfolios": [],
+  "associatedSecondaryOrganizations": [
+    {
+      "id": "ed2a6c4d-0515-40ba-8947-effbbf967ee3",
+      "code": "ASSU00693",
+      "amc": "000ER00693",
+      "siret": "53851847300011",
+      "siren": "538518473",
+      "commercialName": "HARMONIE MUTUELLE",
+      "fullName": "HARMONIE MUTUELLE",
+      "address": {
+        "id": "625d6cb2-9af9-4893-91da-5b917bebd482",
+        "line1": "HARMONIE MUTUELLE",
+        "line4": "quai",
+        "line6": "44273 NANTES",
+        "locality": "NANTES",
+        "zipCode": "44273"
+      },
+      "roles": [
+        {
+          "id": "b5679b93-580a-4bb0-a569-0f04a1a5519e",
+          "role": "ISSUING_COMPANY",
+          "startDate": "2020-01-01"
+        },
+        {
+          "id": "b763eb35-1b94-4f2d-beb0-8af5ecbdfd6c",
+          "role": "RISK_CARRIER",
+          "startDate": "2020-01-01"
+        }
+      ],
+      "portfolios": [],
+      "linkedMainOrganizationNumber": 1,
+      "startDate": "2020-01-01"
+    },
+    {
+      "id": "709f46e3-f720-428f-a94e-e5a146154370",
+      "code": "ASSU00212",
+      "amc": "000ER00212",
+      "siret": "39922740400023",
+      "siren": "399227404",
+      "commercialName": "SAINT CHRISTOPHE PREVOYANCE",
+      "fullName": "SAINT CHRISTOPHE PREVOYANCE",
+      "address": {
+        "id": "132d20cc-7554-49c3-bba3-a02a321227b5",
+        "line1": "SAINT CHRISTOPHE PREVOYANCE",
+        "line4": "105 rue de nantes",
+        "line6": "75256 PARIS",
+        "locality": "PARIS",
+        "zipCode": "75256"
+      },
+      "roles": [
+        {
+          "id": "529ce6a9-8fdb-43d0-90db-333aa939d8d3",
+          "role": "ISSUING_COMPANY",
+          "startDate": "2020-01-01"
+        },
+        {
+          "id": "f63eca8d-f986-455c-877d-0019baa349fe",
+          "role": "RISK_CARRIER",
+          "startDate": "2020-01-01"
+        }
+      ],
+      "portfolios": [],
+      "linkedMainOrganizationNumber": 1,
+      "startDate": "2020-01-01"
+    },
+    {
+      "id": "efa26ad9-9b99-4e00-9fe2-c95c8e2627de",
+      "code": "ASSU00955",
+      "amc": "000ER00955",
+      "siret": "32186250000014",
+      "siren": "321862500",
+      "commercialName": "APICIL",
+      "fullName": "APICIL",
+      "address": {
+        "id": "2ec079b8-5579-48cb-83ff-31fd11841261",
+        "line1": "APICIL",
+        "line4": "&",
+        "line6": "69244 CALUIRE ET CUIRE",
+        "locality": "CALUIRE ET CUIRE",
+        "zipCode": "69244"
+      },
+      "roles": [
+        {
+          "id": "036b90e3-4850-4a71-81a6-65b8b8d2905f",
+          "role": "ISSUING_COMPANY",
+          "startDate": "2020-01-01"
+        },
+        {
+          "id": "c7b49ab7-7bd3-4018-916d-c105ab52866f",
+          "role": "RISK_CARRIER",
+          "startDate": "2020-01-01"
+        }
+      ],
+      "portfolios": [],
+      "linkedMainOrganizationNumber": 1,
+      "startDate": "2020-01-01"
+    }
+  ]
+}

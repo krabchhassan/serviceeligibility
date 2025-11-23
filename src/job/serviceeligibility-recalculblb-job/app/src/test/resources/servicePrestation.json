@@ -1,0 +1,2964 @@
+[
+  {
+    "_id": {
+      "$oid": "625835150ebb252f023c933d"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "periodeDroitsCarte": {
+        "debut": "2021-01-01",
+        "fin": "2023-12-31"
+      },
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "123456",
+              "idBeyondDestinatairePaiements": "123456-0000452433",
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "123456",
+              "idBeyondDestinataireRelevePrestations": "123456-0000452433",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "DELMOTTE",
+            "prenom": "JEAN PIERRE",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "25 RUE DES LAGRADES",
+            "ligne2": "RESIDENCE DES PLATEAUX",
+            "ligne3": "59250",
+            "ligne4": "HALLUIN",
+            "ligne5": "F",
+            "ligne6": "FRANCE",
+            "ligne7": "CEDEX41",
+            "codePostal": "5920"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677",
+            "email": "jp-delmotte@gagamil.coum"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "email": "jp-delmotte@gagamil.coum",
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2021-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "KC_PlatineBase",
+            "codeAssureur": "KLESIA_CARCEPT",
+            "libelle": "SilverBase",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-06-01",
+              "fin": "2022-06-01"
+            },
+            "dateAncienneteGarantie": "2021-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "1701062498046",
+            "cle": "02"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1701062498046",
+                "cle": "02"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2022-02-16",
+                "fin": "2022-12-31"
+              }
+            },
+            {
+              "nir": {
+                "code": "2810631555490",
+                "cle": "69"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2022-02-15"
+              }
+            }
+          ],
+          "dateNaissance": "19791006",
+          "rangNaissance": "1",
+          "numeroPersonne": "MBA-TEST201-C",
+          "refExternePersonne": "7209738ADF"
+        },
+        "dateAdhesionMutuelle": "2021-01-01",
+        "dateDebutAdhesionIndividuelle": "2021-01-01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "dateCreation": {
+          "$date": {
+            "$numberLong": "1649947925063"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "B",
+          "libelle": "BENEFICIAIRE"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "123456",
+              "idBeyondDestinatairePaiements": "123456-0000452433",
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "123456",
+              "idBeyondDestinataireRelevePrestations": "123456-0000452433",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "DELMOTTE",
+            "prenom": "JEAN LUC",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "25 RUE DES LAGRADES",
+            "ligne2": "RESIDENCE DES PLATEAUX",
+            "ligne3": "59250",
+            "ligne4": "HALLUIN",
+            "ligne5": "F",
+            "ligne6": "FRANCE",
+            "ligne7": "CEDEX41",
+            "codePostal": "5920"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677",
+            "email": "jp-delmotte@gagamil.coum"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "email": "jp-delmotte@gagamil.coum",
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2021-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "KC_PlatineBase",
+            "codeAssureur": "KLESIA_CARCEPT",
+            "libelle": "SilverBase",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-06-01",
+              "fin": "2022-06-01"
+            },
+            "dateAncienneteGarantie": "2021-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1701062498046",
+                "cle": "02"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2022-02-16",
+                "fin": "2022-12-31"
+              }
+            },
+            {
+              "nir": {
+                "code": "2810631555490",
+                "cle": "69"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2022-02-15"
+              }
+            }
+          ],
+          "dateNaissance": "20001006",
+          "rangNaissance": "1",
+          "numeroPersonne": "MBA2-TEST201-C",
+          "refExternePersonne": "7209738ADF"
+        },
+        "dateAdhesionMutuelle": "2021-01-01",
+        "dateDebutAdhesionIndividuelle": "2021-01-01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "dateCreation": {
+          "$date": {
+            "$numberLong": "1649947925063"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "B",
+          "libelle": "BENEFICIAIRE"
+        }
+      }
+    ],
+    "version": "5",
+    "traceId": "625835130ebb252f023c933c",
+    "idDeclarant": "0000452433",
+    "societeEmettrice": "Test TEAM BLUE",
+    "numero": "MBA-TEST201-C",
+    "numeroExterne": "4199240101",
+    "numeroAdherent": "MBA-TEST201-C",
+    "numeroAdherentComplet": "4199240101-COMPLET",
+    "dateSouscription": "2021-01-01",
+    "dateResiliation": "2022-01-15",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2021-01-01",
+        "fin": "2021-12-31"
+      }
+    ],
+    "periodesContratCMUOuvert": [
+      {
+        "debut": "2021-01-01",
+        "fin": "2021-12-31"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Emplyés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "03094493",
+      "numeroExterne": "DKMMMS09049304930"
+    },
+    "qualification": "Base",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  },
+  {
+    "_id": {
+      "$oid": "62cc17c3bcd76a1c77650ae1"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "periodeDroitsCarte": {
+        "debut": "2021-01-01",
+        "fin": "2023-12-31"
+      },
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-9999280601",
+              "idBeyondDestinatairePaiements": "DP-9999280601-0097810998",
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-9999280601",
+              "idBeyondDestinataireRelevePrestations": "DRP-9999280601-0097810998",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "DELMOTTE",
+            "prenom": "JEAN PIERRE",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "25 RUE DES LAGRADES",
+            "ligne2": "RESIDENCE DES PLATEAUX",
+            "ligne3": "59250",
+            "ligne4": "HALLUIN",
+            "ligne5": "F",
+            "ligne6": "FRANCE",
+            "ligne7": "CEDEX41",
+            "codePostal": "5920"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677",
+            "email": "jp-delmotte@gagamil.coum"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "email": "jp-delmotte@gagamil.coum",
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2021-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "KC_PlatineBase",
+            "codeAssureur": "KLESIA_CARCEPT",
+            "libelle": "SilverBase",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2021-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "1701062498046",
+            "cle": "02"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1701062498046",
+                "cle": "02"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2021-01-01",
+                "fin": "2021-12-31"
+              }
+            },
+            {
+              "nir": {
+                "code": "1701062498046",
+                "cle": "02"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2020-12-31"
+              }
+            }
+          ],
+          "dateNaissance": "19791006",
+          "rangNaissance": "1",
+          "numeroPersonne": "9999280601-001",
+          "refExternePersonne": "7209738ADF"
+        },
+        "dateAdhesionMutuelle": "2021-01-01",
+        "dateDebutAdhesionIndividuelle": "2021-01-01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1657542821810"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "B",
+          "libelle": "BENEFICIAIRE"
+        }
+      }
+    ],
+    "version": "5",
+    "traceId": "62cc17c1bcd76a1c77650ae0",
+    "idDeclarant": "0097810998",
+    "societeEmettrice": "Test TEAM BLUE",
+    "numero": "9999280601",
+    "numeroExterne": "9999280601",
+    "numeroAdherent": "9999280601",
+    "numeroAdherentComplet": "9999280601-COMPLET",
+    "dateSouscription": "2021-01-01",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2021-01-01",
+        "fin": "2021-12-31"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Emplyés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "03094493",
+      "numeroExterne": "DKMMMS09049304930"
+    },
+    "qualification": "Base",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  },
+  {
+    "_id": {
+      "$oid": "62cc198bbac5957950cf821d"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "periodeDroitsCarte": {
+        "debut": "2021-01-01",
+        "fin": "2023-12-31"
+      },
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-4266110701",
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-4266110701",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "DELMOTTE",
+            "prenom": "JEAN PIERRE",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "25 RUE DES LAGRADES",
+            "ligne2": "RESIDENCE DES PLATEAUX",
+            "ligne3": "59250",
+            "ligne4": "HALLUIN",
+            "ligne5": "F",
+            "ligne6": "FRANCE",
+            "ligne7": "CEDEX41",
+            "codePostal": "5920"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677",
+            "email": "jp-delmotte@gagamil.coum"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "email": "jp-delmotte@gagamil.coum",
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2021-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "KC_PlatineBase",
+            "codeAssureur": "KLESIA_CARCEPT",
+            "libelle": "Baloo santé",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2021-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "1701062498046",
+            "cle": "02"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1701062498046",
+                "cle": "02"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2021-01-01",
+                "fin": "2021-12-31"
+              }
+            },
+            {
+              "nir": {
+                "code": "1701062498046",
+                "cle": "02"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2020-12-31"
+              }
+            }
+          ],
+          "dateNaissance": "19791006",
+          "rangNaissance": "1",
+          "numeroPersonne": "4266110701-001",
+          "refExternePersonne": "7209738ADF"
+        },
+        "dateAdhesionMutuelle": "2021-01-01",
+        "dateDebutAdhesionIndividuelle": "2021-01-01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "dateCreation": {
+          "$date": {
+            "$numberLong": "1657543051777"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-4266110701",
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-4266110701",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "DELMOTTE",
+                "prenom": "JEAN PIERRE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "25 RUE DES LAGRADES",
+                "ligne2": "RESIDENCE DES PLATEAUX",
+                "ligne3": "59250",
+                "ligne4": "HALLUIN",
+                "ligne5": "F",
+                "ligne6": "FRANCE",
+                "ligne7": "CEDEX41",
+                "codePostal": "5920"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "DELMOTTE",
+            "prenom": "JEAN PIERRE",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "25 RUE DES LAGRADES",
+            "ligne2": "RESIDENCE DES PLATEAUX",
+            "ligne3": "59250",
+            "ligne4": "HALLUIN",
+            "ligne5": "F",
+            "ligne6": "FRANCE",
+            "ligne7": "CEDEX41",
+            "codePostal": "5920"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677",
+            "email": "jp-delmotte@gagamil.coum"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "email": "jp-delmotte@gagamil.coum",
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2021-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "KC_PlatineBase",
+            "codeAssureur": "KLESIA_CARCEPT",
+            "libelle": "Baloo santé",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2021-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "1701062498047",
+            "cle": "01"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1701062498047",
+                "cle": "01"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2021-01-01",
+                "fin": "2021-12-31"
+              }
+            }
+          ],
+          "dateNaissance": "19791007",
+          "rangNaissance": "1",
+          "numeroPersonne": "4266110702-001",
+          "refExternePersonne": "7209738ADF"
+        },
+        "dateAdhesionMutuelle": "2021-01-01",
+        "dateDebutAdhesionIndividuelle": "2021-01-01",
+        "numeroAdhesionIndividuelle": "120320020",
+        "dateCreation": {
+          "$date": {
+            "$numberLong": "1657543051777"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2021-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      }
+    ],
+    "version": "5",
+    "periodesSuspension": [
+      {
+        "periode": {
+          "debut": "2022-05-01"
+        },
+        "typeSuspension": "Provisoire"
+      },
+      {
+        "periode": {
+          "debut": "2022-01-01",
+          "fin": "2022-01-31"
+        },
+        "typeSuspension": "Provisoire"
+      }
+    ],
+    "idDeclarant": "0097810998",
+    "societeEmettrice": "Test TEAM BLUE",
+    "numero": "4266110701",
+    "numeroExterne": "4266110701",
+    "numeroAdherent": "4266110701",
+    "numeroAdherentComplet": "4266110701-COMPLET",
+    "dateSouscription": "2021-01-01",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2021-01-01",
+        "fin": "2021-12-31"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Employés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "03094493",
+      "numeroExterne": "DKMMMS09049304930"
+    },
+    "qualification": "Base",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  },
+  {
+    "_id": {
+      "$oid": "6409b894ff45071209ef400a"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600001",
+              "idBeyondDestinatairePaiements": "DP-6666600001-0000310750",
+              "nom": {
+                "nomFamille": "GREEN1",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIAN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN1 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600001",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600001-0000310750",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN1",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIAN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN1 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN1",
+            "nomUsage": "GREEN1",
+            "prenom": "Solo",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN1 VAITROUAT CHRISTIAN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "1930237355944",
+            "cle": "01"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1930237355944",
+                "cle": "01"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2022-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "1930237355944",
+                "cle": "01"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2022-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "19930902",
+          "rangNaissance": "1",
+          "numeroPersonne": "6666600001-001",
+          "refExternePersonne": "EXT-6666600001-001"
+        },
+        "dateAdhesionMutuelle": "2020-01-01",
+        "dateDebutAdhesionIndividuelle": "2020-01-01",
+        "numeroAdhesionIndividuelle": "6666600001",
+        "dateCreation": {
+          "$date": {
+            "$numberLong": "1678358676416"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2020-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      }
+    ],
+    "version": "5",
+    "codeOc": "Tests GREEN",
+    "traceId": "6409b893ff45071209ef4009",
+    "idDeclarant": "0000310750",
+    "societeEmettrice": "0000850740",
+    "numero": "6666600021",
+    "numeroExterne": "6666600021",
+    "numeroAdherent": "6666600021",
+    "numeroAdherentComplet": "6666600021-COMPLET",
+    "dateSouscription": "2020-01-01",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2021-01-01",
+        "fin": "2021-12-31"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Employés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "66666",
+      "numeroExterne": "DKMMMS66666"
+    },
+    "qualification": "B",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  },
+  {
+    "_id": {
+      "$oid": "6409bb5eff45071209ef400c"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600007",
+              "idBeyondDestinatairePaiements": "DP-6666600007-0000310750",
+              "nom": {
+                "nomFamille": "GREEN7",
+                "nomUsage": "JEUNE",
+                "prenom": "ACTIF",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN7 JEUNE ACTIF",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600007",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600007-0000310750",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN7",
+                "nomUsage": "JEUNE",
+                "prenom": "ACTIF",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN7 JEUNE ACTIF",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN7",
+            "nomUsage": "GREEN7",
+            "prenom": "Solo",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN7 JEUNE ACTIF",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2021-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "2010364309423",
+            "cle": "21"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1381266129603",
+                "cle": "76"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2021-01-01"
+              }
+            },
+            {
+              "nir": {
+                "code": "2010364309423",
+                "cle": "21"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2021-01-01",
+                "fin": "2022-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "20010305",
+          "rangNaissance": "1",
+          "numeroPersonne": "6666600007-001",
+          "refExternePersonne": "EXT-6666600007-001"
+        },
+        "dateAdhesionMutuelle": "2021-01-01",
+        "dateDebutAdhesionIndividuelle": "2021-01-01",
+        "numeroAdhesionIndividuelle": "6666600007",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678360249348"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2020-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2022-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2022-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      }
+    ],
+    "version": "5",
+    "codeOc": "Tests GREEN",
+    "traceId": "6409beb8ff45071209ef400d",
+    "idDeclarant": "0000310750",
+    "societeEmettrice": "0000310750",
+    "numero": "6666600007",
+    "numeroExterne": "6666600007",
+    "numeroAdherent": "6666600007",
+    "numeroAdherentComplet": "6666600007-COMPLET",
+    "dateSouscription": "2021-01-01",
+    "dateResiliation": "2022-12-31",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2021-01-01",
+        "fin": "2022-12-31"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Employés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "66666",
+      "numeroExterne": "DKMMMS66666"
+    },
+    "qualification": "B",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  },
+  {
+    "_id": {
+      "$oid": "6409d852ff45071209ef4011"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600002",
+              "idBeyondDestinatairePaiements": "DP-6666600002-0000850740",
+              "nom": {
+                "nomFamille": "GREEN-SK",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN-SK",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN-SK",
+            "nomUsage": "GREEN-SK",
+            "prenom": "Maman",
+            "civilite": "Mme"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "2491233532610",
+                "cle": "18"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2022-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "2491233532610",
+                "cle": "18"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2022-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "19491229",
+          "rangNaissance": "1",
+          "numeroPersonne": "6666600003-001",
+          "refExternePersonne": "EXT-6666600003-001"
+        },
+        "dateAdhesionMutuelle": "2020-01-01",
+        "dateDebutAdhesionIndividuelle": "2020-01-01",
+        "numeroAdhesionIndividuelle": "6666600003",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678366850113"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2020-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600002",
+              "idBeyondDestinatairePaiements": "DP-6666600002-0000850740",
+              "nom": {
+                "nomFamille": "GREEN-SK",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN-SK",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN-SK",
+            "nomUsage": "GREEN-SK",
+            "prenom": "Papa",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": false,
+        "rangAdministratif": "2",
+        "identite": {
+          "nir": {
+            "code": "1870884748417",
+            "cle": "81"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1870884748417",
+                "cle": "81"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "dateNaissance": "19870823",
+          "rangNaissance": "1",
+          "numeroPersonne": "6666600003-003",
+          "refExternePersonne": "EXT-6666600003-003"
+        },
+        "dateAdhesionMutuelle": "2020-01-01",
+        "dateDebutAdhesionIndividuelle": "2020-01-01",
+        "numeroAdhesionIndividuelle": "6666600003",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678366850113"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2020-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "C",
+          "libelle": "CONJOINT"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600003",
+              "idBeyondDestinatairePaiements": "DP-6666600003-0000850740",
+              "nom": {
+                "nomFamille": "GREEN2",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN-SK",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN-SK",
+            "nomUsage": "GREEN-SK",
+            "prenom": "ENFANT1",
+            "civilite": "Mme"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": false,
+        "rangAdministratif": "3",
+        "identite": {
+          "nir": {
+            "code": "2000777986296",
+            "cle": "67"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "2000777986296",
+                "cle": "67"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2018-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "2000777986296",
+                "cle": "67"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2018-01-01",
+                "fin": "2099-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "20000713",
+          "rangNaissance": "1",
+          "numeroPersonne": "6666600003-003",
+          "refExternePersonne": "EXT-6666600003-003"
+        },
+        "dateAdhesionMutuelle": "2020-01-01",
+        "dateDebutAdhesionIndividuelle": "2020-01-01",
+        "numeroAdhesionIndividuelle": "6666600003",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678366850113"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2020-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "E",
+          "libelle": "ENFANT"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600003",
+              "idBeyondDestinatairePaiements": "DP-6666600003-0000850740",
+              "nom": {
+                "nomFamille": "GREEN2",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIAN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN-SK",
+                "nomUsage": "VAITROUAT",
+                "prenom": "CHRISTIANE",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN-SK",
+            "nomUsage": "GREEN-SK",
+            "prenom": "ENFANT2",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN2 VAITROUAT CHRISTIAN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": false,
+        "rangAdministratif": "4",
+        "identite": {
+          "nir": {
+            "code": "1980490108491",
+            "cle": "12"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1980490108491",
+                "cle": "12"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2018-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "1980490108491",
+                "cle": "12"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2018-01-01",
+                "fin": "2099-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "19980428",
+          "rangNaissance": "2",
+          "numeroPersonne": "6666600003-004",
+          "refExternePersonne": "EXT-6666600003-004"
+        },
+        "dateAdhesionMutuelle": "2020-01-01",
+        "dateDebutAdhesionIndividuelle": "2020-01-01",
+        "numeroAdhesionIndividuelle": "6666600003",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678366850113"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2020-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "E",
+          "libelle": "ENFANT"
+        }
+      }
+    ],
+    "version": "5",
+    "codeOc": "ASSUREURS_NUM_IGESTION",
+    "traceId": "6409d881ff45071209ef4012",
+    "idDeclarant": "0000850740",
+    "societeEmettrice": "0000850740",
+    "numero": "6666600003",
+    "numeroExterne": "6666600003",
+    "numeroAdherent": "6666600003",
+    "numeroAdherentComplet": "6666600003-COMPLET",
+    "dateSouscription": "2020-01-01",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2020-01-01"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Employés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "66666",
+      "numeroExterne": "DKMMMS66666"
+    },
+    "qualification": "B",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  },
+  {
+    "_id": {
+      "$oid": "6409dd5cff45071209ef4015"
+    },
+    "contexteTiersPayant": {
+      "isCartePapierAEditer": true,
+      "college": "Cadre",
+      "collectivite": "362521879",
+      "isCarteDematerialisee": true,
+      "isCartePapier": false
+    },
+    "assures": [
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600001",
+              "idBeyondDestinatairePaiements": "DP-6666600001-0000850740",
+              "nom": {
+                "nomFamille": "GREEN3",
+                "nomUsage": "VAITROUAT",
+                "prenom": "JOHN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN1 VAITROUAT JOHN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN3",
+                "nomUsage": "VAITROUAT",
+                "prenom": "JOHN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN1 VAITROUAT JOHN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN3",
+            "nomUsage": "GREEN3",
+            "prenom": "ParentSolo",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN1 VAITROUAT JOHN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "1920854639911",
+            "cle": "27"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1920854639911",
+                "cle": "27"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2022-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "1920854639911",
+                "cle": "27"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2022-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "19920807",
+          "rangNaissance": "2",
+          "numeroPersonne": "6666600004-001",
+          "refExternePersonne": "EXT-6666600004-001"
+        },
+        "dateAdhesionMutuelle": "2018-01-01",
+        "dateDebutAdhesionIndividuelle": "2018-01-01",
+        "numeroAdhesionIndividuelle": "6666600004",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678375841948"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2018-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600001",
+              "idBeyondDestinatairePaiements": "DP-6666600001-0000850740",
+              "nom": {
+                "nomFamille": "GREEN3",
+                "nomUsage": "VAITROUAT",
+                "prenom": "JOHN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN1 VAITROUAT JOHN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN3",
+                "nomUsage": "VAITROUAT",
+                "prenom": "JOHN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN1 VAITROUAT JOHN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN3",
+            "nomUsage": "GREEN3",
+            "prenom": "ParentSolo",
+            "civilite": "Mr"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN1 VAITROUAT JOHN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": true,
+        "rangAdministratif": "1",
+        "identite": {
+          "nir": {
+            "code": "2890539658113",
+            "cle": "30"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "2890539658113",
+                "cle": "30"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2022-02-14"
+              }
+            },
+            {
+              "nir": {
+                "code": "2890539658113",
+                "cle": "30"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "595",
+                "codeCentre": "0123"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2022-02-13"
+              }
+            }
+          ],
+          "dateNaissance": "19890504",
+          "rangNaissance": "2",
+          "numeroPersonne": "6666600004-001",
+          "refExternePersonne": "EXT-6666600004-001"
+        },
+        "dateAdhesionMutuelle": "2018-01-01",
+        "dateDebutAdhesionIndividuelle": "2018-01-01",
+        "numeroAdhesionIndividuelle": "6666600004",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678375841948"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2018-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "A",
+          "libelle": "ASSURE"
+        }
+      },
+      {
+        "data": {
+          "destinatairesPaiements": [
+            {
+              "idDestinatairePaiements": "DP-6666600003",
+              "idBeyondDestinatairePaiements": "DP-6666600003-0000850740",
+              "nom": {
+                "nomFamille": "GREEN3",
+                "nomUsage": "VAITROUAT",
+                "prenom": "JOHN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT JOHN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "rib": {
+                "bic": "MCCFFRP1",
+                "iban": "FR3330002005500000157841Z25"
+              },
+              "modePaiementPrestations": {
+                "code": "VIR",
+                "libelle": "Virement",
+                "codeMonnaie": "EUR"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "destinatairesRelevePrestations": [
+            {
+              "idDestinataireRelevePrestations": "DRP-6666600003",
+              "idBeyondDestinataireRelevePrestations": "DRP-6666600003-0000850740",
+              "dematerialisation": {
+                "isDematerialise": false
+              },
+              "nom": {
+                "nomFamille": "GREEN3",
+                "nomUsage": "VAITROUAT",
+                "prenom": "JOHN",
+                "civilite": "Mr"
+              },
+              "adresse": {
+                "ligne1": "MR GREEN2 VAITROUAT JOHN",
+                "ligne4": "125 RUE DU CHATEAU",
+                "ligne6": "59250 HALLUIN",
+                "codePostal": "59250"
+              },
+              "periode": {
+                "debut": "2020-01-01"
+              }
+            }
+          ],
+          "nom": {
+            "nomFamille": "GREEN3",
+            "nomUsage": "GREEN3",
+            "prenom": "ENFANT",
+            "civilite": "Mrs"
+          },
+          "adresse": {
+            "ligne1": "MR GREEN2 VAITROUAT JOHN",
+            "ligne4": "125 RUE DU CHATEAU",
+            "ligne6": "59250 HALLUIN",
+            "codePostal": "59250"
+          },
+          "contact": {
+            "fixe": "0321992364",
+            "mobile": "0735427677"
+          }
+        },
+        "digitRelation": {
+          "dematerialisation": {
+            "isDematerialise": true,
+            "mobile": "0735427677"
+          },
+          "teletransmissions": [
+            {
+              "periode": {
+                "debut": "2020-01-01"
+              },
+              "isTeletransmission": true
+            }
+          ]
+        },
+        "droits": [
+          {
+            "code": "BAL_BASE",
+            "codeAssureur": "ASS_BALOO",
+            "libelle": "Baloo Base",
+            "ordrePriorisation": "1",
+            "type": "BASE",
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "dateAncienneteGarantie": "2022-01-01"
+          }
+        ],
+        "isSouscripteur": false,
+        "rangAdministratif": "2",
+        "identite": {
+          "nir": {
+            "code": "1920854639911",
+            "cle": "27"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1920854639911",
+                "cle": "27"
+              },
+              "rattachementRO": {
+                "codeRegime": "01",
+                "codeCaisse": "624",
+                "codeCentre": "0156"
+              },
+              "periode": {
+                "debut": "2018-01-01"
+              }
+            }
+          ],
+          "dateNaissance": "20160506",
+          "rangNaissance": "1",
+          "numeroPersonne": "6666600003-002",
+          "refExternePersonne": "EXT-6666600003-002"
+        },
+        "dateAdhesionMutuelle": "2018-01-01",
+        "dateDebutAdhesionIndividuelle": "2018-01-01",
+        "numeroAdhesionIndividuelle": "6666600003",
+        "dateModification": {
+          "$date": {
+            "$numberLong": "1678375841948"
+          }
+        },
+        "periodes": [
+          {
+            "debut": "2018-01-01"
+          }
+        ],
+        "periodesMedecinTraitantOuvert": [
+          {
+            "debut": "2020-01-01",
+            "fin": "2021-12-31"
+          },
+          {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        ],
+        "regimesParticuliers": [
+          {
+            "code": "AM",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "situationsParticulieres": [
+          {
+            "code": "ALD",
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2021-12-31"
+            }
+          }
+        ],
+        "qualite": {
+          "code": "E",
+          "libelle": "ENFANT"
+        }
+      }
+    ],
+    "version": "5",
+    "codeOc": "ASSUREURS_NUM_IGESTION",
+    "traceId": "6409fba1ff45071209ef4027",
+    "idDeclarant": "0000850740",
+    "societeEmettrice": "0000850740",
+    "numero": "6666600004",
+    "numeroExterne": "6666600004",
+    "numeroAdherent": "6666600004",
+    "numeroAdherentComplet": "6666600004-COMPLET",
+    "dateSouscription": "2018-01-01",
+    "apporteurAffaire": "Courtier & Co",
+    "periodesContratResponsableOuvert": [
+      {
+        "debut": "2018-01-01",
+        "fin": "2021-12-31"
+      }
+    ],
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Employés",
+    "isContratIndividuel": true,
+    "gestionnaire": "IGestion",
+    "contratCollectif": {
+      "numero": "66666",
+      "numeroExterne": "DKMMMS66666"
+    },
+    "qualification": "B",
+    "ordrePriorisation": "1",
+    "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratV5.ContratAIV5"
+  }
+]

@@ -1,0 +1,436 @@
+metrics_mongo_execution:
+# HTP
+- name: "nombre.personnes.droits.htp.ouverts"
+  domain: "serviceeligibility.htp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: LTE
+          key: periodeDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFin
+            - operation: GT
+              key: periodeFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateResiliation
+            - operation: GT
+              key: dateResiliation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateRadiation
+            - operation: GT
+              key: dateRadiation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+    discriminator: numeroPersonne
+    axes:
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre de personnes ayant des droits HTP ouverts"
+
+
+- name: "nombre.adherents.droits.htp.ouverts"
+  domain: "serviceeligibility.htp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: LTE
+          key: periodeDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFin
+            - operation: GT
+              key: periodeFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateResiliation
+            - operation: GT
+              key: dateResiliation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateRadiation
+            - operation: GT
+              key: dateRadiation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+    discriminator: numeroAdherent
+    axes:
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre d'adhérents ayant des droits HTP ouverts"
+
+
+- name: "nombre.personnes.droits.htp.ouverts.suspendus"
+  domain: "serviceeligibility.htp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeDebutSuspension
+        - operation: LTE
+          key: periodeDebutSuspension
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFinSuspension
+            - operation: GT
+              key: periodeFinSuspension
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: LTE
+          key: periodeDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFin
+            - operation: GT
+              key: periodeFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateResiliation
+            - operation: GT
+              key: dateResiliation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateRadiation
+            - operation: GT
+              key: dateRadiation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+    discriminator: numeroPersonne
+    axes:
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre de personnes ayant des droits HTP ouverts mais suspendus à la date d’interrogation"
+
+
+- name: "nombre.adherents.droits.htp.ouverts.suspendus"
+  domain: "serviceeligibility.htp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeDebutSuspension
+        - operation: LTE
+          key: periodeDebutSuspension
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFinSuspension
+            - operation: GT
+              key: periodeFinSuspension
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: LTE
+          key: periodeDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFin
+            - operation: GT
+              key: periodeFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateResiliation
+            - operation: GT
+              key: dateResiliation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: dateRadiation
+            - operation: GT
+              key: dateRadiation
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+    discriminator: numeroAdherent
+    axes:
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre d'adhérents ayant des droits HTP ouverts mais suspendus à la date d’interrogation"
+
+# TP
+- name: "nombre.personnes.droits.tp.online.ouverts"
+  domain: "serviceeligibility.tp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeOnlineDebut
+        - operation: LTE
+          key: periodeOnlineDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeOnlineFin
+            - operation: GT
+              key: periodeOnlineFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+    discriminator: numeroPersonne
+    axes:
+      - "domaineDroits"
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre de personnes ayant des droits TP Online ouverts"
+
+
+- name: "nombre.adherents.droits.tp.online.ouverts"
+  domain: "serviceeligibility.tp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeOnlineDebut
+        - operation: LTE
+          key: periodeOnlineDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeOnlineFin
+            - operation: GT
+              key: periodeOnlineFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+    discriminator: numeroAdherent
+    axes:
+      - "domaineDroits"
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre d'adhérents ayant des droits TP Online ouverts"
+
+
+- name: "nombre.personnes.droits.tp.offline.ouverts"
+  domain: "serviceeligibility.tp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: LTE
+          key: periodeDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFin
+            - operation: GT
+              key: periodeFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+    discriminator: numeroPersonne
+    axes:
+      - "domaineDroits"
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre de personnes ayant des droits TP Offline ouverts"
+
+
+- name: "nombre.adherents.droits.tp.offline.ouverts"
+  domain: "serviceeligibility.tp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: LTE
+          key: periodeDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFin
+            - operation: GT
+              key: periodeFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+    discriminator: numeroPersonne
+    axes:
+      - "domaineDroits"
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre d'adhérents ayant des droits TP Offline ouverts"
+
+
+- name: "nombre.personnes.droits.tp.online.ouverts.suspendus"
+  domain: "serviceeligibility.tp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeDebutSuspension
+        - operation: LTE
+          key: periodeDebutSuspension
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFinSuspension
+            - operation: GT
+              key: periodeFinSuspension
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeOnlineDebut
+        - operation: LTE
+          key: periodeOnlineDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeOnlineFin
+            - operation: GT
+              key: periodeOnlineFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+    discriminator: numeroPersonne
+    axes:
+      - "domaineDroits"
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre de personnes ayant des droits TP Online ouverts mais suspendus"
+
+
+- name: "nombre.adherents.droits.tp.online.ouverts.suspendus"
+  domain: "serviceeligibility.tp"
+  spec:
+    filter:
+      operation: AND
+      conditions:
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeDebutSuspension
+        - operation: LTE
+          key: periodeDebutSuspension
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeFinSuspension
+            - operation: GT
+              key: periodeFinSuspension
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+        - operation: NOT
+          condition:
+            operation: "NULL"
+            key: periodeOnlineDebut
+        - operation: LTE
+          key: periodeOnlineDebut
+          value: $$calculatedGenerationDate
+          dataType: LocalDate
+          keyFormat: yyyy/MM/dd
+        - operation: OR
+          conditions:
+            - operation: "NULL"
+              key: periodeOnlineFin
+            - operation: GT
+              key: periodeOnlineFin
+              value: $$calculatedGenerationDate
+              dataType: LocalDate
+              keyFormat: yyyy/MM/dd
+    discriminator: numeroAdherent
+    axes:
+      - "domaineDroits"
+      - "societeEmettrice"
+      - "generationDate"
+      - "jalon"
+    value: "1"
+    description: "Nombre d'adhérents ayant des droits TP Online ouverts mais suspendus"

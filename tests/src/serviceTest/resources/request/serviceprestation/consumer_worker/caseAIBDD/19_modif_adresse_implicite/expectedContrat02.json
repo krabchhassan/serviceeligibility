@@ -1,0 +1,292 @@
+{
+	"id": null,
+	"traceId": null,
+	"idDeclarant": "0008400004",
+	"societeEmettrice": "CODMUT",
+	"numero": "AIBYD1111111111",
+	"numeroExterne": "AIBYD1111111111",
+	"numeroAdherent": "IBYD1111",
+	"numeroAdherentComplet": "AIBYD1111111111",
+	"dateSouscription": "2020-01-01",
+	"periodesContratResponsableOuvert": [
+		{
+			"debut": "2020-06-04"
+		},
+		{
+			"debut": "2020-01-01",
+			"fin": "2020-06-02"
+		}
+	],
+	"periodesContratCMUOuvert": [
+		{
+			"debut": "2020-06-04"
+		},
+		{
+			"debut": "2020-01-01",
+			"fin": "2020-06-02"
+		}
+	],
+	"critereSecondaireDetaille": " ",
+	"critereSecondaire": " ",
+	"isContratIndividuel": true,
+	"gestionnaire": "CEGEDIM",
+	"qualification": "B",
+	"ordrePriorisation": "1",
+	"periodesDroitsComptablesOuverts": [
+		{
+			"debut": "2020-06-04"
+		}
+	],
+	"assures": [
+		{
+			"isSouscripteur": false,
+			"rangAdministratif": "61",
+			"identite": {
+				"nir": {
+					"code": "1710131556987",
+					"cle": "02"
+				},
+				"affiliationsRO": [
+					{
+						"nir": {
+							"code": "1710131556987",
+							"cle": "02"
+						},
+						"rattachementRO": {
+							"codeRegime": "01",
+							"codeCaisse": "111",
+							"codeCentre": "1111"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"dateNaissance": "19710101",
+				"rangNaissance": "1",
+				"numeroPersonne": "20288138"
+			},
+			"dateAdhesionMutuelle": "2020-01-01",
+			"dateDebutAdhesionIndividuelle": "2020-01-01",
+			"numeroAdhesionIndividuelle": "AIBYD1111111111",
+			"periodes": [
+				{
+					"debut": "2020-06-04"
+				},
+				{
+					"debut": "2020-01-01",
+					"fin": "2020-06-02"
+				}
+			],
+			"periodesMedecinTraitantOuvert": [],
+			"regimesParticuliers": [],
+			"situationsParticulieres": [],
+			"qualite": {
+				"code": "ASSPRI",
+				"libelle": "Assure principal"
+			},
+			"data": {
+				"nom": {
+					"nomFamille": "LOISEAU",
+					"nomUsage": "LOISEAU",
+					"prenom": "Jerome",
+					"civilite": "M"
+				},
+				"adresse": {
+					"ligne1": "M LOISEAU Jerome",
+					"ligne4": "105C CHEMIN DES CAUSSADES",
+					"ligne6": "82290 ALBEFEUILLE LAGARDE",
+					"codePostal": "82290"
+				},
+				"destinatairesPaiements": [
+					{
+            "idDestinatairePaiements":"83747438-288939000-DestPaiement-1",
+            "idBeyondDestinatairePaiements":"83747438-288939000-DestPaiement-1-0008400004",
+            "nom": {
+							"nomFamille": "LOISEAU",
+							"nomUsage": "LOISEAU",
+							"prenom": "mathilde",
+							"civilite": "MME"
+						},
+						"rib": {
+							"bic": "AGRIFRPP822",
+							"iban": "FR7612206008005600551640075"
+						},
+						"modePaiementPrestations": {
+							"code": "V ",
+							"libelle": "Virement",
+							"codeMonnaie": "EUR  "
+						},
+						"periode": {
+							"debut": "2020-06-03"
+						}
+					},
+					{
+            "idDestinatairePaiements":"83747438-288939000-DestPaiement-2",
+            "idBeyondDestinatairePaiements":"83747438-288939000-DestPaiement-2-0008400004",
+            "nom": {
+							"nomFamille": "LOISEAU",
+							"nomUsage": "LOISEAU",
+							"prenom": "mathilde",
+							"civilite": "MME"
+						},
+						"rib": {
+							"bic": "AGRIFRPP822",
+							"iban": "FR7612206008005600551640075"
+						},
+						"modePaiementPrestations": {
+							"code": "V ",
+							"libelle": "Virement",
+							"codeMonnaie": "EUR  "
+						},
+						"periode": {
+							"debut": "2020-01-01",
+							"fin": "2020-06-02"
+						}
+					}
+				],
+				"destinatairesRelevePrestations": [
+					{
+            "idDestinataireRelevePrestations":"83747438-288939000-DestRelevePrest-1",
+            "idBeyondDestinataireRelevePrestations":"83747438-288939000-DestRelevePrest-1-0008400004",
+            "nom": {
+							"nomFamille": "LOISEAU",
+							"nomUsage": "LOISEAU",
+							"prenom": "mathilde",
+							"civilite": "MME"
+						},
+						"adresse": {
+							"ligne1": "Mme LOISEAU mathilde",
+							"ligne4": "6 ALLEE DES FAUVETTES",
+							"ligne6": "81000 ALBI",
+							"codePostal": "81000"
+						},
+						"periode": {
+							"debut": "2020-06-03"
+						}
+					},
+					{
+            "idDestinataireRelevePrestations":"83747438-288939000-DestRelevePrest-2",
+            "idBeyondDestinataireRelevePrestations":"83747438-288939000-DestRelevePrest-2-0008400004",
+            "nom": {
+							"nomFamille": "LOISEAU",
+							"nomUsage": "LOISEAU",
+							"prenom": "mathilde",
+							"civilite": "MME"
+						},
+						"adresse": {
+							"ligne1": "Mme LOISEAU mathilde",
+							"ligne4": "6 ALLEE DES FAUVETTES",
+							"ligne6": "81000 ALBI",
+							"codePostal": "81000"
+						},
+						"periode": {
+							"debut": "2020-01-01",
+							"fin": "2020-06-02"
+						}
+					}
+				]
+			},
+			"digitRelation": {
+				"teletransmissions": [
+					{
+						"periode": {
+							"debut": "2020-06-04"
+						},
+						"isTeletransmission": true
+					}
+				]
+			},
+			"droits": [
+				{
+					"code": "OR",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie OR",
+					"ordrePriorisation": "1",
+					"type": "B",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01",
+					"carences": [
+						{
+							"code": "1TRIM",
+							"periode": {
+								"debut": "2020-06-04",
+								"fin": "2020-06-04"
+							}
+						},
+						{
+							"code": "1SEME",
+							"periode": {
+								"debut": "2020-06-04",
+								"fin": "2020-06-30"
+							}
+						},
+						{
+							"code": "1MOIS",
+							"periode": {
+								"debut": "2020-06-04",
+								"fin": "2020-06-04"
+							}
+						},
+						{
+							"code": "1TRIM",
+							"periode": {
+								"debut": "2020-06-03",
+								"fin": "2020-06-03"
+							}
+						},
+						{
+							"code": "1SEME",
+							"periode": {
+								"debut": "2020-06-03",
+								"fin": "2020-06-30"
+							}
+						},
+						{
+							"code": "1MOIS",
+							"periode": {
+								"debut": "2020-06-03",
+								"fin": "2020-06-03"
+							}
+						},
+						{
+							"code": "1TRIM",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-03-31"
+							}
+						},
+						{
+							"code": "1SEME",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-06-30"
+							}
+						},
+						{
+							"code": "1MOIS",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-01-31"
+							}
+						}
+					]
+				},
+				{
+					"code": "PLOMB",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie PLOMB",
+					"ordrePriorisation": "10",
+					"type": "O",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01"
+				}
+			]
+		}
+	],
+	"version": "5"
+}

@@ -1,0 +1,25 @@
+workflowDefinition:
+  - code: is-bdds-retention
+    name: Traitement de la base de rétention des résiliations radiations rétroactives
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU sert à traiter la base de rétention des résiliations/radiations rétroactives
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-undueretention-job
+        job: serviceeligibility-undueretention-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+
+    crex:
+      - name: nbOccurrenceModifiee
+        description: Nombre de rétention mise à jour
+        ref: steps/step-undueretention-job/parameters/outputs/nbOccurrenceModifiee
+      - name: nbOccurrenceAnnulee
+        description: Nombre de rétention annulée
+        ref: steps/step-undueretention-job/parameters/outputs/nbOccurrenceAnnulee
+      - name: nbOccurrenceEnvoyee
+        description: Nombre de rétention envoyée
+        ref: steps/step-undueretention-job/parameters/outputs/nbOccurrenceEnvoyee

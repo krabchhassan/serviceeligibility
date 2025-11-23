@@ -1,0 +1,9 @@
+beyond:
+  service: bdds
+  socle: Insurance
+  event:
+    group-id: "bdds-test"
+
+SERVICE_ELIGIBILITY_PEFB_INPUT: src/test/resources/serviceeligibility_input_pefb/
+SERVICE_ELIGIBILITY_PEFB_OUTPUT: src/test/resources/serviceeligibility_output_pefb/
+CONTROL_META: false

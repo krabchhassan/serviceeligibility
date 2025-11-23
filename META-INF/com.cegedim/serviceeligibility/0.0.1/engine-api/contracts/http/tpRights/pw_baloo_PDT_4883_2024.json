@@ -1,0 +1,33 @@
+{
+  "offerCode": "OFFER",
+  "offerVersions": [
+    {
+      "domains": [
+        {
+          "domainCode": "HOSP",
+          "tpOffline": {
+            "formulaCode": "fGl_STS021_TR",
+            "formulaLabel": "STS021 : % TR",
+            "formulaMask": "120% TR ",
+            "stsFormulaCode": "032",
+            "nature": "HOSPITALISATION",
+            "variables": [
+              {
+                "variableCode": "$txBR",
+                "stsVariableNumber": 3,
+                "value": "120"
+              }
+            ]
+          },
+          "tpOnline": {
+            "nature": "HOSPITALISATION"
+          }
+        }
+      ],
+      "offerVersionCode": "22",
+      "effectDate": "2022-03-03T14:53:32.994Z",
+      "validityDate": "2024-01-01",
+      "engineVersion": "1.0"
+    }
+  ]
+}

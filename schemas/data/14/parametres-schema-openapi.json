@@ -1,0 +1,94 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "parametres",
+      "description": "Paramètres de la base de données"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Parametres": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "description": "Code du paramètre",
+			"type": "string"
+          },
+          "listeValeurs": {
+            "description": "Liste des valeurs de paramètre",
+			"type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ListeValeurs"
+            }
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "Parametres"
+      },
+	  "ListeValeurs": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "description": "Code de la valeur",
+			"type": "string",
+			"enum": [
+				"prestations",
+				"formules",
+				"conventionnement",
+				"domaine_IS",
+				"domaine_SP",
+				"motifEvenement",
+				"rejets",
+				"domaine",
+				"processus",
+				"typeFichiers"
+			]
+          },
+          "libelle": {
+            "description": "Libellé de la valeur",
+			"type": "string"
+          },
+          "ordre": {
+            "description": "Ordre de la valeur",
+			"type": "string"
+          },
+          "icone": {
+            "description": "Icône",
+			"type": "string",
+			"enum": [
+				"prestation",
+				"prestij",
+				"tiers-payant"
+			]
+          },
+          "transcodification": {
+			"description": "Transcodifiaction de la valeur",
+            "type": "string"
+          },
+          "categorie": {
+            "description": "Categorie de la valeur",
+			"type": "string"
+          },
+          "priorite": {
+            "description": "Priorite de la valeur",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "ListeValeurs"
+      }
+    }
+  }
+}

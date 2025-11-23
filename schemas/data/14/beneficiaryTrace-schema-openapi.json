@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "beneficiaryTrace",
+      "description": "Collection contenant l'ensemble des traces des bénéficiaires créés"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Trace": {
+        "$ref": "/commons-schema-openapi.json#/components/schemas/Trace"
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+    "_id" : "5f85f829812377b29761c656",
+    "idDeclarant" : "0077955850",
+    "numeroContrat" : "103675385",
+    "numeroAdherent" : "03675385",
+    "dateSouscription" : "2019/12/31",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "LENISA",
+    "prenomPorteur" : "ALAIN",
+    "civilitePorteur" : "M",
+    "qualification" : "B",
+    "numeroContratCollectif" : "",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "1",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "typeConvention" : "AL",
+    "critereSecondaire" : "",
+    "critereSecondaireDetaille" : "314",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "gestionnaire" : "ERMMS",
+    "groupeAssures" : "",
+    "editeurCarte" : "",
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : null,
+    "numOperateur" : null,
+    "dateCreation" : "2020-10-13T18:55:36.366",
+    "dateModification" : "2020-10-13T18:55:36.366",
+    "dateConsolidation" : "2020-10-13T18:55:36.366",
+    "beneficiaires" : [
+        {
+            "isCarteTPaEditer" : false,
+            "dateRadiation" : null,
+            "dateCreation" : "2020-10-13T18:55:36.366",
+            "dateModification" : "2020-10-13T18:55:36.366",
+            "dateNaissance" : "19501108",
+            "rangNaissance" : "1",
+            "nirBeneficiaire" : "1501173008500",
+            "cleNirBeneficiaire" : "09",
+            "nirOd1" : "1501173008500",
+            "cleNirOd1" : "09",
+            "nirOd2" : "",
+            "cleNirOd2" : "",
+            "insc" : null,
+            "numeroPersonne" : "03499451",
+            "refExternePersonne" : "03499451",
+            "numeroAdherentComplet" : null,
+            "rangAdministratif" : "01",
+            "qualite" : "A",
+            "categorieSociale" : null,
+            "situationParticuliere" : null,
+            "modePaiementPrestations" : "V",
+            "motifEvenement" : "RE",
+            "libelleEvenement" : "Renouvellement des droits",
+            "modeObtention" : "O",
+            "affiliation" : {
+                "nom" : "LENISA",
+                "nomPatronymique" : "LENISA",
+                "nomMarital" : "LENISA",
+                "prenom" : "ALAIN",
+                "civilite" : null,
+                "periodeDebut" : "2019/12/31",
+                "periodeFin" : null,
+                "qualite" : "A",
+                "regimeOD1" : "01",
+                "caisseOD1" : "731",
+                "centreOD1" : null,
+                "regimeOD2" : null,
+                "caisseOD2" : null,
+                "centreOD2" : null,
+                "hasMedecinTraitant" : false,
+                "regimeParticulier" : "AU",
+                "isBeneficiaireACS" : false,
+                "isTeleTransmission" : true,
+                "typeAssure" : "ASSURE"
+            },
+            "adresses" : [
+                {
+                    "ligne1" : "Monsieur LENISA ALAIN",
+                    "ligne2" : "BAT C",
+                    "ligne3" : "LE BEAUSOLEIL",
+                    "ligne4" : "29 MONTEE DE TRESSERVE",
+                    "ligne5" : null,
+                    "ligne6" : "73100 TRESSERVE",
+                    "ligne7" : null,
+                    "codePostal" : "73100",
+                    "telephone" : "0479356794",
+                    "email" : "alain.lenisa@orange.fr",
+                    "typeAdresse" : {
+                        "libelle" : null,
+                        "type" : "AD"
+                    }
+                },
+                {
+                    "ligne1" : "MACIF-MUTUALITE SANTE",
+                    "ligne2" : null,
+                    "ligne3" : null,
+                    "ligne4" : null,
+                    "ligne5" : null,
+                    "ligne6" : "75435 PARIS CEDEX 09",
+                    "ligne7" : null,
+                    "codePostal" : "75435",
+                    "telephone" : null,
+                    "email" : null,
+                    "typeAdresse" : {
+                        "libelle" : null,
+                        "type" : "GE"
+                    }
+                }
+            ],
+            "domaineDroits" : [
+                {
+                    "code" : "ALMER",
+                    "codeExterne" : null,
+                    "libelle" : null,
+                    "libelleExterne" : null,
+                    "codeProfil" : "DEFAUT",
+                    "codeRenvoi" : null,
+                    "libelleCodeRenvoi" : "",
+                    "isEditable" : "true",
+                    "isSuspension" : "false",
+                    "origineDroits" : "",
+                    "periodesDroit" : [
+                        {
+                            "periodeDebut" : "2019/12/31",
+                            "periodeFin" : "2019/12/31",
+                            "codeGarantie" : "SSOINS2",
+                            "libelleGarantie" : "SOINS 2",
+                            "noOrdreDroit" : "2",
+                            "codeProduit" : "GSEQUIL2",
+                            "libelleProduit" : "EQUILIBREE 2",
+                            "codeExterneProduit" : "TOUTTM",
+                            "codeOptionMutualiste" : "SSOINS2",
+                            "libelleOptionMutualiste" : "",
+                            "dateAdhesionCouverture" : "2019/12/31",
+                            "referenceCouverture" : "",
+                            "tauxRemboursement" : "OUI",
+                            "uniteTauxRemboursement" : "XX",
+                            "conventionnements" : [
+                                {
+                                    "priorite" : 0,
+                                    "typeConventionnement" : {
+                                        "code" : "AL",
+                                        "libelle" : "AL"
+                                    }
+                                }
+                            ],
+                            "prestations" : [
+                                {
+                                    "code" : "DEF",
+                                    "codeRegroupement" : null,
+                                    "libelle" : null,
+                                    "isEditionRisqueCarte" : false,
+                                    "dateEffet" : null,
+                                    "formule" : {
+                                        "numero" : "099",
+                                        "libelle" : null,
+                                        "parametres" : [
+
+                                        ]
+                                    },
+                                    "formuleMetier" : null
+                                }
+                            ],
+                            "prioriteDroit" : {
+                                "code" : "01",
+                                "libelle" : "01",
+                                "typeDroit" : "01",
+                                "prioriteBO" : "01"
+                            }
+                        },
+                        {
+                            "periodeDebut" : "2019/12/31",
+                            "periodeFin" : "2019/12/31",
+                            "codeGarantie" : "SEQUIP2",
+                            "libelleGarantie" : "EQUIPEMENT 2",
+                            "noOrdreDroit" : "1",
+                            "codeProduit" : "GSEQUIL2",
+                            "libelleProduit" : "EQUILIBREE 2",
+                            "codeExterneProduit" : "TOUTTM",
+                            "codeOptionMutualiste" : "SEQUIP2",
+                            "libelleOptionMutualiste" : "",
+                            "dateAdhesionCouverture" : "2019/12/31",
+                            "referenceCouverture" : "",
+                            "tauxRemboursement" : "OUI",
+                            "uniteTauxRemboursement" : "XX",
+                            "conventionnements" : [
+                                {
+                                    "priorite" : 0,
+                                    "typeConventionnement" : {
+                                        "code" : "AL",
+                                        "libelle" : "AL"
+                                    }
+                                }
+                            ],
+                            "prestations" : [
+                                {
+                                    "code" : "DEF",
+                                    "codeRegroupement" : null,
+                                    "libelle" : null,
+                                    "isEditionRisqueCarte" : false,
+                                    "dateEffet" : null,
+                                    "formule" : {
+                                        "numero" : "099",
+                                        "libelle" : null,
+                                        "parametres" : [
+
+                                        ]
+                                    },
+                                    "formuleMetier" : null
+                                }
+                            ],
+                            "prioriteDroit" : {
+                                "code" : "01",
+                                "libelle" : "01",
+                                "typeDroit" : "01",
+                                "prioriteBO" : "01"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

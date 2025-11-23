@@ -1,0 +1,173 @@
+technicalPermissions:
+  - name: SE_P_ACCES_AMC_MGT_UI
+    action: Accéder
+    microservice: BDDS
+    description: Consulter gestion des AMC
+  - name: SE_P_ACCES_BENEFICIARY_RIGHTS_UI
+    action: Accéder
+    microservice: BDDS
+    description: Consulter suivi des droits
+  - name: SE_P_ACCES_BUSINESS_PARAMETERS_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accéder à UI paramètre
+  - name: SE_P_ACCES_CONTRACT_TP_PARAMETERS_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accès à la génération des droits TP pour un contrat
+  - name: SE_P_ACCES_FILE_TRACKING_UI
+    action: Accéder
+    microservice: BDDS
+    description: Consulter suivi des flux
+  - name: SE_P_ACCES_GENERATION_TP_PARAMETERS_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accès au paramétrage de la génération des droits TP
+  - name: SE_P_ACCES_PARAMETERS_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accès au menu de paramétrage
+  - name: SE_P_ACCES_TRACKING_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accès au menu de suivi des flux
+  - name: SE_P_ACCES_TRANSCODING_UI
+    action: Accéder
+    microservice: BDDS
+    description: Consulter gestion transcodage
+  - name: SE_P_ACCES_TRIGGER_TRACKING_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accès à la page de suivi des déclencheurs
+  - name: SE_P_ACCES_UI
+    action: Accéder
+    microservice: BDDS
+    description: Accéder à UI service eligibility
+  - name: SE_P_ACCES_VOLUMETRY_UI
+    action: Accéder
+    microservice: BDDS
+    description: Consulter volumétrie
+  - name: SE_P_ACTIVATE_TRIGGER_UI
+    action: Activer
+    microservice: BDDS
+    description: Activer un déclencheur
+  - name: SE_P_CANCEL_TRIGGER_UI
+    action: Annuler
+    microservice: BDDS
+    description: Annuler un déclencheur
+  - name: SE_P_CHANGE_STATUS_GENERATION_TP_PARAMETERS_UI
+    action: Activer / Désactiver
+    microservice: BDDS
+    description: Activation/Désactivation paramétrage carte TP
+  - name: SE_P_CREATE_AMC_DATA
+    action: Créer
+    microservice: BDDS
+    description: Créer des AMC
+  - name: SE_P_CREATE_GENERATION_TP_PARAMETERS_UI
+    action: Créer
+    microservice: BDDS
+    description: Création paramétrage de carte TP
+  - name: SE_P_CREATE_PARAM_DATA
+    action: Créer
+    microservice: BDDS
+    description: Ajouter des paramètres métiers
+  - name: SE_P_CREATE_TRANSCODAGE_DATA
+    action: Créer
+    microservice: BDDS
+    description: Créer des gestion transcodage
+  - name: SE_P_CREATE_TRANSCODING_PARAM_DATA
+    action: Créer
+    microservice: BDDS
+    description: Créer des parametres de transco
+  - name: SE_P_DELETE_AMC_DATA
+    action: Supprimer
+    microservice: BDDS
+    description: Supprimer des AMC
+  - name: SE_P_DELETE_PARAM_DATA
+    action: Supprimer
+    microservice: BDDS
+    description: Supprimer des paramètres métiers
+  - name: SE_P_DELETE_TRANSCODAGE_DATA
+    action: Supprimer
+    microservice: BDDS
+    description: Supprimer des transcodage
+  - name: SE_P_DELETE_TRANSCODING_PARAM_DATA
+    action: Supprimer
+    microservice: BDDS
+    description: Supprimer des parametres de transco
+  - name: SE_P_DROP_TRIGGER_UI
+    action: Abandonner
+    microservice: BDDS
+    description: Abandonner un déclencheur
+  - name: SE_P_LAUNCH_RECYCLING_UI
+    action: Lancer
+    microservice: BDDS
+    description: Lancer le recyclage d’un déclencheur
+  - name: SE_P_READ_AMC_DATA
+    action: Consulter
+    microservice: BDDS
+    description: Rechercher et consulter des AMC
+  - name: SE_P_READ_DROITS_DATA
+    action: Consulter
+    microservice: BDDS
+    description: Consulter UI suivi des droits
+  - name: SE_P_READ_FLUX_DATA
+    action: Consulter
+    microservice: BDDS
+    description: Consulter UI suivi des flux
+  - name: SE_P_READ_HEALTHCARE
+    action: Consulter
+    microservice: BDDS
+    description: Consulter
+  - name: SE_P_READ_TRANSCODAGE_DATA
+    action: Consulter
+    microservice: BDDS
+    description: Consulter UI gestion transcodage
+  - name: SE_P_READ_VOLUMETRIE_DATA
+    action: Consulter
+    microservice: BDDS
+    description: Consulter UI volumétrie
+  - name: SE_P_UPDATE_AMC_DATA
+    action: Modifier
+    microservice: BDDS
+    description: Modifier des AMC
+  - name: SE_P_UPDATE_TRANSCODAGE_DATA
+    action: Modifier
+    microservice: BDDS
+    description: Modifier transcodage
+  - name: SE_P_SEARCH_LOT
+    action: Consulter
+    microservice: BDDS
+    description: Rechercher lots GT
+  - name: SE_P_ADD_UPDATE_LOT
+    action: Modifier
+    microservice: BDDS
+    description: Modifier lots GT
+  - name: SE_P_WRITE_HEALTHCARE
+    action: Créer
+    microservice: BDDS
+    description: Créer/modifier
+  - name: SE_P_WRITE_PRESTIJ
+    action: Créer
+    microservice: BDDS
+    description: Créer/modifier les prestij
+  - name: SE_P_READ_PRESTIJ
+    action: Consulter
+    microservice: BDDS
+    description: Consulter les prestij
+  - name: SE_P_SUPPORT_BDDS
+    action: Lancer
+    microservice: BDDS
+    description: Lancer la consolidation d’un contrat TP
+  - name: SE_P_OMU_DROITS_TP
+    action: Lancer
+    microservice: BDDS
+    description: Lancer l'OMU d'extraction des personnes n'ayant pas de droits tp
+  - name: SE_P_WRITE_GT
+    action: Créer
+    microservice: BDDS
+    description: Créer/modifier la GT
+  - name: SE_P_READ_GT
+    action: Consulter
+    microservice: BDDS
+    description: Consulter le détail d'une GT

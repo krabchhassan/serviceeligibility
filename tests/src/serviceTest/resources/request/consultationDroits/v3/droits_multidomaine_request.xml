@@ -1,0 +1,86 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsdl="http://ws.cegedimassurance.com/basededroit/wsdl" xmlns:base="http://norme.cegedimassurances.com/base_de_droit" xmlns:com="http://norme.cegedimassurances.com/commun" xmlns:ben="http://norme.cegedimassurances.com/beneficiaire" xmlns:amc="http://norme.cegedimassurances.com/amc">
+    <soap:Header/>
+    <soap:Body>
+        <wsdl:getInfoBddRequest>
+            <base:header_in>
+                <com:headerTech>
+                    <com:id_logiciel_client>LGPLBZ000280</com:id_logiciel_client>
+                    <com:version_logiciel_client>1</com:version_logiciel_client>
+                    <!--Optional:-->
+                    <com:id_session_client>2019040409503208792</com:id_session_client>
+                    <!--Optional:-->
+
+                    <!--Optional:-->
+
+                    <!--Optional:-->
+
+                </com:headerTech>
+                <!--Optional:-->
+                <com:headerFonc>
+                    <!--Optional:-->
+                    <com:code_contexte>CD-01</com:code_contexte>
+                    <!--Optional:-->
+
+                    <!--Optional:-->
+
+                    <!--Optional:-->
+
+                    <!--Optional:-->
+
+                    <!--Optional:-->
+
+                    <com:code_proprietaire>00733931</com:code_proprietaire>
+                    <!--Optional:-->
+                    <com:code_gestionnaire>38125032300015</com:code_gestionnaire>
+                </com:headerFonc>
+            </base:header_in>
+            <base:beneficiaire>
+                <ben:NIR_certifie>1650431555715</ben:NIR_certifie>
+                <!--Optional:-->
+                <ben:cle_NIR>64</ben:cle_NIR>
+                <!--Optional:-->
+                <ben:date_naissance>19650429</ben:date_naissance>
+                <ben:rang_gemellaire>1</ben:rang_gemellaire>
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+            </base:beneficiaire>
+            <base:amc>
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+
+                <!--Optional:-->
+                <amc:numero_AMC_prefectoral>0000452433</amc:numero_AMC_prefectoral>
+            </base:amc>
+            <base:info_bdd>
+                <base:type_recherche_benef>0</base:type_recherche_benef>
+                <base:type_recherche_segment>3</base:type_recherche_segment>
+                <base:liste_segment_recherche>
+                    <base:segment_recherche>PHCN</base:segment_recherche>
+                    <base:segment_recherche>PHOR</base:segment_recherche>
+                </base:liste_segment_recherche>
+                <base:type_profondeur_recherche>0</base:type_profondeur_recherche>
+            </base:info_bdd>
+            <base:dates>
+                <com:date_reference>2020-08-03</com:date_reference>
+                <com:type_date_reference>1</com:type_date_reference>
+                <date_debut>2020-08-03</date_debut>
+                <date_fin>2020-08-03</date_fin>
+            </base:dates>
+        </wsdl:getInfoBddRequest>
+    </soap:Body>
+</soap:Envelope>

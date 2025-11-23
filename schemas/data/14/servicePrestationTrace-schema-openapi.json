@@ -1,0 +1,58 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "servicePrestationTrace",
+      "description": "Collection contenant l'ensemble des traces des contrats HTP reçus depuis un backoffice externe"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Trace": {
+        "$ref": "/commons-schema-openapi.json#/components/schemas/Trace"
+      },
+      "ServicePrestationTrace": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "originId": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "message": {
+            "type": "string"
+          },
+          "contratAiId": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "errorMessage": {
+            "type": "string"
+          },
+          "sourceObjectId": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ServicePrestationTrace"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+workflowDefinition:
+  - code: is-bdds-extractpop
+    name: Extraction des contrats, des bénéficiaires et des garanties
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à lancer une extraction des contrats, de leurs assurés et de leurs garanties dans des fichiers csv ou json
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: format
+        description: Format de sortie des flux de comparaison (CSV ou JSON)
+        optional: false
+
+    steps:
+      - name: step-extractpopulation-job
+        job: extractpopulation-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: FORMAT
+              ref: parameters/format
+
+    crex:
+      - name: FICHIER
+        description: Liste des fichiers générés
+        ref: steps/step-extractpopulation-job/parameters/outputs/FICHIER

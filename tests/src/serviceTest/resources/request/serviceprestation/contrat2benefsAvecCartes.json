@@ -1,0 +1,378 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "CONSOW0",
+  "numeroExterne": "54582311001",
+  "numeroAdherent": "54582311001",
+  "numeroAdherentComplet": "54582311001COMP",
+  "dateSouscription": "2018-05-27",
+  "apporteurAffaire": "apporteurAffaire",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2018-01-01",
+      "fin": "2022-12-31"
+    },
+    {
+      "debut": "2023-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "periode": {
+        "debut": "2018-01-01",
+        "fin": "2022-12-31"
+      },
+      "code": "CMU"
+    },
+    {
+      "periode": {
+        "debut": "2023-01-01",
+        "fin": "2023-12-31"
+      },
+      "code": "CMUP"
+    }
+  ],
+  "critereSecondaireDetaille": "CAD",
+  "critereSecondaire": "001",
+  "isContratIndividuel": false,
+  "gestionnaire": "AXA",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": "true",
+    "periodesDroitsCarte": {
+      "debut": "2025-01-01",
+      "fin": "2035-12-31"
+    },
+    "isCarteDematerialisee": true,
+    "isCartePapier": true,
+    "college": "TEST COLLEGE",
+    "collectivite": "TEST COLLECTIVITE"
+  },
+  "contratCollectif": {
+    "numero": "00219071",
+    "numeroExterne": "12"
+  },
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": 1,
+      "identite": {
+        "nir": {
+          "code": "1701062498046",
+          "cle": "02"
+        },
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "624",
+              "codeRegime": "01",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "624",
+              "codeRegime": "01",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2022-12-31"
+            },
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "numeroPersonne": "MBA-000",
+        "refExternePersonne": "7209738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "POPI",
+          "nomUsage": "POPI",
+          "prenom": "JEAN PIERRE",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "25 RUE DES LAGRADES",
+          "ligne2": "RESIDENCE DES PLATEAUX",
+          "ligne3": "59250",
+          "ligne4": "HALLUIN",
+          "ligne5": "F",
+          "ligne6": "FRANCE",
+          "ligne7": "CEDEX41",
+          "codePostal": "5920"
+        },
+        "contact": {
+          "email": "5920"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "POPI",
+              "nomUsage": "POPI",
+              "prenom": "JEAN PIERRE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "25 RUE DES LAGRADES",
+              "ligne2": "RESIDENCE DES PLATEAUX",
+              "ligne3": "59250",
+              "ligne4": "HALLUIN",
+              "ligne5": "F",
+              "ligne6": "FRANCE",
+              "ligne7": "CEDEX41",
+              "codePostal": "5920"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "POPI",
+              "nomUsage": "POPI",
+              "prenom": "JEAN PIERRE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "25 RUE DES LAGRADES",
+              "ligne2": "RESIDENCE DES PLATEAUX",
+              "ligne3": "59250",
+              "ligne4": "HALLUIN",
+              "ligne5": "F",
+              "ligne6": "FRANCE",
+              "ligne7": "CEDEX41",
+              "codePostal": "5920"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2021-01-01",
+      "dateDebutAdhesionIndividuelle": "2021-01-01",
+      "numeroAdhesionIndividuelle" : "120320020",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [{"code": "AM","periode": {"debut": "2020-01-01","fin": "2020-12-31"}}],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE PRINCIPAL"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": 10,
+      "identite": {
+        "nir": {
+          "code": "1701062498046",
+          "cle": "02"
+        },
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "624",
+              "codeRegime": "01",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2023-01-01"
+            },
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "624",
+              "codeRegime": "01",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2018-01-01",
+              "fin": "2022-12-31"
+            },
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            }
+          }
+        ],
+        "dateNaissance": "19791007",
+        "rangNaissance": "1",
+        "numeroPersonne": "MBA-0001",
+        "refExternePersonne": "7209738ADF"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "POPI",
+          "nomUsage": "POPI",
+          "prenom": "JEAN MARIE",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "25 RUE DES LAGRADES",
+          "ligne2": "RESIDENCE DES PLATEAUX",
+          "ligne3": "59250",
+          "ligne4": "HALLUIN",
+          "ligne5": "F",
+          "ligne6": "FRANCE",
+          "ligne7": "CEDEX41",
+          "codePostal": "5920"
+        },
+        "contact": {
+          "email": "5920"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2122706",
+            "nom": {
+              "nomFamille": "POPI",
+              "nomUsage": "POPI",
+              "prenom": "JEAN PIERRE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "25 RUE DES LAGRADES",
+              "ligne2": "RESIDENCE DES PLATEAUX",
+              "ligne3": "59250",
+              "ligne4": "HALLUIN",
+              "ligne5": "F",
+              "ligne6": "FRANCE",
+              "ligne7": "CEDEX41",
+              "codePostal": "5920"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2122706",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "POPI",
+              "nomUsage": "POPI",
+              "prenom": "JEAN PIERRE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "18 RUE DES LAGARDES",
+              "ligne2": "RESIDENCE DES COTEAUX",
+              "ligne3": "59250",
+              "ligne4": "HALLUIN",
+              "ligne5": "F",
+              "ligne6": "FRANCE",
+              "ligne7": "CEDEX41",
+              "codePostal": "5920"
+            },
+            "periode": {
+              "debut": "2018-01-01"
+            }
+          }
+        ]
+      },
+      "dateAdhesionMutuelle": "2021-01-01",
+      "dateDebutAdhesionIndividuelle": "2021-01-01",
+      "numeroAdhesionIndividuelle" : "120320020",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2018-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "periodes": [
+        {
+          "debut": "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [{"code": "AM","periode": {"debut": "2020-01-01","fin": "2020-12-31"}}],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "BENEFICIAIRE"
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "periode": {
+            "debut": "2023-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2018-01-01"
+        }
+      ]
+    }
+  ]
+}

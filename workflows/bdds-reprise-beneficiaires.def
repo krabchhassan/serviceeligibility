@@ -1,0 +1,41 @@
+workflowDefinition:
+  - code: is-bdds-reprise
+    name: Reprise des bénéficiaires
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU sert à reprendre les bénéficiaires à partir des contrats existants
+    parameters:
+      - name: contract_types
+        description: Types de contrats à reprendre (TP, HTP, PRESTIJ, les 3 valeurs peuvent être combinées avec des virgules)
+        optional: false
+      - name: date_reprise
+        description: Date à partir de laquelle la reprise des contrats TP doit être effectuée, au format yyyy-MM-dd
+        optional: true
+
+    steps:
+      - name: step-reprise
+        job: reprise-beneficiaires-job
+        type: java
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: CONTRACT_TYPES
+              ref: parameters/contract_types
+            - name: DATE_REPRISE
+              ref: parameters/date_reprise
+
+    crex:
+      - name: contratsHtpRepris
+        description: Nombre de contrats HTP repris
+        ref: steps/step-reprise/parameters/outputs/contratsHtpRepris
+      - name: benefsReemisViaHtp
+        description: Nombre de beneficiaires reemis pour les contrats HTP
+        ref: steps/step-reprise/parameters/outputs/benefsReemisViaHtp
+      - name: contratsTpRepris
+        description: Nombre de déclarations TP reprises
+        ref: steps/step-reprise/parameters/outputs/contratsTpRepris
+      - name: contratsPrestijRepris
+        description: Nombre de contrats PrestIj repris
+        ref: steps/step-reprise/parameters/outputs/contratsPrestijRepris
+      - name: benefsReemisViaPrestij
+        description: Nombre de beneficiaires reemis pour les contrats PrestIj
+        ref: steps/step-reprise/parameters/outputs/benefsReemisViaPrestij

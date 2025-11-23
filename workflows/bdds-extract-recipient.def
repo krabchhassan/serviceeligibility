@@ -1,0 +1,28 @@
+workflowDefinition:
+  - code: is-bdds-extractrecip
+    name: Extraction des destinataires
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU créé un fichier sur le workdir contenant les destinataires de relevé de prestation et de paiement des bénéficiares
+    documentation-path: docs/workflows/0.0.1
+    parameters: []
+
+    steps:
+      - name: step-extractrecip-job
+        job: extractrecipient-job
+        type: java
+        useBeyondWorkdir: true
+        produceOutputs: true
+
+    crex:
+      - name: contratsExtraits
+        description: Nombre de contrats extraits
+        ref: steps/step-extractrecip-job/parameters/outputs/contratsExtraits
+      - name: destinatairesRelevePrestation
+        description: Nombre de destinataires de relevé de prestation distincts
+        ref: steps/step-extractrecip-job/parameters/outputs/destinatairesRelevePrestation
+      - name: destinatairesPaiement
+        description: Nombre de destinataires de paiement
+        ref: steps/step-extractrecip-job/parameters/outputs/destinatairesPaiement
+      - name: nomFichier
+        description: Nom du flux généré
+        ref: steps/step-extractrecip-job/parameters/outputs/nomFichier

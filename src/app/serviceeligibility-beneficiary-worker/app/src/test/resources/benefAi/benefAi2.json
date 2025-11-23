@@ -1,0 +1,98 @@
+{
+  "amc" : {
+    "idDeclarant" : "id dec",
+    "libelle" : "lib"
+  },
+  "numeroAdherent" : "numeroAdherent",
+  "contrats" : [{
+    "numeroContrat" : "2",
+    "codeEtat" : "V",
+    "data" : {
+      "adresse" : {
+        "ligne1" : "19 COURS GENERAL GIRAUD",
+        "codePostal" : "69001"
+      },
+      "nom" : {
+        "nomFamille" : "ROUBE2",
+        "nomUsage" : "ROUBE2",
+        "prenom" : "FRANCIS",
+        "civilite" : "Monsieur"
+      },
+      "contact" : {
+        "fixe" : "fixe",
+        "mobile" : "mobile",
+        "email" : "email"
+      },
+      "rib" : {
+        "bic" : "bic",
+        "iban" : "iban"
+      }
+    }
+  },
+    {
+      "numeroContrat" : "3",
+      "codeEtat" : "V",
+      "data" : {
+        "adresse" : {
+          "ligne1" : "19 COURS GENERAL GIRAUD",
+          "codePostal" : "69002"
+        },
+        "nom" : {
+          "nomFamille" : "ROUBE3",
+          "nomUsage" : "ROUBE3",
+          "prenom" : "FRANCIS",
+          "civilite" : "Monsieur"
+        },
+        "contact" : {
+          "fixe" : "fixe2",
+          "mobile" : "mobile3",
+          "email" : "email3"
+        },
+        "rib" : {
+          "bic" : "bic2",
+          "iban" : "iban4"
+        }
+      }
+    }
+  ],
+  "keys" : [{
+    "dateNaissance" : "1968-05-12",
+    "rangNaissance" : 1,
+    "code" : "1680569001225",
+    "cle" : 16
+  }],
+  "service" : "Service_Prestation",
+  "identite": {
+    "numeroPersonne" : "numeroPersonne",
+    "dateNaissance" : "1968-05-12",
+    "rangNaissance" : 1,
+    "nir": {
+      "code": "1680569001225",
+      "cle": 16
+    }
+  },
+  "data" : {
+    "adresse" : {
+      "ligne1" : "20 COURS GENERAL GIRAUD",
+      "codePostal" : "69001"
+    },
+    "nom" : {
+      "nomFamille" : "ROUBE2",
+      "nomUsage" : "ROUBE2",
+      "prenom" : "FRANCIS",
+      "civilite" : "Monsieur"
+    },
+    "contact" : {
+      "fixe" : "",
+      "mobile" : "",
+      "email" : ""
+    },
+    "rib" : {
+      "bic" : "BICBICBIC",
+      "iban" : "IBAN"
+    }
+  },
+  "audit" : {
+    "dateEmission" : ""
+  }
+}

@@ -1,0 +1,29 @@
+workflowDefinition:
+  - code: is-bdds-608
+    name: 608 - Constitution du flux xml Almerys à partir des DeclarationConsolideAlmerys
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Constitution du flux xml Almerys à partir des DeclarationConsolideAlmerys
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: couloirClient
+        description: Couloir client défini dans les pilotages des amcs
+        optional: true
+
+    steps:
+      - name: step-608
+        job: almerys-608-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: COULOIR_CLIENT
+              ref: parameters/couloirClient
+    crex:
+      - name: metriquesPilotages
+        description: métrique des pilotages
+        ref: steps/step-608/parameters/outputs/metriquesPilotages
+      - name: total
+        description: total des métriques
+        ref: steps/step-608/parameters/outputs/total
+

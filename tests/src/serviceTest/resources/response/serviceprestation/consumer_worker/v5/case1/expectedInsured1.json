@@ -1,0 +1,309 @@
+{
+  "id": null,
+  "traceId": null,
+  "idDeclarant": "0008400004",
+  "societeEmettrice": "0008400004",
+  "numero": "8343484392",
+  "numeroExterne": "SLOK4983989",
+  "numeroAdherent": "83747438",
+  "numeroAdherentComplet": "TBT83747438",
+  "dateSouscription": "2020-01-22",
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01",
+      "fin": "2020-12-31"
+    }
+  ],
+  "critereSecondaireDetaille": "CAD",
+  "critereSecondaire": "Cadres",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "03094493",
+    "numeroExterne": "DKMMMS09049304930"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodesDroitsCarte": {
+      "debut": "2020-01-01",
+      "fin": "2023-12-31"
+    },
+    "college": "Cadre",
+    "collectivite": "362 521 879 00034",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "1701062498046",
+          "cle": "02"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-12-31"
+            }
+          },
+          {
+            "nir": {
+              "code": "1701062498046",
+              "cle": "02"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "595",
+              "codeCentre": "0123"
+            },
+            "periode": {
+              "debut": "2019-01-01",
+              "fin": "2019-12-31"
+            }
+          }
+        ],
+        "dateNaissance": "19791006",
+        "rangNaissance": "1",
+        "numeroPersonne": "288939000",
+        "refExternePersonne": "7209738ADF"
+      },
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "periodes": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [
+        {
+          "debut": "2020-01-01",
+          "fin": "2020-12-31"
+        },
+        {
+          "debut": "2019-01-01",
+          "fin": "2019-12-31"
+        }
+      ],
+      "regimesParticuliers": [
+        {
+          "code": "AM",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "situationsParticulieres": [
+        {
+          "code": "ALD",
+          "periode": {
+            "debut": "2020-01-01",
+            "fin": "2020-12-31"
+          }
+        }
+      ],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DELMOTTE",
+          "prenom": "JEAN PIERRE",
+          "civilite": "MR"
+        },
+        "adresse": {
+          "ligne1": "25 RUE DES LAGRADES",
+          "ligne2": "RESIDENCE DES PLATEAUX",
+          "ligne3": "59250",
+          "ligne4": "HALLUIN",
+          "ligne5": "F",
+          "ligne6": "FRANCE",
+          "ligne7": "CEDEX41",
+          "codePostal": "5920"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677",
+          "email": "jp-delmotte@gagamil.coum"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "123457",
+            "idBeyondDestinatairePaiements": "123457-0008400004",
+            "nom": {
+              "raisonSociale": "GDP"
+            },
+            "adresse": {
+              "ligne1": "284 RUE DU PLATEAU",
+              "ligne6": "FRANCE",
+              "ligne7": "62138 HAISNES",
+              "codePostal": "62138"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-07-01"
+            }
+          },
+          {
+            "idDestinatairePaiements": "123456",
+            "idBeyondDestinatairePaiements": "123456-0008400004",
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "25 RUE DES LAGRADES",
+              "ligne2": "RESIDENCE DES PLATEAUX",
+              "ligne3": "59250",
+              "ligne4": "HALLUIN",
+              "ligne5": "F",
+              "ligne6": "FRANCE",
+              "ligne7": "CEDEX41",
+              "codePostal": "5920"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-06-30"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "83747438-288939000-DestRelevePrest-2",
+            "idBeyondDestinataireRelevePrestations": "83747438-288939000-DestRelevePrest-2-0008400004",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "raisonSociale": "GDP"
+            },
+            "adresse": {
+              "ligne1": "284 RUE DU PLATEAU",
+              "ligne6": "FRANCE",
+              "ligne7": "62138 HAISNES",
+              "codePostal": "62138"
+            },
+            "periode": {
+              "debut": "2020-07-01"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "83747438-288939000-DestRelevePrest-1",
+            "idBeyondDestinataireRelevePrestations": "83747438-288939000-DestRelevePrest-1-0008400004",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "DELMOTTE",
+              "prenom": "JEAN PIERRE",
+              "civilite": "MR"
+            },
+            "adresse": {
+              "ligne1": "25 RUE DES LAGRADES",
+              "ligne2": "RESIDENCE DES PLATEAUX",
+              "ligne3": "59250",
+              "ligne4": "HALLUIN",
+              "ligne5": "F",
+              "ligne6": "FRANCE",
+              "ligne7": "CEDEX41",
+              "codePostal": "5920"
+            },
+            "periode": {
+              "debut": "2020-01-01",
+              "fin": "2020-06-30"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "email": "jp-delmotte@gagamil.coum",
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "ATRDENT",
+          "codeAssureur": "DNT",
+          "libelle": "DENTAIRE",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "dateAncienneteGarantie": "2020-01-01",
+          "carences": [
+            {
+              "code": "3M",
+              "droitRemplacement": {
+                "codeAssureur": "DENASS",
+                "libelle": "Dentaire Rempl",
+                "code": "DNTASS"
+              },
+              "periode": {
+                "debut": "2020-01-01",
+                "fin": "2020-12-31"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "5",
+  "codeOc": "LBPP",
+  "periodesContratCMUOuvert": [
+    {
+      "code": "CMU",
+      "periode": {
+        "debut": "2020-01-01",
+        "fin": "2020-12-31"
+      }
+    }
+  ]
+}

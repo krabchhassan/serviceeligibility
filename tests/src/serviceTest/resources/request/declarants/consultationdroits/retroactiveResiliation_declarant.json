@@ -1,0 +1,86 @@
+{
+  "_id" : "0097812432",
+  "_class" : "com.cegedimactiv.basededroit.entity.Declarant",
+  "nom" : "KLESIA CARCEPT ISANTE",
+  "libelle" : "KLESIA CARCEPT ISANTE",
+  "numeroPrefectoral" : "0097812432",
+  "codePartenaire" : "CAR",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "dateCreation" : "2018-12-21T15:34:26.381Z",
+  "userCreation" : "Sam.HALICHE@cegedim.com",
+  "dateModification" : "2019-01-04T10:10:28.532Z",
+  "userModification" : "sandrine.coudert@cegedim.fr",
+  "pilotages" : [
+    {
+      "codeService" : "VISIODROIT",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-12-31T23:00:00.000Z",
+      "caracteristique" : {
+        "codeComptable" : "99999",
+        "generateFichier" : true
+      }
+    },
+    {
+      "codeService" : "SEL-TP",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-12-31T23:00:00.000Z",
+      "caracteristique" : {}
+    },
+    {
+      "codeService" : "DCLBEN",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-12-31T23:00:00.000Z",
+      "couloirClient" : "IS",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "00978122432",
+        "versionNorme" : "003",
+        "codeClient" : "IS"
+      }
+    },
+    {
+      "codeService" : "TPG-IS",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-12-31T23:00:00.000Z",
+      "couloirClient" : "IS",
+      "typeConventionnement" : "IS",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0097812432",
+        "versionNorme" : "V02",
+        "codeClient" : "IS",
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "TPG-SP",
+      "serviceOuvert" : false,
+      "caracteristique" : {
+        "filtreDomaine" : false
+      }
+    },
+    {
+      "codeService" : "CARTE-TP",
+      "serviceOuvert" : false,
+      "dateOuverture" : "2018-12-31T23:00:00.000Z",
+      "couloirClient" : "IS",
+      "caracteristique" : {
+        "numEmetteur" : "0000733931",
+        "codeClient" : "CAR",
+        "periodeReferenceDebut" : "2018-12-31T23:00:00.000Z",
+        "periodeReferenceFin" : "2019-12-30T23:00:00.000Z"
+      }
+    },
+    {
+      "codeService" : "CARTE-DEMATERIALISEE",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2018-12-31T23:00:00.000Z",
+      "couloirClient" : "CAR",
+      "caracteristique" : {}
+    }
+  ]
+}

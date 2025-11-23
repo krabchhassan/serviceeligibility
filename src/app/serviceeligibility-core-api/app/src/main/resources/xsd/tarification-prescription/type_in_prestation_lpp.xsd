@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:complexType name="type_in_prestation_lpp">
+		<xs:sequence>
+			<xs:element name="id_lpp" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>ID LPP</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="code_lpp">
+				<xs:annotation>
+					<xs:documentation>Code LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="type_prestation" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Type prestation
+
+A : Achat
+E : Entretien
+L : Location
+P : Frais de port
+S : Service (ex: Assistance Respiratoire)
+R : Rparation
+V : Livraison</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+						<xs:enumeration value="A"/>
+						<xs:enumeration value="E"/>
+						<xs:enumeration value="L"/>
+						<xs:enumeration value="P"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="R"/>
+						<xs:enumeration value="V"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="date_debut_facturation" type="xs:date">
+				<xs:annotation>
+					<xs:documentation>Date début facturation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="date_fin_facturation" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Date fin facturation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tarif_lpp">
+				<xs:annotation>
+					<xs:documentation>Tarif LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nombre_unites">
+				<xs:annotation>
+					<xs:documentation>Nombre d'unités</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:totalDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prix_unitaire_lpp">
+				<xs:annotation>
+					<xs:documentation>Prix unitaire LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_total_lpp">
+				<xs:annotation>
+					<xs:documentation>Montant total LPP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="montant_total_remise">
+				<xs:annotation>
+					<xs:documentation>Montant total après remise</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

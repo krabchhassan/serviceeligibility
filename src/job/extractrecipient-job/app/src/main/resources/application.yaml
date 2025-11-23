@@ -1,0 +1,39 @@
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-extractrecipient
+  management-scope:
+    enabled: false
+  observability:
+    log:
+      enabled: true
+endpoints:
+  enabled: false
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: error
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+spring:
+  application:
+    name: extractrecipient-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  main:
+    web-application-type: servlet

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Succés d'intégration d'une ligne BOBB",
+  "description": "Evènement émis lors du succés d'intégration d'une ligne BOBB",
+  "additionalProperties": false,
+  "properties": {
+    "status": {
+      "type": "string",
+      "description": "Status"
+    },
+    "line": {
+      "type": "integer",
+      "description": "Line"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "$id": "Insurance.serviceeligibility.bobb.line.integration.succeeded.event/0.0.1"
+}

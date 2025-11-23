@@ -1,0 +1,59 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0002420008-000000000049729",
+  "contrats": [
+    {
+      "numeroContrat": "00000012085750160351",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "PINSON",
+          "nomUsage": "PINSON",
+          "prenom": "LOLA"
+        },
+        "adresse": {
+        },
+        "contact": {
+        }
+      },
+      "numeroAdherent": "00120857"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "00120857",
+  "identite": {
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "2800682012094",
+          "cle": "04"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "542",
+          "codeCentre": "1860"
+        },
+        "periode": {
+          "debut": "2017-02-06"
+        }
+      }
+    ],
+    "dateNaissance": "20160122",
+    "rangNaissance": "1",
+    "numeroPersonne": "000000000049729",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "20160122",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-04-23T14:46:33.988Z"
+  },
+  "traceId": "644544c9194a6715204578cb"
+}

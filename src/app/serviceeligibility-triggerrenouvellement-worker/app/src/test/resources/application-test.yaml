@@ -1,0 +1,21 @@
+TRANSACTIONNAL: false
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:
+            https://idp.dev.beyond.cegedim.cloud/auth/realms/dev
+
+beyond:
+  service: bdds
+  socle: Insurance
+  event:
+    group-id: "bdds-test"
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur

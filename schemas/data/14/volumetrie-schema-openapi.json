@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "volumetrie",
+      "description": "Collection contenant les calculs de volumétrie effectués par le batch 630"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Volumetrie": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "type": "string"
+          },
+          "dateEffet": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "declarations": {
+            "type": "integer"
+          },
+          "personnes": {
+            "type": "integer"
+          },
+          "personnesDroitsOuverts": {
+            "type": "integer"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Volumetrie"
+      }
+    }
+  }
+}

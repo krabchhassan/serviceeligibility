@@ -1,0 +1,35 @@
+workflowDefinition:
+  - code: is-bdds-rdoservprest
+    name: RDO des services prestations
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU sert à faire la RDO des services prestations
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: contract_version
+        description: Version du contract à générer (V5 ou V6 ; par défaut V6)
+        optional: true
+
+    steps:
+      - name: step-rdoservprest-job
+        job: serviceeligibility-rdoserviceprestation-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: CONTRACT_VERSION
+              ref: parameters/contract_version
+
+    crex:
+      - name: listeFichiers
+        description: Liste des fichiers traités
+        ref: steps/step-rdoservprest-job/parameters/outputs/listeFichiers
+      - name: lignesLues
+        description: Nombre de lignes lues
+        ref: steps/step-rdoservprest-job/parameters/outputs/lignesLues
+      - name: contratsIntegres
+        description: Nombre de contrats intégrés
+        ref: steps/step-rdoservprest-job/parameters/outputs/contratsIntegres
+      - name: contratsRejetes
+        description: Nombre de contrats rejetés
+        ref: steps/step-rdoservprest-job/parameters/outputs/contratsRejetes

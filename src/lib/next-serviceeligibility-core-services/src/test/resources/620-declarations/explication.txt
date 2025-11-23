@@ -1,0 +1,42 @@
+Cas 1 Pour 2024 :
+Declaration 1 + Declaration 2 -> aucune selection
+Declaration 1 + Declaration 2 + Declaration 3 -> selection declaration 3 (carte demat ok 01-01-2024 - 31-12-2024)
+Declaration 1 + Declaration 2 + Declaration 3 + Declaration 4 -> selection declaration 4 (carte demat ok 01-01-2024 - 31-03-2024)
+
+Cas 2 Pour 2024 :
+Declaration 1 + Declaration 2 -> selection Declaration 2
+Declaration 1 + Declaration 2 + Declaration 3 -> selection Declaration 2
+Declaration 1 + Declaration 2 + Declaration 3 + Declaration 4 -> selection Declaration 2
+Declaration 1 + Declaration 2 + Declaration 3 + Declaration 4 + Declaration 5 -> selection Declaration 2 + declaration 5 (carte demat ok 01-01-2024 - 31-12-2024)
+
+Cas 3 Pour 2024 :
+Declaration 1 + Declaration 2 -> selection Declaration 2 (carte demat ok 01-01-2024 - 31-12-2024)
+Declaration 1 + Declaration 2 + Declaration 3 -> selection Declaration 2 et Declaration 3 (carte demat ok 01-01-2024 - 31-12-2024 et  01-01-2025 - 31-12-2025)
+
+Cas 4 Pour 2024
+Declaration 1 -> Declaration 1
+Declaration 1 + Declaration 2 + Declaration 3 -> selection Declaration 3
+Declaration 1 + Declaration 2 + Declaration 3 + Declaration 4 + Declaration 5 -> selection Declaration 5
+
+Cas 4 bis Pour 2024  déclaration + suppression
+Declaration 1 -> selection Declaration 1
+Declaration 2 -> selection Declaration 2
+
+DeclarationConsolideCarteDemat supprimé
+CarteDemat invalidé
+
+Cas 5 Pour 2024 - changement de nom
+Declaration 1 -> selection Declaration 1
+Declaration 1 + Declaration 2 -> selection Declaration 2
+
+Cas 5 bis Pour 2024 - changement de nom
+Declaration 1 -> selection Declaration 1
+Declaration 2 -> selection Declaration 2
+2 cartes démats sont générés, une des 2 est invalidés.
+
+Cas 6
+Déclaration avec 2 domaines et des dates différentes.
+
+Cas 7
+Déclaration avec 2 domaines et des dates de début différentes.
+

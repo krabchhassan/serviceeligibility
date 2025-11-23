@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tarification="http://norme.cegedimassurances.com/tarification"
+	xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" targetNamespace="http://norme.cegedimassurances.com/tarification"
+	elementFormDefault="qualified">
+	<xs:import namespace="http://norme.cegedimassurances.com/base_de_droit" schemaLocation="../base_de_droit/type_domaine_droit.xsd" />
+	<xs:include schemaLocation="type_tarification_declarant_amc.xsd" ></xs:include>
+	<xs:include schemaLocation="type_tarification_beneficiaire.xsd" />
+	<xs:include schemaLocation="type_tarification_contrat.xsd" />
+	<xs:complexType name="type_tarification_declaration">
+		<xs:sequence>
+			<xs:element name="declarant_amc" minOccurs="1" maxOccurs="1" type="tarification:type_tarification_declarant_amc" />
+			<xs:element name="beneficiaire" minOccurs="1" maxOccurs="1"	type="tarification:type_tarification_beneficiaire" />
+			<xs:element name="contrat" minOccurs="1" maxOccurs="1" type="tarification:type_tarification_contrat" />
+			<xs:element name="domaines_droits" minOccurs="1" maxOccurs="unbounded" type="base_de_droit:type_domaine_droit" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -1,0 +1,175 @@
+{
+  "assures": [
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "418372",
+            "idBeyondDestinatairePaiements": "418372-0000401166",
+            "nom": {
+              "nomFamille": "MOT",
+              "nomUsage": "MOT",
+              "prenom": "AISSA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MOT AISSA",
+              "ligne4": "12 RUE DE LA BAS",
+              "ligne6": "16230 TOULOUSE",
+              "codePostal": "16230"
+            },
+            "rib": {
+              "bic": "AGRIFRPP817",
+              "iban": "FR7630001007941234567890185"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-03-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "418372",
+            "idBeyondDestinataireRelevePrestations": "418372-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "email@hotmail.fr"
+            },
+            "nom": {
+              "nomFamille": "MOT",
+              "nomUsage": "MOT",
+              "prenom": "AISSA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MOT AISSA",
+              "ligne4": "12 RUE DE LA BAS",
+              "ligne6": "16230 TOULOUSE",
+              "codePostal": "16230"
+            },
+            "periode": {
+              "debut": "2024-03-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "MOT",
+          "nomUsage": "MOT",
+          "prenom": "AISSA",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame MOT AISSA",
+          "ligne4": "12 RUE DE LA BAS",
+          "ligne6": "16230 TOULOUSE",
+          "codePostal": "16230"
+        },
+        "contact": {
+          "fixe": "07 70 05 96 15",
+          "email": "email@hotmail.fr"
+        }
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "email": "email@hotmail.fr"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2024-03-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSBC71232A",
+          "codeAssureur": "ASSU00223",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2024-03-01"
+          },
+          "dateAncienneteGarantie": "2024-03-01"
+        }
+      ],
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "2646523001247",
+          "cle": "10"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2646523001247",
+              "cle": "10"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "171"
+            },
+            "periode": {
+              "debut": "2024-03-01"
+            }
+          }
+        ],
+        "dateNaissance": "19991013",
+        "rangNaissance": "1",
+        "numeroPersonne": "418372",
+        "refExternePersonne": "1541325"
+      },
+      "dateAdhesionMutuelle": "2024-03-01",
+      "dateDebutAdhesionIndividuelle": "2024-03-01",
+      "periodes": [
+        {
+          "debut": "2024-03-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    }
+  ],
+  "version": "6",
+  "periodesSuspension": [],
+  "periodesContratCMUOuvert": [],
+  "contratCollectif": {
+    "identifiantCollectivite": "818423907",
+    "raisonSociale": "CHR EXPLOITATION SAS BAR ANDRE",
+    "siret": "81842390700026",
+    "groupePopulation": "327",
+    "numero": "81842390771232",
+    "numeroExterne": "4197772OBASE"
+  },
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00223",
+  "numero": "1541325",
+  "numeroExterne": "1541325",
+  "numeroAdherent": "1541325",
+  "numeroAdherentComplet": "1541325",
+  "dateSouscription": "2024-03-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2024-03-01"
+    }
+  ],
+  "isContratIndividuel": false,
+  "gestionnaire": "ER00223",
+  "qualification": "B",
+  "ordrePriorisation": "1"
+}

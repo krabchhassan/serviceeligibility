@@ -1,0 +1,12 @@
+plugins {
+    id 'beyond.gradle.plugins.python-faas'
+}
+
+pythonAppExtension {
+    unitTestsDirectoryPath = "unit"
+    setActivateLint(false)
+}
+
+ dependencies {
+    lib(project(":lib-otp-common"))
+ }

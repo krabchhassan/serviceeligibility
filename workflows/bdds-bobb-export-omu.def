@@ -1,0 +1,35 @@
+workflowDefinition:
+  - name: BOBB - Export des fichiers de correspondance
+    code: is-bdds-bobb-export
+    description: l'OMU “BOBBExport” consiste à exporter des fichiers de correspondance produit BO/Beyond.
+    documentation-path: docs/workflows/0.0.1
+    nature: ["dev", "qa", "preprod", "prod"]
+    parameters:
+      - name: max_rows_per_file
+        description: Le nombre max de lignes par fichier
+        optional: false
+    steps:
+      - name: bobb-export
+        job: bobb-export-job
+        type: python
+        fileExchangePlatform: true
+        produceWorkdir: true
+        produceOutputs: true
+        usePersonalWorkdir: true
+        parameters:
+          arguments:
+            - name: max_rows_per_file
+              ref: parameters/max_rows_per_file
+    crex:
+      - name: max_rows_per_file
+        description : Le nombre max de lignes par fichier
+        ref: steps/bobb-export/parameters/arguments/max_rows_per_file
+      - name: list_exported_file
+        description : Liste des fichiers produit
+        ref: steps/bobb-export/parameters/outputs/list_exported_file
+      - name: number_exported_files
+        description : Nombre de fichier produit
+        ref: steps/bobb-export/parameters/outputs/number_exported_files
+      - name: total_exported_rows
+        description : Nombre total de lignes exportées
+        ref: steps/bobb-export/parameters/outputs/total_exported_rows

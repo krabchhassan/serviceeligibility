@@ -1,0 +1,30 @@
+{
+  "codeInsurer": "ASSU00223",
+  "codeContractElement": "FSBC71232A",
+  "codeAMC": "",
+  "label": "FSBC71232A",
+  "ignored": false,
+  "origine": "IMPORT",
+  "user": "marsupilami.fr",
+  "productElements": [
+    {
+      "codeOffer": "FSC71232",
+      "codeProduct": "FSBC71232A",
+      "codeBenefitNature": "",
+      "codeAmc": "ASSU00223",
+      "from": "2023-04-01T00:00:00.000Z",
+      "to": "2024-07-02T00:00:00.000Z",
+      "effectiveDate": "2023-04-01T00:00:00.000Z"
+    },
+    {
+      "codeOffer": "FSC65331",
+      "codeProduct": "FSBC65331A",
+      "codeBenefitNature": "",
+      "codeAmc": "ASSU00223",
+      "from": "2024-07-03T00:00:00.000Z",
+      "effectiveDate": "2024-07-03T00:00:00.000Z"
+    }
+  ],
+  "status": "ACTIVE",
+  "fileName": "BOBB-correctif-pour-date-incoherente-HCR_PAUL.json"
+}

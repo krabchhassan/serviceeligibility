@@ -1,0 +1,206 @@
+beyond:
+  tenancy: MULTI
+  instances:
+    htp-es15:
+      customer: editeur
+      instance: test
+      catalogs:
+        - code: B2B_OTP
+          published-catalogs:
+            - configuration: '{"url":"https://otp-es15.dev.beyond.cegedim.cloud/beyond/internal/api/claim/v1"}'
+              resource-type: url_get
+              integration-point-name: API_CLAIM
+              integration-point-code: API_CLAIM
+            - configuration: '{"url":"https://otp-es15.dev.beyond.cegedim.cloud/beyond/internal/api/onlinestandard/v1"}'
+              resource-type: url_get
+              integration-point-name: BUSINESS
+              integration-point-code: BUSINESS
+            - configuration: '{"url":"https://idp.dev.beyond.cegedim.cloud/auth/realms/otp"}'
+              resource-type: url_get
+              integration-point-name: KEYCLOAK
+              integration-point-code: KEYCLOAK
+            - configuration: '{"url":"https://otp-es15.dev.beyond.cegedim.cloud/beyond/internal/api/info/v1/getVersion"}'
+              resource-type: url_get
+              integration-point-name: BEYOND_INFO
+              integration-point-code: BEYOND_INFO
+        - code: TestCatalog
+          published-catalogs:
+            - configuration: '{"url":"https://www.google.com"}'
+              resource-type: url_get
+              integration-point-name: url
+              integration-point-code: url
+        - code: ConfigurationDesTopicsClaim
+          published-catalogs:
+            - configuration: '{"topicName":"beyond-events","dataJsonPaths":{"correlationId":"$.data.additionalProperties.externalReference","businessId":"$.data.claimId"},"eventTypes":["Healthcare.claim.billing.validated.event","Healthcare.claim.billing.validatedwithzero.event","Healthcare.claim.billing.rejected.event","Healthcare.claim.billing.aborted.event","Healthcare.claim.billing.waiting.event","Healthcare.claim.preauthorization.accepted.event","Healthcare.claim.preauthorization.refused.event","Healthcare.claim.preauthorization.aborted.event","Healthcare.claim.preauthorization.waiting.event","Healthcare.claim.predetermination.accepted.event","Healthcare.claim.predetermination.refused.event","Healthcare.claim.predetermination.aborted.event","Healthcare.claim.predetermination.waiting.event"]}'
+              resource-type: kafka_consumer
+              integration-point-name: ' topic'
+              integration-point-code: Topic
+        - code: GrafanaDashboardsVariables
+          published-catalogs:
+            - configuration: '{"url":"https://htp-es15.dev.beyond.cegedim.cloud/claim/search/ui/#/claims"}'
+              resource-type: url_get
+              integration-point-name: claim url
+              integration-point-code: claim_url
+      mls:
+        - secret-id: apik_gateway_internal_b2b_test/secret_key_test
+          catalog-code: B2B_OTP
+          code: CETIP_ISANTE
+      scopes:
+        - code: defaut
+          combinations:
+            - type: GLOBAL
+              priority: 7
+              status: ACTIVE
+              validity-start-date: "1970-01-01"
+              combination-start-date: "1970-01-01"
+        - code: SCOPE_IRCEM
+          combinations:
+            - main-organization-code: CETIP_IGESTION
+              main-organization-name: CETIP IGESTION
+              secondary-organization-code: IRCEM
+              secondary-organization-name: IRCEM
+              type: PS
+              priority: 4
+              status: ACTIVE
+              validity-start-date: "2010-01-01"
+              combination-start-date: "2010-01-01"
+        - code: SCOPE_IG_EPH
+          combinations:
+            - main-organization-code: CETIP_IGESTION
+              main-organization-name: CETIP IGESTION
+              secondary-organization-code: IG_EPH
+              secondary-organization-name: IG_EPH
+              type: PS
+              priority: 4
+              status: ACTIVE
+              validity-start-date: "2010-01-01"
+              combination-start-date: "2010-01-01"
+        - code: SCOPE_LBPP
+          combinations:
+            - main-organization-code: CETIP_IGESTION
+              main-organization-name: CETIP IGESTION
+              secondary-organization-code: LBPP
+              secondary-organization-name: LA BANQUE POSTALE PREVOYANCE
+              type: PS
+              priority: 4
+              status: ACTIVE
+              validity-start-date: "2010-01-01"
+              combination-start-date: "2010-01-01"
+        - code: SCOPE_AMC_CVG_1
+          combinations:
+            - main-organization-code: CETIP_IGESTION
+              main-organization-name: CETIP IGESTION
+              secondary-organization-code: AMC_CVG_1
+              secondary-organization-name: AMC_CVG_1
+              type: PS
+              priority: 4
+              status: ACTIVE
+              validity-start-date: "2010-01-01"
+              combination-start-date: "2010-01-01"
+      organisations:
+        - code: CETIP_IGESTION
+          amc: '111111111'
+          siret: '41048916500051'
+          siren: '410489165'
+          commercial-name: CETIP IGESTION
+          full-name: CETIP IGESTION
+          address:
+            line1: CETIP-IGESTION
+            line4: 114 rue d'Aguesseau
+            line6: 92100 BOULOGNE BILLANCOURT
+            locality: BOULOGNE BILLANCOURT
+            zip-code: '92100'
+          beneficiary-contact:
+            full-name: CETIP iGestion
+            email: 'test@cegedim.com'
+          organization-contact:
+            full-name: CETIP iGestion
+            email: 'test@cegedim.com'
+          roles:
+            - start-date: "2010-01-01"
+              role: DELEGATED_MANAGEMENT
+          secondary-organizations-amcs: ''
+          main: true
+        - code: BALOO
+          amc: '0000401166'
+          siret: '79756683300019'
+          siren: '797566833'
+          commercial-name: BALOO
+          full-name: BALOO
+          address:
+            line1: Baloo
+            line4: '105 rue de Nantes '
+            line6: 13000 MARSEILLE
+            locality: MARSEILLE
+            zip-code: '13000'
+          roles:
+            - start-date: "2010-01-01"
+              role: ISSUING_COMPANY
+            - start-date: "2016-01-01"
+              role: RISK_CARRIER
+            - start-date: "2016-01-01"
+              role: DELEGATED_MANAGEMENT
+          secondary-organizations-amcs:
+            - ASSU00718
+            - ASSU00955
+            - ASSU00217
+            - ASSU00019
+            - ASSU00615
+            - ASSU00214
+            - ASSU00037
+            - ASSU00136
+            - ASSU00215
+            - ASSU00187
+            - ASSU00223
+            - ASSU00189
+            - ASSU00160
+            - ASSU00060
+            - AXABOOST
+            - ASSU00908
+            - ORGA_COMPLEMENTAIRE_1
+            - ASSU00903
+            - ASSU00206
+            - ASSU00104
+            - ASSU00983
+            - ASSU00667
+            - ASSU00204
+            - ASSU00012
+            - ASSU00155
+            - ASSU00132
+            - ASSU00176
+            - ASSU00693
+            - ASSU00212
+            - ASSU00971
+            - ASSU00079
+            - ASSU00156
+            - TEST_GREEN
+            - ASSU00098
+            - ASSU00076
+            - ASSU00131
+            - ASSU00153
+            - ASSU00175
+            - ASSU00152
+            - ASSU00092
+            - UNKNOWN
+          main: false
+        - code: TEST_BLUE
+          amc: '1234567890'
+          siret: '12345678901234'
+          siren: '123456789'
+          commercial-name: TEST BLUE
+          full-name: TEST BLUE
+          address:
+            line1: TEST TYEAM BLUE
+            line4: d
+            line6: 09210 SAINT YABRS
+            locality: SAINT YABRS
+            zip-code: '09210'
+          roles:
+            - start-date: "2024-01-01"
+              role: DELEGATED_MANAGEMENT
+            - start-date: "2024-01-01"
+              role: RISK_CARRIER
+            - start-date: "2024-01-01"
+              role: ISSUING_COMPANY
+          secondary-organizations-amcs: ''
+          main: false

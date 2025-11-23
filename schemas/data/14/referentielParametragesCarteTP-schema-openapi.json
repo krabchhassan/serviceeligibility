@@ -1,0 +1,46 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "referentielParametragesCarteTP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ReferentielParametragesCarteTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "collectivites": {
+		    "type": "array",
+            "items": {
+              "type": "string"
+            }
+		  },
+		  "colleges": {
+		    "type": "array",
+            "items": {
+              "type": "string"
+            }
+		  },
+		  "criteresSecondaireDetaille": {
+		    "type": "array",
+            "items": {
+              "type": "string"
+            }
+		  },
+		  "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ReferentielParametragesCarteTP"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "codeAMC": "",
+  "codeInsurer": "baloo",
+  "codeContractElement": "GT_5497_D1",
+  "label": "GT_5497_D1",
+  "productElements": [
+    {
+      "codeOffer": "1472_AJOUT_01",
+      "codeProduct": "1472_AJOUT_01_P01",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "2021-01-01T00:00:00.000Z",
+      "effectiveDate": "2021-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored": false,
+  "origine": "IMPORT",
+  "status": "ACTIVE",
+  "user": "reynald.hermez@cegedim-activ.com"
+}

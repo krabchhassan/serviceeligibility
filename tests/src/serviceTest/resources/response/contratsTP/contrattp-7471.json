@@ -1,0 +1,613 @@
+{
+  "beneficiaires":
+  [
+    {
+      "adresses":
+      [
+        {
+          "codePostal": "13009",
+          "email": "0001.BLUE_TEST@gmail.com",
+          "ligne1": "Madame BLUE_TEST 0001",
+          "ligne4": "45 RUE DU TEST",
+          "ligne6": "13009 MARSEILLE",
+          "telephone": "0628232173",
+          "typeAdresse":
+          {
+            "type": "AD"
+          }
+        }
+      ],
+      "affiliation":
+      {
+        "caisseOD1": "131",
+        "civilite": "MME",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "nom": "BLUE_TEST",
+        "nomMarital": "BLUE_TEST",
+        "nomPatronymique": "BLUE_TEST",
+        "periodeDebut": "2024/11/01",
+        "periodeFin": "%%CURRENT_YEAR%%/05/30",
+        "prenom": "0001",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "typeAssure": "Assuré principal"
+      },
+      "affiliationsRO":
+      [
+        {
+          "nir":
+          {
+            "cle": "73",
+            "code": "2950269081223"
+          },
+          "periode":
+          {
+            "debut": "2024/11/01",
+            "fin": "%%CURRENT_YEAR%%/05/30"
+          },
+          "rattachementRO":
+          {
+            "codeCaisse": "131",
+            "codeRegime": "01"
+          }
+        }
+      ],
+      "cleNirBeneficiaire": "73",
+      "cleNirOd1": "73",
+      "dateAdhesionMutuelle": "2024/11/01",
+      "dateDebutAdhesionIndividuelle": "2024/11/01",
+      "dateNaissance": "19950208",
+      "dateRadiation": "%%CURRENT_YEAR%%/05/30",
+      "dernierMouvementRecu": "R",
+      "domaineDroits":
+      [
+        {
+          "code": "HOSP",
+          "garanties":
+          [
+            {
+              "codeAssureurGarantie": "baloo",
+              "codeGarantie": "GT_5497_A1",
+              "dateAdhesionCouverture": "2024/11/01",
+              "libelleGarantie": "Garantie frais de santé",
+              "produits":
+              [
+                {
+                  "codeOc": "BALOO",
+                  "codeOffre": "1472_AJOUT_01",
+                  "codeProduit": "1472_AJOUT_01_P01",
+                  "referencesCouverture":
+                  [
+                    {
+                      "formulaMask": "100% TR ",
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Reemission des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "EM",
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "periodeFinFermeture": "%%CURRENT_YEAR%%/12/31",
+                              "typePeriode": "OFFLINE"
+                            },
+                            {
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "typePeriode": "ONLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "021",
+                                "parametres":
+                                [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": "01"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "HOSP-021-100"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AUDI",
+          "garanties":
+          [
+            {
+              "codeAssureurGarantie": "baloo",
+              "codeGarantie": "GT_5497_A1",
+              "dateAdhesionCouverture": "2024/11/01",
+              "libelleGarantie": "Garantie frais de santé",
+              "produits":
+              [
+                {
+                  "codeOc": "BALOO",
+                  "codeOffre": "1472_AJOUT_01",
+                  "codeProduit": "1472_AJOUT_01_P01",
+                  "referencesCouverture":
+                  [
+                    {
+                      "formulaMask": "50% TR ",
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "AUDIOLOGIE",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Reemission des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "EM",
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "periodeFinFermeture": "%%CURRENT_YEAR%%/12/31",
+                              "typePeriode": "OFFLINE"
+                            },
+                            {
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "typePeriode": "ONLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "021",
+                                "parametres":
+                                [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "50"
+                                  }
+                                ]
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": "01"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "tauxRemboursement": "50",
+                              "uniteTauxRemboursement": "PO"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "AUDI-021-50"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties":
+          [
+            {
+              "codeAssureurGarantie": "baloo",
+              "codeGarantie": "GT_5497_A1",
+              "dateAdhesionCouverture": "2024/11/01",
+              "libelleGarantie": "Garantie frais de santé",
+              "produits":
+              [
+                {
+                  "codeOc": "BALOO",
+                  "codeOffre": "1472_AJOUT_01",
+                  "codeProduit": "1472_AJOUT_01_P01",
+                  "referencesCouverture":
+                  [
+                    {
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Reemission des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "EM",
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "periodeFinFermeture": "%%CURRENT_YEAR%%/12/31",
+                              "typePeriode": "OFFLINE"
+                            },
+                            {
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "typePeriode": "ONLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "010",
+                                "parametres":
+                                []
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": "01"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "DENT-010"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties":
+          [
+            {
+              "codeAssureurGarantie": "baloo",
+              "codeGarantie": "GT_5497_A1",
+              "dateAdhesionCouverture": "2024/11/01",
+              "libelleGarantie": "Garantie frais de santé",
+              "produits":
+              [
+                {
+                  "codeOc": "BALOO",
+                  "codeOffre": "1472_AJOUT_01",
+                  "codeProduit": "1472_AJOUT_01_P01",
+                  "referencesCouverture":
+                  [
+                    {
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation":
+                      [
+                        {
+                          "conventionnements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              }
+                            }
+                          ],
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit":
+                          [
+                            {
+                              "libelleEvenement": "Reemission des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "EM",
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "periodeFinFermeture": "%%CURRENT_YEAR%%/12/31",
+                              "typePeriode": "OFFLINE"
+                            },
+                            {
+                              "periodeDebut": "%%CURRENT_YEAR%%/05/22",
+                              "periodeFin": "%%CURRENT_YEAR%%/05/30",
+                              "typePeriode": "ONLINE"
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "formule":
+                              {
+                                "numero": "010",
+                                "parametres":
+                                []
+                              },
+                              "isEditionRisqueCarte": false,
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "prioriteBO": "01",
+                              "typeDroit": "01"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/05/22",
+                                  "fin": "%%CURRENT_YEAR%%/05/30"
+                                }
+                              ],
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO"
+                            }
+                          ]
+                        }
+                      ],
+                      "referenceCouverture": "PHAR-010"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "nirBeneficiaire": "2950269081223",
+      "nirOd1": "2950269081223",
+      "numeroPersonne": "817916",
+      "rangAdministratif": "1",
+      "rangNaissance": "1",
+      "refExternePersonne": "690823",
+      "teletransmissions":
+      [
+        {
+          "isTeletransmission": true,
+          "periode":
+          {
+            "debut": "2024/11/01",
+            "fin": "%%CURRENT_YEAR%%/05/30"
+          }
+        }
+      ]
+    }
+  ],
+  "carteTPaEditerOuDigitale": "4",
+  "civilitePorteur": "MME",
+  "contratCMUC2S": "0",
+  "dateResiliation": "%%CURRENT_YEAR%%/05/31",
+  "dateSouscription": "2024/11/01",
+  "gestionnaire": "000ER00955",
+  "groupePopulation": "00",
+  "idDeclarant": "0000401166",
+  "identifiantCollectivite": "782921233",
+  "individuelOuCollectif": "2",
+  "isContratCMU": false,
+  "isContratResponsable": false,
+  "nomPorteur": "BLUE_TEST",
+  "numOperateur": "IS",
+  "numeroAdherent": "0690823",
+  "numeroAdherentComplet": "0690823",
+  "numeroContrat": "0690823",
+  "numeroContratCollectif": "78292123318286",
+  "numeroExterneContratCollectif": "2714022000000Q95SOCLE",
+  "numeroExterneContratIndividuel": "0690823",
+  "ordrePriorisation": "1",
+  "origineDeclaration": "Event",
+  "periodeResponsableOuverts":
+  [
+    {
+      "debut": "2024/11/01",
+      "fin": "%%CURRENT_YEAR%%/05/30"
+    }
+  ],
+  "prenomPorteur": "0001",
+  "qualification": "B",
+  "raisonSociale": "INSTITUT PAOLI CALMETTES",
+  "siret": "78292123300014",
+  "suspension":
+  {
+    "etatSuspension": "1",
+    "periodesSuspension":
+    [
+      {
+        "dateDebutSuspension": "%%CURRENT_YEAR%%/05/31"
+      }
+    ]
+  },
+  "type": "B",
+  "typeConvention": "IS"
+}

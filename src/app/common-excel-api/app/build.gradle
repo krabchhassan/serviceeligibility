@@ -1,0 +1,47 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-autoconfigure")
+
+    implementation("commons-io:commons-io")
+
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+    implementation("com.fasterxml.jackson.core:jackson-core")
+
+    implementation('org.apache.poi:poi:3.17')
+    implementation('org.apache.poi:poi-ooxml:3.17')
+    implementation 'com.github.jsurfer:jsurfer-jackson:1.4.3'
+
+    implementation 'com.monitorjbl:xlsx-streamer:1.2.1'
+    implementation 'io.gatling.highcharts:gatling-charts-highcharts:2.3.1'
+
+    // CEGEDIM libs
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    // -----------------
+    // Observability
+    // -----------------
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("io.micrometer:micrometer-registry-prometheus")
+
+    testImplementation('org.apache.httpcomponents:httpclient')
+
+    testImplementation('net.bytebuddy:byte-buddy')
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("org.junit.jupiter:junit-jupiter-params")
+    testImplementation("org.junit.platform:junit-platform-launcher")
+    testImplementation("org.junit.platform:junit-platform-engine")
+    testImplementation("org.junit.platform:junit-platform-commons")
+
+}

@@ -1,0 +1,58 @@
+{
+	"detailsByDomain": {
+		"DENT": {
+			"formulaCode": "fGl_DE00001_100pctFraisReels",
+			"formulaLabel": " DE00001_100% Frais Réels ",
+			"formulaMask": " 100% FR ",
+			"stsFormulaCode": "010",
+			"natureCode": "Dentaire"
+		},
+		"HOSP": {
+			"formulaCode": "fGl_STS021_TR",
+			"formulaLabel": "STS021 : % TR",
+			"formulaMask": "100% TR ",
+			"stsFormulaCode": "021",
+			"natureCode": "Hospitalisation",
+			"variables": [
+				{
+					"variableCode": "$txBR",
+					"stsVariableNumber": 3,
+					"value": "100"
+				}
+			]
+		},
+		"PHAR": {
+			"formulaCode": "fGl_DE00001_100pctFraisReels",
+			"formulaLabel": " DE00001_100% Frais Réels ",
+			"formulaMask": " 100% FR ",
+			"stsFormulaCode": "010",
+			"natureCode": "Pharmacie"
+		},
+		"OPTI": {
+			"formulaCode": "fGl_STS021_TR",
+			"formulaLabel": "STS021 : % TR",
+			"formulaMask": "50% TR ",
+			"stsFormulaCode": "021",
+			"natureCode": "Optique",
+			"variables": [
+				{
+					"variableCode": "$txBR",
+					"stsVariableNumber": 3,
+					"value": "50"
+				}
+			]
+		},
+		"APDE": {
+			"formulaCode": "fGl_DE00001_100pctFraisReels",
+			"formulaLabel": " DE00001_100% Frais Réels ",
+			"formulaMask": " 100% FR ",
+			"stsFormulaCode": "010",
+			"natureCode": "AppareillageDentaire"
+		}
+	},
+	"offerCode": "CAS1",
+	"offerVersionCode": 22,
+	"effectDate": "2022-03-03T14:53:32.994Z",
+	"validityDate": "2022-01-01",
+	"engineVersion": "1.0"
+}

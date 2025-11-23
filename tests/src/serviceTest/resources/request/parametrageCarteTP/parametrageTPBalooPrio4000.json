@@ -1,0 +1,29 @@
+{
+  "id": "prio4000",
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "oc": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "priorite": "4000",
+  "dateDebutValidite": "2022-01-01",
+  "dateCreation": "2022-01-01T07:45:49.495Z",
+  "userCreation": "marianne.barrailh@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "debutEcheance": "01/01",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+    ],
+    "isCarteEditablePapier": false
+  }
+}

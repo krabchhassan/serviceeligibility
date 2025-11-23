@@ -1,0 +1,71 @@
+beyond:
+  customer: ${BEYOND_CUSTOMER}
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdds-benef-worker
+    publisher:
+      enabled: true
+  instance: ${BEYOND_INSTANCE}
+  management-scope:
+    enabled: ${BEYOND_MANAGEMENTSCOPE_ENABLED:true}
+  messaging:
+    deserializers:
+      - topic: ${SPEC_KAFKA_TOPIC_DECLARATIONS:${KAFKA_TOPIC_BDD-DECL}}
+        value-deserializer: string
+    transactional: false
+    types:
+      BenefAIV5: com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5
+      Declaration: com.cegedim.next.serviceeligibility.core.model.entity.Declaration
+      String: java.lang.String
+    security-context:
+      enabled: false
+    concurrency: 5
+  security:
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+  service: ${service_socle:serviceeligibility}
+  socle: ${socle_socle:Insurance}
+  observability:
+    tracing:
+      enabled: ${ZIPKIN_ENABLED:true}
+    log:
+      enabled: true
+kafka:
+  topic:
+    beyond-events: beyond-events
+logging:
+  level:
+    com:
+      cegedim: error
+server:
+  compression:
+    enabled: 'true'
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+  port: '8080'
+spring:
+  aop:
+    proxy-target-class: 'true'
+  application:
+    name: serviceeligibility-beneficiary-worker
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  kafka:
+    consumer:
+      max-poll-records: 50
+  main:
+    web-application-type: servlet

@@ -1,0 +1,69 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+
+    // ----------------
+    // Spring framework
+    // ----------------
+    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.data:spring-data-rest-webmvc")
+    compileOnly("org.springframework.kafka:spring-kafka")
+    // -----------------------------------------------------
+    // Apache: methods for manipulation of Java core classes
+    // -----------------------------------------------------
+    implementation("commons-validator:commons-validator")
+    implementation("org.apache.commons:commons-collections4")
+
+    // observability
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    runtimeOnly 'io.micrometer:micrometer-registry-prometheus'
+
+
+    // -------------------------
+    // JSON schema creation, ...
+    // -------------------------
+    implementation("com.fasterxml.jackson.module:jackson-module-jsonSchema")
+
+    // ------------------------------------
+    // Handling LocalDate and LocalDateTime
+    // ------------------------------------
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+    // ----------------
+    // Jackson databind
+    // ----------------
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation('com.cegedim.beyond.framework:lib-beyond-mongo-starter')
+    compileOnly ('org.mongodb:mongodb-driver-sync')
+    implementation('org.json:json')
+
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-messaging-kafka-security-http")
+    implementation(project(":lib-next-serviceeligibility-core-services"))
+    implementation(project(":lib-next-serviceeligibility-elastic-services"))
+    implementation("io.cloudevents:cloudevents-kafka:2.3.0")
+    implementation("io.cloudevents:cloudevents-api:2.3.0")
+    implementation(project(":lib-common-orga"))
+    implementation("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+
+
+    // ----
+    // TEST
+    // ----
+    testImplementation 'com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client'
+    testImplementation ('org.mongodb:mongodb-driver-sync')
+}

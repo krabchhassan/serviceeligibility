@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Compteur cartes dématérialisées actives.",
+  "description": "Comptage de cartes dématérialisées actives à partir de la date de traitement du batch620.",
+  "additionalProperties": false,
+  "properties": {
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC"
+    },
+    "nbActiveDematerializedCards": {
+      "type": "integer",
+      "description": "Nombre de cartes dématérialisées actives en fonction de l'AMC"
+    },
+    "processingDate": {
+      "type": "string",
+      "description": "Date de traitement de l'omu"
+    }
+  },
+  "required": [
+    "declarantId",
+    "nbActiveDematerializedCards",
+    "processingDate"
+  ],
+  "$id": "Insurance.serviceeligibility.carteTP.demat.active.event/0.0.1"
+}

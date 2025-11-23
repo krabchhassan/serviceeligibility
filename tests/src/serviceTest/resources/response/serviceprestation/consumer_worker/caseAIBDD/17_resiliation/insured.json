@@ -1,0 +1,75 @@
+{
+  "nom": {
+    "nomFamille": "LOISEAU",
+    "nomUsage": "LOISEAU",
+    "prenom": "Jerome",
+    "civilite": "M"
+  },
+  "adresse": {
+    "ligne1": "M LOISEAU Jerome",
+    "ligne2": "",
+    "ligne3": "",
+    "ligne4": "6 ALLEE DES FAUVETTES",
+    "ligne5": "",
+    "ligne6": "81000 ALBI",
+    "ligne7": "",
+    "codePostal": "81000"
+  },
+  "destinatairesPrestations": [
+    {
+      "nom": {
+        "nomFamille": "LOISEAU",
+        "nomUsage": "LOISEAU",
+        "prenom": "mathilde",
+        "civilite": "MME"
+      },
+      "adresse": {
+        "ligne1": "Mme LOISEAU mathilde",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "6 ALLEE DES FAUVETTES",
+        "ligne5": "",
+        "ligne6": "81000 ALBI",
+        "ligne7": "",
+        "codePostal": "81000"
+      },
+      "rib": {
+        "iban": "FR7612206008005600551640075",
+        "bic": "AGRIFRPP822"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-01-01",
+        "fin": "2020-06-02"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "nom": {
+        "nomFamille": "LOISEAU",
+        "nomUsage": "LOISEAU",
+        "prenom": "mathilde",
+        "civilite": "MME"
+      },
+      "adresse": {
+        "ligne1": "Mme LOISEAU mathilde",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "6 ALLEE DES FAUVETTES",
+        "ligne5": "",
+        "ligne6": "81000 ALBI",
+        "ligne7": "",
+        "codePostal": "81000"
+      },
+      "periode": {
+        "debut": "2020-01-01",
+        "fin": "2020-06-02"
+      }
+    }
+  ]
+}

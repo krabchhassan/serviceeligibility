@@ -1,0 +1,311 @@
+{
+  "assures": [
+    {
+      "data": {
+        "nom": {
+          "nomFamille": "",
+          "nomUsage": "",
+          "prenom": "",
+          "civilite": "MME"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSOC58058A",
+          "codeAssureur": "ASSU00155",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "2",
+          "type": "B",
+          "periode": {
+            "debut": "2022-03-01",
+            "fin": "2022-12-31"
+          },
+          "dateAncienneteGarantie": "2022-03-01"
+        },
+        {
+          "carences": [],
+          "code": "FSBC57411A",
+          "codeAssureur": "ASSU00155",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2024-06-30"
+          },
+          "dateAncienneteGarantie": "2022-01-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "1",
+      "identite": {
+        "nir": {
+          "code": "2670999999999",
+          "cle": "77"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2670999999999",
+              "cle": "77"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "131"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19670909",
+        "rangNaissance": "1",
+        "numeroPersonne": "257234",
+        "refExternePersonne": "640972"
+      },
+      "dateAdhesionMutuelle": "2022-01-01",
+      "dateDebutAdhesionIndividuelle": "2022-01-01",
+      "dateRadiation": "2024-06-30",
+      "dateModification": "2024-06-26T08:03:47.885Z",
+      "periodes": [
+        {
+          "debut": "2022-01-01",
+          "fin": "2024-06-30"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      }
+    },
+    {
+      "data": {
+        "nom": {
+          "nomFamille": "",
+          "nomUsage": "",
+          "prenom": "",
+          "civilite": "MME"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSOC58058A",
+          "codeAssureur": "ASSU00155",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "2",
+          "type": "B",
+          "periode": {
+            "debut": "2022-03-01",
+            "fin": "2022-12-31"
+          },
+          "dateAncienneteGarantie": "2022-03-01"
+        },
+        {
+          "carences": [],
+          "code": "FSBC57411A",
+          "codeAssureur": "ASSU00155",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2022-12-31"
+          },
+          "dateAncienneteGarantie": "2022-01-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "21",
+      "identite": {
+        "nir": {
+          "code": "2040999999999",
+          "cle": "37"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2040999999999",
+              "cle": "37"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "131"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "20040923",
+        "rangNaissance": "1",
+        "numeroPersonne": "257258",
+        "refExternePersonne": "640976"
+      },
+      "dateAdhesionMutuelle": "2022-01-01",
+      "dateDebutAdhesionIndividuelle": "2022-01-01",
+      "dateRadiation": "2022-12-31",
+      "dateModification": "2024-06-26T08:03:47.885Z",
+      "periodes": [
+        {
+          "debut": "2022-01-01",
+          "fin": "2022-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "E",
+        "libelle": "Enfant"
+      }
+    },
+    {
+      "data": {
+        "nom": {
+          "nomFamille": "",
+          "nomUsage": "",
+          "prenom": "",
+          "civilite": "M"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2022-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "FSOC58058A",
+          "codeAssureur": "ASSU00155",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "2",
+          "type": "B",
+          "periode": {
+            "debut": "2022-03-01",
+            "fin": "2022-12-31"
+          },
+          "dateAncienneteGarantie": "2022-03-01"
+        },
+        {
+          "carences": [],
+          "code": "FSBC57411A",
+          "codeAssureur": "ASSU00155",
+          "libelle": "Garantie frais de santé",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2022-01-01",
+            "fin": "2022-12-31"
+          },
+          "dateAncienneteGarantie": "2022-01-01"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "11",
+      "identite": {
+        "nir": {
+          "code": "1630699999999",
+          "cle": "84"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1630699999999",
+              "cle": "84"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "131"
+            },
+            "periode": {
+              "debut": "2022-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "19630602",
+        "rangNaissance": "1",
+        "numeroPersonne": "257251",
+        "refExternePersonne": "640973"
+      },
+      "dateAdhesionMutuelle": "2022-01-01",
+      "dateDebutAdhesionIndividuelle": "2022-01-01",
+      "dateRadiation": "2022-12-31",
+      "dateModification": "2024-06-26T08:03:47.885Z",
+      "periodes": [
+        {
+          "debut": "2022-01-01",
+          "fin": "2022-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      }
+    }
+  ],
+  "version": "6",
+  "periodesSuspension": [],
+  "periodesContratCMUOuvert": [],
+  "contratCollectif": {
+    "identifiantCollectivite": "N/A",
+    "raisonSociale": "N/A",
+    "siret": "N/A",
+    "groupePopulation": "00",
+    "numero": "334353471XXXXX",
+    "numeroExterne": "MG/S/22316XXXXXXXXXXX"
+  },
+  "traceId": "667bcb637191751967ce9781",
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00155",
+  "numero": "0640972",
+  "numeroExterne": "0640972",
+  "numeroAdherent": "0640972",
+  "numeroAdherentComplet": "0640972",
+  "dateSouscription": "2022-01-01",
+  "dateResiliation": "2024-07-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2022-01-01",
+      "fin": "2024-06-30"
+    }
+  ],
+  "isContratIndividuel": false,
+  "gestionnaire": "ER00155",
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratv6.ContratAIV6"
+}

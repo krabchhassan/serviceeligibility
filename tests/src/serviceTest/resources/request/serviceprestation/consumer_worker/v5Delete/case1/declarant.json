@@ -1,0 +1,13 @@
+{
+  "_id" : "0008400004",
+  "nom" : "MACIF7",
+  "libelle" : "MACIF7",
+  "siret" : "",
+  "numeroPrefectoral" : "001",
+  "codePartenaire" : "MAS",
+  "type" : "amc",
+  "codeCircuit" : "02",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "AL",
+  "idClientBO" : "service-account-test-es16"
+}

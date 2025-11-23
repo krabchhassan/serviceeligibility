@@ -1,0 +1,29 @@
+apiName: contractevents-api
+entrypointPath: "/beyond/api/contractevents"
+mappings:
+- match:
+    path: /v5/declarants/{idDeclarant}/contracts/{numeroContrat}/insureds/{numeroPersonne}/data
+  redirect_to:
+    component: technicalComponents/serviceeligibility-consumer-api
+    path: /v5/declarants/{idDeclarant}/contracts/{numeroContrat}/insureds/{numeroPersonne}/data
+- match:
+    path: /v5/declarants/{idDeclarant}/contracts
+  redirect_to:
+    component: technicalComponents/serviceeligibility-consumer-api
+    path: /v5/declarants/{idDeclarant}/contracts
+- match:
+    path: /v6/declarants/{idDeclarant}/contracts
+  redirect_to:
+    component: technicalComponents/serviceeligibility-consumer-api
+    path: /v6/declarants/{idDeclarant}/contracts
+- match:
+    path: /v3/declarants/{idDeclarant}/contracts/{numeroContrat}
+  redirect_to:
+    component: technicalComponents/serviceeligibility-consumer-api
+    path: /v3/declarants/{idDeclarant}/contracts/{numeroContrat}
+- match:
+    path: /v4/declarants/{idDeclarant}/contracts/{numeroContrat}/subscriberId/{numeroAdherent}
+    methods: ["DELETE"]
+  redirect_to:
+    component: technicalComponents/serviceeligibility-consumer-api
+    path: /v4/declarants/{idDeclarant}/contracts/{numeroContrat}/subscriberId/{numeroAdherent}

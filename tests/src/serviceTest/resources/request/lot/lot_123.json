@@ -1,0 +1,17 @@
+{
+  "id": "123",
+  "code": "LOT_123",
+  "libelle": "Lot de base 123",
+  "garantieTechniques": [
+    {
+      "codeAssureur": "BALOO",
+      "codeGarantie": "GT_10",
+      "dateAjout": "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur": "BALOO",
+      "codeGarantie": "GT_20",
+      "dateAjout": "2023-10-18T10:33:42.215Z"
+    }
+  ]
+}

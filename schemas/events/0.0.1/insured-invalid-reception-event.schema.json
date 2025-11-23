@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Réception message assuré invalide",
+  "description": "Réception d'un message assuré invalide du backoffice",
+  "additionalProperties": false,
+  "properties": {
+    "error": {
+      "type": "string",
+      "description": "Erreur remontée à la réception d'un message assuré invalide"
+    },
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant de l'AMC"
+    },
+    "contractNumber": {
+      "type": "string",
+      "description": "Numéro du contrat"
+    },
+    "birthDateAndRank": {
+      "type": "string",
+      "description": "Date et rang de naissance de l'assuré"
+    },
+    "personNumber": {
+      "type": "string",
+      "description": "Numéro de la personne"
+    }
+  },
+  "required": [
+    "error"
+  ],
+  "$id": "Insurance.serviceeligibility.insured.invalid.reception.event/0.0.1"
+}

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+	<xs:include schemaLocation="type_beneficiaire_couverture.xsd" />
+
+	<xs:complexType name="type_beneficiaire">
+		<xs:annotation>
+			<xs:documentation>Proprietes du beneficiaire</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nomBeneficiaire">
+				<xs:annotation>
+					<xs:documentation>Nom du beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nomPatronymique" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom patronymique
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nomMarital" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Nom marital
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="25" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prenom">
+				<xs:annotation>
+					<xs:documentation>Prenom du beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="qualite">
+				<xs:annotation>
+					<xs:documentation>Qualité bénéficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="typeAssure" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Libelle detaille correspondant à la qualite du
+						beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="10" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="lienFamilial" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Lien familial du beneficiare dans le contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rangAdministratif" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Rang administratif du beneficiare dans le contrat
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nirOd1">
+				<xs:annotation>
+					<xs:documentation>NIR ouvrant-droit 1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="13" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cleNirOd1">
+				<xs:annotation>
+					<xs:documentation>Cle du NIR OD1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nirOd2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>NIR ouvrant-droit 2
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="13" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cleNirOd2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cle du NIR OD2
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nirBeneficiaire" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>NIR Beneficiaire certifie RNIAM
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="13" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cleNirBeneficiaire" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Cle du NIR Beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dateNaissance">
+				<xs:annotation>
+					<xs:documentation>Date de naissance du beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="8" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rangNaissance">
+				<xs:annotation>
+					<xs:documentation>Rang de naissance beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="1" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="numeroPersonne" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Numero de personne du beneficiaire
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="15" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="refExternePersonne" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Identifification du beneficiaire exposé en
+						externe
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="30" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="regimeOD1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Régime d'affiliation de l'ouvrant-droit 1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="caisseOD1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>caisse d'affiliation de l'ouvrant-droit 1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="centreOD1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>centre d'affiliation de l'ouvrant-droit 1
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="4" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="regimeOD2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Régime d'affiliation de l'ouvrant-droit 2
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="caisseOD2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>caisse d'affiliation de l'ouvrant-droit 2
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="3" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="centreOD2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>centre d'affiliation de l'ouvrant-droit 2
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="4" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="hasMedecinTraitant" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>indicateur "1" si presence d'un medecin traitant,
+						"0" sinon
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="regimeParticulier" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Affiliation à un regime particulier
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="isBeneficiaireACS" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>"1" si beneficiaire de l'aide à l'acquisition
+						d'une complementaire sante,"0" sinon
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isTeleTransmission" type="xs:boolean"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>indicateur "1" si teletransmission, "0" sinon
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="debutAffiliation" type="xs:date"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Debut d'affiliation RO
+					</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="modePaiementPrestations" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Mode de paiement prestations
+					</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1" />
+						<xs:maxLength value="2" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="couvertures" type="couvertures" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="couvertures">
+	<xs:sequence>
+		<xs:element name="couverture" type="type_beneficiaire_couverture"
+			minOccurs="1" maxOccurs="unbounded" />
+	</xs:sequence></xs:complexType>
+</xs:schema>

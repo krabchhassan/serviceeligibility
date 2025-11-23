@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "Insurance.serviceeligibility.beneficiary.sending.blb.error.event/0.0.1",
+  "type": "object",
+  "title": "Erreur d'alimentation de la BLB",
+  "description": "Echec lors de l'envoi d'un bénéficiaire à la Base de Localisation des Bénéficiaires",
+  "additionalProperties": false,
+  "properties": {
+    "nir": {
+      "type": "string",
+      "title": "NIR",
+      "description": "Numéro d'inscription au répertoire"
+    },
+    "dateNaissance": {
+      "type": "string",
+      "title": "Date de naissance",
+      "description": "Date de naissance du bénéficiaire"
+    },
+    "rangNaissance": {
+      "type": "string",
+      "title": "Rang de naissance",
+      "description": "Rang de naissance du bénéficiaire"
+    },
+    "codeErreur": {
+      "type": "string",
+      "title": "Code erreur",
+      "description": "Code de l'erreur"
+    },
+    "labelErreur": {
+      "type": "string",
+      "title": "Label erreur",
+      "description": "Description de l'erreur"
+    }
+  },
+  "required": [
+    "nir",
+    "dateNaissance",
+    "rangNaissance",
+    "codeErreur",
+    "labelErreur"
+  ]
+}

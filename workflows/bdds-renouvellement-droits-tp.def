@@ -1,0 +1,30 @@
+workflowDefinition:
+  - code: is-bdds-renouvtp
+    name: Renouvellement des droits TP
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU sert à renouveller les droits au tiers payant
+    parameters:
+      - name: batch_mode
+        description: Mode de lancement du batch (RDO ou NO_RDO ; par défaut NO_RDO)
+        optional: true
+
+    steps:
+      - name: step-renouvtp-job
+        job: serviceeligibility-renouvellementdroitstp-job
+        type: java
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: BATCH_MODE
+              ref: parameters/batch_mode
+
+    crex:
+      - name: compteRendu
+        description: Compte rendu détaillé par jour traité
+        ref: steps/step-renouvtp-job/parameters/outputs/compteRendu
+      - name: triggerCount
+        description: Nombre de triggers générés au total
+        ref: steps/step-renouvtp-job/parameters/outputs/triggerCount
+      - name: triggeredBenefCount
+        description: Nombre de bénéficiaires traités
+        ref: steps/step-renouvtp-job/parameters/outputs/triggeredBenefCount

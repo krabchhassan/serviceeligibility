@@ -1,0 +1,71 @@
+{
+  "services" : [
+    "Service_TP"
+  ],
+  "key" : "0000452433-2125259",
+  "contrats" : [
+    {
+      "numeroContrat" : "02059235",
+      "codeEtat" : "V",
+      "data" : {
+        "nom" : {
+          "nomFamille" : "VARON",
+          "nomUsage" : "VARON",
+          "prenom" : "JEAN",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur VARON JEAN",
+          "ligne3" : "APT C15",
+          "ligne4" : "1 RUE JACQUES MARTY",
+          "ligne6" : "32000 MAUVE",
+          "codePostal" : "32000"
+        },
+        "contact" : {
+          "mobile" : "",
+          "email" : "jeans@gmail.com"
+        }
+      },
+      "numeroAdherent" : "02059235",
+      "societeEmettrice" : "000452433"
+    }
+  ],
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "02059235",
+  "identite" : {
+    "nir" : {
+      "code" : "1611195277061",
+      "cle" : "82"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1611195277061",
+          "cle" : "82"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "921"
+        },
+        "periode" : {
+          "debut" : "2015-05-25"
+        }
+      }
+    ],
+    "dateNaissance" : "19611107",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "2125259",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "19611107",
+        "rangNaissance" : "1"
+      }
+    ]
+  },
+  "audit" : {
+    "dateEmission" : "2023-06-21T07:26:57.244Z"
+  },
+  "traceId" : "6492a6413a43237745fa2eca"
+}

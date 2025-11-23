@@ -1,0 +1,158 @@
+{
+  "services" : [
+    "ServicePrestation"
+  ],
+  "key" : "0000401166-C7229-CAS-0201",
+  "societesEmettrices" : [
+    {
+      "code" : "000ER00955",
+      "periodes" : [
+        {
+          "debut" : "2001-06-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats" : [
+    {
+      "numeroContrat" : "C7229-CAS-02",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "GR100314",
+            "idBeyondDestinatairePaiements" : "GR100314-0000401166",
+            "nom" : {
+              "nomFamille" : "BLUE",
+              "prenom" : "CERISE",
+              "civilite" : "Mme"
+            },
+            "adresse" : {
+              "ligne1" : "Mme BLUE CERISE",
+              "ligne4" : "19, rue des étoiles",
+              "ligne6" : "31000 PARADIS",
+              "ligne7" : "France",
+              "codePostal" : "31000"
+            },
+            "rib" : {
+              "bic" : "AGRIFRPP882",
+              "iban" : "FR7618206000062578974521458"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2001-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "GRP100314",
+            "idBeyondDestinataireRelevePrestations" : "GRP100314-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "BLUE",
+              "prenom" : "CERISE",
+              "civilite" : "Mme"
+            },
+            "adresse" : {
+              "ligne1" : "Mme BLUE CERISE",
+              "ligne4" : "19, rue des étoiles",
+              "ligne6" : "31000 PARADIS",
+              "ligne7" : "France",
+              "codePostal" : "31000"
+            },
+            "periode" : {
+              "debut" : "2001-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "BLUE",
+          "prenom" : "CERISE",
+          "civilite" : "Mme"
+        },
+        "adresse" : {
+          "ligne1" : "Mme BLUE CERISE",
+          "ligne4" : "19, rue des étoiles",
+          "ligne6" : "31000 PARADIS",
+          "ligne7" : "France",
+          "codePostal" : "31000"
+        },
+        "contact" : {
+          "fixe" : "05 00 00 00 00",
+          "mobile" : "06 00 00 00 00",
+          "email" : "bluecerise@test.com"
+        }
+      },
+      "numeroAdherent" : "C7229-CAS-02",
+      "societeEmettrice" : "000ER00955",
+      "periodes" : [
+        {
+          "debut" : "2001-06-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO" : "service-account-test2",
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "C7229-CAS-02",
+  "identite" : {
+    "nir" : {
+      "code" : "2810631555499",
+      "cle" : "60"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "2810631555491",
+          "cle" : "68"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "111",
+          "codeCentre" : "1018"
+        },
+        "periode" : {
+          "debut" : "2004-01-01"
+        }
+      },
+      {
+        "nir" : {
+          "code" : "2810631555499",
+          "cle" : "60"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "111",
+          "codeCentre" : "1018"
+        },
+        "periode" : {
+          "debut" : "2001-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19900619",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "C7229-CAS-0201",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "19900619",
+        "rangNaissance" : "1"
+      }
+    ]
+  },
+  "audit" : {
+    "dateEmission" : "2025-10-10T06:37:19.914Z"
+  },
+  "traceId" : "68e8a9a660a02959e34156ab",
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5"
+}

@@ -1,0 +1,32 @@
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  forward-headers-strategy: framework
+  error:
+    whitelabel:
+      enabled: false
+    path: servererror
+  http2:
+    enabled: true
+spring:
+  application:
+    name: facturation-htp-job
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-facturation-htp-job
+  management-scope:
+    enabled: false
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: error

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 (http://www.altova.com)  -->
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://norme.cegedimassurances.com/annulation_accreditation" xmlns:commun="http://norme.cegedimassurances.com/commun"
+    targetNamespace="http://norme.cegedimassurances.com/annulation_accreditation"
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+    jaxb:extensionBindingPrefixes="inheritance" jaxb:version="2.1"
+    elementFormDefault="qualified">
+
+	<xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_header_in.xsd"/>
+	<xs:include schemaLocation="type_requete_annulation.xsd"/>
+	<xs:complexType name="getAnnulationAccreditation_in">
+		<xs:annotation>
+            <xs:appinfo>
+                <inheritance:implements>com.cegedimactiv.norme.fsiq.api.RequeteWsFsiq</inheritance:implements>
+            </xs:appinfo>
+        </xs:annotation>
+		<xs:sequence>
+			<xs:element name="header_in" minOccurs="1" maxOccurs="1" type="commun:type_header_in"/>
+			<xs:element name="requeteAnnulation" type="type_requete_annulation" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="numero_AMC_prefectoral">
+                    <xs:annotation>
+                        <xs:documentation>Numéro de télétransmission de l'AMC.</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="10"/>
+                            <xs:minLength value="8"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

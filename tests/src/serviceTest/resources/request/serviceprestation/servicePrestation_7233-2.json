@@ -1,0 +1,311 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00693",
+  "numero": "ET2",
+  "numeroExterne": "ET2",
+  "numeroAdherent": "ADH-ET",
+  "numeroAdherentComplet": "ET2-COMPLET",
+  "dateSouscription": "2025-01-01",
+  "dateResiliation": null,
+  "apporteurAffaire": "Courtier & Co",
+  "periodesContratResponsableOuvert": [],
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "critereSecondaire": "Employés",
+  "isContratIndividuel": true,
+  "gestionnaire": "IGestion",
+  "contratCollectif": {
+    "numero": "ET22",
+    "numeroExterne": "ET22-EXTERNE",
+    "identifiantCollectivite" : "156",
+    "raisonSociale" : "entreprise",
+    "siret" : "siret",
+    "groupePopulation" : "population"
+  },
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "contexteTiersPayant": {
+    "isCartePapierAEditer": true,
+    "periodeDroitsCarte": {
+      "debut": "2025-01-01",
+      "fin": "2025-12-31"
+    },
+    "college": "Cadre",
+    "collectivite": "362521879",
+    "isCarteDematerialisee": true,
+    "isCartePapier": false
+  },
+  "assures": [
+    {
+      "isSouscripteur": true,
+      "rangAdministratif": "1",
+      "identite": {
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1000111111111",
+              "cle": "11"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "20000103",
+        "rangNaissance": "1",
+        "numeroPersonne": "02",
+        "refExternePersonne": "EXT-02"
+      },
+      "dateAdhesionMutuelle": "2025-01-01",
+      "dateDebutAdhesionIndividuelle": "2025-01-01",
+      "numeroAdhesionIndividuelle": "123456789",
+      "periodes": [
+        {
+          "debut": "2025-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "ASSURE"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "TUTU",
+          "nomUsage": "TUTU",
+          "prenom": "LOLO",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "MME TUTU TUTU LOLA",
+          "ligne4": "125 RUE DU CHATEAU",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250"
+        },
+        "contact": {
+          "fixe": "0321992364",
+          "mobile": "0735427677"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-123456789",
+            "nom": {
+              "nomFamille": "TUTU",
+              "nomUsage": "TUTU",
+              "prenom": "LOLA",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "MME TUTU TUTU LOLA",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-123456789",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "TUTU",
+              "nomUsage": "TUTU",
+              "prenom": "LOLA",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "MME TUTU TUTU LOLA",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2025-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2025-01-01"
+          },
+          "dateAncienneteGarantie": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "isSouscripteur": false,
+      "rangAdministratif": "11",
+      "identite": {
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "2001122334444",
+              "cle": "76"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "624",
+              "codeCentre": "0156"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "dateNaissance": "20001103",
+        "rangNaissance": "1",
+        "numeroPersonne": "01",
+        "refExternePersonne": "EXT-01"
+      },
+      "dateAdhesionMutuelle": "2025-01-01",
+      "dateDebutAdhesionIndividuelle": "2025-01-01",
+      "numeroAdhesionIndividuelle": "123456789",
+      "periodes": [
+        {
+          "debut": "2025-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint"
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "TUTU",
+          "nomUsage": "TUTU",
+          "prenom": "LOLA",
+          "civilite": "Mme"
+        },
+        "adresse": {
+          "ligne1": "Mme TUTU TUTU LOLA",
+          "ligne4": "125 RUE DU CHATEAU",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "DP-123456789",
+            "nom": {
+              "nomFamille": "TUTU",
+              "nomUsage": "TUTU",
+              "prenom": "LOLA",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "MR TUTU TUTU LOLA",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "DRP-123456789",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "TUTU",
+              "nomUsage": "TUTU",
+              "prenom": "LOLA",
+              "civilite": "Mme"
+            },
+            "adresse": {
+              "ligne1": "MR TUTU TUTU LOLA",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ]
+      },
+      "digitRelation": {
+        "dematerialisation": {
+          "isDematerialise": true,
+          "mobile": "0735427677"
+        },
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2025-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ]
+      },
+      "droits": [
+        {
+          "code": "AXASCCGDIM",
+          "libelle": "CG SANTE CONFORT",
+          "codeAssureur": "AXA",
+          "ordrePriorisation": "1",
+          "type": "BASE",
+          "periode": {
+            "debut": "2025-01-01"
+          },
+          "dateAncienneteGarantie": "2025-01-01"
+        }
+      ]
+    }
+  ]
+}

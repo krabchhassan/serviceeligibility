@@ -1,0 +1,43 @@
+
+{
+  "content": {
+    "1200531125129-180230-20230301-2": [
+      {
+        "idDeclarant": "idDeclarant",
+        "numeroContrat": "numeroContrat1",
+        "numeroAdherent": "numeroAdherent",
+        "dateSouscription": "dateSouscription",
+        "dateResiliation": "dateResiliation",
+        "dateRestitution": "dateRestitution",
+        "dateCreation": "dateCreation",
+        "dateModification": "dateModification",
+        "dateNaissance": "dateNaissance",
+        "rangNaissance": "rangNaissance1",
+        "nirBeneficiaire": "nirBeneficiaire",
+        "cleNirBeneficiaire": "cleNirBeneficiaire",
+        "nirOd1": "nirOd1",
+        "cleNirOd1": "cleNirOd1",
+        "nirOd2": "nirOd2",
+        "cleNirOd2": "cleNirOd2",
+        "domains": [
+          {
+            "codeDomaine": "codeDomaine1",
+            "typePeriode": "typePeriode",
+            "periodeDebut": "periodeDebut",
+            "periodeFin": "periodeFin",
+            "periodeFinFermeture": "periodeFinFermeture",
+            "codeGarantie": "codeGarantie",
+            "libelleGarantie": "libelleGarantie",
+            "codeProduit": "codeProduit1",
+            "libelleProduit": "libelleProduit",
+            "referenceCouverture": "referenceCouverture",
+            "tauxRemboursement": "tauxRemboursement",
+            "uniteTauxRemboursement": "uniteTauxRemboursement",
+            "codeFormule": "codeFormule",
+            "libelleFormule": "libelleFormule"
+          }
+        ]
+      }]
+  },
+  "errors": {}
+}

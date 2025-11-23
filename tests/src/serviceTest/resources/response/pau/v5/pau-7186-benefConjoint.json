@@ -1,0 +1,215 @@
+{
+  "contracts": [
+    {
+      "context": "TP_ONLINE",
+      "insurerId": "0000401166",
+      "ocCode": "BALOO",
+      "number": "S2274751",
+      "externalNumber": "S2274751",
+      "subscriberId": "S2274751",
+      "subscriberFullId": "S2274751",
+      "subscriptionDate": "2021-01-01",
+      "responsibleContractOpenPeriods": [
+        {
+          "start": "2021-01-01"
+        }
+      ],
+      "secondaryCriterion": "005",
+      "isIndividualContract": true,
+      "operator": "0000401166",
+      "collectiveContract": {},
+      "qualification": "B",
+      "prioritizationOrder": "1",
+      "insured": {
+        "isSubscriber": false,
+        "administrativeRank": "2",
+        "identity": {
+          "nir": {
+            "code": "1745023135112",
+            "key": "04"
+          },
+          "affiliationsRO": [
+            {
+              "nir": {
+                "code": "1745023135112",
+                "key": "04"
+              },
+              "attachementRO": {
+                "regimeCode": "01",
+                "healthInsuranceCompanyCode": "951"
+              },
+              "period": {
+                "start": "2019-02-01",
+                "end": "2023-10-31"
+              }
+            }
+          ],
+          "birthDate": "19741225",
+          "birthRank": "1",
+          "personNumber": "0000401166-2529640"
+        },
+        "data": {
+          "name": {
+            "lastName": "GUINEMET",
+            "commonName": "GUINEMET",
+            "firstName": "MORICE",
+            "civility": "M"
+          },
+          "address": {
+            "line1": "Monsieur GUINEMET MORICE",
+            "line4": "32 ALLEE DES PIGEONS",
+            "line6": "31000 TOULOUSE",
+            "postcode": "31000"
+          },
+          "contact": {}
+        },
+        "healthMutualSubscriptionDate": "2019-02-01",
+        "individualSubscriptionStartDate": "2021-01-01",
+        "cancellationDate": "2023-10-31",
+        "digitRelation": {
+          "remoteTransmissions": [
+            {
+              "period": {
+                "start": "2023-11-10"
+              },
+              "isRemotelyTransmitted": true
+            }
+          ]
+        },
+        "quality": {
+          "code": "C",
+          "label": "Conjoint"
+        },
+        "rights": [
+          {
+            "code": "IRCS1GARSA",
+            "insurerCode": "IRCEMMUT",
+            "prioritizationOrder": "01",
+            "guaranteeAgeDate": "2021-01-01",
+            "products": [
+              {
+                "issuingCompanyCode": "BALOO",
+                "issuingCompanyName": "BALOO",
+                "offerCode": "GARANTIESANTE",
+                "productCode": "ECONOMIQUE",
+                "benefitsType": [
+                  {
+                    "benefitType": "OPTIQUE",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2023-10-31"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "OPTI",
+                        "convention": "KA/IS"
+                      }
+                    ]
+                  },
+                  {
+                    "benefitType": "HOSPITALISATION",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2023-10-31"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "HOCF",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "CHAM",
+                        "convention": "IS"
+                      }
+                    ]
+                  },
+                  {
+                    "benefitType": "SOINSCOURANTS",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2023-10-31"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "SVIL",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "EXTE",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "TRAN",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "PHAR",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "MED",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "CSTE",
+                        "convention": "IS"
+                      }
+                    ]
+                  },
+                  {
+                    "benefitType": "DENTAIREPROTHESES",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2023-10-31"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "DEPR",
+                        "convention": "IS"
+                      }
+                    ]
+                  },
+                  {
+                    "benefitType": "AIDESAUDITIVES",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2023-10-31"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "AUDI",
+                        "convention": "KA/IS"
+                      }
+                    ]
+                  },
+                  {
+                    "benefitType": "DENTAIRESOINSETORTHO",
+                    "period": {
+                      "start": "2021-01-01",
+                      "end": "2023-10-31"
+                    },
+                    "domains": [
+                      {
+                        "domainCode": "DESO",
+                        "convention": "IS"
+                      },
+                      {
+                        "domainCode": "DEOR",
+                        "convention": "IS"
+                      }
+                    ]
+                  }
+                ],
+                "period": {
+                  "start": "2021-01-01",
+                  "end": "2023-10-31"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "isForced": true
+    }
+  ]
+}

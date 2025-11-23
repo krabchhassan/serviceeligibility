@@ -1,0 +1,71 @@
+{
+  "_id" : "0000401166",
+  "idClientBO" : "service-account-test-es16",
+  "nom" : "BALOO",
+  "libelle" : "BALOO",
+  "siret" : "123456789",
+  "numeroPrefectoral" : "0000401166",
+  "numero": "0097810998",
+  "codePartenaire" : "BAL",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "pilotages" : [
+
+  ],
+  "transcodageDomainesTP" : [
+    {
+      "domaineSource" : "OPAU",
+      "domainesCible" : [
+        "OPTI",
+        "AUDI"
+      ]
+    },
+    {
+      "domaineSource" : "PHCN",
+      "domainesCible" : [
+        "PHAR"
+      ]
+    }
+  ],
+  "codeRenvoiTP" : [
+    {
+      "domaineTP" : "DENT",
+      "reseauSoin" : "KA",
+      "codeRenvoi" : "42",
+      "dateDebut" : "2019-12-31T23:00:00.000Z",
+      "dateFin" : "2020-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineTP" : "DENT",
+      "codeRenvoi" : "42",
+      "dateDebut" : "2019-12-31T23:00:00.000Z"
+    },
+    {
+      "domaineTP" : "HOSP",
+      "reseauSoin" : "KA",
+      "codeRenvoi" : "42",
+      "dateDebut" : "2019-12-31T00:00:00.000Z"
+    },
+    {
+      "domaineTP" : "COSP",
+      "reseauSoin" : "CB",
+      "codeRenvoi" : "107",
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "dateFin" : "2021-01-01T00:00:00.000Z"
+    },
+    {
+      "domaineTP" : "HOSP",
+      "codeRenvoi" : "21",
+      "dateDebut" : "2020-01-01T00:00:00.000Z",
+      "dateFin" : "2019-12-31T00:00:00.000Z"
+    },
+    {
+      "domaineTP" : "COSP",
+      "reseauSoin" : "CB",
+      "codeRenvoi" : "107",
+      "dateDebut" : "2020-02-01T00:00:00.000Z"
+    }
+  ]
+}

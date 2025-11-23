@@ -1,0 +1,157 @@
+{
+  "referenceExterne" : null,
+  "codeEtat" : "V",
+  "effetDebut" : "2020-11-17T14:59:33.706+0000",
+  "idDeclarant" : "0004400008",
+  "isCarteTPaEditer" : false,
+  "nomFichierOrigine" : "AAAA.OK",
+  "dateCreation" : "2020-11-17T14:59:33.706+0000",
+  "userCreation" : "job605",
+  "dateModification" : "2020-11-17T14:59:33.706+0000",
+  "userModification" : "job605",
+  "versionDeclaration" : "V03",
+  "beneficiaire" : {
+    "dateNaissance" : "19820712",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "",
+    "cleNirBeneficiaire" : "",
+    "nirOd1" : "1710176231018",
+    "cleNirOd1" : "77",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "12345",
+    "refExternePersonne" : "12345",
+    "affiliation" : {
+      "nom" : "LOLO",
+      "nomPatronymique" : "LOLO",
+      "nomMarital" : "LOLO",
+      "prenom" : "LOLA",
+      "civilite" : null,
+      "periodeDebut" : "2020/01/05",
+      "periodeFin" : null,
+      "qualite" : "A",
+      "regimeOD1" : "00",
+      "caisseOD1" : "000",
+      "centreOD1" : null,
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : false,
+      "typeAssure" : ""
+    },
+    "adresses" : [
+
+    ]
+  },
+  "contrat" : {
+    "numero" : "00700700",
+    "dateSouscription" : "2020/01/05",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "",
+    "prenomPorteur" : "",
+    "civilitePorteur" : "",
+    "numeroAdherent" : "00700700",
+    "numeroAdherentComplet" : "",
+    "qualification" : "B",
+    "numeroContratCollectif" : "",
+    "rangAdministratif" : "",
+    "isContratResponsable" : false,
+    "isContratCMU" : false,
+    "destinataire" : null,
+    "individuelOuCollectif" : "",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "A",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "",
+    "gestionnaire" : "",
+    "groupeAssures" : "",
+    "numeroCarte" : "00700700",
+    "editeurCarte" : null,
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : "0004400008",
+    "numOperateur" : ""
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHAR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "",
+      "libelleProduit" : "",
+      "codeGarantie" : "AR2",
+      "libelleGarantie" : "",
+      "codeProfil" : "",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "100",
+      "isEditable" : false,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : null,
+      "uniteTauxRemboursement" : "PO",
+      "referenceCouverture" : "PHAR-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2020/01/05",
+        "periodeFin" : "2035/12/31",
+        "motifEvenement" : "DE",
+        "libelleEvenement" : "Declaration",
+        "modeObtention" : ""
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    }
+  ]
+}

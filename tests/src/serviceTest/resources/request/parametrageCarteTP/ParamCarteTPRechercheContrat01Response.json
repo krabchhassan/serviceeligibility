@@ -1,0 +1,91 @@
+{
+    "id": null,
+    "amc": "1234567890",
+    "amcNom": null,
+    "identifiantCollectivite": "ENT DURAND",
+    "groupePopulation": "Cadres",
+    "critereSecondaireDetaille": "Csd0012301",
+    "statut": "Actif",
+    "dateCreation": null,
+    "dateModification": null,
+    "userCreation": null,
+    "userModification": null,
+    "parametragesAmcOffreProduit": [
+        {
+            "oc": "OC_0000111122_01",
+            "parametragesOffreProduit": [
+                {
+                    "codeOffre": "OFFER_01_TEST_CI_BLUE",
+                    "versionOffre": "0.0.12",
+                    "produits": [
+                        "PRODUCT_01_TEST_CI_BLUE"
+                    ]
+                }
+            ]
+        }
+    ],
+    "parametrageRenouvellement": {
+        "dateRenouvellementCarteTP": "DebutEcheance",
+        "debutEcheance": "01/01",
+        "dureeValiditeDroitsCarteTP": "Annuel",
+        "delaiDeclenchementCarteTP": 0,
+        "dateDeclenchementAutomatique": null,
+        "seuilSecurite": 100000
+    },
+    "parametrageDroitsCarteTP": {
+        "codeConventionTP": "IS",
+        "codeOperateurTP": "CB",
+        "isCarteEditablePapier": true,
+        "isCarteDematerialisee": true,
+        "refFondCarte": "fndCarte_001",
+        "codeAnnexe1": "Annexe1",
+        "codeAnnexe2": "Annexe2",
+        "detailsDroit": [
+            {
+                "ordreAffichage": 1,
+                "codeDomaineTP": "PHAR",
+                "libelleDomaineTP": "Pharmacie",
+                "isDomaineEditable": true,
+                "convention": "IS",
+                "codeRenvoi":null,
+                "messageRenvoi":null
+            },
+            {
+                "ordreAffichage": 2,
+                "codeDomaineTP": "DENT",
+                "libelleDomaineTP": "Dentaire",
+                "isDomaineEditable": true,
+                "convention": "IS",
+              "codeRenvoi":null,
+              "messageRenvoi":null
+            },
+            {
+                "ordreAffichage": 3,
+                "codeDomaineTP": "OPTI",
+                "libelleDomaineTP": "Optique",
+                "isDomaineEditable": true,
+                "convention": "IS",
+              "codeRenvoi":null,
+              "messageRenvoi":null
+            },
+            {
+                "ordreAffichage": 4,
+                "codeDomaineTP": "HOSP",
+                "libelleDomaineTP": "Hospitalisation",
+                "isDomaineEditable": true,
+                "convention": "IS",
+              "codeRenvoi":null,
+              "messageRenvoi":null
+            },
+            {
+                "ordreAffichage": 5,
+                "codeDomaineTP": "RADI",
+                "libelleDomaineTP": "Radialogie",
+                "isDomaineEditable": true,
+                "convention": "IS",
+              "codeRenvoi":null,
+              "messageRenvoi":null
+            }
+        ]
+    }
+}

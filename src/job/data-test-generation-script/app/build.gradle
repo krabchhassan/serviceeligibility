@@ -1,0 +1,26 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    implementation 'org.apache.httpcomponents:httpclient'
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation('com.cegedim.beyond.framework:rest-http_headers:0.0.2-rc1')
+    implementation("com.cegedim.beyond.framework:lib-common-base-rest-readiness-java:14.1.18")
+    implementation(project(":lib-next-serviceeligibility-core-services")) {
+
+    }
+
+}

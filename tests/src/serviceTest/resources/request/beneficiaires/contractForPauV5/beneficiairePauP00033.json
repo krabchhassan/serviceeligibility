@@ -1,0 +1,57 @@
+{
+  "services" : [
+    "Service_TP"
+  ],
+  "key" : "P00033",
+  "contrats" : [
+    {
+      "numeroContrat" : "00052492000000144052",
+      "societeEmettrice": "0000401182",
+      "numeroAdherent" : "D00030",
+      "numeroAMCEchange": "0000401182",
+      "codeEtat" : "R",
+      "data" : {
+        "nom" : {
+          "nomFamille" : "LE GRIEL",
+          "nomUsage" : "LE GRIEL",
+          "prenom" : "SOPHIE"
+        },
+        "adresse" : {
+
+        },
+        "contact" : {
+
+        }
+      }
+    }
+  ],
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "D00010",
+  "identite" : {
+    "historiqueDateRangNaissance": [{
+      "dateNaissance" : "19770224",
+      "rangNaissance" : "1"
+    }],
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "2770662498046",
+          "cle" : "56"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "03",
+          "codeCaisse" : "054",
+          "codeCentre" : "6200"
+        },
+        "periode" : {
+          "debut" : "2019-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19770224",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "P00033"
+  }
+}

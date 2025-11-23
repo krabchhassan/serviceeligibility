@@ -1,0 +1,39 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" >
+    <soap:Body>
+        <ns5:getInfoBddRequest xmlns="http://norme.cegedimassurances.com/commun"  xmlns:ns2="http://norme.cegedimassurances.com/base_de_droit"  xmlns:ns3="http://norme.cegedimassurances.com/beneficiaire"  xmlns:ns4="http://norme.cegedimassurances.com/amc"  xmlns:ns5="http://ws.cegedimassurance.com/basededroit/wsdl" >
+            <ns2:header_in>
+                <headerTech>
+                    <id_logiciel_client>WNPWDC009165</id_logiciel_client>
+                    <version_logiciel_client>9.3.103</version_logiciel_client>
+                    <id_session_client>26131</id_session_client>
+                </headerTech>
+                <headerFonc>
+                    <code_contexte>CD-01</code_contexte>
+                    <code_proprietaire>00511719</code_proprietaire>
+                    <code_gestionnaire>38125032300015</code_gestionnaire>
+                </headerFonc>
+            </ns2:header_in>
+            <ns2:beneficiaire>
+                <ns3:NIR_certifie>0660676540169</ns3:NIR_certifie>
+                <ns3:cle_NIR>77</ns3:cle_NIR>
+                <ns3:date_naissance>18500615</ns3:date_naissance>
+                <ns3:rang_gemellaire>1</ns3:rang_gemellaire>
+            </ns2:beneficiaire>
+            <ns2:amc>
+                <ns4:numero_AMC_prefectoral>0086003334</ns4:numero_AMC_prefectoral>
+            </ns2:amc>
+            <ns2:info_bdd>
+                <ns2:type_recherche_benef>0</ns2:type_recherche_benef>
+                <ns2:type_recherche_segment>3</ns2:type_recherche_segment>
+                <ns2:liste_segment_recherche>
+                    <ns2:segment_recherche>PHAR</ns2:segment_recherche>
+                </ns2:liste_segment_recherche>
+                <ns2:type_profondeur_recherche>0</ns2:type_profondeur_recherche>
+            </ns2:info_bdd>
+            <ns2:dates>
+                <date_reference>2022-12-09</date_reference>
+                <type_date_reference>1</type_date_reference>
+            </ns2:dates>
+        </ns5:getInfoBddRequest>
+    </soap:Body>
+</soap:Envelope>

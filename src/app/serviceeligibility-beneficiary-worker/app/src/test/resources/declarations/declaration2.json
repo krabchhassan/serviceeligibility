@@ -1,0 +1,152 @@
+{
+    "referenceExterne" : null,
+    "codeEtat" : "V",
+    "effetDebut" : "2016-09-01T11:20:13.460Z",
+    "idDeclarant" : "0000000001",
+    "isCarteTPaEditer" : false,
+    "dateCreation" : "2016-08-22T07:53:13.460Z",
+    "userCreation" : "job605",
+    "dateModification" : "2016-08-22T07:53:13.460Z",
+    "userModification" : "job605",
+    "beneficiaire" : {
+        "dateNaissance" : "19550325",
+        "rangNaissance" : "1",
+        "nirBeneficiaire" : "1710176231018",
+        "cleNirBeneficiaire" : "83",
+        "nirOd1" : "1710176231018",
+        "cleNirOd1" : "83",
+        "nirOd2" : "2710176231018",
+        "cleNirOd2" : "74",
+        "insc" : null,
+        "numeroPersonne" : "00000000",
+        "refExternePersonne" : "00000000",
+        "affiliation" : {
+            "nom" : "PEPERE",
+            "nomPatronymique" : "PEPERE",
+            "nomMarital" : "PEPERE",
+            "prenom" : "PERE",
+            "civilite" : null,
+            "periodeDebut" : "2014/06/23",
+            "periodeFin" : null,
+            "qualite" : "A",
+            "regimeOD1" : "00",
+            "caisseOD1" : "000",
+            "centreOD1" : null,
+            "regimeOD2" : "00",
+            "caisseOD2" : null,
+            "centreOD2" : null,
+            "hasMedecinTraitant" : false,
+            "regimeParticulier" : "",
+            "isBeneficiaireACS" : false,
+            "isTeleTransmission" : false,
+            "typeAssure" : "ASSURE"
+        },
+        "adresses" : [
+			{
+				"ligne1":" Monsieur Pepere Pepere",
+				"ligne2":null,
+				"ligne3":null,
+				"ligne4":"273 Impasse des charrieres",
+				"ligne5":null,
+				"ligne6":"74720 Musieges",
+				"ligne7":null,
+				"codePostal":"74720",
+				"telephone":"01234567890",
+				"email":"toto@titi.com",
+				"typeAdresse":
+				{
+					"libelle":"",
+					"type":"AD"
+				}
+			}
+		]
+    },
+    "contrat" : {
+        "numero" : "C1",
+        "dateSouscription" : "2007/07/01",
+        "dateResiliation" : null,
+        "type" : null,
+        "nomPorteur" : "PERE",
+        "prenomPorteur" : "PERE",
+        "civilitePorteur" : "M.",
+        "numeroAdherent" : "numAdh",
+        "qualification" : "B",
+        "numeroContratCollectif" : "",
+        "rangAdministratif" : "10",
+        "isContratResponsable" : true,
+        "isContratCMU" : false,
+        "destinataire" : "AD",
+        "individuelOuCollectif" : "1",
+        "situationDebut" : null,
+        "situationFin" : null,
+        "motifFinSituation" : null,
+        "lienFamilial" : "A",
+        "categorieSociale" : null,
+        "situationParticuliere" : null,
+        "typeConvention" : "SP",
+        "critereSecondaireDetaille" : "000",
+        "critereSecondaire" : "",
+        "numeroExterneContratIndividuel" : "",
+        "numeroExterneContratCollectif" : "",
+        "modePaiementPrestations" : "V",
+        "gestionnaire" : "00",
+        "groupeAssures" : "",
+        "numeroCarte" : "000000000004195",
+        "editeurCarte" : ""
+    },
+    "domaineDroits" : [ 
+        {
+            "code" : "PHAR",
+            "codeExterne" : null,
+            "libelle" : null,
+            "codeExterneProduit" : "",
+            "libelleExterne" : null,
+            "codeOptionMutualiste" : "SC2",
+            "libelleOptionMutualiste" : "",
+            "codeProduit" : "SOIN",
+            "libelleProduit" : "BIO SOINS",
+            "codeGarantie" : "G1",
+            "libelleGarantie" : "SOINS NIV2",
+            "codeProfil" : "PHARSOINS",
+            "libelleCodeRenvoi" : "TPG25 - Taux AMC sur pharmacie à 65%/30%/15%",
+            "tauxRemboursement" : "100%",
+            "isEditable" : true,
+            "isSuspension" : false,
+            "dateAdhesionCouverture" : "2015/02/01",
+            "uniteTauxRemboursement" : "",
+            "referenceCouverture" : "PHAR-EXC-02A-100",
+            "origineDroits" : "",
+            "prioriteDroit" : {
+                "code" : "03",
+                "libelle" : "02",
+                "typeDroit" : "03",
+                "prioriteBO" : "01",
+                "nirPrio1" : "1710176231017",
+                "nirPrio2" : null,
+                "prioContratNir1" : "02",
+                "prioContratNir2" : null,
+                "prioDroitNir1" : "03",
+                "prioDroitNir2" : null
+            },
+            "prestations" : [],
+            "periodeDroit" : {
+                "periodeDebut" : "2016/04/20",
+                "periodeFin" : "2016/12/31",
+                "motifEvenement" : "IN",
+                "libelleEvenement" : "Initialisation des droits",
+                "dateEvenement" : null,
+                "modeObtention" : "O",
+                "periodeFinInitiale" : null
+            },
+            "conventionnements" : [ 
+                {
+                    "priorite" : 0,
+                    "typeConventionnement" : {
+                        "code" : "IS",
+                        "libelle" : "IS"
+                    }
+                }
+            ]
+        }
+    ]
+}

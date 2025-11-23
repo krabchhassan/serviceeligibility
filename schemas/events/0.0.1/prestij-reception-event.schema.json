@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Réception prestij",
+  "description": "Réception d'une prestij du backoffice",
+  "additionalProperties": false,
+  "properties": {
+    "traceId": {
+      "type": "string",
+      "description": "Identifiant de la trace liée à la prestij"
+    }
+  },
+  "required": [
+    "traceId"
+  ],
+  "$id": "Insurance.serviceeligibility.prestij.reception.event/0.0.1"
+}

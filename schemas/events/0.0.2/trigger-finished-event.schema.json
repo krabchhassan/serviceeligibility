@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Déclencheur terminé",
+  "description": "Déclencheur terminé",
+  "additionalProperties": false,
+  "properties": {
+    "idDeclencheur": {
+      "type": "string",
+      "description": "Identifiant du déclencheur"
+    },
+    "dateDebutTraitement": {
+      "type": "string",
+      "description": "Date de début de traitement du déclencheur (Peut changer pour un même déclencheur en cas de recyclage)"
+    },
+    "dateFinTraitement": {
+      "type": "string",
+      "description": "Date de fin de traitement du déclencheur (Peut changer pour un même déclencheur en cas de recyclage)"
+    },
+    "type": {
+      "type": "string",
+      "description": "Type de déclencheur (DEMANDE_GESTIONNAIRE || RECEPTION_IMAGE_CONTRAT || RENOUVELLEMENT)"
+    },
+    "statut": {
+      "type": "string",
+      "description": "Statut de fin du déclencheur (Processed || ProcessedWithErrors || ProcessedWithWarnings || Abandonned)"
+    },
+    "operationDate": {
+      "type": "string",
+      "description": "Doit être alimentée par la DATE DE CREATION du Header de l’event (timestamp) => au format date (et non timestamp)"
+    }
+  },
+  "required": [
+    "idDeclencheur",
+    "type",
+    "statut",
+    "operationDate"
+  ],
+  "$id": "Insurance.serviceeligibility.trigger.finished.event/0.0.1"
+}

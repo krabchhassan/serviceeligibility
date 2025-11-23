@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "out.xlsx",
+    "sheets": [
+      {
+        "name": "Feuil1",
+        "number": 0,
+        "columns": [
+          {
+            "position": 0,
+            "name": "Code rejet Claim",
+            "columnFormat": "STRING"
+          },
+          {
+            "position": 1,
+            "name": "test_filter",
+            "columnFormat": "STRING",
+            "color": "YELLOW"
+          }
+        ],
+        "columnsNumber": 2
+      }
+    ],
+    "sheetsNumber": 1
+  },
+  "content": [
+    {
+      "sheetName": "Feuil1",
+      "sheetContent": [
+        {
+          "lineNumber": 1,
+          "Code rejet Claim": "NO_BENEFICIARY_OR_ACTIVE_CONTRACT_FOUND",
+          "test_filter": "false"
+        },
+        {
+          "lineNumber": 2,
+          "Code rejet Claim": "LIMIT_RETAIL_PRICE_EXCEEDED",
+          "test_filter": "true"
+        }
+      ],
+      "sheetLinesNumber": 2
+    }
+  ]
+}

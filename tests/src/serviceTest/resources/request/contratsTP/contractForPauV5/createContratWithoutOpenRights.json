@@ -1,0 +1,373 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "MBA0003",
+  "numeroAdherent": "MBA0003",
+  "numeroAdherentComplet": "MBA0003-Complet",
+  "dateSouscription": "2021/03/02",
+  "nomPorteur": "MASON",
+  "prenomPorteur": "EDWIN",
+  "civilitePorteur": "Monsieur",
+  "qualification": "B",
+  "numeroContratCollectif": "29869",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "destinataire": "AD",
+  "individuelOuCollectif": "",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "0000401166",
+  "groupeAssures": "GROUPE CHATEAUFORM",
+  "editeurCarte": "",
+  "fondCarte": "BALOO-4",
+  "annexe1Carte": "",
+  "annexe2Carte": "",
+  "numAMCEchange": "0000401167",
+  "numOperateur": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "dateCreation": "2023-02-13T16:23:32.531Z",
+  "dateModification": "2023-02-13T16:23:35.926Z",
+  "dateConsolidation": "2023-02-13T16:23:35.926Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateCreation": "2023-02-13T16:23:32.531Z",
+      "dateModification": "2023-02-13T16:23:35.926Z",
+      "dateNaissance": "20041026",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1791062498044",
+      "cleNirBeneficiaire": "48",
+      "nirOd1": "1041062498044",
+      "cleNirOd1": "37",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "MBA0003-002",
+      "refExternePersonne": "MBA0003-002",
+      "rangAdministratif": "A",
+      "modePaiementPrestations": "",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "MASON",
+        "nomPatronymique": "MASON",
+        "nomMarital": "MASON",
+        "prenom": "EDWIN",
+        "periodeDebut": "2022/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "351",
+        "centreOD1": "0000",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "01",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "AssurePrin"
+      },
+      "adresses": [
+        {
+          "ligne1": "MONSIEUR MASON EDWIN",
+          "ligne4": "11 B RUE DU CLOS COLLIN",
+          "ligne6": "35780 LA RICHARDAIS",
+          "codePostal": "35780",
+          "email": "edwin-mason@hotmail.fr",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/03/02",
+              "produits": [
+                {
+                  "codeProduit": "36269_29869",
+                  "libelleProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPAU-NOSEL",
+                      "naturesPrestation": [
+                        {
+                          "prioriteDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "INitialisation",
+                              "modeObtention": "O",
+                              "motifEvenement": "IN"
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 2,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "LABO",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/03/02",
+              "produits": [
+                {
+                  "codeProduit": "36269_29869",
+                  "libelleProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "LABO-NOSEL",
+                      "naturesPrestation": [
+                        {
+                          "prioriteDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "INitialisation",
+                              "modeObtention": "O",
+                              "motifEvenement": "IN"
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 2,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "OPT",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2021/03/02",
+              "produits": [
+                {
+                  "codeProduit": "36269_29869",
+                  "libelleProduit": "",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPT-NOSEL",
+                      "naturesPrestation": [
+                        {
+                          "prioriteDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/07/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/07/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "INitialisation",
+                              "modeObtention": "O",
+                              "motifEvenement": "IN"
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 2,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/07/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/07/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2023/07/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

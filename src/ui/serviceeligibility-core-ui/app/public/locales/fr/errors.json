@@ -1,0 +1,59 @@
+{
+  "loadingComponent": {
+    "title": "Problème Technique",
+    "message": "Veuillez rafraichir votre navigateur (appuyer sur F5). Si le problème persiste, veuillez contacter votre administrateur.",
+    "card": {
+      "title": "Erreur Technique",
+      "message": "Message",
+      "stack": "Stack"
+    }
+  },
+  "title": "Erreur",
+  "fields": {
+    "dontInclude": "Choix déjà présent",
+    "required": "Requis",
+    "date": "Date invalide",
+    "dateFormat": "Format de date invalide",
+    "oneRequired": "Au moins un champs marqué par {{mark}} doit être rempli",
+    "strictLength": "Format invalide : {{length}} caractères requis",
+    "maxLength": "Format invalide : {{max}} caractères au maximum",
+    "inBetweenLength": "Format invalide : entre {{min}} et {{max}} caractères",
+    "maxValue": "Valeur {{max}} au maximum",
+    "minValue": "Valeur {{min}} au minimum",
+    "inBetweenValue": "La valeur doit être comprise entre {{min}} et {{max}}",
+    "number": "Format invalide : Doit être un nombre",
+    "integer": "Format invalide : Doit être un entier",
+    "alpha": "Format invalide : Doit être composé de caractères alphanumériques",
+    "alphaSP": "Format invalide : Doit être composé de caractères alphanumériques ou : - _",
+    "url": "Format invalide : Doit être une adresse web valide",
+    "email": "Format invalide : Doit être un email valide",
+    "uniqueCode": "Le code doit être unique",
+    "uniqueInsurerCode": "Le numéro d'AMC doit être unique",
+    "lowerAlphaNumericUnderscore": "Format invalide : Seuls les caractères a-z, nombres, tiret bas sont acceptés",
+    "beforeEndDate": "Doit être inférieur à la date de fin",
+    "afterStartDate": "Doit être supérieur à la date de début",
+    "afterOrEqualToday": "Doit être supérieure ou égale à la date du jour",
+    "missingCriteria": "Veuillez saisir d'autres critères",
+    "missingAMC": "Veuillez saisir l'AMC pour cette recherche",
+    "missingIssuingCompany": "Veuillez saisir la société émettrice pour cette recherche",
+    "missingNom": "Veuillez saisir le nom",
+    "dropzone": {
+      "error": "{{name}} rejeté - {{error}}",
+      "INVALID_MIME_TYPE": "Type de fichier invalide",
+      "ABOVE_MAX_SIZE": "Le fichier dépasse la taille limite"
+    }
+  },
+  "accessDenied": "Vous n’êtes pas autorisé à accéder à cette page.\n Si vous pensez qu’il s’agit d’une erreur, veuillez contacter votre administrateur.",
+  "importOnError": "Une erreur est survenue lors de l'import.",
+  "importWrongFormat": "Mauvais format de fichier",
+  "dropzone": {
+    "error": "{{name}} rejeté - {{error}}",
+    "INVALID_MIME_TYPE": "Type de fichier invalide",
+    "ABOVE_MAX_SIZE": "Le fichier dépasse la taille limite"
+  },
+  "download": {
+    "alertTitle": "Erreur de téléchargement de fichier",
+    "alertBody": "Impossible de télécharger le fichier via le lien fourni."
+  },
+  "paramLastExec": "Impossible de réactiver un paramétrage manuel déjà exécuté"
+}

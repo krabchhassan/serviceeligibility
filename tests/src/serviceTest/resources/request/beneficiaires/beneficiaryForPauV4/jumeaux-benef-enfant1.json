@@ -1,0 +1,75 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-00053",
+  "contrats": [
+    {
+      "numeroContrat": "A0005",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0005",
+          "nomUsage": "TESTB0005",
+          "prenom": "Lola"
+        },
+        "adresse": {
+        },
+        "contact": {
+        }
+      },
+      "numeroAdherent": "A0005",
+      "societeEmettrice": "GEST01",
+      "numeroAMCEchange": "0000501182"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "A0005",
+  "identite": {
+    "nir": {
+      "code": "2101031111113",
+      "cle": "43"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1720131111112",
+          "cle": "16"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      },
+      {
+        "nir": {
+          "code": "2740131111112",
+          "cle": "62"
+        },
+        "rattachementRO": {
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "20101010",
+    "rangNaissance": "1",
+    "numeroPersonne": "00053",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "20101010",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-07-05T09:24:58.775Z"
+  },
+  "traceId": "64a536ea82224143073afc4b"
+}

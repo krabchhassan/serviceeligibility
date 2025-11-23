@@ -1,0 +1,2194 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "Payment API",
+		"version": "0.0.1"
+	},
+	"servers": [
+		{
+			"url": "/serviceeligibility/core/api",
+			"description": "Generated server url"
+		}
+	],
+	"security": [
+		{
+			"bearer": [
+				"read",
+				"write"
+			]
+		}
+	],
+	"paths": {
+		"/v4/consultationDroits": {
+			"get": {
+				"operationId": "getDroits",
+				"parameters": [
+					{
+						"in": "query",
+						"name": "requete",
+						"required": true,
+						"schema": {
+							"$ref": "#/components/schemas/GetInfoBddRequestDto"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/GetInfoBddResponseDto"
+								}
+							}
+						},
+						"description": "OK"
+					}
+				},
+				"tags": [
+					"consult-droit-controller-rest"
+				]
+			}
+		},
+		"/v4/carteDematerialisee": {
+			"get": {
+				"description": "Recherche de cartes TP dématerialisées",
+				"tags": [
+					"Recherche de cartes dématerialisées"
+				],
+				"operationId": "getCardsV4",
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/CardRequest"
+							}
+						}
+					},
+					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "OK",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "array",
+									"description": "Cartes TP trouvées avec les critères de recherche",
+									"items": {
+										"$ref": "#/components/schemas/CardResponseCard"
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Erreur",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/CardResponseError"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"GetInfoBddRequestDto": {
+				"required": [
+					"amc",
+					"beneficiaire",
+					"infoBdd"
+				],
+				"type": "object",
+				"properties": {
+					"amc": {
+						"$ref": "#/components/schemas/TypeAmc"
+					},
+					"beneficiaire": {
+						"$ref": "#/components/schemas/TypeBeneficiaireDemandeur"
+					},
+					"dates": {
+						"$ref": "#/components/schemas/TypeDates"
+					},
+					"infoBdd": {
+						"$ref": "#/components/schemas/TypeInfoBdd"
+					}
+				}
+			},
+			"GetInfoBddResponseDto": {
+				"type": "object",
+				"properties": {
+					"codeReponse": {
+						"$ref": "#/components/schemas/TypeCodeReponse"
+					},
+					"droits": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeDeclaration"
+						}
+					}
+				}
+			},
+			"ListeSegmentRecherche": {
+				"required": [
+					"segmentRecherche"
+				],
+				"type": "object",
+				"properties": {
+					"segmentRecherche": {
+						"maxItems": 2147483647,
+						"minItems": 1,
+						"type": "array",
+						"xml": {
+							"name": "segment_recherche"
+						},
+						"items": {
+							"type": "string",
+							"xml": {
+								"name": "segment_recherche"
+							}
+						}
+					}
+				}
+			},
+			"TypeAdresse": {
+				"type": "object",
+				"properties": {
+					"libelle": {
+						"type": "string"
+					},
+					"type": {
+						"type": "string"
+					}
+				}
+			},
+			"TypeAmc": {
+				"type": "object",
+				"properties": {
+					"adherent": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"idPatientGs": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_patient_gs"
+						}
+					},
+					"nom": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroAMCPrefectoral": {
+						"maxLength": 10,
+						"minLength": 8,
+						"type": "string",
+						"xml": {
+							"name": "numero_AMC_prefectoral"
+						}
+					},
+					"numeroAMCRNM": {
+						"maxLength": 9,
+						"minLength": 9,
+						"type": "string",
+						"xml": {
+							"name": "numero_AMC_RNM"
+						}
+					},
+					"numeroAMCSIRET": {
+						"maxLength": 14,
+						"minLength": 14,
+						"type": "string",
+						"xml": {
+							"name": "numero_AMC_SIRET"
+						}
+					},
+					"operateurTp": {
+						"maxLength": 14,
+						"minLength": 10,
+						"type": "string",
+						"xml": {
+							"name": "operateur_tp"
+						}
+					}
+				}
+			},
+			"TypeBeneficiaire": {
+				"required": [
+					"dateNaissance",
+					"rangNaissance"
+				],
+				"type": "object",
+				"properties": {
+					"adresses": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeAdresse"
+						}
+					},
+					"cleNirBeneficiaire": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "cle_nir_beneficiaire"
+						}
+					},
+					"cleNirOd1": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "cle_nir_od_1"
+						}
+					},
+					"cleNirOd2": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "cle_nir_od2"
+						}
+					},
+					"dateNaissance": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "date_naissance"
+						}
+					},
+					"historiqueAffiliations": {
+						"type": "array",
+						"xml": {
+							"name": "historique_affiliations"
+						},
+						"items": {
+							"$ref": "#/components/schemas/TypeHistoriqueAffiliation"
+						}
+					},
+					"insc": {
+						"maxLength": 25,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nirBeneficiaire": {
+						"maxLength": 13,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nir_beneficiaire"
+						}
+					},
+					"nirOd1": {
+						"maxLength": 13,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nir_od_1"
+						}
+					},
+					"nirOd2": {
+						"maxLength": 13,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nir_od_2"
+						}
+					},
+					"numeroPersonne": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "numero_personne"
+						}
+					},
+					"rangNaissance": {
+						"maxLength": 1,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "rang_naissance"
+						}
+					}
+				}
+			},
+			"TypeBeneficiaireDemandeur": {
+				"required": [
+					"rangGemellaire"
+				],
+				"type": "object",
+				"properties": {
+					"cleNIR": {
+						"pattern": "[0-9][0-9]",
+						"type": "string",
+						"xml": {
+							"name": "cle_NIR"
+						}
+					},
+					"dateNaissance": {
+						"maxLength": 8,
+						"minLength": 8,
+						"type": "string",
+						"xml": {
+							"name": "date_naissance"
+						}
+					},
+					"insc": {
+						"maxLength": 25,
+						"minLength": 25,
+						"type": "string",
+						"xml": {
+							"name": "INS_C"
+						}
+					},
+					"nircertifie": {
+						"type": "string"
+					},
+					"nomBeneficiaire": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nom_beneficiaire"
+						}
+					},
+					"prenomBeneficiaire": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "prenom_beneficiaire"
+						}
+					},
+					"qualite": {
+						"maxLength": 1,
+						"minLength": 1,
+						"type": "string"
+					},
+					"rangGemellaire": {
+						"type": "integer",
+						"format": "int32",
+						"xml": {
+							"name": "rang_gemellaire"
+						},
+						"default": 1
+					}
+				}
+			},
+			"TypeCodeReponse": {
+				"required": [
+					"code"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"detailErreur": {
+						"type": "array",
+						"xml": {
+							"name": "detail_erreur"
+						},
+						"items": {
+							"type": "string",
+							"xml": {
+								"name": "detail_erreur"
+							}
+						}
+					},
+					"libelle": {
+						"maxLength": 150,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeContrat": {
+				"required": [
+					"dateSouscription",
+					"lienFamilial"
+				],
+				"type": "object",
+				"properties": {
+					"categorieSociale": {
+						"maxLength": 12,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "categorie_sociale"
+						}
+					},
+					"civilitePorteur": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "civilite_porteur"
+						}
+					},
+					"dateResiliation": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_resiliation"
+						}
+					},
+					"dateSouscription": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_souscription"
+						}
+					},
+					"destinataire": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"individuelOuCollectif": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "individuel_ou_collectif"
+						}
+					},
+					"isContratCMU": {
+						"type": "boolean",
+						"xml": {
+							"name": "is_contrat_CMU"
+						}
+					},
+					"isContratResponsable": {
+						"type": "boolean",
+						"xml": {
+							"name": "is_contrat_responsable"
+						}
+					},
+					"lienFamilial": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "lien_familial"
+						}
+					},
+					"motifFinSituation": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "motif_fin_situation"
+						}
+					},
+					"nomPorteur": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nom_porteur"
+						}
+					},
+					"numero": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroAdherent": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "numero_adherent"
+						}
+					},
+					"numeroContratCollectif": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "numero_contrat_collectif"
+						}
+					},
+					"prenomPorteur": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "prenom_porteur"
+						}
+					},
+					"qualification": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"rangAdministratif": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "rang_administratif"
+						}
+					},
+					"situationDebut": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "situation_debut"
+						}
+					},
+					"situationParticuliere": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "situation_particuliere"
+						}
+					},
+					"situationfin": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"type": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeConventionnement": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"libelle": {
+						"type": "string"
+					}
+				}
+			},
+			"TypeDates": {
+				"required": [
+					"dateReference",
+					"typeDateReference"
+				],
+				"type": "object",
+				"properties": {
+					"dateDebut": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_debut"
+						}
+					},
+					"dateFin": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_fin"
+						}
+					},
+					"dateReference": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_reference"
+						}
+					},
+					"typeDateReference": {
+						"type": "integer",
+						"format": "int32",
+						"xml": {
+							"name": "type_date_reference"
+						},
+						"default": 0
+					}
+				}
+			},
+			"TypeDeclarant": {
+				"required": [
+					"nom"
+				],
+				"type": "object",
+				"properties": {
+					"adresses": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeAdresse"
+						}
+					},
+					"declarantNiveau2": {
+						"$ref": "#/components/schemas/TypeDeclarant"
+					},
+					"libelle": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nom": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroPrefectoral": {
+						"maxLength": 20,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "numero_prefectoral"
+						}
+					},
+					"siret": {
+						"maxLength": 14,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeDeclarantAmc": {
+				"required": [
+					"isInscritDansAnnuaireAMC",
+					"nom",
+					"numeroRNM"
+				],
+				"type": "object",
+				"properties": {
+					"adresses": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeAdresse"
+						}
+					},
+					"declarantNiveau2": {
+						"$ref": "#/components/schemas/TypeDeclarant"
+					},
+					"isInscritDansAnnuaireAMC": {
+						"type": "boolean"
+					},
+					"libelle": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nom": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroPrefectoral": {
+						"maxLength": 20,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "numero_prefectoral"
+						}
+					},
+					"numeroRNM": {
+						"maxLength": 10,
+						"minLength": 0,
+						"type": "string"
+					},
+					"siret": {
+						"maxLength": 14,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeDeclarantAmo": {
+				"required": [
+					"nom"
+				],
+				"type": "object",
+				"properties": {
+					"adresses": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeAdresse"
+						}
+					},
+					"caisse": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string"
+					},
+					"centre": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string"
+					},
+					"declarantNiveau2": {
+						"$ref": "#/components/schemas/TypeDeclarant"
+					},
+					"libelle": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nom": {
+						"maxLength": 30,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numeroPrefectoral": {
+						"maxLength": 20,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "numero_prefectoral"
+						}
+					},
+					"regime": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string"
+					},
+					"siret": {
+						"maxLength": 14,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeDeclaration": {
+				"required": [
+					"beneficiaire",
+					"contrat",
+					"effetDebut"
+				],
+				"type": "object",
+				"properties": {
+					"beneficiaire": {
+						"$ref": "#/components/schemas/TypeBeneficiaire"
+					},
+					"codeEtat": {
+						"maxLength": 1,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_etat"
+						}
+					},
+					"contrat": {
+						"$ref": "#/components/schemas/TypeContrat"
+					},
+					"declarantAmc": {
+						"$ref": "#/components/schemas/TypeDeclarantAmc"
+					},
+					"declarantAmo": {
+						"$ref": "#/components/schemas/TypeDeclarantAmo"
+					},
+					"domaineDroits": {
+						"type": "array",
+						"xml": {
+							"name": "domaine_droits"
+						},
+						"items": {
+							"$ref": "#/components/schemas/TypeDomaineDroit"
+						}
+					},
+					"effetDebut": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "effet_debut"
+						}
+					},
+					"idInterne": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_interne"
+						}
+					},
+					"referenceExterne": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "reference_externe"
+						}
+					}
+				}
+			},
+			"TypeDomaineDroit": {
+				"required": [
+					"code",
+					"prioriteDroit"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string"
+					},
+					"codeExterne": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_externe"
+						}
+					},
+					"codeExterneProduit": {
+						"maxLength": 35,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_externe_produit"
+						}
+					},
+					"codeGarantie": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_garantie"
+						}
+					},
+					"codeOptionMutualiste": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_option_mutualiste"
+						}
+					},
+					"codeProduit": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_produit"
+						}
+					},
+					"conventionnements": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeConventionnement"
+						}
+					},
+					"historiquePeriodeDroits": {
+						"type": "array",
+						"xml": {
+							"name": "historique_periode_droits"
+						},
+						"items": {
+							"$ref": "#/components/schemas/TypeHistoriquePeriodeDroit"
+						}
+					},
+					"libelle": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"libelleCodeRenvoi": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "libelle_code_renvoi"
+						}
+					},
+					"libelleExterne": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "libelle_externe"
+						}
+					},
+					"libelleGarantie": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "libelle_garantie"
+						}
+					},
+					"libelleOptionMutualiste": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "libelle_option_mutualiste"
+						}
+					},
+					"libelleProduit": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "libelle_produit"
+						}
+					},
+					"prestations": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypePrestation"
+						}
+					},
+					"prioriteDroit": {
+						"$ref": "#/components/schemas/TypePrioriteDroit"
+					},
+					"referenceCouverture": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "reference_couverture"
+						}
+					},
+					"tauxRemboursement": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "taux_remboursement"
+						}
+					}
+				}
+			},
+			"TypeFormule": {
+				"type": "object",
+				"properties": {
+					"libelle": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numero": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string"
+					},
+					"parametres": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/TypeParametre"
+						}
+					}
+				}
+			},
+			"TypeFormuleMetier": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"libelle": {
+						"maxLength": 250,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypeHeaderFonctionnelIn": {
+				"required": [
+					"codeProprietaire"
+				],
+				"type": "object",
+				"properties": {
+					"codeContexte": {
+						"maxLength": 5,
+						"minLength": 5,
+						"type": "string",
+						"xml": {
+							"name": "code_contexte"
+						}
+					},
+					"codeGestionnaire": {
+						"maxLength": 14,
+						"minLength": 8,
+						"type": "string",
+						"xml": {
+							"name": "code_gestionnaire"
+						}
+					},
+					"codeProprietaire": {
+						"maxLength": 10,
+						"minLength": 8,
+						"type": "string",
+						"xml": {
+							"name": "code_proprietaire"
+						}
+					},
+					"delivranceAccreditation": {
+						"type": "integer",
+						"format": "int32",
+						"xml": {
+							"name": "delivrance_accreditation"
+						}
+					},
+					"delivranceOtp": {
+						"type": "integer",
+						"format": "int32",
+						"xml": {
+							"name": "delivrance_otp"
+						}
+					},
+					"idDossier": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numOTP": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "num_OTP"
+						}
+					},
+					"version": {
+						"maxLength": 1,
+						"minLength": 1,
+						"type": "string"
+					}
+				}
+			},
+			"TypeHeaderFonctionnelOut": {
+				"type": "object",
+				"properties": {
+					"codeContexte": {
+						"maxLength": 5,
+						"minLength": 5,
+						"type": "string",
+						"xml": {
+							"name": "code_contexte"
+						}
+					},
+					"idDossier": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numAccreditation": {
+						"maxLength": 16,
+						"minLength": 16,
+						"type": "string",
+						"xml": {
+							"name": "num_accreditation"
+						}
+					},
+					"numOTP": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "num_OTP"
+						}
+					},
+					"version": {
+						"maxLength": 1,
+						"minLength": 1,
+						"type": "string"
+					}
+				}
+			},
+			"TypeHeaderIn": {
+				"required": [
+					"headerTech"
+				],
+				"type": "object",
+				"properties": {
+					"headerFonc": {
+						"$ref": "#/components/schemas/TypeHeaderFonctionnelIn"
+					},
+					"headerTech": {
+						"$ref": "#/components/schemas/TypeHeaderTechIn"
+					}
+				}
+			},
+			"TypeHeaderOut": {
+				"required": [
+					"headerTech"
+				],
+				"type": "object",
+				"properties": {
+					"headerFonc": {
+						"$ref": "#/components/schemas/TypeHeaderFonctionnelOut"
+					},
+					"headerTech": {
+						"$ref": "#/components/schemas/TypeHeaderTechOut"
+					}
+				}
+			},
+			"TypeHeaderTechIn": {
+				"required": [
+					"idLogicielClient",
+					"versionLogicielClient"
+				],
+				"type": "object",
+				"properties": {
+					"idLogicielClient": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_logiciel_client"
+						}
+					},
+					"idSessionClient": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_session_client"
+						}
+					},
+					"idSessionServeur": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_session_serveur"
+						}
+					},
+					"modeAsynchrone": {
+						"type": "boolean",
+						"xml": {
+							"name": "mode_asynchrone"
+						}
+					},
+					"replytoEndPoint": {
+						"maxLength": 65,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "replyto_endPoint"
+						}
+					},
+					"versionLogicielClient": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "version_logiciel_client"
+						}
+					}
+				}
+			},
+			"TypeHeaderTechOut": {
+				"required": [
+					"date",
+					"idServeur",
+					"idSessionServeur",
+					"versionServeur"
+				],
+				"type": "object",
+				"properties": {
+					"date": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"idServeur": {
+						"maxLength": 14,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_serveur"
+						}
+					},
+					"idSessionClient": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_session_client"
+						}
+					},
+					"idSessionServeur": {
+						"maxLength": 36,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "id_session_serveur"
+						}
+					},
+					"typeTransaction": {
+						"maxLength": 1,
+						"minLength": 1,
+						"type": "string",
+						"xml": {
+							"name": "type_transaction"
+						}
+					},
+					"versionServeur": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "version_serveur"
+						}
+					}
+				}
+			},
+			"TypeHistoriqueAffiliation": {
+				"required": [
+					"caisseOD1",
+					"isBeneficiaireACS",
+					"nomPatronymique",
+					"periodeDebut",
+					"regimeOD1"
+				],
+				"type": "object",
+				"properties": {
+					"caisseOD1": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "caisse_OD1"
+						}
+					},
+					"caisseOD2": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "caisse_OD2"
+						}
+					},
+					"centreOD1": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "centre_OD1"
+						}
+					},
+					"centreOD2": {
+						"maxLength": 4,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "centre_OD2"
+						}
+					},
+					"civilite": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"isBeneficiaireACS": {
+						"type": "boolean",
+						"xml": {
+							"name": "is_beneficiaire_ACS"
+						}
+					},
+					"medecinTraitant": {
+						"maxLength": 15,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "medecin_traitant"
+						}
+					},
+					"nom": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"nomMarital": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nom_marital"
+						}
+					},
+					"nomPatronymique": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "nom_patronymique"
+						}
+					},
+					"periodeDebut": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "periode_debut"
+						}
+					},
+					"periodeFin": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "periode_fin"
+						}
+					},
+					"prenom": {
+						"maxLength": 50,
+						"minLength": 0,
+						"type": "string"
+					},
+					"qualite": {
+						"maxLength": 1,
+						"minLength": 0,
+						"type": "string"
+					},
+					"regimeOD1": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "regime_OD1"
+						}
+					},
+					"regimeOD2": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "regime_OD2"
+						}
+					},
+					"regimeParticulier": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "regime_particulier"
+						}
+					}
+				}
+			},
+			"TypeHistoriquePeriodeDroit": {
+				"required": [
+					"motifEvenement",
+					"periodeDebut"
+				],
+				"type": "object",
+				"properties": {
+					"dateEvenemnt": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_evenemnt"
+						}
+					},
+					"libelleEvenement": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "libelle_evenement"
+						}
+					},
+					"modeObtention": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "mode_obtention"
+						}
+					},
+					"motifEvenement": {
+						"maxLength": 2,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "motif_evenement"
+						}
+					},
+					"periodeDebut": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "periode_debut"
+						}
+					},
+					"periodeFin": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "periode_fin"
+						}
+					}
+				}
+			},
+			"TypeInfoBdd": {
+				"required": [
+					"typeProfondeurRecherche",
+					"typeRechercheBenef",
+					"typeRechercheSegment"
+				],
+				"type": "object",
+				"properties": {
+					"listeSegmentRecherche": {
+						"$ref": "#/components/schemas/ListeSegmentRecherche"
+					},
+					"typeGaranties": {
+						"type": "string",
+						"xml": {
+							"name": "type_garanties"
+						}
+					},
+					"typeProfondeurRecherche": {
+						"type": "string",
+						"xml": {
+							"name": "type_profondeur_recherche"
+						},
+						"enum": [
+							"AVEC_FORMULES",
+							"SANS_FORMULES",
+							"SANS_DOMAINES"
+						]
+					},
+					"typeRechercheBenef": {
+						"type": "string",
+						"xml": {
+							"name": "type_recherche_benef"
+						},
+						"enum": [
+							"BENEFICIAIRE",
+							"CARTE_FAMILLE"
+						]
+					},
+					"typeRechercheSegment": {
+						"type": "string",
+						"xml": {
+							"name": "type_recherche_segment"
+						},
+						"enum": [
+							"PAS_DE_RECHERCHE_SEGMENT",
+							"MONO_SEGMENT",
+							"TOUT_SEGMENT",
+							"LISTE_SEGMENT"
+						]
+					},
+					"typeSegmentRecherche": {
+						"maxLength": 8,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "type_segment_recherche"
+						}
+					}
+				}
+			},
+			"TypeParametre": {
+				"required": [
+					"numero",
+					"valeur"
+				],
+				"type": "object",
+				"properties": {
+					"libelle": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					},
+					"numero": {
+						"maxLength": 3,
+						"minLength": 0,
+						"type": "string"
+					},
+					"valeur": {
+						"maxLength": 7,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypePrestation": {
+				"required": [
+					"code"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"maxLength": 5,
+						"minLength": 0,
+						"type": "string"
+					},
+					"codeRegroupement": {
+						"maxLength": 5,
+						"minLength": 0,
+						"type": "string",
+						"xml": {
+							"name": "code_regroupement"
+						}
+					},
+					"dateEffet": {
+						"type": "string",
+						"format": "date-time",
+						"xml": {
+							"name": "date_effet"
+						}
+					},
+					"formule": {
+						"$ref": "#/components/schemas/TypeFormule"
+					},
+					"formuleMetier": {
+						"$ref": "#/components/schemas/TypeFormuleMetier"
+					},
+					"isEditionRisqueCarte": {
+						"type": "boolean",
+						"xml": {
+							"name": "is_edition_risque_carte"
+						}
+					},
+					"libelle": {
+						"maxLength": 20,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"TypePrioriteDroit": {
+				"required": [
+					"code",
+					"libelle"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"maxLength": 1,
+						"minLength": 0,
+						"type": "string"
+					},
+					"libelle": {
+						"maxLength": 45,
+						"minLength": 0,
+						"type": "string"
+					}
+				}
+			},
+			"CardRequest": {
+				"required": [
+					"numeroAmc",
+					"dateReference",
+					"numeroContrat"
+				],
+				"type": "object",
+				"properties": {
+					"numeroAmc": {
+						"type": "string",
+						"description": "Numéro de l'AMC"
+					},
+					"dateReference": {
+						"type": "string",
+						"format": "AAAA-MM-JJ",
+						"description": "Date de recherche"
+					},
+					"numeroContrat": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					},
+					"numeroAdherent": {
+						"type": "string",
+						"required": false,
+						"description": "Numéro de l'adhérent"
+					}
+				}
+			},
+			"CardResponseError": {
+				"type": "object",
+				"properties": {
+					"errors": {
+						"type": "array",
+						"description": "Erreurs remontées par le traitement",
+						"items": {
+							"$ref": "#/components/schemas/Error"
+						}
+					}
+				}
+			},
+			"Error": {
+				"type": "object",
+				"properties": {
+					"error_code": {
+						"type": "string",
+						"description": "Code de retour, compris entre 0 et 9999"
+					},
+					"data": {
+						"type": "object",
+						"description": "Objet d'erreur générique Beyond (non-utilisé ici)"
+					},
+					"message": {
+						"type": "string",
+						"description": "Description du code retour obtenu"
+					},
+					"level": {
+						"type": "string",
+						"description": "Toujours renseigné à 'ERROR'"
+					}
+				}
+			},
+			"CardResponseCard": {
+				"type": "object",
+				"properties": {
+					"numeroAMC": {
+						"type": "string",
+						"description": "Numéro de l'AMC"
+					},
+					"nomAMC": {
+						"type": "string",
+						"description": "Nom de l'AMC"
+					},
+					"libelleAMC": {
+						"type": "string",
+						"description": "Libellé de l'AMC"
+					},
+					"periodeDebut": {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Période de début de la carte TP"
+					},
+					"periodeFin": {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Période de fin de la carte TP"
+					},
+					"societeEmettrice": {
+						"type": "string",
+						"description": "Société émettrice du contrat"
+					},
+					"codeRenvoi": {
+						"type": "string",
+						"description": "Code du renvoi de niveau carte TP"
+					},
+					"libelleRenvoi": {
+						"type": "string",
+						"description": "Libellé du renvoi de niveau carte TP"
+					},
+					"codeConvention": {
+						"type": "string",
+						"description": "Code de la convention de la carte TP"
+					},
+					"libelleConvention": {
+						"type": "string",
+						"description": "Libellé de la convention de la carte TP"
+					},
+					"fondCarte": {
+						"type": "string",
+						"description": "Fond de la carte TP"
+					},
+					"annexe1Carte": {
+						"type": "string",
+						"description": "Première annexe de la carte TP"
+					},
+					"annexe2Carte": {
+						"type": "string",
+						"description": "Seconde annexe de la carte TP"
+					},
+					"codeItelis": {
+						"type": "string",
+						"description": "Code offre Optique ITELIS de la carte TP"
+					},
+					"numeroAMCEchange": {
+						"type": "string",
+						"description": "Numéro d'AMC échange"
+					},
+					"contrat": {
+						"$ref": "#/components/schemas/CardResponseContrat"
+					},
+					"adresseContrat": {
+						"$ref": "#/components/schemas/Adresse"
+					},
+					"beneficiaires": {
+						"type": "array",
+						"description": "Bénéficiaires de la carte TP",
+						"items": {
+							"$ref": "#/components/schemas/CardResponseBeneficiary"
+						}
+					},
+					"domaines": {
+						"type": "array",
+						"description": "Domaines de droits de la carte TP",
+						"items": {
+							"$ref": "#/components/schemas/CardResponseDomain"
+						}
+					}
+				}
+			},
+			"CardResponseContrat": {
+				"type": "object",
+				"properties": {
+					"numero": {
+						"type": "string",
+						"description": "Numéro du contrat"
+					},
+					"numeroAdherent": {
+						"type": "string",
+						"description": "Numéro de l'adhérent"
+					},
+					"numeroAdherentComplet": {
+						"type": "string",
+						"description": "Numéro complet de l'adhérent"
+					},
+					"nomPorteur": {
+						"type": "string",
+						"description": "Le nom du porteur du contrat"
+					},
+					"prenomPorteur": {
+						"type": "string",
+						"description": "Le prénom du porteur du contrat"
+					},
+					"civilitePorteur": {
+						"type": "string",
+						"description": "La civilité du porteur du contrat"
+					},
+					"numeroContratCollectif": {
+						"type": "string",
+						"description": "Numéro du contrat collectif"
+					},
+					"numeroExterneContratIndividuel": {
+						"type": "string",
+						"description": "Numéro externe du contrat individuel"
+					},
+					"numeroExterneContratCollectif": {
+						"type": "string",
+						"description": "Numéro externe du contrat collectif"
+					},
+					"isContratResponsable": {
+						"type": "boolean",
+						"description": "Flag indiquant si le contrat est un contrat responsable"
+					},
+					"isContratCMU": {
+						"type": "boolean",
+						"description": "Flag indiquant si le contrat est un contrat CMU"
+					},
+					"contratCMUC2S": {
+						"type": "string",
+						"description": "Contrat CMU C2S (0 : Pas de CMU et pas de C2S, 1 : CMU ou C2S sans participation, 2 : C2S avec participation)"
+					},
+					"individuelOuCollectif": {
+						"type": "string",
+						"description": "1 : Contrat individuel, 2 : Adhésion individuelle à un contrat collectif"
+					},
+					"critereSecondaireDetaille": {
+						"type": "string",
+						"description": "Critère secondaire détaillé"
+					},
+					"critereSecondaire": {
+						"type": "string",
+						"description": "Critère secondaire"
+					},
+					"gestionnaire": {
+						"type": "string",
+						"description": "Gestionnaire"
+					},
+					"groupeAssures": {
+						"type": "string",
+						"description": "Le groupe d'assurés"
+					},
+					"numeroCarte": {
+						"type": "string",
+						"description": "Numéro de carte"
+					},
+					"editeurCarte": {
+						"type": "string",
+						"description": "Editeur de carte"
+					},
+					"ordrePriorisation": {
+						"type": "string",
+						"description": "Ordre de priorisation du contrat. Utilisable en cas de multi contrats sinon valorisé à '1'"
+					},
+					"identifiantCollectivite": {
+						"type": "string",
+						"description": "Identifiant de la collectivité dans le cas d'une adhésion individuelle à un contrat collectif"
+					},
+					"raisonSociale": {
+						"type": "string",
+						"description": "Raison sociale de la collectivité"
+					},
+					"siret": {
+						"type": "string",
+						"description": "SIRET de la collectivité"
+					},
+					"groupePopulation": {
+						"type": "string",
+						"description": "Groupe de population du salarié dans le contrat collectif"
+					},
+					"numeroOperateur": {
+						"type": "string",
+						"description": "Numéro de l'opérateur de Tiers payant"
+					},
+					"typeConvention": {
+						"type": "string",
+						"description": "Type de convention"
+					},
+					"dateSouscription": {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Date de souscription au contrat du bénéficiare"
+					},
+					"qualification": {
+						"type": "string",
+						"description": "Qualification du contrat"
+					},
+					"situationParticuliere": {
+						"type": "string",
+						"description": "Situation particulière"
+					}
+				}
+			},
+			"Adresse": {
+				"type": "object",
+				"properties": {
+					"ligne1": {
+						"type": "string",
+						"description": "Identité du destinataire"
+					},
+					"ligne2": {
+						"type": "string",
+						"description": "Identification du point de remise (numéro appartement, numéro boite aux lettres, étage, ..."
+					},
+					"ligne3": {
+						"type": "string",
+						"description": "Complément de localisation (entrée, bâtiment, ...)"
+					},
+					"ligne4": {
+						"type": "string",
+						"description": "Numéro et libellé de la voie"
+					},
+					"ligne5": {
+						"type": "string",
+						"description": "Service de distribution - complément de localisation de la voie (poste restante, boite postale, ...)"
+					},
+					"ligne6": {
+						"type": "string",
+						"description": "Code postal et localité"
+					},
+					"ligne7": {
+						"type": "string",
+						"description": "Pays (pour l'international)"
+					},
+					"codePostal": {
+						"type": "string",
+						"description": "Code postal"
+					},
+					"pays": {
+						"type": "string",
+						"description": "Pays"
+					},
+					"telephone": {
+						"type": "string",
+						"description": "Numéro de téléphone"
+					},
+					"email": {
+						"type": "string",
+						"description": "Email"
+					},
+					"typeAdresse": {
+						"type": "object",
+						"properties": {
+							"libelle": {
+								"type": "string",
+								"description": "Description du type d'adresse"
+							},
+							"type": {
+								"type": "string",
+								"description": "Type d'adresse"
+							}
+						}
+					}
+				}
+			},
+			"CardResponseDomain": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code du domaine"
+					},
+					"libelleDomaine": {
+						"type": "string",
+						"description": "Libellé du domaine"
+					},
+					"rang": {
+						"type": "integer",
+						"description": "Rang du domaine"
+					},
+					"conventions": {
+						"type": "array",
+						"description": "Conventions de tiers-payant du domaine",
+						"items": {
+							"type": "object",
+							"properties": {
+								"codeConvention": {
+									"type": "string",
+									"description": "Code de la de convention"
+								},
+								"libelleConvention": {
+									"type": "string",
+									"description": "Libellé de la convention"
+								},
+								"prioriteConvention": {
+									"type": "integer",
+									"description": "Priorité de la convention"
+								}
+							}
+						}
+					}
+				}
+			},
+			"CardResponseBeneficiary": {
+				"type": "object",
+				"properties": {
+					"nomBeneficiaire": {
+						"type": "string",
+						"description": "Nom"
+					},
+					"nomPatronymique": {
+						"type": "string",
+						"description": "Nom patronymique"
+					},
+					"nomMarital": {
+						"type": "string",
+						"description": "Nom martial"
+					},
+					"prenom": {
+						"type": "string",
+						"description": "Prénom"
+					},
+					"qualite": {
+						"type": "string",
+						"description": "Qualité"
+					},
+					"typeAssure": {
+						"type": "string",
+						"description": "Type d'assuré"
+					},
+					"lienFamilial": {
+						"type": "string",
+						"description": "Lien Familial"
+					},
+					"rangAdministratif": {
+						"type": "string",
+						"description": "Rang administratif"
+					},
+					"nirOd1": {
+						"type": "string",
+						"description": "Premier NIR rattaché"
+					},
+					"cleNirOd1": {
+						"type": "string",
+						"description": "Clé du premier NIR rattaché"
+					},
+					"nirOd2": {
+						"type": "string",
+						"description": "Second NIR rattaché"
+					},
+					"cleNirOd2": {
+						"type": "string",
+						"description": "Clé du second NIR rattaché"
+					},
+					"nirBeneficiaire": {
+						"type": "string",
+						"description": "NIR du bénéficiaire"
+					},
+					"cleNirBeneficiaire": {
+						"type": "string",
+						"description": "Clé du NIR du bénéficiaire"
+					},
+					"dateNaissance": {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Date de naissance"
+					},
+					"rangNaissance": {
+						"type": "string",
+						"description": "Rang de naissance"
+					},
+					"numeroPersonne": {
+						"type": "string",
+						"description": "Numéro de personne"
+					},
+					"refExternePersonne": {
+						"type": "string",
+						"description": "Référence externe de la personne"
+					},
+					"regimeParticulier": {
+						"type": "string",
+						"description": "Régime particulier"
+					},
+					"isBeneficiaireACS": {
+						"type": "boolean",
+						"description": "Flag indiquant si le bénéficiaire bénéficie de l'Aide a la Complémentaire Santé"
+					},
+					"isTeleTransmission": {
+						"type": "boolean",
+						"description": "Flag indiquant si il s'agit d'une télétransmission"
+					},
+					"debutAffiliation": {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Date d'affiliation"
+					},
+					"couvertures": {
+						"type": "array",
+						"description": "",
+						"items": {
+							"$ref": "#/components/schemas/CardResponseCouverture"
+						}
+					},
+					"regimeOD1": {
+						"type": "string",
+						"description": "Régime d'affiliation de l'ouvrant-droit 1"
+					},
+					"caisseOD1": {
+						"type": "string",
+						"description": "Caisse d'affiliation de l'ouvrant-droit 1"
+					},
+					"centreOD1": {
+						"type": "string",
+						"description": "Centre d'affiliation de l'ouvrant-droit 1"
+					},
+					"regimeOD2": {
+						"type": "string",
+						"description": "Régime d'affiliation de l'ouvrant-droit 2"
+					},
+					"caisseOD2": {
+						"type": "string",
+						"description": "Caisse d'affiliation de l'ouvrant-droit 2"
+					},
+					"centreOD2": {
+						"type": "string",
+						"description": "Centre d'affiliation de l'ouvrant-droit 2"
+					},
+					"hasMedecinTraitant": {
+						"type": "boolean",
+						"description": "Indicateur \"1\" si presence d'un medecin traitant, \"0\" sinon"
+					}
+				}
+			},
+			"CardResponseCouverture": {
+				"type": "object",
+				"properties": {
+					"codeDomaine": {
+						"type": "string",
+						"description": "Code du domaine"
+					},
+					"libelleDomaine": {
+						"type": "string",
+						"description": "Libellé du domaine"
+					},
+					"tauxRemboursement": {
+						"type": "string",
+						"description": "Taux de remboursement"
+					},
+					"uniteTauxRemboursement":  {
+						"type": "string",
+						"description": "Unité du taux de remboursement"
+					},
+					"periodeDebut": {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Début de la période de couverture"
+					},
+					"periodeFin":  {
+						"type": "string",
+						"format": "AAAA/MM/JJ",
+						"description": "Fin de la période de couverture"
+					},
+					"codeExterneProduit": {
+						"type": "string",
+						"description": "Code externe du produit"
+					},
+					"codeOptionMutualiste":  {
+						"type": "string",
+						"description": "Code de l'option mutualiste"
+					},
+					"libelleOptionMutualiste": {
+						"type": "string",
+						"description": "Libellé de l'option mutualiste"
+					},
+					"codeProduit":  {
+						"type": "string",
+						"description": "Code du produit d'où est issu le domaine"
+					},
+					"libelleProduit": {
+						"type": "string",
+						"description": "Libellé du produit d'où est issu le domaine"
+					},
+					"codeGarantie":  {
+						"type": "string",
+						"description": "Code de la garantie d'où est issue le domaine"
+					},
+					"libelleGarantie": {
+						"type": "string",
+						"description": "Libellé de la garantie d'où est issue le domaine"
+					},
+					"prioriteDroits":  {
+						"type": "string",
+						"description": "Priorité des droits",
+						"items": {
+							"$ref": "#/components/schemas/PrioriteDroit"
+						}
+					},
+					"codeRenvoi": {
+						"type": "string",
+						"description": "1er Code de renvoi"
+					},
+					"libelleCodeRenvoi": {
+						"type": "string",
+						"description": "Libellé du 1er code de renvoi"
+					},
+					"codeRenvoiAdditionnel": {
+						"type": "string",
+						"description": "2nd Code de renvoi"
+					},
+					"libelleCodeRenvoiAdditionnel": {
+						"type": "string",
+						"description": "Libellé du 2nd code de renvoi"
+					},
+					"categorieDomaine":  {
+						"type": "string",
+						"description": "Catégorie du domaine"
+					}
+				}
+			},
+			"PrioriteDroit": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string",
+						"description": "Code de la priorité"
+					},
+					"libelle": {
+						"type": "string",
+						"description": "Libellé de la priorité"
+					},
+					"typeDroit": {
+						"type": "string",
+						"description": "Type de droit"
+					},
+					"prioriteBO": {
+						"type": "string",
+						"description": "Priorité Back Office"
+					}
+				}
+			}
+		},
+		"securitySchemes": {
+			"bearer": {
+				"type": "http",
+				"scheme": "bearer",
+				"bearerFormat": "JWT"
+			}
+		}
+	}
+}

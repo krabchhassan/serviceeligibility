@@ -1,0 +1,149 @@
+{
+  "beneficiaires" : [
+    {
+      "domaineDroits" : [
+        {
+          "code" : "AUXM",
+          "garanties" : [
+            {
+              "codeGarantie" : "GT_BASE",
+              "libelleGarantie" : "Frais Médicaux",
+              "dateAdhesionCouverture" : "2019/01/01",
+              "produits" : [
+                {
+                  "codeProduit" : "BLUE_001",
+                  "libelleProduit" : "TESTBLUE",
+                  "referencesCouverture" : [
+                    {
+                      "referenceCouverture" : "AUXM-02A-100",
+                      "naturesPrestation" : [
+                        {
+                          "naturePrestation" : "",
+                          "periodesDroit" : [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2023/01/01",
+                              "periodeFin" : "2023/12/31",
+                              "libelleEvenement" : "DEclaration",
+                              "modeObtention" : "O",
+                              "motifEvenement" : "DE"
+                            }
+                          ],
+                          "remboursements" : [
+                            {
+                              "tauxRemboursement" : "100%",
+                              "uniteTauxRemboursement" : "XX",
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit" : [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "prioriteBO" : "01",
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements" : [
+                            {
+                              "priorite" : 0,
+                              "typeConventionnement" : {
+                                "code" : "SP",
+                                "libelle" : "SP"
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations" : [
+                            {
+                              "code" : "DEF",
+                              "isEditionRisqueCarte" : false,
+                              "formule" : {
+                                "numero" : "02A",
+                                "parametres" : [
+                                  {
+                                    "numero" : "3",
+                                    "valeur" : "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes" : [
+                                {
+                                  "debut" : "2023/01/01",
+                                  "fin" : "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance" : "19700103",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "1700131111111",
+      "cleNirBeneficiaire" : "18",
+      "nirOd1" : "1700131111111",
+      "cleNirOd1" : "18",
+      "numeroPersonne" : "0021",
+      "refExternePersonne" : "0021",
+      "rangAdministratif" : "1",
+      "dernierMouvementRecu" : "V",
+      "affiliation" : {
+        "nom" : "TESTB0002",
+        "nomPatronymique" : "TESTB0002",
+        "nomMarital" : "TESTB0002",
+        "prenom" : "Martine",
+        "periodeDebut" : "2023/01/01",
+        "qualite" : "A",
+        "regimeOD1" : "01",
+        "caisseOD1" : "131",
+        "hasMedecinTraitant" : false,
+        "regimeParticulier" : "01",
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : false,
+        "typeAssure" : "AssurePrin"
+      }
+    }
+  ],
+  "idDeclarant" : "0000401166",
+  "numeroContrat" : "A0002",
+  "numeroAdherent" : "A0002",
+  "dateSouscription" : "2019/01/01",
+  "nomPorteur" : "TESTB0002",
+  "prenomPorteur" : "Martine",
+  "civilitePorteur" : "Madame",
+  "qualification" : "B",
+  "numeroContratCollectif" : "CC0002",
+  "isContratResponsable" : true,
+  "isContratCMU" : false,
+  "individuelOuCollectif" : "2",
+  "gestionnaire" : "GEST01",
+  "groupeAssures" : "TEST",
+  "numAMCEchange" : "0000401182",
+  "contratCMUC2S" : "0",
+  "origineDeclaration" : "TDB/TFD",
+  "carteTPaEditerOuDigitale" : "0",
+  "_class" : "com.cegedim.next.serviceeligibility.core.model.domain.contract.ContractTP"
+}

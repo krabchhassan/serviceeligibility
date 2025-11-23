@@ -1,0 +1,54 @@
+{
+  "_id" : "0008400004",
+  "idClientBO" : "service-account-test-es16",
+  "numero" : "0008400004",
+  "nom" : "Test CI Team BLUE",
+  "libelle" : "Test CI Team BLUE",
+  "siret" : "",
+  "numeroPrefectoral" : "0008400004",
+  "codePartenaire" : "TNR",
+  "type" : "amc",
+  "codeCircuit" : "01",
+  "emetteurDroits" : "AMC",
+  "operateurPrincipal" : "IS",
+  "pilotages" : [
+    {
+      "codeService" : "TPG-IS",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-07-01T01:00:00.000Z",
+      "dateSynchronisation" : "2015-01-01T00:00:00.000Z",
+      "couloirClient" : "MAI",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "00000006565656",
+        "versionNorme" : "V02",
+        "codeClient" : "TEST"
+      }
+    },
+    {
+      "codeService" : "PRIORISATION",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-07-01T01:00:00.000Z",
+      "dateSynchronisation" : "2015-01-01T00:00:00.000Z",
+      "couloirClient" : "MAI"
+    },
+    {
+      "codeService" : "DCLBEN",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-07-01T01:00:00.000Z",
+      "dateSynchronisation" : "2015-01-01T00:00:00.000Z",
+      "couloirClient" : "MAI",
+      "caracteristique" : {
+        "numDebutFichier" : 1,
+        "numEmetteur" : "0000000001",
+        "versionNorme" : "002",
+        "codeClient" : "TEST"
+      }
+    },
+    {
+      "codeService" : "VISIODROIT",
+      "serviceOuvert" : true,
+      "dateOuverture" : "2016-07-01T01:00:00.000Z"
+    }
+  ]
+}

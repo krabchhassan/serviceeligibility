@@ -1,0 +1,37 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+bootJar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+dependencies {
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-common-base-pefb-services-java")
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    implementation(project(":lib-next-serviceeligibility-almv3-domain"))
+
+    // -----------------
+    // XML
+    // -----------------
+    implementation("jakarta.xml.bind:jakarta.xml.bind-api")
+    runtimeOnly("org.glassfish.jaxb:jaxb-runtime")
+
+    implementation("org.apache.commons:commons-collections4")
+
+    implementation(project(":lib-next-serviceeligibility-core-services")) {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+
+}

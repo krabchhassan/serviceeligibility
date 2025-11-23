@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:amc="http://norme.cegedimassurances.com/amc" targetNamespace="http://norme.cegedimassurances.com/amc" elementFormDefault="qualified">
+	<xs:complexType name="type_amc">
+		<xs:sequence>
+			<xs:element name="nom" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="45"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="operateur_tp" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Numéro de l'opérateur de Tiers-payant</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="14"/>
+						<xs:minLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="adherent" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>n° d'adhérent du bénéficiaire dans l'organisme complémentaire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="id_patient_gs" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Identification interne du bénéficiaire par l'organisme complémentaire</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="numero_AMC_RNM">
+					<xs:annotation>
+						<xs:documentation>Numero d'enregistrement au Registre National des Mutuelles sur 9 caractères</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="9"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="numero_AMC_SIRET">
+					<xs:annotation>
+						<xs:documentation>Numero d'enregistrement SIRET de la mutuelle sur 14 caractères</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="14"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="numero_AMC_prefectoral">
+					<xs:annotation>
+						<xs:documentation>Numéro de télétransmission de l'AMC (i.e numéro préfectoral, pour les mutuelles). Une de ces 3 références AMC doit être fournie, le numéro préfectoral étant prioritaire.</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="10"/>
+							<xs:minLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

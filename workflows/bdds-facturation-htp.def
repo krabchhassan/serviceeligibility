@@ -1,0 +1,45 @@
+workflowDefinition:
+  - code: is-bdds-billing
+    name: Facturation TP
+    nature: [ "dev", "qa","preprod","prod" ]
+    description: Cet OMU sert à lancer un traitement de calcul des personnes des clients HTP et OTP
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: month
+        description: Le mois au format MM sur lequel on veut réaliser le calcul
+        optional: true
+      - name: year
+        description: L'année au format yyyy sur laquel on veut réaliser le calcul
+        optional: true
+      - name: amcList
+        description: La liste d'amc séparée par des virgules (requis pour un client OTP)
+        optional: true
+
+    steps:
+      - name: step-billing-job
+        job: facturation-htp-job
+        type: java
+        fileExchangePlatform: true
+        produceOutputs: true
+        parameters:
+          arguments:
+            - name: MOIS
+              ref: parameters/month
+            - name: ANNEE
+              ref: parameters/year
+            - name: AMC_LIST
+              ref: parameters/amcList
+
+    crex:
+      - name: dateCalcul
+        description: Date demandée pour le calcul
+        ref: steps/step-billing-job/parameters/outputs/dateCalcul
+      - name: nbFichierCree
+        description: Nombre de fichiers créés
+        ref: steps/step-billing-job/parameters/outputs/nbFichierCree
+      - name: nbFichierKO
+        description: Nombre de fichiers non créés
+        ref: steps/step-billing-job/parameters/outputs/nbFichierKO
+      - name: compteRendu
+        description: Compte-rendu de réussite ou d'échec de création par déclarant traité
+        ref: steps/step-billing-job/parameters/outputs/compteRendu

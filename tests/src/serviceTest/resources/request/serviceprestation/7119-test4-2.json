@@ -1,0 +1,289 @@
+{
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19621120",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1621169149648",
+          "cle": "01"
+        },
+        "refExternePersonne": "82820",
+        "numeroPersonne": 507513,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "691",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            },
+            "nir": {
+              "code": "1621169149648",
+              "cle": "01"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "691",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2021-01-01"
+            },
+            "nir": {
+              "code": "1621169149648",
+              "cle": "01"
+            }
+          },
+          {
+            "rattachementRO": {
+              "codeCaisse": "691",
+              "codeRegime": "01",
+              "codeCentre": ""
+            },
+            "periode": {
+              "debut": "2025-01-01",
+              "fin": "2020-12-31"
+            },
+            "nir": {
+              "code": "1621169149648",
+              "cle": "01"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "7119_02",
+          "nomUsage": "7119_02",
+          "prenom": "PASCAL",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur 7119_02 PASCAL",
+          "ligne2": "",
+          "ligne3": "CALURE",
+          "ligne4": "70 C RUE PIERRE BRUNIER",
+          "ligne5": "",
+          "ligne6": "69300 CALUIRE",
+          "ligne7": "",
+          "codePostal": "69300"
+        },
+        "contact": {
+          "fixe": "06 46 44 26 41",
+          "email": "pascal.7119_02@wanadoo.fr"
+        },
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "507513",
+            "nom": {
+              "nomFamille": "7119_02",
+              "nomUsage": "7119_02",
+              "prenom": "PASCAL",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur 7119_02 PASCAL",
+              "ligne2": "",
+              "ligne3": "CALURE",
+              "ligne4": "70 C RUE PIERRE BRUNIER",
+              "ligne5": "",
+              "ligne6": "69300 CALUIRE",
+              "ligne7": "",
+              "codePostal": "69300"
+            },
+            "rib": {
+              "iban": "FR6630002010840000003967M71",
+              "bic": "CRLYFRPPXXX"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2025-12-12"
+            }
+          },
+          {
+            "idDestinatairePaiements": "507513",
+            "nom": {
+              "nomFamille": "7119_02",
+              "nomUsage": "7119_02",
+              "prenom": "PASCAL",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur 7119_02 PASCAL",
+              "ligne2": "CALURE",
+              "ligne3": "",
+              "ligne4": "70 C RUE PIERRE BRUNIER",
+              "ligne5": "",
+              "ligne6": "69300 CALUIRE ET CUIRE",
+              "ligne7": "",
+              "codePostal": "69300"
+            },
+            "rib": {
+              "iban": "FR6630002010840000003967M71",
+              "bic": "CRLYFRPPXXX"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2025-01-01",
+              "fin": "2020-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "507513",
+            "dematerialisation": {
+              "email": "pascal.7119_02@wanadoo.fr",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "7119_02",
+              "nomUsage": "7119_02",
+              "prenom": "PASCAL",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur 7119_02 PASCAL",
+              "ligne2": "",
+              "ligne3": "CALURE",
+              "ligne4": "70 C RUE PIERRE BRUNIER",
+              "ligne5": "",
+              "ligne6": "69300 CALUIRE",
+              "ligne7": "",
+              "codePostal": "69300"
+            },
+            "periode": {
+              "debut": "2021-01-01",
+              "fin": "2025-12-12"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "507513",
+            "dematerialisation": {
+              "email": "pascal.7119_02@wanadoo.fr",
+              "isDematerialise": true
+            },
+            "nom": {
+              "nomFamille": "7119_02",
+              "nomUsage": "7119_02",
+              "prenom": "PASCAL",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "Monsieur 7119_02 PASCAL",
+              "ligne2": "CALURE",
+              "ligne3": "",
+              "ligne4": "70 C RUE PIERRE BRUNIER",
+              "ligne5": "",
+              "ligne6": "69300 CALUIRE ET CUIRE",
+              "ligne7": "",
+              "codePostal": "69300"
+            },
+            "periode": {
+              "debut": "2025-01-01",
+              "fin": "2020-12-31"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2025-01-01",
+      "dateDebutAdhesionIndividuelle": "2025-01-01",
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2025-01-01"
+            },
+            "isTeletransmission": true
+          }
+        ],
+        "dematerialisation": {
+          "email": "pascal.7119_02@wanadoo.fr",
+          "isDematerialise": true
+        }
+      },
+      "periodes": [
+        {
+          "debut": "2025-01-01",
+          "fin": "2025-12-31"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "A",
+        "libelle": "Assuré principal"
+      },
+      "droits": [
+        {
+          "code": "GT_5497_D1",
+          "libelle": "Garantie frais de santé",
+          "codeAssureur": "baloo",
+          "periode": {
+            "debut": "2025-01-01",
+            "fin": "2025-12-31"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2025-01-01",
+          "carences": []
+        }
+      ],
+      "isSouscripteur": false
+    }
+  ],
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "2025-01-01",
+      "fin": "2025-12-31"
+    },
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "contratCollectif": {
+    "numero": "32893161318899",
+    "numeroExterne": "4771409260000MH4571B50B041",
+    "identifiantCollectivite": "328931613",
+    "raisonSociale": "ONET SECURITE SH DIRECTION DI",
+    "siret": "32893161301197",
+    "groupePopulation": "02"
+  },
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "dateSouscription": "2025-01-01",
+  "gestionnaire": "ER00104",
+  "idDeclarant": "0000401166",
+  "isContratIndividuel": false,
+  "numero": "0082820S2",
+  "numeroAdherent": "0082820S2",
+  "numeroAdherentComplet": "0082820S2",
+  "numeroExterne": "0082820S2",
+  "ordrePriorisation": 1,
+  "periodesContratCMUOuvert": [],
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2025-01-01",
+      "fin": "2025-12-31"
+    }
+  ],
+  "periodesSuspension": [],
+  "qualification": "B",
+  "societeEmettrice": "000ER00955"
+}

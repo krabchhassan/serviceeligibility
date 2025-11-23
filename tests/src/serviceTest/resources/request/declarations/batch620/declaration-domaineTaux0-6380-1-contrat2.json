@@ -1,0 +1,174 @@
+{
+  "referenceExterne" : null,
+  "codeEtat" : "V",
+  "effetDebut" : "2024-09-24T06:49:40.581Z",
+  "idDeclarant" : "0000452433",
+  "isCarteTPaEditer" : false,
+  "carteTPaEditerOuDigitale" : "2",
+  "nomFichierOrigine" : "TDB1234.OK",
+  "dateCreation" : "2024-09-24T06:49:40.581Z",
+  "userCreation" : "job605",
+  "dateModification" : "2024-09-24T06:49:40.581Z",
+  "userModification" : "job605",
+  "versionDeclaration" : "V03",
+  "beneficiaire" : {
+    "dateNaissance" : "20000306",
+    "rangNaissance" : "1",
+    "nirBeneficiaire": "2730781111112",
+    "cleNirBeneficiaire": "21",
+    "nirOd1" : "2730781111112",
+    "cleNirOd1" : "21",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "12345678",
+    "refExternePersonne" : "12345678",
+    "affiliation" : {
+      "nom" : "BLUE",
+      "nomPatronymique" : "BLUE",
+      "nomMarital" : "BLUE",
+      "prenom" : "VIOLET",
+      "civilite" : null,
+      "periodeDebut" : "2017/05/01",
+      "periodeFin" : null,
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "974",
+      "centreOD1" : "0000",
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "ASSURE"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "MADAME BLUE VIOLET",
+        "ligne2" : null,
+        "ligne3" : null,
+        "ligne4" : "CHE DES TUILES",
+        "ligne5" : null,
+        "ligne6" : "111111 TUILES",
+        "ligne7" : null,
+        "codePostal" : "111111",
+        "telephone" : null,
+        "email" : "b.violet@gmail.com",
+        "typeAdresse" : {
+          "libelle" : null,
+          "type" : "AD"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "31234567",
+    "dateSouscription" : "2024/04/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "BLUE",
+    "prenomPorteur" : "VIOLET",
+    "civilitePorteur" : "MME",
+    "numeroAdherent" : "31234567",
+    "numeroAdherentComplet" : "",
+    "qualification" : "B",
+    "numeroContratCollectif" : "100722",
+    "rangAdministratif" : "01",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "2",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "A",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "112345",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "45900442",
+    "groupeAssures" : "EN0001",
+    "numeroCarte" : null,
+    "editeurCarte" : "",
+    "fondCarte" : "MNH3",
+    "annexe1Carte" : "",
+    "annexe2Carte" : "",
+    "numAMCEchange" : "",
+    "numOperateur" : ""
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHAR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "OPTIONA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PRODUITABC",
+      "libelleProduit" : "FEHAP 2023 1 AC",
+      "codeGarantie" : "OPTIONA",
+      "libelleGarantie" : "BASE 1",
+      "codeProfil" : "PHAR50100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2024/04/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHAR-050-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2024/04/01",
+        "periodeFin" : "2024/12/31",
+        "motifEvenement" : "EM",
+        "libelleEvenement" : "Reemission des droits",
+        "modeObtention" : "M"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    }
+  ]
+}

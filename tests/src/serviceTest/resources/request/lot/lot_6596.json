@@ -1,0 +1,22 @@
+{
+  "id": "6596",
+  "code": "LOT_6596",
+  "libelle": "Lot de base 6596",
+  "garantieTechniques": [
+    {
+      "codeAssureur": "AXA",
+      "codeGarantie": "AXASCCGDIV",
+      "dateAjout": "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur": "AXA",
+      "codeGarantie": "AXASCCGDIM",
+      "dateAjout": "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur": "BALOO",
+      "codeGarantie": "GT_BASE",
+      "dateAjout": "2023-10-18T10:33:42.215Z"
+    }
+  ]
+}

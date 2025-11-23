@@ -1,0 +1,34 @@
+{
+  "amc" : "0000401166",
+  "amcNom" : "COGEVIE",
+  "identifiantCollectivite" : "",
+  "groupePopulation" : "",
+  "critereSecondaireDetaille" : "",
+  "statut" : "Actif",
+  "dateDebutValidite" : "2024-12-24",
+  "dateCreation" : "2024-12-24T11:24:38.120Z",
+  "userCreation" : "@cegedim-activ.com",
+  "parametrageRenouvellement" : {
+    "dateRenouvellementCarteTP" : "DebutEcheance",
+    "dureeValiditeDroitsCarteTP" : "Annuel",
+    "delaiDeclenchementCarteTP" : 0,
+    "modeDeclenchement" : "PilotageBO",
+    "annulDroitsOffline" : false
+  },
+  "parametrageDroitsCarteTP" : {
+    "codeConventionTP" : "IS",
+    "codeOperateurTP" : "IS",
+    "isCarteDematerialisee" : true,
+    "refFondCarte" : "FOND_CB",
+    "detailsDroit" : [
+    ],
+    "isCarteEditablePapier" : true
+  },
+  "priorite" : 100,
+  "garantieTechniques" : [
+
+  ],
+  "idLots" : [
+    "e216abb1-86e2-454e-886c-5f8485a373f6"
+  ]
+}

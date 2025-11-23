@@ -1,0 +1,417 @@
+{
+  "beneficiaires": [
+    {
+      "domaineDroits": [
+        {
+          "garanties": [
+            {
+              "produits": [
+                {
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "REFERENCE_01",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/02/28",
+                              "periodeFinFermeture": "2023/12/31",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "referenceCouverture": "REFERENCE_02",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/03/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Initialisation des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "IN"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "099",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeProduit": "PRODUIT_01",
+                  "libelleProduit": "CEGEDIM ACTIFS",
+                  "codeExterneProduit": ""
+                }
+              ],
+              "codeGarantie": "GARANTIE_01",
+              "libelleGarantie": "CEGEDIM CONFORT",
+              "dateAdhesionCouverture": "2014/02/01"
+            }
+          ],
+          "code": "HOSP",
+          "codeProfil": "HOSPPECIS"
+        },
+        {
+          "garanties": [
+            {
+              "produits": [
+                {
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "REFERENCE_01",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/02/28",
+                              "periodeFinFermeture": "2023/12/31",
+                              "libelleEvenement": "Fermeture droits",
+                              "modeObtention": "F",
+                              "motifEvenement": "FE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/02/28"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "referenceCouverture": "REFERENCE_02",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/03/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Initialisation des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "IN"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2023/03/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeProduit": "PRODUIT_01",
+                  "libelleProduit": "CEGEDIM ACTIFS",
+                  "codeExterneProduit": ""
+                }
+              ],
+              "codeGarantie": "GARANTIE_01",
+              "libelleGarantie": "CEGEDIM CONFORT",
+              "dateAdhesionCouverture": "2014/02/01"
+            }
+          ],
+          "code": "PHAR",
+          "codeProfil": "PHARIS"
+        }
+      ],
+      "dateCreation":  "2024-12-12T13:39:31.320",
+      "dateModification": "2024-12-12T13:39:31.622",
+      "dateNaissance": "19791006",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1791062498049",
+      "cleNirBeneficiaire": "43",
+      "nirOd1": "1791062498049",
+      "cleNirOd1": "43",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "52698265",
+      "refExternePersonne": "52698265",
+      "rangAdministratif": "01",
+      "modePaiementPrestations": "V",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "LOISARD",
+        "nomPatronymique": "LOISARD",
+        "nomMarital": "LOISARD",
+        "prenom": "JOSEPH",
+        "periodeDebut": "2012/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "597",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASSURE"
+      },
+      "adresses": []
+    }
+  ],
+  "idDeclarant": "0000401166",
+  "numeroContrat": "93624158",
+  "numeroAdherent": "93624158",
+  "dateSouscription": "2012/01/01",
+  "nomPorteur": "LOISARD",
+  "prenomPorteur": "JOSEPH",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "00219071",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "destinataire": "AD",
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "",
+  "groupeAssures": "0SOUS",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "dateCreation": "2024-12-12T13:39:31.320",
+  "dateModification": "2024-12-12T13:39:31.622",
+  "dateConsolidation":  "2024-12-12T13:39:31.622",
+  "carteTPaEditerOuDigitale": "0"
+}

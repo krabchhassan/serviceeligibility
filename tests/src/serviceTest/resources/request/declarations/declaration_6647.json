@@ -1,0 +1,1363 @@
+{
+  "referenceExterne" : null,
+  "codeEtat" : "V",
+  "effetDebut" : "2024-10-31T16:43:37.973Z",
+  "idDeclarant" : "0000401471",
+  "isCarteTPaEditer" : true,
+  "carteTPaEditerOuDigitale" : "1",
+  "nomFichierOrigine" : "igk_hkuf00_R_TDB_02_20241029_AC132.CE041S01.PRODEM-AC132.PRODEM.17012.20241029-221444.OK",
+  "dateCreation" : "2024-10-31T16:43:37.973Z",
+  "userCreation" : "job605",
+  "dateModification" : "2024-10-31T16:43:37.973Z",
+  "userModification" : "job605",
+  "versionDeclaration" : "V03",
+  "beneficiaire" : {
+    "dateNaissance" : "20080414",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1856201250231",
+    "cleNirBeneficiaire" : "77",
+    "nirOd1" : "2856201250231",
+    "cleNirOd1" : "27",
+    "nirOd2" : "1856201250231",
+    "cleNirOd2" : "77",
+    "insc" : null,
+    "numeroPersonne" : "01491142",
+    "refExternePersonne" : "01491142",
+    "affiliation" : {
+      "nom" : "DUBOSC-NATHAN",
+      "nomPatronymique" : "DUBOSC-NATHAN",
+      "nomMarital" : "DUBOSC-NATHAN",
+      "prenom" : "PHILIPPE",
+      "civilite" : null,
+      "periodeDebut" : "2023/08/31",
+      "periodeFin" : null,
+      "qualite" : "E",
+      "regimeOD1" : "01",
+      "caisseOD1" : "751",
+      "centreOD1" : null,
+      "regimeOD2" : "01",
+      "caisseOD2" : "791",
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "ENFANT"
+    },
+    "adresses" : [
+      {
+        "ligne1" : "Madame DUBOSC JAMINA",
+        "ligne2" : null,
+        "ligne3" : null,
+        "ligne4" : "0056 AVENUE EMILE ZOLA",
+        "ligne5" : null,
+        "ligne6" : "35000 LOIN",
+        "ligne7" : null,
+        "codePostal" : "35000",
+        "telephone" : null,
+        "email" : "JAMINA.DUBOSC@gmail.com",
+        "typeAdresse" : {
+          "libelle" : null,
+          "type" : "AD"
+        }
+      },
+      {
+        "ligne1" : "B.C.A.C",
+        "ligne2" : null,
+        "ligne3" : null,
+        "ligne4" : "TSA 50001",
+        "ligne5" : null,
+        "ligne6" : "78457 VELIZY CEDEX",
+        "ligne7" : null,
+        "codePostal" : "78457",
+        "telephone" : null,
+        "email" : null,
+        "typeAdresse" : {
+          "libelle" : null,
+          "type" : "GE"
+        }
+      }
+    ]
+  },
+  "contrat" : {
+    "numero" : "B2036798",
+    "dateSouscription" : "2008/04/14",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "DUBOSC",
+    "prenomPorteur" : "JAMINA",
+    "civilitePorteur" : "MME",
+    "numeroAdherent" : "B2036798",
+    "numeroAdherentComplet" : "",
+    "qualification" : "B",
+    "numeroContratCollectif" : "B0001164",
+    "rangAdministratif" : "21",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "contratCMUC2S" : "0",
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "2",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "E",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "G23",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "BCAC",
+    "groupeAssures" : "EN0001",
+    "numeroCarte" : null,
+    "editeurCarte" : "",
+    "fondCarte" : "",
+    "annexe1Carte" : "",
+    "annexe2Carte" : "",
+    "numAMCEchange" : "0000401471",
+    "numOperateur" : ""
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHAR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "PHAR50",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHAR-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "PHAR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "PH2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "PHAR-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 2,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "MED",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "ME2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "MED-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 3,
+      "categorie" : "MED",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "MED",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "ME2A",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "MED-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 4,
+      "categorie" : "MED",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "SVIL",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "SV2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "SVIL-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 5,
+      "categorie" : "SVIL",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "SVIL",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "SVIL50",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "SVIL-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 6,
+      "categorie" : "SVIL",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "CSTE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "OPTI5",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "CSTE50",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "CSTE-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 7,
+      "categorie" : "CSTE",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "CSTE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "CSTE2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "CSTE-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 8,
+      "categorie" : "CSTE",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "TRAN",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "TRAN50",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "TRAN-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 9,
+      "categorie" : "TRAN",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "TRAN",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "TRAN2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "TRAN-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 10,
+      "categorie" : "TRAN",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "SP",
+            "libelle" : "SP"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DESO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "OPTI5",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "DESO50",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "DESO-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 11,
+      "categorie" : "DENT",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DESO",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "DESO2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "DESO-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 12,
+      "categorie" : "DENT",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "EXTE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "EXTE2A100",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "EXTE-02A-100",
+      "origineDroits" : "",
+      "noOrdreDroit" : 13,
+      "categorie" : "EXTE",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "EXTE",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "OPTI5",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "EXTE50",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "00000000",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "EXTE-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 14,
+      "categorie" : "EXTE",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "050",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "6",
+                "valeur" : "000.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "OPTI5",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "HOSP99PEC",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "HOSP-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 15,
+      "categorie" : "HOSP",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "RPPSRBA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "RPPSRBA",
+      "libelleGarantie" : "RPP FM BA",
+      "codeProfil" : "HOSP99PEC",
+      "libelleCodeRenvoi" : "",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "HOSP-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 16,
+      "categorie" : "HOSP",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "OPTI",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "OPTI99PEC",
+      "libelleCodeRenvoi" : "IT1",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "OPTI-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 17,
+      "categorie" : "OPTI",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "AUDI",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "AUDI99PEC",
+      "libelleCodeRenvoi" : "IT1",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "AUDI-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 18,
+      "categorie" : "AUDI",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "DEPR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "ENAS1SA",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PSACT00416",
+      "libelleProduit" : "SANTE ACT 00416",
+      "codeGarantie" : "ENAS1SA",
+      "libelleGarantie" : "ENA FM SA",
+      "codeProfil" : "DEPR99PEC",
+      "libelleCodeRenvoi" : "IT1",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2008/04/14",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "DEPR-NOSEL",
+      "origineDroits" : "",
+      "noOrdreDroit" : 19,
+      "categorie" : "DENT",
+      "prioriteDroit" : {
+        "code" : "03",
+        "libelle" : "03",
+        "typeDroit" : "01",
+        "prioriteBO" : "03"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2025/01/01",
+        "periodeFin" : "2025/12/31",
+        "motifEvenement" : "RE",
+        "libelleEvenement" : "Renouvellement des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 1,
+          "typeConventionnement" : {
+            "code" : "IT",
+            "libelle" : "IT"
+          }
+        }
+      ]
+    }
+  ]
+}

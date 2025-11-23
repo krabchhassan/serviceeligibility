@@ -1,0 +1,47 @@
+{
+  "_id": "0032165199",
+  "idClientBO": "Test",
+  "numero": "0032165199",
+  "nom": "TEST BLUE",
+  "libelle": "TEST BLUE",
+  "siret": "",
+  "numeroPrefectoral": "0032165199",
+  "codePartenaire": "TNR",
+  "type": "amc",
+  "codeCircuit": "01",
+  "emetteurDroits": "AMC",
+  "operateurPrincipal": "IS",
+  "pilotages": [
+    {
+      "codeService": "TPG-IS",
+      "serviceOuvert": true,
+      "couloirClient": "MAI",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "00000006565656",
+        "versionNorme": "V02",
+        "codeClient": "TEST"
+      }
+    },
+    {
+      "codeService": "PRIORISATION",
+      "serviceOuvert": true,
+      "couloirClient": "MAI"
+    },
+    {
+      "codeService": "DCLBEN",
+      "serviceOuvert": true,
+      "couloirClient": "MAI",
+      "caracteristique": {
+        "numDebutFichier": 1,
+        "numEmetteur": "0000000001",
+        "versionNorme": "002",
+        "codeClient": "TEST"
+      }
+    },
+    {
+      "codeService": "VISIODROIT",
+      "serviceOuvert": true
+    }
+  ]
+}

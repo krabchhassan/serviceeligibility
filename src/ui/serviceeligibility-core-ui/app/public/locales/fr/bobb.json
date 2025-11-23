@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Gestion des lots de garanties techniques",
+  "tabTitle": "Gestion des lots de garanties techniques",
+  "import": {
+    "title": "Importer un fichier de mapping",
+    "success": "Le fichier de mapping a été correctement importé.",
+    "content": "Vous allez importer une nouvelle version de ce fichier de mapping.",
+    "file": "Fichier",
+    "spinnerMessage" : "Import du fichier {{ fileNameToImport }} en cours, merci de ne pas rafraîchir la page"
+  },
+  "search": {
+    "title": "Recherche",
+    "codeLot": "Code du lot",
+    "codeLotPlaceholder": "Entrer un code",
+    "libelleLot": "Libellé du lot",
+    "libelleLotPlaceholder": "Entrer un libellé",
+    "codeAssureurGT": "Code assureur de la garantie technique",
+    "codeAssureurGTPlaceholder": "Entrer le code l'assureur de la garantie technique",
+    "codeGT": "Code de la garantie technique",
+    "codeGTPlaceholder": "Entrer le code de la garantie technique",
+    "garantiesTechniques": "Garanties techniques",
+    "garantiesTechniquesPlaceholder": "Sélectionner au minimum 2 garanties techniques"
+  },
+  "create": {
+    "createdLot": "Le lot a été créé avec succès",
+    "erreurCreationLotGT": "Erreur lors de la création du lot. Un lot doit obligatoirement contenir 2 GT minimum.",
+    "erreurLotExistant": "Erreur lors de la création du lot. Ce code lot existe déjà.",
+    "erreurCreationLot": "Erreur lors de la création du lot.",
+    "erreurCodeLotVide": "Erreur lors de la création du lot. Ce code lot est vide.",
+    "erreurLibelleVide": "Erreur lors de la création du lot. Ce libellé est vide."
+  },
+  "modify": {
+    "modifiedLot": "Le lot a été modifé avec succès",
+    "erreurModificationLot": "Erreur lors de la modification du lot. Un lot doit obligatoirement contenir 2 GT minimum."
+  },
+  "resultSearch": {
+    "title": "Résultats de la recherche",
+    "code": "Code du lot",
+    "libelle": "Libellé du lot",
+    "garantieTechniques": "Nb de garanties techniques",
+    "modalTitle": "Détail des garanties techniques du lot {{lot}}",
+    "importModalTitle": "Import de lots",
+    "ajoutLot": "Ajout d'un lot",
+    "modificationLot": "Modification du lot",
+    "importExport": "Import / Export",
+    "chipsGTSupprimees": "Inclure les lots contenant la garantie supprimée",
+    "chipsGTSupprimeesTooltip": "Cette option est utilisable seulement si un code assureur et/ou un code de garantie technique est saisi. Dans ce cas, la recherche récupère les lots même si la garantie sur laquelle s'applique le filtre est supprimée du lot.",
+    "filtre": "Inclure les garanties techniques supprimées"
+  },
+  "technicalGuaranteeDetail": {
+    "codeAssureur": "Code assureur",
+    "codeGarantie": "Code garantie technique",
+    "dateAjout": "Date de création",
+    "dateSuppressionLogique": "Date de suppression",
+    "chipsGTSupprimees": "Affichage des garanties techniques supprimées",
+    "filtre": "Inclure les garanties techniques supprimées du lot"
+  }
+}

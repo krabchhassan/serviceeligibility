@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+	
+	
+	<xs:include schemaLocation="../header/type_header_in.xsd" />
+	<xs:include schemaLocation="./carteDematerialiseeType.xsd" />
+	
+	<xs:element name="carteDematerialiseeRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="header_in" type="type_header_in" />
+				<xs:element name="request" type="carteDematerialiseeType" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

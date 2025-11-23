@@ -1,0 +1,6 @@
+src/setupProxy.js
+src/setupTests.js
+nodes_modules
+cypress
+public
+.idea

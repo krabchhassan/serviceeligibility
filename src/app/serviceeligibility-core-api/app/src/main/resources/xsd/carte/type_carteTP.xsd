@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:carte="http://norme.cegedimassurances.com/carte" targetNamespace="http://norme.cegedimassurances.com/carte" elementFormDefault="qualified">
+    <xs:include schemaLocation="type_droitsCarteTP.xsd"></xs:include>
+    <xs:include schemaLocation="type_infoCarteTP.xsd"></xs:include>
+    <xs:complexType name="type_carteTP">
+		<xs:sequence>
+			<xs:element name="date_edition" minOccurs="1" maxOccurs="1" type="xs:date"/>
+	        <xs:element name="info_carte" minOccurs="1" maxOccurs="1" type="carte:type_infoCarteTP"/>
+			<xs:element name="droits_carte" minOccurs="1" maxOccurs="unbounded" type="carte:type_droitsCarteTP"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

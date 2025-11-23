@@ -1,0 +1,216 @@
+{
+  "idDeclarant": "0008400004",
+  "societeEmettrice": "CODMUT",
+  "numero": "AIBYD4444444444",
+  "numeroExterne": "AIBYD4444444444",
+  "numeroAdherent": "IBYD4444",
+  "numeroAdherentComplet": "AIBYD4444444444",
+  "dateSouscription": "2020-01-01",
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "periodesContratCMUOuvert": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "critereSecondaireDetaille": " ",
+  "critereSecondaire": " ",
+  "gestionnaire": "CEGEDIM",
+  "qualification": "B",
+  "ordrePriorisation": 1,
+  "periodesDroitsComptablesOuverts": [
+    {
+      "debut": "2020-01-01"
+    }
+  ],
+  "assures": [
+    {
+      "identite": {
+        "dateNaissance": "19720101",
+        "rangNaissance": 1,
+        "nir": {
+          "code": "1720131589647",
+          "cle": "79"
+        },
+        "numeroPersonne": 20288140,
+        "affiliationsRO": [
+          {
+            "rattachementRO": {
+              "codeCaisse": "111",
+              "codeRegime": "01",
+              "codeCentre": "1111"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            },
+            "nir": {
+              "code": "1720131589647",
+              "cle": "79"
+            }
+          }
+        ]
+      },
+      "data": {
+        "nom": {
+          "nomFamille": "DUREND",
+          "nomUsage": "DUREND",
+          "prenom": "paul",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "M DUREND paul",
+          "ligne2": "",
+          "ligne3": "",
+          "ligne4": "AVENUE DE LA GARONNETTE",
+          "ligne5": "",
+          "ligne6": "31000 TOULOUSE",
+          "ligne7": "",
+          "codePostal": "31000"
+        },
+        "destinatairesPrestations": [
+          {
+            "nom": {
+              "nomFamille": "DUREND",
+              "nomUsage": "DUREND",
+              "prenom": "paul",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M DUREND paul",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "AVENUE DE LA GARONNETTE",
+              "ligne5": "",
+              "ligne6": "31000 TOULOUSE",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "iban": "FR7613106001004578945612336",
+              "bic": "AGRIFRPP831"
+            },
+            "modePaiementPrestations": {
+              "code": "V ",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR  "
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "nom": {
+              "nomFamille": "DUREND",
+              "nomUsage": "DUREND",
+              "prenom": "paul",
+              "civilite": "M"
+            },
+            "adresse": {
+              "ligne1": "M DUREND paul",
+              "ligne2": "",
+              "ligne3": "",
+              "ligne4": "AVENUE DE LA GARONNETTE",
+              "ligne5": "",
+              "ligne6": "31000 TOULOUSE",
+              "ligne7": "",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2020-01-01"
+            }
+          }
+        ]
+      },
+      "rangAdministratif": 1,
+      "dateAdhesionMutuelle": "2020-01-01",
+      "dateDebutAdhesionIndividuelle": "2020-01-01",
+      "numeroAdhesionIndividuelle": "AIBYD4444444444",
+      "digitRelation": {
+        "isTeletransmission": true
+      },
+      "periodes": [
+        {
+          "debut": "2020-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "ASSPRI",
+        "libelle": "Assure principal"
+      },
+      "droits": [
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1TRIM",
+            "periode": {
+              "fin": "2020-03-31"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1SEME",
+            "periode": {
+              "fin": "2020-06-30"
+            }
+          }
+        },
+        {
+          "code": "OR",
+          "libelle": "Garantie OR",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 1,
+          "type": "B",
+          "dateAncienneteGarantie": "2020-01-01",
+          "carence": {
+            "code": "1MOIS",
+            "periode": {
+              "fin": "2020-01-31"
+            }
+          }
+        },
+        {
+          "code": "PLOMB",
+          "libelle": "Garantie PLOMB",
+          "codeAssureur": "CEGEDIM",
+          "periode": {
+            "debut": "2020-01-01"
+          },
+          "ordrePriorisation": 10,
+          "type": "O",
+          "dateAncienneteGarantie": "2020-01-01"
+        }
+      ],
+      "isSouscripteur": true
+    }
+  ],
+  "isContratIndividuel": true
+}

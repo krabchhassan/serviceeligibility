@@ -1,0 +1,97 @@
+{
+  "offerCode": "CarenceNiv2",
+  "offerVersions": [
+    {
+    "offerVersionCode": 1,
+    "effectDate": "2021-12-01T09:42:12.494Z",
+    "validityDate": "2021-12-01",
+    "engineVersion": "20.0",
+      "detailsByDomain": {
+      "LABO": {
+        "formulaCode": "fGl_STS02A_TRmoinsMRO",
+        "formulaLabel": "STS02A : % TR - MRO (globale)",
+        "formulaMask": "70% TR - MRO (globale)",
+        "stsFormulaCode": "02A",
+        "natureCode": "Laboratoire",
+        "variables": [
+          {
+            "variableCode": "$txBR",
+            "stsVariableNumber": 3,
+            "value": "70"
+          }
+        ]
+      },
+      "HOSP": {
+        "formulaCode": "fGl_STS02A_TRmoinsMRO",
+        "formulaLabel": "STS02A : % TR - MRO (globale)",
+        "formulaMask": "70% TR - MRO (globale)",
+        "stsFormulaCode": "02A",
+        "natureCode": "Hospitalisation",
+        "variables": [
+          {
+            "variableCode": "$txBR",
+            "stsVariableNumber": 3,
+            "value": "70"
+          }
+        ]
+      },
+      "DENT": {
+        "formulaCode": "fGl_STS02A_TRmoinsMRO",
+        "formulaLabel": "STS02A : % TR - MRO (globale)",
+        "formulaMask": "70% TR - MRO (globale)",
+        "stsFormulaCode": "02A",
+        "natureCode": "Dentaire",
+        "variables": [
+          {
+            "variableCode": "$txBR",
+            "stsVariableNumber": 3,
+            "value": "70"
+          }
+        ]
+      },
+      "CSTE": {
+        "formulaCode": "fGl_STS02A_TRmoinsMRO",
+        "formulaLabel": "STS02A : % TR - MRO (globale)",
+        "formulaMask": "70% TR - MRO (globale)",
+        "stsFormulaCode": "02A",
+        "natureCode": "CSTE",
+        "variables": [
+          {
+            "variableCode": "$txBR",
+            "stsVariableNumber": 3,
+            "value": "70"
+          }
+        ]
+      },
+      "CSTD": {
+        "formulaCode": "fGl_STS02A_TRmoinsMRO",
+        "formulaLabel": "STS02A : % TR - MRO (globale)",
+        "formulaMask": "70% TR - MRO (globale)",
+        "stsFormulaCode": "02A",
+        "natureCode": "CSTD",
+        "variables": [
+          {
+            "variableCode": "$txBR",
+            "stsVariableNumber": 3,
+            "value": "70"
+          }
+        ]
+      },
+      "MEDG": {
+        "formulaCode": "fGl_STS02A_TRmoinsMRO",
+        "formulaLabel": "STS02A : % TR - MRO (globale)",
+        "formulaMask": "70% TR - MRO (globale)",
+        "stsFormulaCode": "02A",
+        "natureCode": "MedecineGenerale",
+        "variables": [
+          {
+            "variableCode": "$txBR",
+            "stsVariableNumber": 3,
+            "value": "70"
+          }
+        ]
+      }
+    }
+      }
+  ]
+}

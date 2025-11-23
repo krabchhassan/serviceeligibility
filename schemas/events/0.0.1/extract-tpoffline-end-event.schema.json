@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Fin extraction droits TP offline",
+  "description": "Fin de l'OMU d'extraction des droits TP offline",
+  "additionalProperties": false,
+  "properties": {
+    "nbInputLines": {
+      "type": "integer",
+      "title": "Nombre de lignes d'entrée",
+      "description": "Nombre de lignes dans le fichier d'entrée."
+    },
+    "nbLineOK": {
+      "type": "integer",
+      "title": "Nombres de lignes en succès",
+      "description": "Nombre de lignes dans le fichier d'entrée pour lesquelles au moins 1 droit a été trouvé."
+    },
+    "nbLineKO": {
+      "type": "integer",
+      "title": "Nombre de lignes en échec",
+      "description": "Nombre de lignes dans le fichier d'entrée pour lesquelles aucun droit n'a été trouvé."
+    },
+    "generalError": {
+      "type": "string",
+      "title": "Erreur générale",
+      "description": "Erreur générale de l'exécution."
+    }
+  },
+  "$id": "Insurance.serviceeligibility.extract.tpoffline.end.event/0.0.1"
+}

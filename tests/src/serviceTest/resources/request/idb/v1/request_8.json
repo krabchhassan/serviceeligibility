@@ -1,0 +1,34 @@
+{
+  "beneficiaire": {
+    "cleNIR": "62",
+    "dateNaissance": "20000920",
+    "rangGemellaire": 1,
+    "insc": null,
+    "nomBeneficiaire": null,
+    "prenomBeneficiaire": null,
+    "qualite": null,
+    "nircertifie": "2000931314007"
+  },
+  "amc": {
+    "nom": "IG EPH",
+    "operateurTp": null,
+    "adherent": "TEST01",
+    "idPatientGs": null,
+    "numeroAMCRNM": null,
+    "numeroAMCSIRET": null,
+    "numeroAMCPrefectoral": "0000401166"
+  },
+  "infoBdd": {
+    "typeRechercheBenef": "CARTE_FAMILLE",
+    "typeRechercheSegment": "TOUT_SEGMENT",
+    "typeSegmentRecherche": null,
+    "listeSegmentRecherche": null,
+    "typeProfondeurRecherche": "SANS_FORMULES"
+  },
+  "dates": {
+    "dateReference": "2022-04-05",
+    "typeDateReference": 1,
+    "dateDebut": "2022-04-05",
+    "dateFin": "2022-07-20"
+  }
+}

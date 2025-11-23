@@ -1,0 +1,37 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-cache")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("com.google.code.gson:gson")
+    implementation('com.opencsv:opencsv:5.9')
+    implementation('org.json:json')
+    compileOnly('org.mongodb:mongodb-driver-sync')
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation(project(":lib-next-serviceeligibility-core-services"))
+    implementation("com.cegedim.beyond.framework:lib-common-base-pefb-services-java")
+    implementation("com.cegedim.beyond.framework:lib-common-base-validation-services-java")
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-messaging-kafka-security-http")
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+    implementation("com.cegedim.beyond.framework:lib-common-organisation-settings-java:16.0.3") {
+        exclude(group: "org.springframework.cloud", module: "spring-cloud-sleuth-api")
+    }
+    // -----------------
+    // Test dependencies
+    // -----------------
+    testImplementation('com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client')
+    testImplementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+    testImplementation('org.springframework.boot:spring-boot-test')
+    testImplementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
+
+    implementation(project(":schemas"))
+}

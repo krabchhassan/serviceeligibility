@@ -1,0 +1,168 @@
+{
+  "_id" : "5dee6a9de0e1175bc23f6a5b",
+  "referenceExterne" : null,
+  "codeEtat" : "V",
+  "effetDebut" : "2018-12-09T15:38:46.788Z",
+  "idDeclarant" : "0097812432",
+  "isCarteTPaEditer" : false,
+  "nomFichierOrigine" : "TDBPourTestTFD.OK",
+  "dateCreation" : "2018-12-09T15:38:46.788Z",
+  "userCreation" : "job605",
+  "dateModification" : "2018-12-09T15:38:46.788Z",
+  "userModification" : "job605",
+  "versionDeclaration" : "V02",
+  "beneficiaire" : {
+    "dateNaissance" : "19760215",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "2760293066431",
+    "cleNirBeneficiaire" : "16",
+    "nirOd1" : "2760293066431",
+    "cleNirOd1" : "16",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "01622422",
+    "refExternePersonne" : "01622422",
+    "affiliation" : {
+      "nom" : "LEBU",
+      "nomPatronymique" : "LEBU",
+      "nomMarital" : "LEBU",
+      "prenom" : "ADELE",
+      "civilite" : null,
+      "periodeDebut" : "2019/01/01",
+      "periodeFin" : null,
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "331",
+      "centreOD1" : null,
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : false,
+      "typeAssure" : "ASSURE"
+    },
+    "adresses" : [{
+      "ligne1" : "Monsieur LEBU ADELE",
+      "ligne2" : null,
+      "ligne3" : "RES DU BOIS ST ALON",
+      "ligne4" : "23 RUE OLYMPE DE GOUGES",
+      "ligne5" : null,
+      "ligne6" : "33290 BLANQUEFORT",
+      "ligne7" : null,
+      "codePostal" : "33290",
+      "telephone" : "0688449485",
+      "email" : "singuila.khm@gmail.com",
+      "typeAdresse" : {
+        "libelle" : null,
+        "type" : "AD"
+      }
+    }
+    ]
+  },
+  "contrat" : {
+    "numero" : "K2572185",
+    "dateSouscription" : "2019/01/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "LEBU",
+    "prenomPorteur" : "ADELE",
+    "civilitePorteur" : "M",
+    "numeroAdherent" : "46416434",
+    "numeroAdherentComplet" : null,
+    "qualification" : "B",
+    "numeroContratCollectif" : "K2552008",
+    "rangAdministratif" : "21",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "2",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "A",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "CAR",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "CARCEPTP",
+    "groupeAssures" : "0SOUS",
+    "numeroCarte" : "000Z000Z3125045",
+    "editeurCarte" : "",
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : null,
+    "numOperateur" : null
+  },
+  "domaineDroits" : [{
+    "code" : "EXTE",
+    "codeExterne" : null,
+    "libelle" : null,
+    "codeExterneProduit" : "",
+    "libelleExterne" : null,
+    "codeOptionMutualiste" : "GTBASE",
+    "libelleOptionMutualiste" : "",
+    "codeProduit" : "CARSTRA10T",
+    "libelleProduit" : "TRAN BA10 T",
+    "codeGarantie" : "GTBASE",
+    "libelleGarantie" : "GTBASE",
+    "codeProfil" : "PHAR2A100",
+    "libelleCodeRenvoi" : "IS",
+    "tauxRemboursement" : "000z0100",
+    "isEditable" : true,
+    "isSuspension" : false,
+    "dateAdhesionCouverture" : "2019/01/01",
+    "uniteTauxRemboursement" : "TA",
+    "referenceCouverture" : "PHAR-02A-100",
+    "origineDroits" : "",
+    "noOrdreDroit" : 1,
+    "categorie" : "EXTE",
+    "prioriteDroit" : {
+      "code" : "01",
+      "libelle" : "01",
+      "typeDroit" : "01",
+      "prioriteBO" : "01"
+    },
+    "prestations" : [{
+      "code" : "DEF1",
+      "codeRegroupement" : null,
+      "libelle" : null,
+      "isEditionRisqueCarte" : false,
+      "dateEffet" : null,
+      "formule" : {
+        "numero" : "02A",
+        "libelle" : null,
+        "parametres" : [{
+          "numero" : "3",
+          "valeur" : "100.00"
+        }
+        ]
+      },
+      "formuleMetier" : null
+    }
+    ],
+    "periodeDroit" : {
+      "periodeDebut" : "2018/01/01",
+      "periodeFin" : "2018/12/31",
+      "motifEvenement" : "DE",
+      "libelleEvenement" : "Declaration des droits",
+      "modeObtention" : "O"
+    },
+    "conventionnements" : [{
+      "priorite" : 1,
+      "typeConventionnement" : {
+        "code" : "IS",
+        "libelle" : "IS"
+      }
+    }
+    ]
+  }
+  ]
+}

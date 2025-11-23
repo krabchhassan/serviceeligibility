@@ -1,0 +1,19 @@
+{
+  "codeAMC" : "",
+  "codeInsurer" : "baloo",
+  "codeContractElement" : "GT_BL_002",
+  "label" : "GT_BL_002",
+  "productElements" : [
+    {
+      "codeOffer" : "DIFF_TP_2",
+      "codeProduct" : "CAM_BL_002",
+      "codeBenefitNature" : "",
+      "codeAmc" : "BALOO",
+      "from" : "2018-01-01T00:00:00.000Z",
+      "effectiveDate" : "2018-01-01T00:00:00.000Z"
+    }
+  ],
+  "ignored" : false,
+  "status": "ACTIVE",
+  "origine" : "IMPORT"
+}

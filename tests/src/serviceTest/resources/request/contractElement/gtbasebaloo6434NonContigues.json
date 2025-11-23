@@ -1,0 +1,27 @@
+{
+  "codeInsurer": "BALOO",
+  "codeAMC": "",
+  "codeContractElement": "GT_BASE",
+  "deadline": "2020-01-01",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "CAS1",
+      "codeProduct": "PDT_BASE1",
+      "codeAmc": "BALOO",
+      "codeBenefitNature": "",
+      "from": "%%CURRENT_YEAR%%-01-01T00:00:00.000Z",
+      "to": "%%CURRENT_YEAR%%-07-02T00:00:00.000Z",
+      "effectiveDate": "2018-01-01T00:00:00.000Z"
+    },
+    {
+      "codeOffer": "CAS2",
+      "codeProduct": "PDT_BASE2",
+      "codeAmc": "BALOO",
+      "codeBenefitNature": "",
+      "from": "%%CURRENT_YEAR%%-08-03T00:00:00.000Z",
+      "effectiveDate": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}

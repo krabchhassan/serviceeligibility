@@ -1,0 +1,27 @@
+{
+  "_id" : "652fd51345f0f8569003b6f6",
+  "code" : "LOT_ASSU00060",
+  "libelle" : "Lot de base ASSU00060",
+  "garantieTechniques" : [
+    {
+      "codeAssureur" : "ASSU00060",
+      "codeGarantie" : "FSOC21731A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur" : "ASSU00060",
+      "codeGarantie" : "FSBC48516A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur" : "ASSU00060",
+      "codeGarantie" : "FSOE38439A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    },
+    {
+      "codeAssureur" : "ASSU00060",
+      "codeGarantie" : "FSOA68299A",
+      "dateAjout" : "2023-10-18T10:33:42.215Z"
+    }
+  ]
+}

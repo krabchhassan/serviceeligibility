@@ -1,0 +1,165 @@
+{
+  "codeEtat": "V",
+  "effetDebut": "2024-07-18T12:11:56.512Z",
+  "idDeclarant": "0000401166",
+  "isCarteTPaEditer": true,
+  "carteTPaEditerOuDigitale": "3",
+  "idTrigger": "6699068c91de364ca0b93d28",
+  "versionDeclaration": "3.1",
+  "dateCreation": "2024-07-18T12:11:56.512Z",
+  "userCreation": "WORKER",
+  "dateModification": "2024-07-18T12:11:56.512Z",
+  "userModification": "WORKER",
+  "beneficiaire": {
+    "dateNaissance": "19791006",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1549726010101",
+    "cleNirBeneficiaire": "81",
+    "nirOd1": "1549726010101",
+    "cleNirOd1": "81",
+    "numeroPersonne": "54972601010101",
+    "refExternePersonne": "16633210",
+    "dateAdhesionMutuelle": "2001/01/01",
+    "dateDebutAdhesionIndividuelle": "2001/01/01",
+    "numeroAdhesionIndividuelle": "166314001",
+    "affiliation": {
+      "nom": "BLUE",
+      "nomPatronymique": "BLUE",
+      "nomMarital": "BLUE",
+      "prenom": "VIOLET",
+      "civilite": "M",
+      "periodeDebut": "2001/01/01",
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "111",
+      "centreOD1": "1018",
+      "hasMedecinTraitant": false,
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "ASSURE"
+    },
+    "adresses": [
+      {
+        "ligne1": "M BLUE VIOLET",
+        "ligne4": "7, boulevard Bryas",
+        "ligne6": "97610 DZAOUDZI",
+        "ligne7": "France",
+        "codePostal": "97610",
+        "telephone": "06.63.48.78.21",
+        "email": "vincentGREEN@yahaa.coum",
+        "typeAdresse": {
+          "type": "AD"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "549726010101",
+    "dateSouscription": "2024/01/01",
+    "type": "B",
+    "nomPorteur": "BLUE",
+    "prenomPorteur": "VIOLET",
+    "civilitePorteur": "M",
+    "numeroAdherent": "549726010101",
+    "numeroAdherentComplet": "GRE0314_00",
+    "qualification": "B",
+    "numeroContratCollectif": "GR00",
+    "rangAdministratif": "1",
+    "isContratResponsable": false,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "2",
+    "lienFamilial": "A",
+    "typeConvention": "IS",
+    "critereSecondaireDetaille": "CADSUP",
+    "critereSecondaire": "CAD",
+    "numeroExterneContratIndividuel": "549726010101",
+    "numeroExterneContratCollectif": "GR00",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "000ER00955",
+    "fondCarte": "FND_CTP_01.pdf",
+    "annexe1Carte": "anx_bal.pdf",
+    "annexe2Carte": "anx_ctp02.jpeg",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1",
+    "identifiantCollectivite": "N/A",
+    "raisonSociale": "N/A",
+    "groupePopulation": "N/A",
+    "codeRenvoi": "1",
+    "libelleCodeRenvoi": "Les taux s’appliquent sur la base de remboursement de la sécurité sociale et sous réserve du parcours de soins taux RO inclus",
+    "periodeSuspensions": [
+      {
+        "debut": "2024-01-02",
+        "fin": "2024-03-31"
+      }
+    ]
+  },
+  "domaineDroits": [
+    {
+      "code": "PHCO",
+      "codeProduit": "AXASC_CGDIM",
+      "modeAssemblage": "INCLUSION",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "BLUE",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2001/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "PHCO-020",
+      "noOrdreDroit": 1,
+      "categorie": "PHCO",
+      "formulaMask": "100% TR",
+      "naturePrestation": "PHARMACIE",
+      "naturePrestationOnline": "PHARMACIE",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2023_janv_01.1",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "020",
+            "parametres": [
+              {
+                "numero": "6",
+                "valeur": "090.00"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2024/01/01",
+        "periodeFin": "2024/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2024/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS",
+            "libelle": "iSante"
+          }
+        }
+      ],
+      "periodeProductElement": {
+        "debut": "2018-01-01"
+      }
+    }
+  ],
+  "etatSuspension": "1"
+}

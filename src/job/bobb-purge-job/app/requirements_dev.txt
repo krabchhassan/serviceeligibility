@@ -1,0 +1,3 @@
+pytest-mock==3.6
+jsondiff==1.3.0
+beyondtestdependencies==16.0.3

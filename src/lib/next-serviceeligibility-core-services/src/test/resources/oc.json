@@ -1,0 +1,73 @@
+{
+  "oc": [
+    {
+      "code": "BALOO",
+      "label": "BALOO",
+      "siret": "34048368400056",
+      "siren": "340 483 684",
+      "naf": null,
+      "numeroAMC": "0097810998",
+      "numeroTVA": "0077955850",
+      "address": {
+        "numero": null,
+        "street": null,
+        "townCode": null,
+        "town": null
+      },
+      "riskBearer": {
+        "id": "48303967-95ed-4747-9da1-af2ec49dfada",
+        "startDate": "2021-01-04T23:00:00.000Z",
+        "endDate": null,
+        "history": {
+          "lastModifiedDate": "2022-03-30T11:28:57.829Z",
+          "createdDate": "2022-03-30T11:28:41.826Z",
+          "creationAuthor": "testeur@cegedim-activ.com",
+          "lastModificationAuthor": "testeur@cegedim-activ.com"
+        }
+      },
+      "underwriting": {
+        "id": "81cb6a20-4862-4b65-83ea-ef3a9d91009f",
+        "startDate": "2021-04-30T22:00:00.000Z",
+        "endDate": null,
+        "history": {
+          "lastModifiedDate": "2022-03-30T11:28:57.829Z",
+          "createdDate": "2022-03-30T11:28:41.826Z",
+          "creationAuthor": "testeur@cegedim-activ.com",
+          "lastModificationAuthor": "testeur@cegedim-activ.com"
+        }
+      },
+      "delegate": false,
+      "delegator": true,
+      "paymentData": [],
+      "contacts": [
+        {
+          "type": {
+            "label": "Bénéficiaire",
+            "code": "BENEF"
+          },
+          "name": "Nom Benf",
+          "mail": "email@benef.fr",
+          "phoneNumber": "081094049804"
+        },
+        {
+          "type": {
+            "label": "Etablissement",
+            "code": "ETAB"
+          },
+          "name": "Contact Etb",
+          "mail": "etab@etabtest.fr",
+          "phoneNumber": null
+        }
+      ],
+      "portfolios": [
+        "9ebf494a-a79e-489a-bf93-c7d7dcc7c609"
+      ],
+      "history": {
+        "lastModifiedDate": null,
+        "createdDate": "2022-03-30T11:28:41.826Z",
+        "creationAuthor": "testeur@cegedim-activ.com",
+        "lastModificationAuthor": null
+      }
+    }
+  ]
+}

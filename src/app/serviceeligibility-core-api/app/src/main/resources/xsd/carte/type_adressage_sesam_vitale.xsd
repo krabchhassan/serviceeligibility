@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:carte="http://norme.cegedimassurances.com/carte" targetNamespace="http://norme.cegedimassurances.com/carte" elementFormDefault="qualified">
+	<xs:complexType name="type_adressage_sesam_vitale">
+        <xs:annotation>
+        	<xs:documentation>Adressage sesam vitale :
+1.      Code STS sur 1 caractere alphanumerique
+2.      Indicateur de traitement sur 2 caracteres numeriques
+3.      Code routage sur 2 caracteres alphanumeriques
+4.      Hote sur 3 caracteres alphanumeriques maximum
+5.      Nom de domaine sur 20 caracteres alphanumeriques maximum
+Chaque donnee etant separee par le caractere  / .
+Exemple : M/33/OC/1/seine.fr
+</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+			<xs:element name="code_STS" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"></xs:length>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="indicateur_traitement" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"></xs:length>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_routage" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"></xs:length>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_hote" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+						<xs:maxLength value="3"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nom_domaine" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"></xs:minLength>
+						<xs:maxLength value="20"></xs:maxLength>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+        </xs:sequence>
+	</xs:complexType>
+</xs:schema>

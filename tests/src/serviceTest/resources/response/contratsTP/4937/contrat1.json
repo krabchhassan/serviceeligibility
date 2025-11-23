@@ -1,0 +1,618 @@
+{
+  "beneficiaires":
+  [
+    {
+      "domaineDroits":
+      [
+        {
+          "code": "OPAU",
+          "garanties":
+          [
+            {
+              "codeGarantie": "AXASCCGDIM",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "OPAU-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "OPTIQUEAUDIO",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin": "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties":
+          [
+            {
+              "codeGarantie": "AXASCCGDIM",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "HOSP-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/01/01",
+                              "periodeFin": "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateCreation": null,
+      "dateModification":  null,
+      "dateNaissance": "19730711",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2730781111166",
+      "cleNirBeneficiaire": "64",
+      "nirOd1": "2730781111166",
+      "cleNirOd1": "64",
+      "numeroPersonne": "MBA14762",
+      "rangAdministratif": "1",
+      "dateAdhesionMutuelle": "2012/01/03",
+      "dateDebutAdhesionIndividuelle": "2018/01/01",
+      "dernierMouvementRecu": "V",
+      "affiliation":
+      {
+        "nom": "BAAT",
+        "nomPatronymique": "NOMTEST",
+        "nomMarital": "NOMTEST",
+        "prenom": "PRENOMTEST",
+        "civilite": "MME",
+        "periodeDebut": "2012/01/03",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "781",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "affiliationsRO":
+      [
+        {
+          "nir":
+          {
+            "code": "2730781111166",
+            "cle": "64"
+          },
+          "rattachementRO":
+          {
+            "codeRegime": "01",
+            "codeCaisse": "781"
+          },
+          "periode":
+          {
+            "debut": "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions":
+      [
+        {
+          "periode":
+          {
+            "debut": "2018/01/01"
+          },
+          "isTeletransmission": true
+        }
+      ]
+    },
+    {
+      "domaineDroits":
+      [
+        {
+          "code": "OPAU",
+          "garanties":
+          [
+            {
+              "codeGarantie": "AXASCCGDIM",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "OPAU-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "OPTIQUEAUDIO",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/03/10"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/03/10",
+                              "periodeFin": "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties":
+          [
+            {
+              "codeGarantie": "AXASCCGDIM",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIM",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "HOSP-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/03/10"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "%%CURRENT_YEAR%%/03/10",
+                              "periodeFin": "%%CURRENT_YEAR%%/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "%%CURRENT_YEAR%%/03/10"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateCreation": null,
+      "dateModification": null,
+      "dateNaissance": "20230310",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2730781111177",
+      "cleNirBeneficiaire": "53",
+      "nirOd1": "2730781111177",
+      "cleNirOd1": "53",
+      "numeroPersonne": "MBA14761",
+      "rangAdministratif": "2",
+      "dateAdhesionMutuelle": "2012/01/03",
+      "dateDebutAdhesionIndividuelle": "2018/01/01",
+      "dernierMouvementRecu": "V",
+      "affiliation":
+      {
+        "nom": "BAAR",
+        "nomPatronymique": "BAAR",
+        "nomMarital": "BAAR",
+        "prenom": "MAR",
+        "civilite": "M",
+        "periodeDebut": "2012/01/03",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "781",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Enfant"
+      },
+      "affiliationsRO":
+      [
+        {
+          "nir":
+          {
+            "code": "2730781111177",
+            "cle": "53"
+          },
+          "rattachementRO":
+          {
+            "codeRegime": "01",
+            "codeCaisse": "781"
+          },
+          "periode":
+          {
+            "debut": "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions":
+      [
+        {
+          "periode":
+          {
+            "debut": "2018/01/01"
+          },
+          "isTeletransmission": true
+        }
+      ]
+    }
+  ],
+  "idDeclarant": "0000401166",
+  "numeroContrat": "MBA1476",
+  "numeroAdherent": "MBA1476",
+  "numeroAdherentComplet": "MBA1476",
+  "dateSouscription": "2018/01/01",
+  "type": "B",
+  "nomPorteur": "NOMTEST",
+  "prenomPorteur": "PRENOMTEST",
+  "civilitePorteur": "MME",
+  "qualification": "B",
+  "numeroContratCollectif": "00219184",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "001",
+  "numeroExterneContratIndividuel": "MBATESTC99",
+  "gestionnaire": "000ER00693",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "dateCreation": null,
+  "dateModification": null,
+  "dateConsolidation": null,
+  "identifiantCollectivite": "N/A",
+  "raisonSociale": "N/A",
+  "groupePopulation": "N/A",
+  "periodeResponsableOuverts":
+  [
+    {
+      "debut": "2020/03/10"
+    },
+    {
+      "debut": "2018/01/01",
+      "fin": "2020/03/09"
+    }
+  ],
+  "carteTPaEditerOuDigitale": "0"
+}

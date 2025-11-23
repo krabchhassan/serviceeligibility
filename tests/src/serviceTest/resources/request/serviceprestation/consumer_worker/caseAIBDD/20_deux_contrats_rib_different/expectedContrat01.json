@@ -1,0 +1,184 @@
+{
+	"id": null,
+	"traceId": null,
+	"idDeclarant": "0008400004",
+	"societeEmettrice": "CODMUT",
+	"numero": "AIBYD2222222222",
+	"numeroExterne": "AIBYD2222222222",
+	"numeroAdherent": "IBYD2222",
+	"numeroAdherentComplet": "AIBYD2222222222",
+	"dateSouscription": "2020-01-01",
+	"periodesContratResponsableOuvert": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"periodesContratCMUOuvert": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"critereSecondaireDetaille": " ",
+	"critereSecondaire": " ",
+	"isContratIndividuel": true,
+	"gestionnaire": "CEGEDIM",
+	"qualification": "B",
+	"ordrePriorisation": "1",
+	"periodesDroitsComptablesOuverts": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"assures": [
+		{
+			"isSouscripteur": true,
+			"rangAdministratif": "1",
+			"identite": {
+				"nir": {
+					"code": "1720131589478",
+					"cle": "54"
+				},
+				"affiliationsRO": [
+					{
+						"nir": {
+							"code": "1720131589478",
+							"cle": "54"
+						},
+						"rattachementRO": {
+							"codeRegime": "01",
+							"codeCaisse": "111",
+							"codeCentre": "1018"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"dateNaissance": "19720101",
+				"rangNaissance": "1",
+				"numeroPersonne": "20288139"
+			},
+			"dateAdhesionMutuelle": "2020-01-01",
+			"dateDebutAdhesionIndividuelle": "2020-01-01",
+			"numeroAdhesionIndividuelle": "AIBYD2222222222",
+			"periodes": [
+				{
+					"debut": "2020-01-01"
+				}
+			],
+			"periodesMedecinTraitantOuvert": [],
+			"regimesParticuliers": [],
+			"situationsParticulieres": [],
+			"qualite": {
+				"code": "ASSPRI",
+				"libelle": "Assure principal"
+			},
+			"data": {
+				"nom": {
+					"nomFamille": "MONTAGUS",
+					"nomUsage": "MONTAGUS",
+					"prenom": "hervé",
+					"civilite": "M"
+				},
+				"adresse": {
+					"ligne1": "M MONTAGUS hervé",
+					"ligne4": "AVENUE DE L ANCIEN VELODROME",
+					"ligne6": "31000 TOULOUSE",
+					"codePostal": "31000"
+				},
+				"destinatairesPaiements": [
+					{
+            "idDestinatairePaiements":"83747438-20288139-DestPaiement-1",
+            "idBeyondDestinatairePaiements":"83747438-20288139-DestPaiement-1-0008400004",
+            "nom": {
+							"nomFamille": "MONTAGUS",
+							"nomUsage": "MONTAGUS",
+							"prenom": "hervé",
+							"civilite": "M"
+						},
+						"rib": {
+							"bic": "BNPAMCM1",
+							"iban": "MC5830001007941234567890185"
+						},
+						"modePaiementPrestations": {
+							"code": "V ",
+							"libelle": "Virement",
+							"codeMonnaie": "EUR  "
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"destinatairesRelevePrestations": [
+					{
+            "idDestinataireRelevePrestations":"83747438-20288139-DestRelevePrest-1",
+            "idBeyondDestinataireRelevePrestations":"83747438-20288139-DestRelevePrest-1-0008400004",
+            "nom": {
+							"nomFamille": "MONTAGUS",
+							"nomUsage": "MONTAGUS",
+							"prenom": "hervé",
+							"civilite": "M"
+						},
+						"adresse": {
+							"ligne1": "M MONTAGUS hervé",
+							"ligne4": "AVENUE DE L ANCIEN VELODROME",
+							"ligne6": "31000 TOULOUSE",
+							"codePostal": "31000"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				]
+			},
+			"digitRelation": {
+				"teletransmissions": [
+					{
+						"periode": {
+							"debut": "2020-01-01"
+						},
+						"isTeletransmission": true
+					}
+				]
+			},
+			"droits": [
+				{
+					"code": "OR",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie OR",
+					"ordrePriorisation": "1",
+					"type": "B",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01",
+					"carences": [
+						{
+							"code": "1TRIM",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-03-30"
+							}
+						},
+						{
+							"code": "1SEME",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-06-29"
+							}
+						},
+						{
+							"code": "1MOIS",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-01-30"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"version": "5"
+}

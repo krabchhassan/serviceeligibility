@@ -1,0 +1,739 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API Correspondances BOBB",
+    "version": "1.0.0",
+    "description": "API permettant de gérer les correspondances produits"
+  },
+  "servers": [
+    {
+      "url": "/serviceeligibility/core/api",
+      "description": "Generated server url"
+    }
+  ],
+  "security": [
+    {
+      "bearer": [
+        "read"
+      ]
+    }
+  ],
+  "paths": {
+    "/v1/bobb-correspondences/products/by-gt/{gtId}": {
+      "get": {
+        "operationId": "getProductsByGtId",
+        "summary": "Récupérer les produits par identifiant GT",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "gtId",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Identifiant GT ( _id de l'élément de contrat)"
+          },
+          {
+            "in": "query",
+            "name": "groupBy",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["product", "period"],
+              "default": "product"
+            },
+            "description": "Critère de regroupement : 'product' (liste à plat) ou 'period' (regroupé par périodes)."
+          },
+          {
+            "in": "query",
+            "name": "appliedDate",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Filtre les éléments produits actifs à cette date (bornes inclusives). Format ISO-8601, ex. 2025-10-23."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse OK.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/CorrespondenceResponseDto" }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide (ex. valeur 'groupBy' non permise)."
+          }
+        },
+        "tags": ["bobb-correspondences"]
+      }
+    },
+    "/v1/bobb-correspondences/products/by-codes/{codeContractElement}/{codeInsurer}": {
+      "get": {
+        "operationId": "getProductsByCodes",
+        "summary": "Récupérer les produits par codes (élément de contrat, assureur)",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "codeContractElement",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Code fonctionnel de l'élément de contrat."
+          },
+          {
+            "in": "path",
+            "name": "codeInsurer",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Code de l'assureur."
+          },
+          {
+            "in": "query",
+            "name": "groupBy",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["product", "period"],
+              "default": "period"
+            },
+            "description": "Critère de regroupement : 'product' (liste à plat) ou 'period' (regroupé par périodes)."
+          },
+          {
+            "in": "query",
+            "name": "appliedDate",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            },
+            "description": "Filtre les éléments produits actifs à cette date (bornes inclusives). Format ISO-8601, ex. 2025-10-23."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Réponse OK.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/CorrespondenceResponseDto" }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide (ex. valeur 'groupBy' non permise)."
+          },
+          "404": {
+            "description": "Aucune correspondance trouvée pour les codes fournis (version active)."
+          }
+        },
+        "tags": [
+          "bobb-correspondences"
+        ]
+      }
+    },
+    "/v1/bobb-correspondences/{gtId}/product-closures": {
+      "patch": {
+        "operationId": "closeProductElementByGt",
+        "summary": "Clôturer un élément produit (ajoute la date 'to') sur un GT précis",
+        "security": [
+          {
+            "bearer": ["read", "delete:contract"]
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "gtId",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Identifiant GT (_id de l'élément de contrat)."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/CloseProductElementRequest" },
+              "examples": {
+                "closeOneProduct": {
+                  "summary": "Clôture d'un élément produit",
+                  "value": {
+                    "to": "2019-09-30",
+                    "selector": {
+                      "codeOffer": "GFM-A",
+                      "codeProduct": "TONUS-A",
+                      "codeBenefitNature": "SOINSCOURANTS",
+                      "codeAmc": "ASSU00098",
+                      "from": "2019-06-01"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": { "description": "Clôture appliquée (au moins un élément modifié)." },
+          "404": { "description": "GT introuvable ou aucun élément ne correspond au sélecteur." },
+          "400": { "description": "Requête de clôture invalide (gtId/selector/to manquants ou invalides)." },
+          "403": { "description": "Accès refusé (permission manquante: DELETE_CONTRACT_PERMISSION)." }
+        },
+        "tags": ["bobb-correspondences"]
+      }
+    },
+    "/v1/bobb-correspondences/{gtId}/period-closures": {
+      "patch": {
+        "operationId": "closePeriodByGt",
+        "summary": "Clôturer par période (ajoute la date 'to' à tous les éléments produits de la période)",
+        "security": [
+          {
+            "bearer": ["read", "delete:contract"]
+          }
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "gtId",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "Identifiant GT (_id de l'élément de contrat)."
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/ClosePeriodRequest" },
+              "examples": {
+                "closeOpenPeriod": {
+                  "summary": "Clôture d'une période ouverte (from + to null/missing)",
+                  "value": {
+                    "to": "2020-12-31",
+                    "period": {
+                      "from": "2016-01-01",
+                      "to": null
+                    }
+                  }
+                },
+                "closeExactPeriod": {
+                  "summary": "Clôture pour une période exacte (from/to précis)",
+                  "value": {
+                    "to": "2019-05-31",
+                    "period": {
+                      "from": "2018-06-01",
+                      "to": "2019-05-31"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "204": { "description": "Clôture appliquée (au moins un élément modifié)." },
+          "404": { "description": "GT introuvable ou aucune période/élément correspondant." },
+          "400": { "description": "Requête de clôture invalide (gtId/period/to manquants ou invalides)." },
+          "403": { "description": "Accès refusé (permission manquante: DELETE_CONTRACT_PERMISSION)." }
+        },
+        "tags": ["bobb-correspondences"]
+      }
+    },
+    "/v1/bobb-correspondences/contract-elements/search": {
+      "get": {
+        "summary": "Recherche des contrats",
+        "description": "Recherche des contrats à l’aide de filtres facultatifs. Remarque : le serveur impose un tri par défaut sur `insertDate` en ordre décroissant ; tout tri envoyé par le client est ignoré.",
+        "operationId": "searchContractElements",
+        "security": [
+          { "bearerAuth": [] }
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "codeInsurer",
+            "schema": { "type": "string" },
+            "description": "Filtrer par le code de l'assureur"
+          },
+          {
+            "in": "query",
+            "name": "codeGarantee",
+            "schema": { "type": "string" },
+            "description": "Filtrer par le code de la garantie."
+          },
+          {
+            "in": "query",
+            "name": "societeEmettrice",
+            "schema": { "type": "string" },
+            "description": "Filtrer par la societé emettrice"
+          },
+          {
+            "in": "query",
+            "name": "codeOffer",
+            "schema": { "type": "string" },
+            "description": "Filtrer par le code offre."
+          },
+          {
+            "in": "query",
+            "name": "codeProduct",
+            "schema": { "type": "string" },
+            "description": "Filtrer par le code produit"
+          },
+          {
+            "in": "query",
+            "name": "startDate",
+            "description": "Filtrer par date de début de validité des produits (inclus). Format YYYY-MM-DD.",
+            "schema": { "type": "string", "format": "date" },
+            "example": "2019-01-01"
+          },
+          {
+            "in": "query",
+            "name": "endDate",
+            "description": "Filtrer par date de fin de validité des produits (inclus). Format YYYY-MM-DD.",
+            "schema": { "type": "string", "format": "date" },
+            "example": "2020-12-31"
+          },
+          {
+            "in": "query",
+            "name": "page",
+            "schema": { "type": "integer", "minimum": 0, "default": 0 }
+          },
+          {
+            "in": "query",
+            "name": "size",
+            "schema": { "type": "integer", "minimum": 1, "default": 20 },
+            "description": "La taille de la page"
+          },
+          {
+            "in": "query",
+            "name": "sort",
+            "description": "Forcer l'ordre des contrats par `insertDate,DESC`.",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Une page de contrats.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/PageContractElementDto" }
+              }
+            }
+          },
+          "400": {
+            "description": "Requête invalide (par ex. : format de date invalide, `2024-07-`).",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+              }
+            }
+          },
+          "401": { "description": "Accès interdit." },
+          "403": { "description": "autorisation READ_PERMISSION manquante." }
+        }
+      }
+    },
+  "/guarantees": {
+    "get": {
+      "tags": ["Guarantees"],
+      "summary": "Liste des codes garanties",
+      "description": "Retourne les codes de garanties (distincts) associés à la version active, filtrés par codeOffer et/ou codeAmc si fournis.",
+      "operationId": "getGuaranteeCodes",
+      "security": [
+        { "bearerAuth": [] }
+      ],
+      "parameters": [
+        {
+          "name": "codeOffer",
+          "in": "query",
+          "required": false,
+          "description": "Code de l'offre à filtrer."
+        },
+        {
+          "name": "codeAmc",
+          "in": "query",
+          "required": false,
+          "description": "Code AMC à filtrer."
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Liste des codes garanties (peut être vide).",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "examples": {
+                "ok": { "summary": "Résultat avec filtres", "value": ["G001", "G014", "G220"] },
+                "empty": { "summary": "Aucun résultat", "value": [] }
+              }
+            }
+          }
+        },
+        "204": {
+          "description": "Aucun contenu (aucun élément à retourner).",
+          "content": {}
+        },
+        "400": {
+          "description": "Paramètre invalide",
+          "content": {
+            "application/json": {
+              "example": {
+                "message": "Invalid query parameters: [foo]"
+              }
+            }
+          }
+        }
+      }}},
+  "/offers": {
+    "get": {
+      "tags": ["Offers"],
+      "summary": "Liste des codes offres",
+      "description": "Retourne les codes d'offres (distincts) associés à la version active, filtrés par codeContractElement et/ou codeAmc.",
+      "operationId": "getOfferCodes",
+      "security": [
+        { "bearerAuth": [] }
+      ],
+      "parameters": [
+        {
+          "name": "codeContractElement",
+          "in": "query",
+          "required": false,
+          "description": "Code de la garantie (contract element) à filtrer."
+        },
+        {
+          "name": "codeAmc",
+          "in": "query",
+          "required": false,
+          "description": "Code AMC à filtrer."
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Liste des codes offres (peut être vide).",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "examples": {
+                "ok": { "summary": "Résultat avec filtres", "value": ["OFF001", "OFF014", "OFF220"] },
+                "empty": { "summary": "Aucun résultat", "value": [] }
+              }
+            }
+          }
+        },
+        "204": {
+          "description": "Aucun contenu (aucun élément à retourner).",
+          "content": {}
+        },
+        "400": {
+          "description": "Paramètre invalide",
+          "content": {
+            "application/json": {
+              "example": {
+                "message": "Invalid query parameters: [foo]"
+              }
+            }
+          }
+        }
+      }}},
+  "/amcCodes": {
+    "get": {
+      "tags": ["AMCs"],
+      "summary": "Liste des codes AMC",
+      "description": "Retourne les codes AMC (distincts) associés à la version active, filtrés par codeOffer et/ou codeContractElement.",
+      "operationId": "getAmcCodes",
+      "security": [
+        { "bearerAuth": [] }
+      ],
+      "parameters": [
+        {
+          "name": "codeOffer",
+          "in": "query",
+          "required": false,
+          "description": "Code de l'offre à filtrer."
+        },
+        {
+          "name": "codeContractElement",
+          "in": "query",
+          "required": false,
+          "description": "Code de la garantie (contract element) à filtrer."
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "Liste des codes AMC (peut être vide).",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "examples": {
+                "ok": { "summary": "Résultat avec filtres", "value": ["AMC10", "AMC42", "AMC77"] },
+                "empty": { "summary": "Aucun résultat", "value": [] }
+              }
+            }
+          }
+        },
+        "204": {
+          "description": "Aucun contenu (aucun élément à retourner).",
+          "content": {}
+        },
+        "400": {
+          "description": "Paramètre invalide",
+          "content": {
+            "application/json": {
+              "example": {
+                "message": "Invalid query parameters: [foo]"
+              }
+            }
+          }
+        }}}}},
+  "components": {
+    "schemas": {
+      "CorrespondenceResponseDto": {
+        "type": "object",
+        "description": "Réponse représentant soit une liste de produits (groupBy=PRODUCT) soit des groupes par période (groupBy=PERIOD).",
+        "properties": {
+          "gtId": { "type": "string", "description": "Identifiant de l'élément de contrat (GT id)." },
+          "codeInsurer": { "type": "string", "description": "Code de l'assureur." },
+          "codeContractElement": { "type": "string", "description": "Code de l'élément de contrat." },
+          "groupBy": {
+            "type": "string",
+            "enum": ["PRODUCT", "PERIOD"],
+            "description": "Type de regroupement utilisé dans la réponse."
+          },
+          "items": {
+            "type": "array",
+            "nullable": true,
+            "items": { "$ref": "#/components/schemas/ProductElementDto" },
+            "description": "Présent lorsque groupBy = PRODUCT."
+          },
+          "periods": {
+            "type": "array",
+            "nullable": true,
+            "items": { "$ref": "#/components/schemas/PeriodGroupDto" },
+            "description": "Présent lorsque groupBy = PERIOD."
+          }
+        }
+      },
+      "ProductElementDto": {
+        "type": "object",
+        "description": "Élément produit associé à un élément de contrat.",
+        "properties": {
+          "codeOffer": { "type": "string", "description": "Code de l'offre." },
+          "codeProduct": { "type": "string", "description": "Code produit." },
+          "codeBenefitNature": { "type": "string", "description": "Nature de la prestation/garantie." },
+          "codeAmc": { "type": "string", "description": "Code AMC." },
+          "from": { "type": "string", "format": "date", "nullable": true, "description": "Date de début (incluse)." },
+          "effectiveDate": { "type": "string", "format": "date", "nullable": true, "description": "Date d'effet." },
+          "to": { "type": "string", "format": "date", "nullable": true, "description": "Date de fin (incluse)." }
+        },
+        "required": ["codeOffer", "codeProduct", "codeBenefitNature", "codeAmc"]
+      },
+      "PeriodGroupDto": {
+        "type": "object",
+        "description": "Période avec les éléments produits associés.",
+        "properties": {
+          "from": { "type": "string", "format": "date", "nullable": true, "description": "Début de période (inclus)." },
+          "to": { "type": "string", "format": "date", "nullable": true, "description": "Fin de période (incluse)." },
+          "items": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/ProductElementDto" },
+            "description": "Éléments produits de la période."
+          }
+        }
+      },
+      "ContractElementDto": {
+        "type": "object",
+        "description": "Élément de contrat référentiel.",
+        "properties": {
+          "id": { "type": "string" },
+          "codeAMC": { "type": "string", "nullable": true },
+          "codeInsurer": { "type": "string" },
+          "codeContractElement": { "type": "string" },
+          "label": { "type": "string", "nullable": true },
+          "ignored": { "type": "boolean", "default": false },
+          "origine": { "type": "string", "nullable": true, "description": "Origine (champ 'origine')." },
+          "user": { "type": "string", "nullable": true },
+          "productElements": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/ProductElementDto" }
+          },
+          "versionId": { "type": "string", "nullable": true }
+        },
+        "required": ["codeInsurer", "codeContractElement", "productElements"]
+      },
+      "VersionsDto": {
+        "type": "object",
+        "description": "Version de référentiel active ou historique.",
+        "properties": {
+          "id": { "type": "string" },
+          "number": { "type": "integer", "format": "int32", "nullable": true },
+          "label": { "type": "string", "nullable": true },
+          "creationDate": { "type": "string", "format": "date-time", "nullable": true },
+          "createdBy": { "type": "string", "nullable": true },
+          "status": { "type": "string", "nullable": true },
+          "purgeDate": { "type": "string", "format": "date-time", "nullable": true },
+          "purgedBy": { "type": "string", "nullable": true }
+        }
+      },
+      "PageContractElementDto": {
+        "type": "object",
+        "properties": {
+          "content": {
+            "type": "array",
+            "items": { "$ref": "#/components/schemas/GuaranteeSearchResultDto" }
+          },
+          "page": {
+            "type": "integer"
+          },
+          "size": {
+            "type": "integer",
+            "description": "La taille de la page"
+          },
+          "totalElements": {
+            "type": "integer",
+            "format": "int64",
+            "example": 123
+          },
+          "totalPages": {
+            "type": "integer",
+            "example": 7
+          },
+          "sort": {
+            "type": "object",
+            "properties": {
+              "property": { "type": "string", "example": "insertDate" },
+              "direction": { "type": "string", "enum": ["ASC", "DESC"], "example": "DESC" }
+            }
+          }
+        }
+      },
+      "GuaranteeSearchResultDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "codeContractElement": {
+            "type": "string"
+          },
+          "codeInsurer": {
+            "type": "string"
+          },
+          "ignored": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "codeContractElement",
+          "codeInsurer",
+          "ignored"
+        ]
+      },
+
+      "ErrorResponse": {
+        "type": "object",
+        "required": ["level", "error_code", "message"],
+        "properties": {
+          "level": {
+            "type": "string",
+            "description": "Niveau de message"
+          },
+          "error_code": {
+            "type": "string",
+            "description": "Code d'erreur de l'api."
+          },
+          "message": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "GroupBy": {
+        "type": "string",
+        "enum": ["PRODUCT", "PERIOD"],
+        "description": "Enum Java côté serveur : PRODUCT ou PERIOD."
+      },
+      "CloseProductElementRequest": {
+        "type": "object",
+        "required": ["to", "selector"],
+        "properties": {
+          "to": {
+            "type": "string",
+            "format": "date",
+            "description": "Date de clôture à appliquer sur l’élément produit (champ 'to' : borne incluse)."
+          },
+          "selector": {
+            "$ref": "#/components/schemas/ProductSelector"
+          }
+        },
+        "description": "Requête de clôture d’un élément produit unique."
+      },
+      "ProductSelector": {
+        "type": "object",
+        "required": ["codeOffer", "codeProduct", "codeBenefitNature", "codeAmc"],
+        "properties": {
+          "codeOffer": { "type": "string" },
+          "codeProduct": { "type": "string" },
+          "codeBenefitNature": { "type": "string" },
+          "codeAmc": { "type": "string" },
+          "from": {
+            "type": "string",
+            "format": "date",
+            "nullable": true,
+            "description": "Optionnel : précise l’élément exact si plusieurs versions existent le même jour."
+          }
+        },
+        "description": "Sélecteur d’un élément produit à clôturer."
+      },
+      "ClosePeriodRequest": {
+        "type": "object",
+        "required": ["to", "period"],
+        "properties": {
+          "to": {
+            "type": "string",
+            "format": "date",
+            "description": "Date de clôture à appliquer à tous les éléments de la période (champ 'to' : borne incluse)."
+          },
+          "period": {
+            "$ref": "#/components/schemas/PeriodSelector"
+          }
+        },
+        "description": "Requête de clôture par période (tous les éléments concernés)."
+      },
+      "PeriodSelector": {
+        "type": "object",
+        "required": ["from"],
+        "properties": {
+          "from": { "type": "string", "format": "date", "description": "Début de période (inclus)." },
+          "to": {
+            "type": "string",
+            "format": "date",
+            "nullable": true,
+            "description": "Fin de période (incluse). Si null/absent, la période est considérée comme ouverte."
+          }
+        },
+        "description": "Sélecteur de période : (from,to) exacts, ou (from, to=null) pour période ouverte."
+      }
+    },
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "bobb-correspondences",
+      "description": "Points d'API de correspondances produits."
+    }
+  ]
+}

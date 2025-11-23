@@ -1,0 +1,58 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "declarationConsultationHistory",
+      "description": "Historique des consultations de droits"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "DeclarationConsultationHistory": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+		  "user": {
+			"description": "Adresse email de l'utilisateur ayant consulté les droits",
+			"type": "string"
+          },
+		  "dateConsultation": {
+			"description": "Date et heure de la consultation des droits",
+			"type": "string",
+            "format": "date-time"
+          },
+          "declaration": {
+			"$ref": "#/components/schemas/Declaration"
+          },
+          "_id": {
+            "description": "Identifiant unique du document.",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "DeclarationConsultationHistory"
+      },
+	  "Declaration": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "_id": {
+            "description": "Identifiant unique de la déclaration",
+			"type": "string"
+          },
+          "codeEtat": {
+            "description": "Code d'état de la déclaration",
+			"type": "string"
+          }
+        },
+        "required": [],
+        "title": "Declaration"
+      }
+    }
+  }
+}

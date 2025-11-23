@@ -1,0 +1,132 @@
+{
+  "services" : [
+    "ServicePrestation"
+  ],
+  "key" : "0000401166-MBA0003-002",
+  "societesEmettrices" : [
+    {
+      "code" : "0000401166",
+      "periodes" : [
+        {
+          "debut" : "2025-01-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats" : [
+    {
+      "numeroContrat" : "MBA0004",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements": "DP-003",
+            "nom": {
+              "nomFamille": "LOLO",
+              "nomUsage": "LOLO",
+              "prenom": "CHRISTIAN03",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR LOLO LOLO CHRISTIAN",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "rib": {
+              "bic": "MCCFFRP1",
+              "iban": "FR3330002005500000157841Z25"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations": "DRP-MBA0004",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "LOLO",
+              "nomUsage": "LOLO",
+              "prenom": "CHRISTIAN",
+              "civilite": "Mr"
+            },
+            "adresse": {
+              "ligne1": "MR LOLO LOLO CHRISTIAN",
+              "ligne4": "125 RUE DU CHATEAU",
+              "ligne6": "59250 HALLUIN",
+              "codePostal": "59250"
+            },
+            "periode": {
+              "debut": "2025-01-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "LOLO",
+          "nomUsage": "LOLO",
+          "prenom": "LUCIEN",
+          "civilite": "Mr"
+        },
+        "adresse": {
+          "ligne1": "MR LOLO LOLO CHRISTIAN",
+          "ligne4": "125 RUE DU CHATEAU",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250"
+        }
+      },
+      "numeroAdherent" : "MBA0004",
+      "societeEmettrice" : "000ER00693",
+      "periodes" : [
+        {
+          "debut" : "2025-01-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO" : "service-account-test-es16",
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "MBA0004",
+  "identite" : {
+    "nir" : {
+      "code" : "1041062498044",
+      "cle" : "37"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1791062498044",
+          "cle" : "48"
+        },
+        "rattachementRO" : {
+          "codeRegime": "01",
+          "codeCaisse": "624",
+          "codeCentre": "0156"
+        },
+        "periode" : {
+          "debut" : "2022-02-14"
+        }
+      }
+    ],
+    "dateNaissance" : "20001026",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "MBA0003-002",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "20001026",
+        "rangNaissance" : "1"
+      }
+    ]
+  }
+}

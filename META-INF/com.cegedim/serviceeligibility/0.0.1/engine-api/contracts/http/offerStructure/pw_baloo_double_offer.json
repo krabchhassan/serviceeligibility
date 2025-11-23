@@ -1,0 +1,49 @@
+[
+  {
+    "validityDate": "2022-04-05",
+    "endValidityDate": "2023-12-31",
+    "code": 1,
+    "offerCode": "FSC59596",
+    "natures": [
+      "ACTES_DE_PREVENTION",
+      "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+      "APPAREILLAGE",
+      "AUXILIAIRES_MEDICAUX",
+      "BIOLOGIE",
+      "FORFAITS",
+      "FRAIS_DENTAIRES",
+      "HOSPITALISATION__OPTAM___NON_OPTAM_",
+      "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+      "OPTIQUE",
+      "PHARMACIE",
+      "RADIOLOGIE__OPTAM___NON_OPTAM_"
+    ],
+    "products": [
+      "FSBC59596A",
+      "FSSC64603A"
+    ]
+  },
+  {
+    "validityDate": "2024-01-01",
+    "code": 2,
+    "offerCode": "FSC59596",
+    "natures": [
+      "ACTES_DE_PREVENTION",
+      "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+      "APPAREILLAGE",
+      "AUXILIAIRES_MEDICAUX",
+      "BIOLOGIE",
+      "FORFAITS",
+      "FRAIS_DENTAIRES",
+      "HOSPITALISATION__OPTAM___NON_OPTAM_",
+      "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+      "OPTIQUE",
+      "PHARMACIE",
+      "RADIOLOGIE__OPTAM___NON_OPTAM_"
+    ],
+    "products": [
+      "FSBC59596A",
+      "FSSC64603A"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+{
+    "1-1-1": {
+        "content": {
+            "1-1-1": [
+                {
+                    "inseeCode": "1",
+                    "birthDate": "1",
+                    "birthRank": "1",
+                    "insurerId": "1"
+                }
+            ]
+        },
+        "errors": {}
+    },
+    "2-1-1": {
+        "content": {
+            "2-1-1": [
+                {
+                    "inseeCode": "2",
+                    "birthDate": "1",
+                    "birthRank": "1",
+                    "insurerId": "1"
+                }
+            ]
+        },
+        "errors": {}
+    },
+    "1-2-1": {
+        "content": {
+            "1-2-1": [
+                {
+                    "inseeCode": "1",
+                    "birthDate": "2",
+                    "birthRank": "1",
+                    "insurerId": "1"
+                }
+            ]
+        },
+        "errors": {}
+    },
+    "1-1-2": {
+        "content": {
+            "1-1-2": [
+                {
+                    "inseeCode": "1",
+                    "birthDate": "1",
+                    "birthRank": "1",
+                    "insurerId": "1"
+                }
+            ]
+        },
+        "errors": {}
+    }
+}

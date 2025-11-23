@@ -1,0 +1,74 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "restitutionCarte",
+      "description": "Collection contenant l'ensemble des restitutions de cartes"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "RestitutionCarte": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "effetDebut": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idDeclarant": {
+            "type": "string"
+          },
+          "numeroPersonne": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "numeroContrat": {
+            "type": "string"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string"
+          },
+          "nirOd1": {
+            "type": "string"
+          },
+          "cleNirOd1": {
+            "type": "string"
+          },
+          "dateRestitutionCarte": {
+            "type": "string"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "RestitutionCarte"
+      }
+    }
+  }
+}

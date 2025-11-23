@@ -1,0 +1,28 @@
+{
+  "include": [
+    "client/**/*.jsx",
+    "client/**/*.js"
+  ],
+  
+  "exclude": [
+    "dist",
+    "node_modules"
+  ],
+  
+  "require": [
+    "babel-register"
+  ],
+  "all": true,
+  "extension": [
+    ".js",
+    ".jsx"
+  ],
+  "report-dir": "./results/coverage/ut",
+  "cache": false,
+  "reporter": [
+    "lcov",
+    "text-summary"
+  ],
+  "sourceMap": false,
+  "instrument": false
+}

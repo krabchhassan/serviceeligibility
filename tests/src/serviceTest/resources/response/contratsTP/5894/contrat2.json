@@ -1,0 +1,391 @@
+{
+  "beneficiaires":
+  [
+    {
+      "domaineDroits":
+      [
+        {
+          "code": "OPAU",
+          "garanties":
+          [
+            {
+              "codeGarantie": "GT_10",
+              "libelleGarantie": "GT_10",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIV-5515",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "OPAU-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "OPTIQUEAUDIO",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "startBirthday"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "startBirthday",
+                              "periodeFin": "endBirthdayOnNextYear",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties":
+          [
+            {
+              "codeGarantie": "GT_10",
+              "libelleGarantie": "GT_10",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2022/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIV-5515",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "HOSP-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "startBirthday"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "startBirthday",
+                              "periodeFin": "endBirthdayOnNextYear",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "startBirthday"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateCreation":null,
+      "dateModification":null,
+      "dateNaissance": "19800515",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1800692014015",
+      "cleNirBeneficiaire": "94",
+      "nirOd1": "1800692014015",
+      "cleNirOd1": "94",
+      "numeroPersonne": "1234567895894-01",
+      "refExternePersonne": "7909738ADF",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2022/01/01",
+      "dateDebutAdhesionIndividuelle": "2022/01/01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dernierMouvementRecu": "V",
+      "affiliation":
+      {
+        "nom": "EUDES",
+        "nomPatronymique": "EUDES",
+        "nomMarital": "EUDES",
+        "prenom": "Jean",
+        "civilite": "Mr",
+        "periodeDebut": "2022/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "595",
+        "centreOD1": "0123",
+        "hasMedecinTraitant": true,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASS"
+      },
+      "adresses":
+      [
+        {
+          "ligne1": "Mr EUDES Jean - DRP01",
+          "ligne2": "DRP01",
+          "ligne4": "420 rue des Lilas",
+          "ligne6": "31000 Toulouse",
+          "ligne7": "FRANCE",
+          "codePostal": "31000",
+          "telephone": "0606060606",
+          "email": "JeanEudes@mail.ca",
+          "typeAdresse":
+          {
+            "type": "AD"
+          }
+        }
+      ],
+      "affiliationsRO":
+      [
+        {
+          "nir":
+          {
+            "code": "1800692014015",
+            "cle": "94"
+          },
+          "rattachementRO":
+          {
+            "codeRegime": "01",
+            "codeCaisse": "595",
+            "codeCentre": "0123"
+          },
+          "periode":
+          {
+            "debut": "2022/01/01"
+          }
+        }
+      ],
+      "periodesMedecinTraitant":
+      [
+        {
+          "debut": "2022/01/01"
+        }
+      ],
+      "teletransmissions":
+      [
+        {
+          "periode":
+          {
+            "debut": "2022/01/01"
+          },
+          "isTeletransmission": true
+        }
+      ],
+      "regimesParticuliers":
+      [
+        {
+          "code": "AM",
+          "periode":
+          {
+            "debut": "2022/01/01",
+            "fin": "2022/12/31"
+          }
+        }
+      ],
+      "situationsParticulieres":
+      [
+        {
+          "code": "ALD",
+          "periode":
+          {
+            "debut": "2022/01/01",
+            "fin": "2022/12/31"
+          }
+        }
+      ]
+    }
+  ],
+  "idDeclarant": "0000401166",
+  "numeroContrat": "5894-01",
+  "numeroAdherent": "5894-01",
+  "numeroAdherentComplet": "5894-01-complet",
+  "dateSouscription": "2023/06/05",
+  "type": "B",
+  "nomPorteur": "EUDES",
+  "prenomPorteur": "Jean",
+  "civilitePorteur": "Mr",
+  "qualification": "B",
+  "numeroContratCollectif": "03094493",
+  "isContratResponsable": true,
+  "isContratCMU": true,
+  "individuelOuCollectif": "1",
+  "typeConvention": "IS",
+  "critereSecondaire": "Employés",
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel": "5894-01-externe",
+  "numeroExterneContratCollectif": "DKMMMS09049304930",
+  "gestionnaire": "000ER00693",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "1",
+  "origineDeclaration": "Event",
+  "dateCreation":null,
+  "dateModification":null,
+  "dateConsolidation":null,
+  "identifiantCollectivite": "coll",
+  "raisonSociale": "CGW",
+  "siret": "552 178 639 00132",
+  "groupePopulation": "cadre",
+  "periodeCMUOuverts":
+  [
+    {
+      "code": "CMU",
+      "periode":
+      {
+        "debut": "2022/01/01"
+      }
+    }
+  ],
+  "periodeResponsableOuverts":
+  [
+    {
+      "debut": "2022/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale": "3"
+}

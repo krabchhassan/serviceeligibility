@@ -1,0 +1,156 @@
+{
+  "referenceExterne": null,
+  "codeEtat": "V",
+  "effetDebut": "2023-01-06T15:00:38.944Z",
+  "idDeclarant": "0000401166",
+  "isCarteTPaEditer": false,
+  "carteTPaEditerOuDigitale": "0",
+  "nomFichierOrigine": "PA402958_amcvdtdi-24062019.OK",
+  "dateCreation": "2023-01-06T15:00:38.941Z",
+  "userCreation": "job605",
+  "dateModification": "2023-01-06T15:00:38.941Z",
+  "userModification": "job605",
+  "versionDeclaration": "V03",
+  "beneficiaire": {
+    "dateNaissance": "19700103",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1700131111111",
+    "cleNirBeneficiaire": "18",
+    "nirOd1": "1700131111111",
+    "cleNirOd1": "18",
+    "nirOd2": "",
+    "cleNirOd2": "",
+    "insc": null,
+    "numeroPersonne": "0021",
+    "refExternePersonne": "0021",
+    "affiliation": {
+      "nom": "TESTB0002",
+      "nomPatronymique": "TESTB0002",
+      "nomMarital": "TESTB0002",
+      "prenom": "Martine",
+      "civilite": null,
+      "periodeDebut": "2023/01/01",
+      "periodeFin": null,
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "131",
+      "centreOD1": null,
+      "regimeOD2": null,
+      "caisseOD2": null,
+      "centreOD2": null,
+      "hasMedecinTraitant": false,
+      "regimeParticulier": "01",
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": false,
+      "typeAssure": "AssurePrin"
+    },
+    "adresses": []
+  },
+  "contrat": {
+    "numero": "A0002",
+    "dateSouscription": "2019/01/01",
+    "dateResiliation": null,
+    "type": null,
+    "nomPorteur": "TESTB0002",
+    "prenomPorteur": "Martine",
+    "civilitePorteur": "Madame",
+    "numeroAdherent": "A0002",
+    "numeroAdherentComplet": "",
+    "qualification": "B",
+    "numeroContratCollectif": "CC0002",
+    "rangAdministratif": "1",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "destinataire": null,
+    "individuelOuCollectif": "2",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": null,
+    "typeConvention": "",
+    "critereSecondaireDetaille": "",
+    "critereSecondaire": "",
+    "numeroExterneContratIndividuel": "",
+    "numeroExterneContratCollectif": "",
+    "modePaiementPrestations": "",
+    "gestionnaire": "GEST01",
+    "groupeAssures": "TEST",
+    "numeroCarte": "NC0002",
+    "editeurCarte": null,
+    "fondCarte": null,
+    "annexe1Carte": null,
+    "annexe2Carte": null,
+    "numAMCEchange": "0000401182",
+    "numOperateur": ""
+  },
+    "domaineDroits": [
+      {
+        "code": "AUXM",
+        "codeExterne": null,
+        "libelle": null,
+        "codeExterneProduit": "",
+        "libelleExterne": null,
+        "codeOptionMutualiste": "",
+        "libelleOptionMutualiste": "",
+        "codeProduit": "BLUE_001",
+        "libelleProduit": "TESTBLUE",
+        "codeGarantie": "GT_BASE",
+        "libelleGarantie": "Frais Médicaux",
+        "codeProfil": "",
+        "libelleCodeRenvoi": "",
+        "tauxRemboursement": "100%",
+        "isEditable": false,
+        "isSuspension": false,
+        "dateAdhesionCouverture": "2019/01/01",
+        "uniteTauxRemboursement": "XX",
+        "referenceCouverture": "AUXM-02A-100",
+        "origineDroits": "",
+        "noOrdreDroit": 1,
+        "categorie": "AUXM",
+        "prioriteDroit": {
+          "code": "01",
+          "libelle": "01",
+          "typeDroit": "",
+          "prioriteBO": "01"
+        },
+        "prestations": [
+          {
+            "code": "DEF",
+            "codeRegroupement": null,
+            "libelle": null,
+            "isEditionRisqueCarte": false,
+            "dateEffet": null,
+            "formule": {
+              "numero": "02A",
+              "libelle": null,
+              "parametres": [
+                {
+                  "numero": "3",
+                  "valeur": "100.00"
+                }
+              ]
+            },
+            "formuleMetier": null
+          }
+        ],
+        "periodeDroit": {
+          "periodeFin" : "2023/12/31",
+          "motifEvenement": "DE",
+          "libelleEvenement": "DEclaration",
+          "modeObtention": "O"
+        },
+        "conventionnements": [
+          {
+            "priorite": 0,
+            "typeConventionnement": {
+              "code": "SP",
+              "libelle": "SP"
+            }
+          }
+        ]
+      }
+    ]
+}

@@ -1,0 +1,25 @@
+export default {
+    FORM_NAME: 'BeneficiaryForm',
+    FIELDS: {
+        nom: 'nom',
+        prenom: 'prenom',
+        nir: 'nir',
+        numeroOuNomAMC: 'numeroOuNomAMC',
+        societeEmettrice: 'societeEmettrice',
+        numeroAdherentOuContrat: 'numeroAdherentOuContrat',
+        dateNaissance: 'dateNaissance',
+        rangNaissance: 'rangNaissance',
+        telephone: 'telephone',
+        mail: 'mail',
+        bic: 'bic',
+        iban: 'iban',
+        codePostal: 'codePostal',
+        localite: 'localite',
+        numeroEtLibelleVoie: 'numeroEtLibelleVoie',
+    },
+    TOPOLOGY_INSURER: 'INSURER',
+    CLIENT_TYPE: {
+        INSURER: 'INSURER',
+        OTP: 'OTP',
+    },
+};

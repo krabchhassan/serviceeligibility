@@ -1,0 +1,681 @@
+
+{
+  "_id": "59c506584d1d4ef6362ff924",
+  "idDeclarant": "0777927120",
+  "contrat": {
+    "numero": "9125916",
+    "dateSouscription": "2015/11/01",
+    "dateResiliation": null,
+    "type": null,
+    "nomPorteur": "BENAISSA",
+    "prenomPorteur": "SAMIRA",
+    "civilitePorteur": "MME",
+    "numeroAdherent": "9125916",
+    "numeroAdherentComplet": "",
+    "qualification": "B",
+    "numeroContratCollectif": "",
+    "rangAdministratif": "01",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "destinataire": "AD",
+    "individuelOuCollectif": "1",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": null,
+    "typeConvention": "AL",
+    "critereSecondaireDetaille": "500",
+    "critereSecondaire": "",
+    "numeroExterneContratIndividuel": "",
+    "numeroExterneContratCollectif": "",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "ER34",
+    "groupeAssures": "",
+    "numeroCarte": null,
+    "editeurCarte": "",
+    "fondCarte": "C469",
+    "annexe1Carte": "",
+    "annexe2Carte": "",
+    "numAMCEchange": "",
+    "numOperateur": ""
+  },
+  "adresse": null,
+  "domainesConventions": [
+    {
+      "code": "TPALM",
+      "rang": 1,
+      "conventions": [
+        {
+          "code": "AL",
+          "priorite": 0
+        }
+      ]
+    }
+  ],
+  "beneficiaires": [
+    {
+      "beneficiaire": {
+        "dateNaissance": "19840710",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "2840730189104",
+        "cleNirBeneficiaire": "79",
+        "nirOd1": "2840730189104",
+        "cleNirOd1": "79",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "insc": null,
+        "numeroPersonne": "01276474",
+        "refExternePersonne": "01276474",
+        "affiliation": {
+          "nom": "BENAISSA",
+          "nomPatronymique": "BENAISSA",
+          "nomMarital": "BENAISSA",
+          "prenom": "SAMIRA",
+          "civilite": null,
+          "periodeDebut": "2015/11/01",
+          "periodeFin": null,
+          "qualite": "A",
+          "regimeOD1": "01",
+          "caisseOD1": "301",
+          "centreOD1": null,
+          "regimeOD2": null,
+          "caisseOD2": null,
+          "centreOD2": null,
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ASSURE"
+        },
+        "adresses": [
+          {
+            "ligne1": "MADAME BENAISSA SAMIRA",
+            "ligne2": "JARDINS DES MOSAIQUES",
+            "ligne3": null,
+            "ligne4": "183 RUE DE LA FONTILLE",
+            "ligne5": null,
+            "ligne6": "30000 NIMES",
+            "ligne7": null,
+            "codePostal": "30000",
+            "telephone": null,
+            "email": null,
+            "typeAdresse": {
+              "libelle": null,
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "TPALM",
+          "codeExterne": null,
+          "libelle": null,
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "VBMOD100AR",
+          "libelleProduit": "Mod H1 AR",
+          "codeGarantie": "VBBASEARS",
+          "libelleGarantie": "MOD STE AR VS34",
+          "codeProfil": "DEFAUT",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2015/11/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "noOrdreDroit": 1,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "099",
+                "libelle": null,
+                "parametres": []
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/09/12",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "D?claration des droits",
+            "modeObtention": "M"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "AL",
+                "libelle": "AL"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "A",
+        "rangAdministratif": "01",
+        "modePaiementPrestations": "V"
+      }
+    },
+    {
+      "beneficiaire": {
+        "dateNaissance": "20051223",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "",
+        "cleNirBeneficiaire": "",
+        "nirOd1": "2840730189104",
+        "cleNirOd1": "79",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "insc": null,
+        "numeroPersonne": "01276477",
+        "refExternePersonne": "01276477",
+        "affiliation": {
+          "nom": "SENADIG",
+          "nomPatronymique": "SENADIG",
+          "nomMarital": "SENADIG",
+          "prenom": "ELYES",
+          "civilite": null,
+          "periodeDebut": "2015/11/01",
+          "periodeFin": null,
+          "qualite": "E",
+          "regimeOD1": "01",
+          "caisseOD1": "301",
+          "centreOD1": null,
+          "regimeOD2": null,
+          "caisseOD2": null,
+          "centreOD2": null,
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ENFANT"
+        },
+        "adresses": [
+          {
+            "ligne1": "MADAME BENAISSA SAMIRA",
+            "ligne2": "JARDINS DES MOSAIQUES",
+            "ligne3": null,
+            "ligne4": "183 RUE DE LA FONTILLE",
+            "ligne5": null,
+            "ligne6": "30000 NIMES",
+            "ligne7": null,
+            "codePostal": "30000",
+            "telephone": null,
+            "email": null,
+            "typeAdresse": {
+              "libelle": null,
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "TPALM",
+          "codeExterne": null,
+          "libelle": null,
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "VBMOD100AR",
+          "libelleProduit": "Mod H1 AR",
+          "codeGarantie": "VBBASEARS",
+          "libelleGarantie": "MOD STE AR VS34",
+          "codeProfil": "DEFAUT",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2015/11/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "noOrdreDroit": 1,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "099",
+                "libelle": null,
+                "parametres": []
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/09/12",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "D?claration des droits",
+            "modeObtention": "M"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "AL",
+                "libelle": "AL"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "E",
+        "rangAdministratif": "21",
+        "modePaiementPrestations": "V"
+      }
+    },
+    {
+      "beneficiaire": {
+        "dateNaissance": "20140929",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "",
+        "cleNirBeneficiaire": "",
+        "nirOd1": "2840730189104",
+        "cleNirOd1": "79",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "insc": null,
+        "numeroPersonne": "01276478",
+        "refExternePersonne": "01276478",
+        "affiliation": {
+          "nom": "AMJANDI",
+          "nomPatronymique": "AMJANDI",
+          "nomMarital": "AMJANDI",
+          "prenom": "ADEM",
+          "civilite": null,
+          "periodeDebut": "2015/11/01",
+          "periodeFin": null,
+          "qualite": "E",
+          "regimeOD1": "01",
+          "caisseOD1": "301",
+          "centreOD1": null,
+          "regimeOD2": null,
+          "caisseOD2": null,
+          "centreOD2": null,
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ENFANT"
+        },
+        "adresses": [
+          {
+            "ligne1": "MADAME BENAISSA SAMIRA",
+            "ligne2": "JARDINS DES MOSAIQUES",
+            "ligne3": null,
+            "ligne4": "183 RUE DE LA FONTILLE",
+            "ligne5": null,
+            "ligne6": "30000 NIMES",
+            "ligne7": null,
+            "codePostal": "30000",
+            "telephone": null,
+            "email": null,
+            "typeAdresse": {
+              "libelle": null,
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "TPALM",
+          "codeExterne": null,
+          "libelle": null,
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "VBMOD100AR",
+          "libelleProduit": "Mod H1 AR",
+          "codeGarantie": "VBBASEARS",
+          "libelleGarantie": "MOD STE AR VS34",
+          "codeProfil": "DEFAUT",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2015/11/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "noOrdreDroit": 1,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "099",
+                "libelle": null,
+                "parametres": []
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/09/12",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "D?claration des droits",
+            "modeObtention": "M"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "AL",
+                "libelle": "AL"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "E",
+        "rangAdministratif": "22",
+        "modePaiementPrestations": "V"
+      }
+    },
+    {
+      "beneficiaire": {
+        "dateNaissance": "20151209",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "",
+        "cleNirBeneficiaire": "",
+        "nirOd1": "2840730189104",
+        "cleNirOd1": "79",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "insc": null,
+        "numeroPersonne": "01376841",
+        "refExternePersonne": "01376841",
+        "affiliation": {
+          "nom": "AMJAHDI",
+          "nomPatronymique": "AMJAHDI",
+          "nomMarital": "AMJAHDI",
+          "prenom": "AMINE",
+          "civilite": null,
+          "periodeDebut": "2015/12/01",
+          "periodeFin": null,
+          "qualite": "E",
+          "regimeOD1": "01",
+          "caisseOD1": "301",
+          "centreOD1": null,
+          "regimeOD2": null,
+          "caisseOD2": null,
+          "centreOD2": null,
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ENFANT"
+        },
+        "adresses": [
+          {
+            "ligne1": "MADAME BENAISSA SAMIRA",
+            "ligne2": "JARDINS DES MOSAIQUES",
+            "ligne3": null,
+            "ligne4": "183 RUE DE LA FONTILLE",
+            "ligne5": null,
+            "ligne6": "30000 NIMES",
+            "ligne7": null,
+            "codePostal": "30000",
+            "telephone": null,
+            "email": null,
+            "typeAdresse": {
+              "libelle": null,
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "TPALM",
+          "codeExterne": null,
+          "libelle": null,
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "VBMOD100AR",
+          "libelleProduit": "Mod H1 AR",
+          "codeGarantie": "VBBASEARS",
+          "libelleGarantie": "MOD STE AR VS34",
+          "codeProfil": "DEFAUT",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2015/12/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "noOrdreDroit": 1,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "099",
+                "libelle": null,
+                "parametres": []
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/09/12",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "D?claration des droits",
+            "modeObtention": "M"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "AL",
+                "libelle": "AL"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "E",
+        "rangAdministratif": "23",
+        "modePaiementPrestations": "V"
+      }
+    },
+    {
+      "beneficiaire": {
+        "dateNaissance": "20151209",
+        "rangNaissance": "2",
+        "nirBeneficiaire": "",
+        "cleNirBeneficiaire": "",
+        "nirOd1": "2840730189104",
+        "cleNirOd1": "79",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "insc": null,
+        "numeroPersonne": "01376842",
+        "refExternePersonne": "01376842",
+        "affiliation": {
+          "nom": "AMJAHDI",
+          "nomPatronymique": "AMJAHDI",
+          "nomMarital": "AMJAHDI",
+          "prenom": "INES",
+          "civilite": null,
+          "periodeDebut": "2015/12/01",
+          "periodeFin": null,
+          "qualite": "E",
+          "regimeOD1": "01",
+          "caisseOD1": "301",
+          "centreOD1": null,
+          "regimeOD2": null,
+          "caisseOD2": null,
+          "centreOD2": null,
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": true,
+          "typeAssure": "ENFANT"
+        },
+        "adresses": [
+          {
+            "ligne1": "MADAME BENAISSA SAMIRA",
+            "ligne2": "JARDINS DES MOSAIQUES",
+            "ligne3": null,
+            "ligne4": "183 RUE DE LA FONTILLE",
+            "ligne5": null,
+            "ligne6": "30000 NIMES",
+            "ligne7": null,
+            "codePostal": "30000",
+            "telephone": null,
+            "email": null,
+            "typeAdresse": {
+              "libelle": null,
+              "type": "AD"
+            }
+          }
+        ]
+      },
+      "domainesCouverture": [
+        {
+          "code": "TPALM",
+          "codeExterne": null,
+          "libelle": null,
+          "codeExterneProduit": "REFVIA003ITELIS",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "VBBASEARS",
+          "libelleOptionMutualiste": "",
+          "codeProduit": "VBMOD100AR",
+          "libelleProduit": "Mod H1 AR",
+          "codeGarantie": "VBBASEARS",
+          "libelleGarantie": "MOD STE AR VS34",
+          "codeProfil": "DEFAUT",
+          "libelleCodeRenvoi": "",
+          "tauxRemboursement": "OUI",
+          "isEditable": true,
+          "isSuspension": false,
+          "dateAdhesionCouverture": "2015/12/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "",
+          "origineDroits": "",
+          "noOrdreDroit": 1,
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": "01",
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "099",
+                "libelle": null,
+                "parametres": []
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/09/12",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "DE",
+            "libelleEvenement": "D?claration des droits",
+            "modeObtention": "M"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "AL",
+                "libelle": "AL"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "E",
+        "rangAdministratif": "24",
+        "modePaiementPrestations": "V"
+      }
+    }
+  ],
+  "periodeDebut": "2017/09/12",
+  "periodeFin": "2017/12/31",
+  "AMC_contrat": "0777927120-9125916",
+  "idDeclarations": [
+    "59bb97b6343823d7d48af73d",
+    "59bb97b6343823d7d48af745",
+    "59bb97b6343823d7d48af73a",
+    "59bb97b6343823d7d48af73b",
+    "59bb97b6343823d7d48af73c"
+  ],
+  "dateConsolidation":  "2017-09-22T12:47:19.075Z",
+  "dateCreation":  "2017-09-22T12:47:19.075Z",
+  "userCreation": "job620",
+  "dateModification":  "2017-09-22T12:47:19.075Z",
+  "userModification": "job620",
+  "isLastCarteDemat": true
+}
+

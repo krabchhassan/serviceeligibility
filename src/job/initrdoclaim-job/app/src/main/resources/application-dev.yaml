@@ -1,0 +1,38 @@
+beyond:
+  couloir: htp
+  customer: editeur
+  instance: htp-es15
+TARGET_ENV: local
+schema:
+  path: =Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+logging:
+  level:
+    com:
+      cegedim: info
+kafka:
+  topic:
+    beyond-events: events
+socle:
+  code: Insurance
+TARGET_DOMAIN: dev
+SEND_EVENTS: 'false'
+server:
+  port: '8090'
+ARL_FOLDER: C:/tmp/arlfiles
+insurer_settings_file_path: insurance/serviceeligibility/insurer_settings.json
+service:
+  code: serviceeligibility
+KAFKA_SERVERS: localhost:9092
+CLOUD_PROVIDER: itcare
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp

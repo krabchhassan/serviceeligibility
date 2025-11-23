@@ -1,0 +1,49 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+ext {
+    mapstructVersion = "1.6.2"
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    implementation("org.apache.httpcomponents:httpclient")
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    // -----------------
+    // CEGEDIM libraries
+    // -----------------
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    implementation(project(":lib-next-serviceeligibility-elastic-services"))
+    // tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+    implementation("com.cegedim.beyond.framework:lib-beyond-http-starter")
+
+    // -----------------
+    // Test dependencies
+    // -----------------
+    implementation("org.apache.httpcomponents:httpclient")
+
+    implementation("org.mapstruct:mapstruct:${mapstructVersion}")
+    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    implementation(project(":lib-next-serviceeligibility-core-services")) {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+
+    implementation("com.cegedim.beyond.framework:lib-beyond-filestorage-minio-client") {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+
+
+}

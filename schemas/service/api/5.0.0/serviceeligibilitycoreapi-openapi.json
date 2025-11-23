@@ -1,0 +1,774 @@
+{
+	"openapi": "3.0.1",
+	"info": {
+		"title": "Payment API",
+		"version": "0.0.1"
+	},
+	"servers": [
+		{
+			"url": "/serviceeligibility/core/api",
+			"description": "Generated server url"
+		}
+	],
+	"security": [
+		{
+			"bearer": [
+				"read",
+				"write"
+			]
+		}
+	],
+	"paths": {
+		"/v5/beneficiaryContracts": {
+			"get": {
+				"operationId": "getDroitsV5",
+				"parameters": [
+					{
+						"in": "query",
+						"name": "startDate",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "context",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "insurerId",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "nirCode",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "birthDate",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "birthRank",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "endDate",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "subscriberId",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "contractNumber",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "domains",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "beneficiaryId",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "issuingCompanyCode",
+						"required": false,
+						"schema": {
+							"type": "string"
+						}
+					},
+					{
+						"in": "query",
+						"name": "isForced",
+						"required": false,
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/UniqueAccessPointResponse"
+								}
+							}
+						},
+						"description": "OK"
+					}
+				},
+				"tags": [
+					"unique-access-point-controller-v-5"
+				]
+			}
+		}
+	},
+	"components": {
+		"schemas": {
+			"Address": {
+				"type": "object",
+				"properties": {
+					"line1": {
+						"type": "string"
+					},
+					"line2": {
+						"type": "string"
+					},
+					"line3": {
+						"type": "string"
+					},
+					"line4": {
+						"type": "string"
+					},
+					"line5": {
+						"type": "string"
+					},
+					"line6": {
+						"type": "string"
+					},
+					"line7": {
+						"type": "string"
+					},
+					"postcode": {
+						"type": "string"
+					}
+				}
+			},
+			"AffiliationRO": {
+				"type": "object",
+				"properties": {
+					"attachementRO": {
+						"$ref": "#/components/schemas/AttachementRO"
+					},
+					"nir": {
+						"$ref": "#/components/schemas/Nir"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"AttachementRO": {
+				"type": "object",
+				"properties": {
+					"centerCode": {
+						"type": "string"
+					},
+					"healthInsuranceCompanyCode": {
+						"type": "string"
+					},
+					"regimeCode": {
+						"type": "string"
+					}
+				}
+			},
+			"BenefitPaymentMode": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"currencyCode": {
+						"type": "string"
+					},
+					"label": {
+						"type": "string"
+					}
+				}
+			},
+			"BenefitStatementRecipient": {
+				"type": "object",
+				"properties": {
+					"address": {
+						"$ref": "#/components/schemas/Address"
+					},
+					"benefitStatementRecipientId": {
+						"type": "string"
+					},
+					"beyondBenefitStatementRecipientId": {
+						"type": "string"
+					},
+					"name": {
+						"$ref": "#/components/schemas/NameCorporate"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"BenefitType": {
+				"type": "object",
+				"properties": {
+					"benefitType": {
+						"type": "string"
+					},
+					"domains": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Domain"
+						}
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"CmuContractOpenPeriod": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"CollectiveContract": {
+				"type": "object",
+				"properties": {
+					"externalNumber": {
+						"type": "string"
+					},
+					"number": {
+						"type": "string"
+					}
+				}
+			},
+			"Contact": {
+				"type": "object",
+				"properties": {
+					"email": {
+						"type": "string"
+					},
+					"landline": {
+						"type": "string"
+					},
+					"mobile": {
+						"type": "string"
+					}
+				}
+			},
+			"Dematerialization": {
+				"type": "object",
+				"properties": {
+					"email": {
+						"type": "string"
+					},
+					"isDematerialized": {
+						"type": "boolean"
+					},
+					"mobile": {
+						"type": "string"
+					}
+				}
+			},
+			"DigitRelation": {
+				"type": "object",
+				"properties": {
+					"dematerialization": {
+						"$ref": "#/components/schemas/Dematerialization"
+					},
+					"remoteTransmissions": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/RemoteTransmission"
+						}
+					}
+				}
+			},
+			"Domain": {
+				"type": "object",
+				"properties": {
+					"convention": {
+						"type": "string"
+					},
+					"domainCode": {
+						"type": "string"
+					}
+				}
+			},
+			"GenericRightDto": {
+				"type": "object",
+				"properties": {
+					"businessContributor": {
+						"type": "string"
+					},
+					"cmuContractOpenPeriods": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/CmuContractOpenPeriod"
+						}
+					},
+					"collectiveContract": {
+						"$ref": "#/components/schemas/CollectiveContract"
+					},
+					"context": {
+						"type": "string"
+					},
+					"detailedSecondaryCriterion": {
+						"type": "string"
+					},
+					"externalNumber": {
+						"type": "string"
+					},
+					"insured": {
+						"$ref": "#/components/schemas/Insured"
+					},
+					"insurerId": {
+						"type": "string"
+					},
+					"isIndividualContract": {
+						"type": "boolean"
+					},
+					"itelisCode": {
+						"type": "string"
+					},
+					"number": {
+						"type": "string"
+					},
+					"ocCode": {
+						"type": "string"
+					},
+					"operator": {
+						"type": "string"
+					},
+					"prioritizationOrder": {
+						"type": "string"
+					},
+					"qualification": {
+						"type": "string"
+					},
+					"responsibleContractOpenPeriods": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Period"
+						}
+					},
+					"secondaryCriterion": {
+						"type": "string"
+					},
+					"subscriberFullId": {
+						"type": "string"
+					},
+					"subscriberId": {
+						"type": "string"
+					},
+					"subscriptionDate": {
+						"type": "string"
+					},
+					"suspensionPeriods": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/SuspensionPeriod"
+						}
+					},
+					"terminationDate": {
+						"type": "string"
+					},
+					"isForced": {
+						"type": "boolean"
+					}
+				}
+			},
+			"Identity": {
+				"type": "object",
+				"properties": {
+					"affiliationsRO": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/AffiliationRO"
+						}
+					},
+					"birthDate": {
+						"type": "string"
+					},
+					"birthRank": {
+						"type": "string"
+					},
+					"nir": {
+						"$ref": "#/components/schemas/Nir"
+					},
+					"personExternalRef": {
+						"type": "string"
+					},
+					"personNumber": {
+						"type": "string"
+					}
+				}
+			},
+			"Insured": {
+				"type": "object",
+				"properties": {
+					"administrativeRank": {
+						"type": "string"
+					},
+					"attendingPhysicianOpenedPeriods": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Period"
+						}
+					},
+					"cancellationDate": {
+						"type": "string"
+					},
+					"data": {
+						"$ref": "#/components/schemas/InsuredData"
+					},
+					"digitRelation": {
+						"$ref": "#/components/schemas/DigitRelation"
+					},
+					"healthMutualSubscriptionDate": {
+						"type": "string"
+					},
+					"identity": {
+						"$ref": "#/components/schemas/Identity"
+					},
+					"individualSubscriptionNumber": {
+						"type": "string"
+					},
+					"individualSubscriptionStartDate": {
+						"type": "string"
+					},
+					"isSubscriber": {
+						"type": "boolean"
+					},
+					"quality": {
+						"$ref": "#/components/schemas/Quality"
+					},
+					"rights": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Right"
+						}
+					},
+					"specialPlans": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/SpecialPlan"
+						}
+					},
+					"specialStatuses": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/SpecialStatus"
+						}
+					}
+				}
+			},
+			"InsuredData": {
+				"type": "object",
+				"properties": {
+					"address": {
+						"$ref": "#/components/schemas/Address"
+					},
+					"benefitStatementRecipients": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/BenefitStatementRecipient"
+						}
+					},
+					"contact": {
+						"$ref": "#/components/schemas/Contact"
+					},
+					"name": {
+						"$ref": "#/components/schemas/Name"
+					},
+					"paymentRecipients": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/PaymentRecipient"
+						}
+					}
+				}
+			},
+			"Name": {
+				"type": "object",
+				"properties": {
+					"civility": {
+						"type": "string"
+					},
+					"commonName": {
+						"type": "string"
+					},
+					"firstName": {
+						"type": "string"
+					},
+					"lastName": {
+						"type": "string"
+					}
+				}
+			},
+			"NameCorporate": {
+				"type": "object",
+				"properties": {
+					"civility": {
+						"type": "string"
+					},
+					"commonName": {
+						"type": "string"
+					},
+					"corporateName": {
+						"type": "string"
+					},
+					"firstName": {
+						"type": "string"
+					},
+					"lastName": {
+						"type": "string"
+					}
+				}
+			},
+			"Nir": {
+				"required": [
+					"key",
+					"code"
+				],
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"key": {
+						"type": "string"
+					}
+				}
+			},
+			"PaymentRecipient": {
+				"type": "object",
+				"properties": {
+					"address": {
+						"$ref": "#/components/schemas/Address"
+					},
+					"benefitPaymentMode": {
+						"$ref": "#/components/schemas/BenefitPaymentMode"
+					},
+					"beyondPaymentRecipientId": {
+						"type": "string"
+					},
+					"name": {
+						"$ref": "#/components/schemas/NameCorporate"
+					},
+					"paymentRecipientId": {
+						"type": "string"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"rib": {
+						"$ref": "#/components/schemas/Rib"
+					}
+				}
+			},
+			"Period": {
+				"type": "object",
+				"properties": {
+					"end": {
+						"type": "string"
+					},
+					"start": {
+						"type": "string"
+					}
+				}
+			},
+			"Product": {
+				"type": "object",
+				"properties": {
+					"benefitsType": {
+						"uniqueItems": true,
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/BenefitType"
+						}
+					},
+					"issuingCompanyCode": {
+						"type": "string"
+					},
+					"issuingCompanyName": {
+						"type": "string"
+					},
+					"offerCode": {
+						"type": "string"
+					},
+					"otpProductCode": {
+						"type": "string"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"productCode": {
+						"type": "string"
+					}
+				}
+			},
+			"Quality": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"label": {
+						"type": "string"
+					}
+				}
+			},
+			"RemoteTransmission": {
+				"type": "object",
+				"properties": {
+					"isRemotelyTransmitted": {
+						"type": "boolean"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"Rib": {
+				"type": "object",
+				"properties": {
+					"bic": {
+						"type": "string"
+					},
+					"iban": {
+						"type": "string"
+					}
+				}
+			},
+			"Right": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"guaranteeAgeDate": {
+						"type": "string"
+					},
+					"insurerCode": {
+						"type": "string"
+					},
+					"originCode": {
+						"type": "string"
+					},
+					"originInsurerCode": {
+						"type": "string"
+					},
+					"prioritizationOrder": {
+						"type": "string"
+					},
+					"products": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/Product"
+						}
+					},
+					"type": {
+						"type": "string"
+					},
+					"waitingCode": {
+						"type": "string"
+					}
+				}
+			},
+			"SpecialPlan": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"SpecialStatus": {
+				"type": "object",
+				"properties": {
+					"code": {
+						"type": "string"
+					},
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					}
+				}
+			},
+			"SuspensionPeriod": {
+				"type": "object",
+				"properties": {
+					"period": {
+						"$ref": "#/components/schemas/Period"
+					},
+					"suspensionReason": {
+						"type": "string"
+					},
+					"suspensionRemovalReason": {
+						"type": "string"
+					},
+					"suspensionType": {
+						"type": "string"
+					}
+				}
+			},
+			"UniqueAccessPointResponse": {
+				"type": "object",
+				"properties": {
+					"contracts": {
+						"type": "array",
+						"items": {
+							"$ref": "#/components/schemas/GenericRightDto"
+						}
+					}
+				}
+			}
+		},
+		"securitySchemes": {
+			"bearer": {
+				"type": "http",
+				"scheme": "bearer",
+				"bearerFormat": "JWT"
+			}
+		}
+	}
+}

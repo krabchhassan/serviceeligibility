@@ -1,0 +1,161 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "declarationsConsolideesCarteTP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "DeclarationsConsolideesCarteTP": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+            "type": "string"
+          },
+          "effetDebut": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dateCreation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreation": {
+            "type": "string"
+          },
+          "dateModification": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userModification": {
+            "type": "string"
+          },
+          "beneficiaire": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Beneficiaire"
+          },
+          "contrat": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Contrat"
+          },
+          "domaineDroits": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/DomaineDroit"
+            }
+          },
+          "produit": {
+            "$ref": "#/components/schemas/Produit"
+          },
+          "codeService": {
+            "type": "string"
+          },
+          "AMC_contrat": {
+            "type": "string"
+          },
+          "idDeclarations": {
+            "type": "array",
+			"items": {
+			  "type": "string"
+			}
+          },
+          "dateConsolidation": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "traitementOrigine": {
+            "type": "string"
+          },
+          "listeDomainesConventions": {
+            "type": "array",
+			"items": {
+			  "$ref": "#/components/schemas/DomainesConventions"
+			}
+          },
+          "periodeReferenceDebut": {
+            "type": "string"
+          },
+          "periodeReferenceFin": {
+            "type": "string"
+          },
+          "declarationValide": {
+            "type": "boolean"
+          },
+          "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "DeclarationsConsolideesCarteTP"
+      },
+	  "DomainesConventions": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+		    "type": "string"
+		  },
+          "rang": {
+		    "type": "integer"
+		  },
+		  "conventions": {
+		    "type": "array",
+			"items": {
+			  "$ref": "#/components/schemas/Conventions"
+			}
+		  }
+        },
+        "required": [],
+        "title": "DomainesConventions"
+      },
+	  "Conventions": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+		    "type": "string"
+		  },
+          "priorite": {
+		    "type": "integer"
+		  }
+        },
+        "required": [],
+        "title": "Conventions"
+      },
+	  "Produit": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeExterneProduit": {
+		    "type": "string"
+		  },
+          "libelleExterneProduit": {
+		    "type": "string"
+		  },
+          "codeOptionMutualiste": {
+		    "type": "string"
+		  },
+          "libelleOptionMutualiste": {
+		    "type": "string"
+		  },
+          "codeProduit": {
+		    "type": "string"
+		  },
+          "libelleProduit": {
+		    "type": "string"
+		  },
+          "motifEvenemeent": {
+		    "type": "string"
+		  }
+        },
+        "required": [],
+        "title": "Produit"
+      }
+    }
+  }
+}

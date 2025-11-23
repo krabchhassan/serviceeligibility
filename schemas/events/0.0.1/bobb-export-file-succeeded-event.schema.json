@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Export d'un fichier",
+  "description": "Cet événement sera émis quand l'export d'un fichier de correspondance est bien émis",
+  "additionalProperties": false,
+  "properties": {
+    "fileName": {
+      "type": "string",
+      "title": "Nom du fichier",
+      "description": "Précise le nom du fichier qui est exporté"
+    }
+  },
+  "required": [
+    "fileName"
+  ],
+  "$id": "Insurance.serviceeligibility.export.bobb.file.succeeded.event/0.0.1"
+}

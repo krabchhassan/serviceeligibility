@@ -1,0 +1,27 @@
+[
+  {
+    "validityDate": "2024-07-03",
+    "code": 1,
+    "offerCode": "FSC65331",
+    "natures": [
+      "ACTES_DE_PREVENTION",
+      "ACTES_DE_SPECIALITES__OPTAM___NON_OPTAM_",
+      "APPAREILLAGE",
+      "AUXILIAIRES_MEDICAUX",
+      "BIOLOGIE",
+      "FORFAITS",
+      "FRAIS_DENTAIRES",
+      "HOSPITALISATION__OPTAM___NON_OPTAM_",
+      "MEDECINE_GENERALE__OPTAM___NON_OPTAM_",
+      "OPTIQUE",
+      "PHARMACIE",
+      "RADIOLOGIE__OPTAM___NON_OPTAM_"
+    ],
+    "products": [
+      "FSBC65331A",
+      "FSOC65332A",
+      "FSOC65333A",
+      "FSSC65334A"
+    ]
+  }
+]

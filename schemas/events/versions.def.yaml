@@ -1,0 +1,98 @@
+events:
+  - name: beneficiary-creation-event
+    version: 0.0.1
+  - name: beneficiary-modification-event
+    version: 0.0.1
+  - name: contract-creation-event
+    version: 0.0.1
+  - name: contract-modification-event
+    version: 0.0.1
+  - name: contract-reception-event
+    version: 0.0.2
+  - name: contract-suppression-event
+    version: 0.0.1
+  - name: contract-invalid-reception-event
+    version: 0.0.2
+  - name: insured-reception-event
+    version: 0.0.1
+  - name: insured-invalid-reception-event
+    version: 0.0.1
+  - name: insured-termination-event
+    version: 0.0.2
+  - name: prestij-reception-event
+    version: 0.0.1
+  - name: prestij-creation-event
+    version: 0.0.1
+  - name: prestij-modification-event
+    version: 0.0.1
+  - name: prestij-invalid-reception-event
+    version: 0.0.1
+  - name: contract-suspension-event
+    version: 0.0.1
+  - name: contract-suspension-lifted-event
+    version: 0.0.1
+  - name: contractTP-consolidation-failed-event
+    version: 0.0.1
+  - name: insured-payment-recipient-modification-event
+    version: 0.0.1
+  - name: declaration-creation-event
+    version: 0.0.2
+  - name: recalcul-blb-start-event
+    version: 0.0.1
+  - name: recalcul-blb-end-event
+    version: 0.0.1
+  - name: beneficiary-sending-blb-error-event
+    version: 0.0.1
+  - name: carteTP-demat-active-event
+    version: 0.0.1
+  - name: carteTP-demat-creation-event
+    version: 0.0.1
+  - name: carteTP-demat-desactivation-event
+    version: 0.0.1
+  - name: carteTP-papier-generate-event
+    version: 0.0.1
+  - name: carteTP-papier-generate-failed-event
+    version: 0.0.2
+  - name: declaration-conso-event
+    version: 0.0.1
+  - name: declaration-conso-failed-event
+    version: 0.0.1
+  - name: trigger-finished-event
+    version: 0.0.2
+  - name: triggered-beneficiary-finished-event
+    version: 0.0.2
+  - name: extract-tpoffline-start-event
+    version: 0.0.1
+  - name: extract-tpoffline-end-event
+    version: 0.0.1
+  - name: bobb-import-file-failed-event
+    version: 0.0.1
+  - name: bobb-import-file-succeeded-event
+    version: 0.0.1
+  - name: bobb-import-line-failed-event
+    version: 0.0.1
+  - name: bobb-import-lines-succeeded-event
+    version: 0.0.1
+
+  - name: bobb-export-file-succeeded-event
+    version: 0.0.1
+  - name: bobb-export-file-failed-event
+    version: 0.0.1
+
+  - name: bobb-transformation-file-succeeded-event
+    version: 0.0.1
+  - name: bobb-transformation-file-failed-event
+    version: 0.0.1
+  - name: delai-retention-modification-event
+    version: 0.0.1
+
+  - name: delai-retention-finished-event
+    version: 0.0.1
+  - name: trigger-created-in-error-event
+    version: 0.0.1
+
+
+  - name: almerys-product-creation-event
+    version: 0.0.1
+  - name: almerys-product-modification-event
+    version: 0.0.1

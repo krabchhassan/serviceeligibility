@@ -1,0 +1,31 @@
+image: $NEXUS_MIRROR/python:3.7-slim-buster
+
+stages:
+  - Tests unit
+  - Build and upload
+
+variables:
+  CURRENT_FOLDER: src/func/otp-search
+  LIBRARY: otp-common
+
+before_script:
+  - cd $CURRENT_FOLDER
+
+unit_test:
+  stage: Tests unit
+  script:
+    - pip install --index-url=https://nexus-forge.dev.beyond.cegedim.cloud/repository/pypi-all/simple --extra-index-url=https://nexus-forge.dev.beyond.cegedim.cloud/repository/pypi-internal/simple -r requirements_dev.txt pytest==6.2 pytest-mock==3.6 mock==4.0.3 jsondiff==1.3.0
+    - source pythonpath.txt
+    - python -m pytest --showlocals -vv tests/unit
+
+build_upload:
+  stage: Build and upload
+  script:
+    - pip install --index-url=https://nexus-forge.dev.beyond.cegedim.cloud/repository/pypi-all/simple pep517==0.12 twine==3.4 python-gitlab==2.10
+    - python -m pep517.build .
+    - python package_management.py https://$CI_SERVER_HOST $GITLAB_TECH_USER_TOKEN $CI_PROJECT_NAME $LIBRARY delete
+    - twine upload dist/*
+  rules:
+    - if: '$CI_COMMIT_BRANCH =~ /^(initiative|feature|hotfix)/'
+      when: on_success
+    - when: never

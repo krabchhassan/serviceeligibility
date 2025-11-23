@@ -1,0 +1,221 @@
+{
+  "referenceExterne" : null,
+  "codeEtat" : "V",
+  "effetDebut" : "2018-07-05T08:02:44.648+0000",
+  "idDeclarant" : "0000401166",
+  "isCarteTPaEditer" : false,
+  "nomFichierOrigine" : "Test_Maille_OTP_02_03.OK",
+  "dateCreation" : "2018-07-05T08:02:44.648+0000",
+  "userCreation" : "job605",
+  "dateModification" : "2018-07-05T08:02:44.648+0000",
+  "userModification" : "job605",
+  "versionDeclaration" : "V02",
+  "beneficiaire" : {
+    "dateNaissance" : "19791006",
+    "rangNaissance" : "1",
+    "nirBeneficiaire" : "1791062498049",
+    "cleNirBeneficiaire" : "43",
+    "nirOd1" : "1791062498049",
+    "cleNirOd1" : "43",
+    "nirOd2" : "",
+    "cleNirOd2" : "",
+    "insc" : null,
+    "numeroPersonne" : "52698265",
+    "refExternePersonne" : "52698265",
+    "affiliation" : {
+      "nom" : "LOISARD",
+      "nomPatronymique" : "LOISARD",
+      "nomMarital" : "LOISARD",
+      "prenom" : "JOSEPH",
+      "civilite" : null,
+      "periodeDebut" : "2012/01/01",
+      "periodeFin" : null,
+      "qualite" : "A",
+      "regimeOD1" : "01",
+      "caisseOD1" : "597",
+      "centreOD1" : null,
+      "regimeOD2" : null,
+      "caisseOD2" : null,
+      "centreOD2" : null,
+      "hasMedecinTraitant" : false,
+      "regimeParticulier" : "",
+      "isBeneficiaireACS" : false,
+      "isTeleTransmission" : true,
+      "typeAssure" : "ASSURE"
+    },
+    "adresses" : [
+
+    ]
+  },
+  "contrat" : {
+    "numero" : "93624158",
+    "dateSouscription" : "2012/01/01",
+    "dateResiliation" : null,
+    "type" : null,
+    "nomPorteur" : "LOISARD",
+    "prenomPorteur" : "JOSEPH",
+    "civilitePorteur" : "M",
+    "numeroAdherent" : "93624158",
+    "numeroAdherentComplet" : null,
+    "qualification" : "B",
+    "numeroContratCollectif" : "00219071",
+    "rangAdministratif" : "01",
+    "isContratResponsable" : true,
+    "isContratCMU" : false,
+    "destinataire" : "AD",
+    "individuelOuCollectif" : "2",
+    "situationDebut" : null,
+    "situationFin" : null,
+    "motifFinSituation" : null,
+    "lienFamilial" : "A",
+    "categorieSociale" : null,
+    "situationParticuliere" : null,
+    "typeConvention" : "IS",
+    "critereSecondaireDetaille" : "",
+    "critereSecondaire" : "",
+    "numeroExterneContratIndividuel" : "",
+    "numeroExterneContratCollectif" : "",
+    "modePaiementPrestations" : "V",
+    "gestionnaire" : "",
+    "groupeAssures" : "0SOUS",
+    "numeroCarte" : "000000000000684",
+    "editeurCarte" : "",
+    "fondCarte" : null,
+    "annexe1Carte" : null,
+    "annexe2Carte" : null,
+    "numAMCEchange" : null,
+    "numOperateur" : null
+  },
+  "domaineDroits" : [
+    {
+      "code" : "PHAR",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "AXASCCGDIM",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PRODUIT_01",
+      "libelleProduit" : "CEGEDIM ACTIFS",
+      "codeGarantie" : "GARANTIE_01",
+      "libelleGarantie" : "CEGEDIM CONFORT",
+      "codeProfil" : "PHARIS",
+      "libelleCodeRenvoi" : "IS",
+      "tauxRemboursement" : "00000100",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2014/02/01",
+      "uniteTauxRemboursement" : "TA",
+      "referenceCouverture" : "REFERENCE_02",
+      "origineDroits" : "",
+      "noOrdreDroit" : 1,
+      "categorie" : "PHAR",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "02A",
+            "libelle" : null,
+            "parametres" : [
+              {
+                "numero" : "3",
+                "valeur" : "100.00"
+              }
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/03/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "IN",
+        "libelleEvenement" : "Initialisation des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code" : "HOSP",
+      "codeExterne" : null,
+      "libelle" : null,
+      "codeExterneProduit" : "",
+      "libelleExterne" : null,
+      "codeOptionMutualiste" : "AXASCCGDIM",
+      "libelleOptionMutualiste" : "",
+      "codeProduit" : "PRODUIT_01",
+      "libelleProduit" : "CEGEDIM ACTIFS",
+      "codeGarantie" : "GARANTIE_01",
+      "libelleGarantie" : "CEGEDIM CONFORT",
+      "codeProfil" : "HOSPPECIS",
+      "libelleCodeRenvoi" : "IS",
+      "tauxRemboursement" : "PEC",
+      "isEditable" : true,
+      "isSuspension" : false,
+      "dateAdhesionCouverture" : "2014/02/01",
+      "uniteTauxRemboursement" : "XX",
+      "referenceCouverture" : "REFERENCE_02",
+      "origineDroits" : "",
+      "noOrdreDroit" : 10,
+      "categorie" : "HOSP",
+      "prioriteDroit" : {
+        "code" : "01",
+        "libelle" : "01",
+        "typeDroit" : "01",
+        "prioriteBO" : "01"
+      },
+      "prestations" : [
+        {
+          "code" : "DEF",
+          "codeRegroupement" : null,
+          "libelle" : null,
+          "isEditionRisqueCarte" : false,
+          "dateEffet" : null,
+          "formule" : {
+            "numero" : "099",
+            "libelle" : null,
+            "parametres" : [
+
+            ]
+          },
+          "formuleMetier" : null
+        }
+      ],
+      "periodeDroit" : {
+        "periodeDebut" : "2023/03/01",
+        "periodeFin" : "2023/12/31",
+        "motifEvenement" : "IN",
+        "libelleEvenement" : "Initialisation des droits",
+        "modeObtention" : "O"
+      },
+      "conventionnements" : [
+        {
+          "priorite" : 0,
+          "typeConventionnement" : {
+            "code" : "IS",
+            "libelle" : "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "updateElastic" : 1
+}

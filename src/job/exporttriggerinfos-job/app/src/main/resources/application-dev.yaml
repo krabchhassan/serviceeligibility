@@ -1,0 +1,64 @@
+MONGODB_URL: mongodb://localhost:27017
+MONGODB_DATABASE_NAME: next-serviceeligibility-core-api
+BDD_MONGODB_URL: mongodb://localhost:27017/next-serviceeligibility-core-api
+
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp
+
+schema:
+  path: =Insurance/serviceeligibility
+  url: https://documentation.beyond-by-cegedim.com/schemas/schemas/release/pi14/events
+kafka:
+  topic:
+    beyond-events: events
+COMMON_INDEX_BASENAME: local
+ELASTICSEARCH_PASSWORD: password
+ELASTICSEARCH_URL: https://beyond-data-dev.es.cegedim.cloud
+ELASTICSEARCH_LOGIN: login
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur
+beyond:
+  couloir: htp
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-extractbenefmultios-job
+SEND_EVENTS: 'false'
+
+server:
+  port: 8090
+TARGET_ENV: local
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits
+EXTRACT_FLUX: 'true'
+logging:
+  level:
+    com:
+      cegedim: info
+socle:
+  code: Insurance
+TARGET_DOMAIN: dev
+ARL_FOLDER: C:/tmp/arlfiles
+service:
+  code: serviceeligibility
+KAFKA_SERVERS: localhost:9092
+CLOUD_PROVIDER: itcare
+
+s3_bucket: cegedim-beyond-dev-test-msdata
+s3_access_key: nzua4ydzoc19biobbyqz
+s3_connection_timeout: '900'
+s3_host: storage-et1.cloud.cegedim.com
+s3_port: '0'
+s3_read_timeout: '900'
+s3_region: '#'
+s3_secret_access_key: NiVJi/CZj/wH2Bbg38+1pGL+In9VvHbi8yYBlRYw
+s3_secure: 'false'
+insurer_settings_file_path: insurance/serviceeligibility/insurer_settings.json
+s3_orga_admin_data_path: insurance/organisation/organisations-admin-data/
+s3_file_path: insurance/organisation/setting-scopes/scopes.json
+s3_write_timeout: '900'
+proxy:
+  host: '#'
+  port: '0'
+MULTIOC_API: https://htp-es14.dev.beyond.cegedim.cloud/multioc/core/api

@@ -1,0 +1,73 @@
+{
+  "nom": {
+    "nomFamille": "JABOTE",
+    "nomUsage": "JABOTE",
+    "prenom": "Elise",
+    "civilite": "MLLE"
+  },
+  "adresse": {
+    "ligne1": "Mlle JABOTE Elise",
+    "ligne2": "",
+    "ligne3": "residence des capitouls",
+    "ligne4": "7 IMPASSE DU RAMIER DES CATALANS",
+    "ligne5": "",
+    "ligne6": "31000 TOULOUSE",
+    "ligne7": "",
+    "codePostal": "31000"
+  },
+  "destinatairesPrestations": [
+    {
+      "nom": {
+        "nomFamille": "JABOTE",
+        "nomUsage": "JABOTE",
+        "prenom": "Gregory",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M JABOTE Gregory",
+        "ligne2": "",
+        "ligne3": "residence des capitouls",
+        "ligne4": "7 IMPASSE DU RAMIER DES CATALANS",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "rib": {
+        "iban": "FR7613106001004578945612336",
+        "bic": "AGRIFRPP831"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "nom": {
+        "nomFamille": "JABOTE",
+        "nomUsage": "JABOTE",
+        "prenom": "Gregory",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M JABOTE Gregory",
+        "ligne2": "",
+        "ligne3": "residence des capitouls",
+        "ligne4": "7 IMPASSE DU RAMIER DES CATALANS",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ]
+}

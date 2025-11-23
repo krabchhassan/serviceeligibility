@@ -1,0 +1,10 @@
+{
+    "errors": [
+        {
+            "error_code": "NEXT-ENGINE-CORE-00408-1",
+            "data": {},
+            "message": "no offer version for this insurer company and this product code",
+            "level": "ERROR"
+        }
+    ]
+}

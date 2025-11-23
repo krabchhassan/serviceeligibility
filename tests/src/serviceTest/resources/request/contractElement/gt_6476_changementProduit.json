@@ -1,0 +1,21 @@
+{
+  "codeInsurer": "BALOO",
+  "codeContractElement": "GT_6476",
+  "codeAMC": "",
+  "label": "GT_6476",
+  "ignored": false,
+  "origine": "IMPORT",
+  "user": "marsupilami.fr",
+  "productElements": [
+    {
+      "codeOffer": "1472_DELTA_01",
+      "codeProduct": "1472_DELTA_01_P02",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "%%CURRENT_YEAR%%-01-01T00:00:00.000Z",
+      "effectiveDate": "2025-01-01T00:00:00.000Z"
+    }
+  ],
+  "status": "ACTIVE",
+  "fileName": "BOBB-correctif-pour-date-incoherente-HCR_PAUL.json"
+}

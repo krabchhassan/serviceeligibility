@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://norme.cegedimassurances.com/carteDemat/beans"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/beans"
+	elementFormDefault="qualified">
+
+	<xs:include schemaLocation="type_contratV2.xsd" />
+	<xs:include schemaLocation="type_adresse_contrat.xsd" />
+	<xs:include schemaLocation="type_domaine_droits.xsd" />
+	<xs:include schemaLocation="type_beneficiaire.xsd" />
+
+	<xs:complexType name="carteDematerialiseeV2ResponseType">
+		<xs:sequence>
+			<xs:element name="contrat" type="type_contratV2" />
+			<xs:element name="adresse_contrat" type="type_adresse_contrat" minOccurs="0" />
+			<xs:element name="domaines" type="domaines" />
+			<xs:element name="beneficiaires" type="beneficiaires" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="domaines">
+		<xs:sequence>
+			<xs:element name="domaine" type="type_domaine_droits"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="beneficiaires">
+		<xs:sequence>
+			<xs:element name="beneficiaire" type="type_beneficiaire"
+				minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,17 @@
+{
+  "_id": "59d35cbad9bb357b792638b8",
+  "idTrigger": "59d35cbad9bb357b792638b2",
+  "nir": "NIR1",
+  "numeroContrat": "Contrat1",
+  "isContratIndividuel": true,
+  "dateNaissance": "19840101",
+  "amc": "AMC2",
+  "collectivite": "collectivite1",
+  "college": "college1",
+  "critereSecondaireDetaille": "csd1",
+  "offre": "offre1",
+  "produit": "produit1",
+  "actionARealiser": null,
+  "parametreAction": null,
+  "lastAction": null
+}

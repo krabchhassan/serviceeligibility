@@ -1,0 +1,118 @@
+beyond:
+  caching:
+    specs:
+      declarantCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      ocCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      ocCodeCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      offerStructureCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreByTypeCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      pwCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      referentialCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      servicePrestationsRdoCache:
+        prefix-cache-name-with: "tenant-${beyond.instance}-"
+        time-to-live: PT2M
+        type: redis
+      managementScopeEntities:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      bobb:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCarteTPCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+  features:
+    mongo: true
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-core-api
+    publisher:
+      enabled: true
+  messaging:
+    transactional: false
+    types:
+      String: java.lang.String
+      TriggerId: com.cegedim.next.serviceeligibility.core.model.kafka.TriggerId
+    security-context:
+      enabled: false
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+  observability:
+    tracing:
+      enabled: true
+    log:
+      enabled: true
+insurer_settings_file_path: insurance/serviceeligibility/insurer_settings.json
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: error
+parameter:
+  cache:
+    name: parameter
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+  max-http-request-header-size: 16KB
+spring:
+  application:
+    name: serviceeligibility-core-api
+  datasource:
+    tomcat:
+      initialSize: '2'
+      max-active: '5'
+  jackson:
+    mapper:
+      default-view-inclusion: true
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  main:
+    web-application-type: servlet
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB

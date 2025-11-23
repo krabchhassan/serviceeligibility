@@ -1,0 +1,232 @@
+{
+	"type": "object",
+	"title": "Message de synchronisation entre BDDS et Recipient",
+	"description": "Liste des destinataires de paiement/prestation d'un contrat HTP",
+	"additionalProperties": false,
+	"properties": {
+		"_id": {
+			"type": "string"
+		},
+		"insurerId": {
+			"type": "string"
+		},
+		"issuingCompanyCode": {
+			"type": "string"
+		},
+		"number": {
+			"type": "string"
+		},
+		"subscriberId": {
+			"type": "string"
+		},
+		"paymentRecipients": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"properties": {
+					"paymentRecipientId": {
+						"type": "string"
+					},
+					"beyondPaymentRecipientId": {
+						"type": "string"
+					},
+					"name": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"lastName": {
+								"type": "string"
+							},
+							"commonName": {
+								"type": "string"
+							},
+							"firstName": {
+								"type": "string"
+							},
+							"civility": {
+								"type": "string"
+							},
+							"corporateName": {
+								"type": "string"
+							}
+						}
+					},
+					"address": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"line1": {
+								"type": "string"
+							},
+							"line2": {
+								"type": "string"
+							},
+							"line3": {
+								"type": "string"
+							},
+							"line4": {
+								"type": "string"
+							},
+							"line5": {
+								"type": "string"
+							},
+							"line6": {
+								"type": "string"
+							},
+							"line7": {
+								"type": "string"
+							},
+							"postcode": {
+								"type": "string"
+							}
+						}
+					},
+					"rib": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"bic": {
+								"type": "string"
+							},
+							"iban": {
+								"type": "string"
+							}
+						}
+					},
+					"benefitPaymentMode": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"code": {
+								"type": "string"
+							},
+							"label": {
+								"type": "string"
+							},
+							"currencyCode": {
+								"type": "string"
+							}
+						}
+					},
+					"period": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"start": {
+								"type": "string",
+								"format": "yyyy-MM-dd"
+							},
+							"end": {
+								"type": "string",
+								"format": "yyyy-MM-dd"
+							}
+						}
+					}
+				}
+			}
+		},
+		"benefitStatementRecipients": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"properties": {
+					"benefitStatementRecipientId": {
+						"type": "string"
+					},
+					"beyondBenefitStatementRecipientId": {
+						"type": "string"
+					},
+					"name": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"lastName": {
+								"type": "string"
+							},
+							"commonName": {
+								"type": "string"
+							},
+							"firstName": {
+								"type": "string"
+							},
+							"civility": {
+								"type": "string"
+							},
+							"corporateName": {
+								"type": "string"
+							}
+						}
+					},
+					"address": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"line1": {
+								"type": "string"
+							},
+							"line2": {
+								"type": "string"
+							},
+							"line3": {
+								"type": "string"
+							},
+							"line4": {
+								"type": "string"
+							},
+							"line5": {
+								"type": "string"
+							},
+							"line6": {
+								"type": "string"
+							},
+							"line7": {
+								"type": "string"
+							},
+							"postcode": {
+								"type": "string"
+							}
+						}
+					},
+					"period": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"start": {
+								"type": "string",
+								"format": "yyyy-MM-dd"
+							},
+							"end": {
+								"type": "string",
+								"format": "yyyy-MM-dd"
+							}
+						}
+					},
+					"dematerialisation": {
+						"type": "object",
+						"additionalProperties": false,
+						"properties": {
+							"email": {
+								"type": "string"
+							},
+							"mobile": {
+								"type": "string"
+							},
+							"IsDematerialise": {
+								"type": "boolean"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"required": [
+		"_id",
+		"insurerId",
+		"issuingCompanyCode",
+		"number",
+		"subscriberId"
+	]
+}

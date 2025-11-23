@@ -1,0 +1,26 @@
+{
+  "beneficiaire": {
+    "nircertifie": "1806954654612",
+    "cleNIR": "82",
+    "dateNaissance": "19800605",
+    "rangGemellaire": "1"
+  },
+  "amc": {
+    "numeroAMCPrefectoral": "0000401166",
+    "adherent": "00711118"
+  },
+  "infoBdd": {
+    "typeRechercheBenef": "0",
+    "typeRechercheSegment": "3",
+    "listeSegmentRecherche": {
+      "segmentRecherche": [
+        "EXTE"
+      ]
+    },
+    "typeProfondeurRecherche": "0"
+  },
+  "dates": {
+    "dateDebut": "2025-03-13",
+    "dateFin": "2025-03-13"
+  }
+}

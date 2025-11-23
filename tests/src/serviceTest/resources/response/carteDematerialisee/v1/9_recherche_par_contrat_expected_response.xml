@@ -1,0 +1,20 @@
+        <carteDematerialiseeResponse xmlns="http://norme.cegedimassurances.com/carteDemat/beans">
+            <header_out>
+                <header_technique_out>
+                    <id_serveur>nomLogiciel</id_serveur>
+                    <date>*</date>
+                    <id_session_serveur>*</id_session_serveur>
+                    <id_session_client>sessionClient</id_session_client>
+                    <version_serveur>versionLogiciel</version_serveur>
+                </header_technique_out>
+                <header_fonctionnel_out>
+                    <idDossier_client>dossierClient</idDossier_client>
+                    <idDossier_serveur>dossierServeur</idDossier_serveur>
+                </header_fonctionnel_out>
+            </header_out>
+            <code_response>
+                <code>6010</code>
+                <libelle>Aucune carte TP valide pour ce contrat</libelle>
+            </code_response>
+            <commentaires/>
+        </carteDematerialiseeResponse>

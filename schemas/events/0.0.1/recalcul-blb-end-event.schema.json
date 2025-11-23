@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Fin réinit BLB",
+  "description": "Fin du traitement de réinitialisation de la base de localisation des bénéficiaires",
+  "additionalProperties": false,
+  "properties": {
+    "deletionBeforeReinit": {
+      "type": "string",
+      "title": "Suppression avant réinit",
+      "description": "Réponse de la BLB à la demande de suppression avant réinitialisation"
+    },
+    "nbBeneficiaries": {
+      "type": "integer",
+      "title": "Nb bénéficiaires envoyés",
+      "description": "Nombre de bénéficiaires envoyées avec succès à la base de localisation des bénéficiaires"
+    },
+    "nbTrackedBeneficiariesOK": {
+      "type": "integer",
+      "title": "Nb réponse OK",
+      "description": "Nombre de bénéficiaires intégrées en base de localisation des bénéficiaires"
+    },
+    "nbTrackedBeneficiariesKO": {
+      "type": "integer",
+      "title": "Nb réponse KO",
+      "description": "Nombre de bénéficiaires avec réponse en erreur de la base de localisation des bénéficiaires"
+    },
+    "nbTrackedBeneficiariesNoResponse": {
+      "type": "integer",
+      "title": "Nb messages sans réponse",
+      "description": "Nombre de bénéficiaires sans réponse de la base de localisation des bénéficiaires"
+    },
+    "nbTrackedBeneficiariesNoSend": {
+      "type": "integer",
+      "title": "Nb messages non envoyés",
+      "description": "Nombre de bénéficiaires non envoyés à la base de localisation des bénéficiaires"
+    }
+  }
+}

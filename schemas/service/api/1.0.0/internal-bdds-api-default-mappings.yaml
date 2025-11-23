@@ -1,0 +1,22 @@
+apiName: internal-bdds-api-default
+# all endpoints will be under this entrypointPath
+entrypointPath: "/beyond/internal/api/bdds/v1/htp"
+mappings:
+- match:
+    path: /searchBeneficiaries
+    methods: ["POST"]
+  redirect_to:
+    component: technicalComponents/serviceeligibility-core-api
+    path: "/searchBeneficiaries"
+- match:
+    path: /beneficiaryTpDetails
+    methods: ["GET"]
+  redirect_to:
+    component: technicalComponents/serviceeligibility-core-api
+    path: "/beneficiaryTpDetails"
+- match:
+    path: /contrats/extract
+    methods: [ "POST" ]
+  redirect_to:
+    component: technicalComponents/serviceeligibility-core-api
+    path: "/v1/contrats/extract"

@@ -1,0 +1,445 @@
+{
+  "idDeclarant" : "0000401166",
+  "codeOc" : null,
+  "numeroContrat" : "C00024",
+  "dateSouscription" : "2019/01/01",
+  "dateResiliation" : null,
+  "type" : null,
+  "nomPorteur" : "LE GRIEL",
+  "prenomPorteur" : "",
+  "civilitePorteur" : "",
+  "numeroAdherent" : "AC00021",
+  "numeroAdherentComplet" : "",
+  "qualification" : "B",
+  "numeroContratCollectif" : "",
+  "isContratResponsable" : false,
+  "isContratCMU" : false,
+  "destinataire" : null,
+  "individuelOuCollectif" : "",
+  "situationDebut" : null,
+  "situationFin" : null,
+  "critereSecondaireDetaille" : "",
+  "motifFinSituation" : null,
+  "critereSecondaire" : "",
+  "numeroExterneContratIndividuel" : "",
+  "numeroExterneContratCollectif" : "",
+  "gestionnaire" : "0000401182",
+  "groupeAssures" : "",
+  "numeroCarte" : "00052492",
+  "editeurCarte" : null,
+  "fondCarte" : null,
+  "annexe1Carte" : null,
+  "annexe2Carte" : null,
+  "numAMCEchange" : "0000401166",
+  "numOperateur" : "0000733931",
+  "ordrePriorisation" : "1",
+  "contratCMUC2S" : null,
+  "typeConvention" : "",
+  "dateConsolidation" : "2022-06-02T13:52:23.000Z",
+  "dateRestitution" : null,
+  "dateCreation" : "2022-06-02T13:53:23.000Z",
+  "dateModification" : "2022-06-02T13:54:23.000Z",
+  "origineDeclaration" : "TDB/TFD",
+  "beneficiaires" : [
+    {
+      "modePaiementPrestations" : "",
+      "situationParticuliere" : null,
+      "categorieSociale" : null,
+      "rangAdministratif" : "",
+      "isCarteTPaEditer" : false,
+      "dateRadiation" : null,
+      "dateCreation" : "2022-06-02T13:55:23.000Z",
+      "dateAdhesionMutuelle" : null,
+      "dateDebutAdhesionIndividuelle" : null,
+      "numeroAdhesionIndividuelle" : null,
+      "dateModification" : "2022-06-02T13:56:23.000Z",
+      "dateNaissance" : "19621023",
+      "rangNaissance" : "1",
+      "nirBeneficiaire" : "",
+      "cleNirBeneficiaire" : "",
+      "nirOd1" : "1591275115460",
+      "cleNirOd1" : "46",
+      "nirOd2" : "",
+      "cleNirOd2" : "",
+      "insc" : null,
+      "numeroPersonne" : "PC00020",
+      "refExternePersonne" : "08043266",
+      "affiliation" : {
+        "nom" : "LE GRIEL",
+        "nomPatronymique" : "LE GRIEL",
+        "nomMarital" : "LE GRIEL",
+        "prenom" : "SOPHIE",
+        "civilite" : null,
+        "periodeDebut" : "2019/01/01",
+        "periodeFin" : null,
+        "qualite" : "C",
+        "regimeOD1" : "03",
+        "caisseOD1" : "054",
+        "centreOD1" : "6200",
+        "regimeOD2" : null,
+        "caisseOD2" : null,
+        "centreOD2" : null,
+        "hasMedecinTraitant" : false,
+        "regimeParticulier" : "",
+        "isBeneficiaireACS" : false,
+        "isTeleTransmission" : false,
+        "typeAssure" : "Conjoint"
+      },
+      "adresses" : [
+        {
+          "ligne1" : "AON",
+          "ligne2" : null,
+          "ligne3" : null,
+          "ligne4" : "28 ALLEE DE BELLEVUECS 7000",
+          "ligne5" : null,
+          "ligne6" : "16918 ANGOULEME CEDEX 9",
+          "ligne7" : "FRANCE",
+          "codePostal" : "16918",
+          "telephone" : "01 73 10 30 55",
+          "email" : null,
+          "typeAdresse" : {
+            "libelle" : null,
+            "type" : "GE"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code" : "HOSP",
+          "garanties": [
+            {
+              "codeGarantie" : "KC_PlatineComp",
+              "libelleGarantie" : null,
+              "codeAssureurGarantie" : "KLESIA_CARCEPT",
+              "dateAdhesionCouverture" : "2019/01/01",
+              "produits": [
+                {
+                  "codeExterneProduit" : "",
+                  "codeProduit" : "PlatineComplémentaire",
+                  "libelleProduit" : null,
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture" : null,
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2021/01/21",
+                              "periodeFin" : "2022/11/30",
+                              "periodeFinFermeture" : "2022/12/30",
+                              "motifEvenement" : null,
+                              "libelleEvenement" : null,
+                              "modeObtention" : null
+                            },
+                            {
+
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2021/01/21",
+                              "periodeFin" : "2022/11/30",
+                              "periodeFinFermeture" : "2022/12/30",
+                              "motifEvenement" : null,
+                              "libelleEvenement" : null,
+                              "modeObtention" : null
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement" : null,
+                              "uniteTauxRemboursement" : null,
+                              "periodes": [
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "",
+                              "prioriteBO" : "01",
+                              "periodes": [
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "conventionCode1",
+                                "libelle" : null
+                              }
+                            },
+                            {
+                              "priorite" : 2,
+                              "typeConventionnement" : {
+                                "code" : "conventionCode2",
+                                "libelle" : null
+                              }
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code" : "DEF",
+                              "codeRegroupement" : null,
+                              "libelle" : null,
+                              "isEditionRisqueCarte" : false,
+                              "dateEffet" : null,
+                              "formule" : {
+                                "numero" : "099",
+                                "libelle" : null,
+                                "parametres" : [
+
+                                ],
+                                "masqueFormule" : null
+                              },
+                              "formuleMetier" : null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : null,
+                  "codeExterne" : null,
+                  "libelle" : null,
+                  "libelleExterne" : null,
+                  "origineDroits" : "",
+                  "codeProfil" : "",
+                  "codeRenvoi" : null,
+                  "libelleCodeRenvoi" : "",
+                  "isEditable" : true,
+                  "isSuspension" : false,
+                  "noOrdreDroit" : "6"
+                }
+              ]
+            },
+            {
+              "codeGarantie" : "KC_PlatineComp",
+              "codeAssureurGarantie" : "KLESIA_CARCEPT",
+              "libelleGarantie" : null,
+              "dateAdhesionCouverture" : "2019/01/01",
+              "produits": [
+                {
+                  "codeExterneProduit" : "",
+                  "codeProduit" : "PlatineComplémentaire2",
+                  "libelleProduit" : null,
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture" : null,
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation" : "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2021/01/02",
+                              "periodeFin" : "2023/02/01",
+                              "periodeFinFermeture" : "2023/02/02",
+                              "motifEvenement" : null,
+                              "libelleEvenement" : null,
+                              "modeObtention" : null
+                            },
+                            {
+
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2021/01/02",
+                              "periodeFin" : "2023/02/01",
+                              "periodeFinFermeture" : "2023/02/02",
+                              "motifEvenement" : null,
+                              "libelleEvenement" : null,
+                              "modeObtention" : null
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement" : null,
+                              "uniteTauxRemboursement" : null,
+                              "periodes": [
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "",
+                              "prioriteBO" : "01",
+                              "periodes": [
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "conventionCode1",
+                                "libelle" : null
+                              }
+                            },
+                            {
+                              "priorite" : 2,
+                              "typeConventionnement" : {
+                                "code" : "conventionCode2",
+                                "libelle" : null
+                              }
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code" : "DEF",
+                              "codeRegroupement" : null,
+                              "libelle" : null,
+                              "isEditionRisqueCarte" : false,
+                              "dateEffet" : null,
+                              "formule" : {
+                                "numero" : "099",
+                                "libelle" : null,
+                                "parametres" : [
+
+                                ],
+                                "masqueFormule" : null
+                              },
+                              "formuleMetier" : null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : null,
+                  "codeExterne" : null,
+                  "libelle" : null,
+                  "libelleExterne" : null,
+                  "origineDroits" : "",
+                  "codeProfil" : "",
+                  "codeRenvoi" : null,
+                  "libelleCodeRenvoi" : "",
+                  "isEditable" : true,
+                  "isSuspension" : false,
+                  "noOrdreDroit" : "6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code" : "OPTI",
+          "garanties": [
+            {
+              "codeGarantie" : "KC_PlatineBase",
+              "libelleGarantie" : null,
+              "codeAssureurGarantie" : "KLESIA_CARCEPT",
+              "dateAdhesionCouverture" : "2019/01/01",
+              "produits": [
+                {
+                  "codeExterneProduit" : "",
+                  "codeProduit" : "PlatineBase",
+                  "libelleProduit" : null,
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture" : null,
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation" : "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode" : "OFFLINE",
+                              "periodeDebut" : "2021/02/01",
+                              "periodeFin" : "2022/11/30",
+                              "periodeFinFermeture" : "2022/12/31",
+                              "motifEvenement" : null,
+                              "libelleEvenement" : null,
+                              "modeObtention" : null
+                            },
+                            {
+                              "typePeriode" : "ONLINE",
+                              "periodeDebut" : "2021/02/01",
+                              "periodeFin" : "2022/11/30",
+                              "periodeFinFermeture" : "2022/12/31",
+                              "motifEvenement" : null,
+                              "libelleEvenement" : null,
+                              "modeObtention" : null
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement" : null,
+                              "uniteTauxRemboursement" : null,
+                              "periodes": [
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code" : "01",
+                              "libelle" : "01",
+                              "typeDroit" : "",
+                              "prioriteBO" : "01",
+                              "periodes": [
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+
+                            {
+                              "priorite" : 1,
+                              "typeConventionnement" : {
+                                "code" : "IT",
+                                "libelle" : null
+                              }
+                            },
+                            {
+                              "priorite" : 2,
+                              "typeConventionnement" : {
+                                "code" : "IS",
+                                "libelle" : null
+                              }
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code" : "DEF",
+                              "codeRegroupement" : null,
+                              "libelle" : null,
+                              "isEditionRisqueCarte" : false,
+                              "dateEffet" : null,
+                              "formule" : {
+                                "numero" : "099",
+                                "libelle" : null,
+                                "parametres" : [
+
+                                ],
+                                "masqueFormule" : null
+                              },
+                              "formuleMetier" : null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre" : null,
+                  "codeExterne" : null,
+                  "libelle" : null,
+                  "libelleExterne" : null,
+                  "origineDroits" : "",
+                  "codeProfil" : "",
+                  "codeRenvoi" : null,
+                  "libelleCodeRenvoi" : "",
+                  "isEditable" : true,
+                  "isSuspension" : false,
+                  "noOrdreDroit" : "6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

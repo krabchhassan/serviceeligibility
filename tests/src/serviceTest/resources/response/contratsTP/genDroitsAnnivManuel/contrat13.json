@@ -1,0 +1,1144 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "NUMBERCONTRAT",
+  "numeroAdherent": "NUMBERCONTRAT",
+  "numeroAdherentComplet": "NUMBERCONTRAT",
+  "dateSouscription": "2022/07/15",
+  "type": "B",
+  "nomPorteur": "SIMAN",
+  "prenomPorteur": "VINCENT",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "00219071",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "001",
+  "numeroExterneContratIndividuel": "NUMBERCONTRAT",
+  "gestionnaire": "000ER00693",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "periodeResponsableOuverts": [
+    {
+      "debut": "2018/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale": "0",
+  "beneficiaires": [
+    {
+      "dateNaissance": "19801116",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1560832135165",
+      "cleNirBeneficiaire": "15",
+      "nirOd1": "1560832135165",
+      "cleNirOd1": "15",
+      "numeroPersonne": "2122706",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2012/01/01",
+      "dateDebutAdhesionIndividuelle": "2018/01/01",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "SIMAN",
+        "nomPatronymique": "SIMAN",
+        "nomMarital": "SIMAN",
+        "prenom": "VINCENT",
+        "civilite": "M",
+        "periodeDebut": "2012/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "091",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "Mr SIMAN VINCENT",
+          "ligne4": "52 RUE DE LA PAIX",
+          "ligne6": "06522 BARBY",
+          "codePostal": "09210",
+          "email": "RSIMAN@FREE.FR",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "affiliationsRO": [
+        {
+          "nir": {
+            "code": "1560832135165",
+            "cle": "15"
+          },
+          "rattachementRO": {
+            "codeRegime": "01",
+            "codeCaisse": "091"
+          },
+          "periode": {
+            "debut": "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions": [
+        {
+          "periode": {
+            "debut": "2018/01/01"
+          },
+          "isTeletransmission": true
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-021-50",
+                      "formulaMask": "50% TR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "50",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "021",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "50"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-021-100",
+                      "formulaMask": "100% TR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "021",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "APDE",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "APDE-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "APPAREILLAGEDENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "dateNaissance": "19811116",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2560832135165",
+      "cleNirBeneficiaire": "15",
+      "nirOd1": "2560832135165",
+      "cleNirOd1": "15",
+      "numeroPersonne": "2122707",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2012/01/01",
+      "dateDebutAdhesionIndividuelle": "2018/01/01",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "SIMAN",
+        "nomPatronymique": "SIMAN",
+        "nomMarital": "SIMAN",
+        "prenom": "ADELE",
+        "civilite": "Mme",
+        "periodeDebut": "2012/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "091",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "Mr SIMAN ADELE",
+          "ligne4": "52 RUE DE LA PAIX",
+          "ligne6": "06522 BARBY",
+          "codePostal": "09210",
+          "email": "RSIMAN@FREE.FR",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "affiliationsRO": [
+        {
+          "nir": {
+            "code": "2560832135165",
+            "cle": "15"
+          },
+          "rattachementRO": {
+            "codeRegime": "01",
+            "codeCaisse": "091"
+          },
+          "periode": {
+            "debut": "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions": [
+        {
+          "periode": {
+            "debut": "2018/01/01"
+          },
+          "isTeletransmission": true
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-021-50",
+                      "formulaMask": "50% TR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "50",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "021",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "50"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-021-100",
+                      "formulaMask": "100% TR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "021",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "APDE",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits": [
+                {
+                  "codeProduit": "PDT_BASE1",
+                  "codeOffre": "CAS1",
+                  "codeOc": "BALOO",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "APDE-010",
+                      "formulaMask": " 100% FR ",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "APPAREILLAGEDENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/07/15"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/07/15",
+                              "periodeFin": "2023/07/14",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/07/15"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:tns="http://norme.cegedimassurances.com/carteDemat/service"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:domain="http://norme.cegedimassurances.com/carteDemat/beans"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CarteDematerialiseeService"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/service">
+
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://norme.cegedimassurances.com/carteDemat/service">		
+			<xsd:import schemaLocation="../xsd/carteDemat/carteDemat.xsd"
+				namespace="http://norme.cegedimassurances.com/carteDemat/beans" />
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="carteDematerialiseeRequest">
+		<wsdl:part name="requete" element="domain:carteDematerialiseeRequest" />
+	</wsdl:message>
+
+	<wsdl:message name="carteDematerialiseeResponse">
+		<wsdl:part name="reponse" element="domain:carteDematerialiseeResponse" />
+	</wsdl:message>
+
+
+	<wsdl:portType name="CarteDematerialiseePortType">
+		<wsdl:operation name="carteDematerialisee">
+			<wsdl:input message="tns:carteDematerialiseeRequest" />
+			<wsdl:output message="tns:carteDematerialiseeResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="CarteDematerialiseeBinding" type="tns:CarteDematerialiseePortType">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="carteDematerialisee">
+			<soap:operation soapAction="carteDematerialisee" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="CarteDematerialiseeService">
+		<wsdl:port binding="tns:CarteDematerialiseeBinding" name="CarteDematerialiseePort">
+			<soap:address location="http://localhost/wsCarteDemat/CarteDematerialisee" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

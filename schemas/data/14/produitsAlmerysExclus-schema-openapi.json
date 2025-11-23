@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "produitsAlmerysExclus"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "ProduitsAlmerysExclus": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idDeclarant": {
+		    "type": "string"
+		  },
+		  "critereSecondaireDetaille": {
+		    "type": "string"
+		  },
+		  "codeExterneProduit": {
+		    "type": "string"
+		  },
+		  "_id": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "ProduitsAlmerysExclus"
+      }
+    }
+  }
+}

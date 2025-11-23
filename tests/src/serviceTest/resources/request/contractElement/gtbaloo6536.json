@@ -1,0 +1,22 @@
+{
+  "codeInsurer": "ASSU00667",
+  "codeContractElement": "FSBC59596A",
+  "codeAMC": "",
+  "label": "FSBC59596A",
+  "ignored": false,
+  "origine": "IMPORT",
+  "user": "paul.thiaudiere_AT_cegedim-activ.com",
+  "productElements": [
+    {
+      "codeOffer": "FSC59596",
+      "codeProduct": "FSBC59596A",
+      "codeBenefitNature": "",
+      "codeAmc": "ASSU00667",
+      "from": "1900-01-01T00:00:00.000Z",
+      "effectiveDate": "2022-01-01T00:00:00.000Z"
+    }
+  ],
+  "status": "ACTIVE",
+  "insertDate": "2024-11-12T11:30:58.576Z",
+  "fileName": "BobbcorrigePTH.json"
+}

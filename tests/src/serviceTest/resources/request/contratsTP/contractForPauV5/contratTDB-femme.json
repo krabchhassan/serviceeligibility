@@ -1,0 +1,459 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "A00011",
+  "numeroAdherent": "A0001",
+  "numeroAdherentComplet": "",
+  "dateSouscription": "2019/01/01",
+  "nomPorteur": "TESTB0001",
+  "prenomPorteur": "Veronique",
+  "civilitePorteur": "Madame",
+  "qualification": "B",
+  "numeroContratCollectif": "CC0001",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "GEST01",
+  "groupeAssures": "TEST",
+  "numAMCEchange": "0000401182",
+  "numOperateur": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "ordrePriorisation": "1",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateNaissance": "19810619",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2810631555490",
+      "cleNirBeneficiaire": "69",
+      "nirOd1": "2810631555490",
+      "cleNirOd1": "69",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "0011",
+      "refExternePersonne": "0011",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "TESTB0001",
+        "nomPatronymique": "TESTB0001",
+        "nomMarital": "TESTB0001",
+        "prenom": "Veronique",
+        "periodeDebut": "2023/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "131",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "01",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": false,
+        "typeAssure": "AssurePrin"
+      },
+      "adresses": [
+      ],
+      "domaineDroits": [
+        {
+          "code": "RADL",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "",
+          "origineDroits": "",
+          "noOrdreDroit": "6",
+          "periodesDroit": [
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "RADL-02A-100",
+              "tauxRemboursement": "100 %",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "RADL-02A-100",
+              "tauxRemboursement": "100%",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "AUXM",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "",
+          "origineDroits": "",
+          "noOrdreDroit": "1",
+          "periodesDroit": [
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "AUXM-02A-100",
+              "tauxRemboursement": "100%",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "SAGE",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "",
+          "origineDroits": "",
+          "noOrdreDroit": "7",
+          "periodesDroit": [
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "SAGE-02A-100",
+              "tauxRemboursement": "100%",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "PHAR",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "",
+          "origineDroits": "",
+          "noOrdreDroit": "4",
+          "periodesDroit": [
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "PHAR-02A-100",
+              "tauxRemboursement": "100%",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "MED",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "",
+          "origineDroits": "",
+          "noOrdreDroit": "3",
+          "periodesDroit": [
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "MED-02A-100",
+              "tauxRemboursement": "100%",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        },
+        {
+          "code": "CSTE",
+          "codeProfil": "",
+          "libelleCodeRenvoi": "",
+          "origineDroits": "",
+          "noOrdreDroit": "2",
+          "periodesDroit": [
+            {
+              "typePeriode": "OFFLINE",
+              "periodeDebut": "2023/01/01",
+              "periodeFin": "2023/12/31",
+              "codeGarantie": "GT_BASE",
+              "libelleGarantie": "Frais Médicaux",
+              "codeProduit": "BLUE_001",
+              "libelleProduit": "TESTBLUE",
+              "codeExterneProduit": "",
+              "libelleEvenement": "DEclaration",
+              "modeObtention": "O",
+              "motifEvenement": "DE",
+              "dateAdhesionCouverture": "2019/01/01",
+              "referenceCouverture": "CSTE-02A-100",
+              "tauxRemboursement": "100%",
+              "uniteTauxRemboursement": "XX",
+              "prioriteDroit": {
+                "code": "01",
+                "libelle": "01",
+                "typeDroit": "",
+                "prioriteBO": "01"
+              },
+              "conventionnements": [
+                {
+                  "priorite": 0,
+                  "typeConventionnement": {
+                    "code": "SP",
+                    "libelle": "SP"
+                  }
+                }
+              ],
+              "prestations": [
+                {
+                  "code": "DEF",
+                  "isEditionRisqueCarte": false,
+                  "formule": {
+                    "numero": "02A",
+                    "parametres": [
+                      {
+                        "numero": "3",
+                        "valeur": "100.00"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "isSuspension": false,
+          "isEditable": false
+        }
+      ]
+    }
+  ]
+}

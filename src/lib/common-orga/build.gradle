@@ -1,0 +1,37 @@
+plugins {
+    id("beyond.gradle.plugins.java-library")
+}
+
+dependencies {
+    //////////////////////////////////////////
+    // CLAIM
+    //////////////////////////////////////////
+    compileOnly("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+    compileOnly("com.cegedim.beyond.framework:lib-common-organisation-settings-java:16.0.3")
+
+    testImplementation("com.cegedim.beyond.framework:lib-beyond-organisation-starter")
+    testImplementation("com.cegedim.beyond.framework:lib-common-organisation-settings-test")
+    //////////////////////////////////////////
+    // SPRING
+    //////////////////////////////////////////
+    implementation("org.springframework.boot:spring-boot-autoconfigure")
+    implementation("io.micrometer:micrometer-tracing") { because("for @NewSpan annotations") }
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test") { because("for logging implementations, etc.") }
+    //////////////////////////////////////////
+    // OTHERS
+    //////////////////////////////////////////
+    implementation("org.apache.commons:commons-collections4")
+
+    //////////////////////////////////////////
+    // TEST
+    //////////////////////////////////////////
+    implementation("org.assertj:assertj-core")
+
+    testImplementation("org.testcontainers:testcontainers")
+    testImplementation('org.testcontainers:junit-jupiter')
+    testImplementation('org.testcontainers:minio')
+    //////////////////////////////////////////
+    // CODE GEN
+    //////////////////////////////////////////
+}

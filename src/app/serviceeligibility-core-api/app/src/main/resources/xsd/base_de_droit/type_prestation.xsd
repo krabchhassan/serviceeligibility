@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:base_de_droit="http://norme.cegedimassurances.com/base_de_droit" 
+targetNamespace="http://norme.cegedimassurances.com/base_de_droit" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_formule.xsd"></xs:include>
+	<xs:include schemaLocation="type_formule_metier.xsd"></xs:include>
+	<xs:include schemaLocation="type_domaine_droit.xsd"></xs:include>
+	<xs:complexType name="type_prestation">
+		<xs:sequence>
+			<xs:element name="code" minOccurs="1" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_regroupement" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libelle" minOccurs="0" maxOccurs="1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="is_edition_risque_carte" minOccurs="0" maxOccurs="1" type="xs:boolean"/>
+			<xs:element name="date_effet" minOccurs="0" maxOccurs="1" type="xs:date"/>
+			<xs:element name="formule" minOccurs="0" maxOccurs="1" type="base_de_droit:type_formule"/>
+			<xs:element name="formule_metier" minOccurs="0" maxOccurs="1" type="base_de_droit:type_formule_metier"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

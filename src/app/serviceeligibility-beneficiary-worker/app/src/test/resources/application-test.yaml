@@ -1,0 +1,12 @@
+BEYOND_INSTANCE: htp-es15
+BEYOND_CUSTOMER: editeur
+beyond:
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+CLIENT_ID: test-es16
+CLIENT_SECRET: nn6SAeEsmeij97djO5bSHs6rEjdw5cgd
+keycloak.url: https://idp.dev.beyond.cegedim.cloud/auth
+keycloak.realm: htp

@@ -1,0 +1,27 @@
+{
+  "amc": "0097810998",
+  "amcNom": "KLESIA - CARCEPT",
+  "oc": "KLESIA_CARCEPT",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2022-11-15",
+  "dateCreation": "2022-11-15T08:56:44.014Z",
+  "userCreation": "reynald.hermez@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": "0",
+    "debutEcheance": "01/01",
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+    ],
+    "isCarteEditablePapier": false
+  }
+}

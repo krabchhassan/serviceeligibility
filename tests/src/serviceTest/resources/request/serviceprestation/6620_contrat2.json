@@ -1,0 +1,265 @@
+{
+  "idDeclarant": "0000401166",
+  "societeEmettrice": "000ER00955",
+  "numero": "02931548",
+  "numeroExterne": "02931548",
+  "numeroAdherent": "02931548",
+  "numeroAdherentComplet": "02931548",
+  "dateSouscription": "2023-01-09",
+  "contexteTiersPayant": {
+    "periodesDroitsCarte": {
+      "debut": "%%CURRENT_YEAR%%-01-01",
+      "fin": "%%CURRENT_YEAR%%-12-31"
+    },
+    "isCartePapierAEditer": false,
+    "isCarteDematerialisee": true,
+    "isCartePapier": true
+  },
+  "periodesContratResponsableOuvert": [
+    {
+      "debut": "2024-09-14"
+    },
+    {
+      "debut": "2023-01-09",
+      "fin": "2024-09-13"
+    }
+  ],
+  "critereSecondaire": "001",
+  "isContratIndividuel": false,
+  "gestionnaire": "AXA",
+  "qualification": "B",
+  "ordrePriorisation": "1",
+  "assures": [
+    {
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "2461421",
+            "idBeyondDestinatairePaiements": "2461421-0000452433",
+            "nom": {
+              "nomFamille": "GARDILE",
+              "nomUsage": "GARDILE",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame GARDILE MANON",
+              "ligne4": "54 BOULEVARD(S) JEAN MOULIN",
+              "ligne6": "44100 NANTES",
+              "codePostal": "44100"
+            },
+            "rib": {
+              "bic": "CEPAFRPP444",
+              "iban": "FR7614445004000412406078770"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-05-20",
+              "fin": "2025-09-13"
+            }
+          },
+          {
+            "idDestinatairePaiements": "2461421",
+            "idBeyondDestinatairePaiements": "2461421-0000452433",
+            "nom": {
+              "nomFamille": "GARDILE",
+              "nomUsage": "GARDILE",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame GARDILE MANON",
+              "ligne4": "41 BOULEVARD GARDILE MITTERRAND",
+              "ligne6": "44800 SAINT HERBLAIN",
+              "codePostal": "44800"
+            },
+            "rib": {
+              "bic": "CEPAFRPP444",
+              "iban": "FR7614445004000412406078770"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2024-05-19"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "2461421",
+            "idBeyondDestinataireRelevePrestations": "2461421-0000452433",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "manon.elommal@hotmail.com"
+            },
+            "nom": {
+              "nomFamille": "GARDILE",
+              "nomUsage": "GARDILE",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame GARDILE MANON",
+              "ligne4": "54 BOULEVARD(S) JEAN MOULIN",
+              "ligne6": "44100 NANTES",
+              "codePostal": "44100"
+            },
+            "periode": {
+              "debut": "2024-05-20",
+              "fin": "2025-09-13"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "2461421",
+            "idBeyondDestinataireRelevePrestations": "2461421-0000452433",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "manon.elommal@hotmail.com"
+            },
+            "nom": {
+              "nomFamille": "GARDILE",
+              "nomUsage": "GARDILE",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame GARDILE MANON",
+              "ligne4": "41 BOULEVARD GARDILE MITTERRAND",
+              "ligne6": "44800 SAINT HERBLAIN",
+              "codePostal": "44800"
+            },
+            "periode": {
+              "debut": "2023-06-07",
+              "fin": "2024-05-19"
+            }
+          },
+          {
+            "idDestinataireRelevePrestations": "2461421",
+            "idBeyondDestinataireRelevePrestations": "2461421-0000452433",
+            "dematerialisation": {
+              "isDematerialise": false
+            },
+            "nom": {
+              "nomFamille": "GARDILE",
+              "nomUsage": "GARDILE",
+              "prenom": "MANON",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame GARDILE MANON",
+              "ligne4": "41 BOULEVARD GARDILE MITTERRAND",
+              "ligne6": "44800 SAINT HERBLAIN",
+              "codePostal": "44800"
+            },
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2023-06-06"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "GARDILE",
+          "nomUsage": "GARDILE",
+          "prenom": "AMINE",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur GARDILE AMINE",
+          "ligne4": "54 BOULEVARD(S) JEAN MOULIN",
+          "ligne6": "44100 NANTES",
+          "codePostal": "44100"
+        }
+      },
+      "digitRelation": {
+        "teletransmissions": [
+          {
+            "periode": {
+              "debut": "2023-01-09"
+            },
+            "isTeletransmission": true
+          },
+          {
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2023-01-08"
+            },
+            "isTeletransmission": false
+          }
+        ]
+      },
+      "droits": [
+        {
+          "carences": [],
+          "code": "GT_5497_A1",
+          "codeAssureur": "baloo",
+          "libelle": "CG SANTE CONFORT",
+          "ordrePriorisation": "1",
+          "type": "B",
+          "periode": {
+            "debut": "2023-01-09"
+          },
+          "dateAncienneteGarantie": "2023-01-09"
+        }
+      ],
+      "isSouscripteur": false,
+      "rangAdministratif": "2",
+      "identite": {
+        "nir": {
+          "code": "1991244162390",
+          "cle": "08"
+        },
+        "affiliationsRO": [
+          {
+            "nir": {
+              "code": "1991244162390",
+              "cle": "08"
+            },
+            "rattachementRO": {
+              "codeRegime": "01",
+              "codeCaisse": "441"
+            },
+            "periode": {
+              "debut": "2023-01-09"
+            }
+          },
+          {
+            "nir": {
+              "code": "1991244162390",
+              "cle": "08"
+            },
+            "rattachementRO": {},
+            "periode": {
+              "debut": "2023-01-09",
+              "fin": "2023-01-08"
+            }
+          }
+        ],
+        "dateNaissance": "19991224",
+        "rangNaissance": "1",
+        "numeroPersonne": "2461427"
+      },
+      "dateAdhesionMutuelle": "2023-01-09",
+      "dateDebutAdhesionIndividuelle": "2023-01-09",
+      "periodes": [
+        {
+          "debut": "2023-01-09"
+        }
+      ],
+      "periodesMedecinTraitantOuvert": [],
+      "regimesParticuliers": [],
+      "situationsParticulieres": [],
+      "qualite": {
+        "code": "C",
+        "libelle": "Conjoint/Concubin"
+      }
+    }
+  ]
+}

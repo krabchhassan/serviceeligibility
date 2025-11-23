@@ -1,0 +1,16 @@
+[
+    {
+        "validityDate": "2021-01-01",
+        "code": 3,
+        "natures": [
+            "DENTAIRE",
+            "HOSPITALISATION",
+            "PHARMACIE",
+            "OPTIQUE",
+            "APPAREILLAGEDENTAIRE"
+        ],
+        "products": [
+            "PDT_BASE1B"
+        ]
+    }
+]

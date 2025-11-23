@@ -1,0 +1,66 @@
+spring:
+  application:
+    admin:
+      enabled: true
+    name: serviceeligibility-recalculblb-job
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/next-serviceeligibility-core-api
+  kafka:
+    properties:
+      sasl:
+        mechanism: SCRAM-SHA-256
+        jaas:
+          config: "org.apache.kafka.common.security.scram.ScramLoginModule required username='dev' password='dev';"
+      security:
+        protocol: SASL_SSL
+    ssl:
+      trust-store-location: "file:///${user.home}/.kafka/kafka.truststore.jks"
+      trust-store-password: "kafka_truststore_password"
+    bootstrap-servers: ${KAFKA_SERVERS}
+    consumer:
+      group-id: dev01-blb
+      auto-offset-reset: latest
+
+    producer:
+      compression-type: snappy
+      acks: all
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        linger.ms: 1
+        request.timeout.ms: 50000
+KAFKA_SERVERS: detcisk01.hosting.cegedim.cloud:9094,detcisk02.hosting.cegedim.cloud:9094,detcisk03.hosting.cegedim.cloud:9094
+
+kafka:
+  topic:
+    beyond-events: beyond-events
+    bdds-to-blb-logical-deletion: "t-green-71590-bdds-to-blb-logical-deletion"
+    bdd-extract-contract: "t-green-71590-bdd-extract-contract"
+    bdds-to-blb-logical-deletion-response: "t-green-71590-bdds-to-blb-logical-deletion-response"
+    bdds-to-blb-beneficiary-feeding-response: "t-green-71590-bdds-to-blb-beneficiary-feeding-response"
+
+# Log
+logging:
+  level:
+    org.springframework.web: INFO
+    org.springframework.messaging: INFO
+    com.cegedim.next: INFO
+    com.cegedim.next.core.scaffolding: DEBUG
+
+socle:
+  code: Insurance
+service:
+  code: serviceeligibility
+schema:
+  url: https://documentation.beyond-by-cegedim.com/schemas/events
+  path: Insurance/serviceeligibility
+beyond:
+  instance: dev
+  customer: editeur
+audit:
+  schema:
+    url: https://documentation.beyond-by-cegedim.com/schemas/audits

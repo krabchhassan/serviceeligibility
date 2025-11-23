@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:commun="http://norme.cegedimassurances.com/commun" xmlns:tarification="http://norme.cegedimassurances.com/tarification"
+xmlns:amc="http://norme.cegedimassurances.com/amc" xmlns:ps="http://norme.cegedimassurances.com/ps" targetNamespace="http://norme.cegedimassurances.com/tarification"  xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance" jaxb:extensionBindingPrefixes="inheritance"
+elementFormDefault="qualified">
+
+    <xs:import namespace="http://norme.cegedimassurances.com/commun" schemaLocation="../commun/type_header_in.xsd" />
+    <xs:include schemaLocation="type_requete_justification_calcul.xsd"/>
+    <xs:complexType name="requete_justification_calcul">
+        <xs:annotation>
+            <xs:appinfo>
+                <inheritance:implements>com.cegedimactiv.norme.fsiq.api.RequeteWsFsiq</inheritance:implements>
+            </xs:appinfo>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="header_in" minOccurs="1" maxOccurs="1" type="commun:type_header_in"/>
+            <xs:element name="requete_justification_calcul" minOccurs="1" maxOccurs="1" type="tarification:type_requete_justification_calcul"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

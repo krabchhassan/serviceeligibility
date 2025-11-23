@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:commun="http://norme.cegedimassurances.com/amo" targetNamespace="http://norme.cegedimassurances.com/amo" elementFormDefault="qualified">
+
+	<xs:complexType name="type_organisme_amo">
+	<xs:sequence>	
+		<xs:element name="regime">
+			<xs:annotation>
+				<xs:documentation>Code régime</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="caisse">
+			<xs:annotation>
+				<xs:documentation>Code caisse </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name="centre">
+			<xs:annotation>
+				<xs:documentation>Code centre </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+</xs:sequence>		
+	</xs:complexType>
+
+</xs:schema>

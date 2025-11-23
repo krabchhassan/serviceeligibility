@@ -1,0 +1,330 @@
+{
+  "_id": "1",
+  "services": [
+    "ServicePrestation"
+  ],
+  "key": "0079001962-MBA01-19700101-1",
+  "idClientBO": "marianne.barrailh@cegedim-activ.com",
+  "amc": {
+    "idDeclarant": "0032165199"
+  },
+  "numeroAdherent": "001",
+  "contrats": [
+    {
+      "numeroContrat": "8343484392",
+      "data": {
+        "nom": {
+          "nomFamille": "TestAIMBA",
+          "nomUsage": "TestAIMBA",
+          "prenom": "Nathalie2",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Mme TestAIMBA Nathalie",
+          "ligne4": "12, rue des roses121321",
+          "ligne6": "31000 TOULOUSE",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "5555555555"
+        },
+        "destinatairesPrestations": [
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR7613106001004578945612336"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-11",
+              "fin": "2020-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR7613106001004578945612336"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2019-01-11",
+              "fin": "2019-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR7613106001004578945612336"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-13",
+              "fin": "2018-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme TestAIMBA Nathalie",
+              "ligne4": "12, rue des roses",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2020-01-11",
+              "fin": "2020-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme TestAIMBA Nathalie",
+              "ligne4": "12, rue des roses",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2019-01-11",
+              "fin": "2019-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "adresse": {
+            },
+            "periode": {
+              "debut": "2018-01-11",
+              "fin": "2018-12-31"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "numeroContrat": "MBA02",
+      "data": {
+        "nom": {
+          "nomFamille": "TestAIMBA",
+          "nomUsage": "TestAIMBA",
+          "prenom": "Nathalie",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Mme TestAIMBA Nathalie",
+          "ligne4": "12, rue des roses",
+          "ligne6": "31000 TOULOUSE",
+          "codePostal": "31000"
+        },
+        "destinatairesPrestations": [
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR7613106001004578945612336"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2020-01-11",
+              "fin": "2020-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR7613106001004578945612336"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2019-01-11",
+              "fin": "2019-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "rib": {
+              "bic": "AGRIFRPP831",
+              "iban": "FR7613106001004578945612336"
+            },
+            "modePaiementPrestations": {
+              "code": "V",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2018-01-11",
+              "fin": "2018-12-31"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme TestAIMBA Nathalie",
+              "ligne4": "12, rue des roses",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2020-01-11",
+              "fin": "2020-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme TestAIMBA Nathalie",
+              "ligne4": "12, rue des roses",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2019-01-11",
+              "fin": "2019-12-31"
+            }
+          },
+          {
+            "nom": {
+              "nomFamille": "TestAIMBA",
+              "nomUsage": "TestAIMBA",
+              "prenom": "Nathalie",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Mme TestAIMBA Nathalie",
+              "ligne4": "12, rue des roses",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2018-01-11",
+              "fin": "2018-12-31"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "identite": {
+    "nir": {
+      "code": "2700000000000",
+      "cle": "59"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "2700000000000",
+          "cle": "59"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "111",
+          "codeCentre": "1018"
+        },
+        "periode": {
+          "debut": "2020-01-01",
+          "fin": "2020-01-01"
+        }
+      },
+      {
+        "nir": {
+          "code": "2700000000000",
+          "cle": "59"
+        },
+        "periode": {
+          "debut": "2020-01-01",
+          "fin": "2020-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19700101",
+    "rangNaissance": "1",
+    "numeroPersonne": "001"
+  },
+  "audit": {
+    "dateEmission": "2020-05-28T07:20:42.786Z"
+  },
+  "traceId": "5ecf664a4b56700001c54fda",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.BenefAI"
+}

@@ -1,0 +1,10 @@
+apiName: serviceeligibility-smartcard-v2-api
+# all endpoints will be under this entrypointPath
+entrypointPath: "/beyond/api/sel/v2/carteDematerialisee"
+mappings:
+- match:
+    path: ""
+    methods: ["GET"]
+  redirect_to:
+    component: technicalComponents/serviceeligibility-core-api
+    path: "/v3/carteDematerialisee"

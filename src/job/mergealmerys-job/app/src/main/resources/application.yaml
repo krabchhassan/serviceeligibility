@@ -1,0 +1,18 @@
+logging:
+  level:
+    com:
+      cegedim:
+        common:
+          base:
+            log: info
+spring:
+  application:
+    name: mergealmerys-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-mergealmerys-job
+  management-scope:
+    enabled: true

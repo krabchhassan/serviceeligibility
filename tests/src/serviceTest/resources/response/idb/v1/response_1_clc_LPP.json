@@ -1,0 +1,173 @@
+{
+  "codeReponse": {
+    "code": "0000",
+    "libelle": "Autorisation transmise",
+    "detailErreur": []
+  },
+  "droits": [
+    {
+      "declarantAmc": {
+        "nom": "BALOO",
+        "libelle": "BALOO",
+        "siret": "",
+        "numeroPrefectoral": "0000401166",
+        "numeroRNM": "0000401166"
+      },
+      "beneficiaire": {
+        "dateNaissance": "20000920",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "2000931314007",
+        "cleNirBeneficiaire": "62",
+        "nirOd1": "2000931314007",
+        "cleNirOd1": "62",
+        "nirOd2": "",
+        "cleNirOd2": "",
+        "numeroPersonne": "380322027",
+        "historiqueAffiliations": [
+          {
+            "nom": "DUPOND",
+            "nomPatronymique": "DUPOND",
+            "nomMarital": "DUPOND",
+            "prenom": "PHILIPPE",
+            "periodeDebut": "2012-01-01",
+            "qualite": "A",
+            "regimeOD1": "01",
+            "caisseOD1": "311",
+            "medecinTraitant": "false",
+            "regimeParticulier": "",
+            "isBeneficiaireACS": false
+          }
+        ],
+        "adresses": []
+      },
+      "domainesDroits": [
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "CONFORT1",
+              "produits": [
+                {
+                  "codeProduit": "CEGACT",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "NOSEL",
+                      "periodesDroit": [
+                        {
+                          "typePeriode": "OFFLINE",
+                          "periodeDebut": "2022-01-01",
+                          "libelleEvenement": "Renouvellement des droits",
+                          "modeObtention": "O",
+                          "motifEvenement": "RE"
+                        },
+                        {
+                          "typePeriode": "ONLINE",
+                          "periodeDebut": "2022-01-01",
+                          "libelleEvenement": "Renouvellement des droits",
+                          "modeObtention": "O",
+                          "motifEvenement": "RE"
+                        }
+                      ],
+                      "prioritesDroit": [
+                        {
+                          "code": "01",
+                          "libelle": "01",
+                          "typeDroit": "01",
+                          "prioriteBO": "01",
+                          "periodes": [
+                            {
+                              "debut": "2022-01-01"
+                            }
+                          ]
+                        }
+                      ],
+                      "conventionnements": [
+                        {
+                          "priorite": 0,
+                          "typeConventionnement": {
+                            "code": "IS",
+                            "libelle": "IS"
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2022-01-01"
+                            }
+                          ]
+                        }
+                      ],
+                      "prestations": [
+                        {
+                          "code": "AAD",
+                          "isEditionRisqueCarte": false,
+                          "formule": {
+                            "numero": "02A",
+                            "parametres": [
+                              {
+                                "numero": "3",
+                                "valeur": "100.00"
+                              }
+                            ]
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2022-01-01"
+                            }
+                          ]
+                        },
+                        {
+                          "code": "AAR",
+                          "isEditionRisqueCarte": false,
+                          "formule": {
+                            "numero": "02A",
+                            "parametres": [
+                              {
+                                "numero": "3",
+                                "valeur": "100.00"
+                              }
+                            ]
+                          },
+                          "periodes": [
+                            {
+                              "debut": "2022-01-01"
+                            }
+                          ]
+                        }
+                      ],
+                      "remboursements": [
+                        {
+                          "tauxRemboursement": "00000100",
+                          "uniteTauxRemboursement": "TA",
+                          "periodes": [
+                            {
+                              "debut": "2022-01-01"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "contrat": {
+        "numero": "TEST01",
+        "dateSouscription": "2021-01-01",
+        "nomPorteur": "DUPOND",
+        "prenomPorteur": "PHILIPPE",
+        "civilitePorteur": "M",
+        "numeroAdherent": "TEST01",
+        "qualification": "B",
+        "numeroContratCollectif": "010101",
+        "rangAdministratif": "01",
+        "isContratResponsable": true,
+        "isContratCMU": false,
+        "destinataire": "AD",
+        "individuelOuCollectif": "2",
+        "lienFamilial": "A"
+      }
+    }
+  ]
+}

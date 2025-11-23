@@ -1,0 +1,30 @@
+{
+  "codeInsurer": "BALOO",
+  "codeContractElement": "GEAS20998B",
+  "codeAMC": "",
+  "label": "GEAS20998B",
+  "ignored": false,
+  "origine": "IMPORT",
+  "user": "e",
+  "productElements": [
+    {
+      "codeOffer" : "1472_AJOUT_01",
+      "codeProduct" : "1472_AJOUT_01_P01",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "1900-01-01T00:00:00.000Z",
+      "to": "1899-12-31T00:00:00.000Z",
+      "effectiveDate": "2021-01-01T00:00:00.000Z"
+    },
+    {
+      "codeOffer" : "1472_AJOUT_01",
+      "codeProduct" : "1472_AJOUT_01_P02",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "1900-01-01T00:00:00.000Z",
+      "effectiveDate": "2021-01-01T00:00:00.000Z"
+    }
+  ],
+  "status": "ACTIVE",
+  "fileName": ""
+}

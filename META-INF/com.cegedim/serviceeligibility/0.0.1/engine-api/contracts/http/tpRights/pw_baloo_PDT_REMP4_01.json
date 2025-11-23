@@ -1,0 +1,33 @@
+{
+	"offerCode": "CAS4_REMP_01",
+	"offerVersions": [
+		{
+			"domains": [
+				{
+					"domainCode":"OPTI",
+					"tpOffline": {
+						"formulaCode": "fGl_STS021_TR",
+						"formulaLabel": "STS021 : % TR",
+						"formulaMask": "50% TR ",
+						"stsFormulaCode": "021",
+						"nature":"OPTIQUE",
+						"variables": [
+							{
+								"variableCode": "$txBR",
+								"stsVariableNumber": 3,
+								"value": "50"
+							}
+						]
+					},
+					"tpOnline": {
+						"nature": "OPTIQUE"
+					}
+				}
+			],
+			"offerVersionCode": "22",
+			"effectDate": "2022-03-03T14:53:32.994Z",
+			"validityDate": "2022-01-01",
+			"engineVersion": "1.0"
+		}
+		]
+}

@@ -1,0 +1,39 @@
+workflowDefinition:
+  - code: is-bdds-extracttpoff
+    name: Extraction des droits TP clients PUC
+    nature: ["dev", "qa", "preprod", "prod"]
+    description: Cet OMU fait une extraction des droits TPOFFLINE pour une liste de beneficiaires définis dans un csv d'entée
+    documentation-path: docs/workflows/0.0.1
+    parameters:
+      - name: file_path
+        description: Fichier d'entrée à lire
+        optional: false
+        selection-display: file
+    authorization: SCH_P_OMU_IS_BDDS_EXTRACTTPOFF
+    steps:
+      - name: step-extract-rights
+        job: otp-extract-rights-job
+        type: python
+        parameters:
+          arguments:
+            - name: file_path
+              ref: parameters/file_path
+          env:
+            - name: OMU_ID
+        fileExchangePlatform: true
+        produceOutputs: true
+        usePersonalWorkdir: true
+
+    crex:
+      - name: nbInputLines
+        description: Nombre de lignes dans le fichier d'entrée.
+        ref: steps/step-extract-rights/parameters/outputs/nbInputLines
+      - name: nbLineOK
+        description: Nombre de lignes dans le fichier d'entrée pour lesquelles au moins 1 droit a été trouvé.
+        ref: steps/step-extract-rights/parameters/outputs/nbLineOK
+      - name: nbLineKO
+        description: Nombre de lignes dans le fichier d'entrée pour lesquelles aucun droit n'a été trouvé.
+        ref: steps/step-extract-rights/parameters/outputs/nbLineKO
+      - name: generalError
+        description: Erreur générale de l'exécution.
+        ref: steps/step-extract-rights/parameters/outputs/generalError

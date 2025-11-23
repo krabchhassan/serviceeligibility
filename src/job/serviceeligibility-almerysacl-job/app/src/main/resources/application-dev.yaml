@@ -1,0 +1,29 @@
+BEYOND_COULOIR: htp-es15
+BEYOND_CUSTOMER: editeur
+BEYOND_INSTANCE: htp-es15
+CLOUD_PROVIDER: itcare
+TARGET_ENV: local
+TARGET_DOMAIN: dev
+COMMON_INDEX_BASENAME: local
+WORKDIR_INPUT_FOLDER: C:/workdir/_acl/input/
+WORKDIR_OUTPUT_FOLDER: C:/workdir/_acl/output/
+ARCHIVE_PATH: /tmp/archive609/
+beyond:
+  couloir: htp
+  customer: editeur
+  instance: htp-es15
+  observability:
+    tracing:
+      enabled: false
+    log:
+      enabled: false
+logging:
+  level:
+    com:
+      cegedim: info
+server:
+  port: 8090
+service:
+  code: serviceeligibility
+socle:
+  code: Insurance

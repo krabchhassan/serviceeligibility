@@ -1,0 +1,51 @@
+beyond:
+  management-scope:
+    enabled: false
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+  messaging:
+    transactional: false
+    enabled: true
+    types:
+      UndueRetentionMessageDto: com.cegedim.beyond.schemas.UndueRetentionMessageDto
+    security-context:
+      enabled: true
+      check-instance: false
+    cloudEvent:
+      enabled: false
+logging:
+  level:
+    com.cegedim.next: INFO
+    org.apache.kafka: ERROR
+    org.mongodb: ERROR
+spring:
+  main:
+    web-application-type: servlet
+  application:
+    admin:
+      enabled: true
+    name: serviceeligibility-undue-retention-job
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URL}
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS}
+    producer:
+      acks: all
+      batch-size: 16384
+      buffer-memory: 33554432
+      compression-type: snappy
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        enable:
+          idempotence: false
+        linger.ms: 1
+        request.timeout.ms: 50000
+      retries: 0
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

@@ -1,0 +1,223 @@
+{
+  "beneficiaires":
+  [
+    {
+      "domaineDroits":
+      [
+        {
+          "code": "OPAU",
+          "garanties":
+          [
+            {
+              "codeGarantie": "AXASCCGDIV",
+              "libelleGarantie": "CG SANTE CONFORT",
+              "codeAssureurGarantie": "AXA6485",
+              "dateAdhesionCouverture": "2018/01/01",
+              "produits":
+              [
+                {
+                  "codeProduit": "AXASC_CGDIV-6485-V2",
+                  "codeOffre": "CONTRATGROUPEAXA",
+                  "codeOc": "CONTRAT_GROUPE_AXA",
+                  "referencesCouverture":
+                  [
+                    {
+                      "referenceCouverture": "OPAU-099",
+                      "formulaMask": "PEC",
+                      "naturesPrestation":
+                      [
+                        {
+                          "naturePrestation": "OPTIQUEAUDIO",
+                          "periodesDroit":
+                          [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2024/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2024/01/01",
+                              "periodeFin": "2024/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements":
+                          [
+                            {
+                              "tauxRemboursement": "PEC",
+                              "uniteTauxRemboursement": "XX",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit":
+                          [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements":
+                          [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement":
+                              {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations":
+                          [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule":
+                              {
+                                "numero": "099",
+                                "parametres":
+                                []
+                              },
+                              "periodes":
+                              [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateNaissance": "19801116",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1560832135165",
+      "cleNirBeneficiaire": "15",
+      "nirOd1": "1560832135165",
+      "cleNirOd1": "15",
+      "numeroPersonne": "2122706",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2012/01/01",
+      "dateDebutAdhesionIndividuelle": "2018/01/01",
+      "dernierMouvementRecu": "V",
+      "affiliation":
+      {
+        "nom": "SIMAN",
+        "nomPatronymique": "SIMAN",
+        "nomMarital": "SIMAN",
+        "prenom": "VINCENT",
+        "civilite": "M",
+        "periodeDebut": "2012/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "091",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses":
+      [
+        {
+          "ligne1": "Mr SIMAN VINCENT",
+          "ligne4": "52 RUE DE LA PAIX",
+          "ligne6": "06522 BARBY",
+          "codePostal": "09210",
+          "email": "RSIMAN@FREE.FR",
+          "typeAdresse":
+          {
+            "type": "AD"
+          }
+        }
+      ],
+      "affiliationsRO":
+      [
+        {
+          "nir":
+          {
+            "code": "1560832135165",
+            "cle": "15"
+          },
+          "rattachementRO":
+          {
+            "codeRegime": "01",
+            "codeCaisse": "091"
+          },
+          "periode":
+          {
+            "debut": "2018/01/01"
+          }
+        }
+      ],
+      "teletransmissions":
+      [
+        {
+          "periode":
+          {
+            "debut": "2018/01/01"
+          },
+          "isTeletransmission": true
+        }
+      ]
+    }
+  ],
+  "idDeclarant": "0000401166",
+  "numeroContrat": "NUMBERCONTRAT",
+  "numeroAdherent": "NUMBERCONTRAT",
+  "numeroAdherentComplet": "NUMBERCONTRAT",
+  "dateSouscription": "2018/01/01",
+  "type": "B",
+  "nomPorteur": "SIMAN",
+  "prenomPorteur": "VINCENT",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "00219071",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "001",
+  "numeroExterneContratIndividuel": "NUMBERCONTRAT",
+  "gestionnaire": "0000401166",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "periodeResponsableOuverts":
+  [
+    {
+      "debut": "2018/01/01"
+    }
+  ],
+  "carteTPaEditerOuDigitale": "0",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.domain.contract.ContractTP"
+}

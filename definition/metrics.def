@@ -1,0 +1,234 @@
+metrics:
+  - name: nombre.personne.traitement.periode.job
+    spec:
+      description: nombre  de personnes par traitement sur une période job
+      eventTypes:
+      - Insurance.serviceeligibility.trigger.finished.event
+      axes:
+        - idDeclencheur
+        - operationDate
+        - type
+        - statut
+      aggregations:
+        - then: 1
+  - name: nombre.personne.traitement.periode.unitaire
+    spec:
+      description: nombre de personnes par traitement sur une période unitaire
+      eventTypes:
+      - Insurance.serviceeligibility.triggered.beneficiary.finished.event
+      axes:
+        - idDeclencheur
+        - societeEmettrice
+        - codeAnomalie
+      aggregations:
+        - then: 1
+  - name: quantite.contrats.invalides
+    spec:
+      description: nombre de contrats invalides
+      eventTypes:
+      - Insurance.serviceeligibility.contract.invalid.reception.event
+      axes:
+        - time
+        - error
+        - number
+      aggregations:
+        - then: 1
+  - name: quantite.contrats.crees
+    spec:
+      description: nombre de contrats crees
+      eventTypes:
+      - Insurance.serviceeligibility.contract.creation.event
+      axes:
+        - time
+        - number
+      aggregations:
+        - then: 1
+  - name: quantite.contrats.mis.a.jour
+    spec:
+      description: nombre de contrats mis a jour
+      eventTypes:
+      - Insurance.serviceeligibility.contract.modification.event
+      axes:
+        - time
+        - number
+      aggregations:
+        - then: 1
+  - name: quantite.contrats.supprimes
+    spec:
+      description: nombre de contrats supprimes
+      eventTypes:
+      - Insurance.serviceeligibility.contract.suppression.event
+      axes:
+        - time
+        - number
+      aggregations:
+        - then: 1
+  - name: nombre.consolidation.declaration
+    spec:
+      description: Nombre de contrats consolidés
+      eventTypes:
+      - Insurance.serviceeligibility.declaration.conso.event
+      axes:
+        - time
+      aggregations:
+        - then: 1
+  - name: nombre.consolidation.declaration.echec
+    spec:
+      description: Nombre de consolidation contrats en échec
+      eventTypes:
+      - Insurance.serviceeligibility.declaration.conso.failed.event
+      axes:
+        - time
+        - error
+        - idDeclarant
+        - issuingCompanyCode
+        - contractNumber
+      aggregations:
+        - then: 1
+  - name: nombre.carte.demat.cree
+    spec:
+      description: Nombre de cartes dématérialisées crées
+      eventTypes:
+      - Insurance.serviceeligibility.carteTP.demat.creation.event
+      axes:
+        - time
+      aggregations:
+        - then: 1
+  - name: nombre.carte.demat.desactivee
+    spec:
+      description: Nombre de cartes dématérialisées désactivées
+      eventTypes:
+      - Insurance.serviceeligibility.carteTP.demat.desactivation.event
+      axes:
+        - time
+      aggregations:
+        - then: 1
+  - name: nombre.carte.demat.active
+    spec:
+      description: Nombre de cartes activées
+      eventTypes:
+      - Insurance.serviceeligibility.carteTP.demat.active.event
+      axes:
+        - time
+      aggregations:
+        - then: 1
+  - name: nombre.carte.papier.cree
+    spec:
+      description: Nombre de cartes papiers envoyées
+      eventTypes:
+      - Insurance.serviceeligibility.carteTP.papier.generate.event
+      axes:
+        - time
+      aggregations:
+        - then: 1
+  - name: nombre.carte.papier.echec
+    spec:
+      description: Nombre de cartes papiers en échec
+      eventTypes:
+      - Insurance.serviceeligibility.carteTP.papier.generate.failed.event
+      axes:
+        - time
+        - error
+        - idDeclarant
+        - issuingCompanyCode
+        - contractNumber
+      aggregations:
+        - then: 1
+  - name: nombre.fichiers.integres
+    spec:
+      description: fichiers intégrés avec succès
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.file.succeeded.event
+      axes:
+        - time
+        - fileName
+        - mode
+        - omuId
+      aggregations:
+        - then: $$NumberOfDistinctGuarantees
+  - name: nombre.fichiers.rejetes
+    spec:
+      description: fichiers non intégrés
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.file.failed.event
+      - Insurance.serviceeligibility.bobb.transformation.file.failed.event
+      axes:
+        - time
+        - fileName
+        - errorMessage
+        - omuId
+        - mode
+      aggregations:
+        - then: 1
+  - name: nombre.lignes.integrees
+    spec:
+      description: nombre de lignes intégrées
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.lines.succeeded.event
+      axes:
+        - time
+        - fileName
+        - omuId
+        - mode
+      aggregations:
+        - then: $$succeededLinesCount
+  - name: nombre.lignes.rejetees
+    spec:
+      description: nombre de lignes rejetées
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.line.failed.event
+      axes:
+        - time
+        - fileName
+        - omuId
+        - codeContractElement
+        - codeInsurer
+        - code AMC
+        - codeOffer
+        - codeProduct
+        - errorMessage
+      aggregations:
+        - then: 1
+  - name: contrat.reception
+    spec:
+      description: Réception d'un contrat du backoffice
+      eventTypes:
+      - Insurance.serviceeligibility.contract.reception.event
+      axes:
+        - time
+        - number
+      aggregations:
+        - then: 1
+  - name: nombre.lignes.integrees.par.fichier
+    spec:
+      description: Nombre de lignes intégrées/MAJ par fichier
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.lines.succeeded.event
+      axes:
+        - omuId
+        - fileName
+        - succeededLinesCount
+        - mode
+      aggregations:
+        - then: 1
+  - name: nombre.lignes.rejetees.par.fichier
+    spec:
+      description: Nombre de lignes rejetées par fichier
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.line.failed.event
+      axes:
+        - omuId
+        - fileName
+      aggregations:
+        - then: 1
+  - name: nombre.garanties.distinctes
+    spec:
+      description: Nombre de garanties distinctes
+      eventTypes:
+      - Insurance.serviceeligibility.bobb.import.file.succeeded.event
+      axes:
+        - omuId
+        - fileName
+        - NumberOfDistinctGuarantees
+      aggregations:
+        - then: 1

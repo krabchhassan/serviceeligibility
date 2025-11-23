@@ -1,0 +1,250 @@
+{
+	"id": null,
+	"traceId": null,
+	"idDeclarant": "0032165199",
+	"societeEmettrice": "CODMUT",
+	"numero": "AI-BYD-00000002",
+	"numeroExterne": "AI-BYD-00000002",
+	"numeroAdherent": "I-BYD-00",
+	"numeroAdherentComplet": "AI-BYD-00000002",
+	"dateSouscription": "2020-01-01",
+	"periodesContratResponsableOuvert": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"periodesContratCMUOuvert": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"critereSecondaireDetaille": " ",
+	"critereSecondaire": " ",
+	"isContratIndividuel": true,
+	"gestionnaire": "CEGEDIM",
+	"qualification": "B",
+	"ordrePriorisation": "1",
+	"periodesDroitsComptablesOuverts": [
+		{
+			"debut": "2020-01-01"
+		}
+	],
+	"assures": [
+		{
+			"isSouscripteur": true,
+			"rangAdministratif": "1",
+			"identite": {
+				"nir": {
+					"code": "1700165698241",
+					"cle": "81"
+				},
+				"affiliationsRO": [
+					{
+						"nir": {
+							"code": "1700165698241",
+							"cle": "81"
+						},
+						"rattachementRO": {
+							"codeRegime": "01",
+							"codeCaisse": "111",
+							"codeCentre": "1018"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"dateNaissance": "19700101",
+				"rangNaissance": "1",
+				"numeroPersonne": "20288132"
+			},
+			"dateAdhesionMutuelle": "2020-01-01",
+			"dateDebutAdhesionIndividuelle": "2020-01-01",
+			"numeroAdhesionIndividuelle": "AI-BYD-00000002",
+			"periodes": [
+				{
+					"debut": "2020-01-01"
+				}
+			],
+			"periodesMedecinTraitantOuvert": [],
+			"regimesParticuliers": [
+				{
+					"code": "R1",
+					"periode": {
+						"debut": "2020-02-01"
+					}
+				}
+			],
+			"situationsParticulieres": [
+				{
+					"code": "CMU",
+					"periode": {
+						"debut": "2020-01-01",
+						"fin": "2020-12-31"
+					}
+				}
+			],
+			"qualite": {
+				"code": "ASSPRI",
+				"libelle": "Assure principal"
+			},
+			"data": {
+				"nom": {
+					"nomFamille": "JABOTE",
+					"nomUsage": "JABOTE",
+					"prenom": "Gregorie",
+					"civilite": "M"
+				},
+				"adresse": {
+					"ligne1": "M JABOTE Gregorie",
+					"ligne3": "residence des capitouls",
+					"ligne4": "7 IMPASSE DU RAMIER DES CATALANS",
+					"ligne6": "31000 TOULOUSE",
+					"codePostal": "31000"
+				},
+				"contact": {
+					"fixe": "0600589634"
+				},
+				"destinatairesPaiements": [
+					{
+						"idDestinatairePaiements": "I-BYD-00-20288132-DestPaiement-1",
+						"idBeyondDestinatairePaiements": "I-BYD-00-20288132-DestPaiement-1-0032165199",
+						"nom": {
+							"nomFamille": "JABOTE",
+							"nomUsage": "JABOTE",
+							"prenom": "Gregorie",
+							"civilite": "M"
+						},
+						"rib": {
+							"bic": "AGRIFRPP831",
+							"iban": "FR7613106001004578945612336"
+						},
+						"modePaiementPrestations": {
+							"code": "V ",
+							"libelle": "Virement",
+							"codeMonnaie": "EUR  "
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				],
+				"destinatairesRelevePrestations": [
+					{
+						"idDestinataireRelevePrestations": "I-BYD-00-20288132-DestRelevePrest-1",
+						"idBeyondDestinataireRelevePrestations": "I-BYD-00-20288132-DestRelevePrest-1-0032165199",
+						"nom": {
+							"nomFamille": "JABOTE",
+							"nomUsage": "JABOTE",
+							"prenom": "Gregorie",
+							"civilite": "M"
+						},
+						"adresse": {
+							"ligne1": "M JABOTE Gregorie",
+							"ligne3": "residence des capitouls",
+							"ligne4": "7 IMPASSE DU RAMIER DES CATALANS",
+							"ligne6": "31000 TOULOUSE",
+							"codePostal": "31000"
+						},
+						"periode": {
+							"debut": "2020-01-01"
+						}
+					}
+				]
+			},
+			"digitRelation": {
+				"teletransmissions": [
+					{
+						"periode": {
+							"debut": "2020-01-01"
+						},
+						"isTeletransmission": false
+					}
+				]
+			},
+			"droits": [
+				{
+					"code": "ARGENT",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie ARGENT",
+					"ordrePriorisation": "2",
+					"type": "O",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01",
+					"carences": [
+						{
+							"code": "1MOIS",
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-01-31"
+							}
+						}
+					]
+				},
+				{
+					"code": "OR",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie OR",
+					"ordrePriorisation": "1",
+					"type": "B",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01",
+					"carences": [
+						{
+							"code": "1TRIM",
+							"droitRemplacement": {
+								"codeAssureur": "CEGEDIM",
+								"libelle": "SANTE",
+								"code": "SANTE"
+							},
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-03-31"
+							}
+						},
+						{
+							"code": "1SEME",
+							"droitRemplacement": {
+								"codeAssureur": "CEGEDIM",
+								"libelle": "SANTE",
+								"code": "SANTE"
+							},
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-06-30"
+							}
+						},
+						{
+							"code": "1MOIS",
+							"droitRemplacement": {
+								"codeAssureur": "CEGEDIM",
+								"libelle": "SANTE",
+								"code": "SANTE"
+							},
+							"periode": {
+								"debut": "2020-01-01",
+								"fin": "2020-01-31"
+							}
+						}
+					]
+				},
+				{
+					"code": "PLOMB",
+					"codeAssureur": "CEGEDIM",
+					"libelle": "Garantie PLOMB",
+					"ordrePriorisation": "10",
+					"type": "O",
+					"periode": {
+						"debut": "2020-01-01"
+					},
+					"dateAncienneteGarantie": "2020-01-01"
+				}
+			]
+		}
+	],
+	"version": "5"
+}

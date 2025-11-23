@@ -1,0 +1,187 @@
+{
+  "contexteTiersPayant" : {
+    "isCartePapierAEditer" : false,
+    "periodesDroitsCarte" : {
+      "debut" : "2023-01-01",
+      "fin" : "2023-12-31"
+    },
+    "college" : "100",
+    "collectivite" : "CEGEDIM ACTIV",
+    "isCarteDematerialisee" : false,
+    "isCartePapier" : false
+  },
+  "assures" : [
+    {
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "2122706",
+            "idBeyondDestinatairePaiements" : "2122706-0000452433",
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "2122706",
+            "idBeyondDestinataireRelevePrestations" : "2122706-0000452433",
+            "dematerialisation" : {
+              "isDematerialise" : false
+            },
+            "nom" : {
+              "nomFamille" : "SIMAN",
+              "nomUsage" : "SIMAN",
+              "prenom" : "VINCENT",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Mr SIMAN VINCENT",
+              "ligne4" : "52 RUE DE LA PAIX",
+              "ligne6" : "06522 BARBY",
+              "codePostal" : "09210"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "SIMAN",
+          "nomUsage" : "SIMAN",
+          "prenom" : "VINCENT",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Mr SIMAN VINCENT",
+          "ligne4" : "52 RUE DE LA PAIX",
+          "ligne6" : "06522 BARBY",
+          "codePostal" : "09210"
+        },
+        "contact" : {
+          "email" : "RSIMAN@FREE.FR"
+        }
+      },
+      "digitRelation" : {
+        "teletransmissions" : [
+          {
+            "periode" : {
+              "debut" : "2018-01-01"
+            },
+            "isTeletransmission" : true
+          }
+        ]
+      },
+      "droits" : [
+        {
+          "carences" : [
+
+          ],
+          "code" : "AXASCCGDIV",
+          "codeAssureur" : "AXA",
+          "libelle" : "CG SANTE CONFORT",
+          "ordrePriorisation" : "1",
+          "type" : "B",
+          "periode" : {
+            "debut" : "2018-01-01"
+          },
+          "dateAncienneteGarantie" : "2018-01-01"
+        }
+      ],
+      "isSouscripteur" : true,
+      "rangAdministratif" : "1",
+      "identite" : {
+        "nir" : {
+          "code" : "1560832135165",
+          "cle" : "15"
+        },
+        "affiliationsRO" : [
+          {
+            "nir" : {
+              "code" : "1560832135165",
+              "cle" : "15"
+            },
+            "rattachementRO" : {
+              "codeRegime" : "01",
+              "codeCaisse" : "091"
+            },
+            "periode" : {
+              "debut" : "2018-01-01"
+            }
+          }
+        ],
+        "dateNaissance" : "19801116",
+        "rangNaissance" : "1",
+        "numeroPersonne" : "2122706"
+      },
+      "dateAdhesionMutuelle" : "2012-01-01",
+      "dateDebutAdhesionIndividuelle" : "2018-01-01",
+      "dateCreation" : "2023-04-28T10:59:07.829Z",
+      "periodes" : [
+        {
+          "debut" : "2018-01-01"
+        }
+      ],
+      "periodesMedecinTraitantOuvert" : [
+
+      ],
+      "regimesParticuliers" : [
+
+      ],
+      "situationsParticulieres" : [
+
+      ],
+      "qualite" : {
+        "code" : "A",
+        "libelle" : "Assuré principal"
+      }
+    }
+  ],
+  "version" : "5",
+  "periodesSuspension" : [
+
+  ],
+  "codeOc" : "CONTRAT_GROUPE_AXA",
+  "periodesContratCMUOuvert" : [
+
+  ],
+  "traceId" : "644ba6fbc9463a799fa0cb35",
+  "idDeclarant" : "0000401166",
+  "societeEmettrice" : "0000401166",
+  "numero" : "NUMBERCONTRAT",
+  "numeroExterne" : "NUMBERCONTRAT",
+  "numeroAdherent" : "NUMBERCONTRAT",
+  "numeroAdherentComplet" : "NUMBERCONTRAT",
+  "dateSouscription" : "2018-01-01",
+  "dateResiliation" : "2023-03-01",
+  "periodesContratResponsableOuvert" : [
+    {
+      "debut" : "2018-01-01"
+    }
+  ],
+  "critereSecondaire" : "001",
+  "isContratIndividuel" : false,
+  "gestionnaire" : "AXA",
+  "contratCollectif" : {
+    "numero" : "00219071"
+  },
+  "qualification" : "B",
+  "ordrePriorisation" : "1"
+}

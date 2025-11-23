@@ -1,0 +1,69 @@
+plugins {
+    id "beyond.gradle.plugins.java-library"
+    id "java-library"
+    id 'io.spring.dependency-management'
+}
+
+ext {
+    jaxbVersion = '4.0.1'
+}
+
+dependencies {
+    implementation(project(":schemas"))
+    // ----------------
+    // Spring framework
+    // ----------------
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+
+    // ----
+    // JAXB
+    // ----
+    implementation "jakarta.xml.ws:jakarta.xml.ws-api:${jaxbVersion}"
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api:${jaxbVersion}"
+    implementation "com.sun.xml.ws:jaxws-ri:${jaxbVersion}"
+    implementation "com.sun.xml.bind:jaxb-impl:${jaxbVersion}"
+}
+
+configurations {
+    jaxb
+}
+
+dependencies {
+
+    implementation("com.sun.xml.ws:jaxws-rt:4.0.3")
+    implementation('org.apache.cxf.xjc-utils:cxf-xjc-runtime:2.6.1')
+    implementation('org.apache.cxf:cxf-api:2.7.18') {
+        exclude group: "org.apache.geronimo.specs"
+    }
+    jaxb "com.sun.xml.bind:jaxb-xjc:${jaxbVersion}"
+    jaxb "com.sun.xml.bind:jaxb-impl:${jaxbVersion}"
+    jaxb "jakarta.xml.bind:jaxb-api:${jaxbVersion}"
+    jaxb("org.glassfish.jaxb:jaxb-xjc:4.0.4")
+}
+
+tasks.register('xjc') {
+    notCompatibleWithConfigurationCache("Ant - xjc ")
+    def baseDir = layout.projectDirectory.dir("src/main/java")
+    def destPackage = "com.cegedim.next.serviceeligibility.batch.almerys.normev3"
+    def xsdDir = layout.projectDirectory.dir("src/main/resources/xsd")
+    def bindingFile = layout.projectDirectory.file("src/main/resources/xsd/binding.xjb")
+
+    doLast {
+        xsdDir.asFile.eachFileMatch(~/.*\.xsd/) { file ->
+
+            ant.taskdef(name: 'xjc',
+                    classname: 'com.sun.tools.xjc.XJC2Task',
+                    classpath: configurations.jaxb.asPath
+            )
+
+            ant.xjc(
+                    destdir: baseDir.asFile.absolutePath,
+                    extension: "true",
+                    encoding: "UTF-8",
+                    binding: bindingFile.asFile.absolutePath,
+                    schema: file,
+                    package: destPackage
+            )
+        }
+    }
+}

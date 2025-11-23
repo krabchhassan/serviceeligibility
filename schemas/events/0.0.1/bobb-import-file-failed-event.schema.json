@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Import d'un fichier en échec",
+  "description": "Cet événement sera déclenché lorsque l'import d'un fichier de correspondance est en échec",
+  "additionalProperties": false,
+  "properties": {
+    "omuId": {
+      "type": "string",
+      "title": "Identifiant de l'omu",
+      "description": "Précise l'identifiant de l'omu"
+    },
+    "fileName": {
+      "type": "string",
+      "title": "Nom du fichier",
+      "description": "Précise le nom du fichier qui est importé"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode d'import",
+      "description": "Mode de traitement d'import complet ou bien differentiel"
+    },
+    "forçage": {
+      "type": "string",
+      "title": "Forçage",
+      "description": "Indicateur de forçage"
+    },
+    "errorMessage": {
+      "type": "string",
+      "title": "Message d'erreur",
+      "description": "Précise le message d'erreur lors de l'import du fichier"
+    }
+  },
+  "required": [
+    "fileName",
+    "mode",
+    "forçage",
+    "omuId"
+  ],
+  "$id": "Insurance.serviceeligibility.import.bobb.file.failed.event/0.0.1"
+}

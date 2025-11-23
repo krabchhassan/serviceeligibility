@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 sp1 (http://www.altova.com)  -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tarification-prescription="http://norme.cegedimassurances.com/tarification-prescription" xmlns="http://norme.cegedimassurances.com/tarification-prescription"  xmlns:commun="http://norme.cegedimassurances.com/commun" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+<xs:include schemaLocation="tarification-prescription:getTarification_in.xsd"/>
+<xs:include schemaLocation="tarification-prescription:getTarification_out.xsd"/>
+</xs:schema>

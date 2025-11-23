@@ -1,0 +1,36 @@
+{
+  "id": "idAvecLot123EtGT_BLO1",
+  "amc": "0000401166",
+  "amcNom": "BALOO",
+  "identifiantCollectivite": "",
+  "groupePopulation": "",
+  "critereSecondaireDetaille": "",
+  "statut": "Actif",
+  "dateDebutValidite": "2023-10-26",
+  "dateCreation": "2023-10-23T13:33:38.057Z",
+  "userCreation": "nicolas.rouch@cegedim-activ.com",
+  "parametrageRenouvellement": {
+    "dateRenouvellementCarteTP": "DebutEcheance",
+    "dureeValiditeDroitsCarteTP": "Annuel",
+    "delaiDeclenchementCarteTP": 0,
+    "modeDeclenchement": "Automatique"
+  },
+  "parametrageDroitsCarteTP": {
+    "codeConventionTP": "IS",
+    "codeOperateurTP": "IS",
+    "isCarteDematerialisee": false,
+    "detailsDroit": [
+    ],
+    "isCarteEditablePapier": false
+  },
+  "priorite": 200,
+  "garantieTechniques": [
+    {
+      "codeAssureur": "BALOO",
+      "codeGarantie": "GT_BLO1"
+    }
+  ],
+  "idLots": [
+    "123"
+  ]
+}

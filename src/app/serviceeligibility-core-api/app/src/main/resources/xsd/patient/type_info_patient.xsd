@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by Philippe (ca) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:amo="http://norme.cegedimassurances.com/amo" xmlns:amc="http://norme.cegedimassurances.com/amc" xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire" targetNamespace="http://norme.cegedimassurances.com/patient" elementFormDefault="qualified">
+	<xs:import namespace="http://norme.cegedimassurances.com/amo" schemaLocation="../amo/type_amo.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/amc" schemaLocation="../amc/type_amc.xsd"/>
+	<xs:import namespace="http://norme.cegedimassurances.com/beneficiaire" schemaLocation="../beneficiaire/type_beneficiaire_demandeur.xsd"/>
+	<xs:complexType name="type_info_patient">
+		<xs:sequence>
+			<xs:element name="AMO" type="amo:type_amo" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Informations concernant le régime obligatoire</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AMC" type="amc:type_amc" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Informations concernant l'organisme complémentaire</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="beneficiaire" type="beneficiaire:type_beneficiaire_demandeur" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Informations concernant le bénéficiaire du service
+</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

@@ -23,4 +23,3 @@ src/app/serviceeligibility-core-api/app/package-lock.json
 
 # Rapport local des tests
 htmlReport
-.env

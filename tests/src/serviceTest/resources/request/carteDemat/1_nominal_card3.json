@@ -1,0 +1,197 @@
+{
+  "_id": "59db442f4d1d4ef636305405",
+  "idDeclarant": "0002420008",
+  "contrat": {
+    "numero": "00000004323950010000",
+    "dateSouscription": "2016/10/20",
+    "dateResiliation": null,
+    "type": null,
+    "nomPorteur": "NPtest",
+    "prenomPorteur": "PPtest",
+    "civilitePorteur": "Mr",
+    "numeroAdherent": "00043239",
+    "numeroAdherentComplet": "00043239test",
+    "qualification": "B",
+    "numeroContratCollectif": "NCCtest ",
+    "rangAdministratif": null,
+    "isContratResponsable": false,
+    "isContratCMU": false,
+    "destinataire": "",
+    "individuelOuCollectif": "",
+    "situationDebut": null,
+    "situationFin": null,
+    "motifFinSituation": null,
+    "lienFamilial": "A",
+    "categorieSociale": null,
+    "situationParticuliere": "SP",
+    "typeConvention": "TCtest",
+    "critereSecondaireDetaille": "CSDtest",
+    "critereSecondaire": "CStest",
+    "numeroExterneContratIndividuel": "NECI test",
+    "numeroExterneContratCollectif": "NECC test",
+    "modePaiementPrestations": "",
+    "gestionnaire": "Gtest",
+    "groupeAssures": "GAtest",
+    "numeroCarte": "00043239",
+    "editeurCarte": "EC",
+    "fondCarte": null,
+    "annexe1Carte": "",
+    "annexe2Carte": null,
+    "numAMCEchange": "0123456789",
+    "numOperateur": "NOtest"
+  },
+  "adresse": {
+    "ligne1": "TestLigne1",
+    "ligne2": "TestLigne2",
+    "ligne3": "TestLigne3",
+    "ligne4": "TestLigne4",
+    "ligne5": "TestLigne5",
+    "ligne6": "TestLigne6",
+    "ligne7": "TestLigne7",
+    "codePostal": "31200",
+    "pays": "France",
+    "telephone": "0699999999",
+    "email": "email@gmail.com",
+    "typeAdresse": {
+      "libelle": "TestLibelle",
+      "type": "GE"
+    }
+  },
+  "domainesConventions": [
+    {
+      "code": "PHOR",
+      "rang": 1,
+      "conventions": [
+        {
+          "code": "MU",
+          "priorite": 0
+        }
+      ]
+    }
+  ],
+  "beneficiaires": [
+    {
+      "beneficiaire": {
+        "dateNaissance": "19330907",
+        "rangNaissance": "1",
+        "nirBeneficiaire": "NBtest",
+        "cleNirBeneficiaire": "Ctest",
+        "nirOd1": "2330969385004",
+        "cleNirOd1": "45",
+        "nirOd2": "NOD2",
+        "cleNirOd2": "C2",
+        "insc": null,
+        "numeroPersonne": "000000002437320",
+        "refExternePersonne": "000000002437321",
+        "affiliation": {
+          "nom": "nom_usage",
+          "nomPatronymique": "nom_patro",
+          "nomMarital": "nom_usage",
+          "prenom": "ELIANE",
+          "civilite": "Mme",
+          "periodeDebut": "2016/10/20",
+          "periodeFin": null,
+          "qualite": "A",
+          "regimeOD1": "01",
+          "caisseOD1": "691",
+          "centreOD1": "4400",
+          "regimeOD2": "ROD2",
+          "caisseOD2": "CaD2",
+          "centreOD2": "CeD2",
+          "hasMedecinTraitant": false,
+          "regimeParticulier": "RP",
+          "isBeneficiaireACS": false,
+          "isTeleTransmission": false,
+          "typeAssure": "ASSURE"
+        },
+        "adresses": []
+      },
+      "domainesCouverture": [
+        {
+          "code": "PHOR",
+          "codeExterne": "CE",
+          "libelle": null,
+          "codeExterneProduit": "CEP",
+          "libelleExterne": null,
+          "codeOptionMutualiste": "0.FAFSEA01",
+          "libelleOptionMutualiste": "LOMtest",
+          "codeProduit": "FAFSEA",
+          "libelleProduit": "LPFAFSEA",
+          "codeGarantie": "0.FAFSEA02",
+          "libelleGarantie": "FAFSEA2",
+          "codeProfil": "PHAR100",
+          "libelleCodeRenvoi": "LCR",
+          "tauxRemboursement": "100",
+          "isEditable": true,
+          "isSuspension": null,
+          "dateAdhesionCouverture": "2016/12/01",
+          "uniteTauxRemboursement": "XX",
+          "referenceCouverture": "RC test",
+          "origineDroits": "OD test",
+          "noOrdreDroit": 1,
+          "categorie": "PHAR",
+          "prioriteDroit": {
+            "code": "01",
+            "libelle": "01",
+            "typeDroit": null,
+            "prioriteBO": "01"
+          },
+          "prestations": [
+            {
+              "code": "DEF1",
+              "codeRegroupement": null,
+              "libelle": null,
+              "isEditionRisqueCarte": false,
+              "dateEffet": null,
+              "formule": {
+                "numero": "052",
+                "libelle": "",
+                "parametres": [
+                  {
+                    "numero": "3",
+                    "valeur": "100.00"
+                  }
+                ]
+              },
+              "formuleMetier": null
+            }
+          ],
+          "periodeDroit": {
+            "periodeDebut": "2017/01/01",
+            "periodeFin": "2017/12/31",
+            "motifEvenement": "FE",
+            "libelleEvenement": "Fermeture droits",
+            "modeObtention": "F"
+          },
+          "conventionnements": [
+            {
+              "priorite": 0,
+              "typeConventionnement": {
+                "code": "MU",
+                "libelle": "LMU"
+              }
+            }
+          ]
+        }
+      ],
+      "lienContrat": {
+        "lienFamilial": "A",
+        "rangAdministratif": "1",
+        "modePaiementPrestations": "MPP"
+      }
+    }
+  ],
+  "periodeDebut": "2017/01/01",
+  "periodeFin": "2030/12/31",
+  "AMC_contrat": "0002420008-00000004323950010000",
+  "idDeclarations": [
+    "59d3afa8a78ecb99f3d60b9b"
+  ],
+  "dateConsolidation": "2017-10-09T15:39:00.286Z",
+  "dateCreation": "2017-10-09T15:39:00.286Z",
+  "userCreation": "job620",
+  "dateModification": "2017-10-09T15:39:00.286Z",
+  "userModification": "job620",
+  "isLastCarteDemat": true
+}
+

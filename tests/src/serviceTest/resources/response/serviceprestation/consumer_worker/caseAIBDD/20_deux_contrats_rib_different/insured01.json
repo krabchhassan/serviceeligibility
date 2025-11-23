@@ -1,0 +1,73 @@
+{
+  "nom": {
+    "nomFamille": "MONTAGUS",
+    "nomUsage": "MONTAGUS",
+    "prenom": "hervé",
+    "civilite": "M"
+  },
+  "adresse": {
+    "ligne1": "M MONTAGUS hervé",
+    "ligne2": "",
+    "ligne3": "",
+    "ligne4": "AVENUE DE L ANCIEN VELODROME",
+    "ligne5": "",
+    "ligne6": "31000 TOULOUSE",
+    "ligne7": "",
+    "codePostal": "31000"
+  },
+  "destinatairesPrestations": [
+    {
+      "nom": {
+        "nomFamille": "MONTAGUS",
+        "nomUsage": "MONTAGUS",
+        "prenom": "hervé",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M MONTAGUS hervé",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "AVENUE DE L ANCIEN VELODROME",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "rib": {
+        "iban": "MC5830001007941234567890185",
+        "bic": "BNPAMCM1"
+      },
+      "modePaiementPrestations": {
+        "code": "V ",
+        "libelle": "Virement",
+        "codeMonnaie": "EUR  "
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ],
+  "destinatairesRelevePrestations": [
+    {
+      "nom": {
+        "nomFamille": "MONTAGUS",
+        "nomUsage": "MONTAGUS",
+        "prenom": "hervé",
+        "civilite": "M"
+      },
+      "adresse": {
+        "ligne1": "M MONTAGUS hervé",
+        "ligne2": "",
+        "ligne3": "",
+        "ligne4": "AVENUE DE L ANCIEN VELODROME",
+        "ligne5": "",
+        "ligne6": "31000 TOULOUSE",
+        "ligne7": "",
+        "codePostal": "31000"
+      },
+      "periode": {
+        "debut": "2020-01-01"
+      }
+    }
+  ]
+}

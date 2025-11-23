@@ -1,0 +1,169 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "TEST01",
+  "numeroAdherent": "TEST01",
+  "dateSouscription": "2021/01/01",
+  "nomPorteur": "DUPOND",
+  "prenomPorteur": "PHILIPPE",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "010101",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "destinataire": "AD",
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "",
+  "groupeAssures": "0SOUS",
+  "editeurCarte": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "dateCreation": "2024-02-29T09:49:51.472",
+  "dateModification": "2024-03-07T13:36:54.548",
+  "dateConsolidation": "2024-03-07T13:36:54.548",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2024-02-29T09:49:51.472",
+      "dateModification": "2024-03-07T13:36:54.548",
+      "dateNaissance": "20000920",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2000931314007",
+      "cleNirBeneficiaire": "62",
+      "nirOd1": "2000931314007",
+      "cleNirOd1": "62",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "380322027",
+      "refExternePersonne": "010101",
+      "rangAdministratif": "01",
+      "modePaiementPrestations": "V",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "DUPOND",
+        "nomPatronymique": "DUPOND",
+        "nomMarital": "DUPOND",
+        "prenom": "PHILIPPE",
+        "periodeDebut": "2012/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "311",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASSURE"
+      },
+      "adresses": [
+      ],
+      "domaineDroits": [
+        {
+          "code": "OPTI",
+          "origineDroits": "",
+          "garanties": [
+            {
+              "codeGarantie": "CONFORT1",
+              "libelleGarantie": "CEGEDIM CONFORT1",
+              "dateAdhesionCouverture": "2014/02/01",
+              "produits": [
+                {
+                  "codeProduit": "CEGACT",
+                  "libelleProduit": "CEGEDIM ACTIFS",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "NOSEL",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "nat1",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/01/01",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "LPP",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_class": "com.cegedim.next.serviceeligibility.core.model.domain.contract.Contract"
+}

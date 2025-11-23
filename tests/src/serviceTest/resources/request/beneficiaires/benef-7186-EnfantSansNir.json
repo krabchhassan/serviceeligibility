@@ -1,0 +1,142 @@
+{
+	"services" : [
+		"Service_TP"
+	],
+	"key" : "0000401166-2529639",
+	"societesEmettrices" : [
+		{
+			"code" : "0000401166",
+			"periodes" : [
+				{
+					"debut" : "2021-01-01",
+					"fin" : "9999-12-31"
+				}
+			]
+		}
+	],
+	"contrats" : [
+		{
+			"numeroContrat" : "S2274751",
+			"codeEtat" : "V",
+			"data" : {
+				"destinatairesPaiements" : [
+					{
+						"idDestinatairePaiements" : "2529639",
+						"idBeyondDestinatairePaiements" : "2529639-0000401166",
+						"nom" : {
+							"nomFamille" : "GUINEMET",
+							"nomUsage" : "GUINEMET",
+							"prenom": "LOISE",
+							"civilite" : "MME"
+						},
+						"adresse" : {
+							"ligne1": "Madame GUINEMET LOISE",
+							"ligne4": "32 ALLEE DES PIGEONS",
+							"ligne6": "31000 TOULOUSE",
+							"codePostal": "31000"
+						},
+						"rib" : {
+							"bic" : "BNPAFRPPXXX",
+							"iban" : "FR7630004015730000000110123"
+						},
+						"modePaiementPrestations" : {
+							"code" : "VIR",
+							"libelle" : "Virement",
+							"codeMonnaie" : "EUR"
+						},
+						"periode" : {
+							"debut" : "2021-01-01"
+						}
+					}
+				],
+				"destinatairesRelevePrestations" : [
+					{
+						"idDestinataireRelevePrestations" : "2529639",
+						"idBeyondDestinataireRelevePrestations" : "2529639-0000401166",
+						"dematerialisation" : {
+							"isDematerialise" : false
+						},
+						"nom" : {
+							"nomFamille": "GUINEMET",
+							"nomUsage": "GUINEMET",
+							"prenom": "LOISE",
+							"civilite" : "MME"
+						},
+						"adresse" : {
+							"ligne1": "Madame GUINEMET LOISE",
+							"ligne4": "32 ALLEE DES PIGEONS",
+							"ligne6": "31000 TOULOUSE",
+							"codePostal": "31000"
+						},
+						"periode" : {
+							"debut" : "2021-01-01"
+						}
+					}
+				],
+				"nom" : {
+					"nomFamille": "GUINEMET",
+					"nomUsage": "GUINEMET",
+					"prenom": "LOIC",
+					"civilite" : "M"
+				},
+				"adresse" : {
+					"ligne1": "Madame GUINEMET LOIC",
+					"ligne4": "32 ALLEE DES PIGEONS",
+					"ligne6": "31000 TOULOUSE",
+					"codePostal": "31000"
+				},
+				"contact" : {
+					"mobile" : ""
+				}
+			},
+			"numeroAdherent" : "S2274751",
+			"societeEmettrice" : "0000401166",
+			"periodes" : [
+				{
+					"debut" : "2021-01-01",
+					"fin" : "9999-12-31"
+				}
+			]
+		}
+	],
+	"idClientBO" : "service-account-ai-biur00",
+	"amc" : {
+		"idDeclarant" : "0000401166"
+	},
+	"numeroAdherent" : "S2274751",
+	"identite" : {
+		"nir" : {
+			"code" : "2790299208201",
+			"cle" : "42"
+		},
+		"affiliationsRO" : [
+			{
+				"nir" : {
+					"code" : "2790299208201",
+					"cle" : "42"
+				},
+				"rattachementRO" : {
+					"codeRegime" : "01",
+					"codeCaisse" : "951"
+				},
+				"periode" : {
+					"debut" : "2021-01-01"
+				}
+			}
+		],
+		"dateNaissance" : "20070624",
+		"rangNaissance" : "1",
+		"numeroPersonne" : "2529742",
+		"historiqueDateRangNaissance" : [
+			{
+				"dateNaissance" : "20070624",
+				"rangNaissance" : "1"
+			}
+		]
+	},
+	"audit" : {
+		"dateEmission" : "2025-07-02T07:31:40.824Z"
+	},
+	"traceId" : "6864e05c2b20d1638164e501",
+	"_class" : "com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5"
+}

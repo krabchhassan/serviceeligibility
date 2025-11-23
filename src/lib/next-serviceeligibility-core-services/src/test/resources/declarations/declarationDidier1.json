@@ -1,0 +1,710 @@
+{
+  "codeEtat": "V",
+  "effetDebut": "2023-04-28T12:10:27.138Z",
+  "idDeclarant": "0000452433",
+  "carteTPaEditerOuDigitale": "0",
+  "idTrigger": "644bb6ef95831025fcbd905a",
+  "versionDeclaration": "3.1",
+  "userCreation": "WORKER",
+  "userModification": "WORKER",
+  "beneficiaire": {
+    "dateNaissance": "20041126",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1234567891234",
+    "cleNirBeneficiaire": "95",
+    "nirOd1": "1234567891234",
+    "cleNirOd1": "95",
+    "numeroPersonne": "2127020",
+    "dateAdhesionMutuelle": "2018/01/01",
+    "dateDebutAdhesionIndividuelle": "2018/01/01",
+    "affiliation": {
+      "nom": "POL",
+      "nomPatronymique": "POL",
+      "nomMarital": "POL",
+      "prenom": "LYV",
+      "civilite": "MLLE",
+      "periodeDebut": "2018/01/01",
+      "qualite": "E",
+      "regimeOD1": "01",
+      "caisseOD1": "131",
+      "hasMedecinTraitant": false,
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "Enfant"
+    },
+    "adresses": [
+      {
+        "ligne1": "Mademoiselle POL LYV",
+        "ligne2": "BAT A",
+        "ligne3": "LA COMPTESSE",
+        "ligne4": "31 RUE DE LA PAIX",
+        "ligne6": "31000 TOULOUSE",
+        "codePostal": "13012",
+        "typeAdresse": {
+          "type": "AD"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "02247565",
+    "dateSouscription": "2018/01/01",
+    "type": "B",
+    "nomPorteur": "POL",
+    "prenomPorteur": "FRANCK",
+    "civilitePorteur": "M",
+    "numeroAdherent": "02247565",
+    "numeroAdherentComplet": "02247565",
+    "qualification": "B",
+    "numeroContratCollectif": "00219210",
+    "rangAdministratif": "2",
+    "isContratResponsable": true,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "2",
+    "lienFamilial": "E",
+    "typeConvention": "IS",
+    "critereSecondaire": "001",
+    "numeroExterneContratIndividuel": "02247565",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "0000452433",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1"
+  },
+  "domaineDroits": [
+    {
+      "code": "OPAU",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "OPAU-099",
+      "noOrdreDroit": 0,
+      "categorie": "OPAU",
+      "formulaMask": "PEC",
+      "naturePrestation": "OPTIQUEAUDIO",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "SVIL",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "SVIL-02A-100",
+      "noOrdreDroit": 1,
+      "categorie": "SVIL",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "SOINS_COURANTS",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "DESO",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "DESO-02A-100",
+      "noOrdreDroit": 2,
+      "categorie": "DESO",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "DENTAIRE",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "EXTE",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "EXTE-02A-100",
+      "noOrdreDroit": 3,
+      "categorie": "EXTE",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "SOINS_COURANTS",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "HOSP",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "HOSP-099",
+      "noOrdreDroit": 4,
+      "categorie": "HOSP",
+      "formulaMask": "PEC",
+      "naturePrestation": "HOSPITALISATION",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "DEOR",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "DEOR-099",
+      "noOrdreDroit": 5,
+      "categorie": "DEOR",
+      "formulaMask": "PEC",
+      "naturePrestation": "DENTAIRE",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "TRAN",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "TRAN-02A-100",
+      "noOrdreDroit": 6,
+      "categorie": "TRAN",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "SOINS_COURANTS",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "PHAR",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "PHAR-02A-100",
+      "noOrdreDroit": 7,
+      "categorie": "PHAR",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "SOINS_COURANTS",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "DEPR",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "PEC",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "XX",
+      "referenceCouverture": "DEPR-099",
+      "noOrdreDroit": 8,
+      "categorie": "DEPR",
+      "formulaMask": "PEC",
+      "naturePrestation": "DENTAIRE",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "099",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "MEDE",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "MEDE-02A-100",
+      "noOrdreDroit": 9,
+      "categorie": "MEDE",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "SOINS_COURANTS",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "CSTE",
+      "codeProduit": "AXASC_CGDIM",
+      "codeGarantie": "AXASCCGDIM",
+      "libelleGarantie": "CG SANTE CONFORT",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2018/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "CSTE-02A-100",
+      "noOrdreDroit": 10,
+      "categorie": "CSTE",
+      "formulaMask": "100% TR - MRO",
+      "naturePrestation": "SOINS_COURANTS",
+      "codeAssureurGarantie": "AXA",
+      "codeOffre": "CONTRATGROUPEAXA",
+      "versionOffre": "2021_janv_01.13",
+      "codeOc": "CONTRAT_GROUPE_AXA",
+      "isEditable": false,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "02A",
+            "parametres": [
+              {
+                "numero": "3",
+                "valeur": "100"
+              }
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2021/01/01",
+        "periodeFin": "2021/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2021/01/01"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "etatSuspension": "-1"
+}

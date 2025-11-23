@@ -1,0 +1,26 @@
+{
+  "offerCode": "6411Janv",
+  "offerVersions": [
+    {
+      "domains": [
+        {
+          "domainCode": "DENT",
+          "tpOffline": {
+            "formulaCode": "fGl_DE00001_100pctFraisReels",
+            "formulaLabel": " DE00001_100% Frais Réels ",
+            "formulaMask": " 100% FR ",
+            "stsFormulaCode": "010",
+            "nature": "DENTAIRE"
+          },
+          "tpOnline": {
+            "nature": "DENTAIRE"
+          }
+        }
+      ],
+      "offerVersionCode": "22",
+      "effectDate": "2022-03-03T14:53:32.994Z",
+      "validityDate": "2024-01-01",
+      "engineVersion": "1.0"
+    }
+  ]
+}

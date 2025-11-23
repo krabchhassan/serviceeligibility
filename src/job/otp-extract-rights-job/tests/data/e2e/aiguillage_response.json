@@ -1,0 +1,73 @@
+
+{
+  "content": {
+    "1200531125129-AAAAAA-20230301": [
+      {
+        "lastname": "lastname",
+        "firstname": "firstname",
+        "insee_code": "1200531125129",
+        "birth_date": "BBBBBB",
+        "birth_rank": "1",
+        "insurer_id": "1"
+      },
+      {
+        "lastname": "lastname",
+        "firstname": "firstname",
+        "insee_code": "1200531125129",
+        "birth_date": "CCCCCC",
+        "birth_rank": "1",
+        "insurer_id": "1"
+      }
+    ],
+    "1200531125129-180230-20230301": [
+      {
+        "lastname": "lastname",
+        "firstname": "firstname",
+        "insee_code": "1200531125129",
+        "birth_date": "180230",
+        "birth_rank": "1",
+        "insurer_id": "1"
+      },
+      {
+        "lastname": "lastname",
+        "firstname": "firstname",
+        "insee_code": "1200531125129",
+        "birth_date": "180230",
+        "birth_rank": "1",
+        "insurer_id": "2"
+      }
+    ],
+    "1200531125129-180230-20230301-1": [
+      {
+        "lastname": "lastname",
+        "firstname": "firstname",
+        "insee_code": "1200531125129",
+        "birth_date": "180230",
+        "birth_rank": "1",
+        "insurer_id": "1"
+      }
+    ],
+    "3200531125129-201212-20230301-3": [
+      {
+        "lastname": "lastname",
+        "firstname": "firstname",
+        "insee_code": "3200531125129",
+        "birth_date": "180230",
+        "birth_rank": "1",
+        "insurer_id": "3"
+      }
+    ]
+  },
+  "errors": {
+    "2200531125129-201212-20230301-1" : {
+      "code": "NEXT-AIGUILLAGE-CORE-EXTRACTED-404-1",
+      "msg": "",
+      "request": {}
+    },
+    "1200531125129-None-20230301": {
+      "code": "NEXT-AIGUILLAGE-CORE-EXTRACTED-404-1",
+      "msg": "",
+      "request": {}
+    }
+  }
+}

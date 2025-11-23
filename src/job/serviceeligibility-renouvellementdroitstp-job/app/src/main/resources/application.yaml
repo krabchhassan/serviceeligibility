@@ -1,0 +1,55 @@
+JOB_SPAN_NAME: renouvellementdroitstp-job
+beyond:
+  caching:
+    specs:
+      bobb:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      parametreCarteTPCache:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+      lotCacheByIdForRenewal:
+        expireAfterAccessDuration: PT2M
+        maxSize: 50
+        type: caffeine
+  customer: ${BEYOND_CUSTOMER}
+  instance: ${BEYOND_INSTANCE}
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-renouvtp
+  management-scope:
+    enabled: false
+  messaging:
+    transactional: false
+    cloudEvent:
+      enabled: true
+    security-context:
+      enabled: false
+    types:
+      String: java.lang.String
+      TriggerId: com.cegedim.next.serviceeligibility.core.model.kafka.TriggerId
+  security:
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+  observability:
+    log:
+      enabled: false
+logging:
+  level:
+    root: error
+spring:
+  application:
+    name: serviceeligibility-renouvellementdroitstp-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  main:
+    web-application-type: servlet

@@ -1,0 +1,35 @@
+plugins {
+    id 'beyond.gradle.plugins.java-spring-app'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+
+    // -----
+    // Mongooooo
+    // -----
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    implementation("org.apache.commons:commons-collections4")
+
+    implementation(project(":lib-next-serviceeligibility-core-services")) {
+        exclude group: "com.cegedim.beyond.framework", module: "lib-beyond-filestorage-s3-starter"
+    }
+    implementation(project(":lib-next-serviceeligibility-elastic-services"))
+    implementation("com.cegedim.beyond.framework:lib-common-omu-helper-java")
+    // tracing
+    implementation("com.cegedim.beyond.framework:lib-beyond-observability-starter")
+
+    testImplementation('org.springframework.batch:spring-batch-test')
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("org.junit.jupiter:junit-jupiter-params")
+    testImplementation("org.junit.platform:junit-platform-launcher")
+    testImplementation("org.junit.platform:junit-platform-engine")
+    testImplementation("org.junit.platform:junit-platform-commons")
+}
+

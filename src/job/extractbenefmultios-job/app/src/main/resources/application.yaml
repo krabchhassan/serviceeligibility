@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: extractbenefmultios-job
+  data:
+    mongodb:
+      uri: ${BDD_MONGODB_URL:${MONGODB_URL}}
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          convert:
+            CustomConversions: ERROR
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-extractbenefmultios-job
+  management-scope:
+    enabled: false
+  observability:
+    log:
+      enabled: true

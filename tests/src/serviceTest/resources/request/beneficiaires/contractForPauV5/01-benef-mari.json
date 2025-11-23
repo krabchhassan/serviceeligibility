@@ -1,0 +1,65 @@
+{
+  "id" : null,
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "A0001",
+  "contrats" : [
+    {
+      "numeroContrat" : "A00010",
+      "codeEtat" : "V",
+      "numeroAdherent" : "A0001",
+      "data" : {
+        "nom" : {
+          "nomFamille" : "TESTB0001",
+          "nomUsage" : "TESTB0001",
+          "prenom" : "Patrick"
+        },
+        "adresse" : {
+
+        },
+        "contact" : {
+
+        }
+      }
+    }
+  ],
+  "identite" : {
+    "nir" : {
+      "code" : "1810131111111",
+      "cle" : "61"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1810131111111",
+          "cle" : "61"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "131"
+        },
+        "periode" : {
+          "debut" : "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance" : "19810101",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "00012",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "19810101",
+        "rangNaissance" : "1"
+      }
+    ]
+  },
+  "audit" : {
+    "dateEmission" : null
+  },
+  "traceId" : null,
+  "services" : [
+    "Service_TP"
+  ],
+  "key" : "0000401166-00012"
+}

@@ -1,0 +1,281 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "0123456",
+  "numeroAdherent": "0123456",
+  "numeroAdherentComplet": "0123456",
+  "dateSouscription": "2019/05/01",
+  "type": "B",
+  "nomPorteur": "BLUE",
+  "prenomPorteur": "VIOLET",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "000000000015",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "0123456",
+  "numeroExterneContratCollectif": "21234567892012",
+  "gestionnaire": "000ER00019",
+  "fondCarte": "fond.jpg",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "dateCreation": "2024-06-26T20:43:27.263Z",
+  "dateModification": "2024-09-11T12:11:38.064Z",
+  "dateConsolidation": "2024-09-11T12:11:38.064Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": false,
+      "dateCreation": "2024-06-26T20:43:27.263Z",
+      "dateModification": "2024-09-11T12:11:37.686Z",
+      "dateNaissance": "19700603",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1701062498046",
+      "cleNirBeneficiaire": "02",
+      "nirOd1": "1701062498046",
+      "cleNirOd1": "02",
+      "numeroPersonne": "123456",
+      "refExternePersonne": "234567",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2019/05/01",
+      "dateDebutAdhesionIndividuelle": "2019/05/01",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "BLUE",
+        "nomPatronymique": "BLUE",
+        "nomMarital": "BLUE",
+        "prenom": "VIOLET",
+        "civilite": "M",
+        "periodeDebut": "2019/05/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "131",
+        "hasMedecinTraitant": false,
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Assuré principal"
+      },
+      "adresses": [
+        {
+          "ligne1": "Monsieur BLUE VIOLET",
+          "ligne3": "ZAC DU PONT ROUGE",
+          "ligne4": "",
+          "ligne6": "12345 PO",
+          "codePostal": "12345",
+          "telephone": "06 00 00 00 77",
+          "email": "VIOLET.BLUE@oulaoup.com",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "LABO",
+          "noOrdreDroit": "5",
+          "garanties": [
+            {
+              "codeGarantie": "GT_BLUE_2",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2019/05/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "LABO-050-100",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "BIOLOGIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2024/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2024/01/01",
+                              "periodeFin": "2024/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            },
+            {
+              "codeGarantie": "GT_BLUE_3",
+              "libelleGarantie": "GT1",
+              "codeAssureurGarantie": "BALOO",
+              "dateAdhesionCouverture": "2019/05/01",
+              "produits": [
+                {
+                  "codeProduit": "BLUE_002",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "LABO-050-100",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "BIOLOGIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2024/01/01"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2024/01/01",
+                              "periodeFin": "2024/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "03",
+                              "libelle": "03",
+                              "typeDroit": "03",
+                              "prioriteBO": "03",
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "iSante"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "050",
+                                "parametres": [
+                                  {
+                                    "numero": "6",
+                                    "valeur": "100"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2024/01/01"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "BLUEOffre002",
+                  "codeOc": "BALOO"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "identifiantCollectivite": "641600000",
+  "raisonSociale": "D",
+  "siret": "0000000000025",
+  "groupePopulation": "19"
+}

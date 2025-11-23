@@ -1,0 +1,162 @@
+{
+  "services" : [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key" : "0000401166-123456",
+  "societesEmettrices" : [
+    {
+      "code" : "000ER00019",
+      "periodes" : [
+        {
+          "debut" : "2019-05-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats" : [
+    {
+      "numeroContrat" : "0123456",
+      "data" : {
+        "destinatairesPaiements" : [
+          {
+            "idDestinatairePaiements" : "456789",
+            "idBeyondDestinatairePaiements" : "456789-0000401166",
+            "nom" : {
+              "nomFamille" : "BLUE",
+              "nomUsage" : "BLUE",
+              "prenom" : "VIOLET",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur BLUE VIOLET",
+              "ligne3" : "ZAC DU PONT ROUGE",
+              "ligne4" : "",
+              "ligne6" : "12345 PO",
+              "codePostal" : "12345"
+            },
+            "rib" : {
+              "bic" : "CADERTGFDRHXX",
+              "iban" : "FR0000000000000000000001234"
+            },
+            "modePaiementPrestations" : {
+              "code" : "VIR",
+              "libelle" : "Virement",
+              "codeMonnaie" : "EUR"
+            },
+            "periode" : {
+              "debut" : "2019-05-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations" : [
+          {
+            "idDestinataireRelevePrestations" : "456789",
+            "idBeyondDestinataireRelevePrestations" : "456789-0000401166",
+            "dematerialisation" : {
+              "isDematerialise" : true,
+              "email" : "VIOLET.BLUE@oulaoup.com"
+            },
+            "nom" : {
+              "nomFamille" : "BLUE",
+              "nomUsage" : "BLUE",
+              "prenom" : "VIOLET",
+              "civilite" : "M"
+            },
+            "adresse" : {
+              "ligne1" : "Monsieur BLUE VIOLET",
+              "ligne3" : "ZAC DU PONT ROUGE",
+              "ligne4" : "",
+              "ligne6" : "12345 PO",
+              "codePostal" : "12345"
+            },
+            "periode" : {
+              "debut" : "2019-05-01"
+            }
+          }
+        ],
+        "nom" : {
+          "nomFamille" : "BLUE",
+          "nomUsage" : "BLUE",
+          "prenom" : "VIOLET",
+          "civilite" : "M"
+        },
+        "adresse" : {
+          "ligne1" : "Monsieur BLUE VIOLET",
+          "ligne2" : "",
+          "ligne3" : "ZAC DU PONT ROUGE",
+          "ligne4" : "",
+          "ligne5" : "",
+          "ligne6" : "12345 PO",
+          "ligne7" : "",
+          "codePostal" : "12345"
+        },
+        "contact" : {
+          "fixe" : "06 00 00 00 77",
+          "email" : "VIOLET.BLUE@oulaoup.com"
+        }
+      },
+      "numeroAdherent" : "0161315",
+      "societeEmettrice" : "000ER00019",
+      "periodes" : [
+        {
+          "debut" : "2019-05-01",
+          "fin" : "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO" : "service-test2",
+  "amc" : {
+    "idDeclarant" : "0000401166"
+  },
+  "numeroAdherent" : "0123456",
+  "identite" : {
+    "nir" : {
+      "code" : "1701062498046",
+      "cle" : "02"
+    },
+    "affiliationsRO" : [
+      {
+        "nir" : {
+          "code" : "1701062498046",
+          "cle" : "02"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "131"
+        },
+        "periode" : {
+          "debut" : "2019-05-01"
+        }
+      },
+      {
+        "nir" : {
+          "code" : "1701062498046",
+          "cle" : "02"
+        },
+        "rattachementRO" : {
+          "codeRegime" : "01",
+          "codeCaisse" : "131"
+        },
+        "periode" : {
+          "debut" : "2018-01-01",
+          "fin" : "2019-04-30"
+        }
+      }
+    ],
+    "dateNaissance" : "19700603",
+    "rangNaissance" : "1",
+    "numeroPersonne" : "123456",
+    "historiqueDateRangNaissance" : [
+      {
+        "dateNaissance" : "19700603",
+        "rangNaissance" : "1"
+      }
+    ]
+  },
+  "audit" : {
+    "dateEmission" : "2024-07-31T15:29:49.335Z"
+  }
+}

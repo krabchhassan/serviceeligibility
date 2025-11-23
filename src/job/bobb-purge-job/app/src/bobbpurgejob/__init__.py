@@ -1,0 +1,1 @@
+from bobbpurgejob.__main__ import main

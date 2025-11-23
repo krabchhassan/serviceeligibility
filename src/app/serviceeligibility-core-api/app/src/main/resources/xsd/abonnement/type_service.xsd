@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:abonnement="http://norme.cegedimassurances.com/abonnement" targetNamespace="http://norme.cegedimassurances.com/abonnement" elementFormDefault="qualified">
+	<xs:complexType name="type_service">
+		<xs:sequence>
+			<xs:element name="code_service_externe" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code du service externe :  SDD, PEC, TARIFICATION, CARTE_TP, ...</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="actif" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Service externe actif ou inactif pour la demande d'abonnement</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lib_commercial_service" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Libellé commercial du service</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

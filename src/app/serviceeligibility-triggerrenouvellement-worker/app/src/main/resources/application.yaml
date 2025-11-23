@@ -1,0 +1,60 @@
+beyond:
+  event:
+    group-id: ${CLOUD_PROVIDER:notConfigured}-${TARGET_ENV:notConfigured}-bdd-triggerrenouvellement-worker
+    publisher:
+      enabled: true
+  features:
+    mongo: true
+  messaging:
+    transactional: false
+    security-context:
+      enabled: false
+    types:
+      TriggerBatchUnitaire: com.cegedim.next.serviceeligibility.core.model.domain.trigger.TriggerBatchUnitaire
+      TriggerId: com.cegedim.next.serviceeligibility.core.model.kafka.TriggerId
+  observability:
+    log:
+      enabled: true
+    tracing:
+      enabled: true
+  security:
+    exclude: /ready,/nagios,/health,/doc/**,/actuator/**
+    client:
+      enabled: true
+      rest-template:
+        enabled: true
+    server:
+      enabled: true
+logging:
+  level:
+    com:
+      cegedim: error
+server:
+  compression:
+    enabled: true
+    mime-types: application/json
+  error:
+    path: servererror
+    whitelabel:
+      enabled: false
+  forward-headers-strategy: framework
+  http2:
+    enabled: true
+spring:
+  application:
+    name: serviceeligibility-triggerrenouvellement-worker
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  kafka:
+    consumer:
+      max-poll-records: 50
+      enable-auto-commit: false
+      isolation-level: read_committed
+      properties:
+        # en attendant de supprimer le worker pour rajouter ce traitement dans le job directement.
+        max.poll.interval.ms: "1200000"
+    listener:
+      ack-mode: manual_immediate
+  main:
+    web-application-type: servlet

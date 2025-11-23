@@ -1,0 +1,18 @@
+{
+  "codeInsurer": "BALOO",
+  "codeAMC": "",
+  "codeContractElement": "GT_BLUE_1",
+  "label": "GT_BLUE_1",
+  "ignored": false,
+  "status": "ACTIVE",
+  "productElements": [
+    {
+      "codeOffer": "BLUE_OFFRE_001",
+      "codeProduct": "BLUE_001",
+      "codeBenefitNature": "",
+      "codeAmc": "BALOO",
+      "from": "2018-01-01T06:00:00.000Z",
+      "effectiveDate": "2018-01-01T00:00:00.000Z"
+    }
+  ]
+}

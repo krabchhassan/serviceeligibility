@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:carte="http://norme.cegedimassurances.com/carte" targetNamespace="http://norme.cegedimassurances.com/carte" elementFormDefault="qualified">
+	<xs:complexType name="type_renvoi">
+		<xs:sequence>
+			<xs:element name="num_renvoi" minOccurs="0" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                	<xs:documentation>Numéro du renvoi</xs:documentation>
+                </xs:annotation>
+			</xs:element>
+			<xs:element name="texte_renvoi" minOccurs="0" maxOccurs="1" type="xs:string">
+                <xs:annotation>
+                	<xs:documentation>Contenu textuel du renvoi</xs:documentation>
+                </xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

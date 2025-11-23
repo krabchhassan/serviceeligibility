@@ -1,0 +1,41 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "transcoParametrage",
+      "description": "Liste des fonctions de transcodage associées à chaque service défini dans la collection 'services'"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "TranscoParametrage": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "codeObjetTransco": {
+            "description": "Code de l'objet de transcodage",
+			"type": "string"
+          },
+          "nomObjetTransco": {
+            "description": "Nom de l'objet de transcodage",
+			"type": "string"
+          },
+          "colNames": {
+            "description": "Liste des noms de colonnes",
+			"type": "array",
+            "items": {
+			  "type": "string"
+			}
+          }
+        },
+        "required": [],
+        "title": "TranscoParametrage"
+      }
+    }
+  }
+}

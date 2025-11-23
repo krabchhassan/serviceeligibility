@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2011 rel. 2 (http://www.altova.com) by giorgio GIORGI (RESOPHARMA) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:complexType name="type_in_prestation_acte">
+		<xs:sequence>
+			<xs:element name="code_lieu" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>0: actes effectués au cabinet du PS, 1: actes effectués au domicile du malade, 2: mixité d'actes réalisés au cabinet et au domicile</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="mode_traitement" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Obligatoire pour les actes d’imageries médicales ou réalisés en centre thermal.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="discipline_prestation" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Obligatoire pour les actes d’imageries médicales ou réalisés en centre thermal.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="indicateur_parcours_soins" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>CDC B2</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="tarif_responsabilite">
+				<xs:annotation>
+					<xs:documentation>NC</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="7"/>
+						<xs:fractionDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="code_modificateur" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>NC</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

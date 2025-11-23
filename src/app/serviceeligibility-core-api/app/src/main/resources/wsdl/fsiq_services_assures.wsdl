@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+	xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://ws.cegedimassurance.com/servicesassures/wsdl"
+	xmlns:ns="http://ws.cegedimassurance.com/servicesassures/wsdl" xmlns:commun="http://norme.cegedimassurances.com/commun"  
+	xmlns:beneficiaire="http://norme.cegedimassurances.com/beneficiaire" xmlns:amc="http://norme.cegedimassurances.com/amc" 
+	xmlns:abonnement="http://norme.cegedimassurances.com/abonnement" xmlns:carte="http://norme.cegedimassurances.com/carte">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://ws.cegedimassurances.com/servicesassures/wsdl">
+		</xsd:schema>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import
+				namespace="http://norme.cegedimassurances.com/beneficiaire"
+				schemaLocation="../xsd/beneficiaire/requete_beneficiaire.xsd">
+			</xsd:import>
+			<xsd:import
+				namespace="http://norme.cegedimassurances.com/abonnement"
+				schemaLocation="../xsd/abonnement/reponse_abonnement.xsd">
+			</xsd:import>
+			<xsd:import
+				namespace="http://norme.cegedimassurances.com/carte"
+				schemaLocation="../xsd/carte/reponse_carteTP.xsd">
+			</xsd:import>
+			<xsd:import
+				namespace="http://norme.cegedimassurances.com/commun"
+				schemaLocation="../xsd/commun/reponse_commun.xsd">
+			</xsd:import></xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="getServicesOuvertsRequest">
+		<wsdl:part name="requete_beneficiaire"
+			type="beneficiaire:requete_beneficiaire">
+		</wsdl:part>
+		
+
+	</wsdl:message>
+	<wsdl:message name="getServicesOuvertsResponse">
+		<wsdl:part name="reponse_abonnement"
+			type="abonnement:reponse_abonnement">
+		</wsdl:part>
+		
+	</wsdl:message>
+	<wsdl:message name="getCarteTPDataRequest">
+		<wsdl:part name="requete_beneficiaire" type="beneficiaire:requete_beneficiaire"></wsdl:part>
+
+
+	</wsdl:message>
+	<wsdl:message name="getCarteTPDataResponse">
+		<wsdl:part name="reponse_carteTP"
+			type="carte:reponse_carteTP">
+		</wsdl:part>
+		
+
+	</wsdl:message>
+	<wsdl:message name="getCarteTPOTPRequest">
+
+
+		<wsdl:part name="requete_beneficiaire" type="beneficiaire:requete_beneficiaire"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getCarteTPOTPResponse">
+		<wsdl:part name="reponse_commun" type="commun:reponse_commun"></wsdl:part>
+		
+	</wsdl:message>
+	
+	
+	<wsdl:portType name="ServicesAssures">
+		<wsdl:operation name="getServicesOuverts">
+			<wsdl:documentation>Appel de l'abonnement beneficiaire</wsdl:documentation>
+			<wsdl:input message="ns:getServicesOuvertsRequest" ></wsdl:input>
+			<wsdl:output message="ns:getServicesOuvertsResponse" ></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getCarteTPData">
+			<wsdl:documentation>Obtention des données permettant  la construction de la carte</wsdl:documentation>
+			<wsdl:input message="ns:getCarteTPDataRequest"></wsdl:input>
+			<wsdl:output message="ns:getCarteTPDataResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getCarteTPOTP">
+			<wsdl:documentation>Obtention d'un n° OTP à destination d'un PS</wsdl:documentation>
+			<wsdl:input message="ns:getCarteTPOTPRequest"></wsdl:input>
+			<wsdl:output message="ns:getCarteTPOTPResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	
+	<wsdl:binding name="ServicesAssuresBinding"
+		type="ns:ServicesAssures">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="getServicesOuverts">
+			<soap:operation
+				soapAction="http://ws.cegedimassurance.com/servicesassures/wsdl/getServicesOuverts" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getCarteTPData">
+			<soap:operation
+				soapAction="http://ws.cegedimassurance.com/servicesassures/wsdl/getCarteTPData" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getCarteTPOTP">
+			<soap:operation
+				soapAction="http://ws.cegedimassurance.com/servicesassures/wsdl/getCarteTPOTP" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="FSIQServicesAssures">
+		<wsdl:port name="ServicesAssuresPort" binding="ns:ServicesAssuresBinding">
+			<soap:address
+				location="http://fsiq.services-fm.net/wa-fsiq/services/services-assures/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

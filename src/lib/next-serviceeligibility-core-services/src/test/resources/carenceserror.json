@@ -1,0 +1,12 @@
+{
+  "carences": [
+    {
+      "waitingCode": "CAR001",
+      "offerCode": "",
+      "productCode": "",
+      "issuerCompany": "",
+      "startEffectDate": "2021-01-01",
+      "endEffectDate": "2021-12-31"
+    }
+  ]
+}

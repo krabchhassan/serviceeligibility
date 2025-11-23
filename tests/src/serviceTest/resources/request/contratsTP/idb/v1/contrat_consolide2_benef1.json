@@ -1,0 +1,483 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "TEST02",
+  "numeroAdherent": "TEST02",
+  "dateSouscription": "2021/01/01",
+  "nomPorteur": "DUPOND",
+  "prenomPorteur": "PHILIPPE",
+  "civilitePorteur": "M",
+  "qualification": "B",
+  "numeroContratCollectif": "010101",
+  "isContratResponsable": true,
+  "isContratCMU": false,
+  "destinataire": "AD",
+  "individuelOuCollectif": "2",
+  "typeConvention": "IS",
+  "critereSecondaire": "",
+  "critereSecondaireDetaille": "",
+  "numeroExterneContratIndividuel": "",
+  "numeroExterneContratCollectif": "",
+  "gestionnaire": "",
+  "groupeAssures": "0SOUS",
+  "editeurCarte": "",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "TDB/TFD",
+  "dateCreation": "2024-02-29T09:49:51.472",
+  "dateModification": "2024-03-07T13:36:54.548",
+  "dateConsolidation": "2024-03-07T13:36:54.548",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2024-02-29T09:49:51.472",
+      "dateModification": "2024-03-07T13:36:54.548",
+      "dateNaissance": "20000920",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2000931314007",
+      "cleNirBeneficiaire": "62",
+      "nirOd1": "2000931314007",
+      "cleNirOd1": "62",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "380322027",
+      "refExternePersonne": "010101",
+      "rangAdministratif": "01",
+      "modePaiementPrestations": "V",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "DUPOND",
+        "nomPatronymique": "DUPOND",
+        "nomMarital": "DUPOND",
+        "prenom": "PHILIPPE",
+        "periodeDebut": "2012/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "311",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASSURE"
+      },
+      "adresses": [
+      ],
+      "domaineDroits": [
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "CONFORT2",
+              "libelleGarantie": "CEGEDIM CONFORT2",
+              "dateAdhesionCouverture": "2014/02/01",
+              "produits": [
+                {
+                  "codeProduit": "CEGACT",
+                  "libelleProduit": "CEGEDIM ACTIFS",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "2",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "nat1",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/10/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/10/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/06/30",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2024-02-29T09:49:51.472",
+      "dateModification": "2024-03-07T13:36:54.548",
+      "dateNaissance": "20100125",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "2000931314008",
+      "cleNirBeneficiaire": "66",
+      "nirOd1": "2000931314008",
+      "cleNirOd1": "66",
+      "nirOd2": "",
+      "cleNirOd2": "",
+      "numeroPersonne": "380322028",
+      "refExternePersonne": "010102",
+      "rangAdministratif": "03",
+      "modePaiementPrestations": "V",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "DUPOND",
+        "nomPatronymique": "DUPOND",
+        "nomMarital": "DUPOND",
+        "prenom": "BERTRAND",
+        "periodeDebut": "2012/01/01",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "311",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ENFANT"
+      },
+      "adresses": [
+      ],
+      "domaineDroits": [
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "CONFORT2",
+              "libelleGarantie": "CEGEDIM CONFORT2",
+              "dateAdhesionCouverture": "2014/02/01",
+              "produits": [
+                {
+                  "codeProduit": "CEGACT",
+                  "libelleProduit": "CEGEDIM ACTIFS",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "2",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "nat1",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/10/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/10/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/06/30",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/01"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "CONFORT2",
+              "libelleGarantie": "CEGEDIM CONFORT2",
+              "dateAdhesionCouverture": "2014/02/01",
+              "produits": [
+                {
+                  "codeProduit": "CEGACT",
+                  "libelleProduit": "CEGEDIM ACTIFS",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "2",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "nat1",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/10/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "ONLINE",
+                              "periodeDebut": "2022/10/01",
+                              "periodeFin": "2022/12/31",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            },
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2023/01/01",
+                              "periodeFin": "2023/06/30",
+                              "libelleEvenement": "Renouvellement des droits",
+                              "modeObtention": "O",
+                              "motifEvenement": "RE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "00000100",
+                              "uniteTauxRemboursement": "TA",
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS",
+                                "libelle": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "02A",
+                                "parametres": [
+                                  {
+                                    "numero": "3",
+                                    "valeur": "100.00"
+                                  }
+                                ]
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/10/01",
+                                  "fin": "2022/12/31"
+                                },
+                                {
+                                  "debut": "2023/01/01",
+                                  "fin": "2023/06/30"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_class": "com.cegedim.next.serviceeligibility.core.model.domain.contract.Contract"
+}

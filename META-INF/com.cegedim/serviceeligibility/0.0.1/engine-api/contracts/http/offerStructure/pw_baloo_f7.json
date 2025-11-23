@@ -1,0 +1,14 @@
+[
+  {
+    "validityDate": "2022-01-01",
+    "code": 9,
+    "offerCode": "OFFER_BLUE_001",
+    "natures": [
+      "SOINSEXTERNES",
+      "PHARMACIE"
+    ],
+    "products": [
+      "F7"
+    ]
+  }
+]

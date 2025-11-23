@@ -1,0 +1,1419 @@
+{
+  "idDeclarant": "0000401166",
+  "numeroContrat": "1394031002",
+  "numeroAdherent": "00052492",
+  "numeroAdherentComplet": "1394031002-COMPLET",
+  "dateSouscription": "2021/01/01",
+  "type": "B",
+  "nomPorteur": "PEHAHUT",
+  "prenomPorteur": "RACHIDA",
+  "civilitePorteur": "Mme",
+  "qualification": "B",
+  "numeroContratCollectif": "03094493",
+  "isContratResponsable": false,
+  "isContratCMU": false,
+  "individuelOuCollectif": "1",
+  "typeConvention": "IS",
+  "critereSecondaire": "Employés",
+  "critereSecondaireDetaille": "GEO-FRA-OCC",
+  "numeroExterneContratIndividuel": "1394031002",
+  "numeroExterneContratCollectif": "DKMMMS09049304930",
+  "gestionnaire": "AXA",
+  "numOperateur": "IS",
+  "ordrePriorisation": "1",
+  "contratCMUC2S": "0",
+  "origineDeclaration": "Event",
+  "dateCreation": "2022-10-03T15:06:29.130Z",
+  "dateModification": "2022-10-03T15:06:29.222Z",
+  "dateConsolidation": "2022-10-03T15:06:29.222Z",
+  "beneficiaires": [
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2022-10-03T15:06:29.130Z",
+      "dateModification": "2022-10-03T15:06:29.130Z",
+      "dateNaissance": "19621023",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "",
+      "cleNirBeneficiaire": "",
+      "nirOd1": "2791059632524",
+      "cleNirOd1": "41",
+      "numeroPersonne": "08043266",
+      "refExternePersonne": "EXT-1394031002-001",
+      "rangAdministratif": "1",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2021/01/01",
+      "dateDebutAdhesionIndividuelle": "2021/01/01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "PEHAHUT",
+        "nomPatronymique": "PEHAHUT",
+        "nomMarital": "PEHAHUT",
+        "prenom": "RACHIDA",
+        "civilite": "Mme",
+        "periodeDebut": "2021/01/01",
+        "qualite": "A",
+        "regimeOD1": "01",
+        "caisseOD1": "624",
+        "centreOD1": "0156",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "ASSURE"
+      },
+      "adresses": [
+        {
+          "ligne1": "MR PEHAHUT VAITROUAT RACHIDA",
+          "ligne4": "25 RUE DES MAGNOLIAS",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250",
+          "email": "59250",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "RADL",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "RADL-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "RADIOLOGIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AUDI",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "AUDI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "AUDIOLOGIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MEDG",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDG-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "MEDECINE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isCarteTPaEditer": true,
+      "dateCreation": "2022-10-03T15:06:29.130Z",
+      "dateModification": "2022-10-03T15:06:29.130Z",
+      "dateNaissance": "20041026",
+      "rangNaissance": "1",
+      "nirBeneficiaire": "1041059321456",
+      "cleNirBeneficiaire": "69",
+      "nirOd1": "1041059321456",
+      "cleNirOd1": "69",
+      "numeroPersonne": "1394031001-002",
+      "refExternePersonne": "EXT-1394031002-002",
+      "rangAdministratif": "2",
+      "modePaiementPrestations": "V",
+      "dateAdhesionMutuelle": "2021/01/01",
+      "dateDebutAdhesionIndividuelle": "2021/01/01",
+      "numeroAdhesionIndividuelle": "120320020",
+      "dernierMouvementRecu": "V",
+      "affiliation": {
+        "nom": "PEHAHUT",
+        "nomPatronymique": "PEHAHUT",
+        "nomMarital": "PEHAHUT",
+        "prenom": "FARID",
+        "civilite": "Mme",
+        "periodeDebut": "2021/01/01",
+        "qualite": "E",
+        "regimeOD1": "01",
+        "caisseOD1": "624",
+        "centreOD1": "0156",
+        "hasMedecinTraitant": false,
+        "regimeParticulier": "AM",
+        "isBeneficiaireACS": false,
+        "isTeleTransmission": true,
+        "typeAssure": "Enfant"
+      },
+      "adresses": [
+        {
+          "ligne1": "MR PEHAHUT VAITROUAT RACHIDA",
+          "ligne4": "25 RUE DES MAGNOLIAS",
+          "ligne6": "59250 HALLUIN",
+          "codePostal": "59250",
+          "email": "59250",
+          "typeAdresse": {
+            "type": "AD"
+          }
+        }
+      ],
+      "domaineDroits": [
+        {
+          "code": "RADL",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "RADL-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "RADIOLOGIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "OPTI",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "OPTI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "OPTIQUE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "HOSP",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "HOSP-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "HOSPITALISATION",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "AUDI",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "AUDI-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "AUDIOLOGIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DENT",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "DENT-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "DENTAIRE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PHAR",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "PHAR-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "PHARMACIE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "MEDG",
+          "garanties": [
+            {
+              "codeGarantie": "BAL_BASE",
+              "libelleGarantie": "Baloo Base",
+              "dateAdhesionCouverture": "2021/01/01",
+              "produits": [
+                {
+                  "codeProduit": "SANTE_100",
+                  "referencesCouverture": [
+                    {
+                      "referenceCouverture": "MEDG-010",
+                      "naturesPrestation": [
+                        {
+                          "naturePrestation": "MEDECINE",
+                          "periodesDroit": [
+                            {
+                              "typePeriode": "OFFLINE",
+                              "periodeDebut": "2022/01/01",
+                              "periodeFin": "2023/12/31",
+                              "libelleEvenement": "Declaration de droits",
+                              "modeObtention": "M",
+                              "motifEvenement": "DE"
+                            }
+                          ],
+                          "remboursements": [
+                            {
+                              "tauxRemboursement": "100",
+                              "uniteTauxRemboursement": "PO",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prioritesDroit": [
+                            {
+                              "code": "01",
+                              "libelle": "01",
+                              "typeDroit": "01",
+                              "prioriteBO": "01",
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "conventionnements": [
+                            {
+                              "priorite": 0,
+                              "typeConventionnement": {
+                                "code": "IS"
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ],
+                          "prestations": [
+                            {
+                              "code": "DEF",
+                              "isEditionRisqueCarte": false,
+                              "formule": {
+                                "numero": "010",
+                                "parametres": []
+                              },
+                              "periodes": [
+                                {
+                                  "debut": "2022/01/01",
+                                  "fin": "2023/12/31"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "codeOffre": "fGl_DE00001_100pctFraisReels"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

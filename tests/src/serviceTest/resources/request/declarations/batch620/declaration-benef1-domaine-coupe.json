@@ -1,0 +1,203 @@
+{
+  "codeEtat": "V",
+  "effetDebut": "2023-11-30T14:39:33.683+0000",
+  "idDeclarant": "0000452433",
+  "isCarteTPaEditer": true,
+  "carteTPaEditerOuDigitale": "3",
+  "idTrigger": "63876aaddf142843814a46b0",
+  "versionDeclaration": "3.1",
+  "dateCreation": "2022-11-30T14:37:33.683+0000",
+  "userCreation": "WORKER",
+  "dateModification": "2022-11-30T14:37:33.683+0000",
+  "userModification": "WORKER",
+  "beneficiaire": {
+    "dateNaissance": "19791006",
+    "rangNaissance": "1",
+    "nirBeneficiaire": "1701062498046",
+    "cleNirBeneficiaire": "02",
+    "nirOd1": "1701062498046",
+    "cleNirOd1": "02",
+    "numeroPersonne": "MBA-000",
+    "refExternePersonne": "7209738ADF",
+    "dateAdhesionMutuelle": "2021/01/01",
+    "dateDebutAdhesionIndividuelle": "2021/01/01",
+    "numeroAdhesionIndividuelle": "120320020",
+    "affiliation": {
+      "nom": "POPI",
+      "nomPatronymique": "POPI",
+      "nomMarital": "POPI",
+      "prenom": "JEAN PIERRE",
+      "civilite": "Mr",
+      "periodeDebut": "2021/01/01",
+      "qualite": "A",
+      "regimeOD1": "01",
+      "caisseOD1": "624",
+      "centreOD1": "0156",
+      "hasMedecinTraitant": false,
+      "regimeParticulier": "AM",
+      "isBeneficiaireACS": false,
+      "isTeleTransmission": true,
+      "typeAssure": "BENEFICIAIRE"
+    },
+    "adresses": [
+      {
+        "ligne1": "25 RUE DES LAGRADES",
+        "ligne2": "RESIDENCE DES PLATEAUX",
+        "ligne3": "59250",
+        "ligne4": "HALLUIN",
+        "ligne5": "F",
+        "ligne6": "FRANCE",
+        "ligne7": "CEDEX41",
+        "codePostal": "5920",
+        "email": "5920",
+        "typeAdresse": {
+          "type": "AD"
+        }
+      }
+    ]
+  },
+  "contrat": {
+    "numero": "CONSOW0",
+    "dateSouscription": "2021/01/01",
+    "type": "A",
+    "nomPorteur": "POPI",
+    "prenomPorteur": "JEAN PIERRE",
+    "civilitePorteur": "Mr",
+    "numeroAdherent": "CONSOW0",
+    "numeroAdherentComplet": "CONSOW0-COMPLET",
+    "qualification": "B",
+    "numeroContratCollectif": "03094493",
+    "rangAdministratif": "1",
+    "isContratResponsable": false,
+    "isContratCMU": false,
+    "contratCMUC2S": "0",
+    "individuelOuCollectif": "1",
+    "lienFamilial": "A",
+    "typeConvention": "IS",
+    "critereSecondaireDetaille": "GEO-FRA-OCC",
+    "critereSecondaire": "Emplyés",
+    "numeroExterneContratIndividuel": "CONSOW0",
+    "numeroExterneContratCollectif": "DKMMMS09049304930",
+    "modePaiementPrestations": "V",
+    "gestionnaire": "IGestion",
+    "numOperateur": "IS",
+    "ordrePriorisation": "1"
+  },
+  "domaineDroits": [
+    {
+      "code": "AMM",
+      "codeProduit": "PlatineBase",
+      "codeGarantie": "KC_PlatineBase",
+      "libelleGarantie": "SilverBase",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2021/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "AMM-010",
+      "noOrdreDroit": 0,
+      "categorie": "AMM",
+      "formulaMask": " 100% FR ",
+      "naturePrestation": "couvertureComplete",
+      "codeAssureurGarantie": "KLESIA_CARCEPT",
+      "codeOffre": "fGl_DE00001_100pctFraisReels",
+      "versionOffre": "v1",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "010",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2024/01/01",
+        "periodeFin": "2024/03/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2024/01/01",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    },
+    {
+      "code": "DENT",
+      "codeProduit": "PlatineBase",
+      "codeGarantie": "KC_PlatineBase",
+      "libelleGarantie": "SilverBase",
+      "tauxRemboursement": "100",
+      "isSuspension": false,
+      "dateAdhesionCouverture": "2021/01/01",
+      "uniteTauxRemboursement": "PO",
+      "referenceCouverture": "DENT-010",
+      "noOrdreDroit": 0,
+      "categorie": "DENT",
+      "formulaMask": " 100% FR ",
+      "naturePrestation": "couvertureComplete",
+      "codeAssureurGarantie": "KLESIA_CARCEPT",
+      "codeOffre": "fGl_DE00001_100pctFraisReels",
+      "versionOffre": "v1",
+      "isEditable": true,
+      "prioriteDroit": {
+        "code": "01",
+        "libelle": "01",
+        "typeDroit": "01",
+        "prioriteBO": "01"
+      },
+      "prestations": [
+        {
+          "code": "DEF",
+          "isEditionRisqueCarte": false,
+          "formule": {
+            "numero": "010",
+            "parametres": [
+            ]
+          }
+        }
+      ],
+      "periodeDroit": {
+        "periodeDebut": "2024/07/01",
+        "periodeFin": "2024/12/31",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "periodeOnline": {
+        "periodeDebut": "2024/07/01",
+        "motifEvenement": "DE",
+        "libelleEvenement": "Declaration de droits",
+        "modeObtention": "M"
+      },
+      "conventionnements": [
+        {
+          "priorite": 0,
+          "typeConventionnement": {
+            "code": "IS"
+          }
+        }
+      ]
+    }
+  ],
+  "etatSuspension": "-1"
+}

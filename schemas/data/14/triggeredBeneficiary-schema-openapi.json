@@ -1,0 +1,292 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "tags": [
+    {
+      "name": "triggeredBeneficiary",
+      "description": "Collection contenant les différents déclencheurs créés par bénéficiaire lors de la génération des droits TP"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {
+      "TriggeredBeneficiary": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "idTrigger": {
+            "type": "string"
+          },
+          "parametrageCarteTPId": {
+            "type": "string"
+          },
+          "servicePrestationId": {
+            "type": "string"
+          },
+          "numeroContrat": {
+            "type": "string"
+          },
+          "isContratIndividuel": {
+            "type": "boolean"
+          },
+          "collectivite": {
+            "type": "string"
+          },
+          "college": {
+            "type": "string"
+          },
+          "critereSecondaireDetaille": {
+            "type": "string"
+          },
+          "critereSecondaire": {
+            "type": "string"
+          },
+          "nomPorteur": {
+            "type": "string"
+          },
+          "prenomPorteur": {
+            "type": "string"
+          },
+          "civilitePorteur": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "qualification": {
+            "type": "string"
+          },
+          "numeroContratCollectif": {
+            "type": "string"
+          },
+          "numeroExterneContratIndividuel": {
+            "type": "string"
+          },
+          "numeroExterneContratCollectif": {
+            "type": "string"
+          },
+          "gestionnaire": {
+            "type": "string"
+          },
+          "newContract": {
+            "$ref": "#/components/schemas/ServicePrestationTriggerBenef"
+          },
+          "oldContract": {
+            "$ref": "#/components/schemas/ServicePrestationTriggerBenef"
+          },
+          "nbDeclarationsOuverture": {
+            "type": "integer"
+          },
+          "nbDeclarationsFermeture": {
+            "type": "integer"
+          },
+          "nir": {
+            "type": "string"
+          },
+          "cleNir": {
+            "type": "string"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string"
+          },
+          "amc": {
+            "type": "string"
+          },
+          "numeroPersonne": {
+            "type": "string"
+          },
+          "refExternePersonne": {
+            "type": "string"
+          },
+          "nom": {
+            "type": "string"
+          },
+          "nomPatronymique": {
+            "type": "string"
+          },
+          "nomMarital": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          },
+          "periodeDebutAffiliation": {
+            "type": "string"
+          },
+          "periodeFinAffiliation": {
+            "type": "string"
+          },
+          "qualite": {
+            "type": "string"
+          },
+          "regimeOD1": {
+            "type": "string"
+          },
+          "caisseOD1": {
+            "type": "string"
+          },
+          "centreOD1": {
+            "type": "string"
+          },
+          "hasMedecinTraitant": {
+            "type": "boolean"
+          },
+          "codeRegimeParticulier": {
+            "type": "string"
+          },
+          "isBeneficiaireACS": {
+            "type": "boolean"
+          },
+          "isTeleTransmission": {
+            "type": "boolean"
+          },
+          "typeAssure": {
+            "type": "string"
+          },
+          "adresse": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/AdresseAssure"
+          },
+          "contact": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/Contact"
+          },
+          "rangAdministratif": {
+            "type": "string"
+          },
+          "modePaiementPrestations": {
+            "type": "string"
+          },
+          "ordrePriorisation": {
+            "type": "string"
+          },
+          "parametreAction": {
+            "type": "string"
+          },
+          "statut": {
+            "type": "string"
+          },
+          "dernierMotifAnomalie": {
+            "type": "string"
+          },
+          "historiqueStatuts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TriggeredBeneficiaryStatus"
+            }
+          },
+          "isCartePapierAEditer": {
+            "type": "boolean"
+          },
+          "isCarteDematerialisee": {
+            "type": "boolean"
+          },
+          "isCartePapier": {
+            "type": "boolean"
+          },
+          "etatSuspension": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "TriggeredBeneficiary"
+      },
+      "TriggeredBeneficiaryStatus": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "statut": {
+            "type": "string"
+          },
+          "dateEffet": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "motifAnomalie": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "TriggeredBeneficiaryStatus"
+      },
+      "ServicePrestationTriggerBenef": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateAdhesionMutuelle": {
+            "type": "string"
+          },
+          "dateDebutAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "numeroAdhesionIndividuelle": {
+            "type": "string"
+          },
+          "periodesDroitsCarte": {
+            "$ref": "/commons-schema-openapi.json#/components/schemas/PeriodesDroitsCarte"
+          },
+          "periodesContratResponsable": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/Periode"
+            }
+          },
+          "periodesContratCMU": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/PeriodeContratCMUOuvert"
+            }
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "regimesParticuliers": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/CodePeriode"
+            }
+          },
+          "situationsParticulieres": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/CodePeriode"
+            }
+          },
+          "dateRadiation": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "droitsGaranties": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/DroitAssure"
+            }
+          },
+          "periodesSuspension": {
+            "type": "array",
+            "items": {
+              "$ref": "/commons-schema-openapi.json#/components/schemas/PeriodeSuspension"
+            }
+          }
+        },
+        "required": [],
+        "title": "ServicePrestationTriggerBenef"
+      }
+    }
+  }
+}

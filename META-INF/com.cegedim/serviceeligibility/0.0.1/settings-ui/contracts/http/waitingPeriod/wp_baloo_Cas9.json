@@ -1,0 +1,29 @@
+[
+  {
+    "waitingCode": "CAR001",
+    "offerCode": "",
+    "productCode": "",
+    "issuerCompany": "",
+    "natureCode": "OPTIQUE",
+    "startEffectDate": "2000-01-01",
+    "endEffectDate": "2025-01-31"
+  },
+  {
+    "waitingCode": "CAR001",
+    "offerCode": "",
+    "productCode": "",
+    "issuerCompany": "",
+    "natureCode": "OPTIQUE",
+    "startEffectDate": "2025-02-01",
+    "endEffectDate": null
+  },
+  {
+    "waitingCode": "CAR001",
+    "offerCode": "",
+    "productCode": "",
+    "issuerCompany": "",
+    "natureCode": "DENTAIRE",
+    "startEffectDate": "2025-02-01",
+    "endEffectDate": null
+  }
+]

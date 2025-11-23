@@ -1,0 +1,20 @@
+{
+  "offers": [
+    {
+      "validityDate": "2022-07-01",
+      "endValidityDate": "XXXX-07-01",
+      "offerCode": "123",
+      "code": 3,
+      "natures": [
+        "DENTAIRE",
+        "HOSPITALISATION",
+        "PHARMACIE",
+        "OPTIQUE",
+        "APPAREILLAGEDENTAIRE"
+      ],
+      "products": [
+        "PDT_BASE1"
+      ]
+    }
+  ]
+}

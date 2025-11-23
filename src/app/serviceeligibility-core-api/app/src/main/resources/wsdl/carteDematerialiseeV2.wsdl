@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:tns="http://norme.cegedimassurances.com/carteDemat/service"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:domain="http://norme.cegedimassurances.com/carteDemat/beans"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CarteDematerialiseeServiceV2"
+	targetNamespace="http://norme.cegedimassurances.com/carteDemat/service">
+
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://norme.cegedimassurances.com/carteDemat/service">		
+			<xsd:import schemaLocation="../xsd/carteDemat/carteDematV2.xsd"
+				namespace="http://norme.cegedimassurances.com/carteDemat/beans" />
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="carteDematerialiseeV2Request">
+		<wsdl:part name="requete" element="domain:carteDematerialiseeV2Request" />
+	</wsdl:message>
+
+	<wsdl:message name="carteDematerialiseeV2Response">
+		<wsdl:part name="reponse" element="domain:carteDematerialiseeV2Response" />
+	</wsdl:message>
+
+
+	<wsdl:portType name="CarteDematerialiseePortTypeV2">
+		<wsdl:operation name="carteDematerialiseeV2">
+			<wsdl:input message="tns:carteDematerialiseeV2Request" />
+			<wsdl:output message="tns:carteDematerialiseeV2Response" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="CarteDematerialiseeBindingV2" type="tns:CarteDematerialiseePortTypeV2">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="carteDematerialiseeV2">
+			<soap:operation soapAction="carteDematerialiseeV2" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="CarteDematerialiseeServiceV2">
+		<wsdl:port binding="tns:CarteDematerialiseeBindingV2" name="CarteDematerialiseePortV2">
+			<soap:address location="http://localhost/wsCarteDemat/CarteDematerialiseeV2" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

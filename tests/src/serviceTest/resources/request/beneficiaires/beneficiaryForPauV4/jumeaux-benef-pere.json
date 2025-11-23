@@ -1,0 +1,64 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000501166-00051",
+  "contrats": [
+    {
+      "numeroContrat": "A0005",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0005",
+          "nomUsage": "TESTB0005",
+          "prenom": "Martine"
+        },
+        "adresse": {
+        },
+        "contact": {
+        }
+      },
+      "numeroAdherent": "A0005",
+      "societeEmettrice": "GEST01",
+      "numeroAMCEchange": "0000501182"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000501166"
+  },
+  "numeroAdherent": "A0005",
+  "identite": {
+    "nir": {
+      "code": "1720131111112",
+      "cle": "16"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1720131111112",
+          "cle": "16"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19720103",
+    "rangNaissance": "1",
+    "numeroPersonne": "00051",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19720103",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2023-07-05T09:20:11.098Z"
+  },
+  "traceId": "64a535ca82224143073afc47"
+}

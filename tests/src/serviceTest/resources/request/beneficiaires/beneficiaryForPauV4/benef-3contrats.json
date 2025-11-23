@@ -1,0 +1,89 @@
+{
+  "id": null,
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "A00081",
+  "contrats": [
+    {
+      "numeroContrat": "A00081",
+      "numeroAdherent": "A00081",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0008",
+          "nomUsage": "TESTB0008",
+          "prenom": "Ben"
+        },
+        "adresse": {},
+        "contact": {}
+      }
+    },
+    {
+      "numeroContrat": "A00082",
+      "numeroAdherent": "A00082",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0008",
+          "nomUsage": "TESTB0008",
+          "prenom": "Ben"
+        },
+        "adresse": {},
+        "contact": {}
+      }
+    },
+    {
+      "numeroContrat": "A00083",
+      "numeroAdherent": "A00083",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "TESTB0008",
+          "nomUsage": "TESTB0008",
+          "prenom": "Ben"
+        },
+        "adresse": {},
+        "contact": {}
+      }
+    }
+  ],
+  "identite": {
+    "nir": {
+      "code": "1750131111112",
+      "cle": "63"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1750131111112",
+          "cle": "63"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "131"
+        },
+        "periode": {
+          "debut": "2023-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "19750103",
+    "rangNaissance": "1",
+    "numeroPersonne": "00081",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19750103",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": null
+  },
+  "traceId": null,
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-00081"
+}

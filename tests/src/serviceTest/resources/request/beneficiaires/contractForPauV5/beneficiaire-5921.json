@@ -1,0 +1,70 @@
+{
+  "services": [
+    "Service_TP"
+  ],
+  "key": "0000401166-2121639",
+  "contrats": [
+    {
+      "numeroContrat": "93000808",
+      "codeEtat": "V",
+      "data": {
+        "nom": {
+          "nomFamille": "MADALE",
+          "nomUsage": "MADALE",
+          "prenom": "JEAN",
+          "civilite": "M"
+        },
+        "adresse": {
+          "ligne1": "Monsieur MADALE JEAN",
+          "ligne4": "50 QUAI AUGUSTE ROY",
+          "ligne6": "78510 VILLE",
+          "codePostal": "78510"
+        },
+        "contact": {
+          "mobile": "",
+          "email": "jean.MADALE@zoo.com"
+        }
+      },
+      "numeroAdherent": "93000808",
+      "societeEmettrice": "000ER00693"
+    }
+  ],
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "93000808",
+  "identite": {
+    "nir": {
+      "code": "1860598145145",
+      "cle": "24"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "1860598145145",
+          "cle": "24"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "781"
+        },
+        "periode": {
+          "debut": "2012-01-01"
+        }
+      }
+    ],
+    "dateNaissance": "18690428",
+    "rangNaissance": "1",
+    "numeroPersonne": "2121639",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "18690428",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2024-11-28T13:47:47.896Z"
+  },
+  "traceId": "67487483b4935f28ecafc0b8"
+}

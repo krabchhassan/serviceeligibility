@@ -1,0 +1,15 @@
+[
+  {
+    "validityDate": "2021-01-01",
+    "code": 3,
+    "natures": [
+      "DENTAIRE",
+      "HOSPITALISATION",
+      "PHARMACIE",
+      "AUDI"
+    ],
+    "products": [
+      "1472_AJOUT_01_P01"
+    ]
+  }
+]

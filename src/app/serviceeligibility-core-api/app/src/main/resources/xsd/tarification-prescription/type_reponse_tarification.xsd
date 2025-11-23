@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 (http://www.altova.com)  -->
+<xs:schema xmlns:tarification-prescription="http://norme.cegedimassurances.com/tarification-prescription" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://norme.cegedimassurances.com/tarification-prescription" xmlns:commun="http://norme.cegedimassurances.com/commun" targetNamespace="http://norme.cegedimassurances.com/tarification-prescription" elementFormDefault="qualified">
+	<xs:include schemaLocation="type_reponse_prescription.xsd"/>
+	<xs:complexType name="type_reponse_tarification">
+		<xs:sequence>
+			<xs:element name="reponsePrescription" type="tarification-prescription:type_reponse_prescription" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

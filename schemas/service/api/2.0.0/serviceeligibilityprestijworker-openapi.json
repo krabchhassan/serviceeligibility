@@ -1,0 +1,309 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Payment API",
+    "version": "0.0.1"
+  },
+  "servers": [
+    {
+      "url": "https://dev-evol2.dev.beyond.cegedim.cloud/serviceeligibility/prestij/worker",
+      "description": "Generated server url"
+    }
+  ],
+  "security": [
+    {
+      "bearer": [
+        "read",
+        "write"
+      ]
+    }
+  ],
+  "paths": {
+    "/v2/prestijs": {
+      "post": {
+        "tags": [
+          "prest-ij-controller"
+        ],
+        "operationId": "createV2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PrestIJ"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreationResponseV2"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Assure": {
+        "required": [
+          "data",
+          "dateNaissance",
+          "droits",
+          "nir",
+          "numeroPersonne",
+          "rangNaissance"
+        ],
+        "type": "object",
+        "properties": {
+          "nir": {
+            "$ref": "#/components/schemas/Nir"
+          },
+          "numeroPersonne": {
+            "type": "string"
+          },
+          "referenceExternePersonne": {
+            "type": "string"
+          },
+          "dateNaissance": {
+            "type": "string"
+          },
+          "rangNaissance": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/DataAssure"
+          },
+          "droits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DroitAssure"
+            }
+          }
+        }
+      },
+      "ContratCollectif": {
+        "type": "object",
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          }
+        }
+      },
+      "ContratIJ": {
+        "required": [
+          "dateEffet",
+          "dateSouscription",
+          "isContratIndividuel",
+          "numero",
+          "numeroAdherent"
+        ],
+        "type": "object",
+        "properties": {
+          "numero": {
+            "type": "string"
+          },
+          "numeroExterne": {
+            "type": "string"
+          },
+          "numeroAdherent": {
+            "type": "string"
+          },
+          "numeroAdherentComplet": {
+            "type": "string"
+          },
+          "dateSouscription": {
+            "type": "string"
+          },
+          "dateResiliation": {
+            "type": "string"
+          },
+          "dateEffet": {
+            "type": "string"
+          },
+          "isContratIndividuel": {
+            "type": "boolean"
+          },
+          "contratCollectif": {
+            "$ref": "#/components/schemas/ContratCollectif"
+          }
+        }
+      },
+      "DataAssure": {
+        "required": [
+          "nom"
+        ],
+        "type": "object",
+        "properties": {
+          "nom": {
+            "$ref": "#/components/schemas/NomAssure"
+          }
+        }
+      },
+      "DroitAssure": {
+        "required": [
+          "dateDebut",
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "dateDebut": {
+            "type": "string"
+          },
+          "dateFin": {
+            "type": "string"
+          }
+        }
+      },
+      "Entreprise": {
+        "type": "object",
+        "properties": {
+          "identifiantSiret": {
+            "type": "string"
+          },
+          "identifiantSiren": {
+            "type": "string"
+          },
+          "identifiantNic": {
+            "type": "string"
+          },
+          "raisonSociale": {
+            "type": "string"
+          }
+        }
+      },
+      "Nir": {
+        "required": [
+          "cle",
+          "code"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "cle": {
+            "type": "string"
+          }
+        }
+      },
+      "NomAssure": {
+        "required": [
+          "civilite",
+          "nomFamille",
+          "prenom"
+        ],
+        "type": "object",
+        "properties": {
+          "nomFamille": {
+            "type": "string"
+          },
+          "nomUsage": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "civilite": {
+            "type": "string"
+          }
+        }
+      },
+      "Oc": {
+        "required": [
+          "denomination",
+          "idClientBO",
+          "identifiant",
+          "identifiantPrestIj"
+        ],
+        "type": "object",
+        "properties": {
+          "idClientBO": {
+            "type": "string"
+          },
+          "identifiantPrestIj": {
+            "type": "string"
+          },
+          "identifiant": {
+            "type": "string"
+          },
+          "denomination": {
+            "type": "string"
+          }
+        }
+      },
+      "PrestIJ": {
+        "required": [
+          "assures",
+          "contrat",
+          "entreprise",
+          "oc"
+        ],
+        "type": "object",
+        "properties": {
+          "get_id": {
+            "type": "string"
+          },
+          "traceId": {
+            "type": "string"
+          },
+          "contrat": {
+            "$ref": "#/components/schemas/ContratIJ"
+          },
+          "oc": {
+            "$ref": "#/components/schemas/Oc"
+          },
+          "entreprise": {
+            "$ref": "#/components/schemas/Entreprise"
+          },
+          "assures": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assure"
+            }
+          }
+        }
+      },
+      "CreationResponseV2": {
+        "type": "object",
+        "properties": {
+          "traceid": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "errorMessages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "provider": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearer": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

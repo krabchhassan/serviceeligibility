@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Modification prestij",
+  "description": "Modification d'une prestij",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifiant technique de la prestij"
+    },
+    "number": {
+      "type": "string",
+      "description": "Numéro de la prestij issu du backoffice"
+    },
+    "subscriberNumber": {
+      "type": "string",
+      "description": "Numéro adhérent issu du backoffice"
+    },
+    "declarantId": {
+      "type": "string",
+      "description": "Identifiant l'OC"
+    },
+    "traceId": {
+      "type": "string",
+      "description": "Identifiant de la trace liée à la prestij"
+    }
+  },
+  "required": [
+    "id",
+    "number",
+    "subscriberNumber",
+    "declarantId",
+    "traceId"
+  ],
+  "$id": "Insurance.serviceeligibility.prestij.modification.event/0.0.1"
+}

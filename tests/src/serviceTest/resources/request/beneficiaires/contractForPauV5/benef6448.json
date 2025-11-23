@@ -1,0 +1,144 @@
+{
+  "services": [
+    "ServicePrestation",
+    "Service_TP"
+  ],
+  "key": "0000401166-418372",
+  "societesEmettrices": [
+    {
+      "code": "000ER00223",
+      "periodes": [
+        {
+          "debut": "2024-03-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "contrats": [
+    {
+      "numeroContrat": "1541325",
+      "data": {
+        "destinatairesPaiements": [
+          {
+            "idDestinatairePaiements": "418372",
+            "idBeyondDestinatairePaiements": "418372-0000401166",
+            "nom": {
+              "nomFamille": "MOT",
+              "nomUsage": "MOT",
+              "prenom": "AISSA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MOT AISSA",
+              "ligne4": "12 RUE DE LA BAS",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "rib": {
+              "bic": "AGRIFRPP817",
+              "iban": "FR7630001007941234567890185"
+            },
+            "modePaiementPrestations": {
+              "code": "VIR",
+              "libelle": "Virement",
+              "codeMonnaie": "EUR"
+            },
+            "periode": {
+              "debut": "2024-03-01"
+            }
+          }
+        ],
+        "destinatairesRelevePrestations": [
+          {
+            "idDestinataireRelevePrestations": "418372",
+            "idBeyondDestinataireRelevePrestations": "418372-0000401166",
+            "dematerialisation": {
+              "isDematerialise": true,
+              "email": "email@hotmail.fr"
+            },
+            "nom": {
+              "nomFamille": "MOT",
+              "nomUsage": "MOT",
+              "prenom": "AISSA",
+              "civilite": "MME"
+            },
+            "adresse": {
+              "ligne1": "Madame MOT AISSA",
+              "ligne4": "12 RUE DE LA BAS",
+              "ligne6": "31000 TOULOUSE",
+              "codePostal": "31000"
+            },
+            "periode": {
+              "debut": "2024-03-01"
+            }
+          }
+        ],
+        "nom": {
+          "nomFamille": "MOT",
+          "nomUsage": "MOT",
+          "prenom": "AISSA",
+          "civilite": "MME"
+        },
+        "adresse": {
+          "ligne1": "Madame MOT AISSA",
+          "ligne4": "12 RUE DE LA BAS",
+          "ligne6": "31000 TOULOUSE",
+          "codePostal": "31000"
+        },
+        "contact": {
+          "fixe": "07 70 05 96 15",
+          "email": "email@hotmail.fr"
+        }
+      },
+      "numeroAdherent": "1541325",
+      "societeEmettrice": "000ER00223",
+      "periodes": [
+        {
+          "debut": "2024-03-01",
+          "fin": "9999-12-31"
+        }
+      ]
+    }
+  ],
+  "idClientBO": "service-account-ai-boup00",
+  "amc": {
+    "idDeclarant": "0000401166"
+  },
+  "numeroAdherent": "1541325",
+  "identite": {
+    "nir": {
+      "code": "2646523001247",
+      "cle": "10"
+    },
+    "affiliationsRO": [
+      {
+        "nir": {
+          "code": "2646523001247",
+          "cle": "10"
+        },
+        "rattachementRO": {
+          "codeRegime": "01",
+          "codeCaisse": "171"
+        },
+        "periode": {
+          "debut": "2024-03-01"
+        }
+      }
+    ],
+    "dateNaissance": "19991013",
+    "rangNaissance": "1",
+    "numeroPersonne": "418372",
+    "historiqueDateRangNaissance": [
+      {
+        "dateNaissance": "19991013",
+        "rangNaissance": "1"
+      }
+    ]
+  },
+  "audit": {
+    "dateEmission": "2024-10-16T06:02:50.158Z"
+  },
+  "traceId": "670f570a12f4674aa5a9409d",
+  "_class": "com.cegedim.next.serviceeligibility.core.model.kafka.contratv5.BenefAIV5"
+}
