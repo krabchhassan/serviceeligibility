@@ -1,0 +1,25 @@
+### Java ###
+# Ignore Gradle project-specific cache directory
+.gradle
+.run
+
+# Ignore Gradle build output directory
+build
+
+.idea
+plugin/out/
+build.gradle.old
+
+### Node ###
+node_modules
+
+### Python ###
+**/dist/
+**/*.egg-info/
+**/__pycache__/
+**/src/**/setup.cfg
+package-lock.json
+src/app/serviceeligibility-core-api/app/package-lock.json
+
+# Rapport local des tests
+htmlReport

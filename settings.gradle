@@ -1,0 +1,18 @@
+pluginManagement {
+    plugins {
+        var pluginsVersion = "16.1.4"
+        id("beyond.gradle.plugins.structure").version(pluginsVersion)
+    }
+//    repositories.clear()
+    repositories.maven {
+        url = uri("https://maven.beyond.cegedim.cloud/release")
+        name = "beyond-release"
+    }
+}
+
+plugins {
+    id("beyond.gradle.plugins.structure")
+}
+
+
+rootProject.name = "serviceeligibility"

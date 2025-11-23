@@ -1,0 +1,111 @@
+plugins {
+    id("org.springframework.boot").version("3.3.5").apply(false)
+    id("io.spring.dependency-management").version("1.1.7")
+    id 'beyond.gradle.plugins.project'
+    id 'beyond.gradle.plugins.python-base'
+}
+
+ext {
+    jacksonVersion = '2.16.2'
+}
+
+
+subprojects {
+    plugins.withType(JavaPlugin).whenPluginAdded {
+
+        pluginManager.apply("io.spring.dependency-management")
+
+        tasks.named("test") {
+            useJUnitPlatform()
+        }
+        pluginManager.withPlugin("io.spring.dependency-management") {
+            dependencies {
+                implementation('jakarta.validation:jakarta.validation-api')
+                implementation('jakarta.annotation:jakarta.annotation-api')
+
+                // ------
+                // Lombok
+                // ------
+                annotationProcessor "org.projectlombok:lombok"
+                implementation "org.projectlombok:lombok"
+
+                testAnnotationProcessor "org.projectlombok:lombok"
+                testCompileOnly 'org.projectlombok:lombok'
+
+                // --------------
+                // Logging facade
+                // --------------
+                implementation 'org.slf4j:slf4j-api'
+                implementation("org.apache.commons:commons-lang3")
+
+                testImplementation("org.springframework.boot:spring-boot-starter-test")
+                testImplementation("org.junit.jupiter:junit-jupiter-api")
+                testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+                testImplementation("org.junit.platform:junit-platform-suite")
+            }
+            dependencyManagement {
+                imports {
+                    mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
+                    mavenBom "org.springframework.cloud:spring-cloud-dependencies:2023.0.3"
+                    mavenBom "com.cegedim.beyond.framework:lib-bom:2.0.67"
+                    mavenBom "com.cegedim.beyond.framework:lib-common-organisation-bom:16.2.5"
+                    mavenBom "io.cucumber:cucumber-bom:7.18.1"
+                }
+                dependencies {
+                    dependency 'com.cegedim.beyond.framework:lib-common-omu-helper-java:16.0.0'
+                    dependency 'com.cegedim.beyond.framework:lib-common-base-filenamegenerator-java:16.0.0'
+                    dependency 'org.apache.httpcomponents:httpclient:4.5.13'
+                    dependency 'com.cegedim.beyond.framework:lib-common-base-pefb-services-java:15.0.0'
+                    dependency 'com.cegedim.beyond.framework:lib-common-base-validation-services-java:15.0.0'
+                    dependency 'com.cegedim.beyond.framework:lib-common-base-validation-model-java:15.0.0'
+                    // ------
+                    // Common libs
+                    // ------
+                    dependency "org.json:json:20220924"
+                    dependency "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}"
+                    dependency "com.fasterxml.jackson.module:jackson-module-jsonSchema:${jacksonVersion}"
+                    dependency "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
+                    dependency "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
+                    dependency "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+                    dependency "com.fasterxml.jackson.module:jackson-module-parameter-names:${jacksonVersion}"
+                    dependency "commons-validator:commons-validator:1.6"
+                    dependency "org.apache.commons:commons-text:1.10.0"
+                    dependency("org.apache.commons:commons-collections4:4.4")
+                    dependency "com.google.code.gson:gson:2.9.0"
+                    dependency "commons-io:commons-io:2.17.0"
+                    // Log as json for production
+                    dependency "net.logstash.logback:logstash-logback-encoder:7.1"
+                    dependency "org.jetbrains:annotations:24.0.1"
+                    dependency "jakarta.validation:jakarta.validation-api:3.0.2"
+                    dependency "jakarta.annotation:jakarta.annotation-api:3.0.0"
+                    dependency "org.awaitility:awaitility:4.3.0"
+                }
+            }
+        }
+    }
+    sonarqube {
+
+        var exclusions = [
+                "**/model/**",
+                "**/models/**",
+                "**/mongo/**",
+                "**/cegedimassurances/**"
+        ]
+
+        var duplicationExclusions = [
+                "**/model/**",
+                "**/models/**",
+                "**/mongo/**",
+                "**/*Configuration.java",
+                "**/*Config.java",
+                "**/cegedimassurances/**"
+        ]
+
+        properties {
+
+            property("sonar.coverage.exclusions", exclusions)
+            property("sonar.exclusions", exclusions)
+            property("sonar.cpd.exclusions", duplicationExclusions)
+        }
+    }
+}
